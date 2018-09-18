@@ -1,0 +1,9 @@
+<input size="12">2 2
+1 2
+2 1
+</input>
+      <output size="8">Yes
+2 1 </output>
+      <correct size="3">No
+</correct>
+      

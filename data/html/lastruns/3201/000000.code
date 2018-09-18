@@ -1,0 +1,7 @@
+N = int(input())
+M = int(input())
+R = M//N
+O = M%N
+if O > 0:
+    R = R+1
+print(R)

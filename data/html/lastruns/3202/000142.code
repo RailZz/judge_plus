@@ -1,0 +1,11 @@
+k = int(input())
+if k%4==0:
+    if k%100==0:
+        if k%400==0:
+            print('YES')
+        else:
+           print('NO')
+    else:
+        print('YES')
+else:
+    print('NO')

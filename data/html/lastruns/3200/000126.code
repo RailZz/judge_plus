@@ -1,0 +1,3 @@
+x=input(179)
+y=input(170)
+print179-170

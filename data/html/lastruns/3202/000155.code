@@ -1,0 +1,6 @@
+a = int(input())
+s = int(input())
+if a > s :
+    print(a)
+else:
+    print(s)

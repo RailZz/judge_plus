@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cmath>
+#include <vector>
+
+using namespace std;
+
+vector <vector<int>> gr;
+vector <int> used;
+
+bool dfs(int v, int color)
+{
+    used[v] = color;
+    for (auto u: gr[v])
+    {
+        if (used[u] == 0) {
+            dfs(u, 3 - color);
+        } else if (used[u] == used[v]){
+            return false;
+        }
+    }
+    return true;
+}
+
+int main()
+{
+    int n, m, i;
+    cin >> n >> m;
+    used.resize(n + 1);
+    gr.resize(n + 1);
+    for (i = 0; i < m; i++){
+        int k, l;
+        cin >> k >> l;
+        gr[k].push_back(l);
+        gr[l].push_back(k);
+    }
+    
+    if (dfs(1, 1)) {
+        cout << "YES" << endl;
+        for (i = 0; i <= n; i++)
+        {
+            if (used[i] == 1){
+                cout << i << " ";
+            }
+        }
+    } else {
+        cout << "NO" << endl;
+    }
+    
+    return 0;
+}

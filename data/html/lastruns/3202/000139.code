@@ -1,0 +1,13 @@
+k = int(input())
+n = int(input())
+s = int(input())
+if s>k:
+    if s>n:
+        print(s)
+    else:
+        print(n)
+else:
+    if k>n:
+        print(k)
+    else:
+        print(n)

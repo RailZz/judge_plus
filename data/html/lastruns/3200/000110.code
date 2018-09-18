@@ -1,0 +1,13 @@
+n = int(input())
+m = int(input())
+
+# n > m
+k1 = n % m
+k2 = m % n
+
+d1 = (k1 - n) % n
+d2 = (k2 - m) % m
+
+res = 1 + d1 + d2
+
+print(res)

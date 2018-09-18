@@ -1,0 +1,10 @@
+def get_elec(x, y, z):
+    if x == y or x == z:
+        return x
+    elif y == z:
+        return y
+    else:
+        return z
+x, y, z = [int(i) for i in input() .split()]
+print(get_elec(x, y, z))
+ 

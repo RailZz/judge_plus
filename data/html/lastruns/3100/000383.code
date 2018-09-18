@@ -1,0 +1,12 @@
+c = [int(x) for x in input().split()]
+a = c[0]
+b = c[1]
+
+while a!=0 and b!=0:
+    if a > b:
+        a = a % b
+    else:
+        b = b % a
+ 
+print(int((c[0] * c[1]) / (a + b)))
+

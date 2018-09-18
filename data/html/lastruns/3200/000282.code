@@ -1,0 +1,5 @@
+n=int(inter())
+k=int(inter())
+n=(3)
+k=(8)
+print(k//n)

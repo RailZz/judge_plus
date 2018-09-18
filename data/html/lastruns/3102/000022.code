@@ -1,0 +1,13 @@
+a = list(map(int,(input().split())))
+l = 0
+r = 2 * 10 ** 20
+if a[0] == 1:
+    print(min(a[1:]))
+else:
+    while r - l > 1:
+        m = (r + l) // 2
+        if m // a[1] + m // a[2] >= a[0] - 1:
+            r = m
+        else:
+            l = m
+print(r + min(a[1:]))

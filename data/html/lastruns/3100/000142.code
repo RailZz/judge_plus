@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+bool sieve[200000];
+
+int main()
+{
+    int N;
+    cin >> N;
+
+    for (int i = 2; i < (N + 1); i++)
+    {
+        if (!sieve[i])
+        {
+            for (int j = i * i; j <= N; j += i)
+            {
+                sieve[j] = true;
+            }
+            cout << i << ' ';
+        }
+    }
+
+    return 0;
+}

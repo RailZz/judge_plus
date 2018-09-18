@@ -1,0 +1,36 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="463" judge-id="3" status="WA" scoring="ACM" run-tests="1" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>f42e1eaf-ea2b-4c3a-9a22-ae8e778bba33</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000463.pas
+Linking 000463
+
+
+
+
+/usr/bin/ld: warning: link.res contains output sections; did you forget -T?
+8 lines compiled, 0.1 sec 
+</compiler_output>
+  <tests>
+    <test num="1" status="WA" time="0" real-time="1" max-memory-used="294912"  checker-comment="Answers do not match: output: 2, correct: 1" >
+  <program-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=294912, maxrss=2772992, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2772992, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="2">1
+</input>
+      <output size="2">2
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="44">Answers do not match: output: 2, correct: 1
+</checker>
+    </test>
+  </tests>
+</testing-report>

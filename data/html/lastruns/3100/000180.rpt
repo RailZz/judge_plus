@@ -1,0 +1,36 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="180" judge-id="117" status="SV" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>0a342f39-58a9-4424-93fc-4e4597147be3</uuid>
+  <compiler_output>000180.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:25:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+000180.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+000180.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+Done processing 000180.cpp
+Total errors found: 24
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

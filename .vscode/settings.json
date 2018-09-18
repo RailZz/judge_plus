@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.pep8Args": [
+        "--disable=E0611"
+    ],
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--disable=E0611"
+    ],
+    "python.linting.enabled": false
+}

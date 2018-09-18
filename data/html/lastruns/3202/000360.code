@@ -1,0 +1,10 @@
+a = int(input())#228
+b = int(input())
+c = int(input())
+if a>c:
+    max=a
+else:
+    max=b
+if c>max:
+    max=c
+print(max)

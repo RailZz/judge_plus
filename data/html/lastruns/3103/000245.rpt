@@ -1,0 +1,291 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="245" judge-id="55" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>b18ab968-adfc-4abf-9a01-239246d87459</uuid>
+  <compiler_output>000245.cpp:6:14: error: expected unqualified-id before ';' token
+ int roll,n,m,;
+              ^
+000245.cpp:8:6: warning: ISO C++ forbids declaration of 'main' with no type [-Wreturn-type]
+ main(){
+      ^
+000245.cpp: In function 'int main()':
+000245.cpp:10:1: error: expected ';' before 'resize'
+ resize(ar, m, 2);
+ ^
+000245.cpp:11:14: error: 'resize' was not declared in this scope
+ resize(ar2, n);
+              ^
+000245.cpp:13:14: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+              ^
+000245.cpp:13:17: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:8: error: no match for 'operator&gt;&gt;' (operand types are 'std::istream {aka std::basic_istream&lt;char&gt;}' and 'std::vector&lt;std::vector&lt;int&gt; &gt;()')
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+        ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:120:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; (*)(std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(__istream_type&amp; (*__pf)(__istream_type&amp;))
+       ^
+/usr/include/c++/5.3.1/istream:120:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'std::basic_istream&lt;char&gt;::__istream_type&amp; (*)(std::basic_istream&lt;char&gt;::__istream_type&amp;) {aka std::basic_istream&lt;char&gt;&amp; (*)(std::basic_istream&lt;char&gt;&amp;)}' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:124:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;::__ios_type&amp; (*)(std::basic_istream&lt;_CharT, _Traits&gt;::__ios_type&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__ios_type = std::basic_ios&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(__ios_type&amp; (*__pf)(__ios_type&amp;))
+       ^
+/usr/include/c++/5.3.1/istream:124:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'std::basic_istream&lt;char&gt;::__ios_type&amp; (*)(std::basic_istream&lt;char&gt;::__ios_type&amp;) {aka std::basic_ios&lt;char&gt;&amp; (*)(std::basic_ios&lt;char&gt;&amp;)}' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:131:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(std::ios_base&amp; (*)(std::ios_base&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(ios_base&amp; (*__pf)(ios_base&amp;))
+       ^
+/usr/include/c++/5.3.1/istream:131:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'std::ios_base&amp; (*)(std::ios_base&amp;)' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:168:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(bool&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(bool&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid initialization of non-const reference of type 'bool&amp;' from an rvalue of type 'bool'
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:172:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(short int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(short&amp; __n);
+       ^
+/usr/include/c++/5.3.1/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'short int' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(short int)((int)(ar + (((sizetype)i) + 1u)))' to 'short int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:175:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(short unsigned int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(unsigned short&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'short unsigned int' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(short unsigned int)((int)(ar + (((sizetype)i) + 1u)))' to 'short unsigned int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:179:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(int&amp; __n);
+       ^
+/usr/include/c++/5.3.1/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'int' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(int)(ar + (((sizetype)i) + 1u))' to 'int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:182:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(unsigned int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(unsigned int&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'unsigned int' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(unsigned int)(ar + (((sizetype)i) + 1u))' to 'unsigned int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:186:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(long&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'long int' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(long int)(ar + (((sizetype)i) + 1u))' to 'long int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:190:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long unsigned int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(unsigned long&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'long unsigned int' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(long unsigned int)(ar + (((sizetype)i) + 1u))' to 'long unsigned int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:195:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long long int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(long long&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'long long int' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(long long int)((int)(ar + (((sizetype)i) + 1u)))' to 'long long int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:199:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long long unsigned int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(unsigned long long&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'long long unsigned int' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(long long unsigned int)((int)(ar + (((sizetype)i) + 1u)))' to 'long long unsigned int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:235:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(void*&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(void*&amp; __p)
+       ^
+/usr/include/c++/5.3.1/istream:235:7: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'void*' [-fpermissive]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:17: error: cannot bind rvalue '(void*)(ar + (((sizetype)i) + 1u))' to 'void*&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:214:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(float&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;]
+       operator&gt;&gt;(float&amp; __f)
+       ^
+/usr/include/c++/5.3.1/istream:214:7: note:   no known conversion for argument 1 from 'std::vector&lt;std::vector&lt;int&gt; &gt;()' to 'float&amp;'
+/usr/include/c++/5.3.1/istream:218:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(double&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;]
+       operator&gt;&gt;(double&amp; __f)
+       ^
+/usr/include/c++/5.3.1/istream:218:7: note:   no known conversion for argument 1 from 'std::vector&lt;std::vector&lt;int&gt; &gt;()' to 'double&amp;'
+/usr/include/c++/5.3.1/istream:222:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long double&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;]
+       operator&gt;&gt;(long double&amp; __f)
+       ^
+/usr/include/c++/5.3.1/istream:222:7: note:   no known conversion for argument 1 from 'std::vector&lt;std::vector&lt;int&gt; &gt;()' to 'long double&amp;'
+/usr/include/c++/5.3.1/istream:259:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__streambuf_type = std::basic_streambuf&lt;char&gt;]
+       operator&gt;&gt;(__streambuf_type* __sb);
+       ^
+/usr/include/c++/5.3.1/istream:259:7: note:   no known conversion for argument 1 from 'std::vector&lt;std::vector&lt;int&gt; &gt;()' to 'std::basic_istream&lt;char&gt;::__streambuf_type* {aka std::basic_streambuf&lt;char&gt;*}'
+In file included from /usr/include/c++/5.3.1/string:53:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1441:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator&gt;&gt;(basic_istream&lt;_CharT, _Traits&gt;&amp; __in,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1441:5: note:   template argument deduction/substitution failed:
+000245.cpp:13:17: note:   mismatched types 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;' and 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/istream:934:0,
+                 from /usr/include/c++/5.3.1/iostream:40,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/bits/istream.tcc:955:5: note: candidate: template&lt;class _CharT2, class _Traits2&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, _CharT2*)
+     operator&gt;&gt;(basic_istream&lt;_CharT, _Traits&gt;&amp; __in, _CharT* __s)
+     ^
+/usr/include/c++/5.3.1/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+000245.cpp:13:17: note:   deduced conflicting types for parameter '_CharT2' ('char' and 'std::vector&lt;std::vector&lt;int&gt; &gt;()')
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/istream:934:0,
+                 from /usr/include/c++/5.3.1/iostream:40,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/bits/istream.tcc:923:5: note: candidate: template&lt;class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, _CharT&amp;)
+     operator&gt;&gt;(basic_istream&lt;_CharT, _Traits&gt;&amp; __in, _CharT&amp; __c)
+     ^
+/usr/include/c++/5.3.1/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+000245.cpp:13:17: note:   deduced conflicting types for parameter '_CharT' ('char' and 'std::vector&lt;std::vector&lt;int&gt; &gt;()')
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:756:5: note: candidate: template&lt;class _Traits&gt; std::basic_istream&lt;char, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;char, _Traits&gt;&amp;, unsigned char&amp;)
+     operator&gt;&gt;(basic_istream&lt;char, _Traits&gt;&amp; __in, unsigned char&amp; __c)
+     ^
+/usr/include/c++/5.3.1/istream:756:5: note:   template argument deduction/substitution failed:
+000245.cpp:13:17: note:   cannot convert '*(ar + (((sizetype)i) + 1u))' (type 'std::vector&lt;std::vector&lt;int&gt; &gt;()') to type 'unsigned char&amp;'
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:761:5: note: candidate: template&lt;class _Traits&gt; std::basic_istream&lt;char, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;char, _Traits&gt;&amp;, signed char&amp;)
+     operator&gt;&gt;(basic_istream&lt;char, _Traits&gt;&amp; __in, signed char&amp; __c)
+     ^
+/usr/include/c++/5.3.1/istream:761:5: note:   template argument deduction/substitution failed:
+000245.cpp:13:17: note:   cannot convert '*(ar + (((sizetype)i) + 1u))' (type 'std::vector&lt;std::vector&lt;int&gt; &gt;()') to type 'signed char&amp;'
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:803:5: note: candidate: template&lt;class _Traits&gt; std::basic_istream&lt;char, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;char, _Traits&gt;&amp;, unsigned char*)
+     operator&gt;&gt;(basic_istream&lt;char, _Traits&gt;&amp; __in, unsigned char* __s)
+     ^
+/usr/include/c++/5.3.1/istream:803:5: note:   template argument deduction/substitution failed:
+000245.cpp:13:17: note:   cannot convert '*(ar + (((sizetype)i) + 1u))' (type 'std::vector&lt;std::vector&lt;int&gt; &gt;()') to type 'unsigned char*'
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:808:5: note: candidate: template&lt;class _Traits&gt; std::basic_istream&lt;char, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;char, _Traits&gt;&amp;, signed char*)
+     operator&gt;&gt;(basic_istream&lt;char, _Traits&gt;&amp; __in, signed char* __s)
+     ^
+/usr/include/c++/5.3.1/istream:808:5: note:   template argument deduction/substitution failed:
+000245.cpp:13:17: note:   cannot convert '*(ar + (((sizetype)i) + 1u))' (type 'std::vector&lt;std::vector&lt;int&gt; &gt;()') to type 'signed char*'
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000245.cpp:1:
+/usr/include/c++/5.3.1/istream:924:5: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;&amp;, _Tp&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; _Tp = std::vector&lt;std::vector&lt;int&gt; &gt;()] &lt;near match&gt;
+     operator&gt;&gt;(basic_istream&lt;_CharT, _Traits&gt;&amp;&amp; __is, _Tp&amp; __x)
+     ^
+/usr/include/c++/5.3.1/istream:924:5: note:   conversion of argument 1 would be ill-formed:
+000245.cpp:13:17: error: cannot bind 'std::istream {aka std::basic_istream&lt;char&gt;}' lvalue to 'std::basic_istream&lt;char&gt;&amp;&amp;'
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                 ^
+000245.cpp:13:24: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                        ^
+000245.cpp:13:27: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     cin&gt;&gt;ar[i][1]&gt;&gt;ar[i][2];
+                           ^
+000245.cpp:15:12: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     ar2[i-1].push_back(j);
+            ^
+000245.cpp:15:12: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+000245.cpp:15:14: error: request for member 'push_back' in '*(ar2 + (((sizetype)i) + 4294967295u))', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+     ar2[i-1].push_back(j);
+              ^
+000245.cpp:15:24: error: 'j' was not declared in this scope
+     ar2[i-1].push_back(j);
+                        ^
+000245.cpp:18:14: error: 'used' was not declared in this scope
+ for(int i; i&lt;used.size - 1; i++){
+              ^
+000245.cpp:25:1: error: expected ';' before '}' token
+ }
+ ^
+000245.cpp: In function 'int dfs(int)':
+000245.cpp:27:21: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+ for(int i; i &lt; ar2[v].size; i++){
+                     ^
+000245.cpp:27:23: error: request for member 'size' in '*(ar2 + ((sizetype)v))', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+ for(int i; i &lt; ar2[v].size; i++){
+                       ^
+000245.cpp:28:17: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     int u =ar2[v][i];
+                 ^
+000245.cpp:28:20: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     int u =ar2[v][i];
+                    ^
+000245.cpp:28:20: error: invalid conversion from 'std::vector&lt;std::vector&lt;int&gt; &gt; (*)()' to 'int' [-fpermissive]
+000245.cpp:29:4: error: 'used' was not declared in this scope
+ if(used[u] != 1){
+    ^
+</compiler_output>
+</testing-report>

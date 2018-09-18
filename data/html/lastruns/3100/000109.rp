@@ -1,0 +1,17 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="109" judge-id="89" status="CE" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>daff9d56-bd3f-42c1-9a02-fcfc84ecaf33</uuid>
+  <compiler_output>000109.cpp: In function 'int main()':
+000109.cpp:11:12: error: 'i' was not declared in this scope
+     while (i * i &lt;= n)
+            ^
+000109.cpp:22:23: error: 'i' was not declared in this scope
+         vec.push_back(i);
+                       ^
+000109.cpp:24:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i &lt; vec.size(); i++)
+                       ^
+</compiler_output>
+</testing-report>

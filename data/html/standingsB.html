@@ -1,0 +1,914 @@
+
+    <html>
+    <head>
+    <style>
+    table.results{
+    border-left:1px solid black;
+    border-top:1px solid black;
+    background:white;
+    margin-top:10px;
+    }
+    table.results td{
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:2px;
+    padding-bottom:2px;
+    }
+    td.contest, td.problem{
+    text-align:center;
+    }
+    td.ac, td.wa, td.none, td.pending, td.rj {
+    text-align:center;
+    }
+    td.ac{
+    background:#aaffbb;
+    }
+    td.wa{
+    background:#ffaaaa;
+    }
+    td.rj{
+    background:#aaaaff;
+    }
+    td.dq{
+    background:#000000;
+    }
+    td.last{
+    background:#aaffbb;
+    text-align:center;
+    border-right:1px solid red;
+    border-bottom:1px solid red;
+    border-left:1px solid red;
+    border-top:1px solid red;
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:2px;
+    padding-bottom:2px;
+    }
+    td.ac2 {
+    background: #44ff44;
+    font-weight: bold;
+    font-family: "Courier New";
+    
+    }
+    td.solved, td.penalty, td.weight, td.styleErrs{
+    text-align:right;
+    }
+    td.ac:after{
+        content: attr(data-title);
+        display: none;position: absolute;
+        bottom: 130%;
+        left: 0px;
+        background-color: #fff;
+        color: #3aaeda;
+        padding: 5px;
+        text-align: center;
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+        box-shadow: 0 1px 1px rgba(0,0,0,.16);font-size: 12px;
+    }
+    td.ac:hover:after{ 
+        display: block;
+    }
+    table.results td.name{
+    padding-right:10px;
+    }
+    td.weight{
+    font-weight: bold;
+    }
+    td.probstat{
+    text-align:right;
+    }
+    td.pending{
+    background:#ffff77;
+    }
+    .tooltip {
+    position: relative;
+    display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: #FC89AC;
+        color: #000;
+        text-align: left;
+        padding: 5px 5px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    </style>
+        <title>Таблица результатов</title>
+    </head>
+    <body>
+
+
+
+    <table class="results" cellpadding="0" cellspacing="0"><tr><td class="none" colspan=3 align="center"><a target="_blank" href="indexB.htm">Параллель B<a></td><td class="none" colspan=4 align="center"><a target="_blank" href="/new-client?contest_id=3000">Строки<a></td><td class="none" colspan=5 align="center"><a target="_blank" href="/new-client?contest_id=3001">Структуры данных<a></td><td class="none" colspan=5 align="center"><a target="_blank" href="/new-client?contest_id=3002">Топологическая сортировка и конденсация<a></td><td class="none" colspan=4 align="center"><a target="_blank" href="/new-client?contest_id=3003">Дейкстра<a></td><td class="none" colspan=4 align="center"><a target="_blank" href="/new-client?contest_id=3004">Остовные деревья <a></td><td class="none" colspan=5 align="center"><a target="_blank" href="/new-client?contest_id=3005">Динамическое программирование<a></td><td class="none" colspan=4 align="center"><a target="_blank" href="/new-client?contest_id=3006">Динамическое программирование 2<a></td></tr>
+<tr><td class="none" nowrap width="210" align="center">Имя (логин)</td><td class="none" nowrap width="30" align="center">Сумма</td><td class="none" nowrap width="30" align="center">Штраф</td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B1.htm#ch99">A<a><span class="tooltiptext">Поиск подстроки</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B1.htm#ch100">B<a><span class="tooltiptext">Строчки</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B1.htm#ch112567">C<a><span class="tooltiptext">Кубики</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B1.htm#ch1750">D<a><span class="tooltiptext">Подпалиндромы</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B2.htm#ch3308">A<a><span class="tooltiptext">Суммы на подотрезках</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B2.htm#ch1663">B<a><span class="tooltiptext">Суперминимум</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B2.htm#ch1672">C<a><span class="tooltiptext">Спутник</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B2.htm#ch3319">D<a><span class="tooltiptext">Номер максимума на подотрезке с изменением элемента</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B2.htm#ch3323">E<a><span class="tooltiptext">k-й ноль на интервале, c изменением элемента</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B3.htm#ch166">A<a><span class="tooltiptext">Построение</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B3.htm#ch1991">B<a><span class="tooltiptext">Конденсация графа</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B3.htm#ch1978">C<a><span class="tooltiptext">Расписание электричек</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B3.htm#ch1928">D<a><span class="tooltiptext">Производство деталей</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B3.htm#ch112751">E<a><span class="tooltiptext">Магические порталы</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B4.htm#ch3494">A<a><span class="tooltiptext">Алгоритм Дейкстры за $Mlog{}N$</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B4.htm#ch6">B<a><span class="tooltiptext">Дейкстра: восстановление пути</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B4.htm#ch169">C<a><span class="tooltiptext">Заправки</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B4.htm#ch1967">D<a><span class="tooltiptext">Транспортировка</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B5.htm#ch1377">A<a><span class="tooltiptext">Остовное дерево</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B5.htm#ch1362">B<a><span class="tooltiptext">Острова</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B5.htm#ch111756">C<a><span class="tooltiptext">Разрезание графа</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B5.htm#ch1316">D<a><span class="tooltiptext">Школы</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B6.htm#ch3089">A<a><span class="tooltiptext">Рюкзак</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B6.htm#ch44">B<a><span class="tooltiptext">Машинки</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B6.htm#ch631">C<a><span class="tooltiptext">Гангстеры</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B6.htm#ch3090">D<a><span class="tooltiptext">Рюкзак с восстановлением ответа (C)</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B6.htm#ch1211">E<a><span class="tooltiptext">Числа</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B7.htm#ch491">A<a><span class="tooltiptext">Почти палиндром</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B7.htm#ch3712">B<a><span class="tooltiptext">Логическое дерево</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B7.htm#ch75">C<a><span class="tooltiptext">Симпатичные узоры</span></span></td><td class="none" nowrap width="19" align="center"><span class="tooltip"><a target="_blank" href="B7.htm#ch3862">D<a><span class="tooltiptext">Гном</span></span></td></tr>
+<tr><td class="none" align="center"><span class="tooltip">Гареева Алиса [1]<span class="tooltiptext">{'name': 'Гареева Алиса', 'group': '1', 'uid': 455, 'login': 'gareeva', 'parallel': 'B'}</span></span></td><td class="none" align="center">25</td><td class="none" align="center">39</td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Гареева Алиса [1] - Поиск подстроки
+<br>
+2018-08-17 11:49:57 CE
+<br>
+2018-08-17 11:50:17 RT
+<br>
+2018-08-17 11:51:34 WA
+<br>
+2018-08-17 11:53:49 IG
+<br>
+2018-08-17 12:00:08 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Гареева Алиса [1] - Строчки
+<br>
+2018-08-17 12:48:44 WA
+<br>
+2018-08-17 12:59:02 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Гареева Алиса [1] - Кубики
+<br>
+2018-08-18 14:15:51 CE
+<br>
+2018-08-18 14:19:36 RT
+<br>
+2018-08-18 14:38:56 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Гареева Алиса [1] - Подпалиндромы
+<br>
+2018-08-22 19:04:43 SV
+<br>
+2018-08-22 20:13:07 SV
+<br>
+2018-08-22 20:13:23 WA
+<br>
+2018-08-22 20:20:11 RJ
+<br>
+2018-08-22 20:23:02 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Гареева Алиса [1] - Суммы на подотрезках
+<br>
+2018-08-18 11:46:09 WA
+<br>
+2018-08-18 11:49:59 RJ
+<br>
+2018-08-18 11:52:37 RJ
+<br>
+2018-08-18 11:53:42 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+6<span class="tooltiptext">Гареева Алиса [1] - Суперминимум
+<br>
+2018-08-18 12:18:44 RT
+<br>
+2018-08-18 12:21:40 RT
+<br>
+2018-08-18 12:22:43 RT
+<br>
+2018-08-18 12:25:02 RT
+<br>
+2018-08-18 12:26:45 RT
+<br>
+2018-08-18 12:27:29 RT
+<br>
+2018-08-18 12:27:53 IG
+<br>
+2018-08-18 12:41:32 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Гареева Алиса [1] - Спутник
+<br>
+2018-08-19 12:23:57 SV
+<br>
+2018-08-19 12:27:57 RJ
+<br>
+2018-08-19 12:31:23 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+4<span class="tooltiptext">Гареева Алиса [1] - Номер максимума на подотрезке с изменением элемента
+<br>
+2018-08-19 13:06:05 SV
+<br>
+2018-08-19 13:06:45 WA
+<br>
+2018-08-19 13:22:00 PE
+<br>
+2018-08-19 13:29:59 WA
+<br>
+2018-08-19 13:31:02 RT
+<br>
+2018-08-19 13:31:57 RJ
+<br>
+2018-08-19 13:37:28 SV
+<br>
+2018-08-19 13:38:04 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Гареева Алиса [1] - k-й ноль на интервале, c изменением элемента
+<br>
+2018-08-19 16:03:53 WA
+<br>
+2018-08-19 17:04:50 WA
+<br>
+2018-08-19 17:55:18 RJ
+<br>
+2018-08-19 18:15:29 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Гареева Алиса [1] - Построение
+<br>
+2018-08-20 12:38:44 SV
+<br>
+2018-08-20 12:39:14 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Гареева Алиса [1] - Конденсация графа
+<br>
+2018-08-20 13:03:04 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+3<span class="tooltiptext">Гареева Алиса [1] - Расписание электричек
+<br>
+2018-08-21 15:37:22 WA
+<br>
+2018-08-21 15:47:12 WA
+<br>
+2018-08-21 16:02:48 WA
+<br>
+2018-08-21 16:10:19 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Гареева Алиса [1] - Производство деталей
+<br>
+2018-08-20 16:12:27 CE
+<br>
+2018-08-20 17:10:23 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+5<span class="tooltiptext">Гареева Алиса [1] - Магические порталы
+<br>
+2018-08-21 19:11:23 WA
+<br>
+2018-08-21 19:40:52 WA
+<br>
+2018-08-21 20:43:52 SV
+<br>
+2018-08-21 20:44:18 WA
+<br>
+2018-08-22 15:01:21 SV
+<br>
+2018-08-22 15:01:50 WA
+<br>
+2018-08-22 15:06:04 WA
+<br>
+2018-08-22 15:25:29 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Гареева Алиса [1] - Алгоритм Дейкстры за $Mlog{}N$
+<br>
+2018-08-22 11:25:16 SV
+<br>
+2018-08-22 11:26:00 RJ
+<br>
+2018-08-22 12:11:29 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Гареева Алиса [1] - Дейкстра: восстановление пути
+<br>
+2018-08-22 11:41:57 WA
+<br>
+2018-08-22 11:52:35 RJ
+<br>
+2018-08-22 12:11:46 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Гареева Алиса [1] - Заправки
+<br>
+2018-08-22 12:10:42 RJ
+<br>
+2018-08-22 12:12:09 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Гареева Алиса [1] - Транспортировка
+<br>
+2018-08-22 14:10:23 SV
+<br>
+2018-08-22 14:11:38 IG
+<br>
+2018-08-22 14:15:52 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+3<span class="tooltiptext">Гареева Алиса [1] - Остовное дерево
+<br>
+2018-08-23 12:30:02 SV
+<br>
+2018-08-23 12:30:35 WA
+<br>
+2018-08-23 12:32:38 WA
+<br>
+2018-08-23 12:35:12 WA
+<br>
+2018-08-23 12:38:34 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Гареева Алиса [1] - Острова
+<br>
+2018-08-23 12:59:18 WA
+<br>
+2018-08-23 13:16:09 WA
+<br>
+2018-08-23 13:39:39 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Гареева Алиса [1] - Разрезание графа
+<br>
+2018-08-23 13:56:09 RT
+<br>
+2018-08-23 13:59:29 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Гареева Алиса [1] - Школы
+<br>
+2018-08-23 14:16:45 WA
+<br>
+2018-08-23 14:36:08 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Гареева Алиса [1] - Рюкзак
+<br>
+2018-08-24 12:31:56 RT
+<br>
+2018-08-24 12:37:45 WA
+<br>
+2018-08-24 12:39:30 RJ
+<br>
+2018-08-24 14:11:11 RJ
+<br>
+2018-08-24 14:48:32 OK</span></span></td><td class="wa" align="center"><span class="tooltip">-<span class="tooltiptext">Гареева Алиса [1] - Машинки
+<br>
+2018-08-24 14:01:09 SV</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Гареева Алиса [1] - Гангстеры
+<br>
+2018-08-25 12:25:06 WA
+<br>
+2018-08-25 13:26:57 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Гареева Алиса [1] - Рюкзак с восстановлением ответа (C)
+<br>
+2018-08-24 14:01:25 SV
+<br>
+2018-08-24 14:01:51 WA
+<br>
+2018-08-24 14:26:39 WA
+<br>
+2018-08-24 14:39:34 RJ
+<br>
+2018-08-24 14:52:40 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Гареева Алиса [1] - Числа</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Гареева Алиса [1] - Почти палиндром</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Гареева Алиса [1] - Логическое дерево</span></span></td><td class="wa" align="center"><span class="tooltip">-<span class="tooltiptext">Гареева Алиса [1] - Симпатичные узоры
+<br>
+2018-08-25 16:03:27 CE</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Гареева Алиса [1] - Гном</span></span></td></tr>
+<tr><td class="none" align="center"><span class="tooltip">Коваленко Николай [1]<span class="tooltiptext">{'name': 'Коваленко Николай', 'group': '1', 'uid': 475, 'login': 'kovalenko', 'parallel': 'B'}</span></span></td><td class="none" align="center">24</td><td class="none" align="center">32</td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Поиск подстроки
+<br>
+2018-08-17 12:12:43 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+5<span class="tooltiptext">Коваленко Николай [1] - Строчки
+<br>
+2018-08-17 13:50:18 WA
+<br>
+2018-08-17 14:00:54 SV
+<br>
+2018-08-17 14:04:34 WA
+<br>
+2018-08-18 16:08:43 SV
+<br>
+2018-08-18 16:09:24 SV
+<br>
+2018-08-19 11:41:53 CE
+<br>
+2018-08-19 11:42:29 WA
+<br>
+2018-08-19 11:43:55 WA
+<br>
+2018-08-19 11:56:41 WA
+<br>
+2018-08-19 12:06:29 RJ
+<br>
+2018-08-19 12:22:44 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+4<span class="tooltiptext">Коваленко Николай [1] - Кубики
+<br>
+2018-08-17 18:58:11 SV
+<br>
+2018-08-17 18:59:39 SV
+<br>
+2018-08-17 19:00:32 WA
+<br>
+2018-08-18 11:47:51 WA
+<br>
+2018-08-18 11:50:16 WA
+<br>
+2018-08-18 12:08:00 WA
+<br>
+2018-08-18 12:13:49 IG
+<br>
+2018-08-18 12:21:02 IG
+<br>
+2018-08-18 12:23:34 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Коваленко Николай [1] - Подпалиндромы
+<br>
+2018-08-23 21:33:40 SV
+<br>
+2018-08-23 21:37:49 WA
+<br>
+2018-08-24 11:21:29 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Коваленко Николай [1] - Суммы на подотрезках
+<br>
+2018-08-18 12:40:03 WA
+<br>
+2018-08-18 12:44:32 WA
+<br>
+2018-08-18 12:46:46 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Суперминимум
+<br>
+2018-08-18 15:20:22 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Коваленко Николай [1] - Спутник
+<br>
+2018-08-19 13:03:29 PE
+<br>
+2018-08-19 13:08:14 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Коваленко Николай [1] - Номер максимума на подотрезке с изменением элемента
+<br>
+2018-08-19 15:21:18 OK
+<br>
+2018-08-19 18:54:22 PE</span></span></td><td class="ac" align="center"><span class="tooltip">+5<span class="tooltiptext">Коваленко Николай [1] - k-й ноль на интервале, c изменением элемента
+<br>
+2018-08-19 18:54:48 PE
+<br>
+2018-08-19 18:56:05 WA
+<br>
+2018-08-19 19:05:22 WA
+<br>
+2018-08-20 15:30:39 WA
+<br>
+2018-08-20 15:34:25 WA
+<br>
+2018-08-20 15:36:00 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Коваленко Николай [1] - Построение
+<br>
+2018-08-20 13:01:16 WA
+<br>
+2018-08-20 13:06:30 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Конденсация графа
+<br>
+2018-08-20 15:08:06 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Коваленко Николай [1] - Расписание электричек</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Производство деталей
+<br>
+2018-08-20 17:36:05 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Магические порталы
+<br>
+2018-08-22 18:35:46 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Алгоритм Дейкстры за $Mlog{}N$
+<br>
+2018-08-22 11:26:37 SV
+<br>
+2018-08-22 11:27:20 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+3<span class="tooltiptext">Коваленко Николай [1] - Дейкстра: восстановление пути
+<br>
+2018-08-22 11:51:45 WA
+<br>
+2018-08-22 11:55:07 WA
+<br>
+2018-08-22 11:58:04 WA
+<br>
+2018-08-22 11:59:39 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Заправки
+<br>
+2018-08-22 12:09:29 OK
+<br>
+2018-08-22 13:53:01 SV</span></span></td><td class="ac" align="center"><span class="tooltip">+5<span class="tooltiptext">Коваленко Николай [1] - Транспортировка
+<br>
+2018-08-22 14:06:16 SV
+<br>
+2018-08-22 14:07:23 WA
+<br>
+2018-08-22 14:10:30 WA
+<br>
+2018-08-22 14:13:43 WA
+<br>
+2018-08-22 14:17:44 SV
+<br>
+2018-08-22 14:18:17 WA
+<br>
+2018-08-22 14:22:49 TL
+<br>
+2018-08-22 14:32:13 RJ
+<br>
+2018-08-22 14:36:43 CE
+<br>
+2018-08-22 14:37:30 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Остовное дерево
+<br>
+2018-08-23 12:37:46 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Острова
+<br>
+2018-08-23 12:50:28 SV
+<br>
+2018-08-23 12:51:05 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Разрезание графа
+<br>
+2018-08-23 13:59:31 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Школы
+<br>
+2018-08-23 14:37:07 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Коваленко Николай [1] - Рюкзак
+<br>
+2018-08-24 11:57:48 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Коваленко Николай [1] - Машинки</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Коваленко Николай [1] - Гангстеры</span></span></td><td class="ac" align="center"><span class="tooltip">+3<span class="tooltiptext">Коваленко Николай [1] - Рюкзак с восстановлением ответа (C)
+<br>
+2018-08-24 13:57:00 SV
+<br>
+2018-08-24 13:57:59 WA
+<br>
+2018-08-24 14:28:31 WA
+<br>
+2018-08-24 14:49:29 RT
+<br>
+2018-08-24 14:57:42 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Коваленко Николай [1] - Числа
+<br>
+2018-08-24 20:47:04 SV
+<br>
+2018-08-25 09:58:37 SV
+<br>
+2018-08-25 10:00:42 WA
+<br>
+2018-08-25 12:16:00 SV
+<br>
+2018-08-25 12:44:48 SV
+<br>
+2018-08-25 12:45:56 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Коваленко Николай [1] - Почти палиндром</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Коваленко Николай [1] - Логическое дерево</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Коваленко Николай [1] - Симпатичные узоры</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Коваленко Николай [1] - Гном</span></span></td></tr>
+<tr><td class="none" align="center"><span class="tooltip">Михальцов Данила [1]<span class="tooltiptext">{'name': 'Михальцов Данила', 'group': '1', 'uid': 436, 'login': 'greedisgood', 'parallel': 'B'}</span></span></td><td class="none" align="center">16</td><td class="none" align="center">20</td><td class="ac" align="center"><span class="tooltip">+8<span class="tooltiptext">Михальцов Данила [1] - Поиск подстроки
+<br>
+2018-08-17 16:10:25 SV
+<br>
+2018-08-17 16:13:10 TL
+<br>
+2018-08-17 18:20:39 WA
+<br>
+2018-08-17 18:33:40 SV
+<br>
+2018-08-17 18:34:03 WA
+<br>
+2018-08-17 18:40:48 WA
+<br>
+2018-08-17 18:43:29 WA
+<br>
+2018-08-17 18:50:07 WA
+<br>
+2018-08-17 18:51:09 WA
+<br>
+2018-08-17 18:53:23 WA
+<br>
+2018-08-17 20:04:07 SV
+<br>
+2018-08-17 20:04:50 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Михальцов Данила [1] - Строчки
+<br>
+2018-08-18 17:19:47 SV
+<br>
+2018-08-18 17:20:14 RT
+<br>
+2018-08-18 17:54:22 RJ
+<br>
+2018-08-19 10:02:17 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Кубики</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Подпалиндромы</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Михальцов Данила [1] - Суммы на подотрезках
+<br>
+2018-08-18 11:43:15 WA
+<br>
+2018-08-18 11:43:42 IG
+<br>
+2018-08-18 11:46:15 RJ
+<br>
+2018-08-18 11:49:39 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Михальцов Данила [1] - Суперминимум
+<br>
+2018-08-18 12:44:36 IG
+<br>
+2018-08-18 12:47:01 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Михальцов Данила [1] - Спутник
+<br>
+2018-08-19 12:13:55 SV
+<br>
+2018-08-19 12:16:02 SV
+<br>
+2018-08-19 12:17:41 WA
+<br>
+2018-08-19 12:23:38 RJ
+<br>
+2018-08-19 12:25:29 RJ
+<br>
+2018-08-19 12:26:20 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Михальцов Данила [1] - Номер максимума на подотрезке с изменением элемента
+<br>
+2018-08-19 17:53:58 PE
+<br>
+2018-08-19 18:02:32 RJ
+<br>
+2018-08-19 18:27:08 RJ
+<br>
+2018-08-19 18:28:52 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - k-й ноль на интервале, c изменением элемента</span></span></td><td class="ac" align="center"><span class="tooltip">+4<span class="tooltiptext">Михальцов Данила [1] - Построение
+<br>
+2018-08-20 16:29:00 SV
+<br>
+2018-08-20 16:29:49 WA
+<br>
+2018-08-20 16:38:02 WA
+<br>
+2018-08-20 17:07:35 WA
+<br>
+2018-08-20 17:23:44 WA
+<br>
+2018-08-20 18:06:26 RJ
+<br>
+2018-08-20 18:08:43 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Михальцов Данила [1] - Конденсация графа
+<br>
+2018-08-21 17:00:54 SV
+<br>
+2018-08-21 17:01:29 SV
+<br>
+2018-08-21 17:02:12 CE
+<br>
+2018-08-21 17:03:18 RT
+<br>
+2018-08-21 17:04:50 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Расписание электричек</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Производство деталей</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Магические порталы</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Михальцов Данила [1] - Алгоритм Дейкстры за $Mlog{}N$
+<br>
+2018-08-22 12:05:25 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Михальцов Данила [1] - Дейкстра: восстановление пути
+<br>
+2018-08-22 12:45:10 SV
+<br>
+2018-08-22 12:45:34 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Михальцов Данила [1] - Заправки
+<br>
+2018-08-22 17:17:11 SV
+<br>
+2018-08-22 17:18:46 WA
+<br>
+2018-08-22 17:19:44 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Транспортировка</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Михальцов Данила [1] - Остовное дерево
+<br>
+2018-08-23 13:05:15 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Михальцов Данила [1] - Острова
+<br>
+2018-08-23 16:26:28 SV
+<br>
+2018-08-23 16:27:44 RJ
+<br>
+2018-08-23 17:59:54 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Михальцов Данила [1] - Разрезание графа
+<br>
+2018-08-23 20:24:25 RJ
+<br>
+2018-08-23 20:25:57 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Школы</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Михальцов Данила [1] - Рюкзак
+<br>
+2018-08-24 12:03:34 WA
+<br>
+2018-08-24 12:07:39 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Машинки</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Гангстеры</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Михальцов Данила [1] - Рюкзак с восстановлением ответа (C)
+<br>
+2018-08-24 12:37:41 SV
+<br>
+2018-08-24 12:38:33 WA
+<br>
+2018-08-24 12:43:03 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Числа</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Почти палиндром</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Логическое дерево</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Симпатичные узоры</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Михальцов Данила [1] - Гном</span></span></td></tr>
+<tr><td class="none" align="center"><span class="tooltip">Губина Дарья [1]<span class="tooltiptext">{'name': 'Губина Дарья', 'group': '1', 'uid': 428, 'login': 'killjoy', 'parallel': 'B'}</span></span></td><td class="none" align="center">13</td><td class="none" align="center">13</td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Губина Дарья [1] - Поиск подстроки
+<br>
+2018-08-17 12:40:23 RJ
+<br>
+2018-08-17 12:49:16 IG
+<br>
+2018-08-17 12:56:25 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Губина Дарья [1] - Строчки
+<br>
+2018-08-18 14:40:49 RT
+<br>
+2018-08-22 20:07:57 PE
+<br>
+2018-08-22 20:09:49 RJ
+<br>
+2018-08-23 15:48:13 RJ
+<br>
+2018-08-23 20:16:29 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Кубики</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Подпалиндромы</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Губина Дарья [1] - Суммы на подотрезках
+<br>
+2018-08-18 11:54:02 WA
+<br>
+2018-08-18 11:56:28 RJ
+<br>
+2018-08-18 12:01:06 RJ
+<br>
+2018-08-18 12:11:58 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Губина Дарья [1] - Суперминимум
+<br>
+2018-08-18 13:01:39 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Губина Дарья [1] - Спутник
+<br>
+2018-08-19 15:43:50 SV
+<br>
+2018-08-19 15:51:44 SV
+<br>
+2018-08-19 15:53:28 SV
+<br>
+2018-08-19 15:54:46 WA
+<br>
+2018-08-19 18:12:59 PE
+<br>
+2018-08-19 18:20:50 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Губина Дарья [1] - Номер максимума на подотрезке с изменением элемента
+<br>
+2018-08-21 11:58:52 WA
+<br>
+2018-08-21 12:14:07 WA
+<br>
+2018-08-21 12:55:23 RJ
+<br>
+2018-08-21 13:02:24 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Губина Дарья [1] - k-й ноль на интервале, c изменением элемента
+<br>
+2018-08-21 16:25:52 CE
+<br>
+2018-08-21 16:27:54 CE
+<br>
+2018-08-21 16:54:15 WA
+<br>
+2018-08-22 20:36:31 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Губина Дарья [1] - Построение
+<br>
+2018-08-20 15:33:50 WA
+<br>
+2018-08-20 17:57:30 RJ
+<br>
+2018-08-20 18:08:40 SV
+<br>
+2018-08-20 18:13:04 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Губина Дарья [1] - Конденсация графа
+<br>
+2018-08-20 18:26:02 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Расписание электричек</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Производство деталей</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Магические порталы</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Губина Дарья [1] - Алгоритм Дейкстры за $Mlog{}N$
+<br>
+2018-08-23 20:04:18 WA
+<br>
+2018-08-23 20:10:24 WA
+<br>
+2018-08-23 20:14:34 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Губина Дарья [1] - Дейкстра: восстановление пути
+<br>
+2018-08-25 11:56:04 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Заправки</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Транспортировка</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Губина Дарья [1] - Остовное дерево
+<br>
+2018-08-23 13:52:47 SV
+<br>
+2018-08-23 13:55:37 WA
+<br>
+2018-08-23 14:01:59 WA
+<br>
+2018-08-23 14:13:02 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Острова</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Разрезание графа</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Школы</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Губина Дарья [1] - Рюкзак
+<br>
+2018-08-24 12:54:18 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Машинки</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Гангстеры</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Рюкзак с восстановлением ответа (C)</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Числа</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Почти палиндром</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Логическое дерево</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Симпатичные узоры</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Губина Дарья [1] - Гном</span></span></td></tr>
+<tr><td class="none" align="center"><span class="tooltip">Чекин Игорь [1]<span class="tooltiptext">{'name': 'Чекин Игорь', 'group': '1', 'uid': 429, 'login': 'AlucardAnno', 'parallel': 'B'}</span></span></td><td class="none" align="center">12</td><td class="none" align="center">22</td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Чекин Игорь [1] - Поиск подстроки
+<br>
+2018-08-17 12:39:57 WA
+<br>
+2018-08-17 12:44:12 IG
+<br>
+2018-08-17 12:55:59 RJ
+<br>
+2018-08-17 18:22:25 SV
+<br>
+2018-08-17 18:32:49 SV
+<br>
+2018-08-17 18:34:58 SV
+<br>
+2018-08-17 18:35:30 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+3<span class="tooltiptext">Чекин Игорь [1] - Строчки
+<br>
+2018-08-17 20:12:38 SV
+<br>
+2018-08-17 20:13:41 SV
+<br>
+2018-08-17 20:14:51 SV
+<br>
+2018-08-17 20:18:08 SV
+<br>
+2018-08-17 20:21:01 SV
+<br>
+2018-08-17 20:24:06 PE
+<br>
+2018-08-17 20:38:41 SV
+<br>
+2018-08-17 20:40:32 SV
+<br>
+2018-08-17 20:41:46 SV
+<br>
+2018-08-17 20:42:43 WA
+<br>
+2018-08-18 17:35:35 SV
+<br>
+2018-08-18 17:39:06 SV
+<br>
+2018-08-18 17:39:48 WA
+<br>
+2018-08-19 13:21:05 SV
+<br>
+2018-08-19 13:22:18 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Кубики</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Подпалиндромы</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Чекин Игорь [1] - Суммы на подотрезках
+<br>
+2018-08-18 11:53:21 WA
+<br>
+2018-08-18 11:59:02 RJ
+<br>
+2018-08-18 12:11:43 IG
+<br>
+2018-08-18 12:21:42 IG
+<br>
+2018-08-18 12:22:26 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Чекин Игорь [1] - Суперминимум
+<br>
+2018-08-18 12:56:39 RT
+<br>
+2018-08-18 12:57:10 RT
+<br>
+2018-08-18 12:58:55 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Чекин Игорь [1] - Спутник
+<br>
+2018-08-19 12:35:26 SV
+<br>
+2018-08-19 12:38:50 SV
+<br>
+2018-08-19 12:39:20 SV
+<br>
+2018-08-19 12:40:10 WA
+<br>
+2018-08-19 12:43:05 RJ
+<br>
+2018-08-19 12:45:15 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Чекин Игорь [1] - Номер максимума на подотрезке с изменением элемента
+<br>
+2018-08-19 18:25:23 PE
+<br>
+2018-08-19 18:32:30 SV
+<br>
+2018-08-19 18:33:04 RJ
+<br>
+2018-08-19 18:38:19 RJ
+<br>
+2018-08-19 18:45:39 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - k-й ноль на интервале, c изменением элемента</span></span></td><td class="ac" align="center"><span class="tooltip">+6<span class="tooltiptext">Чекин Игорь [1] - Построение
+<br>
+2018-08-20 16:28:22 SV
+<br>
+2018-08-20 16:29:57 WA
+<br>
+2018-08-20 16:51:23 SV
+<br>
+2018-08-20 16:53:14 SV
+<br>
+2018-08-20 16:53:51 SV
+<br>
+2018-08-20 16:54:17 WA
+<br>
+2018-08-20 16:56:42 SV
+<br>
+2018-08-20 16:57:04 WA
+<br>
+2018-08-20 17:51:21 SV
+<br>
+2018-08-20 17:52:42 SV
+<br>
+2018-08-20 17:53:16 WA
+<br>
+2018-08-20 17:54:39 WA
+<br>
+2018-08-20 18:04:05 WA
+<br>
+2018-08-20 18:06:53 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Чекин Игорь [1] - Конденсация графа
+<br>
+2018-08-20 18:31:30 RT
+<br>
+2018-08-20 18:41:12 RJ
+<br>
+2018-08-20 18:49:25 SV
+<br>
+2018-08-21 16:29:18 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Расписание электричек</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Производство деталей</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Магические порталы</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Чекин Игорь [1] - Алгоритм Дейкстры за $Mlog{}N$
+<br>
+2018-08-22 12:04:14 RJ
+<br>
+2018-08-22 12:15:07 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+5<span class="tooltiptext">Чекин Игорь [1] - Дейкстра: восстановление пути
+<br>
+2018-08-22 17:11:42 SV
+<br>
+2018-08-22 17:12:35 WA
+<br>
+2018-08-22 17:17:18 SV
+<br>
+2018-08-22 17:18:17 WA
+<br>
+2018-08-22 17:19:59 WA
+<br>
+2018-08-22 17:25:58 WA
+<br>
+2018-08-22 18:21:24 SV
+<br>
+2018-08-22 18:22:07 WA
+<br>
+2018-08-22 18:40:25 RJ
+<br>
+2018-08-22 18:44:31 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Заправки</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Транспортировка</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Чекин Игорь [1] - Остовное дерево
+<br>
+2018-08-23 13:05:04 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Чекин Игорь [1] - Острова
+<br>
+2018-08-23 13:18:38 WA
+<br>
+2018-08-23 16:24:10 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Разрезание графа</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Школы</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Рюкзак</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Машинки</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Гангстеры</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Рюкзак с восстановлением ответа (C)</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Числа</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Почти палиндром</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Логическое дерево</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Симпатичные узоры</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Чекин Игорь [1] - Гном</span></span></td></tr>
+<tr><td class="none" align="center"><span class="tooltip">Кротов Павел [1]<span class="tooltiptext">{'name': 'Кротов Павел', 'group': '1', 'uid': 451, 'login': 'darkus', 'parallel': 'B'}</span></span></td><td class="none" align="center">9</td><td class="none" align="center">28</td><td class="ac" align="center"><span class="tooltip">+5<span class="tooltiptext">Кротов Павел [1] - Поиск подстроки
+<br>
+2018-08-17 12:33:08 WA
+<br>
+2018-08-17 12:34:09 WA
+<br>
+2018-08-17 12:45:05 WA
+<br>
+2018-08-17 12:56:02 WA
+<br>
+2018-08-17 18:28:29 WA
+<br>
+2018-08-17 18:29:05 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+6<span class="tooltiptext">Кротов Павел [1] - Строчки
+<br>
+2018-08-17 18:52:26 WA
+<br>
+2018-08-17 18:53:20 WA
+<br>
+2018-08-17 18:53:51 WA
+<br>
+2018-08-18 12:49:46 WA
+<br>
+2018-08-18 12:50:31 WA
+<br>
+2018-08-18 12:53:46 RJ
+<br>
+2018-08-23 11:24:40 WA
+<br>
+2018-08-23 11:25:13 CE
+<br>
+2018-08-23 11:25:54 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Кубики</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Подпалиндромы</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Кротов Павел [1] - Суммы на подотрезках
+<br>
+2018-08-18 11:38:34 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Кротов Павел [1] - Суперминимум
+<br>
+2018-08-18 12:32:02 CE
+<br>
+2018-08-18 12:32:34 WA
+<br>
+2018-08-18 12:36:36 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+6<span class="tooltiptext">Кротов Павел [1] - Спутник
+<br>
+2018-08-19 18:04:19 WA
+<br>
+2018-08-19 18:05:35 CE
+<br>
+2018-08-19 18:07:15 WA
+<br>
+2018-08-19 18:09:10 WA
+<br>
+2018-08-19 18:26:17 WA
+<br>
+2018-08-19 18:29:02 WA
+<br>
+2018-08-19 18:33:05 WA
+<br>
+2018-08-19 18:42:44 OK</span></span></td><td class="wa" align="center"><span class="tooltip">-3<span class="tooltiptext">Кротов Павел [1] - Номер максимума на подотрезке с изменением элемента
+<br>
+2018-08-20 14:32:33 WA
+<br>
+2018-08-20 14:43:13 CE
+<br>
+2018-08-20 15:15:08 WA
+<br>
+2018-08-20 15:44:07 TL</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - k-й ноль на интервале, c изменением элемента</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Построение</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Конденсация графа</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Расписание электричек</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Производство деталей</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Магические порталы</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Алгоритм Дейкстры за $Mlog{}N$</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Дейкстра: восстановление пути</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Заправки</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Транспортировка</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Остовное дерево</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Острова</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Разрезание графа</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Школы</span></span></td><td class="ac" align="center"><span class="tooltip">+<span class="tooltiptext">Кротов Павел [1] - Рюкзак
+<br>
+2018-08-24 12:01:42 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Машинки</span></span></td><td class="ac" align="center"><span class="tooltip">+2<span class="tooltiptext">Кротов Павел [1] - Гангстеры
+<br>
+2018-08-24 12:23:52 WA
+<br>
+2018-08-24 12:34:29 WA
+<br>
+2018-08-24 12:39:56 CE
+<br>
+2018-08-24 12:40:43 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+1<span class="tooltiptext">Кротов Павел [1] - Рюкзак с восстановлением ответа (C)
+<br>
+2018-08-24 13:05:09 WA
+<br>
+2018-08-24 13:06:22 OK</span></span></td><td class="ac" align="center"><span class="tooltip">+7<span class="tooltiptext">Кротов Павел [1] - Числа
+<br>
+2018-08-24 14:26:10 WA
+<br>
+2018-08-24 14:27:14 WA
+<br>
+2018-08-24 14:34:11 WA
+<br>
+2018-08-24 14:35:19 WA
+<br>
+2018-08-24 15:05:51 TL
+<br>
+2018-08-24 15:17:50 TL
+<br>
+2018-08-24 15:30:47 WA
+<br>
+2018-08-24 15:33:24 OK</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Почти палиндром</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Логическое дерево</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Симпатичные узоры</span></span></td><td class="none" align="center"><span class="tooltip">-<span class="tooltiptext">Кротов Павел [1] - Гном</span></span></td></tr></table>
+    </body>
+    </html> 

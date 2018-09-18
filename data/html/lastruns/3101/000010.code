@@ -1,0 +1,10 @@
+c = int(input())
+l = 0
+r = 10 ** 9 * 5
+while r - l > 10 ** (-5):
+    m = (r + l) / 2
+    if m * m + m ** 0.5 < c:
+        l = m
+    else:
+        r = m
+print(m)

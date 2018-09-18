@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="89" judge-id="89" status="OK" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>184cff25-75ed-4ff0-be8c-2a08ee495f39</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="74" real-time="79" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=41, stime=33, ptime=74, rtime=79, maxvsz=30339072, maxrss=27111424, nvcsw=1, nivcsw=14 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2289664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1">
+</input>
+      <output size="601">PythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPython
+</output>
+      <correct size="601">PythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPythonPython
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+  </tests>
+</testing-report>

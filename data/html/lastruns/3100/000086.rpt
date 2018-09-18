@@ -1,0 +1,996 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="86" judge-id="78" status="OK" scoring="ACM" run-tests="82" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>fbe1aa49-da54-4af0-addb-7c6092b49e19</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="4" real-time="7" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=2, stime=2, ptime=4, rtime=7, maxvsz=307200, maxrss=2793472, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="2">2
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2813952, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=3 }</checker-stats-str>
+      <input size="2">3
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">4
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2752512, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="2">5
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="5" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2838528, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">6
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="6" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">7
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="7" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2953216, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">8
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="8" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=3080192, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">9
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="9" status="OK" time="2" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=1, ptime=2, rtime=3, maxvsz=307200, maxrss=2793472, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">10
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="10" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2818048, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">11
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="11" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2838528, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">12
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="12" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2801664, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">13
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="13" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2748416, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">14
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="14" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">15
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="15" status="OK" time="1" real-time="4" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=4, maxvsz=307200, maxrss=2940928, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">16
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="16" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">17
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="17" status="OK" time="1" real-time="7" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=7, maxvsz=307200, maxrss=2842624, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">18
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="18" status="OK" time="2" real-time="7" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=7, maxvsz=307200, maxrss=2801664, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=5, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">19
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="19" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2785280, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">20
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="20" status="OK" time="3" real-time="7" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=2, stime=1, ptime=3, rtime=7, maxvsz=307200, maxrss=2748416, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">21
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="21" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2801664, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=4, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">22
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="22" status="OK" time="3" real-time="4" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=2, ptime=3, rtime=4, maxvsz=307200, maxrss=2748416, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=3, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">23
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="23" status="OK" time="2" real-time="5" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=5, maxvsz=307200, maxrss=3047424, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">24
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="24" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">25
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="25" status="OK" time="1" real-time="5" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=5, maxvsz=307200, maxrss=3080192, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">26
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="26" status="OK" time="2" real-time="4" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=2, stime=0, ptime=2, rtime=4, maxvsz=307200, maxrss=2945024, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">27
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="27" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2809856, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">28
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="28" status="OK" time="2" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=2, stime=0, ptime=2, rtime=3, maxvsz=307200, maxrss=2785280, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">29
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="29" status="OK" time="2" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=3, maxvsz=307200, maxrss=2748416, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">30
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="30" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2797568, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">31
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="31" status="OK" time="2" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=1, ptime=2, rtime=3, maxvsz=307200, maxrss=2777088, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">32
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="32" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2789376, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">33
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="33" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=3043328, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">34
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="34" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2838528, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">35
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="35" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2863104, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">36
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="36" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2740224, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=2, ptime=2, rtime=5, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">37
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="37" status="OK" time="2" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=2, stime=0, ptime=2, rtime=3, maxvsz=307200, maxrss=2789376, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">38
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="38" status="OK" time="2" real-time="5" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=2, stime=0, ptime=2, rtime=5, maxvsz=307200, maxrss=2895872, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">39
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="39" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2736128, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">40
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="40" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2789376, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">41
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="41" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">42
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="42" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2797568, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">43
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="43" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2789376, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">44
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="44" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2785280, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">45
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="45" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=307200, maxrss=2945024, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">46
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="46" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2748416, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">47
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="47" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2740224, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">48
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="48" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2838528, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">49
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="49" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=307200, maxrss=2740224, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="8">7893863
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="50" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2891776, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">4535647
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="51" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2899968, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">9584947
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="52" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=3047424, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1173473527
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="53" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2813952, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">742017599
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="54" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2813952, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">2047833973
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="55" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=307200, maxrss=2740224, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1859483971
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="56" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2740224, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">2052484033
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="57" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2834432, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="11">1162261467
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="58" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2748416, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1707051488
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="59" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2781184, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1220703125
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="60" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2740224, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="11">1934917632
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="61" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=307200, maxrss=2818048, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1073741824
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="62" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=3080192, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1369900758
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="63" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2838528, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1788840353
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="64" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2953216, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">637685138
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="65" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2781184, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">363737311
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="66" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2813952, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1573991528
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="67" status="OK" time="2" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=3, maxvsz=307200, maxrss=2785280, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="11">1638007382
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="68" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2945024, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1732595871
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="69" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2789376, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">261102246
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="70" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2949120, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">511006765
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="71" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=3076096, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1417715463
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="72" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2748416, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">270493806
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="73" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=3076096, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="11">1559362045
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="74" status="OK" time="2" real-time="4" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=2, stime=0, ptime=2, rtime=4, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="9">87003083
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="75" status="OK" time="2" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=1, ptime=2, rtime=3, maxvsz=307200, maxrss=3047424, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="11">1041356745
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="76" status="OK" time="2" real-time="4" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=4, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">791891809
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="77" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2785280, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">486237013
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="78" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2953216, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">317210601
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="79" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2859008, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">703284949
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="80" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=3076096, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="10">495397435
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="81" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2793472, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="10">122611344
+</input>
+      <output size="9">composite</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="82" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2781184, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">1000000007
+</input>
+      <output size="5">prime</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+  </tests>
+</testing-report>

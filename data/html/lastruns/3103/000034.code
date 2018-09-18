@@ -1,0 +1,11 @@
+def dfs(v):
+    visited.append(v) 
+    for i in range (n):
+        if gr[v][i] == 1 and i not in visited:
+            dfs(i)
+i = 0
+n , s = list(map(int,(input().split())))
+gr = [list(map(int,(input().split()))) for x in range(n)]
+visited = []
+dfs(s-1)
+print(len(visited))

@@ -1,0 +1,10 @@
+a = int(input())
+b = 1
+while True:
+    if a//2 > 1:
+        a = a//2
+        b += 1
+    else:
+        b+=1
+        break
+print(b)

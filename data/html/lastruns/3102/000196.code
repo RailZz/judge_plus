@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std; 
+
+#define ll unsigned long long
+
+bool f(ll num, ll a, ll k, ll b, ll m, ll x) {
+    ll tree = 0;
+    tree = (num - num/k) * a;
+    if (tree >= x) return true;
+    else {
+        tree += (num - num / m) * b; 
+        if (tree >= x) return true;
+        else return false;
+    }
+}
+
+int main() {
+    
+    ll a, k, b, m, x;
+    cin >> a >> k >> b >> m >> x;
+    
+    ll l = 0, r = 1000000000000000009;
+    
+    while (r - l > 1) {
+        ll mid = (l + r) / 2;
+        if (f (mid, a, k, b, m, x)) r = mid; 
+        else l = mid;
+    }
+    
+    cout << r;
+    
+    return 0; 
+}

@@ -1,0 +1,10 @@
+n, m = [int(i) for i in input().split()]
+A = [[0] * m for i in range(n)]
+for i in range(n):
+    for j in range(m):
+        if i == 0 or j == 0:
+            A[i][j] = 1
+        else:
+            A[i][j] = A[i - 1][j] + A[i][j - 1]
+for p in range(n):
+    print(*A[p])

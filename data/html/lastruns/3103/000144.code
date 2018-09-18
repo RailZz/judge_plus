@@ -1,0 +1,44 @@
+var
+  u,v,i,n,m,l:integer; 
+  gr: array of array of longint;
+  used: array of longint;
+  light:array of longint;
+  
+  function dfs(v:longint):longint;
+  var s,k:longint;
+  begin
+    used[v]:=1;
+    for k:=0 to length(gr[v])-1 do begin
+    s:=gr[v,k];
+    light[v]+=1;
+    if used[s]=0 then dfs(s);
+    end;
+    dfs:=v;
+  end;
+  
+begin
+  read(n,m);
+  
+  setLength(gr,n);
+  setLength(used,n);
+  setLength(light,n);
+  
+  for i:=1 to m do
+  
+  begin
+  
+  read(u,v);
+  
+  u:=u-1;
+  v:=v-1;
+  
+  setLength(gr[u],length(gr[u])+1);
+  setLength(gr[v],length(gr[v])+1);
+  gr[u,length(gr[u])-1]:=v;
+  gr[v,length(gr[v])-1]:=u;
+  
+  end;
+  
+  dfs(v);
+  for l:=0 to n-1 do write(light[l], ' ');
+  end.

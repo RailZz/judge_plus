@@ -1,0 +1,14 @@
+var
+n,a,b,c,d:uint64;
+begin
+readln(n);
+a:=1;
+b:=1;
+for c:=1 to n-2 do
+begin
+d:=a+b;
+a:=b;
+b:=d;
+end;
+writeln(b);
+end.

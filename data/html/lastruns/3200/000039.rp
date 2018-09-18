@@ -1,0 +1,8 @@
+<input size="2">7
+</input>
+      <output size="84">The next number for the number 7 is 8 .
+The previous number for the number 7 is 6 .
+</output>
+      <correct size="2">8
+</correct>
+      

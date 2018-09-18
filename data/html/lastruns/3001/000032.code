@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+  int len;
+  cin >> len;
+  vector<long long> sum(len);
+  for (int i = 0; i < len; i++) {
+    cin >> sum[i];
+    if (i) {
+      sum[i] += sum[i - 1];
+    }
+  }
+
+  int ques, l, r;
+  cin >> ques;
+  int question[ques][2];
+  for (int i = 0; i < ques; i++) {
+    cin >> l >> r;
+    question[i][0] = l - 1;
+    question[i][1] = r - 1;
+  }
+  for (int i = 0; i < ques; i++) {
+    if (!question[i][0]) {
+      cout << sum[question[i][1]] << ' ';
+    }
+    else {
+      cout << sum[question[i][1]] - sum[question[i][0] - 1] << ' ';
+    }
+  }
+}

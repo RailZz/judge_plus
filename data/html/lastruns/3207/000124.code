@@ -1,0 +1,14 @@
+p=input()
+def IsDigit(p):
+    if p.isdigit():
+        return True
+    else:
+        return False
+
+
+
+if IsDigit(p):
+    print('yes')
+else:
+    print('no')
+

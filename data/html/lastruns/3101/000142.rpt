@@ -1,0 +1,17 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="142" judge-id="121" status="SV" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>22d4acdb-1298-440e-9b14-42d1fa7eb4f1</uuid>
+  <compiler_output>000142.c:7:  Extra space before ( in function call  [whitespace/parens] [4]
+000142.c:17:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+000142.c:17:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+000142.c:20:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+000142.c:22:  Extra space before ( in function call  [whitespace/parens] [4]
+Done processing 000142.c
+Total errors found: 5
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

@@ -1,0 +1,76 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+vector<int> t;
+vector<int> arr;
+
+int Max(int i, int j) {
+    if (arr[i] > arr[j]) {
+        return i;
+    }
+    return j;
+}
+
+void bild(int v, int l, int r) {
+    if (l == r - 1) {
+        t[v] = l;
+        return;
+    }
+    int m = (r + l) / 2;
+    bild(v * 2 + 1, l, m);
+    bild(v * 2 + 2, m, r);
+    t[v] = Max(t[v * 2 + 1], t[v * 2 + 2]);
+}
+
+int ask(int v, int l, int r, int askl, int askr) {
+    if (askl >= r || askr <= l) {
+        return arr.size();
+    }
+    if (askl <= l && askr >= r) {
+        return t[v];
+    }
+    int m = (r + l) / 2;
+    return Max(ask(v * 2 + 1, l, m, askl, askr), ask(v * 2 + 2, m, r, askl, askr));
+}
+
+void change(int v, int l, int r, int pos, int val) {
+    if (l == r - 1) {
+        arr[l] = val;
+        return;
+    }
+    int m = (l + r) / 2;
+    if (pos < m) {
+        change(v * 2 + 1, l, m, pos, val);
+    } else {
+        change(v * 2 + 2, m, r, pos, val);
+    }
+    t[v] = Max(t[v * 2 + 1], t[v * 2 + 2]);
+}
+
+int main() {
+    int n;
+    cin >> n;
+    arr.resize(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    arr.push_back(-1);
+    t.resize(n * 4);
+    bild(0, 0, n);
+    int par1, par2;
+    char comand;
+    int col_ask;
+    cin >> col_ask;
+
+    for (int i = 0; i < col_ask; i++) {
+        cin >> comand >> par1 >> par2;
+        par1--;
+        if (comand == 's') {
+            cout << ask(0, 0, n, par1, par2) + 1 << ' ';
+        } else {
+            change(0, 0, n, par1, par2);
+        }
+    }
+}

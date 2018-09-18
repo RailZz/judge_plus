@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="134" judge-id="39" status="WA" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>bb9e4ddf-228c-488f-ba00-bfefdc5324cf</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="26" real-time="28" max-memory-used="307200"  checker-comment="Answers do not match: output: 30, correct: 7" >
+  <program-stats-str>{ utime=23, stime=3, ptime=26, rtime=28, maxvsz=307200, maxrss=6025216, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=4, maxvsz=307200, maxrss=2367488, nvcsw=1, nivcsw=3 }</checker-stats-str>
+      <input size="29">In the town where I was born
+</input>
+      <output size="3">30
+</output>
+      <correct size="2">7
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="45">Answers do not match: output: 30, correct: 7
+</checker>
+    </test>
+  </tests>
+</testing-report>

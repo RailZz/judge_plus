@@ -1,0 +1,6 @@
+n = int(input())
+r = 0
+i = 1
+for i in range(n+1):
+    r = r+i*i*i
+print(r)

@@ -1,0 +1,60 @@
+#include <iostream>
+#include <cmath>
+#include <vector>
+using namespace std;
+
+double f(int x)
+{
+    return x * x + sqrt(x);
+}
+
+int main()
+{
+    int c;
+    cin >> c;
+    vector<int> vec1;
+    int t;
+    for (int i = 0; i < c; i++)
+    {
+        cin >> t;
+        vec1.push_back(t);
+    }
+    cin >> c;
+    vector<int> vec2;
+    for (int i = 0; i < c; i++)
+    {
+        cin >> t;
+        vec2.push_back(t);
+    }
+    int l1, r1, m1;
+    int l2, r2, m2;
+    for (int i = 0; i < vec2.size(); i++)
+    {
+        while (r - l > 1)
+        {
+            l1 = 0;
+            r1 = vec1.size();
+            m1 = (l + r) / 2;
+            if (vec1[m1 < vec2[i])
+            {
+                l1 = m1;
+            } else {
+                r1 = m1;
+            }
+        }
+        while (r - l > 1)
+        {
+            l2 = -1;
+            r2 = vec1.size() - 1;
+            m2 = (l + r) / 2;
+            if (vec1[m2 < vec2[i])
+            {
+                l2 = m2;
+            } else {
+                r2 = m2;
+            }
+        }
+        cout << l1 - r2 << " ";
+    }
+    return 0;
+}

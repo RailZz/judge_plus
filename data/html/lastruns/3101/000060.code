@@ -1,0 +1,11 @@
+program a1;
+var n,i:integer;
+begin
+read(n);
+i:=0;
+repeat
+n:=round(n/2);
+i:=i+1
+until n=1;
+writeln(i);
+end.

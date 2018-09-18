@@ -1,0 +1,10 @@
+a = int(input())
+b = int(input())
+n = int(input())
+a = a*n
+b = b*n
+for i in range(n):
+    if b>=100:
+        a = b//100 + a
+        b = b%100
+print(a, b)

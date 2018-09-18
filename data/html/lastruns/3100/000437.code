@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	int k;
+	cin >> k;
+	pair<int, int> ans;
+	ans.first = 10;
+	ans.second = 1000000000;
+	vector<bool> used(1000, false);
+	for (int i = 1; i <= 9; ++i) {
+		unsigned long long curr_i = i, i_size = 1;
+		if (curr_i%k == 0) {
+			if (i_size < ans.second) {
+			    ans.second = i_size;
+			    ans.first = i;
+			}
+		}
+		while (!used[curr_i%k]) {
+		    used[curr_i%k] = true;
+		    curr_i = (10*curr_i + i)%k;
+		    ++i_size;
+			if (curr_i%k == 0) {
+				if (i_size < ans.second) {
+    			    ans.second = i_size;
+    			    ans.first = i;
+    			}
+			}
+		}
+    }
+	
+	if (ans.first == 10 && ans.second == 1000000000) cout << "Impossible";
+	else cout << ans.first << " " << ans.second;
+	
+	return 0;
+}

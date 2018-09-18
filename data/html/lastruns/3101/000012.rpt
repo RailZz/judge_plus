@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="12" judge-id="13" status="RT" scoring="ACM" run-tests="1" contest-id="3101" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>2619413a-d197-4f48-a092-f901c43a7df2</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="75" real-time="82" max-memory-used="30339072" >
+  <program-stats-str>{ utime=63, stime=12, ptime=75, rtime=82, maxvsz=30339072, maxrss=27455488, nvcsw=1, nivcsw=11 }</program-stats-str>
+      <input size="109">10 10
+1 61 126 217 2876 6127 39162 98126 712687 1000000000 
+100 6127 1 61 200 -10000 1 217 10000 1000000000 
+</input>
+      <output size="0"></output>
+      <stderr size="207">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000012&quot;, line 4, in &lt;module&gt;
+    c = float(input())
+ValueError: invalid literal for float(): '10 10'
+</stderr>
+    </test>
+  </tests>
+</testing-report>

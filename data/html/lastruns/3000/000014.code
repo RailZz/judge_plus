@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+
+const long long ST = pow(10, 6);
+long long st[ST];
+long long hash_1[ST];
+
+long long subhash(long long l, long long r, long long mod)
+{
+    long long big = hash_1[r], small = 0;
+    if (l != 0)  {
+        small = (hash_1[l - 1] * st[r - l + 1]) % mod;
+    }
+    return (big - small + mod) % mod;
+}
+
+int main()
+{
+    long long p = 37, mod = (pow(10, 9) + 7);
+    string s, t;
+    cin >> s >> t;
+
+    st[0] = 1;
+    for (int i = 1; i < ST; ++i) {
+        st[i] = (st[i - 1] * p) % mod;
+    }
+
+    int m = t.size();
+    int n = s.size();
+
+    long long hash = t[0];
+    for (int i = 1; i < m; ++i)   {
+        hash = (hash * p + t[i]) % mod;
+    }
+
+    hash_1[0] = s[0];
+    for (int i = 1; i < n; ++i)    {
+        hash_1[i] = (hash_1[i - 1] * p + s[i]) % mod;
+    }
+
+    for (int i = 0; i <= n - m; i += 1)       {
+        long long hash1 = subhash(i, i + m - 1, mod);
+        if (hash == hash1)
+            cout << i << " ";
+    }
+}

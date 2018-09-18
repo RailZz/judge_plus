@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="37" judge-id="4" status="RT" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>bf1397a9-04b2-4953-92ab-e1f0e3530ac3</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000037.cpp: In function 'bool dfs(int)':
+000037.cpp:16:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i&lt;gr[u].size();i++)
+                  ^
+</compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="6" time="1" real-time="3" max-memory-used="311296" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=311296, maxrss=2891776, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="12">3 2
+1 2
+1 3
+</input>
+      <output size="0"></output>
+      <stderr size="90">terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+</stderr>
+    </test>
+  </tests>
+</testing-report>

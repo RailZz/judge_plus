@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="11" judge-id="12" status="SE" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>621ee9c7-e4ef-4a41-9dd2-27ddbbcf911c</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="283" real-time="300" max-memory-used="18698240" >
+  <program-stats-str>{ utime=274, stime=9, ptime=283, rtime=300, maxvsz=18698240, maxrss=19468288, nvcsw=1, nivcsw=39 }</program-stats-str>
+      <input size="4">179
+</input>
+      <output size="0"></output>
+      <stderr size="277">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000011&quot;, line 6, in &lt;module&gt;
+    ptint(a)
+NameError: name 'ptint' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

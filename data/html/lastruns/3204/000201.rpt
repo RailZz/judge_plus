@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="201" judge-id="131" status="SE" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>59fcd62a-5c4f-4542-a020-e0734c4d44bb</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="283" real-time="299" max-memory-used="18698240" >
+  <program-stats-str>{ utime=264, stime=19, ptime=283, rtime=299, maxvsz=18698240, maxrss=19320832, nvcsw=1, nivcsw=38 }</program-stats-str>
+      <input size="37">165 163 160 160 157 157 155 154 
+162
+</input>
+      <output size="0"></output>
+      <stderr size="284">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000201&quot;, line 10
+    
+                                                         ^
+SyntaxError: unexpected EOF while parsing
+</stderr>
+    </test>
+  </tests>
+</testing-report>

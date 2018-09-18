@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+main(){
+	int N,S=0;
+	cin>>N;
+	while(N!=0){
+		S=S+N%10;
+		cout<<S<<endl;
+		N=N/10;
+		cout<<N<<endl;
+	}
+	cout<<S<<endl;
+}

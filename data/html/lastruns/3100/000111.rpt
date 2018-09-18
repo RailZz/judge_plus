@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="111" judge-id="83" status="TL" scoring="ACM" run-tests="1" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>5deede01-9385-4fce-a1c1-2f25d6d86b70</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Done processing 000111.cpp
+000111.cpp: In function 'int main()':
+000111.cpp:25:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j = 0; j &lt; vec.size(); j++)
+                       ^
+
+</compiler_output>
+  <tests>
+    <test num="1" status="TL" time="2075" real-time="2178" max-memory-used="4358144" >
+  <program-stats-str>{ utime=2060, stime=15, ptime=2075, rtime=2178, maxvsz=4358144, maxrss=2904064, nvcsw=1, nivcsw=151 }</program-stats-str>
+      <input size="2">2
+</input>
+      <output size="0"></output>
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

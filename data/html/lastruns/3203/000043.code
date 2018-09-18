@@ -1,0 +1,13 @@
+n = int(input())
+a = 0
+m = 0
+l = n
+while n > 0 :
+    a = n % 10
+    b = a
+    if a > m :
+        m = a
+    if b < l :
+        l = b
+    n = n // 10
+print(l, m)

@@ -1,0 +1,25 @@
+program Turnlights;
+
+const
+        SIZE = 100;
+
+var
+        a: array [1..SIZE] of Integer;
+        n, m, i, j, k: Integer;
+        
+begin
+        Read (n, m);
+        
+        FillChar (a, SizeOf (a), 0);
+        
+        for i := 1 to m do
+        begin
+                Read (j, k);
+                
+                Inc (a[j]);
+                Inc (a[k]);
+        end;
+        
+        for i := 1 to n do
+                Write (a[i], ' ')
+end.

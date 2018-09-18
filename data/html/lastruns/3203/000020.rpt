@@ -1,0 +1,20 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="20" judge-id="10" status="TL" scoring="ACM" run-tests="1" contest-id="3203" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>91b00f55-034d-43de-9610-01a9aa5c6387</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="TL" time="2077" real-time="2206" max-memory-used="47890432" >
+  <program-stats-str>{ utime=2001, stime=76, ptime=2077, rtime=2206, maxvsz=47890432, maxrss=26726400, nvcsw=1, nivcsw=188 }</program-stats-str>
+      <input size="2">2
+</input>
+      <output size="0"></output>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+    </test>
+  </tests>
+</testing-report>

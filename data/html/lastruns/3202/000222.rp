@@ -1,0 +1,9 @@
+<input size="6">4
+2
+6
+</input>
+      <output size="13">(4, 'korov')
+</output>
+      <correct size="4">YES
+</correct>
+      

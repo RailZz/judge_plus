@@ -1,0 +1,58 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
+vector <vector<int>> gr;
+vector <int> par;
+int parent;
+vector <bool> been;
+bool dfs(int v)
+{
+    been[v] = true;
+    for (int u: gr[v])
+    {
+        if (par[parent] == u){
+            return false;
+        } else {
+            parent = u;
+            par.push_back(u);
+            dfs(u);
+        }
+    }
+    return true;
+}
+
+int main()
+{
+	int m, n;
+	cin >> n >> m;
+    gr.resize(n + 1, vector<int>(n + 1)); 
+    been.resize(n + 1, false);
+    par.resize(n + 1); 
+    parent = 0;
+	for (int i = 1; i <= m; i++)
+	{
+        int k, l;
+        cin >> k >> l;
+        gr[k].push_back(l);
+        gr[l].push_back(k);
+	}
+    int g;
+    for (int i = 0; i <= n; i++)
+    {
+        if (dfs(i) == false){
+            g = 1;
+        } else {
+            g = 0;
+        }
+    }
+    
+    if (g == 1) {
+        cout << "YES";
+    } else {
+        cout << "NO";
+    }
+    return 0;
+}

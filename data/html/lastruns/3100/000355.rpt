@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="355" judge-id="12" status="SE" scoring="ACM" run-tests="1" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>e318c3ba-a7ba-4d62-b024-51d5140a91c4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000355.cpp: In function 'int IsSimple(long int)':
+000355.cpp:6:11: warning: unused variable 'i' [-Wunused-variable]
+     long  i;
+           ^
+000355.cpp: In function 'int main()':
+000355.cpp:19:17: warning: unused variable 'k' [-Wunused-variable]
+     long  n, i, k;
+                 ^
+</compiler_output>
+  <tests>
+    <test num="1" status="SE" time="1" real-time="3" max-memory-used="307200" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2732032, nvcsw=1, nivcsw=1 }</program-stats-str>
+      <input size="2">4
+</input>
+      <output size="0"></output>
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

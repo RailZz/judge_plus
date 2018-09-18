@@ -1,0 +1,39 @@
+ type 
+arrray=array[0..99] of longint;
+graph=array of array of longint;
+
+procedure dfs(const g:graph; var used:arrray; v:longint; var s:longint);
+var i:longint;
+
+begin
+ used[v]:=1;
+ inc(s);
+for i:= 0 to length(g[v])-1 do
+  if used[g[v,i]]=0 then 
+       dfs(g,used, g[v,i],s);
+end;
+
+var 
+n,i,j,m,l,s:longint;
+used:arrray;
+g:graph;
+
+begin
+read(n,m);
+s:=0;
+setlength(g,n);
+  for i:=0 to n-1 do
+       used[i]:=0;
+  for i:=0 to n-1 do 
+    for j:=0 to n-1 do
+        begin
+             read(l);
+              if l=1 then 
+                 begin
+                   setlength(g[i], length (g[i])+1);
+                   g[i,length(g[i])-1]:=j;
+                 end;
+        end;
+dfs(g,used,m-1,s);
+writeln(s);
+end.

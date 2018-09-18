@@ -1,0 +1,9 @@
+program a1;
+var a,i:longint; n:string;
+begin
+read(a);
+n:='prime';
+while sqr(i)<=a do
+if a mod i=0 then n:='composite';
+writeln(n);
+end.

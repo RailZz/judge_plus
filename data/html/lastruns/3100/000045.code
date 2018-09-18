@@ -1,0 +1,16 @@
+n = int(input())
+divisours = []
+ans = str('')
+while n > 1:
+    i = 2
+    while 1:
+        if n%i == 0:
+            divisours.append(i)
+            n //= i
+            break
+        else:
+            i += 1
+for i in range(0, len(divisours)):
+    ans += str(divisours[i])
+    ans += ' '
+print(ans)

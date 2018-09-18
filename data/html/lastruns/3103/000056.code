@@ -1,0 +1,66 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+//vector <int> used;
+vector <vector <int> > gr;
+int cnt = 0;
+
+void dfs (int a, int b)
+{
+    cnt++;
+    gr[a][b] = 0;
+//    for (auto u: gr[v])
+//    {
+        if (gr[a - 1][b])
+        {
+            dfs(a - 1, b);
+        }
+        if (gr[a][b - 1])
+        {
+            dfs(a, b - 1);
+        }
+        if (gr[a][b + 1])
+        {
+            dfs(a, b + 1);
+        }
+        if (gr[a + 1][b])
+        {
+            dfs(a + 1, b);
+        }
+    //}
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    //used.resize(n, 0);
+    gr.resize(n, vector <int> (n));
+    char c;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cin >> c;
+            if (c == '*')
+            {
+                 //used[i] = 2;
+                 gr[i][j] = 0;
+            }
+            else
+            {
+                gr[i][j] = 1;
+            }
+        }
+    }
+    int x, y;
+    cin >> x >> y;
+    x--;
+    y--;
+    dfs(x, y);
+
+    cout << cnt;
+    return 0;
+}

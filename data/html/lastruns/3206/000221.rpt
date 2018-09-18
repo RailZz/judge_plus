@@ -1,0 +1,55 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="221" judge-id="126" status="SE" scoring="ACM" run-tests="2" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>4f763483-2936-463b-9c48-ea410579c883</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=20, stime=6, ptime=26, rtime=28, maxvsz=307200, maxrss=6356992, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="12">Abrakadabra
+</input>
+      <output size="55">r
+r
+Abrak
+Abrakadab
+Arkdba
+baaar
+arbadakarbA
+abdkrA
+11
+</output>
+      <correct size="55">r
+r
+Abrak
+Abrakadab
+Arkdba
+baaar
+arbadakarbA
+abdkrA
+11
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="SE" time="285" real-time="298" max-memory-used="18698240" >
+  <program-stats-str>{ utime=241, stime=44, ptime=285, rtime=298, maxvsz=18698240, maxrss=19247104, nvcsw=1, nivcsw=37 }</program-stats-str>
+      <input size="6">Hello
+</input>
+      <output size="2">l
+</output>
+      <stderr size="279">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000221&quot;, line 6, in &lt;module&gt;
+    print(a[9])
+IndexError: string index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

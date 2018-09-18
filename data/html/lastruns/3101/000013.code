@@ -1,0 +1,16 @@
+N, K = map(int, input().split())
+lst = list(map(int, input().split()))
+lst1 = list(map(int, input().split()))
+for i in range (0, len(lst1)):
+    a = 0
+    b = N
+    while b - a > 1:
+        c = (a + b) // 2
+        if lst[c] <= lst1[i]:
+            a = c
+        elif lst[c] > lst1[i]:
+            b = c
+    if lst[a] == lst1[i]:
+        print("YES")
+    else:
+        print("NO")

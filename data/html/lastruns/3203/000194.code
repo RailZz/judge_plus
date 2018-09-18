@@ -1,0 +1,8 @@
+a = int(input())
+i = a // 2
+if i != 0:
+    while i<=a:
+        print(i)
+        i+=1
+else:
+    print(1)

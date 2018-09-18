@@ -1,0 +1,129 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="327" judge-id="2" status="OK" scoring="ACM" run-tests="9" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>0777899e-b346-4806-a10d-fca2a54b8ede</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=30, maxvsz=307200, maxrss=6291456, nvcsw=1, nivcsw=9 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">7
+</input>
+      <output size="2">8
+</output>
+      <correct size="2">8
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="31" real-time="38" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=7, ptime=31, rtime=38, maxvsz=307200, maxrss=6266880, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">8
+</input>
+      <output size="3">10
+</output>
+      <correct size="3">10
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=23, stime=5, ptime=28, rtime=30, maxvsz=307200, maxrss=6332416, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">60
+</input>
+      <output size="3">62
+</output>
+      <correct size="3">62
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="OK" time="30" real-time="39" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=30, stime=0, ptime=30, rtime=39, maxvsz=307200, maxrss=6053888, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">85
+</input>
+      <output size="3">86
+</output>
+      <correct size="3">86
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="5" status="OK" time="30" real-time="35" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=6, ptime=30, rtime=35, maxvsz=307200, maxrss=6045696, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">96
+</input>
+      <output size="3">98
+</output>
+      <correct size="3">98
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="6" status="OK" time="27" real-time="32" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=5, ptime=27, rtime=32, maxvsz=307200, maxrss=6189056, nvcsw=1, nivcsw=11 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">81
+</input>
+      <output size="3">82
+</output>
+      <correct size="3">82
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="7" status="OK" time="31" real-time="34" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=6, ptime=31, rtime=34, maxvsz=307200, maxrss=6270976, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="3">97
+</input>
+      <output size="3">98
+</output>
+      <correct size="3">98
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="8" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=3, ptime=28, rtime=30, maxvsz=307200, maxrss=6115328, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">99
+</input>
+      <output size="4">100
+</output>
+      <correct size="4">100
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="9" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=2, ptime=27, rtime=30, maxvsz=307200, maxrss=6160384, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="3">74
+</input>
+      <output size="3">76
+</output>
+      <correct size="3">76
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+  </tests>
+</testing-report>

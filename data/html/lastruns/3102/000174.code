@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+long long func(long long t, long long a, long long b, long long k, long long m){
+       long long x = (t - t / k) * a + (t - t / m) * b;
+       return x;
+}
+long long main(void){
+    long long a, k, b, m, x, l, r, y;
+    scanf("%lld %lld %lld %lld %lld", &a, &k, &b, &m, &x);
+    l = 0;
+    r = pow(10, 5);
+    while (r - l > 1){
+        y = (r + l) / 2;
+        if (func(y, a, b, k, m) >= x){
+           r = y;
+        }else{
+           l = y;
+        }
+    }
+    printf("%lld", r);
+    return 0;
+}

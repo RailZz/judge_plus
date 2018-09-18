@@ -1,0 +1,22 @@
+def find_min(a, b, c, d):
+    if a<=b and a<=c and a<=b:
+        return a
+    elif b<=a and b<=c and b<=d:
+        return b
+    elif c<=a and c<=b and c<=d:
+        return c
+    elif d<=a and d<=b and d<=c:
+        return d
+    
+N = int(input())
+M = int(input())
+x = int(input())
+y = int(input())
+if N<M:
+    a = N - x
+    b = M - y
+else:
+    a = M - x
+    b = N - y
+
+print (find_min(a, b, x, y))

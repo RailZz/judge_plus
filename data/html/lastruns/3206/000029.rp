@@ -1,0 +1,23 @@
+<input size="12">Abrakadabra
+</input>
+      <output size="54">r
+r
+Abra
+Abrakadab
+Arkdba
+baaar
+arbadakarbA
+abdkrA
+11
+</output>
+      <correct size="55">r
+r
+Abrak
+Abrakadab
+Arkdba
+baaar
+arbadakarbA
+abdkrA
+11
+</correct>
+      

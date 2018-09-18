@@ -1,0 +1,90 @@
+#include <iostream>
+#include <queue>
+#include <vector>
+#include <algorithm>
+ 
+using namespace std;
+ 
+const int SIZE = 100;
+ 
+void matrix_input(int matrix[][SIZE], int size)//ìàòðèöà
+{
+    for(int i = 0; i < size; ++i)
+    {
+        for(int j = 0; j < size; ++j)
+        {
+            cin >> matrix[i][j];//ñ÷èòûâàíèå ìàòðèöû
+        }
+    }
+}
+ 
+int main()
+{
+    int size;
+    int start, end;
+    cin >> size;
+ 
+    vector<int> from(size, -1);
+    vector<int> used(size, 0);
+    vector<int> distance(size);
+ 
+    int mainMatrix[SIZE][SIZE];
+    int ways[SIZE];
+    int counter = 0;
+    matrix_input(mainMatrix, size);
+ 
+    cin >> start >> end;//ñ÷èòûâàíèå íà÷àëà è êîíöà
+    --start; --end;
+ 
+    queue<int> Queue;//î÷åðåäü
+    Queue.push(start);//äîáàâëÿåì ýëåìåíò â î÷åðåäü
+ 
+    distance[start] = 0;//äëèíà
+    used[start] = 1;
+ 
+    while (!Queue.empty())//bfs( ïîêà î÷åðåäü íå ïóñòàÿ)
+    {
+        int hold = Queue.front();
+        Queue.pop();
+ 
+        for (int i = 0; i < size; ++i)
+        {
+            if (mainMatrix[hold][i] && !used[i])
+            {
+                distance[i] = distance[hold] + 1;
+                from[i] = hold;
+                Queue.push(i);
+                used[i] = true;
+            }
+        }
+ 
+    }
+ 
+    if (used[end])
+    {
+        if(distance[end] == 0)
+        {
+            cout << distance[end] << endl;
+        }
+        else
+        {
+            cout << distance[end] << endl;
+            vector <int> ways;
+            for(int i = end; i != -1; i = from[i])
+            {
+                ways.push_back(i);
+            }
+            reverse (ways.begin(), ways.end());
+            for(int i = 0; i < ways.size(); ++i)
+            {
+                cout << ways[i] + 1 << " ";
+            }
+        }
+    }
+    else
+    {
+        cout << -1 << endl;
+    }
+ 
+    return 0;
+}

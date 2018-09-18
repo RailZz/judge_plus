@@ -1,0 +1,12 @@
+c = float(input())
+def f (x):
+    return x**2 + x ** 0.5
+l = 0
+r = c**2
+while r - l > 10**(-12):
+    m = (r + l) / 2
+    if f(m) >= c:
+        r = m
+    else:
+        l = m
+print(r)

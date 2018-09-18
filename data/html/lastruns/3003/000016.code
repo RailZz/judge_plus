@@ -1,0 +1,47 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+
+using namespace std;
+
+const long long inf = 2009000999, SIZE = 60000;
+long long N, M, start = 0;
+long long bens[SIZE];
+vector<pair<int, int>> gr[SIZE];
+
+int main() {
+    cin >> N;
+    for (int i = 0; i < N; i++) {
+        cin >> bens[i];
+    }
+    cin >> M;
+    for (int i = 0; i < M; i++) {
+        int v, u;
+        cin >> v >> u;
+        gr[v - 1].push_back({u - 1, bens[u - 1]});
+        gr[u - 1].push_back({v - 1, bens[v - 1]});
+    }
+    vector<int> d(N, inf);
+    d[start] = 0;
+    set<pair<int, int>> s;
+    s.insert({0, start});
+    while (!s.empty()) {
+        int v = s.begin()->second;
+        s.erase(s.begin());
+        for (auto ul : gr[v]) {
+            int u = ul.first, l = ul.second;
+            if (d[v] + l < d[u]) {
+                s.erase({d[u], u});
+                d[u] = d[v] + l;
+                s.insert({d[u], u});
+            }
+        }
+    }
+    if (d[N - 1] == inf) {
+        cout << -1;
+    } else {
+        cout << d[N - 1] - bens[N - 1] + bens[start];
+    }
+    return 0;
+}

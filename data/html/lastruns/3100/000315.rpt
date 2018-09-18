@@ -1,0 +1,38 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="315" judge-id="7" status="PE" scoring="ACM" run-tests="2" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>52fc5f3f-3a97-4ff7-ae5d-2d9e9aba4fab</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=2, ptime=26, rtime=28, maxvsz=307200, maxrss=6115328, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">3 4
+</input>
+      <output size="3">12
+</output>
+      <correct size="3">12
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="PE" time="27" real-time="30" max-memory-used="307200"  checker-comment="user program output: output: cannot parse int64 value" >
+  <program-stats-str>{ utime=25, stime=2, ptime=27, rtime=30, maxvsz=307200, maxrss=6307840, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">35867 1209
+</input>
+      <output size="21">9.29359392570701e-06
+</output>
+      <correct size="7">107601
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="54">user program output: output: cannot parse int64 value
+</checker>
+    </test>
+  </tests>
+</testing-report>

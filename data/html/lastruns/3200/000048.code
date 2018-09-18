@@ -1,0 +1,7 @@
+N = int(input())
+K = int(input())
+O = K%N
+if O == 0:
+    print(0)
+else:
+    print(N-O)

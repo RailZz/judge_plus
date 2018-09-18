@@ -1,0 +1,7 @@
+a = int(input())
+b = a//10
+c = b//10
+b = b%10
+d = a%10
+a = c+b+d
+print(a)

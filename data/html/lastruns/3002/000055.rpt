@@ -1,0 +1,39 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="55" judge-id="5" status="CE" scoring="ACM" run-tests="0" contest-id="3002" compile-error="yes" >
+  <uuid>08bb8635-6ca0-41d6-a2b7-b13a6e8f4525</uuid>
+  <compiler_output>Done processing 000055.cpp
+000055.cpp: In function 'void dfsts(int)':
+000055.cpp:16:9: warning: range-based for loop without a type-specifier only available with -std=c++1z or -std=gnu++1z
+     for (u : gr[v])
+         ^
+000055.cpp:16:14: error: 'gr' was not declared in this scope
+     for (u : gr[v])
+              ^
+000055.cpp:14:9: warning: unused variable 'i' [-Wunused-variable]
+     int i, u;
+         ^
+000055.cpp:14:12: warning: unused variable 'u' [-Wunused-variable]
+     int i, u;
+            ^
+000055.cpp: In function 'void dfscs(int, int)':
+000055.cpp:31:18: error: 'rgr' was not declared in this scope
+     for (int u : rgr[v])
+                  ^
+000055.cpp:37:13: error: 'cgr' was not declared in this scope
+             cgr[homies[u]].push_back(cur_comp);
+             ^
+000055.cpp: In function 'int main()':
+000055.cpp:52:5: error: 'gr' was not declared in this scope
+     gr.resize(m);
+     ^
+000055.cpp:53:5: error: 'rgr' was not declared in this scope
+     rgr.resize(m);
+     ^
+000055.cpp:54:5: error: 'cgr' was not declared in this scope
+     cgr.resize(m);
+     ^
+
+</compiler_output>
+</testing-report>

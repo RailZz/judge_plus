@@ -1,0 +1,12 @@
+BufferedReader re = new BufferedReader(new InputStreamReader(System.in));
+             System.out.println("Введите строку");
+             String str1 = re.readLine();
+             String[] chAr = str1.split(" ");
+             String ch1 = chAr[0];
+             for(int i=1;i<chAr.length;i++){
+                 if(ch1.length()<chAr[i].length())
+                 ch1 = chAr[i];
+             }
+             
+             System.out.println(ch1);
+             System.out.println(ch1.length());

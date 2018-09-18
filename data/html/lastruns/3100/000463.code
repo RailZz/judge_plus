@@ -1,0 +1,9 @@
+var
+   i,n,r  : Integer;
+ Begin
+    readln(n);
+   R:=2;  //это первый и последний
+   for i:=1 to n do R:=r+(n-i);
+   writeln(r);
+   
+ End.

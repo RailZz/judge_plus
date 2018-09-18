@@ -1,0 +1,19 @@
+import math  
+p = math.pi
+eps = 10**-5
+r = p / 2 + eps
+l = -p / 2
+m = (r - l) / 2
+
+
+a = float(input())
+while r - l > eps:
+    m = (r + l) / 2
+    if math.sin(m) <= math.sin(a):
+        l = m
+    else:
+        r = m
+print(m)
+
+
+

@@ -1,0 +1,6 @@
+a = int(input ())
+if a%10==1 and a!=11 :
+    print (a, 'korova')
+elif (a%10>=5 and a%10<=9) or a%10==0 or (a>=11 and a<=19) :
+    print (a, 'korov' )
+else: print (a, 'korovy' )

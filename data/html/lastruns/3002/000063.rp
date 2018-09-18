@@ -1,0 +1,11 @@
+<input size="16">3 0
+.++
+-.+
+--.
+</input>
+      <output size="6">1
+0 0 </output>
+      <correct size="6">1
+0 1
+</correct>
+      

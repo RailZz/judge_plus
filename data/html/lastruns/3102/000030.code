@@ -1,0 +1,13 @@
+a, k, b, m, x = list(map(int, input().split()))
+
+left = 0
+right = 10 ** 100
+
+while right - left > 1:
+    mid = (left + right) // 2
+    if a * (mid - mid // k) + b * (mid - mid // m) >= x:
+        right = mid
+    else:
+        left = mid
+        
+print(right)        

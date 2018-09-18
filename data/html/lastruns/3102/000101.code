@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int prov_chislo, provoda[10000], k, k_col;
+    k_col = 0;
+    std::cin >> prov_chislo >> k;
+    for (int i = 0; prov_chislo < i; i++){
+        std::cin >> provoda[i];
+        k_col = k_col + provoda[i];
+    }
+    prov_chislo = k_col / k;
+    std::cout << prov_chislo;
+    return 0;
+}

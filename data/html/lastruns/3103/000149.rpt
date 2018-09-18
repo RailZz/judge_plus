@@ -1,0 +1,33 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="149" judge-id="21" status="SE" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>9858b73e-431f-4c08-9f82-4123f37ce373</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="289" real-time="308" max-memory-used="18702336" >
+  <program-stats-str>{ utime=282, stime=7, ptime=289, rtime=308, maxvsz=18702336, maxrss=19202048, nvcsw=1, nivcsw=43 }</program-stats-str>
+      <input size="18">3
+***
+*.*
+***
+2 2
+</input>
+      <output size="0"></output>
+      <stderr size="500">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000149&quot;, line 27, in &lt;module&gt;
+    dfs(s - 1, k - 1)
+  File &quot;./000149&quot;, line 23, in dfs
+    if is_good(x + dx[i], y + dy[i]) and used[x + dx[i]][y + dy[i]] == 0:
+  File &quot;./000149&quot;, line 14, in is_good
+    if x &gt;= 0 and x &lt; n and y &lt; n and y &gt;= 0 and room[x][y] == '.':
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

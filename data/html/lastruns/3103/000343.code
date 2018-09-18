@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> f(int x) {
+    vector<int> a;
+    if (x/1000 != 9) a.push_back(x+1000);
+    if (x%10 != 1) a.push_back(x-1);
+    a.push_back((x + (x%10)*10000) / 10);
+    a.push_back((x*10 + x/1000) % 10000);
+    return a;
+}
+
+int main() {
+    
+    int start, finish;
+	cin >> start >> finish;
+
+	queue<int> q;
+	q.push (start);
+	vector<int> dist(10000);
+	vector<int> prev(10000);
+	set<int> used;
+	used.insert(start);
+	prev[start] = -1;
+	while (!q.empty()) {
+		int v = q.front();
+		q.pop();
+		vector<int> g = f(v);
+		for (int i = 0; i<g.size(); ++i) {
+			int to = g[i];
+			if (used.find(to) == used.end()) {
+				used.insert(to);
+				q.push(to);
+				dist[to] = dist[v] + 1;
+				prev[to] = v;
+			}
+		}
+	}
+	
+	vector<int> path;
+	for (int i = finish; i != -1; i = prev[i])
+		path.push_back(i);
+	reverse (path.begin(), path.end());
+	for (int i = 0; i<path.size(); ++i)
+		cout << path[i] << endl;
+
+	return 0;
+}

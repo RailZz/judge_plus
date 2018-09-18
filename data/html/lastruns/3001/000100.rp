@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="100" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3001" compile-error="yes" >
+  <uuid>73705427-6015-49b5-9328-daf250868106</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000100.pas
+000100.pas(90,13) Error: Ordinal expression expected
+000100.pas(99,13) Error: Ordinal expression expected
+000100.pas(106,63) Error: Integer expression expected, but got &quot;Int64&quot;
+000100.pas(108,39) Error: Integer expression expected, but got &quot;Int64&quot;
+000100.pas(110,48) Warning: Variable &quot;x&quot; does not seem to be initialized
+000100.pas(110,56) Warning: Variable &quot;y&quot; does not seem to be initialized
+000100.pas(115,63) Error: Integer expression expected, but got &quot;Int64&quot;
+000100.pas(118,39) Error: Integer expression expected, but got &quot;Int64&quot;
+000100.pas(120,52) Warning: Variable &quot;l&quot; does not seem to be initialized
+000100.pas(120,60) Warning: Variable &quot;r&quot; does not seem to be initialized
+000100.pas(123,4) Fatal: There were 6 errors compiling module, stopping
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

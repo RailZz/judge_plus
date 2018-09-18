@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="95" judge-id="2" status="RT" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>66a3921d-559d-4a60-9933-f7254c49fec3</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="185" real-time="203" max-memory-used="63664128" >
+  <program-stats-str>{ utime=137, stime=48, ptime=185, rtime=203, maxvsz=63664128, maxrss=45457408, nvcsw=1, nivcsw=33 }</program-stats-str>
+      <input size="8">4 5 6 7
+</input>
+      <output size="0"></output>
+      <stderr size="218">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+  File &quot;./000095&quot;, line 4
+    C:\Documents and Settings\student_zo\Ð Ð°Ð±Ð¾ÑÐ¸Ð¹ ÑÑÐ¾Ð»\1234
+      ^
+SyntaxError: Unknown character
+</stderr>
+    </test>
+  </tests>
+</testing-report>

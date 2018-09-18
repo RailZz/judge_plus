@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+n=int(input())
+d=a*n
+c=b*n
+if c>59:
+    d=d+c//60
+    c=c%60   
+print(d,c)
+  

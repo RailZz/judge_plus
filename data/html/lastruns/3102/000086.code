@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std; 
+
+bool f (vector<int> &a, int n, int k, int ans) {
+	int summ = 0;
+	for (int i = 0; i<n; ++i) summ += (a[i] / ans);
+	if (summ >= k) return true;
+	else return false;
+}
+
+int main() { 
+    int n, k;
+	cin >> n >> k;
+	vector<int> a(n);
+	for (int i = 0; i<n; ++i) cin >> a[i];
+	
+    int l = 0, r = 10000001; 
+    while (r-l > 1) {
+        int m = (l+r) / 2;
+        if (f(a, n, k, m)) l = m;
+        else r = m;
+    } 
+    cout << l;
+    
+    return 0;
+}

@@ -1,0 +1,8 @@
+n = int(input())
+n = a
+while n <= b:
+    if n % c == d:
+        print(n)
+        n += 1
+    else:
+        n += 1

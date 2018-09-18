@@ -1,0 +1,9 @@
+a=input()
+b=a.split()
+mi=0
+for i in range(len(b)):
+    if len(b[mi])<len(b[i]):
+        b[mi]=b[i]
+print(b[mi])
+print(len(b[mi]))
+    

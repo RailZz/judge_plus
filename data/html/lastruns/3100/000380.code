@@ -1,0 +1,13 @@
+N = int(input())
+b = []
+c = []
+for i in range(N + 1):
+    b.append(i)
+for i in range(2, len(b)):
+    if b[i] != 0:
+        c.append(b[i])
+        z = b[i]
+        for j in range(2, len(b) // z + 1):
+            if z * j < len(b):
+                b[z * j] = 0
+print(*c)

@@ -1,0 +1,35 @@
+is_good = 1
+def dfs(v, c):
+    global is_good
+    used[v] = c
+    for u in G[v]:
+        if used[u] == 0:
+            dfs(u, 3 - c)
+        elif used[u] == c:
+            is_good = 0
+
+
+data = list(map(int, input().split()))
+N = data[0]
+M = data[1]
+G = [[] for i in range(N + 1)]
+for i in range(M):
+    data = list(map(int, input().split()))
+    G[data[0]].append(data[1])
+    G[data[1]].append(data[0])
+used = [0 for i in range(N + 1)]
+for i in range(1, N):
+    if used[i] == 0:
+        dfs(i, 1)
+ans = []
+for i in range(len(used)):
+    if used[i] == 1:
+        ans.append(i)
+    
+if is_good == 1:
+    print('YES')
+    print(*ans)
+else:
+    print('NO')
+
+

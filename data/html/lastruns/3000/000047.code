@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+
+using namespace std;
+
+long long subhash(long long mod, long long left, long long right, long long* hash, long long* st)
+{
+    long long big = hash[right];
+    long long small = 0;
+    if (left != 0)
+    {
+        small = (hash[left - 1] * st[right - left + 1]) % mod;
+    }
+    return (big - small + mod) % mod;
+}
+
+
+
+int main()
+{
+    string inp, sear, concl;
+    long long p = 37, mod = 1000000007;
+    cin >> inp >> sear;
+    long long hash1[inp.length()], hash2[sear.length()], st[inp.length()];
+    hash1[0] = inp[0];
+    hash2[0] = sear[0];
+    st[0] = 1;
+    for (long long y = 1; y < inp.length(); ++y)
+    {
+        st[y] = (st[y - 1] * p) % mod;
+    }
+    for (int i = 1; i < inp.length(); ++i)
+    {
+        hash1[i] = (hash1[i - 1] * p + inp[i]) % mod;
+    }
+    for (int i = 1; i < sear.length(); ++i)
+    {
+        hash2[i] = (hash2[i - 1] * p + sear[i]) % mod;
+    }
+    int hooker = -1;
+    for (int i = 0; i < sear.length(); ++i)
+    {
+         if (sear[i] == inp[0])
+         hooker = i;
+	}
+    if (hooker != -1)
+    {
+    	if (subhash(mod, 1, inp.length() - 1, hash1, st) == subhash(mod, 0, hooker - 1, hash2, st))
+    	{
+    		cout << hooker;
+		}  	
+	}
+	else
+	{
+		cout << hooker;
+	}
+    return 0;
+}

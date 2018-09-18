@@ -1,0 +1,15 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="49" judge-id="6" status="SV" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>76a8d439-135b-4132-86cb-54a2cd082d9a</uuid>
+  <compiler_output>000049.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+000049.cpp:54:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+000049.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+Done processing 000049.cpp
+Total errors found: 3
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

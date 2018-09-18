@@ -1,0 +1,9 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="33" judge-id="34" status="RU" scoring="ACM" run-tests="0" contest-id="3003" compile-error="yes" >
+  <uuid>ab62d6fa-2cbd-4134-b026-a67bc7860b02</uuid>
+  <compiler_output>Done processing 000033.cpp
+
+</compiler_output>
+</testing-report>

@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+main(){
+	int k,m,n;
+	cin>>k;
+	cin>>m;
+	cin>>n;
+	if(k%m==0)
+		cout<<k/m*n*2<<endl;
+	else
+		cout<<(k/m+1)*n*2<<endl;
+}

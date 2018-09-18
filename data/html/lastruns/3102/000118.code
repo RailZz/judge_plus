@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std; 
+
+int f (int x, vector<int> &a) {
+	int ans = 1, j = a[0];
+	for (int i = 0; i<a.size(); ++i) {
+	    if (a[i] - j >= x) {
+	        ++ans;
+	        j = a[i];
+	    }
+	}
+	return ans;
+}
+
+int main() { 
+    int n, k;
+	cin >> n >> k;
+	vector<int> a(n);
+	for (int i = 0; i<n; ++i) cin >> a[i];
+	
+    int l = 0, r = 1000000009;
+    while (r-l > 1) {
+        int m = (l+r) / 2;
+        if (f(m, a) >= k) l = m;
+        else r = m;
+    } 
+    cout << l;
+    
+    return 0;
+}

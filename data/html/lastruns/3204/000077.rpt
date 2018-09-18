@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="77" judge-id="7" status="TL" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>230376b2-dc44-45f4-9e2e-e7a0ea553ce6</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000077.cpp: In function 'int main()':
+000077.cpp:16:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i &lt; a.size(); ++i) {
+                       ^
+000077.cpp:19:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 1; i &lt; a.size() - 1; --i) {
+                       ^
+</compiler_output>
+  <tests>
+    <test num="1" status="TL" time="2054" real-time="2191" max-memory-used="37916672" >
+  <program-stats-str>{ utime=730, stime=1324, ptime=2054, rtime=2191, maxvsz=37916672, maxrss=36368384, nvcsw=1, nivcsw=228 }</program-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="0"></output>
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

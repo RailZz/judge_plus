@@ -1,0 +1,20 @@
+function min(a,b:integer):integer;
+begin
+if a>b then
+min:=b
+else
+min:=a;
+end;
+var
+N,b:integer;
+a,c:array[1..100] of integer;
+begin
+readln(N);
+for b:=1 to N do
+read(a[b]);
+c[1]:=a[1];
+c[2]:=a[2];
+for b:=3 to N do
+c[b]:=min(c[b-2],c[b-1])+a[b];
+writeln(c[N]); 
+end.

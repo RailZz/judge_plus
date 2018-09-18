@@ -1,0 +1,6 @@
+<input size="13">1 2 1 2 1000
+</input>
+      <output size="3">505</output>
+      <correct size="4">999
+</correct>
+      

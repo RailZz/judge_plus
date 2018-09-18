@@ -1,0 +1,8 @@
+k =int(input())
+s = 0
+a = 1
+while a <= k :
+    if a < 10 or a % 11 == 0 or a % 111 :
+        s = s + 1
+    a = a + 1
+print(s) 

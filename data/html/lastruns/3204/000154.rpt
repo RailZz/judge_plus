@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="154" judge-id="84" status="SE" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>c679e052-30cc-4540-bf51-a9f336b693b3</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="307" real-time="334" max-memory-used="32264192" >
+  <program-stats-str>{ utime=295, stime=12, ptime=307, rtime=334, maxvsz=32264192, maxrss=19443712, nvcsw=1, nivcsw=37 }</program-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="0"></output>
+      <stderr size="312">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000154&quot;, line 7, in &lt;module&gt;
+    while i &lt; len(a-1):
+TypeError: unsupported operand type(s) for -: 'list' and 'int'
+</stderr>
+    </test>
+  </tests>
+</testing-report>

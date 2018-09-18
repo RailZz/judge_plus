@@ -1,0 +1,9 @@
+a = int(input())
+i = 2
+s = 0
+while i <= a:
+    if a % i == 0 :
+        s = i
+        i = a
+    i+=1
+print(s)

@@ -1,0 +1,88 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cstdio>
+
+using namespace std;
+
+
+int main() {
+    vector<int> a;
+    int h;
+    while (scanf("%d ", &h) == 1) {
+        a.push_back(h);
+    }
+    int cnt = 0;
+    for (int i = 0; i < a.size(); ++i) {
+        cerr << a[i] << ' ';
+    }
+    for (int i = 1; i < a.size() - 1; ++i) {
+        if (a[i] > a[i - 1] && a[i] > a[i + 1]) {
+            cnt++;
+        }
+    }
+    cout << cnt << endl;
+}
+/*const int SIZE = 20228;
+int n, m;
+vector<int> gr[SIZE], rgr[SIZE], cgr[SIZE], banditos[SIZE];
+int homies[SIZE];
+vector<int> ts;
+vector<bool> used;
+
+void dfsts(int v) {
+    used[v] = true;
+    for (int u : gr[v]) {
+        if (!used[u]) {
+            dfsts(u);
+        }
+    }
+    ts.push_back(v);
+}
+
+void dfscs(int v, int cur_comp) {
+    used[v] = true;
+    homies[v] = cur_comp;
+    banditos[cur_comp].push_back(v);
+    for (int u : rgr[v]) {
+        if (!used[u]) {
+            dfscs(u, cur_comp);
+        } else if (homies[u] != cur_comp) {
+            cgr[homies[u]].push_back(cur_comp);
+        }
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    cin >> n >> m;
+    used.assign(n, false);
+    for (int i = 0; i < m; ++i) {
+        int u, v;
+        cin >> u >> v;
+        gr[u - 1].push_back(v - 1);
+        rgr[v - 1].push_back(u - 1);
+    }
+    for (int i = 0; i < n; ++i) {
+        if (!used[i]) {
+            dfsts(i);
+        }
+    }
+    reverse(ts.begin(), ts.end());
+    used.assign(n, false);
+    int cur_comp = 0;
+    for (int v : ts) {
+        if (!used[v]) {
+            dfscs(v, cur_comp);
+            cur_comp++;
+        }
+    }
+    cout << cur_comp << endl;
+    for (int i = 0; i < n; ++i) {
+        cout << homies[i] + 1 << ' ';
+    }
+    return 0;
+}
+*/

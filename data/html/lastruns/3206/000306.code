@@ -1,0 +1,24 @@
+s=input()
+t=0
+u=0
+g=0
+h=0
+for i in s:
+    if i.isdigit():
+        t=1
+for i in s:
+    if i.isalpha():
+        u=1
+
+for i in s:
+    if i.islower():
+        g=1
+
+for i in s:
+    if i.isupper():
+        h=1
+
+if t>0 and u>0 and g>0 and h>0 and len(s)>8:
+    print("YES")
+elif len(s)<=8:
+    print("NO")

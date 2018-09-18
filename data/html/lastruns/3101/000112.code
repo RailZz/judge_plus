@@ -1,0 +1,65 @@
+#include <iostream>
+#include <cmath>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+#define ll long long
+
+int main()
+{
+    ll l, r, m, n, mid, i, k;
+    k = 0;
+    cin >> n;
+    vector <ll> mas1(n);
+    for (i = 0; i < n; i++)
+    {
+        cin >> mas1[i];
+    }
+    cin >> m;
+    vector <ll> mas2(m);
+    for (i = 0; i < m; i++){
+        cin >> mas2[i];
+    }
+    sort(mas1.begin(), mas1.end());
+    for (i = 0; i < m; i++)
+{
+    k = 0;
+    l = 0;
+    r = n;
+    while(r - l > 1)
+    {
+        mid = (l + r) / 2;
+        if (mas1[mid] <= mas2[i]) {
+            l = mid;
+        } else {
+            r = mid;
+        }
+    } 
+    ll right = l;
+    r = n; 
+    l = 0;
+    while(r - l > 1)
+    {
+        mid = (l + r) / 2;
+        if (mas1[mid] >= mas2[i]) {
+            r = mid;
+        } else {
+            l = mid;
+        }
+    } 
+    ll left = r;
+    ll j;
+    ll parent = mas2[i];
+    for (j = left - 1; j <= right; j++)
+    {
+        if (parent == mas1[j]) {
+        k++;
+        } else {
+        k = 0;}
+    }
+    cout << k << " ";
+}
+    return 0;
+}

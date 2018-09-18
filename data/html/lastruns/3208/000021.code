@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+c=int(input())
+def parti(a,b,c):
+    s=(a+b+c)//2
+    if s % 2 == 0:
+        return s
+    else:
+        return (s+1)
+print(parti(a,b,c))

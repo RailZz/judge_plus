@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+long long int FindNod(long long int right, long long int left)
+{
+    while ((right != 0) && (left != 0))
+    {
+        if (right > left)
+        {
+            swap(right, left);
+        }
+        left %= right;
+    }
+    return (left + right);
+}
+
+int main()
+{
+    long long int N;
+    cin >> N;
+    long long int nod = 0;
+    long long int num = 0;
+    cin >> num;
+    nod = num;
+    for (int i = 1; i < N; i++)
+    {
+        cin >> num;
+        nod = FindNod(nod, num);
+    }
+    cout << nod;
+    return 0;
+}

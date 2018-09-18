@@ -1,0 +1,14 @@
+def gcf(n, m):
+    while n != 0 and m != 0:
+        if n > m:
+            n = n % m
+        else:
+            m = m % n
+    return n + m
+
+
+N = int(input())
+a = [int(x) for x in input().split()]
+for i in range(N - 1):
+    a[i + 1] = gcf(a[i], a[i + 1])
+print(a[-1])

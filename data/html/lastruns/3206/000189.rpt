@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="189" judge-id="94" status="SE" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>68aab754-ad18-47f9-9ea9-00f0dd5863dd</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="283" real-time="303" max-memory-used="18698240" >
+  <program-stats-str>{ utime=250, stime=33, ptime=283, rtime=303, maxvsz=18698240, maxrss=19451904, nvcsw=1, nivcsw=50 }</program-stats-str>
+      <input size="31">Everyone of us has all we need
+</input>
+      <output size="0"></output>
+      <stderr size="321">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000189&quot;, line 7, in &lt;module&gt;
+    for i in range(len(s)):
+TypeError: object of type 'builtin_function_or_method' has no len()
+</stderr>
+    </test>
+  </tests>
+</testing-report>

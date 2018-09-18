@@ -1,0 +1,13 @@
+drob = list(map(int, input().split()))
+d = drob[1] * drob[3]
+c = (drob[0] * drob[3]) + (drob[1] * drob[2])
+def gcd(f, g):
+    while g - f != 0:
+        while g > f:
+            g = g - f
+        while f > g:
+            f = f - g
+    return f
+first = c/gcd(c, d)
+second = d/gcd(c, d)
+print(int(first), int(second))

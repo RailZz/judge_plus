@@ -1,0 +1,9 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+i=a
+while i<=b:
+    if i%d==c:
+        print(i)
+    i=i+1

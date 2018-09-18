@@ -1,0 +1,9 @@
+def ggwp():
+    a = input()
+    return a
+def chislo(a):
+    if a.isdigit():
+        return 'yes'
+    return 'no'
+a = ggwp()
+print(chislo(a))

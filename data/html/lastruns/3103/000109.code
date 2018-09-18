@@ -1,0 +1,11 @@
+var n, m, i, x: word;
+    a: array[1..100] of word;
+begin
+  read(n, m);
+  for i := 1 to 2 * m do
+  begin
+    read(x);
+    inc(a[x])
+  end;
+  for i := 1 to n do write(a[i], ' ');
+end.

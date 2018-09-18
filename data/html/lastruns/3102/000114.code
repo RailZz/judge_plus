@@ -1,0 +1,23 @@
+def f(length, array):
+    k = 0
+    for i in range(len(array)):
+        k += array[i] // length
+    return k
+
+stripes = []
+data = list(map(int, input().split()))
+N = data[0]
+K = data[1]
+for i in range(N):
+    stripes.append(int(input()))
+l = 0
+r = max(stripes) + 1
+while r - l > 1:
+    m = (r + l) // 2
+    if f(m, stripes) >= K:
+        l = m
+    else:
+        r = m
+print(l)
+    
+    

@@ -1,0 +1,8 @@
+a = int(input())
+b = a % 10
+if b == 1:
+    print(a, 'korova')
+elif b > 1 and b < 4:
+    print(a, 'korovy')
+elif b >= 5 or b == 0:
+    print(a, 'korov')

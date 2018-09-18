@@ -1,0 +1,22 @@
+n = int(input())
+
+a = []
+
+ostatok = 0
+h = n // 3600
+a.append(h % 24)
+ostatok = n - h * 3600
+a.append(':')
+m1 = ostatok // 600
+a.append(m1)
+ostatok -= m1 * 600
+
+m2 = ostatok // 60
+a.append(m2)
+ostatok -= m2 * 60
+a.append(':')
+s1 = ostatok // 10
+a.append(s1)
+s2 = ostatok - s1 * 10
+a.append(s2)
+print(''.join(map(str, a)))

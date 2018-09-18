@@ -1,0 +1,51 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="178" judge-id="10" status="RT" scoring="ACM" run-tests="2" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>634764bd-6c65-4530-a47c-947c275fa6d3</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="85" real-time="126" max-memory-used="47755264"  checker-comment="OK" >
+  <program-stats-str>{ utime=72, stime=13, ptime=85, rtime=126, maxvsz=47755264, maxrss=27037696, nvcsw=2, nivcsw=20 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2654208, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="6">1 1
+2
+</input>
+      <output size="4">2
+0
+</output>
+      <correct size="4">2
+0
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="RT" exit-code="1" time="82" real-time="88" max-memory-used="30339072" >
+  <program-stats-str>{ utime=70, stime=12, ptime=82, rtime=88, maxvsz=30339072, maxrss=27377664, nvcsw=1, nivcsw=14 }</program-stats-str>
+      <input size="26">10 1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</input>
+      <output size="0"></output>
+      <stderr size="194">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000178&quot;, line 11, in &lt;module&gt;
+    b += matrix[i][j]
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

@@ -1,0 +1,90 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="130" judge-id="58" status="SE" scoring="ACM" run-tests="6" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="6" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>b02a6de8-1ca5-4be6-b8d1-bdcf86a19633</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=5, ptime=26, rtime=30, maxvsz=307200, maxrss=6053888, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=307200, maxrss=2289664, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="2">4
+</input>
+      <output size="2">7
+</output>
+      <correct size="2">7
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="26" real-time="32" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=4, ptime=26, rtime=32, maxvsz=307200, maxrss=6066176, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2289664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">5
+</input>
+      <output size="3">13
+</output>
+      <correct size="3">13
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=23, stime=4, ptime=27, rtime=30, maxvsz=307200, maxrss=6250496, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2289664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">1
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=2, ptime=27, rtime=29, maxvsz=307200, maxrss=6303744, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2289664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">2
+</input>
+      <output size="2">2
+</output>
+      <correct size="2">2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="5" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=2, ptime=27, rtime=30, maxvsz=307200, maxrss=6328320, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2289664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">4
+</input>
+      <output size="2">7
+</output>
+      <correct size="2">7
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="6" status="SE" time="290" real-time="312" max-memory-used="32251904" >
+  <program-stats-str>{ utime=262, stime=28, ptime=290, rtime=312, maxvsz=32251904, maxrss=19443712, nvcsw=1, nivcsw=48 }</program-stats-str>
+      <input size="3">10
+</input>
+      <output size="0"></output>
+      <stderr size="281">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000130&quot;, line 8, in &lt;module&gt;
+    print(a[n - 1])
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

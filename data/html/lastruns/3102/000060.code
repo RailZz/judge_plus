@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+long long int func (long long int t,long long int a,long long int b)
+{
+    t=t/a+t/b;
+    return (t);
+}
+
+int main()
+{
+    long long int x, y, n, l=0,r,m;
+    cin >> n;
+    cin >> x >> y;
+    r=n*max(x,y);
+    while (r-l>1)
+    {
+        m=(l+r)/2;
+        if (func(m,x,y)>n)
+        {
+            r=m;
+
+        }
+        else
+        {
+            l=m;
+        }
+    }
+    cout<<r;
+    return 0;
+}

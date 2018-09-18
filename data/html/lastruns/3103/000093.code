@@ -1,0 +1,20 @@
+#include <iostream>
+#include <vector>
+#include <map>
+
+using namespace std;
+int main(){
+    int n, m;
+    cin >> n >> m;
+    vector <pair<int, int>> arr(n);
+    vector<vector<int>> gr(n);
+    for (int i = 0; i < m; i ++){
+        cin >> arr[i].first >> arr[i].second;
+        gr[arr[i].first - 1].push_back(arr[i].second - 1);
+        gr[arr[i].second - 1].push_back(arr[i].first - 1);
+    }
+    for (int i = 0; i < n; ++i) {
+        cout << gr[i].size() << " ";
+    }
+    return 0;
+}

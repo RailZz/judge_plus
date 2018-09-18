@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="30" judge-id="31" status="RT" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>07b79949-79ff-4775-ade4-fe5b86950aed</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="6" time="1" real-time="3" max-memory-used="307200" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=3039232, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="2">4
+</input>
+      <output size="1">7</output>
+      <stderr size="381">*** Error in `./000030': free(): invalid next size (fast): 0x08ddda10 ***
+======= Backtrace: =========
+/lib/libc.so.6(+0x6b09b)[0xafc3809b]
+/lib/libc.so.6(+0x7400a)[0xafc4100a]
+/lib/libc.so.6(cfree+0x50)[0xafc446e0]
+/lib/libstdc++.so.6(_ZdlPv+0x1c)[0xafe74f2c]
+./000030[0x8048780]
+/lib/libc.so.6(__libc_start_main+0xf5)[0xafbe5545]
+./000030[0x80487f9]
+======= Memory map: ========
+</stderr>
+    </test>
+  </tests>
+</testing-report>

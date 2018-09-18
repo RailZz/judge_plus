@@ -1,0 +1,64 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+const int SIZE = 10000;
+long long N, M;
+long long d[SIZE][SIZE];
+
+bool good(long long m1, long long m2) {
+    vector<int> mas1;
+    vector<int> mas2;
+    while (m1 > 0) {
+        mas1.push_back(m1 % 2);
+        m1 /= 2;
+    }
+    while (m2 > 0) {
+        mas2.push_back(m2 % 2);
+        m2 /= 2;
+    }
+    reverse(mas1.begin(), mas1.end());
+    reverse(mas2.begin(), mas2.end());
+    if (mas1.size() > mas2.size()) {
+        mas2.resize(mas1.size());
+    } else {
+        mas1.resize(mas2.size());
+    }
+    reverse(mas1.begin(), mas1.end());
+    reverse(mas2.begin(), mas2.end());
+    for (int i = 1; i < mas2.size(); i++){
+            cout << mas1[i] <<" "<< mas2[i] <<endl;
+        if (mas2[i] == mas2[i - 1]) {
+            if (mas1[i] == mas1[i - 1] && mas2[i] == mas1[i]) {
+                return 0;
+            }
+        }
+    }
+    cout << endl;
+    return 1;
+}
+
+int main() {
+    cin >> N >> M;
+    for (int i = 0; i < (1 << N); i++) {
+        d[0][i] = 1;
+    }
+    for (int i = 1; i < M; i++) {
+         for (int mask1 = 0; mask1 < (1 << N); mask1++) {
+             for (int mask2 = 0; mask2 < (1 << N); mask2++) {
+                 if (good(mask1, mask2)) {
+                    d[i][mask1] += d[i - 1][mask2];
+                 }
+             }
+         }
+    }
+    for (int i = 0; i < M; i++) {
+        for (int j = 0; j < (1 << N); j++) {
+            cout << d[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}

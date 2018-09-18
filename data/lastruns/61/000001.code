@@ -1,0 +1,79 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int n, m;
+vector<vector<int>> d;
+
+int get(int i, int j) {
+    if (i >= 0 && j >= 0 && i < n && j < m) {
+        return d[i][j];
+    }
+    return 0;
+}
+
+int main()
+{
+    cin >> n;
+    int a[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+    }
+    cin >> m;
+    int b[m];
+    for (int i = 0; i < m; i++)
+    {
+        cin >> b[i];
+    }
+    int p[n][m];
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            p[i][j] = -1;
+        }
+    }
+    d.resize(n, vector<int>(m));
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            if (a[i] == b[j])
+            {
+                d[i][j] = get(i - 1, j - 1) + 1;
+                p[i][j] = 1;
+            } else if (get(i - 1, j) > get(i, j - 1)) {
+                d[i][j] = get(i - 1, j);
+                p[i][j] = 2;
+            } else {
+                d[i][j] = get(i, j - 1);
+                p[i][j] = 3;
+            }
+        }
+    }
+    vector<int> ans;
+    int curx = n - 1;
+    int cury = m - 1;
+    while (curx >= 0 && cury >= 0)
+    {
+        if (p[curx][cury] == 1)
+        {
+            ans.push_back(a[curx]);
+            curx -= 1;
+            cury -= 1;
+        } else if (p[curx][cury] == 2){
+            curx -= 1;
+        } else {
+            cury -= 1;
+        }
+    }
+    reverse(ans.begin(), ans.end());
+    for (int i = 0; i < ans.size(); i++)
+    {
+        cout << ans[i] << " ";
+    }
+    return 0;
+}

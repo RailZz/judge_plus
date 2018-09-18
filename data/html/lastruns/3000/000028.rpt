@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="28" judge-id="7" status="SV" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>e5a8884a-a870-4e99-8318-50ea556b8f88</uuid>
+  <compiler_output>000028.cpp:7:  Missing space after ,  [whitespace/comma] [3]
+000028.cpp:24:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:25:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:26:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:29:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:32:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:37:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:41:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:44:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:46:  Missing spaces around &lt;&lt;  [whitespace/operators] [3]
+000028.cpp:49:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:51:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000028.cpp:51:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+Done processing 000028.cpp
+Total errors found: 14
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

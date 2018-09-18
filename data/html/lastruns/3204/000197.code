@@ -1,0 +1,10 @@
+a = [int(i) for i in input().split()]
+k = 1
+n = a[1]
+i = 0
+while i <= len(a)-2:
+    if a[i+1] > n:
+        k+=1
+        n = a[i+1]
+    i+=1
+print(k)

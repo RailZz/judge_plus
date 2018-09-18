@@ -1,0 +1,106 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+long long pow(int a, int b) {
+    if (b == 0) {
+        return 1;
+    }
+    if (b % 2 == 0) {
+        int c = pow(a, b / 2);
+        return c * c;
+    }
+    return pow(a, b - 1) * a;
+}
+
+long long atoi(string str) {
+    long long ans = 0;
+    for (int i = 0; i < str.length(); i++) {
+        ans *= 10;
+        if (str[i] == '0') {
+            ans += 0;
+        }
+        if (str[i] == '1') {
+            ans += 1;
+        }
+        if (str[i] == '2') {
+            ans += 2;
+        }
+        if (str[i] == '3') {
+            ans += 3;
+        }
+        if (str[i] == '4') {
+            ans += 4;
+        }
+        if (str[i] == '5') {
+            ans += 5;
+        }
+        if (str[i] == '6') {
+            ans += 6;
+        }
+        if (str[i] == '7') {
+            ans += 7;
+        }
+        if (str[i] == '8') {
+            ans += 8;
+        }
+        if (str[i] == '9') {
+            ans += 9;
+        }
+    }
+    return ans;
+}
+
+int main() {
+    int n, c;
+    long long k;
+    cin >> n >> c >> k;
+    string str;
+    cin >> str;
+    vector<int> dp(n);
+    string em_pty;
+    if (atoi(em_pty + str[0]) <= c) {
+        dp[0] = 1;
+    }
+    else {
+        dp[0] = 0;
+    }
+    for (int i = 1; i < n; i++) {
+        if (atoi(em_pty + str[i]) <= c) {
+            dp[i]++;
+        }
+        for (int j = i - 1; j >= 0; j--) {
+            if (atoi(em_pty + str[j]) && atoi(em_pty + str.substr(j, i - j + 1)) <= c) {
+                dp[i] += dp[j];
+            } else {
+                if (!atoi(em_pty + str[j])) {
+                    break;
+                }
+            }
+        }
+    }
+    k = pow(10, k);
+    long long ans = 1;
+    for (int i = 0; i < n - 1; i++) {
+        if (dp[i] > dp[i + 1]) {
+            ans = (ans * dp[i]) % k;
+        }
+    }
+    if (dp[n - 1] > 1) {
+        ans = (ans * dp[n - 1]) % k;
+    }
+    if (ans == 1) {
+        for (int i = 0; i < n; i++) {
+            if (dp[i] != 0) {
+                cout << 1;
+                return 0;
+            }
+        }
+        cout << 0;
+        return 0;
+    }
+    cout << ans;
+}

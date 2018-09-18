@@ -1,0 +1,69 @@
+program Numbers;
+
+const
+        SIZE = 50000;
+        
+function myPower (x, y: Int64): Int64;
+
+var
+        n: Int64;
+        i: Integer;
+        
+begin
+        n := 1;
+        
+        for i := 1 to y do
+                n := n * x;
+                
+        myPower := n
+end;
+
+function Lower (a, b: ansistring): Boolean;
+
+var
+        i, len: LongInt;
+        
+begin
+        Lower := Length (a) < Length (b);
+        
+        if Length (a) <> Length (b) then
+                Exit;
+        
+        i := 1;
+        len := Length (a);
+        
+        while (i < len) and (a[i] = b[i]) do
+                Inc (i);
+                
+        Lower := a[i] <= b[i]
+end;
+
+var
+        s: array [0..SIZE] of Int64;
+        seq, sc: ansistring;
+        n, c, k, i, j, m: LongInt;
+        
+begin
+        ReadLn (n, c, k);
+        ReadLn (seq);
+        
+        Str (c, sc);
+        
+        s[0] := 1;
+        m := myPower (10, k);
+        
+        for i := 1 to n do
+        begin
+                j := i - 1;
+                
+                while (j >= 0) and Lower (Copy (seq, j + 1, i - j), sc) do
+                begin
+                        if (seq[j + 1] <> '0') or (j = i - 1) then
+                                s[i] := (s[i] + s[j]) mod m;
+                                
+                        Dec (j)
+                end
+        end;
+        
+        WriteLn (s[n])
+end.

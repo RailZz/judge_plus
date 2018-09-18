@@ -1,0 +1,53 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector< vector<int> > vec;
+vector<int> used;
+int is_good = 1;
+
+void dfs(int v, int p)
+{
+	used[v] = 1;
+	for (auto &i:vec[v])
+	{
+		if (used[i] == 0)
+		{
+			dfs(i, v);
+		} else if (used[i] == 1 && p != i) {
+			is_good = 0;
+		}
+	}
+};
+
+int main()
+{
+	int n, m;
+	cin >> n >> m;
+	vec.resize(n);
+	used.resize(n);
+	int a , b;
+	for (int i = 0; i < m; i++)
+	{
+		cin >> a >> b;
+		a -= 1;
+		b -= 1;
+		vec[a].push_back(b);
+		vec[b].push_back(a);
+	}
+	for (int i = 0; i < n - 1; i++)
+	{
+		if (used[i] == 0)
+		{
+			dfs(0, -1);
+		}
+	}
+	if (!is_good)
+	{
+		cout << "NO";
+	} else {
+	    cout << "YES";
+	}
+	return 0;
+}

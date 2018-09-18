@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="33" judge-id="33" status="RT" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>20f8af58-5482-4b60-8ca7-4dac4e25f2d7</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="14" real-time="16" max-memory-used="307200" >
+  <program-stats-str>{ utime=10, stime=4, ptime=14, rtime=16, maxvsz=307200, maxrss=5103616, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="1">
+</input>
+      <output size="6">puthon</output>
+      <stderr size="175">Traceback (most recent call last):
+  File &quot;./000033&quot;, line 4, in &lt;module&gt;
+    a=input('puthon')
+  File &quot;&lt;string&gt;&quot;, line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+</stderr>
+    </test>
+  </tests>
+</testing-report>

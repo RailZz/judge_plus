@@ -1,0 +1,13 @@
+n = int(input())
+a = list(map(int,(input().split())))
+d = [0] * n
+if n == 1:
+    print(a[0])
+elif n == 2:
+    print(min(a[0], a[1]))
+else:
+    d[0] = a[0]
+    d[1] = min(d[0], 0) + a[1]
+    for i in range(2, n):
+        d[i] = min(d[i - 1], d[i - 2]) + a[i]
+    print(d[n - 1])

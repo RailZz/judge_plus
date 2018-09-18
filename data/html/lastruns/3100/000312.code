@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int k;
+    cin >> k;
+    int mod1 = 0;
+    long long int test = 0;
+    int cntOfNum = 1;
+    for (int i = 1; i < 10; i++)
+    {
+        test = i;
+        mod1 = test % k;
+        do
+        {
+            test = test * 10 + i;
+            cntOfNum++;
+        }while ((test % k != 0) && (test % k != mod1) && ((((test - i) / 10) % k) != (test % k)));
+
+        if ((test % k) == 0)
+        {
+            cout << i << ' ' << cntOfNum;
+            return 0;
+        }
+        cntOfNum = 1;
+    }
+    cout << "Impossible";
+    return 0;
+}

@@ -1,0 +1,108 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="172" judge-id="172" status="WA" scoring="ACM" run-tests="6" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="6" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>987fe1a0-b319-4b04-ab9f-d75178eb49d7</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="27" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=27, maxvsz=307200, maxrss=6213632, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">23
+52
+8
+43
+</input>
+      <output size="2">8
+</output>
+      <correct size="2">8
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="26" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=4, ptime=26, rtime=30, maxvsz=307200, maxrss=6090752, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">18
+90
+3
+63
+</input>
+      <output size="2">3
+</output>
+      <correct size="2">3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=28, maxvsz=307200, maxrss=6213632, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">96
+1
+0
+83
+</input>
+      <output size="2">0
+</output>
+      <correct size="2">0
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="OK" time="27" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=17, stime=10, ptime=27, rtime=31, maxvsz=307200, maxrss=6258688, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">78
+29
+1
+10
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="5" status="OK" time="28" real-time="35" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=20, stime=8, ptime=28, rtime=35, maxvsz=307200, maxrss=6115328, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">49
+31
+14
+32
+</input>
+      <output size="3">14
+</output>
+      <correct size="3">14
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="6" status="WA" time="28" real-time="31" max-memory-used="307200"  checker-comment="Answers do not match: output: 1, correct: 0" >
+  <program-stats-str>{ utime=27, stime=1, ptime=28, rtime=31, maxvsz=307200, maxrss=6295552, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="9">53
+3
+2
+0
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">0
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="44">Answers do not match: output: 1, correct: 0
+</checker>
+    </test>
+  </tests>
+</testing-report>

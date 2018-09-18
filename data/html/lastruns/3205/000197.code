@@ -1,0 +1,12 @@
+N, M = [int(i) for i in input().split()]
+W = int(input())
+a = [[0] * M for i in range(N)]
+for o in range(W):
+    x, y = [int(i) for i in input().split()]
+    a[x - 1][y - 1] = '*'
+    for i in range(N):
+        for j in range(M):
+            if (a[i][j] == a[abs(x-2)][y-1] or a[i][j] == a[x - 1][abs(y-2)] or a[i][j] == a[abs(x % N)][y-1] or a[i][j] == a[x-1][y % M])and a[i][j] != a[x - 1][y - 1]:
+                a[i][j] = int(a[i][j]) + 1  
+for p in range(N):
+    print(*a[p])

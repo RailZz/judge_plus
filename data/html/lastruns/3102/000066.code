@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+long long int Func (long long int A, long long int K, long long int B, long long int M, long long int m)
+{
+	long long int rez=0;
+	rez=rez+ ((m-(m/K))*A) + ((m-(m/M))*B);
+	return rez;
+}
+int main ()
+{
+	long long int A,K,B,M,X,left,right,m;
+	cin >> A >> K >> B >> M >> X;
+	left=0;
+	right=X*max(A,B);
+	while (right - left > 1)
+	{
+		m=(right+left)/2;
+		if (Func(A,K,B,M,m) >= X)
+			right = m;
+		else
+			left = m;
+	}
+	cout << right;
+	
+}

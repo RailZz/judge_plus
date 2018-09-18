@@ -1,0 +1,82 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <algorithm>
+using namespace std;
+
+vector <int> timer;
+vector <vector <int> > gr;
+queue <int> q;
+vector <int> used;
+
+void unterBfs ()
+{
+    if (!q.empty())
+    {
+        int a = q.front();
+        q.pop();
+
+        for (auto u: gr[a])
+        {
+            if (!used[u] && timer[u] > timer[a] + 1)
+            {
+                timer[u] = timer[a] + 1;
+                used[u] = 1;
+                q.push(u);
+            }
+        }
+        unterBfs();
+    }
+}
+
+int main()
+{
+    int n, k;
+    cin >> n >> k;
+    timer.resize(n, 100000);
+    used.resize(n, 0);
+    gr.resize(n);
+    int a, b;
+    for (int i = 0; i < k; i++)
+    {
+        cin >> a;
+        timer[a - 1] = 0;
+    }
+    int m;
+    cin >> m;
+
+    for (int i = 0; i < m; i++)
+    {
+        cin >> a >> b;
+        a--;
+        b--;
+
+        if (find(begin(gr[a]), end(gr[a]), b) == end(gr[a]))
+        {
+            gr[a].push_back(b);
+        }
+
+        if (find(begin(gr[b]), end(gr[b]), a) == end(gr[b]))
+        {
+            gr[b].push_back(a);
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (timer[i] == 0)
+        {
+            q.push(i);
+            used[i] = 1;
+            unterBfs();
+            used.clear();
+            used.resize(n, 0);
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << timer[i] << ' ';
+    }
+    return 0;
+}

@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="21" judge-id="6" status="RT" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>3e707eef-a129-46c8-bac1-b38774ed817a</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="75" real-time="77" max-memory-used="30339072" >
+  <program-stats-str>{ utime=63, stime=12, ptime=75, rtime=77, maxvsz=30339072, maxrss=27430912, nvcsw=1, nivcsw=7 }</program-stats-str>
+      <input size="4">1 0
+</input>
+      <output size="0"></output>
+      <stderr size="180">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000021&quot;, line 20, in &lt;module&gt;
+    stroka += (str(b[i]) + &quot; &quot;)
+KeyError: 1
+</stderr>
+    </test>
+  </tests>
+</testing-report>

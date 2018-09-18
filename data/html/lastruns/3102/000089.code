@@ -1,0 +1,34 @@
+function b(a,x,y,N:uint64):boolean;
+begin
+if ((a div x)+(a div y))>=(N-1) then
+b:=true
+else
+b:=false;
+end;
+function min(x,y:uint64):integer;
+begin
+if x>y then
+min:=y
+else
+min:=x;
+end;
+var
+l,r,N,x,y,a:uint64;
+begin
+readln(N,x,y);
+l:=0;
+r:=0;
+if N>1 then
+begin
+r:=N*x;
+repeat
+a:=(l+r) div 2;
+if b(a,x,y,N) then
+r:=a
+else
+l:=a;
+until (r-l<2);
+end;
+r:=r+min(x,y);
+writeln(r);
+end.

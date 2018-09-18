@@ -1,0 +1,46 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int used[50], isgood=0;
+vector <vector<int>> g(50);
+
+void dfs (int v)
+{
+    used[v]=1;
+    for(auto u:g[v])
+    {
+        if (used[u]==0)
+        {
+            dfs(u);
+        }
+        else
+            if (used [u]==1)
+            isgood=1;
+    }
+    used[v]=2;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    int ar [50][50];
+    for (int i=0; i<n; i++)
+        for (int j=0; j<n; j++)
+        {
+            cin >> ar[i][j];
+            if (ar[i][j]==1)
+            {
+                g[i].push_back(j);
+            }
+        }
+    for(int i=0; i<n-1; i++)
+    {
+        if(used[i]==0)
+            dfs(i);
+    }
+    cout<<isgood;
+    return 0;
+}

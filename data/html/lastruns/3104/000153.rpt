@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="153" judge-id="11" status="SE" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>5a9bf23c-01a0-441f-a9da-ef741f18be94</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="287" real-time="303" max-memory-used="18685952" >
+  <program-stats-str>{ utime=243, stime=44, ptime=287, rtime=303, maxvsz=18685952, maxrss=19456000, nvcsw=1, nivcsw=41 }</program-stats-str>
+      <input size="4">4 4
+</input>
+      <output size="0"></output>
+      <stderr size="307">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000153&quot;, line 8, in &lt;module&gt;
+    lst.append(list(map(int, input().split())))
+EOFError: EOF when reading a line
+</stderr>
+    </test>
+  </tests>
+</testing-report>

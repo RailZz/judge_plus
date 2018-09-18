@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="184" judge-id="24" status="RT" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>43f9c1cb-23f5-4b07-ba0e-5b488130436b</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000184.cpp:11:6: warning: ISO C++ forbids declaration of 'main' with no type [-Wreturn-type]
+ main(){
+      ^
+</compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="11" time="1" real-time="3" max-memory-used="307200" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2899968, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="17">3
+1 2 3
+3 
+2 3 1
+</input>
+      <output size="0"></output>
+      <stderr size="73">*** Error in `./000184': munmap_chunk(): invalid pointer: 0x08c34a20 ***
+</stderr>
+    </test>
+  </tests>
+</testing-report>

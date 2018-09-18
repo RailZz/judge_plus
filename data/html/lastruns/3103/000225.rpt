@@ -1,0 +1,532 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="225" judge-id="35" status="OK" scoring="ACM" run-tests="16" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>5fd52125-12c8-4832-83ff-6edef44510b2</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 1234 to 4321" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=4, maxvsz=315392, maxrss=3743744, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=17264640, maxrss=3112960, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">1234
+4321
+</input>
+      <output size="30">1234
+1233
+1232
+2321
+3321
+4321
+</output>
+      <correct size="30">1234
+2234
+3234
+4323
+4322
+4321
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 1234 to 4321
+</checker>
+    </test>
+    <test num="2" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 4321 to 1234" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=4, maxvsz=315392, maxrss=3670016, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3284992, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">4321
+1234
+</input>
+      <output size="40">4321
+3214
+3213
+3212
+2123
+3123
+4123
+1234
+</output>
+      <correct size="40">4321
+3214
+3213
+3212
+2123
+3123
+4123
+1234
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 4321 to 1234
+</checker>
+    </test>
+    <test num="3" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 1111 to 9999" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=4, maxvsz=315392, maxrss=3502080, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3198976, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">1111
+9999
+</input>
+      <output size="180">1111
+2111
+3111
+4111
+5111
+6111
+7111
+8111
+9111
+1119
+2119
+3119
+4119
+5119
+6119
+7119
+8119
+9119
+1199
+2199
+3199
+4199
+5199
+6199
+7199
+8199
+9199
+1999
+2999
+3999
+4999
+5999
+6999
+7999
+8999
+9999
+</output>
+      <correct size="180">1111
+2111
+3111
+4111
+5111
+6111
+7111
+8111
+9111
+1119
+2119
+3119
+4119
+5119
+6119
+7119
+8119
+9119
+1199
+2199
+3199
+4199
+5199
+6199
+7199
+8199
+9199
+1999
+2999
+3999
+4999
+5999
+6999
+7999
+8999
+9999
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 1111 to 9999
+</checker>
+    </test>
+    <test num="4" status="OK" time="3" real-time="5" max-memory-used="315392"  checker-comment="ok Correct way to get from 9999 to 1111" >
+  <program-stats-str>{ utime=2, stime=1, ptime=3, rtime=5, maxvsz=315392, maxrss=3497984, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=17264640, maxrss=3055616, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">9999
+1111
+</input>
+      <output size="180">9999
+9998
+9997
+9996
+9995
+9994
+9993
+9992
+9991
+9919
+9918
+9917
+9916
+9915
+9914
+9913
+9912
+9911
+9119
+9118
+9117
+9116
+9115
+9114
+9113
+9112
+9111
+1119
+1118
+1117
+1116
+1115
+1114
+1113
+1112
+1111
+</output>
+      <correct size="180">9999
+9998
+9997
+9996
+9995
+9994
+9993
+9992
+9991
+9919
+9918
+9917
+9916
+9915
+9914
+9913
+9912
+9911
+9119
+9118
+9117
+9116
+9115
+9114
+9113
+9112
+9111
+1119
+1118
+1117
+1116
+1115
+1114
+1113
+1112
+1111
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 9999 to 1111
+</checker>
+    </test>
+    <test num="5" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 2345 to 2344" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=4, maxvsz=315392, maxrss=3440640, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3133440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">2345
+2344
+</input>
+      <output size="10">2345
+2344
+</output>
+      <correct size="10">2345
+2344
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 2345 to 2344
+</checker>
+    </test>
+    <test num="6" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 7654 to 8654" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=4, maxvsz=315392, maxrss=3772416, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3215360, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">7654
+8654
+</input>
+      <output size="10">7654
+8654
+</output>
+      <correct size="10">7654
+8654
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 7654 to 8654
+</checker>
+    </test>
+    <test num="7" status="OK" time="4" real-time="5" max-memory-used="315392"  checker-comment="ok Correct way to get from 3723 to 3372" >
+  <program-stats-str>{ utime=0, stime=4, ptime=4, rtime=5, maxvsz=315392, maxrss=3588096, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=17264640, maxrss=3112960, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">3723
+3372
+</input>
+      <output size="10">3723
+3372
+</output>
+      <correct size="10">3723
+3372
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 3723 to 3372
+</checker>
+    </test>
+    <test num="8" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 7382 to 3827" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=4, maxvsz=315392, maxrss=3674112, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3280896, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">7382
+3827
+</input>
+      <output size="10">7382
+3827
+</output>
+      <correct size="10">7382
+3827
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 7382 to 3827
+</checker>
+    </test>
+    <test num="9" status="OK" time="4" real-time="5" max-memory-used="315392"  checker-comment="ok Correct way to get from 4444 to 4544" >
+  <program-stats-str>{ utime=2, stime=2, ptime=4, rtime=5, maxvsz=315392, maxrss=3772416, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=17264640, maxrss=3215360, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">4444
+4544
+</input>
+      <output size="15">4444
+5444
+4544
+</output>
+      <correct size="15">4444
+5444
+4544
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 4444 to 4544
+</checker>
+    </test>
+    <test num="10" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 7777 to 7787" >
+  <program-stats-str>{ utime=3, stime=0, ptime=3, rtime=4, maxvsz=315392, maxrss=3567616, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3305472, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">7777
+7787
+</input>
+      <output size="20">7777
+8777
+7778
+7787
+</output>
+      <correct size="20">7777
+8777
+7778
+7787
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 7777 to 7787
+</checker>
+    </test>
+    <test num="11" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 3333 to 3233" >
+  <program-stats-str>{ utime=3, stime=0, ptime=3, rtime=4, maxvsz=315392, maxrss=3674112, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17264640, maxrss=3125248, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="10">3333
+3233
+</input>
+      <output size="20">3333
+3332
+3323
+3233
+</output>
+      <correct size="20">3333
+3332
+3323
+3233
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 3333 to 3233
+</checker>
+    </test>
+    <test num="12" status="OK" time="4" real-time="5" max-memory-used="315392"  checker-comment="ok Correct way to get from 9999 to 9989" >
+  <program-stats-str>{ utime=4, stime=0, ptime=4, rtime=5, maxvsz=315392, maxrss=3440640, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3063808, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">9999
+9989
+</input>
+      <output size="15">9999
+9998
+9989
+</output>
+      <correct size="15">9999
+9998
+9989
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 9999 to 9989
+</checker>
+    </test>
+    <test num="13" status="OK" time="3" real-time="4" max-memory-used="315392"  checker-comment="ok Correct way to get from 3827 to 8452" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=4, maxvsz=315392, maxrss=3665920, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3162112, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">3827
+8452
+</input>
+      <output size="45">3827
+3826
+3825
+8253
+8252
+2528
+3528
+4528
+8452
+</output>
+      <correct size="45">3827
+4827
+8274
+2748
+2747
+2746
+2745
+7452
+8452
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 3827 to 8452
+</checker>
+    </test>
+    <test num="14" status="OK" time="3" real-time="5" max-memory-used="315392"  checker-comment="ok Correct way to get from 9528 to 7562" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=5, maxvsz=315392, maxrss=3452928, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17264640, maxrss=3305472, nvcsw=1, nivcsw=3 }</checker-stats-str>
+      <input size="10">9528
+7562
+</input>
+      <output size="50">9528
+9527
+5279
+5278
+5277
+5276
+5275
+6275
+2756
+7562
+</output>
+      <correct size="50">9528
+9527
+5279
+6279
+6278
+6277
+6276
+6275
+2756
+7562
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 9528 to 7562
+</checker>
+    </test>
+    <test num="15" status="OK" time="5" real-time="7" max-memory-used="315392"  checker-comment="ok Correct way to get from 2942 to 6478" >
+  <program-stats-str>{ utime=3, stime=2, ptime=5, rtime=7, maxvsz=315392, maxrss=3440640, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=17264640, maxrss=3284992, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="10">2942
+6478
+</input>
+      <output size="65">2942
+3942
+4942
+5942
+6942
+7942
+2794
+3794
+4794
+4479
+4478
+5478
+6478
+</output>
+      <correct size="65">2942
+3942
+4942
+5942
+6942
+7942
+2794
+3794
+4794
+4479
+5479
+6479
+6478
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 2942 to 6478
+</checker>
+    </test>
+    <test num="16" status="OK" time="4" real-time="5" max-memory-used="315392"  checker-comment="ok Correct way to get from 9876 to 1234" >
+  <program-stats-str>{ utime=0, stime=4, ptime=4, rtime=5, maxvsz=315392, maxrss=3493888, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=17264640, maxrss=3059712, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">9876
+1234
+</input>
+      <output size="120">9876
+9875
+9874
+9873
+9872
+9871
+8719
+8718
+8717
+8716
+8715
+8714
+8713
+8712
+7128
+7127
+7126
+7125
+7124
+7123
+1237
+1236
+1235
+1234
+</output>
+      <correct size="120">9876
+9875
+9874
+9873
+9872
+9871
+8719
+8718
+8717
+8716
+8715
+8714
+8713
+8712
+7128
+7127
+7126
+7125
+7124
+7123
+1237
+1236
+1235
+1234
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="40">ok Correct way to get from 9876 to 1234
+</checker>
+    </test>
+  </tests>
+</testing-report>

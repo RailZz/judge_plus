@@ -1,0 +1,6 @@
+a, b = map(int, input().split())
+
+for i in range(2, b):
+    if a * i % b == 0:
+        print(a * i)
+        break

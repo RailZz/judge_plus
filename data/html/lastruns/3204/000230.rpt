@@ -1,0 +1,11 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="230" judge-id="1" status="RU" scoring="ACM" run-tests="0" contest-id="3204" compile-error="yes" >
+  <uuid>907a0cab-33e8-4879-83da-58ef5d6715cc</uuid>
+  <compiler_output>000230.cpp: In function 'int main()':
+000230.cpp:11:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for( int i = 0; i &lt; a.size(); ++i){
+                    ^
+</compiler_output>
+</testing-report>

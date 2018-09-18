@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="121" judge-id="37" status="SE" scoring="ACM" run-tests="1" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>ade73c6c-ebe9-4d82-8ea9-fceb4928e207</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="285" real-time="304" max-memory-used="18685952" >
+  <program-stats-str>{ utime=246, stime=39, ptime=285, rtime=304, maxvsz=18685952, maxrss=19156992, nvcsw=1, nivcsw=39 }</program-stats-str>
+      <input size="14">1 2 2 3 3 3 4
+</input>
+      <output size="0"></output>
+      <stderr size="279">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000121&quot;, line 8
+    if i\\ 2==0:
+               ^
+SyntaxError: unexpected character after line continuation character
+</stderr>
+    </test>
+  </tests>
+</testing-report>

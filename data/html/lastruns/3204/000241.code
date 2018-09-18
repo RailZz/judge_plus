@@ -1,0 +1,6 @@
+a = int(input())
+i = 0
+for i in a:
+    if a > 0:
+        i += 1
+print(i)

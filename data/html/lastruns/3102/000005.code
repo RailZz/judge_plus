@@ -1,0 +1,31 @@
+#include <iostream>
+#include  <cmath>
+using namespace std;
+int main()
+{
+	int N, x, y, t, left, right, m, rez2;
+	cin >> N >> x >> y;
+	left =  0;
+	right = N*x*y;
+	rez2+=min(x,y);
+	while (right - left > 1)
+	{
+		m=(right+left)/2;
+		if (((m+1)/x)+((m+1)/y) <= N)
+			left = m;
+		else
+			right = m;
+	}
+	if (N/x==1||N/y==1)
+	{
+		if (N/x==1)
+		{
+			cout << x;
+			N=3;
+		}
+		if (N/y==1)
+			cout << y;
+	}
+	else
+		cout << rez2+right;	
+}

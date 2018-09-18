@@ -1,0 +1,19 @@
+N,K = map(int,input().split())
+
+ar1 = input().split()[:N]
+ar2 = input().split()[:K]
+
+z = False
+for a in ar2:
+    for i in ar1:
+        if a == i:
+            print("Yes")
+            z = True
+            break
+    if z == False:
+        print("No")
+    z = False
+               
+               
+
+

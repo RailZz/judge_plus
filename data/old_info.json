@@ -1,0 +1,95 @@
+{
+    "A": {
+        "Contests": [
+            {
+                "ContestName": "Параллель A. Декартово дерево раз",
+                "EjudgeID": 8,
+                "Problems": [
+                    {
+                        "EjudgeID": 1,
+                        "InformaticsID": 1363,
+                        "Name": "Построение"
+                    },
+                    {
+                        "EjudgeID": 2,
+                        "InformaticsID": 2782,
+                        "Name": "Следующий"
+                    }
+                ],
+                "StatementLink": "/home/judges/judge_plus/data/A2.htm"
+            },
+            {
+                "ContestName": "Параллель A. Декартово дерево раз",
+                "EjudgeID": 8,
+                "Problems": [
+                    {
+                        "EjudgeID": 1,
+                        "InformaticsID": 1363,
+                        "Name": "Построение"
+                    },
+                    {
+                        "EjudgeID": 2,
+                        "InformaticsID": 2782,
+                        "Name": "Следующий"
+                    }
+                ],
+                "StatementLink": "/home/judges/judge_plus/data/A2.htm"
+            },
+            {
+                "ContestName": "Параллель A. Декартово дерево раз",
+                "EjudgeID": 8,
+                "Problems": [
+                    {
+                        "EjudgeID": 1,
+                        "InformaticsID": 1363,
+                        "Name": "Построение"
+                    },
+                    {
+                        "EjudgeID": 2,
+                        "InformaticsID": 2782,
+                        "Name": "Следующий"
+                    }
+                ],
+                "StatementLink": "A2.htm"
+            },
+            {
+                "ContestName": "Параллель A. Декартово дерево раз",
+                "EjudgeID": 8,
+                "Problems": [
+                    {
+                        "EjudgeID": 1,
+                        "InformaticsID": 1363,
+                        "Name": "Построение"
+                    },
+                    {
+                        "EjudgeID": 2,
+                        "InformaticsID": 2782,
+                        "Name": "Следующий"
+                    }
+                ],
+                "StatementLink": "A2.htm"
+            }
+        ],
+        "HTMLComment": "",
+        "StartContest": "3500",
+        "Users": []
+    },
+    "B": {
+        "Contests": [],
+        "HTMLComment": "",
+        "StartContest": "3600",
+        "Users": []
+    },
+    "C": {
+        "Contests": [],
+        "HTMLComment": "",
+        "StartContest": "3700",
+        "Users": []
+    },
+    "D": {
+        "Contests": [],
+        "HTMLComment": "",
+        "StartContest": "3800",
+        "Users": []
+    }
+}

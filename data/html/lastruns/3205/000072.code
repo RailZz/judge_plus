@@ -1,0 +1,8 @@
+a=[int(i) for i in input().split()]
+max=0
+max_ind=0
+for i in range(len(a)):
+    if a[i] > max:
+        max=a[i]
+        max_ind=i
+print(max,max_ind)

@@ -1,0 +1,64 @@
+#include <iostream>
+#include <set>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+long long inf = 2009000999;
+
+void dejikstra(vector<vector<pair<long long, long long>>> &gr,
+               vector<long long> &d,
+               int n, int start)
+{
+    d.clear();
+    d.resize(n, inf);
+    set<pair<int, int>> s;
+    d[start] = 0;
+    s.insert({0, start});
+    while (!s.empty())
+    {
+        int v = s.begin()->second;
+        s.erase(s.begin());
+        for (auto ul : gr[v])
+        {
+            long long u = ul.first;
+            long long l = ul.second;
+            if (d[v] + l < d[u])
+            {
+                s.erase({d[u], u});
+                d[u] = d[v] + l;
+                s.insert({d[u], u});
+            }
+        }
+    }
+}
+
+int main()
+{
+    vector<vector<pair<long long, long long>>> gr;
+    vector<long long> d;
+    long long num, n, m;
+    cin >> num;
+    for (int i = 0; i < num; ++i)
+    {
+        cin >> n >> m;
+        gr.clear();
+        gr.resize(n + 228);
+        long long a, b, c;
+        for (int j = 0; j < m; ++j)
+        {
+            cin >> a >> b >> c;
+            gr[a].push_back({b, c});
+            gr[b].push_back({a, c});
+        }
+        int start;
+        cin >> start;
+        dejikstra(gr, d, n, start);
+        for (int j = 0; j < d.size(); ++j)
+        {
+            cout << d[j] << " ";
+        }
+        cout << endl;
+    }
+}

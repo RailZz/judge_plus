@@ -1,0 +1,7 @@
+<input size="2">b
+</input>
+      <output size="52">&lt;built-in method upper of str object at 0xaf7b9100&gt;
+</output>
+      <correct size="2">B
+</correct>
+      

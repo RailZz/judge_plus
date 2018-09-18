@@ -1,0 +1,15 @@
+n = int(input()) + 1
+d = [0] * n
+if n == 1:
+    print(1)
+elif n == 2:
+    print(1)
+elif n == 3:
+    print(2)
+else:
+    d[0] = 1
+    d[1] = 1
+    d[2] = 2
+    for i in range(3, n):
+        d[i] = d[i - 1] + d[i - 2] + d[i - 3]
+    print(d[n - 1])

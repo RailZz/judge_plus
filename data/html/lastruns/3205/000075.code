@@ -1,0 +1,12 @@
+n, m = [int(i) for i in input().split()]
+a = 0
+matrix = [[0]*m for i in range(n)]
+for i in range(n):
+    for j in range(m):
+        matrix[i][j] = a
+        a = a + 1
+for i in range(n):
+    if i % 2 == 1:
+        print(*reversed(matrix[i]))
+    else:
+        print(*matrix[i])

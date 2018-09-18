@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+	long long N, K, L = 0, R;
+	unsigned long long sum;
+	long long d;
+	cin >> N >> K;
+	long long ar[N];
+	long long MAX = ar[0];
+	for (int i = 0; i < N; i++)
+	{
+		cin >> ar[i];
+		if (ar[i] < MAX)MAX = ar[i];
+		sum+=ar[i];
+	}
+	R = MAX;
+	while ((R - L) > 1)
+	{
+		d = (R + L) / 2;
+		if ((K * d) > sum) R /= 2;
+		else{
+			L = d;
+		}
+	}
+	cout << R;
+    return 0;
+}

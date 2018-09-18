@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long long int n, num1 = 2, num2;
+    bool f = 0;
+    bool z1;
+    bool z2;
+    cin >> n;
+    while (f == 0 || num1 * 2 <= n)
+    {
+        z1 = 0;
+        z2 = 0;
+        if (num1 != 2)
+        {
+            if (num1 % 2 == 0 && num1 != 2)
+            {
+                z1 = 1;
+                num1++;
+                continue;
+            } else {
+                for (int i = 2; i * i <= num1; i++)
+                {
+                    if (num1 % i == 0)
+                    {
+                        z1 = 1;
+                        break;
+                    }
+                }
+            }
+        }
+        if (z1 == 0 && num1 % 2 == 1 || num1 == 2)
+        {
+        num2 = n - num1;
+            if (num2 != 2)
+            {
+            if (num2 % 2 == 0)
+            {
+                z2 = 1;
+                num1++;
+                continue;
+            } else {
+                for (int i = 2; i * i <= num2; i++)
+                    {
+                        if (num2 % i == 0 && num2 != 2)
+                        {
+                            z2 = 1;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (z2 == 0 && num2 % 2 == 1 && z1 == 0|| num2 == 2 && num1 == 2)
+            {
+                f = 1;
+                break;
+            } else {
+                num1++;
+                continue;
+            }
+        } else {
+            num1++;
+            continue;
+        }
+        num1++;
+    }
+    cout << num1 << " " << num2;
+}

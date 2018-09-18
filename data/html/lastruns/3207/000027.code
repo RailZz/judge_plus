@@ -1,0 +1,7 @@
+def is_digit(c):
+    if ord(c)>= ord('0') and ord(c)<= ord('9'):
+        print('yes')
+    else:
+        print('no')
+a = input()
+is_digit(a)

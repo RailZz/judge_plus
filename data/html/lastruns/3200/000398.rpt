@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="398" judge-id="2" status="SE" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>7696ee06-fb0d-4fad-a6a5-95de89345f93</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="284" real-time="319" max-memory-used="32251904" >
+  <program-stats-str>{ utime=230, stime=54, ptime=284, rtime=319, maxvsz=32251904, maxrss=19251200, nvcsw=1, nivcsw=37 }</program-stats-str>
+      <input size="6">3
+14
+
+</input>
+      <output size="0"></output>
+      <stderr size="299">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000398&quot;, line 6, in &lt;module&gt;
+    c=int(input())
+ValueError: invalid literal for int() with base 10: ''
+</stderr>
+    </test>
+  </tests>
+</testing-report>

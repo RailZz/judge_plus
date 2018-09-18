@@ -1,0 +1,12 @@
+program a1;
+a,i:longint; n:string;
+begin
+n:='prime'
+read(a);
+i:=2;
+while i*i<=a do begin
+if (a mod i=o) then n:='composite';
+i:=i+1;
+end;
+writeln(n);
+end.

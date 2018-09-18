@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="266" judge-id="266" status="SE" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>162b8325-e08f-49ab-b14f-37e2d9994b66</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="287" real-time="311" max-memory-used="18698240" >
+  <program-stats-str>{ utime=238, stime=49, ptime=287, rtime=311, maxvsz=18698240, maxrss=19156992, nvcsw=1, nivcsw=43 }</program-stats-str>
+      <input size="11">23
+52
+8
+43
+</input>
+      <output size="0"></output>
+      <stderr size="253">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000266&quot;, line 8
+    if x &lt;= y and x =&lt; N:
+                    ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

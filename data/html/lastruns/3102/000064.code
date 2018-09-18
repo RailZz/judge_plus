@@ -1,0 +1,70 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector <int> stall;
+/*bool func (int k, int Lmax, int an, int a0)
+{
+    if ((an - a0) / Lmax > k)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}*/
+
+bool func (int l, int k)
+{
+   int cnt = 1;
+   int last = stall[0];
+   for (int i = 0; i < stall.size(); i++)
+   {
+       if (stall[i] - last >= l)
+       {
+           last = stall[i];
+           cnt++;
+       }
+   }
+
+   if (cnt >= k)
+   {
+       return 1;
+   }
+   else
+   {
+       return 0;
+   }
+}
+
+int main()
+{
+    int n, k;
+    cin >> n >> k;
+    stall.resize(n);
+    for (int i = 0; i < n; i++)
+    {
+        cin >> stall[i];
+    }
+
+    int left = 0;
+    int right = 1000000000;
+    int mid = 0;
+
+    while (right - left > 1)
+    {
+        mid = (right + left) / 2;
+        if (func(mid, k))
+        {
+            left = mid;
+        }
+        else
+        {
+            right = mid;
+        }
+    }
+    cout << left;
+    return 0;
+}

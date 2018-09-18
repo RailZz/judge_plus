@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+main(){
+	int n;
+	cin>>n;
+	if(n%10==1 and n!=11)
+		cout<<n<<" korova"<<endl;
+	else{
+		if((n%10==2 or n%10==3 or n%10==4) and n!=12 and n!=13 and n!=14)
+			cout<<n<<" korovy"<<endl;
+		else
+			cout<<n<<" korov"<<endl;
+	}
+}

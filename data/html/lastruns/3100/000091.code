@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+
+{
+    int n, i, schetchik = 0;
+    int* mnoziteli = new int ();
+    cin >> n;
+    i = 2;
+    while (i * i <= n)
+    {
+        while (n % i == 0)
+        {
+            mnoziteli[schetchik] = i;
+            schetchik++;
+            n /= i;
+        }
+        i++;
+    }
+    for (int j = 0; j < schetchik; j++)
+        cout << mnoziteli[j] << " ";
+    if (n != 1)
+        cout << n;
+}

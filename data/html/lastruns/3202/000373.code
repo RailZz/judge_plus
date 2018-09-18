@@ -1,0 +1,9 @@
+x=int(input())
+o=int(input())
+s=int(input())
+if (x>=o) and (x>=s):
+    print(x)
+elif (o>=x) and (o>=s):
+    print(o)
+elif (s>=o) and (s>=x):
+    print(s)

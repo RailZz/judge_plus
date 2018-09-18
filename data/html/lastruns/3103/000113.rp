@@ -1,0 +1,20 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="113" judge-id="44" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>9f50a58e-a910-4b34-bc8a-bff22f187f35</uuid>
+  <compiler_output>000113.cpp: In function 'int main()':
+000113.cpp:58:26: error: request for member 'erase' in 'istok.std::vector&lt;_Tp, _Alloc&gt;::operator[]&lt;int, std::allocator&lt;int&gt; &gt;(((std::vector&lt;int&gt;::size_type)i))', which is of non-class type '__gnu_cxx::__alloc_traits&lt;std::allocator&lt;int&gt; &gt;::value_type {aka int}'
+                 istok[i].erase(istok[i].brgin() + j);
+                          ^
+000113.cpp:58:41: error: request for member 'brgin' in 'istok.std::vector&lt;_Tp, _Alloc&gt;::operator[]&lt;int, std::allocator&lt;int&gt; &gt;(((std::vector&lt;int&gt;::size_type)i))', which is of non-class type '__gnu_cxx::__alloc_traits&lt;std::allocator&lt;int&gt; &gt;::value_type {aka int}'
+                 istok[i].erase(istok[i].brgin() + j);
+                                         ^
+000113.cpp:63:22: error: 'SIZE_I' was not declared in this scope
+  for (int i = 0; i &lt; SIZE_I; i++)
+                      ^
+000113.cpp:68:25: error: 'SIZE_I' was not declared in this scope
+     for (int i = 0; i &lt; SIZE_I; i++)
+                         ^
+</compiler_output>
+</testing-report>

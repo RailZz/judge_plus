@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="23" judge-id="24" status="SV" scoring="ACM" run-tests="0" contest-id="3003" compile-error="yes" >
+  <uuid>d77f1fc9-3f9c-4c17-bfd4-47958382a361</uuid>
+  <compiler_output>000023.cpp:13:  Extra space before ( in function call  [whitespace/parens] [4]
+Done processing 000023.cpp
+Total errors found: 1
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

@@ -1,0 +1,3 @@
+a=input()
+k=a.replace('', '*')
+print(k[1:-1])

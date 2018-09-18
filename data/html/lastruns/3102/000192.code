@@ -1,0 +1,53 @@
+#include <iostream>
+#define ull unsigned long long int
+
+using namespace std;
+
+ull n, a, b, w, h;
+
+bool func (ull n, ull a, ull b, ull w, ull h, ull d)
+{
+    if ((h / (a + 2 * d)) * (w / (b + 2 * d)) > n)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int main()
+{
+    cin >> n >> a >> b >> w >> h;
+    ull left = 0, right = 1000000000000000000, mid = 0;
+    while (right - left > 1)
+    {
+        mid = (left + right) / 2;
+        if (func (n, a, b, w, h, mid))
+        {
+            left = mid;
+        }
+        else
+        {
+            right = mid;
+        }
+    }
+    ull n1 = left;
+
+    left = 0, right = 1000000000000000000;
+    while (right - left > 1)
+    {
+        mid = (left + right) / 2;
+        if (func (n, b, a, w, h, mid))
+        {
+            left = mid;
+        }
+        else
+        {
+            right = mid;
+        }
+    }
+    cout << max(n1, left);
+    return 0;
+}

@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int k;
+    cin >> k;
+    vector<int> summ(k + 1);
+    for (int j = 2; j <= k; ++j) {
+        for (int i = 2; i * i <= j; ++i) {
+            if (j%i == 0) {
+                summ[j] = summ[j] + i + (j / i);
+            }
+        }
+    }
+
+    for (int i = 2; i * i <= k; ++i) {
+        if (summ[summ[i]] == summ[i]) {
+            cout << summ[summ[i]] << " " << summ[i];
+        }
+    }
+
+    return 0;
+}

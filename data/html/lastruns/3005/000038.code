@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+    int n, c, k;
+    cin >> n >> c >> k;
+    string str;
+    cin >> str;
+    vector<int> dp(n);
+    if (atoi(str[0].c_str()) <= c) {
+        dp[0] = 1;
+    }
+    else {
+        dp[0] = 0;
+    }
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j >= 0; j--) {
+            if (atoi(str[j].c_str()) && atoi((str.substr(j, i - j + 1)).c_str())) {
+                dp[i] += dp[j];
+            }
+        }
+    }
+    cout << dp[n - 1];
+}

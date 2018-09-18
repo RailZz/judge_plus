@@ -1,0 +1,8 @@
+n=int(input())
+p=int(input())
+if n>p:
+    print(n)
+    elif p>n:
+    print(p)
+    elif p=n
+    print(n)

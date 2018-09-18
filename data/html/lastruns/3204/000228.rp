@@ -1,0 +1,9 @@
+<input size="18">10 3
+8 10
+2 5
+3 6
+</input>
+      <output size="10">II......II</output>
+      <correct size="11">I.....I...
+</correct>
+      

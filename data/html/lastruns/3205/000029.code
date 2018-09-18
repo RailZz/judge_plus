@@ -1,0 +1,6 @@
+a = list(map(int,input().split()))
+i = 0
+for i in range(1,len(a),2):
+    a.pop(a[i])
+a.sort()
+print(a[0])

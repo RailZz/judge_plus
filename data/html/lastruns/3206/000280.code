@@ -1,0 +1,5 @@
+a = input()
+if a.find('f') == a.rfind('f')!= -1:
+    print (a.find('f'))
+if a.find('f') != a.rfind('f'):
+    print (a.find('f'), a.rfind('f'))

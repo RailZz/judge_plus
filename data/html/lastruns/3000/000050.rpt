@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="50" judge-id="7" status="SV" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>b0d16dd8-51a3-4b82-899d-93d146df24f0</uuid>
+  <compiler_output>000050.cpp:53:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+000050.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+Done processing 000050.cpp
+Total errors found: 2
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

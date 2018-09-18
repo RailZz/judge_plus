@@ -1,0 +1,44 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="357" judge-id="14" status="WA" scoring="ACM" run-tests="2" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>39b715fe-ac5f-40b3-8f2c-1ff5395fcf90</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000357.cpp: In function 'int IsSimple(long int)':
+000357.cpp:6:11: warning: unused variable 'i' [-Wunused-variable]
+     long  i;
+           ^
+000357.cpp: In function 'int main()':
+000357.cpp:19:17: warning: unused variable 'k' [-Wunused-variable]
+     long  n, i, k;
+                 ^
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2908160, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17260544, maxrss=3317760, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">4
+</input>
+      <output size="3">2 2</output>
+      <correct size="4">2 2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="WA" time="1" real-time="2" max-memory-used="307200"  checker-comment="wrong answer Number 4 is not prime" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=307200, maxrss=2752512, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17260544, maxrss=3043328, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">6
+</input>
+      <output size="3">2 4</output>
+      <correct size="4">3 3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="35">wrong answer Number 4 is not prime
+</checker>
+    </test>
+  </tests>
+</testing-report>

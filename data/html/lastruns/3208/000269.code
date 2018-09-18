@@ -1,0 +1,2 @@
+n="Python"
+print(n*100)

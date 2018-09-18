@@ -1,0 +1,32 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="174" judge-id="14" status="RT" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>39256942-01a9-4606-ab44-31490d05a3a8</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000174.cpp:10:6: warning: ISO C++ forbids declaration of 'main' with no type [-Wreturn-type]
+ main(){
+      ^
+</compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="6" time="1" real-time="3" max-memory-used="307200" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=3047424, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="2">4
+</input>
+      <output size="2">60</output>
+      <stderr size="399">*** Error in `./000174': munmap_chunk(): invalid pointer: 0x080a5a30 ***
+======= Backtrace: =========
+/lib/libc.so.6(+0x6b09b)[0xafbd809b]
+/lib/libc.so.6(cfree+0x198)[0xafbe4828]
+/lib/libstdc++.so.6(_ZdlPv+0x1c)[0xafe14f2c]
+/lib/libc.so.6(+0x30a63)[0xafb9da63]
+/lib/libc.so.6(+0x30abf)[0xafb9dabf]
+/lib/libc.so.6(__libc_start_main+0x101)[0xafb85551]
+./000174[0x8048795]
+======= Memory map: ========
+</stderr>
+    </test>
+  </tests>
+</testing-report>

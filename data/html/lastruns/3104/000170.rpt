@@ -1,0 +1,57 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="170" judge-id="10" status="PE" scoring="ACM" run-tests="3" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="3" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>a5dcf40e-49fc-481a-8d7d-4493d8c8d5dd</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2949120, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17264640, maxrss=3063808, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="17">3
+1 2 3
+3 
+2 3 1
+</input>
+      <output size="4">2 3 </output>
+      <correct size="5">2 3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2781184, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3112960, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="17">3
+1 2 3
+3 
+3 2 1
+</input>
+      <output size="2">3 </output>
+      <correct size="3">1 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="3" status="PE" time="1" real-time="1" max-memory-used="311296"  checker-comment="wrong output format Sequence is not found in array a" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=1, maxvsz=311296, maxrss=2854912, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17264640, maxrss=3137536, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="26">3
+1 2 3
+3 
+1001 1002 1003
+</input>
+      <output size="2">0 </output>
+      <correct size="1">
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="53">wrong output format Sequence is not found in array a
+</checker>
+    </test>
+  </tests>
+</testing-report>

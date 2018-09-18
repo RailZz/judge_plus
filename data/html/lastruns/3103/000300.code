@@ -1,0 +1,63 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <cmath>
+
+using namespace std;
+
+vector< vector<char> > field;
+vector< vector<long long> > vec;
+vector< vector<long long> > used;
+vector<int> dx = {0, 1, 0, -1};
+vector<int> dy = {-1, 0, 1, 0};
+
+void dfs(long long x, long long y)
+{
+	used[x][y] = 1;
+    for (int d = 0; d < 3; d++)
+	{
+		long long nx = x + dx[d];
+		long long ny = y + dy[d];
+		long long size_field = field.size();
+		if (0 < nx && nx < size_field && 0 < ny && ny < size_field && field[nx][ny] == '.')
+        {
+            if (used[nx][ny] == 0)
+            {
+                dfs(nx, ny);
+            }
+        }
+	}
+};
+
+int main()
+{
+	long long n;
+    cin >> n;
+    field.resize(n, vector<char>(n, '*'));
+    used.resize(n, vector<long long>(n));
+	for (long long i = 0; i < n; i++)
+    {
+        for (long long j = 0; j < n; j++)
+        {
+            cin >> field[i][j];
+        }
+    }
+    long long x, y;
+    cin >> x >> y;
+    x -= 1;
+    y -= 1;
+    dfs(x, y);
+    long long Count = 0;
+    for (long long i = 0; i < n; i++)
+    {
+        for (long long j = 0; j < n; j++)
+        {
+            if (used[i][j] == 1)
+            {
+                Count++;
+            }
+        }
+    }
+    cout << Count;
+    return 0;
+}

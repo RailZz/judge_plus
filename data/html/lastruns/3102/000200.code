@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+
+bool f(ll n, ll w, ll h, ll a, ll b, ll d) {
+    if (max( ((a / (w+2*d)) * (b / (h+2*d))), ((a / (h+2*d)) * (b / (w+2*d))) ) >= n) return true;
+    else return false;
+}
+
+int main() {
+
+	int n, w, h, a, b, d;
+	cin >> n >> w >> h >> a >> b;
+
+    if (!f(n, w, h, a, b, 1)) {
+        cout << "0";
+        return 0;
+    }
+
+    ll l = 1, r = 1000000000000000009;
+    while (r-l > 1) {
+        ll mid  = (l+r) / 2;
+        if (f(n, w, h, a, b, mid)) l = mid;
+        else r = mid;
+    }
+
+    cout << l;
+
+	return 0;
+}

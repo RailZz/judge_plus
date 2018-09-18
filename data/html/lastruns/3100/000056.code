@@ -1,0 +1,24 @@
+enter = int(input())
+
+
+def mn(n):
+    if n == 1:
+        return [1]
+    if n < 1 or not isinstance(n, int):
+        raise TypeError
+    lst = []
+    ans = str('')
+    i = 2
+    while n != 1:
+        if n % i == 0:
+            n = n // i
+            lst.append(i)
+            continue
+        i+=1
+    for i in range(0, len(lst)):
+        ans += str(lst[i])
+        ans += ' '
+    
+
+ 
+print(mn(enter))

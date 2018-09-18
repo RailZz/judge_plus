@@ -1,0 +1,13 @@
+n = int(input())
+a = []
+k = None
+for i in range(2,n+1):
+    k = 1
+    for i1 in a:
+        if i % i1 == 0:
+            k = 0
+            break
+    if k:
+         a.append(i)
+for i in a:
+    print(i, end = ' ')

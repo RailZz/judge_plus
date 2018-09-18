@@ -1,0 +1,7 @@
+n = input()
+m = n.find('f')
+l = n.rfind('f')
+if m == l and m != -1:
+    print(l)
+if m != l and m != -1:
+    print(m, l)

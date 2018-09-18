@@ -1,0 +1,39 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="294" judge-id="135" status="WA" scoring="ACM" run-tests="1" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>51a507c8-5feb-43c2-96e8-41fef34255fc</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000294.pas
+Linking 000294
+
+
+
+
+/usr/bin/ld: warning: link.res contains output sections; did you forget -T?
+17 lines compiled, 0.0 sec 
+</compiler_output>
+  <tests>
+    <test num="1" status="WA" time="0" real-time="1" max-memory-used="294912"  checker-comment="Line 1 differs: output: ?composite? correct: ?prime?" >
+  <program-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=294912, maxrss=2387968, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">2
+</input>
+      <output size="10">composite
+</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="53">Line 1 differs: output:
+&gt;composite&lt;
+correct:
+&gt;prime&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

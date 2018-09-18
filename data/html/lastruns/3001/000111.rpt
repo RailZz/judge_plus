@@ -1,0 +1,38 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="111" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3001" compile-error="yes" >
+  <uuid>bf2fd004-e0e0-468d-b60b-10a0d757fb15</uuid>
+  <compiler_output>Done processing 000111.cpp
+000111.cpp: In function 'int get_kth(int, int, int, int)':
+000111.cpp:58:16: error: 'll' was not declared in this scope
+         return ll;
+                ^
+000111.cpp: In function 'int main()':
+000111.cpp:84:37: error: 'l' was not declared in this scope
+             if (k + ask(0, 0, n, 0, l) &lt; ans(0, 0, n, 0, r)) {
+                                     ^
+000111.cpp:84:58: error: 'r' was not declared in this scope
+             if (k + ask(0, 0, n, 0, l) &lt; ans(0, 0, n, 0, r)) {
+                                                          ^
+000111.cpp:84:59: error: 'ans' cannot be used as a function
+             if (k + ask(0, 0, n, 0, l) &lt; ans(0, 0, n, 0, r)) {
+                                                           ^
+000111.cpp:86:21: error: 'len' was not declared in this scope
+                 ans[len] = get_kth(0, 0, n, anser) + 1;
+                     ^
+000111.cpp:89:21: error: 'len' was not declared in this scope
+                 ans[len] = -1;
+                     ^
+000111.cpp:94:29: error: 'ask_1' was not declared in this scope
+             change(0, 0, n, ask_1 - 1, ask_2);
+                             ^
+000111.cpp:94:40: error: 'ask_2' was not declared in this scope
+             change(0, 0, n, ask_1 - 1, ask_2);
+                                        ^
+000111.cpp:97:25: error: 'len' was not declared in this scope
+     for (int i = 0; i &lt; len; ++i) {
+                         ^
+
+</compiler_output>
+</testing-report>

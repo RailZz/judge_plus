@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<vector<int> > g;
+vector<int> color;
+bool cycle = false;
+
+void dfs(int start) {
+    color[start] = 1;
+    for (auto u: g[start])
+        if (color[u] == 0) dfs(u);
+        else if (color[u] == 1) cycle = true;
+    color[start] = 2;
+}
+
+int main() {
+    
+    int n;
+	cin >> n;
+	g.resize(n);
+	color.resize(n);
+	
+	for (int i = 0; i<n; ++i) {
+	    for (int j = 0; j<n; ++j) {
+	        int a;
+	        cin >> a;
+	        if (a == 1) g[i].push_back(j);
+	    }
+	}
+	
+	for (int i = 0; i<n; ++i)
+        if (color[i] == 0) dfs(i);
+	
+	if (cycle == true) cout << "1";
+	else cout << "0";
+	
+    return 0;
+}

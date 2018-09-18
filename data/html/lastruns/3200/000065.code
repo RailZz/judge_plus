@@ -1,0 +1,5 @@
+n=int(input())
+m=int(input())
+b=n%m
+print(b**0)
+

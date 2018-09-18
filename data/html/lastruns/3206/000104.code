@@ -1,0 +1,8 @@
+a = input()
+if Length(s)>0 then begin
+   CountWord := 1;
+   for i:=1 to Length(s) do 
+     if s[i]=' ' then Inc(CountWord);
+end
+  else    CountWord := 0;
+print (CountWord);

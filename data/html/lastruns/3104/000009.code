@@ -1,0 +1,54 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    vector <int> d(n + 1, 1000000000);
+    vector <pair <int, int> > p(n + 1);
+    p[1] = make_pair(0, -1);
+    d[1] = 0;
+    for (int i = 0; i <= n; i++)
+    {
+        if (i + 1 <= n)
+        {
+            if (d[i] + 1 < d[i + 1])
+            {
+                d[i + 1] = d[i] + 1;
+                p[i + 1] = make_pair(i, 1);
+            }
+        }
+        if (i * 2 <= n)
+        {
+            if (d[i] + 1 < d[i * 2])
+            {
+                d[i * 2] = d[i] + 1;
+                p[i * 2] = make_pair(i, 2);
+            }
+        }
+        if (i * 3 <= n)
+        {
+           if (d[i] + 1 < d[i * 3])
+            {
+                d[i * 3] = d[i] + 1;
+                p[i * 3] = make_pair(i, 3);
+            }
+        }
+    }
+
+    vector <int> way;
+    for (pair <int, int> i = p[n]; i.first != 0; i = p[i.first])
+    {
+       way.push_back(i.second);
+    }
+
+    for (int i = (int)way.size() - 1; i > -1; i--)
+    {
+        cout << way[i];
+    }
+    return 0;
+}

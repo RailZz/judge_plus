@@ -1,0 +1,16 @@
+ar = list(map(int, input().split()))
+n = ar[0]
+s = ar[1]
+mas = [[int(i) for i in input().split()] for i in range(n)]
+visited = [0] * n
+
+
+def dfs(v):
+    visited[v] = 1
+    for u in mas[v]:
+        if visited[u] == 0:
+            dfs(u)
+
+
+dfs(s)
+print(visited.count(1))

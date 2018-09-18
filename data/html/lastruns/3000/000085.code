@@ -1,0 +1,69 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+
+using namespace std;
+
+long long subhash(long long mod, long long left, long long right, long long* hash, long long* st)
+{
+    long long big = hash[right];
+    long long small = 0;
+    if (left != 0)
+    {
+        small = (hash[left - 1] * st[right - left + 1]) % mod;
+    }
+    return (big - small + mod) % mod;
+}
+
+int search_pos(int concl_len, int len, long long* hash1,
+long long* hash2, long long mod, long long* st)
+{
+    for (long long y = 0; (y + len - 1) <= concl_len - 1; ++y)
+    {
+        //cout << "search pos "  << " beginning " << y << " ending " << y + len - 1 << endl;
+        if (subhash(mod, 0, len - 1, hash2, st)
+        == subhash(mod, y, y + len - 1, hash1, st))
+        {
+            return y;
+            break;
+        }
+    }
+    return -1;
+}
+
+int main()
+{
+    string inp, sear, concl;
+    long long p = 37, mod = 1000000007;
+    cin >> inp >> sear;
+    concl = inp + inp;
+    long long hash1[concl.length()], hash2[sear.length()], st[concl.length()];
+    hash1[0] = concl[0];
+    hash2[0] = sear[0];
+    st[0] = 1;
+    for (long long y = 1; y < concl.length(); ++y)
+    {
+        st[y] = (st[y - 1] * p) % mod;
+    }
+    for (int i = 1; i < concl.length(); ++i)
+    {
+        hash1[i] = (hash1[i - 1] * p + concl[i]) % mod;
+    }
+    for (int i = 1; i < sear.length(); ++i)
+    {
+        hash2[i] = (hash2[i - 1] * p + sear[i]) % mod;
+    }
+    if (inp == sear)
+    {
+        cout << 0;
+    } else {
+        long long JojI = search_pos(concl.length(), sear.length(), hash1, hash2, mod, st);
+        if (JojI != -1)
+        {
+            cout << sear.length() - JojI << endl;
+        } else {
+            cout << JojI;
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="97" judge-id="4" status="CE" scoring="ACM" run-tests="0" contest-id="3207" compile-error="yes" >
+  <uuid>7661de7d-98d9-4104-87b2-942d22cefdca</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000097.pas
+000097.pas(1,7) Fatal: Syntax error, &quot;BEGIN&quot; expected but &quot;identifier IMPORT&quot; found
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

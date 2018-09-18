@@ -1,0 +1,11 @@
+a = int(input())
+b = int(input())
+c = int(input())
+a1 = a*c
+b1 = b*c
+while b1 >= 100:
+    a1 = a1 +1
+    b1 = b1 -100
+
+
+print(a1,b1)

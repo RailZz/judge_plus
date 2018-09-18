@@ -1,0 +1,43 @@
+#include <iostream>
+#include <set>
+#include <algorithm>
+
+using namespace std;
+
+#define ll unsigned long long
+
+set <ll> numprev;
+
+ll sumdel(ll v)
+{
+    ll sum;
+    sum = 1;
+    for (int j = 2; j * j <= v; j++)
+        {
+            if (v % j == 0) {
+                sum += j + v / j;
+            }
+    }
+    return sum;
+}
+
+int main()
+{
+    ll n, m, maxn;
+    cin >> maxn;
+    ll numprev1;
+    ll num1, num2;
+    for(int i = 220; i <= maxn; i++)
+    {
+        
+        num1 = i;
+        num2 = sumdel(num1);
+        if (sumdel(num2) == num1 && num1 != num2 && numprev.find(num1)==numprev.end() && numprev.find(num2) == numprev.end()){
+            cout << num1 << " " << num2 << endl;
+            numprev.insert(num1);
+            numprev.insert(num2);
+        }
+    }
+    
+    return 0;
+}

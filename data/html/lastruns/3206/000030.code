@@ -1,0 +1,12 @@
+n = input()
+n = n.strip()
+n = n.split()
+m = ''
+b = 0
+for i in range(len(n)):
+    if len(n[i]) > b:
+        b = len(n[i])
+        m = n[i]
+        l = i
+print(m)
+print(b)

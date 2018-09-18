@@ -1,0 +1,30 @@
+#include <stdio.h>
+int func(int t, int a, int b, int k, int m){
+       int x = 0;
+       for (int i = 1; i <= t; i += 1){
+          if (i % k != 0 && i % m != 0){
+             x = x + a + b;
+          }else if (i % k != 0 && i % m == 0){
+            x = x + a;
+          }else if (i % k == 0 && i % m != 0){
+            x = x + b;
+          }
+       }
+       return x;
+}
+int main(void){
+    int a, k, b, m, x, l, r, y;
+    scanf("%d %d %d %d %d", &a, &k, &b, &m, &x);
+    l = 1;
+    r = a * x + b * x;
+    while (r - l > 1){
+        y = (r + l) / 2;
+        if (func(y, a, b, k, m) >= x){
+           r = y;
+        }else{
+           l = y;
+        }
+    }
+    printf("%d", r);
+    return 0;
+}

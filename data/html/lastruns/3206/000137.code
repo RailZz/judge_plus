@@ -1,0 +1,11 @@
+a = input()
+b = a[::-1]
+print(a[2])
+print(a[-2])
+print(a[:len(a)- 6])
+print(a[:-2:]) 
+print(a[::2])
+print(a[1::2])
+print(a[::-1])
+print(b[::2])
+print(len(a))

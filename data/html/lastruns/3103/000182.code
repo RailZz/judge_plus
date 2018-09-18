@@ -1,0 +1,38 @@
+N = int(input())
+K = int(input())
+exits = list(map(int, input().split()))
+M = int(input())
+a = []
+for i in range(N):
+    a.append([])
+for i in range(M):
+    x, y = list(map(int, input().split()))
+    a[x - 1].append(y)
+    a[y - 1].append(x)
+
+
+    
+used = []
+for i in range(N):
+    used.append(1)
+mink = N
+def dfs(s, a1, k):
+    global used, mink, exits
+    if k < mink:
+        if s not in exits:
+            used[s - 1] = 0
+            for i in a1[s - 1]:
+                if used[i - 1]:
+                     dfs(i, a1, k + 1)
+        else:
+            mink = k
+
+
+
+
+for i in range(N):
+    dfs(i + 1, a, 0)
+    print(mink, end = ' ')
+    for i in range(N):
+        used[i] = 1
+    mink = N

@@ -1,0 +1,23 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="128" judge-id="28" status="RT" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>37ab42fc-9ba7-4a95-beb1-33f1ec422829</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="14" real-time="28" max-memory-used="307200" >
+  <program-stats-str>{ utime=8, stime=6, ptime=14, rtime=28, maxvsz=307200, maxrss=5132288, nvcsw=1, nivcsw=4 }</program-stats-str>
+      <input size="2">b
+</input>
+      <output size="0"></output>
+      <stderr size="83">  File &quot;./000128&quot;, line 5
+    if .isdigit(a):
+       ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

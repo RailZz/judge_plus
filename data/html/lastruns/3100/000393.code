@@ -1,0 +1,17 @@
+def if_prime(a):
+    b = 0
+    c = int(a ** 0.5)
+    for i in range(2, c + 1):
+        if a % i == 0:
+            b += 1
+    if b == 0:
+        return True
+
+    
+n = int(input())
+for j in range(2, int(n ** 0.5) + 1):
+    while n % j == 0:
+        n = n // j
+        print(j)
+if n != 1:
+    print(n)

@@ -1,0 +1,11 @@
+a = [int(i) for i in input().split()]
+i = 0
+ma = -99999999
+ima = 0
+while i <= len(a) - 1:
+    if a[i] > ma:
+        ma = a[i]
+        ima = i
+    i+=1
+print(ma)
+print(ima)

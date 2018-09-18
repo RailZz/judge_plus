@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	long long n, k, lol;
+	cin >> n >> k;
+	long long helP = log2(n);
+	long long sparse[helP][n];
+	vector<long long> orig;
+	for (long long i = 0; i <= n - 1; ++i)
+	{
+		cin >> lol;
+		orig.push_back(lol);
+		sparse[0][i] = lol;
+	}
+	for (int y = 1; (1 << y) <= n; ++y)
+	{
+		for(int j = 0; j <= n - (1 << y); ++j)
+		{
+			sparse[y][j] = min(sparse[y - 1][j], sparse[y - 1][j + (1 << (y - 1))]);
+		}
+	}
+	for (long long t = 0, t2 = k - 1; t2 < n; ++t, ++t2)
+	{	
+		long long length = t2 - t + 1;
+		long long level = log2(length);	
+		cout << min(sparse[level][t], sparse[level][t2 - (1 << level) + 1]) << " ";
+    }
+	return 0;
+}

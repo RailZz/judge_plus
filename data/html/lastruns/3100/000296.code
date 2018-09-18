@@ -1,0 +1,17 @@
+var
+n,a:uint64;
+b:string;
+begin
+readln(n);
+a:=2;
+b:='prime';
+while (a*a<n) do
+begin
+if (n mod a=0) then
+begin
+b:='composite';
+end;
+a:=a+1;
+end;
+writeln(b);
+end.

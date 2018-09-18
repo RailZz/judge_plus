@@ -1,0 +1,9 @@
+a = [int(i) for i in input().split()]
+a.append(0)
+l = 0
+for i in range(0, len(a) - 1):
+    if a[i] != a[i - 1] and a[i] != a[i + 1]:
+        print(a[i])
+a.remove(0)
+if max(a) == min(a):
+     print(*a)

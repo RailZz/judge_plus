@@ -1,0 +1,10 @@
+a = [int(i) for in input().split()]
+s = 0
+n = 0
+if a[n] > 0
+    s += 1
+    n += 1
+else:
+    n += 1
+
+print(s)

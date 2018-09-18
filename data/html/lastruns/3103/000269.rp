@@ -1,0 +1,42 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="269" judge-id="21" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>48e2d60b-dc00-41be-b473-4479b5cde27c</uuid>
+  <compiler_output>000269.cpp: In function 'void dfs(int, int)':
+000269.cpp:10:10: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     ans[c].push_back(v);
+          ^
+000269.cpp:10:12: error: request for member 'push_back' in '*(ans + ((sizetype)c))', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+     ans[c].push_back(v);
+            ^
+000269.cpp: In function 'int main()':
+000269.cpp:27:13: error: request for member 'push_back' in 'ans', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+         ans.push_back(vector&lt;int&gt; ());
+             ^
+000269.cpp:29:17: error: request for member 'push_back' in 'ans', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+             ans.push_back(vector&lt;int&gt; ());
+                 ^
+000269.cpp:34:17: error: request for member 'size' in 'ans', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+     cout &lt;&lt; ans.size() &lt;&lt; &quot;/n&quot;;
+                 ^
+000269.cpp:35:29: error: request for member 'size' in 'ans', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+     for (int i = 0; i &lt; ans.size(); i++){
+                             ^
+000269.cpp:36:22: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+         cout &lt;&lt; ans[i].size() &lt;&lt; &quot;/n&quot;;
+                      ^
+000269.cpp:36:24: error: request for member 'size' in '*(ans + ((sizetype)i))', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+         cout &lt;&lt; ans[i].size() &lt;&lt; &quot;/n&quot;;
+                        ^
+000269.cpp:37:33: error: request for member 'size' in 'ans', which is of non-class type 'std::vector&lt;std::vector&lt;int&gt; &gt;()'
+         for (int j = 0; j &lt; ans.size(); j++){
+                                 ^
+000269.cpp:38:26: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+             cout &lt;&lt; ans[i][j];
+                          ^
+000269.cpp:38:29: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+             cout &lt;&lt; ans[i][j];
+                             ^
+</compiler_output>
+</testing-report>

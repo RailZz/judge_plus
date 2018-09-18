@@ -1,0 +1,5 @@
+N = int(input())
+degree = 0
+while 2**degree < N:
+    degree += 1
+print(degree)

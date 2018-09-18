@@ -1,0 +1,25 @@
+def vibory(x, y, z, edinz, nullz):
+    if x == 1:
+        edinz += 1
+    else:
+        nullz += 1
+    if y == 1:
+        edinz += 1
+    else:
+        nullz += 1
+    if z == 1:
+        edinz += 1
+    else:
+        nullz += 1
+    if edinz > nullz:
+        print(1)
+    else:
+        print(0)
+    
+        
+
+
+x, y, z = list(map(int, input().split()))
+edinz = 0
+nullz = 0
+vibory(x, y, z, edinz, nullz)

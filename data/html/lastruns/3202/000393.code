@@ -1,0 +1,16 @@
+a = int(input())
+s = int(input())
+d = int(input())
+if a >= d :
+    if a >= s :
+        f = a
+    else:
+        f = s
+elif d >= s:
+    f = d
+else:
+    f = s
+if (f > a + b) or (f > a + s) or (f > c + b) :
+    print('YES')
+else:
+    print('NO')

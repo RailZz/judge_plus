@@ -1,0 +1,53 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="116" judge-id="47" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>87dfc0b2-6a9f-48f6-be71-13761342fc2d</uuid>
+  <compiler_output>000116.cpp: In function 'int main()':
+000116.cpp:44:19: error: conflicting declaration 'std::vector&lt;int&gt; stok'
+  vector&lt;int&gt; stok(n, 0);
+                   ^
+000116.cpp:43:13: note: previous declaration as 'int stok'
+  int istok, stok;
+             ^
+000116.cpp:45:20: error: conflicting declaration 'std::vector&lt;int&gt; istok'
+  vector&lt;int&gt; istok(n, 0);
+                    ^
+000116.cpp:43:6: note: previous declaration as 'int istok'
+  int istok, stok;
+      ^
+000116.cpp:50:18: error: request for member 'push_back' in 'stok', which is of non-class type 'int'
+             stok.push_back(i);
+                  ^
+000116.cpp:51:19: error: request for member 'push_back' in 'istok', which is of non-class type 'int'
+             istok.push_back(i);
+                   ^
+000116.cpp:56:19: error: request for member 'push_back' in 'istok', which is of non-class type 'int'
+             istok.push_back(vec[i][j]);
+                   ^
+000116.cpp:59:24: error: invalid types 'int[int]' for array subscript
+                 istok[i].erase(istok[i].begin() + j);
+                        ^
+000116.cpp:59:39: error: invalid types 'int[int]' for array subscript
+                 istok[i].erase(istok[i].begin() + j);
+                                       ^
+000116.cpp:63:19: error: request for member 'size' in 'istok', which is of non-class type 'int'
+     cout &lt;&lt; istok.size() &lt;&lt; endl; 
+                   ^
+000116.cpp:64:22: error: 'SIZE_I' was not declared in this scope
+  for (int i = 0; i &lt; SIZE_I; i++)
+                      ^
+000116.cpp:66:24: error: invalid types 'int[int]' for array subscript
+         cout &lt;&lt; istok[i] &lt;&lt; endl;   
+                        ^
+000116.cpp:68:18: error: request for member 'size' in 'stok', which is of non-class type 'int'
+     cout &lt;&lt; stok.size() &lt;&lt; endl; 
+                  ^
+000116.cpp:69:25: error: 'SIZE_I' was not declared in this scope
+     for (int i = 0; i &lt; SIZE_I; i++)
+                         ^
+000116.cpp:71:23: error: invalid types 'int[int]' for array subscript
+         cout &lt;&lt; stok[i] &lt;&lt; endl;   
+                       ^
+</compiler_output>
+</testing-report>

@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="162" judge-id="6" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>b4b3b461-8666-4d94-af9a-78cf046363c1</uuid>
+  <compiler_output>000162.cpp: In function 'int main()':
+000162.cpp:79:24: error: 'rtdrytdysystem' was not declared in this scope
+  rtdrytdysystem(&quot;pause&quot;);
+                        ^
+000162.cpp:45:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+</compiler_output>
+</testing-report>

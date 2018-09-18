@@ -1,0 +1,35 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+long long int N, K, a[100000], sparse[10000][10000];
+
+void build() {
+    for (long long int i = 0; i < N; i++) {
+        sparse[0][i] = a[i];
+    }
+    for (long long int i = 1; (1 << i) <= N; i++) {
+        for (long long int j = 0; j <= N - (1 << i); j++) {
+            sparse[i][j] = min(sparse[i - 1][j], sparse[i - 1][j + (1 << (i - 1))]);
+        }
+    }
+}
+
+long long int ans(long long int l, long long int r) {
+    int len = r - l + 1;
+    int level = log2(len);
+    return min(sparse[level][l], sparse[level][r - (1 << level) + 1]);
+}
+
+int main() {
+    cin >> N >> K;
+    for (long long int i = 0; i < N; i++) {
+        cin >> a[i];
+    }
+    build();
+    for (long long int i = 0; i + K <= N; i++){
+        cout << ans(i, i + K - 1) << " ";
+    }
+    return 0;
+}

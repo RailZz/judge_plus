@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="64" judge-id="25" status="SV" scoring="ACM" run-tests="0" contest-id="3001" compile-error="yes" >
+  <uuid>06ef2a38-17ce-4f10-987f-ad5421400c14</uuid>
+  <compiler_output>000064.cpp:41:  Missing space after ,  [whitespace/comma] [3]
+Done processing 000064.cpp
+Total errors found: 1
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

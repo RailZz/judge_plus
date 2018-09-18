@@ -1,0 +1,7 @@
+x = int(input())
+m = 1
+while m < x:
+    if m % x == 0:
+        print(m)
+    else:
+        m += 1

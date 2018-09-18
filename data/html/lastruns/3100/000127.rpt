@@ -1,0 +1,49 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="127" judge-id="92" status="WA" scoring="ACM" run-tests="2" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>5131cebd-146b-4579-b8a2-4f6a76d9b1ee</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000127.cpp: In function 'int nod(int, int)':
+000127.cpp:8:14: warning: suggest parentheses around comparison in operand of '&amp;' [-Wparentheses]
+     while (a != 0 &amp; b != 0)
+              ^
+000127.cpp: In function 'int main()':
+000127.cpp:29:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i &lt; vec.size(); i++)
+                       ^
+000127.cpp:33:16: warning: 'ans' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     cout &lt;&lt; ans;
+                ^
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">1
+9
+</input>
+      <output size="1">9</output>
+      <correct size="2">9
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="WA" time="1" real-time="2" max-memory-used="307200"  checker-comment="Answers do not match: output: 35, correct: 5" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2777088, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">2
+90 35
+</input>
+      <output size="2">35</output>
+      <correct size="2">5
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="45">Answers do not match: output: 35, correct: 5
+</checker>
+    </test>
+  </tests>
+</testing-report>

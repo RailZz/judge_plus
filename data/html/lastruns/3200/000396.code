@@ -1,0 +1,6 @@
+a = ['sdfhbsdf', 'hello', 'world']
+word = 'hella'
+if word in a:
+    print("yes")
+else:
+    print("no")

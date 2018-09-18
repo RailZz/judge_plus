@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+int points, rebr[2000], rebri, trint;
+bool rebrb[2000], tree;
+int search(int element);
+int main()
+{
+	tree = false;
+	std::cin >> rebri >> points;
+	for (int i = 0; i <= points; i++)
+	{
+		std::cin >> rebr[i];
+	}
+	if (rebri == points + 1)
+	{
+	for (int i = 0; i < points; i++)
+	{
+		search(i);
+	}
+	for (int i = 0; i < points; i++)
+	{
+		if (rebrb[i] == true)
+		{
+			trint++;
+		}
+	}
+	
+	if (trint == points)
+	{
+		std::cout << "YES";
+	}
+	else
+	{
+		std::cout << "NO";
+	}
+	}
+	else {
+		std::cout << "NO";
+	}
+}
+int search(int element)
+{
+	for (int i = 0; i < points; i++)
+	{
+		if (rebr[i] == element)
+		{
+			rebrb[i] = true;
+			search(element + 1);
+			break;
+		}
+	}
+	return 0;
+}

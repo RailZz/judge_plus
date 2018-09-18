@@ -1,0 +1,55 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="179" judge-id="11" status="WA" scoring="ACM" run-tests="2" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>8d7e9e75-dda5-4c5a-b313-b40fa462e5c6</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="72" real-time="77" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=66, stime=6, ptime=72, rtime=77, maxvsz=30339072, maxrss=27127808, nvcsw=1, nivcsw=9 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2654208, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="6">1 1
+2
+</input>
+      <output size="4">2
+0
+</output>
+      <correct size="4">2
+0
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="WA" time="72" real-time="76" max-memory-used="30339072"  checker-comment="Answers differ: [2]: output: 0, correct: 9" >
+  <program-stats-str>{ utime=59, stime=13, ptime=72, rtime=76, maxvsz=30339072, maxrss=27189248, nvcsw=1, nivcsw=10 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2654208, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="26">10 1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</input>
+      <output size="5">10
+0
+</output>
+      <correct size="5">10
+9
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="43">Answers differ: [2]: output: 0, correct: 9
+</checker>
+    </test>
+  </tests>
+</testing-report>

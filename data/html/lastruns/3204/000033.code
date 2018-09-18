@@ -1,0 +1,6 @@
+a = list(map(int,input().split()))
+i = []
+i.append(a[len(a)-1])
+a.pop(len(a)-1)
+i += a
+print(*i)

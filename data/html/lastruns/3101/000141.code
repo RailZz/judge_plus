@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int vvod, questions, vv2;
+    std::cin >> vvod;
+    vv2 = vvod;
+    for (int i = 1; i > vvod; i++)
+    {
+        if (questions == 1)
+        {
+            break;
+        }
+        else
+        {
+        if (vv2 % 2 == 0)
+        {
+           vv2 = vv2 / 2;
+        }
+        else
+        {
+           vv2 = vv2 / 2 + 1;
+        }
+        questions++;
+        }
+    }
+    std::cout << questions;
+}

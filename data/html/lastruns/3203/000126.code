@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+S=0
+while a <= b :
+if a % d == c :
+    S=S+1
+    a+=1
+    print (S)

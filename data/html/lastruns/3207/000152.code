@@ -1,0 +1,7 @@
+n=int(input())
+def PhiboNachos(n):
+    if n<=1:
+        return 1
+    else:
+        return PhiboNachos(n-1)+ PhiboNachos(n-2)
+print(PhiboNachos(n))

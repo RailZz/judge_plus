@@ -1,0 +1,7 @@
+m=int(input())
+k=int(input())
+n=int(input())
+d=m+k
+t=d+n
+l=t//2
+print(l)

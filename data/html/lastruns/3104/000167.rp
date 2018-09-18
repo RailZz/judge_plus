@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="167" judge-id="7" status="CE" scoring="ACM" run-tests="0" contest-id="3104" compile-error="yes" >
+  <uuid>62364db3-8d86-4d2a-b7a9-d0d9d7a61fda</uuid>
+  <compiler_output>000167.cpp:7:1: error: stray '\302' in program
+ vector &lt;pair&lt;int, int» p (10000000);
+ ^
+000167.cpp:7:1: error: stray '\273' in program
+000167.cpp:7:36: error: template argument 2 is invalid
+ vector &lt;pair&lt;int, int» p (10000000);
+                                    ^
+000167.cpp:7:9: error: template argument 1 is invalid
+ vector &lt;pair&lt;int, int» p (10000000);
+         ^
+000167.cpp:7:9: error: template argument 2 is invalid
+000167.cpp: In function 'int main()':
+000167.cpp:20:5: error: 'p' was not declared in this scope
+     p[1] = b;
+     ^
+000167.cpp:54:9: error: expected '}' at end of input
+ return 0;
+         ^
+</compiler_output>
+</testing-report>

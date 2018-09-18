@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="173" judge-id="103" status="SE" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>a2034a46-dccb-431c-8a79-9ab3916d9dc4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="281" real-time="298" max-memory-used="18698240" >
+  <program-stats-str>{ utime=257, stime=24, ptime=281, rtime=298, maxvsz=18698240, maxrss=19390464, nvcsw=1, nivcsw=41 }</program-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="0"></output>
+      <stderr size="253">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000173&quot;, line 7
+    if a[i)&gt;a[i-1] and a[i]&gt;a[i+1]:
+          ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

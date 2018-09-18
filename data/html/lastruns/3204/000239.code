@@ -1,0 +1,8 @@
+a = int(input())
+b = input()
+c = b.split('')
+i = 0
+for i in a:
+    if a > 0:
+        i += 1
+print(i)

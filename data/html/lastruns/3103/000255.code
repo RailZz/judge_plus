@@ -1,0 +1,74 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+vector <int> time;
+vector <vector <int> > gr;
+queue <int> q;
+vector <int> used;
+
+void unterBfs ()
+{
+    if (!q.empty())
+    {
+        int a = q.front();
+        q.pop();
+
+        for (auto u: gr[a])
+        {
+            if (!used[u] && time[u] > time[a] + 1)
+            {
+                //if (time[u] < time[a] + 1)
+                //{
+                    time[u] = time[a] + 1;
+                //}
+                used[u] = 1;
+                q.push(u);
+            }
+        }
+        unterBfs();
+    }
+}
+
+int main()
+{
+    int n, k;
+    cin >> n >> k;
+    time.resize(n, 100000);
+    used.resize(n, 0);
+    gr.resize(n);
+    int a, b;
+    for (int i = 0; i < k; i++)
+    {
+        cin >> a;
+        time[a - 1] = 0;
+    }
+    int m;
+    cin >> m;
+
+    for (int i = 0; i < m; i++)
+    {
+        cin >> a >> b;
+        gr[a - 1].push_back(b - 1);
+        gr[b - 1].push_back(a - 1);
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (time[i] == 0)
+        {
+            q.push(i);
+            unterBfs();
+            used.clear();
+            used.resize(n, 0);
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << time[i] << ' ';
+    }
+    return 0;
+}

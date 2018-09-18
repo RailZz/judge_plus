@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="140" judge-id="7" status="CE" scoring="ACM" run-tests="0" contest-id="3102" compile-error="yes" >
+  <uuid>b1aa99f6-a685-431c-8819-eed8e272ec49</uuid>
+  <compiler_output>000140.c: In function 'main':
+000140.c:26:9: warning: implicit declaration of function 'max' [-Wimplicit-function-declaration]
+     r = max(arr, n);
+         ^
+/tmp/ccutBijm.o: In function `main':
+000140.c:(.text.startup+0x6f): undefined reference to `max'
+collect2: error: ld returned 1 exit status
+</compiler_output>
+</testing-report>

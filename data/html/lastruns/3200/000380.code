@@ -1,0 +1,26 @@
+######Mkdir(5) Make new direcrories 
+##import os  
+##path = '/input()'
+##try:
+##    os.makedirs(path)
+##except OSError:
+##    print ("Создать директорию %s не удалось" % path)
+##else:
+##    print ("Успешно создана директория %s " % path)
+
+
+######Ls(1) List of files and folders in directory
+##import os
+##arr = os.listdir(r"input()")
+##print(arr)
+
+
+######Cd(2) Current Directory
+##import os
+##print('Current', 'Directory:', os.getcwd())
+
+######Cd(2.1) Change Current Directory
+##import os
+##path = input()
+##os.chdir(path)
+##print(os.getcwd())

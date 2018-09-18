@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="6" judge-id="7" status="SV" scoring="ACM" run-tests="0" contest-id="3004" compile-error="yes" >
+  <uuid>b1cd80d2-b3a6-4641-9b40-86f12f46c2ae</uuid>
+  <compiler_output>000006.cpp:49:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+000006.cpp:49:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+Done processing 000006.cpp
+Total errors found: 2
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

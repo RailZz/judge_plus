@@ -1,0 +1,90 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="65" judge-id="11" status="CE" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>7cc42430-4755-4323-9279-92cb8d1d79e3</uuid>
+  <compiler_output>Done processing 000065.cpp
+000065.cpp: In function 'int main()':
+000065.cpp:93:32: error: call of overloaded 'to_string(long long int&amp;)' is ambiguous
+         C += to_string(cubes[i]);
+                                ^
+000065.cpp:11:8: note: candidate: std::__cxx11::string to_string(long long int)
+ string to_string(long long int cube) {
+        ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000065.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:5353:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long double)
+   to_string(long double __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5344:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(double)
+   to_string(double __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5335:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(float)
+   to_string(float __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5329:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long long unsigned int)
+   to_string(unsigned long long __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5323:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long long int)
+   to_string(long long __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5317:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long unsigned int)
+   to_string(unsigned long __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5312:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long int)
+   to_string(long __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5306:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(unsigned int)
+   to_string(unsigned __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5301:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(int)
+   to_string(int __val)
+   ^
+000065.cpp:96:33: error: call of overloaded 'to_string(long long int&amp;)' is ambiguous
+         CR += to_string(cubes[i]);
+                                 ^
+000065.cpp:11:8: note: candidate: std::__cxx11::string to_string(long long int)
+ string to_string(long long int cube) {
+        ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000065.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:5353:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long double)
+   to_string(long double __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5344:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(double)
+   to_string(double __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5335:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(float)
+   to_string(float __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5329:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long long unsigned int)
+   to_string(unsigned long long __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5323:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long long int)
+   to_string(long long __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5317:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long unsigned int)
+   to_string(unsigned long __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5312:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(long int)
+   to_string(long __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5306:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(unsigned int)
+   to_string(unsigned __val)
+   ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5301:3: note: candidate: std::__cxx11::string std::__cxx11::to_string(int)
+   to_string(int __val)
+   ^
+
+</compiler_output>
+</testing-report>

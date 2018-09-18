@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="90" judge-id="69" status="WA" scoring="ACM" run-tests="1" contest-id="3101" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>ada0683c-592d-4c55-bfa7-40a199184f3c</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="29" real-time="33" max-memory-used="307200"  checker-comment="Answers do not match: output: 0.4999944467, correct: 0.5235987756" >
+  <program-stats-str>{ utime=24, stime=5, ptime=29, rtime=33, maxvsz=307200, maxrss=6209536, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">0.5
+</input>
+      <output size="19">0.4999944466747016
+</output>
+      <correct size="15">0.523598775598
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="66">Answers do not match: output: 0.4999944467, correct: 0.5235987756
+</checker>
+    </test>
+  </tests>
+</testing-report>

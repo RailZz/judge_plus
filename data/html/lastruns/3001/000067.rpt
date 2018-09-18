@@ -1,0 +1,15 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="67" judge-id="28" status="SV" scoring="ACM" run-tests="0" contest-id="3001" compile-error="yes" >
+  <uuid>e5ca99cc-be2a-40f3-a48e-5f3af9d89e9a</uuid>
+  <compiler_output>000067.cpp:14:  Extra space before ( in function call  [whitespace/parens] [4]
+000067.cpp:15:  Extra space before ( in function call  [whitespace/parens] [4]
+000067.cpp:62:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+Done processing 000067.cpp
+Total errors found: 3
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

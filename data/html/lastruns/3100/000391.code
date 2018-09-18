@@ -1,0 +1,15 @@
+a = [int(x) for x in input().split()]
+x = a[0]
+y = a[1]
+b = a[2]
+c = a[3]
+t = x * c + y * b
+r = y * c
+n = t
+m = r
+while n!=0 and m!=0:
+    if n > m:
+        n = n % m
+    else:
+        m = m % n
+print(int(t / (n + m)), int(r / (n + m)))

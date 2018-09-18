@@ -1,0 +1,24 @@
+N = int(input())
+lst = [0] * N
+lst1 = 0
+used = [0] * N
+n = 0
+for i in range (N):
+    lst[i] = []
+for i in range (N):
+    lst1 = list(map(int, input().split()))
+    for j in range (N):
+        if lst1[j] == 1:
+            lst[i].append(j)
+def DFS (N):
+    global n
+    used[N] = 1
+    for i in (lst[N]):
+        if used[i] == 0:
+            return DFS(i)
+        elif used[i] == 1:
+            n = 1
+    used[N] = 2
+for i in range (N):
+    DFS(i)
+print(n)

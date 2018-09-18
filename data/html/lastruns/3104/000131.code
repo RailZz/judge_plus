@@ -1,0 +1,44 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+vector <int> d(10000000);
+vector <pair<int, int>> p (10000000);
+vector <int> ans;
+int main(void){
+    for (int j = 0; j < 10000000; j++){
+        d[j] = 10000000;
+    }
+    int n;
+    cin >> n;
+    d[1]= 0;
+    pair <int, int> b(1, 0);
+    p[1] = b;
+    for (int i = 1; i <= n; i++){
+            if (d[i + 1]> d[i] + 1){
+                d[i + 1] =  d[i] + 1;
+                pair <int, int> a(i, 1);
+                p[i + 1] = a;
+            }
+            if (d[i * 2]> d[i] + 1){
+                d[i * 2] =  d[i] + 1;
+                pair <int, int> a(i, 2);
+                p[i * 2] = a;
+            }
+            if (d[i * 3]> d[i] + 1){
+                d[i * 3] =  d[i] + 1;
+                pair <int, int> a(i, 3);
+                p[i * 3] = a;
+            }
+    }
+    while (p[n].first != 1){
+        ans.push_back(p[n].second);
+        n = p[n].first;
+    }
+    ans.push_back(p[n].second);
+    for (int i = ans.size() - 1; i >= 0; i --){
+        if (ans[i] != 0){
+           cout << ans[i];
+        }
+    }
+    return 0;
+}

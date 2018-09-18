@@ -1,0 +1,11 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="118" judge-id="97" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>0c064025-9bee-473d-bfe0-8145d03b993e</uuid>
+  <compiler_output>000118.cpp: In function 'int main()':
+000118.cpp:23:52: error: 'qsort' was not declared in this scope
+     qsort (a, sizeof(a)/sizeof(*a), sizeof(*a),comp);
+                                                    ^
+</compiler_output>
+</testing-report>

@@ -1,0 +1,42 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="94" judge-id="94" status="WA" scoring="ACM" run-tests="2" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>1c822087-d67b-4a55-9cb3-b072c826acfe</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="36" real-time="43" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=9, ptime=36, rtime=43, maxvsz=307200, maxrss=6164480, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">10
+15
+2
+</input>
+      <output size="6">20 30
+</output>
+      <correct size="6">20 30
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="WA" time="31" real-time="37" max-memory-used="307200"  checker-comment="Answers differ: [1]: output: 9, correct: 10" >
+  <program-stats-str>{ utime=24, stime=7, ptime=31, rtime=37, maxvsz=307200, maxrss=6356992, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="7">2
+50
+4
+</input>
+      <output size="6">9 100
+</output>
+      <correct size="5">10 0
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="44">Answers differ: [1]: output: 9, correct: 10
+</checker>
+    </test>
+  </tests>
+</testing-report>

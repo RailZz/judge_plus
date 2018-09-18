@@ -1,0 +1,8 @@
+a=int(input())
+b=a-a%10
+c=b//10
+d=c%10
+e=a%10
+f=(a-d-e)//100
+g=d+e+f
+print(g)

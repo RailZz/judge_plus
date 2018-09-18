@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+#define ll long long
+
+int main()
+{
+    long double l, r, m, c;
+    cout.precision(6);
+    cout << fixed;
+
+    cin >> c;
+
+    l = 1.000000000;
+    r = 1000000000000.00000;
+
+    while (r - l > pow(10, -6))
+    {
+        m = (l + r) / 2;
+        if (m * m + sqrt(m) < c) {
+            l = m;
+        } else {
+            r = m;
+        }
+    }
+
+    cout << l << endl;
+    return 0;
+}

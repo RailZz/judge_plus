@@ -1,0 +1,20 @@
+var n,x,y,m,l,r,i:longint;
+begin
+read(n,x,y);
+l:=0;
+r:=1;
+for i:=1 to 20 do r:=r*10;
+while r-l>1 do 
+begin
+m:=(l+r) div 2;
+if (m/x+m/y)>=n-1 then 
+r:=m
+else l:=m;
+end;
+if (x=y) and (n=1) then writeln(x);
+if (x=y) and (n<>1) then writeln(r+x);
+if (x<y) and (n<>1) then writeln(r+x);
+if (x>y) and (n<>1) then writeln(r+y);
+if (x<y) and (n=1) then writeln(x);
+if (x>y) and (n=1) then writeln(y);
+end.

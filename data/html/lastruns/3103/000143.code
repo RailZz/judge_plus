@@ -1,0 +1,25 @@
+def dfs(gr, v, a):
+    a[v] = 1
+    count = 1
+    for i in gr[v]:
+        if a[i] == 0:
+            count += dfs(gr, i, a)
+    return count
+
+
+n, s = map(int, input().split())
+s -= 1
+graph = [[] for i in range(n)]
+matrix = []
+used = [0] * n
+
+for i in range(n):
+    i = list(map(int, input().split()))
+    matrix.append(i)
+    
+for i in range(len(matrix)):
+    for j in range(len(matrix)):
+        if matrix[i][j] == 1:
+            graph[i].append(j)
+
+print(dfs(graph, s, used))

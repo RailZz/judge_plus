@@ -1,0 +1,10 @@
+k = int(input())
+s = 0
+if k=0:
+    print(s)
+if k>0:
+    s = 1
+    print(s)
+else:
+    s = -1
+    print(s)

@@ -1,0 +1,9 @@
+s = 0
+g = 0
+a=[int(i) for i in input().split()]
+for i in range (len(a)):
+    if s < (a[i]):
+        s = (a[i])
+        g = i
+print(g,s)
+    

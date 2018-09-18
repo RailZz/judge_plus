@@ -1,0 +1,10 @@
+from math import sqrt
+number = int(input())
+divider = 2
+for i in range(2, int(sqrt(number)) + 1):
+    if number % i == 0:
+        divider += 1
+if divider == 2:
+    print('prime')
+else:
+    print('composite')

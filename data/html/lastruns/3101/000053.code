@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double const pi = 3.14159;
+
+int main()
+{
+    int n;
+    cin >> n;
+    double l, r;
+    l = -(pi / 2);
+    r = pi / 2;
+    while (l - r > pow(10, -5))
+    {
+        int m = (l + r) / 2;
+        if (sin(m) < a)
+        {
+            l = m;
+        } else {
+            r = m;
+        }
+    }
+    cout << l;
+    
+    return 0;
+}

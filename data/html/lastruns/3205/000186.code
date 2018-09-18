@@ -1,0 +1,9 @@
+a=[int(i)fori i in input().split()]
+n=0
+b=len (a)
+while n<=b-1:
+    if a[n]%2==0:
+        print(a[n])
+        n+=1
+    else:
+        n+=1

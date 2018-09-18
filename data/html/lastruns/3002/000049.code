@@ -1,0 +1,56 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+const int SIZE = 100000;
+long long N;
+long long firstSt[SIZE], lastSt[SIZE], startTime[SIZE], speed[SIZE];
+vector<long long> ts, gr[SIZE], rgr[SIZE];
+vector<bool> used;
+
+long long dfsts(long long v) {
+    used[v] = true;
+    for (long long u : gr[v]) {
+        if (!used[u]) {
+            dfsts(u);
+        }
+    }
+    ts.push_back(v);
+}
+
+int main() {
+    cin >> N;
+    for (int i = 0; i < N; i++) {
+        cin >> firstSt[i] >> lastSt[i] >> startTime[i] >> speed[i];
+    }
+    for (int i = 0; i < N; i++) {
+        for (int j = i + 1; j < N; j++) {
+            if (firstSt[i] <= firstSt[j] && lastSt[i] > firstSt[j]) {
+                if ((startTime[i] + (firstSt[j] - firstSt[i]) * speed[i]) < startTime[j]) {
+                    gr[i].push_back(j);
+                } else {
+                    gr[j].push_back(i);
+                }
+            } else if (firstSt[i] >= firstSt[j] && firstSt[i] < lastSt[j]) {
+                if ((startTime[j] + (firstSt[i] - firstSt[j]) * speed[j]) > startTime[i]) {
+                    gr[i].push_back(j);
+                } else {
+                    gr[j].push_back(i);
+                }
+            }
+        }
+    }
+    used.assign(N, false);
+    for (long long i = 0; i < N; i++) {
+        if (!used[i]){
+            dfsts(i);
+        }
+    }
+    reverse(ts.begin(), ts.end());
+    for (long long i = 0; i < ts.size(); i++) {
+        cout << ts[i] + 1 << " ";
+    }
+    return 0;
+}

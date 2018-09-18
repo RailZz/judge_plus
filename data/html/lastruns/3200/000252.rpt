@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="252" judge-id="253" status="RT" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>f83e6ba9-ad7c-4720-9d7e-5caa125aa83b</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="74" real-time="80" max-memory-used="30339072" >
+  <program-stats-str>{ utime=68, stime=6, ptime=74, rtime=80, maxvsz=30339072, maxrss=27480064, nvcsw=1, nivcsw=10 }</program-stats-str>
+      <input size="6">3
+14
+
+</input>
+      <output size="0"></output>
+      <stderr size="195">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000252&quot;, line 5, in &lt;module&gt;
+    k=int(intput())
+NameError: name 'intput' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

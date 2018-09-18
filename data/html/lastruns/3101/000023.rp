@@ -1,0 +1,17 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="23" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>617596cf-fcb8-4f59-822c-4e86e35d6eea</uuid>
+  <compiler_output>000023.cpp: In function 'int main()':
+000023.cpp:8:16: error: expected primary-expression before ',' token
+     double l = , r = ;
+                ^
+000023.cpp:9:12: error: 'r' was not declared in this scope
+     while (r - l &gt; pow(10, -6)) {
+            ^
+000023.cpp:15:13: error: 'r' was not declared in this scope
+     cout &lt;&lt; r;
+             ^
+</compiler_output>
+</testing-report>

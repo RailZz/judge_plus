@@ -1,0 +1,68 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+long long int p = 47, Mod = 1000000007, hashS[1000000], st[1000000], hashT[1000000];
+string S, T;
+
+int get_hash_S(int l, int r){
+    if (r < l){
+        return 0;
+    }
+    int right = hashS[r];
+    int left = 0;
+    if (l != 0){
+        left = hashS[l - 1];
+    }
+    left = (left * st[r - l + 1]) % Mod;
+    return ((right - left) + Mod) % Mod;
+}
+
+int get_hash_T(int l, int r){
+    if (r < l){
+        return 0;
+    }
+    int right = hashT[r];
+    int left = 0;
+    if (l != 0){
+        left = hashT[l - 1];
+    }
+    left = (left * st[r - l + 1]) % Mod;
+    return ((right - left) + Mod) % Mod;
+}
+
+int ans(){
+    for (int i = 0; i < T.size(); i++){
+        if (get_hash_T(i, T.size() - 1) == hashS[S.size() - i - 1]){
+            if (hashT[i - 1] == get_hash_S(S.size() - i, S.size() - 1)){
+                return i;
+            }
+        }
+    }
+    return -1;
+}
+
+int main(){
+    st[0] = 1;
+    for (int i = 1; i < 1000000; i++){
+        st[i] = (st[i - 1] * p) % Mod;
+    }
+    getline(cin, S);
+    getline(cin, T);
+    hashS[0] = S[0];
+    hashT[0] = T[0];
+    for (int i = 1; i < S.size(); i++){
+        hashS[i] = (hashS[i - 1] * p + S[i]) % Mod;
+    }
+    for (int i = 1; i < T.size(); i++){
+        hashT[i] = (hashT[i - 1] * p + T[i]) % Mod;
+    }
+    if (get_hash_T(0, T.size() - 1) == get_hash_S(0, S.size() - 1)){
+        cout << 0;
+    } else {
+        cout << ans();
+    }
+
+    return 0;
+}

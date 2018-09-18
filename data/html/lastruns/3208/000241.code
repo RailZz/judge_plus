@@ -1,0 +1,11 @@
+n=int(input())
+s=0
+l=0
+for i in range(n-1):
+    k=int(input())
+    while n != 0:
+        s+=n
+        n=n-1
+    l+=k
+    r=s-l-n
+print(r)

@@ -1,0 +1,9 @@
+k = int(input())
+m = int(input())
+n = int(input())
+p = 0
+if n >= k:
+    p = n // k * 2 * m + n % k * 2 * m
+else:
+    p = n * 2 * m
+print(p)

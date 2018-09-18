@@ -1,0 +1,13 @@
+<input size="36">5
+*****
+*...*
+**.**
+*...*
+*****
+2 2
+</input>
+      <output size="2">3
+</output>
+      <correct size="2">7
+</correct>
+      

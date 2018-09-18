@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main (void){
+    int a;
+    scanf ("%d", &a);
+    int c = 0;
+    int i = 2;
+    while (i*i <= a){
+            if (a % i == 0){
+            c +=1;
+         }
+        i = i + 1;
+    }
+
+    if (c == 0 && a > 1){
+        printf ("prime");
+    }
+    else {
+        printf ("composite");
+    }
+    return 0;
+}

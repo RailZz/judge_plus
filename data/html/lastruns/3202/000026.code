@@ -1,0 +1,8 @@
+a = int(input())
+b = int(input())
+m = -10**10
+if a>b:
+    m = a
+else:
+    m = b
+print(m)

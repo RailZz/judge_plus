@@ -1,0 +1,105 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="364" judge-id="213" status="WA" scoring="ACM" run-tests="6" contest-id="3202" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="6" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>be65d104-b06b-45dc-92ff-ec79f09fdad6</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="27" real-time="131" max-memory-used="8998912"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=131, maxvsz=8998912, maxrss=6254592, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="7">3
+4
+5
+
+</input>
+      <output size="4">YES
+</output>
+      <correct size="4">YES
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="24" real-time="127" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=16, stime=8, ptime=24, rtime=127, maxvsz=307200, maxrss=6385664, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=27, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">3
+5
+4
+
+
+</input>
+      <output size="4">YES
+</output>
+      <correct size="4">YES
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="28" real-time="146" max-memory-used="8785920"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=4, ptime=28, rtime=146, maxvsz=8785920, maxrss=6291456, nvcsw=2, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=4 }</checker-stats-str>
+      <input size="6">4
+5
+3
+</input>
+      <output size="4">YES
+</output>
+      <correct size="4">YES
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="OK" time="27" real-time="80" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=9, ptime=27, rtime=80, maxvsz=307200, maxrss=6254592, nvcsw=3, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="6">5
+4
+3
+</input>
+      <output size="4">YES
+</output>
+      <correct size="4">YES
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="5" status="OK" time="26" real-time="81" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=5, ptime=26, rtime=81, maxvsz=307200, maxrss=6221824, nvcsw=2, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="6">5
+3
+4
+</input>
+      <output size="4">YES
+</output>
+      <correct size="4">YES
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="6" status="WA" time="27" real-time="66" max-memory-used="307200"  checker-comment="Answers do not match" >
+  <program-stats-str>{ utime=19, stime=8, ptime=27, rtime=66, maxvsz=307200, maxrss=6217728, nvcsw=1, nivcsw=13 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="6">1
+2
+3
+</input>
+      <output size="4">YES
+</output>
+      <correct size="3">NO
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="21">Answers do not match
+</checker>
+    </test>
+  </tests>
+</testing-report>

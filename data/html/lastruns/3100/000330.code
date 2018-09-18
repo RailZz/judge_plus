@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+bool prov[200000];
+
+int main()
+{
+    long long int n;
+    cin >> n;
+
+    for (long long int p=2; p<n+1; p++)
+    {
+        if (!prov[p])
+        {
+            for (long long int j=p*p; j<=n; j+=p)
+                prov[j]=true;
+            cout<<p<<" ";
+        }
+    }
+    return 0;
+}

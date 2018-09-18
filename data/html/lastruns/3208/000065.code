@@ -1,0 +1,11 @@
+a=int(input())
+b=int(input())
+n=int(input())
+s=a*n
+k=b*n
+if k >= 100:
+    s=s+(k//100)
+    k=k%100
+    print(s,k)
+else:
+    print(s,k)

@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+	int N, K, left, right, m;
+	cin >> N >> K;
+	int* mas1 = new int ();
+	int* mas2 = new int ();
+	for (int i = 1; i <= N; i++)
+		cin >> mas1[i];
+	for (int i = 1; i <= K; i++)
+		cin >> mas2[i];
+	for (int i=1;i<=K;i++)
+	{
+		left = 0;
+		right = N;
+		if (mas2[i]>=left&&mas2[i]<=right)
+		{
+			while (right-left > 1)
+			{
+				m = (right + left) / 2; 
+				if (mas1[m] <= mas2[i])
+					left = m;
+				else
+					right = m;
+			}
+	    }
+	    if (left == mas2[i] && mas2[i]!=0 || right == mas2 [i] && mas2[i]!=0|| mas2[i] == mas1 [1] && mas2[i]!=0|| mas2[i] == mas1 [N] && mas2[i]!=0)
+	    	cout << "YES" << endl;
+	    else
+	    	cout << "NO" << endl;
+	}	
+}

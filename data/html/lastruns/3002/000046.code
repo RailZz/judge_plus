@@ -1,0 +1,166 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <cstdio>
+
+using namespace std;
+
+#define SIZE 100050
+#define LOG 31
+#define ll long long
+
+int n;
+pair<ll, ll> men[SIZE];
+ll way[SIZE];
+pair<ll, ll> down[SIZE];
+map<int, ll> save;
+
+void calcWayDown(int i) {
+    down[i] = { 0, 0 };
+    way[i] = 0;
+    if (men[i].first == 0 || men[i].second == 0) {
+        down[i] = men[i];
+        return;
+    }
+    bool sw = false;
+    if (men[i].first > men[i].second) {
+        sw = true;
+        swap(men[i].first, men[i].second);
+    }
+    down[i] = men[i];
+    bool met = false;
+    for (int p = LOG - 1; p > -1; --p) {
+        if (men[i].first & (1 << p)) {
+            down[i].first -= (1 << p);
+            way[i] += (1 << p);
+            met = true;
+        }
+        if (met) {
+            if (men[i].second & (1 << p)) {
+                down[i].second -= (1 << p);
+                way[i] += (1 << p);
+            }
+        }
+    }
+    if (sw) {
+        swap(men[i].first, men[i].second);
+        swap(down[i].first, down[i].second);
+    }
+}
+
+ll calcOneWay(int pos, int i) {
+    ll ans = 0;
+    if (down[i].first != 0) {
+        ans += way[i];
+        ans += (ll)pos;
+        ans += down[i].first;
+    } else {
+        ans += way[i];
+        ans += abs((ll)pos - down[i].second);
+    }
+    return ans;
+}
+
+ll calcSumWay(int pos) {
+    ll ans = 0;
+    for (int i = 0; i < n; ++i) {
+        ans += calcOneWay(pos, i);
+    }
+    return ans;
+}
+
+ll getFunc(int pos) {
+    if (save.find(pos) != save.end()) {
+        return save[pos];
+    }
+    ll ans = calcSumWay(pos);
+    save[pos] = ans;
+    return ans;
+}
+
+void rev() {
+    for (int i = 0; i < n; ++i) {
+        swap(men[i].first, men[i].second);
+        swap(down[i].first, down[i].second);
+    }
+}
+
+bool lower() {
+    ll cnt_ok = 0;
+    cnt_ok = calcSumWay(1);
+    rev();
+    ll cnt_bad = calcSumWay(1);
+    rev();
+    return cnt_bad < cnt_ok;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cin >> n;
+    ll ans = 0;
+    for (int i = 0; i < n; ++i) {
+        cin >> men[i].first >> men[i].second;
+    }
+    for (int i = 0; i < n; ++i) {
+        calcWayDown(i);
+    }
+    if (lower()) {
+        rev();
+    }
+    while (true) {
+        int l = 0;
+        int r = 0;
+        for (int i = 0; i < n; ++i) {
+            r = max(r, (int)down[i].second);
+        }
+        ++r;
+        save.clear();
+        while (l < r - 2) {
+            int m1 = l + (r - l) / 3;
+            int m2 = m1 + (r - l) / 3;
+            ll f1 = getFunc(m1);
+            ll f2 = getFunc(m2);
+            if (f1 >= f2) {
+                l = m1;
+            } else {
+                r = m2;
+            }
+        }
+        if (getFunc(l + 1) < getFunc(l) || (getFunc(l + 1) == getFunc(l) && (l + 1) % 2 == 0)) {
+            ++l;
+        }
+        if (l == 0) {
+            ans += getFunc(l);
+            break;
+        }
+        bool have = false;
+        for (int i = 0; i < n; ++i) {
+            if (down[i].second != l) {
+                ans += calcOneWay(l, i);
+                men[i] = { 0, 0 };
+            } else {
+                have = true;
+                for (int bit = LOG - 1; bit > -1; --bit) {
+                    if (men[i].second & (1 << bit)) {
+                        men[i].second -= (1 << bit);
+                    } else if (men[i].first & (1 << bit)) {
+                        swap(men[i].first, men[i].second);
+                        break;
+                    }
+                }
+            }
+        }
+        //cerr << l << ' ' << ans << endl;
+        if (l % 2 == 0 && have) {
+            for (int i = 0; i < n; ++i) {
+                calcWayDown(i);
+            }
+        } else {
+            break;
+        }
+    }
+    cout << ans << endl;
+    return 0;
+}

@@ -1,0 +1,6 @@
+for(k = 2; k <= n;k++ ) {
+  if (n % k == 0) {
+    printf("%d\n", k);
+    while(n % k ==0 ) n /= k;
+  }
+}

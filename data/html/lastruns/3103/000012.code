@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+vector <vector <int>> gr;
+int main()
+{
+    int n, s;
+    cin >> n >> s;
+    gr.resize(s);
+    for(int i = 0; i < s; i++)
+    {
+        int a, b;
+        cin >> a >> b;
+        gr[a].push_back(b);
+        gr[b].push_back(a);
+    }
+
+    for(int i = 0; i < s; i++)
+    {
+        if(gr[i].size() != 0) cout << gr[i].size() << " ";
+    }
+    
+    return 0;
+}

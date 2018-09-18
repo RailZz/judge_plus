@@ -1,0 +1,11 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+n = a
+while n <= b:
+    if n % d == c:
+        print(n)
+        n += 1
+    else:
+        n += 1

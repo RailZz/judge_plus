@@ -1,0 +1,16 @@
+z = int(input())
+x = int(input())
+c = int(input())
+if c < x < z:
+    print(z)
+if x < c < z:
+    print(z)
+if x < z < c:
+    print(c)
+if z < x < c:
+    print(c)
+if z < c < x:
+    print(x)
+if c < z < x:
+    print(x)
+  

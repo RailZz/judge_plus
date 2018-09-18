@@ -1,0 +1,39 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="97" judge-id="25" status="CE" scoring="ACM" run-tests="0" contest-id="3104" compile-error="yes" >
+  <uuid>c0cb7b13-d509-400d-8a47-e9c9d51eeebc</uuid>
+  <compiler_output>000097.cpp:5:5: error: expected primary-expression before 'int'
+     int ar[100];
+     ^
+000097.cpp:5:5: error: expected '}' before 'int'
+000097.cpp:5:5: error: expected ',' or ';' before 'int'
+000097.cpp:7:5: error: 'ar' does not name a type
+     ar[0]=1;
+     ^
+000097.cpp:8:5: error: 'ar' does not name a type
+     ar[1]=1;
+     ^
+000097.cpp:9:5: error: 'cin' does not name a type
+     cin&gt;&gt;a;
+     ^
+000097.cpp:10:5: error: expected unqualified-id before 'for'
+     for(int = 2;i&lt;a;i++)
+     ^
+000097.cpp:10:17: error: 'i' does not name a type
+     for(int = 2;i&lt;a;i++)
+                 ^
+000097.cpp:10:21: error: 'i' does not name a type
+     for(int = 2;i&lt;a;i++)
+                     ^
+000097.cpp:14:5: error: 'cout' does not name a type
+     cout&lt;&lt;ar[a-1];
+     ^
+000097.cpp:15:5: error: expected unqualified-id before 'return'
+     return 0;
+     ^
+000097.cpp:16:1: error: expected declaration before '}' token
+ }
+ ^
+</compiler_output>
+</testing-report>

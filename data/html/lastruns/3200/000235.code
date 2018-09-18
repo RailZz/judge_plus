@@ -1,0 +1,6 @@
+n=int(input())
+m=n+1
+print('The next number for the number ',n,' is ',m,'.')
+n=int(input())
+x=n-1
+print('The previous number for the number ',n,' is ',x,'.')

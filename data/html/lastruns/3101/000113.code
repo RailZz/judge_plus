@@ -1,0 +1,22 @@
+def bin_search(number, array):
+    l = 0
+    r = len(array)
+    while r - l > 1:
+        m = (r + l) // 2
+        if array[m] <= number:
+            l = m
+        else:
+            r = m
+    if array[l] == number:
+        return 'YES'
+    else:
+        return 'NO'
+
+
+
+data = list(map(int, input().split()))
+arr1 = list(map(int, input().split()))
+arr2 = list(map(int, input().split()))
+for i in arr2:
+    print(bin_search(i, arr1))
+    

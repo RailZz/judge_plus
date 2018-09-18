@@ -1,0 +1,86 @@
+#include <iostream>
+#include <set>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+long long inf = numeric_limits<long long>::max();
+
+void dejikstra(vector<vector<pair<long long, long long>>> &gr,
+               vector<long long> &d,
+               int n, int start,
+               vector<long long> &parents)
+{
+    d.clear();
+    d.resize(n, inf);
+    set<pair<int, int>> s;
+    parents.resize(n);
+    parents[start] = -1;
+    d[start] = 0;
+    s.insert({0, start});
+    while (!s.empty())
+    {
+        int v = s.begin()->second;
+        s.erase(s.begin());
+        for (auto ul : gr[v])
+        {
+            long long u = ul.first;
+            long long l = ul.second;
+            if (d[v] + l < d[u])
+            {
+                s.erase({d[u], u});
+                d[u] = d[v] + l;
+                parents[u] = v;
+                s.insert({d[u], u});
+            }
+        }
+    }
+}
+
+int main()
+{
+    vector<vector<pair<long long, long long>>> gr;
+    vector<long long> d;
+    vector<long long> parents;
+    long long n, f, w;
+    int start;
+    cin >> n >> start >> f;
+    --start;
+    --f;
+    gr.clear();
+    gr.resize(n + 228);
+    long long a, b, c;
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < n; ++j)
+        {
+            int t;
+            cin >> t;
+            if (t == -1)
+            {
+                continue;
+            }
+            gr[i].push_back({j, t});
+        }
+    }
+    dejikstra(gr, d, n, start, parents);
+
+    vector<long long> ans;
+    int finish = f;
+    if (d[f] == inf)
+    {
+        cout << -1;
+        return 0;
+    }
+    while (finish != -1)
+    {
+        ans.push_back(finish);
+        finish = parents[finish];
+    }
+    reverse(ans.begin(), ans.end());
+    for (auto h : ans)
+    {
+        cout << h + 1 << " ";
+    }
+}

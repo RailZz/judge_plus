@@ -1,0 +1,13 @@
+N, M = list(map(int, input().split()))
+a = []
+a1 = None
+for i in range(N):
+    a.append([])
+for i in range(M):
+    x,y = list(map(int, input().split()))
+    a[x - 1].append(y)
+    a[y - 1].append(x)
+s = 0
+for i in a:
+    print(len(i), end=' ')    
+    

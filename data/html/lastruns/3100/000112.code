@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    vector<int> vec;
+    int i = 2;
+    while (i * i <= n)
+    {
+        while (n % i == 0)
+        {
+            vec.push_back(i);
+            n /= i;
+            i++;
+        }
+    }
+    if (n != 1)
+    {
+        vec.push_back(i);
+    }
+    for (int j = 0; j < vec.size(); j++)
+    {
+        cout << vec[j] << " ";
+    }
+    return 0;
+}

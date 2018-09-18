@@ -1,0 +1,123 @@
+program MaxNumber;
+
+const
+        SIZE = 100000;
+        INF = 100001;
+        
+type
+        LongInt = Int64;
+        TArr = array [-1..SIZE] of LongInt;
+        TTree = array [0..4 * SIZE] of LongInt;
+        
+procedure Change (var t: TTree; var a: TArr; v, l, r, pos, val: LongInt);
+
+var
+        m: LongInt;
+        
+begin
+        if l = r - 1 then
+        begin
+                a[l] := val;
+                Exit
+        end;
+        
+        m := l + (r - l) div 2;
+        
+        if pos < m then
+                Change (t, a, 2 * v + 1, l, m, pos, val)
+        else
+                Change (t, a, 2 * v + 2, m, r, pos, val);
+                
+        if a[t[2 * v + 1]] > a[t[2 * v + 2]] then
+                t[v] := t[2 * v + 1]
+        else
+                t[v] := t[2 * v + 2]
+end;
+
+function Ask (const t: TTree; const a: TArr; v, l, r, askl, askr: LongInt): LongInt;
+
+var
+        m: LongInt;
+        
+begin
+        if (askl >= r) or (askr <= l) then
+                Ask := -1
+        else if (askl <= l) and (askr >= r) then
+                Ask := t[v]
+        else
+        begin
+                m := l + (r - l) div 2;
+                
+                if a[Ask (t, a, 2 * v + 1, l, m, askl, askr)] > a[Ask (t, a, 2 * v + 2, m, r, askl, askr)] then
+                        Ask := Ask (t, a, 2 * v + 1, l, m, askl, askr)
+                else
+                        Ask := Ask (t, a, 2 * v + 2, m, r, askl, askr)
+        end
+end;
+
+procedure Build (var t: TTree; const a: TArr; v, l, r: LongInt);
+
+var
+        m: LongInt;
+        
+begin
+        if l = r - 1 then
+        begin
+                t[v] := l;
+                Exit
+        end;
+        
+        m := l + (r - l) div 2;
+        
+        Build (t, a, 2 * v + 1, l, m);
+        Build (t, a, 2 * v + 2, m, r);
+        
+        if a[t[2 * v + 1]] > a[t[2 * v + 2]] then
+                t[v] := t[2 * v + 1]
+        else
+                t[v] := t[2 * v + 2]
+end;
+        
+var
+        a: TArr;
+        t: TTree;
+        s: string;
+        n, m, i, l, r, x, y, err: LongInt;
+        
+begin
+        ReadLn (n);
+        
+        for i := 0 to n - 1 do
+                Read (a[i]);
+                
+        a[-1] := -INF;
+                
+        Build (t, a, 0, 0, n);
+        
+        ReadLn (m);
+        
+        for i := 1 to m do
+        begin
+                ReadLn (s);
+                
+                if s[1] = 'u' then
+                begin
+                        Delete (s, 1, 2);
+                        Val (Copy (s, 1, Pos (' ', s)), x, err);
+                        Delete (s, 1, Pos (' ', s));
+                        Val (s, y, err);
+                        
+                        Change (t, a, 0, 0, n, x - 1, y)
+                end
+                else
+                begin
+                        Delete (s, 1, 2);
+                        Val (Copy (s, 1, Pos (' ', s)), l, err);
+                        Delete (s, 1, Pos (' ', s));
+
+                        Val (s, r, err);
+                        
+                        Write (Ask (t, a, 0, 0, n, l - 1, r) + 1, ' ')
+                end
+        end                 
+end.

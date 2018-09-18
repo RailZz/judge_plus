@@ -1,0 +1,8 @@
+def get_fnum(i):
+    if i <= 1:
+        return 1
+    else:
+        a = get_fnum(i - 1)
+        b = get_fnum(i - 2)
+        return a + b
+print(get_fnum(int(input())))

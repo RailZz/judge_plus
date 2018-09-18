@@ -1,0 +1,58 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+
+int main() {
+
+	ll k, m, n, u, v;
+	cin >> n >> k;
+	vector<int> finish(k);
+	for (int i = 0; i<k; ++i) {
+	    cin >> u;
+	    --u;
+	    finish[i] = u;
+	}
+	cin >> m;
+	vector<vector<int> > g(n);
+	for (int i = 0; i<m; ++i) {
+	    cin >> u >> v;
+	    --u;
+	    --v;
+	    g[u].push_back(v);
+	    g[v].push_back(u);
+	}
+
+	queue<ll> q;
+	vector<ll> dist(n);
+	vector<ll> prev(n);
+	vector<bool> used(n);
+	for (int i = 0; i<k; ++i) {
+	    q.push (finish[i]);
+	    used[finish[i]] = true;
+	    prev[finish[i]] = -1;
+	}
+
+	while (!q.empty()) {
+		ll v = q.front();
+		q.pop();
+		for (int i = 0; i<g[v].size(); ++i) {
+			ll to = g[v][i];
+			if (!used[to]) {
+				used[to] = true;
+				q.push(to);
+				dist[to] = dist[v] + 1;
+				prev[to] = v;
+			}
+		}
+	}
+
+	vector<vector<ll> > path(n);
+	for (int i = 0; i<n; ++i) {
+    	for (int j = i; j != -1; j = prev[j])
+    		path[i].push_back(j);
+    	cout << path[i].size()-1 << " ";
+	}
+
+	return 0;
+}

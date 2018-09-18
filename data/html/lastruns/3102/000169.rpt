@@ -1,0 +1,16 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="169" judge-id="10" status="RU" scoring="ACM" run-tests="0" contest-id="3102" compile-error="yes" >
+  <uuid>be09254d-1686-4e36-ab62-e20d5cd1aff9</uuid>
+  <compiler_output>000169.c:6:11: warning: return type of 'main' is not 'int' [-Wmain]
+ long long main(void){
+           ^
+000169.c: In function 'main':
+000169.c:10:9: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
+     r = pow (10, 18);
+         ^
+000169.c:10:9: warning: incompatible implicit declaration of built-in function 'pow'
+000169.c:10:9: note: include '&lt;math.h&gt;' or provide a declaration of 'pow'
+</compiler_output>
+</testing-report>

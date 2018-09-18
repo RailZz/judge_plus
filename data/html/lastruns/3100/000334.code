@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long int n,k,pr,nok;
+    cin >> n >> k;
+    pr=n*k;
+    while (n!=0 & k!=0)
+    {
+        if (k>n)
+        {
+            swap(n,k);
+        }
+        n=n%k;
+    }
+    nok=pr/(k+n);
+    cout << nok;
+    return 0;
+}

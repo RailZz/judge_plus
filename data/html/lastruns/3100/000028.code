@@ -1,0 +1,14 @@
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+
+data = list(map(int, input().split()))
+a, b, c, d = data[0], data[1], data[2], data[3]
+numerator = a * d + c * b
+denominator = b * d
+ans1 = numerator // gcd(numerator, denominator)
+ans2 = denominator // gcd(numerator, denominator)
+print(ans1, ans2)
+

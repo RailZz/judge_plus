@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int gcd(long long a, long long b) {
+    while (b > 0) {
+        a %= b;
+        swap(a, b);
+    }
+    return a;
+}
+
+int main() {
+    long long n, k;
+    cin >> n >> k;
+    long long nok = n * k / gcd(n, k);
+    cout << nok;
+
+    return 0;
+}

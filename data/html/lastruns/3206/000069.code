@@ -1,0 +1,3 @@
+a = input()
+a = "*".join(a)
+print(a)

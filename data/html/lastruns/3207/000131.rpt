@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="131" judge-id="31" status="SE" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>1829110d-8304-4962-a684-ad6afeadf1fb</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="286" real-time="398" max-memory-used="18698240" >
+  <program-stats-str>{ utime=232, stime=54, ptime=286, rtime=398, maxvsz=18698240, maxrss=19263488, nvcsw=2, nivcsw=42 }</program-stats-str>
+      <input size="2">b
+</input>
+      <output size="0"></output>
+      <stderr size="276">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000131&quot;, line 4, in &lt;module&gt;
+    fjghjg
+NameError: name 'fjghjg' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

@@ -1,0 +1,15 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="43" judge-id="3" status="SV" scoring="ACM" run-tests="0" contest-id="3005" compile-error="yes" >
+  <uuid>8ccced2e-e6ec-4d52-9bdb-a7680d7897fe</uuid>
+  <compiler_output>000043.cpp:75:  Tab found; better to use spaces  [whitespace/tab] [1]
+000043.cpp:78:  Tab found; better to use spaces  [whitespace/tab] [1]
+000043.cpp:86:  Tab found; better to use spaces  [whitespace/tab] [1]
+Done processing 000043.cpp
+Total errors found: 3
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

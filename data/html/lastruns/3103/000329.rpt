@@ -1,0 +1,44 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="329" judge-id="33" status="RT" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>a21bbf02-5f75-43cb-a85a-ed3ac2e440ef</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000329.cpp:15:6: warning: ISO C++ forbids declaration of 'main' with no type [-Wreturn-type]
+ main(){
+      ^
+000329.cpp: In function 'int main()':
+000329.cpp:34:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+ for(int i; i&lt;used.size() - 1; i++){//персчёт компонент связности
+             ^
+000329.cpp:43:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int j = 0;j&lt;neighbors[i].size();j++){
+                    ^
+000329.cpp: In function 'int dfs(int)':
+000329.cpp:55:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+ for(int i = 0; i &lt; neighbors[v].size()-1; i++){
+                  ^
+000329.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+000329.cpp: In function 'int main()':
+000329.cpp:34:13: warning: 'i' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ for(int i; i&lt;used.size() - 1; i++){//персчёт компонент связности
+             ^
+</compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="11" time="252" real-time="264" max-memory-used="216301568" >
+  <program-stats-str>{ utime=86, stime=166, ptime=252, rtime=264, maxvsz=216301568, maxrss=263307264, nvcsw=1, nivcsw=19 }</program-stats-str>
+      <input size="20">6 4
+3 1
+1 2
+5 4
+2 3
+</input>
+      <output size="0"></output>
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

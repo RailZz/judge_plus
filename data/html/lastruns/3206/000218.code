@@ -1,0 +1,11 @@
+a = input()
+m, n = 0, 0
+for i in range(len(a)):
+    if a[i].isalpha() == 1 and (a[i].islower() == 1 or a[i].isupper() == 1) and len(a) >= 8:
+        m = 1
+    elif a[i].isdigit() == 1 and len(a) >= 8:
+        n = 1
+if m == 1 and n == 1:
+    print('YES')
+else:
+    print('NO')

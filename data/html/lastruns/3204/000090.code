@@ -1,0 +1,9 @@
+a = []  
+b = int(input())
+s=0
+for i in range(b):  
+    c = int(input())  
+    a.append(c)
+    if c>0:
+        s+=1
+print(s)

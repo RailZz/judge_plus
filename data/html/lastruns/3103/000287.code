@@ -1,0 +1,45 @@
+from collections import deque
+
+def bfs(gr, a, s):
+    b = [-1] * a
+    deq = deque()
+    d = [10 ** 9] * a
+    d[s] = 0
+    deq.append(s)
+    while len(deq) > 0:
+        v = deq.popleft()
+        for i in graph[v]:
+            if d[i] > d[v] + 1:
+                d[i] = d[v] + 1
+                deq.append(i)
+                b[i] = v
+    return b
+
+n = int(input())
+matrix = []
+for i in range(n):
+    i = list(map(int, input().split()))
+    matrix.append(i)
+start, finish = map(int, input().split())
+start -= 1
+finish -= 1
+
+graph = [[] for i in range(n)]
+for i in range(len(matrix)):
+    for j in range(len(matrix)):
+        if matrix[i][j] == 1:
+            graph[i].append(j)
+
+ans = []
+ancestor = bfs(graph, n, start)
+while finish != -1:
+    ans.append(finish)
+    finish = ancestor[finish]
+ans.reverse()
+if start == finish:
+    print(0)
+if len(ans) == 0:
+    print(-1)
+else:
+    print(len(ans) - 1)
+    print(*ans, sep=' ')

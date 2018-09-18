@@ -1,0 +1,13 @@
+def gcd(n, m):
+    while n != 0 and m != 0:
+        if n > m:
+            n + n % m
+        else:
+            m = m % n
+    return n + m
+
+a = int(input())
+b = [int(x) for x in input().split()]
+for i in range(a - 1):
+    b[i + 1] = gcd(b[i], b[i + 1])
+print(b[-1])

@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="163" judge-id="163" status="WA" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>fbb10841-ad5a-4670-be7c-67efe0f9c3ae</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="73" real-time="80" max-memory-used="30339072"  checker-comment="Answers do not match: output: 4324, correct: 8" >
+  <program-stats-str>{ utime=42, stime=31, ptime=73, rtime=80, maxvsz=30339072, maxrss=27082752, nvcsw=1, nivcsw=10 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">23
+52
+8
+43
+</input>
+      <output size="5">4324
+</output>
+      <correct size="2">8
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="47">Answers do not match: output: 4324, correct: 8
+</checker>
+    </test>
+  </tests>
+</testing-report>

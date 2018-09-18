@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="230" judge-id="230" status="SE" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>9bb42e3c-32a6-4cd4-bcfc-7d34f11d4c1c</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="286" real-time="317" max-memory-used="32264192" >
+  <program-stats-str>{ utime=227, stime=59, ptime=286, rtime=317, maxvsz=32264192, maxrss=19505152, nvcsw=1, nivcsw=50 }</program-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="0"></output>
+      <stderr size="231">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000230&quot;, line 8
+    .replace(i,i+1)
+    ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

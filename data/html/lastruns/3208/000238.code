@@ -1,0 +1,10 @@
+n = int(input())
+m = int(input())
+x = int(input())
+y = int(input())
+d = n - x
+f = m - y
+if f >= d:
+    print(x)
+else:
+    print(y

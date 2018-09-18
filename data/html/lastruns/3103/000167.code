@@ -1,0 +1,38 @@
+summ = 0
+G = []
+estuaries = []
+sources = []
+n = int(input())
+for i in range(n):
+    data = list(map(int, input().split()))
+    G.append(data)
+
+for i in range(n):
+    for j in range(n):
+        summ += G[i][j]
+    if summ == 0:
+        estuaries.append(i + 1)
+    summ = 0
+for i in range(n):
+    for j in range(n):
+        summ += G[j][i]
+    if summ == 0:
+        sources.append(i + 1)
+    summ = 0
+print(len(sources))
+for i in sources:
+    print(i)
+print(len(estuaries))
+for i in estuaries:
+    print(i)
+
+        
+    
+
+            
+            
+        
+    
+    
+
+    

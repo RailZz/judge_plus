@@ -1,0 +1,6 @@
+d = []
+d.append(1)
+d.append(1)
+for i in range(2, int(input())):
+    d.append(d[i - 1] + d[i - 2])
+print(d[- 1])

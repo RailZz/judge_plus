@@ -1,0 +1,60 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="31" judge-id="10" status="WA" scoring="ACM" run-tests="4" contest-id="3101" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="4" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>1dd30549-71b4-4ba3-93d8-f689e3fe55a0</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2928640, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="13">2.0000000000
+</input>
+      <output size="1">1</output>
+      <correct size="12">1.000000000
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=3203072, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="14">18.0000000000
+</input>
+      <output size="1">4</output>
+      <correct size="12">4.000000000
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=3096576, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="15">153.5625000000
+</input>
+      <output size="5">12.25</output>
+      <correct size="13">12.250000000
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="WA" time="1" real-time="2" max-memory-used="307200"  checker-comment="Answers do not match: output: 0, correct: 28999.4708" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=3239936, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="21">840969476.9609252610
+</input>
+      <output size="1">0</output>
+      <correct size="16">28999.470799803
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="53">Answers do not match: output: 0, correct: 28999.4708
+</checker>
+    </test>
+  </tests>
+</testing-report>

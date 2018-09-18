@@ -1,0 +1,32 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="104" judge-id="49" status="WA" scoring="ACM" run-tests="1" contest-id="3102" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>36a18349-1788-401b-9f73-1bad5d6e4003</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000104.c: In function 'ft':
+000104.c:3:21: warning: implicit declaration of function 'mini' [-Wimplicit-function-declaration]
+        int n = (t - mini(a, b))/a + (t - mini(a, b))/ b + 1;
+                     ^
+</compiler_output>
+  <tests>
+    <test num="1" status="WA" time="0" real-time="2" max-memory-used="307200"  checker-comment="Answers do not match: output: 44, correct: 200" >
+  <program-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="21">4 11
+802
+743
+457
+539
+</input>
+      <output size="2">44</output>
+      <correct size="4">200
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="47">Answers do not match: output: 44, correct: 200
+</checker>
+    </test>
+  </tests>
+</testing-report>

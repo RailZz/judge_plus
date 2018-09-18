@@ -1,0 +1,9 @@
+k = int(input ())
+m = int(input ())
+n = int(input ())
+b = n//k
+if n%k==0 :
+    print (b*2*m)
+else:
+    a = n%k 
+    print (b*2*m+a*2*m)

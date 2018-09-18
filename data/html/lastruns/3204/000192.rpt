@@ -1,0 +1,52 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="192" judge-id="122" status="CE" scoring="ACM" run-tests="0" contest-id="3204" compile-error="yes" >
+  <uuid>380c0a28-2a7f-4eef-9842-b71ba7f77037</uuid>
+  <compiler_output>000192.cpp:2:6: error: 'cin' does not name a type
+      cin &gt;&gt; n;
+      ^
+000192.cpp:3:6: error: 'vector' does not name a type
+      vector &lt;int&gt; a(n);
+      ^
+000192.cpp:4:6: error: expected unqualified-id before 'for'
+      for (int i = 0; i &lt; n; i++) {
+      ^
+000192.cpp:4:22: error: 'i' does not name a type
+      for (int i = 0; i &lt; n; i++) {
+                      ^
+000192.cpp:4:29: error: 'i' does not name a type
+      for (int i = 0; i &lt; n; i++) {
+                             ^
+000192.cpp:6:6: error: 'temp' does not name a type
+      temp = a[n];
+      ^
+000192.cpp:7:6: error: expected unqualified-id before 'for'
+      for (int i = n; i &gt; 0; i--){
+      ^
+000192.cpp:7:22: error: 'i' does not name a type
+      for (int i = n; i &gt; 0; i--){
+                      ^
+000192.cpp:7:29: error: 'i' does not name a type
+      for (int i = n; i &gt; 0; i--){
+                             ^
+000192.cpp:9:6: error: 'a' does not name a type
+      a[0] = temp;
+      ^
+000192.cpp:10:6: error: expected unqualified-id before 'for'
+      for (int i = 0; i &lt; n; i++) {
+      ^
+000192.cpp:10:22: error: 'i' does not name a type
+      for (int i = 0; i &lt; n; i++) {
+                      ^
+000192.cpp:10:29: error: 'i' does not name a type
+      for (int i = 0; i &lt; n; i++) {
+                             ^
+000192.cpp:12:5: error: expected unqualified-id before 'return'
+     return 0;
+     ^
+000192.cpp:13:1: error: expected declaration before '}' token
+ }
+ ^
+</compiler_output>
+</testing-report>

@@ -1,0 +1,19 @@
+def f1(n,a):
+    l = 0
+    r = len(a)
+    m = None
+    while r - l >= 2:
+        m = ( l + r ) // 2
+        if n >= a[m]:
+            l = m
+        else:
+            r = m
+    if n == a[l]:
+        return "YES"
+    else:
+        return "NO"
+q = list(map(int,input().split()))
+N = list(map(int,input().split()))
+K = list(map(int,input().split()))
+for i in K:
+    print(f1(i,N))

@@ -1,0 +1,40 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="178" judge-id="22" status="PE" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>50044eef-3fbb-4c93-a7b1-afe799e4aab8</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000178.cpp: In function 'int main()':
+000178.cpp:52:6: warning: the address of 'mark' will always evaluate as 'true' [-Waddress]
+ if (!mark) cout&lt;&lt;-1; else if (en==st) cout&lt;&lt;0; else {
+      ^
+</compiler_output>
+  <tests>
+    <test num="1" status="PE" time="1" real-time="100" max-memory-used="352256"  checker-comment="PE ???????? ?????? ??????  ??????????? ????? ?????" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=100, maxvsz=352256, maxrss=3063808, nvcsw=2, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=323584, maxrss=2969600, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="207">10
+0 1 0 0 0 0 0 0 0 0
+1 0 0 1 1 0 1 0 0 0
+0 0 0 0 1 0 0 0 1 0
+0 1 0 0 0 0 1 0 0 0
+0 1 1 0 0 0 0 0 0 1
+0 0 0 0 0 0 1 0 0 1
+0 1 0 1 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0
+0 0 1 0 0 0 0 1 0 0
+0 0 0 0 1 1 0 0 0 0
+5 4
+</input>
+      <output size="3">2
+4</output>
+      <correct size="2">2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="52">PE ???????? ?????? ??????  ??????????? ????? ????? 
+</checker>
+    </test>
+  </tests>
+</testing-report>

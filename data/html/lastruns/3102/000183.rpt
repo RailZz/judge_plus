@@ -1,0 +1,10 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="183" judge-id="24" status="RU" scoring="ACM" run-tests="0" contest-id="3102" compile-error="yes" >
+  <uuid>3ae02a2e-30ed-4513-b370-0b53eb9868fc</uuid>
+  <compiler_output>000183.c:6:11: warning: return type of 'main' is not 'int' [-Wmain]
+ long long main(void){
+           ^
+</compiler_output>
+</testing-report>

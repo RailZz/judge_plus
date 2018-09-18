@@ -1,0 +1,16 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="124" judge-id="96" status="CE" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>cd493cd5-a736-4db6-aaa0-23ec5c8e49af</uuid>
+  <compiler_output>Done processing 000124.cpp
+000124.cpp: In function 'int main()':
+000124.cpp:15:21: error: 'a' was not declared in this scope
+     long long nok = a * b / gcd(a, b);
+                     ^
+000124.cpp:15:25: error: 'b' was not declared in this scope
+     long long nok = a * b / gcd(a, b);
+                         ^
+
+</compiler_output>
+</testing-report>

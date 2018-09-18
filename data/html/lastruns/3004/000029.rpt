@@ -1,0 +1,22 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="29" judge-id="2" status="RU" scoring="ACM" run-tests="0" contest-id="3004" compile-error="yes" >
+  <uuid>07b6c6ed-33c7-4076-bfbb-2dd0576289f3</uuid>
+  <compiler_output>Done processing 000029.cpp
+000029.cpp: In function 'int main()':
+000029.cpp:48:19: warning: unused variable 'c' [-Wunused-variable]
+         int a, b, c;
+                   ^
+000029.cpp:66:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (i = 0; i &lt; calls.size(); ++i)
+                   ^
+000029.cpp:78:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (i = 0; i &lt; ans.size(); ++i)
+                   ^
+000029.cpp:44:9: warning: unused variable 'w_ans' [-Wunused-variable]
+     int w_ans = 0;
+         ^
+
+</compiler_output>
+</testing-report>

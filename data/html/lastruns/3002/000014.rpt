@@ -1,0 +1,547 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="14" judge-id="9" status="CE" scoring="ACM" run-tests="0" contest-id="3002" compile-error="yes" >
+  <uuid>609e54b4-1ff6-4fb4-8f72-67c640a0f529</uuid>
+  <compiler_output>Done processing 000014.cpp
+000014.cpp:10:37: error: 'long long int time [300000]' redeclared as different kind of symbol
+ long long N, M, timer = 1, time[SIZE], tout[SIZE];
+                                     ^
+In file included from /usr/include/pthread.h:24:0,
+                 from /usr/include/c++/5.3.1/i686-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/5.3.1/i686-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/5.3.1/ext/atomicity.h:35,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:39,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000014.cpp:1:
+/usr/include/time.h:192:15: note: previous declaration 'time_t time(time_t*)'
+ extern time_t time (time_t *__timer) __THROW;
+               ^
+000014.cpp: In function 'long long int dfsts(long long int)':
+000014.cpp:17:19: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+             time[v] += time[u];
+                   ^
+000014.cpp:17:30: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+             time[v] += time[u];
+                              ^
+000014.cpp:17:21: error: invalid operands of types 'time_t(time_t*) throw () {aka long int(long int*) throw ()}' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}' to binary 'operator+'
+             time[v] += time[u];
+                     ^
+000014.cpp:17:21: error:   in evaluation of 'operator+=(time_t(time_t*) throw () {aka long int(long int*) throw ()}, time_t(time_t*) throw () {aka long int(long int*) throw ()})'
+000014.cpp:22:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+000014.cpp: In function 'int main()':
+000014.cpp:27:22: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:13: error: no match for 'operator&gt;&gt;' (operand types are 'std::istream {aka std::basic_istream&lt;char&gt;}' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}')
+         cin &gt;&gt; time[i];
+             ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:120:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; (*)(std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(__istream_type&amp; (*__pf)(__istream_type&amp;))
+       ^
+/usr/include/c++/5.3.1/istream:120:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'std::basic_istream&lt;char&gt;::__istream_type&amp; (*)(std::basic_istream&lt;char&gt;::__istream_type&amp;) {aka std::basic_istream&lt;char&gt;&amp; (*)(std::basic_istream&lt;char&gt;&amp;)}' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:124:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;::__ios_type&amp; (*)(std::basic_istream&lt;_CharT, _Traits&gt;::__ios_type&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__ios_type = std::basic_ios&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(__ios_type&amp; (*__pf)(__ios_type&amp;))
+       ^
+/usr/include/c++/5.3.1/istream:124:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'std::basic_istream&lt;char&gt;::__ios_type&amp; (*)(std::basic_istream&lt;char&gt;::__ios_type&amp;) {aka std::basic_ios&lt;char&gt;&amp; (*)(std::basic_ios&lt;char&gt;&amp;)}' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:131:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(std::ios_base&amp; (*)(std::ios_base&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(ios_base&amp; (*__pf)(ios_base&amp;))
+       ^
+/usr/include/c++/5.3.1/istream:131:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'std::ios_base&amp; (*)(std::ios_base&amp;)' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:168:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(bool&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(bool&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid initialization of non-const reference of type 'bool&amp;' from an rvalue of type 'bool'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:172:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(short int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(short&amp; __n);
+       ^
+/usr/include/c++/5.3.1/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'short int' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(short int)((int)(time + ((sizetype)i)))' to 'short int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:175:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(short unsigned int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(unsigned short&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'short unsigned int' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(short unsigned int)((int)(time + ((sizetype)i)))' to 'short unsigned int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:179:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(int&amp; __n);
+       ^
+/usr/include/c++/5.3.1/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'int' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(int)(time + ((sizetype)i))' to 'int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:182:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(unsigned int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(unsigned int&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'unsigned int' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(unsigned int)(time + ((sizetype)i))' to 'unsigned int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:186:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(long&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'long int' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(long int)(time + ((sizetype)i))' to 'long int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:190:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long unsigned int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(unsigned long&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'long unsigned int' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(long unsigned int)(time + ((sizetype)i))' to 'long unsigned int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:195:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long long int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(long long&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'long long int' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(long long int)((int)(time + ((sizetype)i)))' to 'long long int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:199:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long long unsigned int&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(unsigned long long&amp; __n)
+       ^
+/usr/include/c++/5.3.1/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'long long unsigned int' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(long long unsigned int)((int)(time + ((sizetype)i)))' to 'long long unsigned int&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:235:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(void*&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;] &lt;near match&gt;
+       operator&gt;&gt;(void*&amp; __p)
+       ^
+/usr/include/c++/5.3.1/istream:235:7: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: invalid conversion from 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'void*' [-fpermissive]
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:27:22: error: cannot bind rvalue '(((void*)time) + ((sizetype)i))' to 'void*&amp;'
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:214:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(float&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;]
+       operator&gt;&gt;(float&amp; __f)
+       ^
+/usr/include/c++/5.3.1/istream:214:7: note:   no known conversion for argument 1 from 'time_t(time_t*) throw () {aka long int(long int*) throw ()}' to 'float&amp;'
+/usr/include/c++/5.3.1/istream:218:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(double&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;]
+       operator&gt;&gt;(double&amp; __f)
+       ^
+/usr/include/c++/5.3.1/istream:218:7: note:   no known conversion for argument 1 from 'time_t(time_t*) throw () {aka long int(long int*) throw ()}' to 'double&amp;'
+/usr/include/c++/5.3.1/istream:222:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(long double&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__istream_type = std::basic_istream&lt;char&gt;]
+       operator&gt;&gt;(long double&amp; __f)
+       ^
+/usr/include/c++/5.3.1/istream:222:7: note:   no known conversion for argument 1 from 'time_t(time_t*) throw () {aka long int(long int*) throw ()}' to 'long double&amp;'
+/usr/include/c++/5.3.1/istream:259:7: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::basic_istream&lt;_CharT, _Traits&gt;::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_istream&lt;_CharT, _Traits&gt;::__streambuf_type = std::basic_streambuf&lt;char&gt;]
+       operator&gt;&gt;(__streambuf_type* __sb);
+       ^
+/usr/include/c++/5.3.1/istream:259:7: note:   no known conversion for argument 1 from 'time_t(time_t*) throw () {aka long int(long int*) throw ()}' to 'std::basic_istream&lt;char&gt;::__streambuf_type* {aka std::basic_streambuf&lt;char&gt;*}'
+In file included from /usr/include/c++/5.3.1/string:53:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1441:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator&gt;&gt;(basic_istream&lt;_CharT, _Traits&gt;&amp; __in,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1441:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/istream:934:0,
+                 from /usr/include/c++/5.3.1/iostream:40,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/bits/istream.tcc:955:5: note: candidate: template&lt;class _CharT2, class _Traits2&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, _CharT2*)
+     operator&gt;&gt;(basic_istream&lt;_CharT, _Traits&gt;&amp; __in, _CharT* __s)
+     ^
+/usr/include/c++/5.3.1/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   deduced conflicting types for parameter '_CharT2' ('char' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}')
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/istream:934:0,
+                 from /usr/include/c++/5.3.1/iostream:40,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/bits/istream.tcc:923:5: note: candidate: template&lt;class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, _CharT&amp;)
+     operator&gt;&gt;(basic_istream&lt;_CharT, _Traits&gt;&amp; __in, _CharT&amp; __c)
+     ^
+/usr/include/c++/5.3.1/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   deduced conflicting types for parameter '_CharT' ('char' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}')
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:756:5: note: candidate: template&lt;class _Traits&gt; std::basic_istream&lt;char, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;char, _Traits&gt;&amp;, unsigned char&amp;)
+     operator&gt;&gt;(basic_istream&lt;char, _Traits&gt;&amp; __in, unsigned char&amp; __c)
+     ^
+/usr/include/c++/5.3.1/istream:756:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   cannot convert '*(time + ((sizetype)i))' (type 'time_t(time_t*) throw () {aka long int(long int*) throw ()}') to type 'unsigned char&amp;'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:761:5: note: candidate: template&lt;class _Traits&gt; std::basic_istream&lt;char, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;char, _Traits&gt;&amp;, signed char&amp;)
+     operator&gt;&gt;(basic_istream&lt;char, _Traits&gt;&amp; __in, signed char&amp; __c)
+     ^
+/usr/include/c++/5.3.1/istream:761:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   cannot convert '*(time + ((sizetype)i))' (type 'time_t(time_t*) throw () {aka long int(long int*) throw ()}') to type 'signed char&amp;'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:803:5: note: candidate: template&lt;class _Traits&gt; std::basic_istream&lt;char, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;char, _Traits&gt;&amp;, unsigned char*)
+     operator&gt;&gt;(basic_istream&lt;char, _Traits&gt;&amp; __in, unsigned char* __s)
+     ^
+/usr/include/c++/5.3.1/istream:803:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   cannot convert '*(time + ((sizetype)i))' (type 'time_t(time_t*) throw () {aka long int(long int*) throw ()}') to type 'unsigned char*'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:808:5: note: candidate: template&lt;class _Traits&gt; std::basic_istream&lt;char, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;char, _Traits&gt;&amp;, signed char*)
+     operator&gt;&gt;(basic_istream&lt;char, _Traits&gt;&amp; __in, signed char* __s)
+     ^
+/usr/include/c++/5.3.1/istream:808:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   cannot convert '*(time + ((sizetype)i))' (type 'time_t(time_t*) throw () {aka long int(long int*) throw ()}') to type 'signed char*'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:40:0,
+                 from 000014.cpp:1:
+/usr/include/c++/5.3.1/istream:924:5: note: candidate: std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;&amp;, _Tp&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; _Tp = long int(long int*) throw ()] &lt;near match&gt;
+     operator&gt;&gt;(basic_istream&lt;_CharT, _Traits&gt;&amp;&amp; __is, _Tp&amp; __x)
+     ^
+/usr/include/c++/5.3.1/istream:924:5: note:   conversion of argument 1 would be ill-formed:
+000014.cpp:27:22: error: cannot bind 'std::istream {aka std::basic_istream&lt;char&gt;}' lvalue to 'std::basic_istream&lt;char&gt;&amp;&amp;'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:505:5: note: candidate: template&lt;class _UIntType1, unsigned int __w1, unsigned int __n1, unsigned int __m1, unsigned int __r1, _UIntType1 __a1, unsigned int __u1, _UIntType1 __d1, unsigned int __s1, _UIntType1 __b1, unsigned int __t1, _UIntType1 __c1, unsigned int __l1, _UIntType1 __f1, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::mersenne_twister_engine&lt;_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:505:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::mersenne_twister_engine&lt;_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:1050:5: note: candidate: template&lt;class _IntType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::uniform_int_distribution&lt;_IntType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:1050:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::uniform_int_distribution&lt;_IntType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:1112:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::uniform_real_distribution&lt;_IntType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:1112:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::uniform_real_distribution&lt;_IntType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2299:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::cauchy_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2299:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::cauchy_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:49:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.h:3758:5: note: candidate: template&lt;class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::bernoulli_distribution&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.h:3758:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   cannot convert '*(time + ((sizetype)i))' (type 'time_t(time_t*) throw () {aka long int(long int*) throw ()}') to type 'std::bernoulli_distribution&amp;'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2077:5: note: candidate: template&lt;class _RealType1, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::normal_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2077:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::normal_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:1256:5: note: candidate: template&lt;class _IntType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::geometric_distribution&lt;_IntType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:1256:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::geometric_distribution&lt;_IntType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2621:5: note: candidate: template&lt;class _RealType1, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::gamma_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2621:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::gamma_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:1906:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::exponential_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:1906:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::exponential_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2698:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::weibull_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2698:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::weibull_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2774:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::extreme_value_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2774:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::extreme_value_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:178:5: note: candidate: template&lt;class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::linear_congruential_engine&lt;_UIntType, __a, __c, __m&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:178:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::linear_congruential_engine&lt;_UIntType, __a, __c, __m&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:657:5: note: candidate: template&lt;class _UIntType, unsigned int __w, unsigned int __s, unsigned int __r, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::subtract_with_carry_engine&lt;_UIntType, __w, __s, __r&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:657:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::subtract_with_carry_engine&lt;_UIntType, __w, __s, __r&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:725:5: note: candidate: template&lt;class _RandomNumberEngine, unsigned int __p, unsigned int __r, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::discard_block_engine&lt;_RandomNumberEngine, __p, __r&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:725:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::discard_block_engine&lt;_RandomNumberEngine, __p, __r&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:856:5: note: candidate: template&lt;class _RandomNumberEngine, unsigned int __k, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::shuffle_order_engine&lt;_RandomNumberEngine, __k&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:856:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::shuffle_order_engine&lt;_RandomNumberEngine, __k&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:1372:5: note: candidate: template&lt;class _IntType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::negative_binomial_distribution&lt;_IntType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:1372:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::negative_binomial_distribution&lt;_IntType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:1577:5: note: candidate: template&lt;class _IntType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::poisson_distribution&lt;_IntType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:1577:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::poisson_distribution&lt;_IntType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:1845:5: note: candidate: template&lt;class _IntType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::binomial_distribution&lt;_IntType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:1845:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::binomial_distribution&lt;_IntType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2140:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::lognormal_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2140:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::lognormal_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2212:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::chi_squared_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2212:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::chi_squared_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2377:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::fisher_f_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2377:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::fisher_f_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2451:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::student_t_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2451:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::student_t_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:2913:5: note: candidate: template&lt;class _IntType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::discrete_distribution&lt;_IntType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:2913:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::discrete_distribution&lt;_IntType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:3128:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::piecewise_constant_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:3128:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::piecewise_constant_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+In file included from /usr/include/c++/5.3.1/random:51:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algo.h:66,
+                 from /usr/include/c++/5.3.1/algorithm:62,
+                 from 000014.cpp:3:
+/usr/include/c++/5.3.1/bits/random.tcc:3344:5: note: candidate: template&lt;class _RealType, class _CharT, class _Traits&gt; std::basic_istream&lt;_CharT, _Traits&gt;&amp; std::operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp;, std::piecewise_linear_distribution&lt;_RealType&gt;&amp;)
+     operator&gt;&gt;(std::basic_istream&lt;_CharT, _Traits&gt;&amp; __is,
+     ^
+/usr/include/c++/5.3.1/bits/random.tcc:3344:5: note:   template argument deduction/substitution failed:
+000014.cpp:27:22: note:   mismatched types 'std::piecewise_linear_distribution&lt;_RealType&gt;' and 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+         cin &gt;&gt; time[i];
+                      ^
+000014.cpp:43:19: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+     cout &lt;&lt; time[0] &lt;&lt; &quot; &quot; &lt;&lt; tout[0] &lt;&lt; endl;
+                   ^
+000014.cpp:43:19: warning: the address of 'time_t time(time_t*)' will always evaluate as 'true' [-Waddress]
+
+</compiler_output>
+</testing-report>

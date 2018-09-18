@@ -1,0 +1,29 @@
+#include <stdio.h>
+int ft(int t, int a, int b){
+       int n = (t - mini(a, b))/a + (t - mini(a, b))/ b + 1;
+       return n;
+}
+int mini(int a, int b){
+    if (a < b){
+        return a;
+    }else{
+        return b;
+    }
+}
+int main(void){
+    int n, x, y, l, r, m;
+    scanf("%d %d %d", &n, &x, &y);
+    l = 0;
+    r = n * mini(x, y);
+    while (r - l > 1 && n !=1){
+        m = (r + l) / 2;
+        if (ft(m, x, y) >= n){
+           r = m;
+        }else{
+           l = m;
+        }
+    }
+
+    printf("%d", r);
+    return 0;
+}

@@ -1,0 +1,33 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="244" judge-id="149" status="WA" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>29717a7d-2127-4d66-b8dc-1f853c19148f</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="26" real-time="28" max-memory-used="307200"  checker-comment="Different number of lines: output: 1, correct: 9" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=28, maxvsz=307200, maxrss=6184960, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="12">Abrakadabra
+</input>
+      <output size="3">NO
+</output>
+      <correct size="55">r
+r
+Abrak
+Abrakadab
+Arkdba
+baaar
+arbadakarbA
+abdkrA
+11
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="49">Different number of lines: output: 1, correct: 9
+</checker>
+    </test>
+  </tests>
+</testing-report>

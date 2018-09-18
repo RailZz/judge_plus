@@ -1,0 +1,7 @@
+a=[1, -2, 3, -4, 5]
+s=0
+i=1
+a=int[int for (i) in input()split)]
+if (i>0):
+    s+=1
+    print(s)

@@ -1,0 +1,7 @@
+def get_min(a):
+    min4 = a[1]
+    for i in range(len(a)):
+        if a[i] < min4:
+            min4 = a[i]
+    return min(a)
+print(get_min([int(i) for i in input() .split()]))

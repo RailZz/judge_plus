@@ -1,0 +1,8 @@
+n = int(input())
+h = 0
+m = 0
+h = n//60
+m = n%60
+while h>=24:
+    h = h - 24
+print(h, m)

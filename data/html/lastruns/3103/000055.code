@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+int ans = 1;
+
+void dfs(int start, vector<bool> & visited, const vector<vector<int> > g) {
+    ++ans;
+    visited[start] = true;
+    for (auto u : g[start])
+        if (!visited[u]) dfs(u, visited, g);
+}
+
+int main() {
+    
+    int n, s;
+	cin >> n >> s;
+	--s;
+	vector<vector<int> > g(n + 1, vector<int> (n + 1));
+	for (int i = 0; i<n; ++i) {
+	    for (int j = 0; j<n; ++j) cin >> g[i][j];
+	}
+	
+	vector<bool> visited(n + 1, false);
+    dfs(s, visited, g);
+	
+	cout << ans;
+    
+    return 0;
+}

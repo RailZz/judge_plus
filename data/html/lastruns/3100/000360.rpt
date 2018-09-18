@@ -1,0 +1,46 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="360" judge-id="17" status="WA" scoring="ACM" run-tests="2" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>b751041a-ce9b-434a-a0d7-2ecb2719d382</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000360.cpp: In function 'int main()':
+000360.cpp:31:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    while (i2 &lt; mas.size())
+              ^
+000360.cpp:7:29: warning: unused variable 'i1' [-Wunused-variable]
+  int k, num1, n, sum1, sum, i1=1,i2;
+                             ^
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=3002368, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17268736, maxrss=3104768, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">300
+</input>
+      <output size="8">220 284
+</output>
+      <correct size="8">220 284
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="WA" time="2" real-time="3" max-memory-used="307200"  checker-comment="wrong answer Participant has worse answer, given - 1, our - 2" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=3, maxvsz=307200, maxrss=2846720, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=2, stime=0, ptime=2, rtime=2, maxvsz=17268736, maxrss=3284992, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="5">2000
+</input>
+      <output size="8">220 284
+</output>
+      <correct size="18">220 284
+1184 1210
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="62">wrong answer Participant has worse answer, given - 1, our - 2
+</checker>
+    </test>
+  </tests>
+</testing-report>

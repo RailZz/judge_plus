@@ -1,0 +1,29 @@
+#include <stdio.h>
+long long  ft(int t, long long  a, long long  b){
+       long long n = (t - mini(a, b))/a + (t - mini(a, b))/ b + 1;
+       return n;
+}
+long long  mini(long long a, long long  b){
+    if (a < b){
+        return a;
+    }else{
+        return b;
+    }
+}
+int main(void){
+    long long  n, x, y, l, r, m;
+    scanf("%d %d %d", &n, &x, &y);
+    l = 0;
+    r = n * mini(x, y);
+    while (r - l > 1 && n !=1){
+        m = (r + l) / 2;
+        if (ft(m, x, y) >= n){
+           r = m;
+        }else{
+           l = m;
+        }
+    }
+
+    printf("%d", r);
+    return 0;
+}

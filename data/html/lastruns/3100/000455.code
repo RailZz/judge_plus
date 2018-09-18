@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	int k;
+	cin >> k;
+	if (k == 1) {
+	    cout << "1";
+	    return 0;
+	}
+	vector<int> a;
+	vector<bool> used(1000000, false);
+	int curr_i = 1, i_size = 1;
+	while (!used[curr_i%k]) {
+	    used[curr_i%k] = true;
+	    curr_i = (10*curr_i + 1)%k;
+	    ++i_size;
+		if (curr_i%k == 0) a.push_back(i_size);
+	}
+	
+	if (a.size() == 0) cout << "NO";
+	else {
+	    sort(a.begin(), a.end());
+	    for (int i = 0; i<a[0]; ++i) cout << "1";
+	}
+	
+	return 0;
+}

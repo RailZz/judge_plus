@@ -1,0 +1,15 @@
+Var
+  s:string;
+  a: array [1 .. 100] of integer;
+  n:integer;
+begin
+  i:=0;
+  writeln('Окончание записи массива это фраза "End" ');
+  write('Введите A['+i+'] - ');
+  read(s);
+  while (s<>'End') do
+    begin
+      a[i]:=s;
+      i:=i+1;
+      read(s);
+    end.

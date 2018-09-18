@@ -1,0 +1,21 @@
+#include <stdio.h>
+int func(int t, int a, int b, int k, int m){
+       int x = t * a + t * b - t/k * a - t/m * b;
+       return x;
+}
+int main(void){
+    int a, k, b, m, x, l, r, y;
+    scanf("%d %d %d %d %d", &a, &k, &b, &m, &x);
+    l = 1;
+    r = a * x;
+    while (r - l > 1){
+        y = (r + l) / 2;
+        if (func(y, a, b, k, m) >= x){
+           r = m;
+        }else{
+           l = m;
+        }
+    }
+    printf("%d", r);
+    return 0;
+}

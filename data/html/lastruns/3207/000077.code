@@ -1,0 +1,19 @@
+def voting(x,y,z):
+    d=[x,y,z]
+    s=0
+    e=0
+    for i in d:
+        if i==1:
+            s+=1
+        else:
+            e+=1
+    if s>e:
+        return(1)
+    else:
+        return(0)
+
+
+x=int(input())
+y=int(input())
+z=int(input())
+print(voting(x,y,z))

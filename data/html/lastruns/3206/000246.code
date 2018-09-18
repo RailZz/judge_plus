@@ -1,0 +1,6 @@
+s=(input())
+i=s.split()
+if s==(s[::-1]):
+    print('yes')
+if s!=(s[::-1]):
+        print('no')

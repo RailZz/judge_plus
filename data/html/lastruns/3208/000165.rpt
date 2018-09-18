@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="165" judge-id="165" status="RT" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>37f11a08-14b4-4927-9de9-2e7170a89e97</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="74" real-time="85" max-memory-used="30339072" >
+  <program-stats-str>{ utime=48, stime=26, ptime=74, rtime=85, maxvsz=30339072, maxrss=27152384, nvcsw=1, nivcsw=21 }</program-stats-str>
+      <input size="2">1
+</input>
+      <output size="0"></output>
+      <stderr size="152">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+  File &quot;./000165&quot;, line 11
+    print(s
+         ^
+SyntaxError: parenthesis is never closed
+</stderr>
+    </test>
+  </tests>
+</testing-report>

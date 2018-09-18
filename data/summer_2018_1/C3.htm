@@ -1,0 +1,685 @@
+<!DOCTYPE html><html><head><base href="https://informatics.msk.ru/mod/statements/print3.php?id=33269"><meta charset="utf-8">
+      <title>Параллель C. Бинарный поиск по ответу</title>
+      <style type="text/css">@import url(http://informatics.mccme.ru/moodle/mod/statements/polygon.css);</style>      
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      <script src="/moodle/lib/jsMath/easy/load.js"></script><script src="https://informatics.msk.ru/moodle/lib/jsMath/jsMath-easy-load.js"></script><script src="https://informatics.msk.ru/moodle/lib/jsMath/plugins/autoload.js"></script>
+      <meta name="description" content="Параллель C. Бинарный поиск по ответу">
+      <style>/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <style type="text/css">#jsMath_test {font-size:200%}
+</style><style type="text/css">.math {font-family: serif; font-style: normal; font-weight: normal}
+.typeset {font-family: serif; font-style: normal; font-weight: normal; line-height: normal; text-indent: 0px}
+.typeset .normal {font-family: serif; font-style: normal; font-weight: normal}
+div.typeset {text-align: center; margin: 1em 0px}
+span.typeset {text-align: left}
+.typeset span {text-align: left; border: 0px; margin: 0px; padding: 0px}
+a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
+.typeset .size0 {font-size: 50%}
+.typeset .size1 {font-size: 60%}
+.typeset .size2 {font-size: 70%}
+.typeset .size3 {font-size: 85%}
+.typeset .size4 {font-size: 100%}
+.typeset .size5 {font-size: 120%}
+.typeset .size6 {font-size: 144%}
+.typeset .size7 {font-size: 173%}
+.typeset .size8 {font-size: 207%}
+.typeset .size9 {font-size: 249%}
+.typeset .cmr10 {font-family: jsMath-cmr10, serif}
+.typeset .cmbx10 {font-family: jsMath-cmbx10, jsMath-cmr10}
+.typeset .cmti10 {font-family: jsMath-cmti10, jsMath-cmr10}
+.typeset .cmmi10 {font-family: jsMath-cmmi10}
+.typeset .cmsy10 {font-family: jsMath-cmsy10}
+.typeset .cmex10 {font-family: jsMath-cmex10}
+.typeset .textit {font-family: serif; font-style: italic}
+.typeset .textbf {font-family: serif; font-weight: bold}
+.typeset .link {text-decoration: none}
+.typeset .error {font-size: 90%; font-style: italic; background-color: #FFFFCC; padding: 1px; border: 1px solid #CC0000}
+.typeset .blank {display: inline-block; overflow: hidden; border: 0px none; width: 0px; height: 0px}
+.typeset .spacer {display: inline-block}
+#jsMath_hiddenSpan {visibility: hidden; position: absolute; top: 0px; left: 0px; line-height: normal; text-indent: 0px}
+#jsMath_message {position: fixed; bottom: 1px; left: 2px; background-color: #E6E6E6; border: solid 1px #959595; margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: small; width: auto}
+#jsMath_panel {position: fixed; bottom: 1.75em; right: 1.5em; padding: .8em 1.6em; background-color: #DDDDDD; border: outset 2px; z-index: 103; width: auto; color: black; font-size: 10pt; font-style: normal}
+#jsMath_panel .disabled {color: #888888}
+#jsMath_panel .infoLink {font-size: 85%}
+#jsMath_panel * {font-size: inherit; font-style: inherit; font-family: inherit; line-height: normal}
+#jsMath_panel div {background-color: inherit; color: inherit}
+#jsMath_panel span {background-color: inherit; color: inherit}
+#jsMath_panel td {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel tr {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel table {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit; height: auto; width: auto}
+#jsMath_button {position: fixed; bottom: 1px; right: 2px; background-color: white; border: solid 1px #959595; margin: 0px; padding: 0px 3px 1px 3px; z-index: 102; color: black; text-decoration: none; font-size: x-small; width: auto; cursor: hand}
+#jsMath_button * {padding: 0px; border: 0px; margin: 0px; line-height: normal; font-size: inherit; font-style: inherit; font-family: inherit}
+#jsMath_global {font-style: italic}
+#jsMath_noFont .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: small; width: auto}
+#jsMath_noFont .link {padding: 0px 5px 2px 5px; border: 2px outset; background-color: #E8E8E8; color: black; font-size: 80%; width: auto; cursor: hand}
+#jsMath_PrintWarning .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: x-small; width: auto}
+@media print {#jsMath_button {display: none}
+#jsMath_Warning {display: none}
+}
+@media screen {#jsMath_PrintWarning {display: none}
+}
+.typeset .scale {font-size: 120%}
+</style><style type="text/css">.typeset .math {font-style: normal}
+.typeset .typeset {font-style: normal}
+.typeset .icmr10 {font-family: serif}
+.typeset .icmmi10 {font-family: serif; font-style: italic}
+.typeset .icmbx10 {font-family: serif; font-weight: bold}
+.typeset .icmti10 {font-family: serif; font-style: italic}
+</style></head>
+    <body><div id="jsMath_message" title="" style="visibility: visible;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
+<b>Hi-Res Fonts for Printing</b> button on the jsMath control panel.<br>
+</div><div style="width:22em; height:1px"></div></td></tr></tbody></table></center><hr></div><div id="jsMath_button" title=" Open jsMath Control Panel "><span onclick="jsMath.Controls.Panel()">jsMath</span></div><div id="jsMath_panel" style="display: none;"></div><div id="jsMath_Hidden" style="visibility: hidden; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; margin: 0px;"></div><div style="position: fixed; bottom: 1px; left: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: 75%; width: auto; visibility: hidden;"></div>
+    <a name="top"></a>
+    <p class="statements_title">Параллель C. Бинарный поиск по ответу</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch490"><b>Задача A.</b> Очень Легкая Задача</a></li><li><a href="#ch672"><b>Задача B.</b> Провода</a></li><li><a href="#ch112749"><b>Задача C.</b> Вырубка леса</a></li><li><a href="#ch1"><b>Задача D.</b> Коровы - в стойла</a></li><li><a href="#ch113097"><b>Задача E.</b> Космическое поселение</a></li><li><a href="#ch586"><b>Задача F.</b> Детский праздник</a></li><li><a href="#ch3870"><b>Задача G.</b> Космический кегельбан</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch490">Очень Легкая Задача</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Очень Легкая Задача</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Сегодня утром жюри решило добавить в вариант олимпиады еще одну, Очень Легкую Задачу. Ответственный секретарь Оргкомитета напечатал ее условие в одном экземпляре, и теперь ему нужно до начала олимпиады успеть сделать еще <em>N</em> копий. В его распоряжении имеются два ксерокса, один из которых копирует лист за <em>х</em> секунд, а другой – за <em>y</em>. (Разрешается использовать как один ксерокс, так и оба одновременно. Можно копировать не только с оригинала, но и с копии.) Помогите ему выяснить, какое минимальное время для этого потребуется.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+ <p>На вход программы поступают&nbsp;три натуральных числа <em>N</em>, <em>x</em> и <em>y</em>, разделенные пробелом (1 ≤ <em>N</em> ≤ 2∙10<sup>8</sup>, 1 ≤ <em>x</em>, <em>y </em>≤ 10).</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите одно число – минимальное время в секундах, необходимое для получения <em>N</em> копий.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4 1 1<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3<br></pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5 1 2<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4<br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch672">Провода</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Провода</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Дано <i>N</i> отрезков провода длиной <i>L</i><sub>1</sub>, <i>L</i><sub>2</sub>, ..., <i>L<sub>N</sub></i> сантиметров. Требуется с помощью разрезания получить из них <i>K</i> равных отрезков как можно большей длины, выражающейся целым числом сантиметров. Если нельзя получить <i>K</i> отрезков длиной даже 1 см, вывести 0.</p>
+
+<p>Ограничения: 1 &lt;= <i>N</i> &lt;= 10 000, 1 &lt;= <i>K</i> &lt;= 10 000, 100 &lt;= <i>L<sub>i</sub></i> &lt;= 10 000 000, все числа целые.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>В первой строке находятся числа <i>N</i> и <i>К</i>. В следующих <i>N</i> строках - <i>L</i><sub>1</sub>, <i>L</i><sub>2</sub>, ..., <i>L<sub>N</sub></i>, по одному числу в строке.</p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Вывести одно число - полученную длину отрезков.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4 11<br>802<br>743<br>457<br>539</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">200</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch112749">Вырубка леса</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Вырубка леса</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+	Фермер Николай нанял двух лесорубов: Дмитрия и Федора, чтобы вырубить лес, на 
+месте которого должно быть кукурузное поле. В лесу растут <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> деревьев.<br><br>
+Дмитрий срубает по A деревьев в день, но каждый <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>-й день он отдыхает и не срубает 
+ни одного дерева. Таким образом, Дмитрий отдыхает в <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>-й, 2<span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>-й, 3<span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>-й день, и т.д.<br><br>
+Федор срубает по B деревьев в день, но каждый <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>-й день он отдыхает и не срубает ни 
+одного дерева. Таким образом, Федор отдыхает в <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>-й, 2<span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>-й, 3<span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>-й день, и т.д.<br><br>
+Лесорубы работают параллельно и, таким образом, в дни, когда никто из них не 
+отдыхает, они срубают <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span> + <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span> деревьев, в дни, когда отдыхает только Федор — <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span> деревьев, а в 
+дни, когда отдыхает только Дмитрий — <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span> деревьев. В дни, когда оба лесоруба отдыхают, ни 
+одно дерево не срубается.<br><br>
+Фермер Николай хочет понять, за сколько дней лесорубы срубят все деревья, и он 
+сможет засеять кукурузное поле. <br><br>
+Требуется написать программу, которая по заданным целым числам <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span>
+определяет, за сколько дней все деревья в лесу будут вырублены.	
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+Входной файл содержит пять целых чисел, разделенных пробелами: <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span>
+(1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">9</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>
+, 2 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 10<sup>18</sup>, 1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> ≤ 10<sup>18</sup>).
+    </p>
+   </div>
+
+
+ <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+	Выходной файл должен содержать одно целое число — искомое количество дней.	
+    </p>
+
+ </div>
+
+
+   <div class="output-specification">
+    <div class="section-title">
+    Пояснения к примеру
+    </div>
+    <p>
+	В приведенном примере лесорубы вырубают 25 деревьев за 7 дней следующим 
+образом:<br>
+* 1-й день: Дмитрий срубает 2 дерева, Федор срубает 3 дерева, итого 5 деревьев;<br>
+* 2-й день: Дмитрий срубает 2 дерева, Федор срубает 3 дерева, итого 10
+деревьев;<br>
+* 3-й день: Дмитрий срубает 2 дерева, Федор отдыхает, итого 12 деревьев;<br>
+* 4-й день: Дмитрий отдыхает, Федор срубает 3 дерева, итого 15 деревьев;<br>
+* 5-й день: Дмитрий срубает 2 дерева, Федор срубает 3 дерева, итого 20 
+деревьев;<br>
+* 6-й день: Дмитрий срубает 2 дерева, Федор отдыхает, итого 22 дерева;<br>
+* 7-й день: Дмитрий срубает 2 дерева, Федор срубает оставшееся 1 дерево, итого 
+все 25 деревьев срублены.<br>
+Внимание! Тест из примера не подходит под ограничения для подзадач 2 и 3, но 
+решение принимается на проверку только в том случае, если оно выводит правильный ответ 
+на тесте из примера. Решение должно выводить правильный ответ на тест даже, если оно 
+рассчитано на решение только каких-либо из подзадач 2 и 3
+    </p>
+
+ </div>
+
+
+   <div class="output-specification">
+    <div class="section-title">
+     Система оценки и описание подзадач
+    </div>
+<br>
+    <p>
+	<b>Подзадача 1 (32 балла)</b><br>
+1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> ≤ 1000, 1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span> ≤ 1000, 2 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 1000<br>
+Баллы за подзадачу начисляются только в случае, если все тесты успешно пройдены.<br>
+<b>Подзадача 2 (10 баллов)</b><br>
+1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> ≤ 10<sup>18</sup><br>
+<span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> &lt; <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span><br>
+<span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> &lt; <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span><br>
+При решении этой подзадачи можно считать, что лесорубы не отдыхают.<br>
+Баллы за подзадачу начисляются только в случае, если все тесты успешно пройдены.<br>
+<b>Подзадача 3 (10 баллов)</b><br>
+1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> ≤ 10<sup>18</sup><br>
+Дополнительно к приведенным ограничениям выполняется условие <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span> = <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>.<br>
+Баллы за подзадачу начисляются только в случае, если все тесты успешно пройдены.<br>
+<b>Подзадача 4 (48 баллов)</b><br>
+1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">X</span><span class="spacer" style="margin-left:0.078em"></span></span></nobr></span> ≤ 10<sup>18</sup>, 1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span class="spacer" style="margin-left:0.050em"></span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">9</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>, 2 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 10<sup>18</sup><br>
+В этой подзадаче 16 тестов, каждый тест оценивается в 3 балла. Баллы за каждый тест 
+начисляются независимо.
+    </p>
+
+ </div><div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">2 4 3 3 25</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">7</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch1">Коровы - в стойла</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Коровы - в стойла</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+		На прямой расположены стойла, в которые необходимо расставить коров так, чтобы минимальное расcтояние между коровами было как можно больше.
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+		В первой строке вводятся числа <span><em>N</em></span>&nbsp; (2 &lt; <em>N </em> &lt; 10001) – количество стойл и <span><em>K</em></span>&nbsp; (1 &lt; <span><em>K </em></span>&lt; <span><em>N </em></span>) – количество коров. Во второй строке&nbsp;задаются <span><em>N</em></span> натуральных чисел в порядке возрастания – координаты стойл (координаты не превосходят 10<sup>9</sup>)
+    </p>
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+		Выведите одно число – наибольшее возможное допустимое расстояние.
+    </p>
+
+   </div>
+ </div>
+ <div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">6 3<br>2 5 7 11 15 20<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">9<br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch113097"> Космическое поселение</a></h1><p class="statements_chapter_title"><b>Задача E.</b> Космическое поселение</p><div class="problem-statement">
+   <div class="legend">
+<p>
+Для освоения Марса требуется построить исследовательскую базу. База должна
+состоять из <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> одинаковых модулей, каждый из которых представляет собой прямоугольник.</p><p>
+Каждый модуль представляет собой жилой отсек, который имеет форму
+прямоугольника размером <span class="typeset"><nobr><span class="scale"><span class="icmmi10">a</span><span style="position: relative; margin-left:0.222em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAQAAADF5xxPAAAAAmJLR0QA/4ePzL8AAABYSURBVHjadY+5DYBADATH9EByLRDR0FXhPqnDMQUsATLco9uNrJFWYxMAdumkiVUOhBA4IbJUgvKfH3yBQANM0CGBcycQG+tMgz4NNhreaQzyTlBs8bKzP8krUv4iQ1DbAAAAAElFTkSuQmCC" style=" width:13px; margin-right:0.128em;"></span><span style="position: relative; margin-left:0.222em;"><span class="icmmi10">b</span></span></span></nobr></span> метров. Для повышения надежности модулей инженеры
+могут добавить вокруг каждого модуля слой дополнительной защиты. Толщина этого слоя
+должна составлять целое число метров, и все модули должны иметь одинаковую толщину
+дополнительной защиты. Модуль с защитой, толщина которой равна <span class="typeset"><nobr><span class="scale"><span class="icmmi10">d</span></span></nobr></span> метрам, будет иметь
+форму прямоугольника размером <span class="typeset"><nobr><span class="scale"><span class="icmr10">(</span><span class="icmmi10">a</span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">+</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">2</span></span><span class="icmmi10">d</span><span class="icmr10">)</span><span style="position: relative; margin-left:0.222em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAQAAADF5xxPAAAAAmJLR0QA/4ePzL8AAABYSURBVHjadY+5DYBADATH9EByLRDR0FXhPqnDMQUsATLco9uNrJFWYxMAdumkiVUOhBA4IbJUgvKfH3yBQANM0CGBcycQG+tMgz4NNhreaQzyTlBs8bKzP8krUv4iQ1DbAAAAAElFTkSuQmCC" style=" width:13px; margin-right:0.128em;"></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">(</span></span><span class="icmmi10">b</span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">+</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">2</span></span><span class="icmmi10">d</span><span class="icmr10">)</span></span></nobr></span> метров.</p><p>
+Все модули должны быть расположены на заранее подготовленном прямоугольном
+поле размером <span class="typeset"><nobr><span class="scale"><span class="icmmi10">w</span><span class="spacer" style="margin-left:0.026em"></span><span style="position: relative; margin-left:0.222em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAQAAADF5xxPAAAAAmJLR0QA/4ePzL8AAABYSURBVHjadY+5DYBADATH9EByLRDR0FXhPqnDMQUsATLco9uNrJFWYxMAdumkiVUOhBA4IbJUgvKfH3yBQANM0CGBcycQG+tMgz4NNhreaQzyTlBs8bKzP8krUv4iQ1DbAAAAAElFTkSuQmCC" style=" width:13px; margin-right:0.128em;"></span><span style="position: relative; margin-left:0.222em;"><span class="icmmi10">h</span></span></span></nobr></span> метров. При этом они должны быть организованы в виде регулярной
+сетки: их стороны должны быть параллельны сторонам поля, и модули должны быть
+ориентированы одинаково.</p><p>
+Требуется написать программу, которая по заданным количеству и размеру модулей, а
+также размеру поля для их размещения, определяет максимальную толщину слоя
+дополнительной защиты, который можно добавить к каждому модулю.
+</p> 
+   </div>
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+ <p>
+Входной файл содержит пять разделенных пробелами целых чисел: <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">a</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">b</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">w</span><span class="spacer" style="margin-left:0.026em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">h</span></span></nobr></span>
+(<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">n</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">a</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">b</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">w</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">h</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">18</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>). Гарантируется, что без дополнительной защиты все модули можно
+разместить в поселении описанным образом.
+ </p> 
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+ <p>
+Выходной файл должен содержать одно целое число: максимальную возможную
+толщину дополнительной защиты. Если дополнительную защиту установить не удастся,
+требуется вывести число 0.
+</p>
+    </div>
+
+
+
+
+<div class="tests-explanation">
+    <div class="section-title">
+     Пояснения к примерам
+    </div>
+ <p>
+В первом примере можно установить дополнительную защиту толщиной 2 метра и
+разместить модули на поле, как показано на рисунке.
+
+
+
+
+
+
+
+
+
+
+
+</p><div align="left"><img src="http://informatics.mccme.ru/moodle_probpics/113097/регионалка_1_тур_задача_B"></div>
+
+Во втором примере жилой отсек имеет размер <span class="typeset"><nobr><span class="scale"><span class="icmr10">5</span><span style="position: relative; margin-left:0.222em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAQAAADF5xxPAAAAAmJLR0QA/4ePzL8AAABYSURBVHjadY+5DYBADATH9EByLRDR0FXhPqnDMQUsATLco9uNrJFWYxMAdumkiVUOhBA4IbJUgvKfH3yBQANM0CGBcycQG+tMgz4NNhreaQzyTlBs8bKzP8krUv4iQ1DbAAAAAElFTkSuQmCC" style=" width:13px; margin-right:0.128em;"></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">5</span></span></span></nobr></span> метров, а поле – размер
+<span class="typeset"><nobr><span class="scale"><span class="icmr10">6</span><span style="position: relative; margin-left:0.222em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAQAAADF5xxPAAAAAmJLR0QA/4ePzL8AAABYSURBVHjadY+5DYBADATH9EByLRDR0FXhPqnDMQUsATLco9uNrJFWYxMAdumkiVUOhBA4IbJUgvKfH3yBQANM0CGBcycQG+tMgz4NNhreaQzyTlBs8bKzP8krUv4iQ1DbAAAAAElFTkSuQmCC" style=" width:13px; margin-right:0.128em;"></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">6</span></span></span></nobr></span> метров. Добавить дополнительную защиту к модулю нельзя.
+<p></p>
+    </div>
+
+
+
+<div class="output-specification">
+    <div class="section-title">
+     Описание подзадач и системы оценивания
+    </div>
+ <p>
+</p>
+    </div>
+
+
+<div class="output-specification">
+    <div class="section-title">
+    Подзадача 1 (26 баллов)
+    </div>
+ <p>
+<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">n</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">000</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">1</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">a</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">b</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">w</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">h</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">000</span></span></nobr></span>.</p><p>
+Баллы за подзадачу начисляются только в случае, если все тесты успешно пройдены
+</p>
+    </div>
+
+
+
+
+
+<div class="output-specification">
+    <div class="section-title">
+     Подзадача 2 (23 балла)
+    </div>
+ <p>
+<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">n</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">000</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">1</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">a</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">b</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">w</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">h</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">9</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>.</p><p>
+Баллы за подзадачу начисляются только в случае, если все тесты успешно пройдены.
+</p>
+    </div>
+
+<div class="output-specification">
+    <div class="section-title">
+     Подзадача 3 (до 24 баллов)
+    </div>
+ <p>
+<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">n</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">9</span></span><span class="spacer" style="margin-left:0.05em"></span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">1</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">a</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">b</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">w</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">h</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">18</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>.</p><p>
+В этой подзадаче 8 тестов, каждый тест оценивается в 3 балла. Баллы за каждый тест
+начисляются независимо.
+</p>
+    </div>
+
+
+
+
+
+
+
+<div class="output-specification">
+    <div class="section-title">
+     Подзадача 4 (до 27 баллов)
+    </div>
+ <p>
+<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">n</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">18</span></span><span class="spacer" style="margin-left:0.05em"></span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">1</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">a</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">b</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">w</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">h</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">18</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>.</p><p>
+В этой подзадаче 9 тестов, каждый тест оценивается в 3 балла. Баллы за каждый тест
+начисляются независимо.
+</p>
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">11 2 3 21 25</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2</pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1 5 5 6 6</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch586">Детский праздник </a></h1><p class="statements_chapter_title"><b>Задача F.</b> Детский праздник</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+		Организаторы детского праздника планируют надуть для него <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> воздушных шариков. С этой целью они пригласили <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> добровольных помощников, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span></span></nobr></span>-й среди которых надувает шарик за <span class="typeset"><nobr><span class="scale"><span class="icmmi10">T</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> минут, однако каждый раз после надувания <span class="typeset"><nobr><span class="scale"><span class="icmmi10">Z</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> шариков устает и отдыхает <span class="typeset"><nobr><span class="scale"><span class="icmmi10">Y</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> минут. Теперь организаторы праздника хотят узнать, через какое время будут надуты все шарики при наиболее оптимальной работе помощников, и сколько шариков надует каждый из них. (Если помощник надул шарик, и должен отдохнуть, но больше шариков ему надувать не придется, то считается, что он закончил работу сразу после окончания надувания последнего шарика, а не после отдыха).
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+		В первой строке входных данных задаются числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> (0 &lt;= <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> &lt;= 15000, 1 &lt;= <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> &lt;= 1000). Следующие <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> строк содержат по три целых числа - <span class="typeset"><nobr><span class="scale"><span class="icmmi10">T</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">Z</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">Y</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> соответственно (1 &lt;= <span class="typeset"><nobr><span class="scale"><span class="icmmi10">T</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">Y</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> &lt;= 100, 1 &lt;= <span class="typeset"><nobr><span class="scale"><span class="icmmi10">Z</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> &lt;= 1000).
+    </p>
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+		Выведите в первой строке число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">T</span><span class="spacer" style="margin-left:0.139em"></span></span></nobr></span> - время, за которое будут надуты все шарики. Во второй строке выведите <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> чисел - количество шариков, надутых каждым из приглашенных помощников. Разделяйте числа пробелами. Если распределений шариков несколько, выведите любое из них.
+    </p>
+
+   </div>
+ </div>
+ <div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">2 2<br>1 1 1<br>1 1 1<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1<br>1 1 <br></pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 2<br>2 2 5<br>1 1 10<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4<br>2 1 <br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3870">Космический кегельбан</a></h1><p class="statements_chapter_title"><b>Задача G.</b> Космический кегельбан</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>
+На планете Плюк открылся новый космический кегельбан. Поле для
+кегельбана представляет собой бесконечную плоскость, на которой
+расставлены кегли. 
+</p>
+<p>Каждая
+кегля представляет собой высокий цилиндр с основанием в виде круга
+радиусом <span lang="en-US"><i>r</i></span> метров. Все кегли
+одинаковые. Кегли расставлены по следующим правилам. Кегли образуют <span lang="en-US"><i>n</i></span>
+рядов, в первом ряду стоит одна кегля, во втором — две, и так
+далее. В последнем <span lang="en-US"><i>n</i></span>-м ряду стоит <span lang="en-US"><i>n</i></span>
+кеглей. Введем на плоскости систему координат таким образом, чтобы
+единица измерения была равна одному километру. Центр единственной
+кегли в первом ряду находится в точке (0,&nbsp;0). Центры кеглей во
+втором ряду находятся в точках (–1,&nbsp;1) и (1,&nbsp;1).
+Таким образом, центры кеглей в <span lang="en-US"><i>i</i></span>-м
+ряду находятся в точках с координатами (–(<span lang="en-US"><i>i</i></span><span lang="en-US">&nbsp;</span>–<span lang="en-US">&nbsp;</span>1),<span lang="en-US">&nbsp;</span><span lang="en-US"><i>i</i></span><span lang="en-US">&nbsp;</span>–<span lang="en-US">&nbsp;</span>1),
+(–(<span lang="en-US"><i>i</i></span><span lang="en-US">&nbsp;</span>–<span lang="en-US">&nbsp;</span>3),<span lang="en-US">&nbsp;</span><span lang="en-US"><i>i</i></span><span lang="en-US">&nbsp;</span>–<span lang="en-US">&nbsp;</span>1),
+
+…, (<span lang="en-US"><i>i</i></span><span lang="en-US">&nbsp;</span>–<span lang="en-US">&nbsp;</span>1,<span lang="en-US">&nbsp;</span><span lang="en-US"><i>i</i></span><span lang="en-US">&nbsp;</span>–<span lang="en-US">&nbsp;</span>1).
+</p>
+<p>Игра
+происходит следующим образом. Используется шар с радиусом <span lang="en-US"><i>q</i></span>
+метров. Игрок выбирает начальное положение центра шара (<span lang="en-US"><i>x</i></span><sub><span lang="en-US"><i>c</i></span></sub>,<span lang="en-US">&nbsp;</span><span lang="en-US"><i>y</i></span><sub><span lang="en-US"><i>c</i></span></sub>)
+и вектор направления движения шара (<span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>x</i></span></sub>,<span lang="en-US">&nbsp;</span><span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>y</i></span></sub>).
+После этого шар помещается в начальную точку и двигается, не
+останавливаясь, в направлении вектора (<span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>x</i></span></sub>,<span lang="en-US">&nbsp;</span><span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>y</i></span></sub>).
+Считается, что шар сбил кеглю, если в процессе движения шара имеет
+место ситуация, когда у шара и кегли есть общая точка. Сбитые кегли
+не меняют направления движения шара и не сбивают соседние кегли при
+падении.</p>
+
+<p>На
+рисунке приведен пример расположения кеглей для <span lang="en-US"><i>r</i></span>&nbsp;=&nbsp;500,
+<span lang="en-US"><i>n</i></span>&nbsp;=&nbsp;4 и шара для <span lang="en-US"><i>q</i></span>&nbsp;=&nbsp;1000,
+<span lang="en-US"><i>x</i></span><sub><span lang="en-US"><i>c</i></span></sub>&nbsp;=&nbsp;–2,
+<span lang="en-US"><i>y</i></span><sub><span lang="en-US"><i>c</i></span></sub>&nbsp;=&nbsp;–2,&nbsp;<span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>x</i></span></sub>&nbsp;=&nbsp;1,
+
+<span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>y</i></span></sub>&nbsp;=&nbsp;1.</p>
+<p class="western" align="CENTER" style="margin-bottom: 0cm"><img src="http://informatics.mccme.ru/moodle_probpics/3870/3870_1.gif" name="Объект1" align="BOTTOM" width="327" height="353"></p>
+<p>Требуется
+написать программу, которая по заданным радиусу кегли <span lang="en-US"><i>r</i></span>,
+количеству рядов кеглей<i> </i><span lang="en-US"><i>n</i></span>,
+радиусу шара <span lang="en-US"><i>q</i></span>, его начальному
+положению (<span lang="en-US"><i>x</i></span><sub><span lang="en-US"><i>c</i></span></sub>,<span lang="en-US">&nbsp;</span><span lang="en-US"><i>y</i></span><sub><span lang="en-US"><i>c</i></span></sub>)
+и вектору направления движения (<span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>x</i></span></sub>,<span lang="en-US">&nbsp;</span><span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>y</i></span></sub>)
+определяет количество кеглей, сбитых шаром.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Первая
+строка входного файла содержит два целых числа: <span lang="en-US"><i>r</i></span>
+и <span lang="en-US"><i>n</i></span>, разделенных ровно одним
+пробелом (1<span lang="en-US">&nbsp;</span>≤&nbsp;<span lang="en-US"><i>r</i></span><span lang="en-US">&nbsp;</span>≤&nbsp;700,
+1<span lang="en-US">&nbsp;</span>≤&nbsp;<span lang="en-US"><i>n</i></span><span lang="en-US">&nbsp;</span>≤&nbsp;200&nbsp;000).</p>
+<p>Вторая
+строка входного файла содержит целое число <span lang="en-US"><i>q</i></span>
+
+(1<span lang="en-US">&nbsp;</span>≤&nbsp;<span lang="en-US"><i>q</i></span><span lang="en-US">&nbsp;</span>≤&nbsp;10<sup>9</sup>).
+</p>
+<p>Третья
+строка входного файла содержит два целых числа <span lang="en-US"><i>x</i></span><sub><span lang="en-US"><i>c</i></span></sub>
+и <span lang="en-US"><i>y</i></span><sub><span lang="en-US"><i>c</i></span></sub>,
+разделенных ровно одним пробелом (–10<sup>6</sup>≤&nbsp;<span lang="en-US"><i>x</i></span><sub><span lang="en-US"><i>c</i></span></sub><span lang="en-US">&nbsp;</span>≤&nbsp;10<sup>6</sup>,
+
+–10<sup>6</sup>≤&nbsp;<span lang="en-US"><i>y</i></span><sub><span lang="en-US"><i>c</i></span></sub>,
+1000<i>×</i><span lang="en-US"><i>y</i></span><sub><span lang="en-US"><i>c</i></span></sub>
+&lt; –(<span lang="en-US"><i>r</i></span><span lang="en-US">&nbsp;</span>+<span lang="en-US">&nbsp;</span><span lang="en-US"><i>q</i></span>)
+).</p>
+<p>Четвертая
+строка входного файла содержит два целых числа <span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>x</i></span></sub>
+
+и <span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>y</i></span></sub>,
+разделенных ровно одним пробелом (–10<sup>6</sup>≤&nbsp;<span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>x</i></span></sub><span lang="en-US">&nbsp;</span>≤&nbsp;10<sup>6</sup>,
+0<span lang="en-US">&nbsp;</span>&lt;<span lang="en-US">&nbsp;</span><span lang="en-US"><i>v</i></span><sub><span lang="en-US"><i>y</i></span></sub><span lang="en-US">&nbsp;</span>≤<span lang="en-US">&nbsp;</span>10<sup>6</sup>).</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Выходной
+файл должен содержать одно целое число — количество сбитых
+кеглей.</p>
+
+    </div>
+
+
+   <div class="note">
+    <div class="section-title">
+	Примечание
+    </div>
+
+
+<p>Рисунок
+ниже показывает, какие кегли будут сбиты (такие кегли обозначены
+«х»).</p>
+<p><img src="http://informatics.mccme.ru/moodle_probpics/3870/3870_2.gif" name="Объект2" align="BOTTOM" width="327" height="353"></p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">500 4<br>1000<br>-2 -2<br>1 1<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">7<br></pre></div></div></div></div></div> </div></body>

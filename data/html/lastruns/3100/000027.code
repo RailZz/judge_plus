@@ -1,0 +1,9 @@
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+
+gears = list(map(int, input().split()))
+ans = gears[0] * gears[1] // gcd(gears[0], gears[1])
+print(ans)

@@ -1,0 +1,17 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="452" judge-id="6" status="SV" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>79d6a43f-4a19-42fe-b98b-43ac72b14c4f</uuid>
+  <compiler_output>000452.c:1:  Missing spaces around &lt;=  [whitespace/operators] [3]
+000452.c:2:  Missing spaces around ==  [whitespace/operators] [3]
+000452.c:4:  Missing spaces around ==  [whitespace/operators] [3]
+000452.c:4:  Missing space before ( in for(  [whitespace/parens] [5]
+000452.c:8:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+Done processing 000452.c
+Total errors found: 5
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

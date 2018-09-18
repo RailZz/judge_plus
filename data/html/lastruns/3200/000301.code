@@ -1,0 +1,5 @@
+n=int(input())
+z=n+1
+m=n-1
+print("The next number for the number", n, "is" z 
+      "The previous number for",n, "is" m)

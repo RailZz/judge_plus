@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    
+    int n, a;
+	cin >> n;
+	vector<int> in(n);
+	vector<int> out(n);
+	vector<int> stok;
+	vector<int> istok;
+	
+	for (int i = 0; i<n; ++i) {
+	    for (int j = 0; j<n; ++j) {
+	        cin >> a;
+	        if (a == 1) {
+	            ++in[j];
+	            ++out[i];
+	        }
+	    }
+	}
+	
+	for (int i = 0; i<n; ++i) {
+	    if (in[i] == 0 && out[i] == 0) {
+	        stok.push_back(i);
+	        istok.push_back(i);
+	    }
+	    else if (in[i] == 0 && out[i] != 0) istok.push_back(i);
+	    else if (in[i] != 0 && out[i] == 0) stok.push_back(i);
+	}
+    
+    cout << istok.size() << endl;
+    for (int i = 0; i<istok.size(); ++i) cout << istok[i]+1 << endl;
+    cout << stok.size() << endl;
+    for (int i = 0; i<stok.size(); ++i) cout << stok[i]+1 << endl;
+	
+    return 0;
+}

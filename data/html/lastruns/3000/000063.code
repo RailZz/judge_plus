@@ -1,0 +1,30 @@
+program Strings;
+
+function CyclicShift (const s: ansistring; n, len: LongInt): ansistring;
+var
+        res: ansistring;
+        
+begin
+        res := Copy (s, len - n + 1, n) + Copy (s, 1, len - n);
+        CyclicShift := res
+end;
+
+var
+        str, shft: ansistring;
+        i, len: LongInt;
+
+begin
+        ReadLn (str);
+        ReadLn (shft);
+        
+        len := Length (str);
+        
+        for i := 1 to len do
+                if CyclicShift (str, i, len) = shft then
+                begin
+                        WriteLn (i);
+                        Exit
+                end;
+                
+        WriteLn ('-1')
+end.

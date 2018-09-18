@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="1" judge-id="1" status="SV" scoring="ACM" run-tests="0" contest-id="3002" compile-error="yes" >
+  <uuid>6999e5eb-afab-4971-8802-598e9fa6fa9a</uuid>
+  <compiler_output>000001.cpp:14:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
+000001.cpp:29:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+Done processing 000001.cpp
+Total errors found: 2
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

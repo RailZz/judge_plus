@@ -1,0 +1,6 @@
+a=[int(i) for im input()split ()]
+n=0
+for i in a:
+    if i > 0
+        n=n+1
+        print(s)

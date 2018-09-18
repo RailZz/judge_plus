@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="106" judge-id="85" status="WA" scoring="ACM" run-tests="1" contest-id="3101" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>5e27485c-43cd-46cc-b4ec-a94474719ee2</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="1" real-time="3" max-memory-used="311296"  checker-comment="Answers differ: [2]: output: 0, correct: 2" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=311296, maxrss=2744320, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="19">3
+1 2 1
+4
+0 1 2 3
+
+</input>
+      <output size="8">0 0 0 0 </output>
+      <correct size="9">0 2 1 0 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="43">Answers differ: [2]: output: 0, correct: 2
+</checker>
+    </test>
+  </tests>
+</testing-report>

@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 0;
+	bool prime = true;
+	std::cin >> a;
+	if (a < 0)
+	{
+		a = a * -1;
+	}
+	for (int i = 2; i * i < a; i++)
+	{
+		if (a % i == 0)
+		{
+			prime = false;
+			break;
+		}
+	}
+	if (prime == true)
+	{
+		std::cout << "prime" << endl;
+	}
+	else
+	{
+		std::cout << "composite" << endl;
+	}
+    return 0;
+}

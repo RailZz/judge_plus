@@ -1,0 +1,8 @@
+n = int(input())
+
+step = 1
+
+while 2 ** step < n:
+    step += 1
+
+print(step)

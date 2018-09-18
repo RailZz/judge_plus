@@ -1,0 +1,10 @@
+a = input() . split)()
+maxLndex = 0
+maxLength = 0
+for i in range (len(a)):
+    if len (a[i])>maxLength:
+        maxIndex = i
+        maxLendex = len(a[i])
+
+print(a[maxIndex])
+print(maxLength)

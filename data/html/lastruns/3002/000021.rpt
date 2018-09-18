@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="21" judge-id="16" status="SV" scoring="ACM" run-tests="0" contest-id="3002" compile-error="yes" >
+  <uuid>046df497-8aed-4799-a79b-2349add0e4c7</uuid>
+  <compiler_output>000021.cpp:41:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000021.cpp:55:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+Done processing 000021.cpp
+Total errors found: 2
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="195" judge-id="35" status="PE" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>7b1dc080-aa3f-4db6-a990-0158942490a4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000195.cpp: In function 'int main()':
+000195.cpp:37:17: warning: 'max' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     max = id[max];
+                 ^
+</compiler_output>
+  <tests>
+    <test num="1" status="PE" time="1" real-time="3" max-memory-used="307200"  checker-comment="wrong output format Given sequence can not be found in array" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2899968, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3063808, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="13">5 41 2 1 100
+</input>
+      <output size="11">3
+41 67 71 </output>
+      <correct size="10">41 67 71 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="61">wrong output format Given sequence can not be found in array
+</checker>
+    </test>
+  </tests>
+</testing-report>

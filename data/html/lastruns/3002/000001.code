@@ -1,0 +1,55 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+const long long SIZE = 10000;
+vector<long long> ts, gr[SIZE];
+vector<bool> used;
+long long N, M, timer = 0, tout[SIZE];
+
+long long dfsts(long long v) {
+    used[v] = true;
+    for (long long u: gr[v]) {
+        if (!used[u]) {
+            dfsts(u);
+        }
+    }
+    ts.push_back(v);
+    tout[v] = timer++;
+}
+
+int main() {
+    cin >> N >> M;
+    for (long long i = 0; i < M; i++) {
+        long long u, v;
+        cin >> u >> v;
+        gr[u - 1].push_back(v - 1);
+
+    }
+    used.assign(N, false);
+    for (long long i = 0; i < N; i++) {
+        if (!used[i]){
+            dfsts(i);
+        }
+    }
+    reverse(ts.begin(), ts.end());
+    bool canbe = true;
+    for (long long i = 0; i < N; i++) {
+        for (long long j = 0; j < gr[i].size(); j++) {
+            if (tout[i] < tout[gr[i][j]]) {
+                canbe = false;
+            }
+        }
+    }
+    if (canbe) {
+        cout << "Yes" << endl;
+        for (long long i = 0; i < ts.size(); i++) {
+            cout << ts[i] + 1 << " ";
+        }
+    } else {
+        cout << "No" << endl;
+    }
+    return 0;
+}

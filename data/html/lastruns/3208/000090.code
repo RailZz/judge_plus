@@ -1,0 +1,7 @@
+a = int(input())
+c = 0
+o = 1
+while o <= a:
+    c += o ** 3
+    o +=1
+print(c)

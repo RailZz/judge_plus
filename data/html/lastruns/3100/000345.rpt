@@ -1,0 +1,390 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="345" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>6e4f2a62-ff7b-4c8a-a5bb-4de903501c4d</uuid>
+  <compiler_output>000345.cpp:1:1: error: 'include' does not name a type
+ include &lt;iostream&gt;
+ ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:62:0,
+                 from /usr/include/c++/5.3.1/vector:60,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/ext/type_traits.h:160:35: error: '__gnu_cxx::__is_null_pointer' declared as an 'inline' variable
+   __is_null_pointer(std::nullptr_t)
+                                   ^
+/usr/include/c++/5.3.1/ext/type_traits.h:160:35: error: 'bool __gnu_cxx::__is_null_pointer' redeclared as different kind of symbol
+/usr/include/c++/5.3.1/ext/type_traits.h:155:5: note: previous declaration 'template&lt;class _Type&gt; bool __gnu_cxx::__is_null_pointer(_Type)'
+     __is_null_pointer(_Type)
+     ^
+/usr/include/c++/5.3.1/ext/type_traits.h:160:21: error: 'nullptr_t' is not a member of 'std'
+   __is_null_pointer(std::nullptr_t)
+                     ^
+In file included from /usr/include/c++/5.3.1/bits/move.h:57:0,
+                 from /usr/include/c++/5.3.1/bits/stl_pair.h:59,
+                 from /usr/include/c++/5.3.1/bits/stl_algobase.h:64,
+                 from /usr/include/c++/5.3.1/vector:60,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/type_traits:326:31: error: 'std::size_t' has not been declared
+   template&lt;typename _Tp, std::size_t _Size&gt;
+                               ^
+/usr/include/c++/5.3.1/type_traits:525:37: error: 'nullptr_t' is not a member of 'std'
+     struct __is_null_pointer_helper&lt;std::nullptr_t&gt;
+                                     ^
+/usr/include/c++/5.3.1/type_traits:525:37: error: 'nullptr_t' is not a member of 'std'
+/usr/include/c++/5.3.1/type_traits:525:51: error: template argument 1 is invalid
+     struct __is_null_pointer_helper&lt;std::nullptr_t&gt;
+                                                   ^
+/usr/include/c++/5.3.1/type_traits:1411:32: error: 'size_t' is not a member of 'std'
+     : public integral_constant&lt;std::size_t, __alignof__(_Tp)&gt; { };
+                                ^
+/usr/include/c++/5.3.1/type_traits:1411:32: error: 'size_t' is not a member of 'std'
+/usr/include/c++/5.3.1/type_traits:1411:61: error: template argument 1 is invalid
+     : public integral_constant&lt;std::size_t, __alignof__(_Tp)&gt; { };
+                                                             ^
+/usr/include/c++/5.3.1/type_traits:1411:61: note: invalid template non-type parameter
+/usr/include/c++/5.3.1/type_traits:1416:32: error: 'size_t' is not a member of 'std'
+     : public integral_constant&lt;std::size_t, 0&gt; { };
+                                ^
+/usr/include/c++/5.3.1/type_traits:1416:32: error: 'size_t' is not a member of 'std'
+/usr/include/c++/5.3.1/type_traits:1416:46: error: template argument 1 is invalid
+     : public integral_constant&lt;std::size_t, 0&gt; { };
+                                              ^
+/usr/include/c++/5.3.1/type_traits:1416:46: note: invalid template non-type parameter
+/usr/include/c++/5.3.1/type_traits:1418:31: error: 'std::size_t' has not been declared
+   template&lt;typename _Tp, std::size_t _Size&gt;
+                               ^
+/usr/include/c++/5.3.1/type_traits:1420:32: error: 'size_t' is not a member of 'std'
+     : public integral_constant&lt;std::size_t, 1 + rank&lt;_Tp&gt;::value&gt; { };
+                                ^
+/usr/include/c++/5.3.1/type_traits:1420:32: error: 'size_t' is not a member of 'std'
+/usr/include/c++/5.3.1/type_traits:1420:65: error: template argument 1 is invalid
+     : public integral_constant&lt;std::size_t, 1 + rank&lt;_Tp&gt;::value&gt; { };
+                                                                 ^
+/usr/include/c++/5.3.1/type_traits:1420:65: note: invalid template non-type parameter
+/usr/include/c++/5.3.1/type_traits:1424:32: error: 'size_t' is not a member of 'std'
+     : public integral_constant&lt;std::size_t, 1 + rank&lt;_Tp&gt;::value&gt; { };
+                                ^
+/usr/include/c++/5.3.1/type_traits:1424:32: error: 'size_t' is not a member of 'std'
+/usr/include/c++/5.3.1/type_traits:1424:65: error: template argument 1 is invalid
+     : public integral_constant&lt;std::size_t, 1 + rank&lt;_Tp&gt;::value&gt; { };
+                                                                 ^
+/usr/include/c++/5.3.1/type_traits:1424:65: note: invalid template non-type parameter
+/usr/include/c++/5.3.1/type_traits:1429:32: error: 'size_t' is not a member of 'std'
+     : public integral_constant&lt;std::size_t, 0&gt; { };
+                                ^
+/usr/include/c++/5.3.1/type_traits:1429:32: error: 'size_t' is not a member of 'std'
+/usr/include/c++/5.3.1/type_traits:1429:46: error: template argument 1 is invalid
+     : public integral_constant&lt;std::size_t, 0&gt; { };
+                                              ^
+/usr/include/c++/5.3.1/type_traits:1429:46: note: invalid template non-type parameter
+/usr/include/c++/5.3.1/type_traits:1431:47: error: 'std::size_t' has not been declared
+   template&lt;typename _Tp, unsigned _Uint, std::size_t _Size&gt;
+                                               ^
+/usr/include/c++/5.3.1/type_traits:1433:32: error: 'size_t' is not a member of 'std'
+     : public integral_constant&lt;std::size_t,
+                                ^
+/usr/include/c++/5.3.1/type_traits:1433:32: error: 'size_t' is not a member of 'std'
+/usr/include/c++/5.3.1/type_traits:1435:28: error: template argument 1 is invalid
+           _Uint - 1&gt;::value&gt;
+                            ^
+/usr/include/c++/5.3.1/type_traits:1435:28: note: invalid template non-type parameter
+/usr/include/c++/5.3.1/type_traits:1440:32: error: 'size_t' is not a member of 'std'
+     : public integral_constant&lt;std::size_t,
+                                ^
+/usr/include/c++/5.3.1/type_traits:1440:32: error: 'size_t' is not a member of 'std'
+/usr/include/c++/5.3.1/type_traits:1442:31: error: template argument 1 is invalid
+              _Uint - 1&gt;::value&gt;
+                               ^
+/usr/include/c++/5.3.1/type_traits:1442:31: note: invalid template non-type parameter
+/usr/include/c++/5.3.1/type_traits:1892:31: error: 'std::size_t' has not been declared
+   template&lt;typename _Tp, std::size_t _Size&gt;
+                               ^
+/usr/include/c++/5.3.1/type_traits:1905:31: error: 'std::size_t' has not been declared
+   template&lt;typename _Tp, std::size_t _Size&gt;
+                               ^
+/usr/include/c++/5.3.1/type_traits:1964:17: error: 'std::size_t' has not been declared
+   template&lt;std::size_t _Len&gt;
+                 ^
+/usr/include/c++/5.3.1/type_traits:1984:17: error: 'std::size_t' has not been declared
+   template&lt;std::size_t _Len, std::size_t _Align =
+                 ^
+/usr/include/c++/5.3.1/type_traits:1984:35: error: 'std::size_t' has not been declared
+   template&lt;std::size_t _Len, std::size_t _Align =
+                                   ^
+/usr/include/c++/5.3.1/type_traits:1998:20: error: 'size_t' does not name a type
+       static const size_t _S_alignment = 0;
+                    ^
+/usr/include/c++/5.3.1/type_traits:1999:20: error: 'size_t' does not name a type
+       static const size_t _S_size = 0;
+                    ^
+/usr/include/c++/5.3.1/type_traits:2005:20: error: 'size_t' does not name a type
+       static const size_t _S_alignment =
+                    ^
+/usr/include/c++/5.3.1/type_traits:2008:20: error: 'size_t' does not name a type
+       static const size_t _S_size =
+                    ^
+/usr/include/c++/5.3.1/type_traits:2023:13: error: 'size_t' has not been declared
+   template &lt;size_t _Len, typename... _Types&gt;
+             ^
+/usr/include/c++/5.3.1/type_traits:2030:20: error: 'size_t' does not name a type
+       static const size_t _S_len = _Len &gt; __strictest::_S_size
+                    ^
+/usr/include/c++/5.3.1/type_traits:2034:20: error: 'size_t' does not name a type
+       static const size_t alignment_value = __strictest::_S_alignment;
+                    ^
+/usr/include/c++/5.3.1/type_traits:2036:40: error: '_S_len' was not declared in this scope
+       typedef typename aligned_storage&lt;_S_len, alignment_value&gt;::type type;
+                                        ^
+/usr/include/c++/5.3.1/type_traits:2036:48: error: 'alignment_value' was not declared in this scope
+       typedef typename aligned_storage&lt;_S_len, alignment_value&gt;::type type;
+                                                ^
+/usr/include/c++/5.3.1/type_traits:2036:63: error: template argument 1 is invalid
+       typedef typename aligned_storage&lt;_S_len, alignment_value&gt;::type type;
+                                                               ^
+/usr/include/c++/5.3.1/type_traits:2036:63: error: template argument 2 is invalid
+/usr/include/c++/5.3.1/type_traits:2039:13: error: 'size_t' has not been declared
+   template &lt;size_t _Len, typename... _Types&gt;
+             ^
+/usr/include/c++/5.3.1/type_traits:2040:11: error: 'size_t' does not name a type
+     const size_t aligned_union&lt;_Len, _Types...&gt;::alignment_value;
+           ^
+In file included from /usr/include/c++/5.3.1/bits/stl_pair.h:59:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algobase.h:64,
+                 from /usr/include/c++/5.3.1/vector:60,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/bits/move.h:193:26: error: 'size_t' has not been declared
+   template&lt;typename _Tp, size_t _Nm&gt;
+                          ^
+/usr/include/c++/5.3.1/bits/move.h: In function 'void std::swap(_Tp (&amp;)[_Nm], _Tp (&amp;)[_Nm])':
+/usr/include/c++/5.3.1/bits/move.h:200:12: error: 'size_t' was not declared in this scope
+       for (size_t __n = 0; __n &lt; _Nm; ++__n)
+            ^
+/usr/include/c++/5.3.1/bits/move.h:200:28: error: '__n' was not declared in this scope
+       for (size_t __n = 0; __n &lt; _Nm; ++__n)
+                            ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/5.3.1/vector:60,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/bits/stl_pair.h: At global scope:
+/usr/include/c++/5.3.1/bits/stl_pair.h:85:17: error: 'std::size_t' has not been declared
+   template&lt;std::size_t...&gt;
+                 ^
+/usr/include/c++/5.3.1/bits/stl_pair.h:204:41: error: 'std::size_t' has not been declared
+       template&lt;typename... _Args1, std::size_t... _Indexes1,
+                                         ^
+/usr/include/c++/5.3.1/bits/stl_pair.h:205:41: error: 'std::size_t' has not been declared
+                typename... _Args2, std::size_t... _Indexes2&gt;
+                                         ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/5.3.1/vector:60,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/bits/stl_iterator_base_types.h:116:67: error: 'ptrdiff_t' does not name a type
+   template&lt;typename _Category, typename _Tp, typename _Distance = ptrdiff_t,
+                                                                   ^
+/usr/include/c++/5.3.1/bits/stl_iterator_base_types.h:182:15: error: 'ptrdiff_t' does not name a type
+       typedef ptrdiff_t                   difference_type;
+               ^
+/usr/include/c++/5.3.1/bits/stl_iterator_base_types.h:193:15: error: 'ptrdiff_t' does not name a type
+       typedef ptrdiff_t                   difference_type;
+               ^
+In file included from /usr/include/c++/5.3.1/bits/stl_iterator.h:66:0,
+                 from /usr/include/c++/5.3.1/bits/stl_algobase.h:67,
+                 from /usr/include/c++/5.3.1/vector:60,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/bits/ptr_traits.h:69:15: error: 'ptrdiff_t' does not name a type
+       typedef ptrdiff_t __type;
+               ^
+/usr/include/c++/5.3.1/bits/ptr_traits.h:157:15: error: 'ptrdiff_t' does not name a type
+       typedef ptrdiff_t difference_type;
+               ^
+In file included from /usr/include/c++/5.3.1/vector:60:0,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/bits/stl_algobase.h: In static member function 'static _Tp* std::__copy_move&lt;_IsMove, true, std::random_access_iterator_tag&gt;::__copy_m(const _Tp*, const _Tp*, _Tp*)':
+/usr/include/c++/5.3.1/bits/stl_algobase.h:380:10: error: 'ptrdiff_t' does not name a type
+    const ptrdiff_t _Num = __last - __first;
+          ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:381:8: error: '_Num' was not declared in this scope
+    if (_Num)
+        ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:383:22: error: '_Num' was not declared in this scope
+    return __result + _Num;
+                      ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h: In static member function 'static _Tp* std::__copy_move_backward&lt;_IsMove, true, std::random_access_iterator_tag&gt;::__copy_move_b(const _Tp*, const _Tp*, _Tp*)':
+/usr/include/c++/5.3.1/bits/stl_algobase.h:580:10: error: 'ptrdiff_t' does not name a type
+    const ptrdiff_t _Num = __last - __first;
+          ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:581:8: error: '_Num' was not declared in this scope
+    if (_Num)
+        ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:583:22: error: '_Num' was not declared in this scope
+    return __result - _Num;
+                      ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h: In function 'typename __gnu_cxx::__enable_if&lt;std::__is_byte&lt;_Tp&gt;::__value, void&gt;::__type std::__fill_a(_Tp*, _Tp*, const _Tp&amp;)':
+/usr/include/c++/5.3.1/bits/stl_algobase.h:718:11: error: expected primary-expression before 'const'
+       if (const size_t __len = __last - __first)
+           ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:718:11: error: expected ')' before 'const'
+/usr/include/c++/5.3.1/bits/stl_algobase.h:719:63: error: '__len' was not declared in this scope
+  __builtin_memset(__first, static_cast&lt;unsigned char&gt;(__tmp), __len);
+                                                               ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h: In static member function 'static bool std::__equal&lt;true&gt;::equal(const _Tp*, const _Tp*, const _Tp*)':
+/usr/include/c++/5.3.1/bits/stl_algobase.h:825:8: error: expected primary-expression before 'const'
+    if (const size_t __len = (__last1 - __first1))
+        ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:825:8: error: expected ')' before 'const'
+/usr/include/c++/5.3.1/bits/stl_algobase.h:826:65: error: '__len' was not declared in this scope
+      return !__builtin_memcmp(__first1, __first2, sizeof(_Tp) * __len);
+                                                                 ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h: In static member function 'static bool std::__lexicographical_compare&lt;true&gt;::__lc(const _Tp*, const _Tp*, const _Up*, const _Up*)':
+/usr/include/c++/5.3.1/bits/stl_algobase.h:929:10: error: 'size_t' does not name a type
+    const size_t __len1 = __last1 - __first1;
+          ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:930:10: error: 'size_t' does not name a type
+    const size_t __len2 = __last2 - __first2;
+          ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:931:8: error: expected primary-expression before 'const'
+    if (const size_t __len = std::min(__len1, __len2))
+        ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:931:8: error: expected ')' before 'const'
+/usr/include/c++/5.3.1/bits/stl_algobase.h:932:62: error: '__len' was not declared in this scope
+      if (int __result = __builtin_memcmp(__first1, __first2, __len))
+                                                              ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:934:11: error: '__len1' was not declared in this scope
+    return __len1 &lt; __len2;
+           ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:934:20: error: '__len2' was not declared in this scope
+    return __len1 &lt; __len2;
+                    ^
+In file included from /usr/include/c++/5.3.1/exception:162:0,
+                 from /usr/include/c++/5.3.1/new:40,
+                 from /usr/include/c++/5.3.1/ext/new_allocator.h:33,
+                 from /usr/include/c++/5.3.1/i686-redhat-linux/bits/c++allocator.h:33,
+                 from /usr/include/c++/5.3.1/bits/allocator.h:46,
+                 from /usr/include/c++/5.3.1/vector:61,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/bits/exception_ptr.h: At global scope:
+/usr/include/c++/5.3.1/bits/exception_ptr.h:95:30: error: field 'nullptr_t' has incomplete type 'std::__exception_ptr::exception_ptr'
+       exception_ptr(nullptr_t) noexcept
+                              ^
+/usr/include/c++/5.3.1/bits/exception_ptr.h:75:11: note: definition of 'class std::__exception_ptr::exception_ptr' is not complete until the closing brace
+     class exception_ptr
+           ^
+/usr/include/c++/5.3.1/bits/exception_ptr.h:95:30: error: expected ';' at end of member declaration
+       exception_ptr(nullptr_t) noexcept
+                              ^
+/usr/include/c++/5.3.1/bits/exception_ptr.h:95:32: error: expected unqualified-id before 'noexcept'
+       exception_ptr(nullptr_t) noexcept
+                                ^
+In file included from /usr/include/c++/5.3.1/ext/new_allocator.h:33:0,
+                 from /usr/include/c++/5.3.1/i686-redhat-linux/bits/c++allocator.h:33,
+                 from /usr/include/c++/5.3.1/bits/allocator.h:46,
+                 from /usr/include/c++/5.3.1/vector:61,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/new:111:31: error: declaration of 'operator new' as non-function
+ void* operator new(std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+                               ^
+/usr/include/c++/5.3.1/new:111:20: error: 'size_t' is not a member of 'std'
+ void* operator new(std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+                    ^
+/usr/include/c++/5.3.1/new:113:33: error: declaration of 'operator new []' as non-function
+ void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+                                 ^
+/usr/include/c++/5.3.1/new:113:22: error: 'size_t' is not a member of 'std'
+ void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+                      ^
+/usr/include/c++/5.3.1/new:119:25: error: declaration of 'operator new' as non-function
+ void* operator new(std::size_t, const std::nothrow_t&amp;) _GLIBCXX_USE_NOEXCEPT
+                         ^
+/usr/include/c++/5.3.1/new:119:20: error: 'size_t' is not a member of 'std'
+ void* operator new(std::size_t, const std::nothrow_t&amp;) _GLIBCXX_USE_NOEXCEPT
+                    ^
+/usr/include/c++/5.3.1/new:119:33: error: expected primary-expression before 'const'
+ void* operator new(std::size_t, const std::nothrow_t&amp;) _GLIBCXX_USE_NOEXCEPT
+                                 ^
+/usr/include/c++/5.3.1/new:121:27: error: declaration of 'operator new []' as non-function
+ void* operator new[](std::size_t, const std::nothrow_t&amp;) _GLIBCXX_USE_NOEXCEPT
+                           ^
+/usr/include/c++/5.3.1/new:121:22: error: 'size_t' is not a member of 'std'
+ void* operator new[](std::size_t, const std::nothrow_t&amp;) _GLIBCXX_USE_NOEXCEPT
+                      ^
+/usr/include/c++/5.3.1/new:121:35: error: expected primary-expression before 'const'
+ void* operator new[](std::size_t, const std::nothrow_t&amp;) _GLIBCXX_USE_NOEXCEPT
+                                   ^
+/usr/include/c++/5.3.1/new:129:32: error: declaration of 'operator new' as non-function
+ inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+                                ^
+/usr/include/c++/5.3.1/new:129:27: error: 'size_t' is not a member of 'std'
+ inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+                           ^
+/usr/include/c++/5.3.1/new:129:40: error: expected primary-expression before 'void'
+ inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+                                        ^
+/usr/include/c++/5.3.1/new:131:34: error: declaration of 'operator new []' as non-function
+ inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+                                  ^
+/usr/include/c++/5.3.1/new:131:29: error: 'size_t' is not a member of 'std'
+ inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+                             ^
+/usr/include/c++/5.3.1/new:131:42: error: expected primary-expression before 'void'
+ inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+                                          ^
+In file included from /usr/include/c++/5.3.1/i686-redhat-linux/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/5.3.1/bits/allocator.h:46,
+                 from /usr/include/c++/5.3.1/vector:61,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/ext/new_allocator.h:44:14: error: 'std::size_t' has not been declared
+   using std::size_t;
+              ^
+/usr/include/c++/5.3.1/ext/new_allocator.h:45:14: error: 'std::ptrdiff_t' has not been declared
+   using std::ptrdiff_t;
+              ^
+/usr/include/c++/5.3.1/ext/new_allocator.h:61:15: error: 'size_t' does not name a type
+       typedef size_t     size_type;
+               ^
+/usr/include/c++/5.3.1/ext/new_allocator.h:62:15: error: 'ptrdiff_t' does not name a type
+       typedef ptrdiff_t  difference_type;
+               ^
+/usr/include/c++/5.3.1/ext/new_allocator.h:99:16: error: 'size_type' has not been declared
+       allocate(size_type __n, const void* = 0)
+                ^
+/usr/include/c++/5.3.1/ext/new_allocator.h:109:31: error: 'size_type' has not been declared
+       deallocate(pointer __p, size_type)
+                               ^
+/usr/include/c++/5.3.1/ext/new_allocator.h:112:7: error: 'size_type' does not name a type
+       size_type
+       ^
+In file included from /usr/include/c++/5.3.1/vector:61:0,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/bits/allocator.h:66:15: error: 'size_t' does not name a type
+       typedef size_t      size_type;
+               ^
+/usr/include/c++/5.3.1/bits/allocator.h:67:15: error: 'ptrdiff_t' does not name a type
+       typedef ptrdiff_t   difference_type;
+               ^
+/usr/include/c++/5.3.1/bits/allocator.h:95:15: error: 'size_t' does not name a type
+       typedef size_t     size_type;
+               ^
+/usr/include/c++/5.3.1/bits/allocator.h:96:15: error: 'ptrdiff_t' does not name a type
+       typedef ptrdiff_t  difference_type;
+               ^
+In file included from /usr/include/c++/5.3.1/bits/stl_vector.h:63:0,
+                 from /usr/include/c++/5.3.1/vector:64,
+                 from 000345.cpp:2:
+/usr/include/c++/5.3.1/initializer_list:53:15: error: 'size_t' does not name a type
+       typedef size_t   size_type;
+               ^
+/usr/include/c++/5.3.1/initializer_list:59:7: error: 'size_type' does not name a type
+       size_type   _M_len;
+       ^
+/usr/include/c++/5.3.1/initializer_list:62:54: error: 'size_type' has not been declared
+       constexpr initializer_list(const_iterator __a, size_type __l)
+                                                      ^
+/usr/include/c++/5.3.1/initializer_list:70:17: error: 'size_type' does not name a type
+       constexpr size_type
+                 ^
+/usr/include/c++/5.3.1/initializer_list:47:11: fatal error: definition of std::initializer_list does not match #include &lt;initializer_list&gt;
+     class initializer_list
+           ^
+compilation terminated.
+</compiler_output>
+</testing-report>

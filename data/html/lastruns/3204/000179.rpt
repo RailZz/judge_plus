@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="179" judge-id="109" status="RT" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>450176b7-8e47-4d8c-a5c4-fafd5febec55</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="75" real-time="82" max-memory-used="30339072" >
+  <program-stats-str>{ utime=72, stime=3, ptime=75, rtime=82, maxvsz=30339072, maxrss=27459584, nvcsw=1, nivcsw=11 }</program-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="6">0
+0
+0
+</output>
+      <stderr size="211">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000179&quot;, line 7, in &lt;module&gt;
+    if (a[i]&gt;a[i-1]) and (a[i]&gt;a[i+1]):
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

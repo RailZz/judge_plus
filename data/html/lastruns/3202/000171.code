@@ -1,0 +1,12 @@
+a = int(input())
+s = int(input())
+d = int(input())
+if a >= d :
+    if a >= s :
+        print(a)
+    else:
+        print(s)
+elif d >= s:
+    print(d)
+else:
+    print(s)

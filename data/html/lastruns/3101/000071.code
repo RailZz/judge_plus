@@ -1,0 +1,72 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    vector <int> ar1(n);
+    for (int i = 0; i < n; i++)
+    {
+        cin >> ar1[i];
+    }
+    sort(ar1.begin(), ar1.end());
+
+    int m;
+    cin >> m;
+    vector <int> ar2(m);
+    for (int i = 0; i < m; i++)
+    {
+        cin >> ar2[i];
+    }
+    sort(ar2.begin(), ar2.end());
+
+    vector <int> cnt(m, 0);
+    int leftR = 0, rightR = n;
+    int leftL = -1, rightL = n - 1;
+    int mid = 0;
+    for (int i = 0; i < m; i++)
+    {
+        while (rightR - leftR > 1)
+        {
+            mid = (leftR + rightR) / 2;
+            if (ar1[mid] <= ar2[i])
+            {
+                leftR = mid;
+            }
+            else
+            {
+                rightR = mid;
+            }
+        }
+
+        if (ar1[leftR] == ar2[i])
+        {
+                while (rightL - leftL > 1)
+            {
+                mid = (leftL + rightL) / 2;
+                if (ar1[mid] < ar2[i])
+                {
+                    leftL = mid;
+                }
+                else
+                {
+                    rightL = mid;
+                }
+            }
+            cnt[i] = leftR - rightL + 1;
+        }
+        leftR = 0;
+        rightR = n;
+        leftL = -1;
+        rightL = n - 1;
+    }
+
+    for (int i = 0; i < cnt.size(); i++)
+    {
+        cout << cnt[i] << ' ';
+    }
+    return 0;
+}

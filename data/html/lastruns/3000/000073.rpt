@@ -1,0 +1,46 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="73" judge-id="5" status="SV" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>69927359-b614-4f42-87f4-799416d6f543</uuid>
+  <compiler_output>000073.cpp:68:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:69:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:70:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:70:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000073.cpp:71:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:72:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:73:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:74:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:75:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:75:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+000073.cpp:76:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:77:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:78:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:79:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:80:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:81:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:82:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:83:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:84:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:85:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:86:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:87:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:88:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:89:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:90:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:91:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:92:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:93:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:94:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:95:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:96:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:97:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:98:  Tab found; better to use spaces  [whitespace/tab] [1]
+000073.cpp:99:  Tab found; better to use spaces  [whitespace/tab] [1]
+Done processing 000073.cpp
+Total errors found: 34
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

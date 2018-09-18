@@ -1,0 +1,13 @@
+ var l,p,m,x:real; i:integer;
+begin
+read(x);
+l:=-pi/2;
+p:=pi/2;
+for i:=1 to 50 do 
+begin
+m:=(l+p)/2;
+if sin(m)<x then l:=m
+else p:=m;
+end;
+write(l);
+end.

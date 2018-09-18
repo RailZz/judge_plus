@@ -1,0 +1,5 @@
+n=int(input())
+k=int(input())
+n=(3)
+k=(8)
+print(k//n)

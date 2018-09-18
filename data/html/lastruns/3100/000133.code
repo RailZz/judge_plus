@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int n,NOD,z,left,right;
+    cin >> n;
+    cin >> z;
+    NOD=z;
+    for (int i = 1; i < n; i++)
+    {
+        cin >> z;
+        left=NOD;
+        right=z;
+        while (left != 0 && right != 0)
+        {
+            if (left < right)
+            {
+                swap (left,right);
+            }
+            left %= right;
+        }
+    }
+    cout << NOD;
+}

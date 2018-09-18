@@ -1,0 +1,64 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="98" judge-id="77" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>937ec30b-336d-47ff-9fee-8b397002e8b1</uuid>
+  <compiler_output>Done processing 000098.cpp
+000098.cpp:7:5: error: unknown type name 'longlong'
+    longlong int vvod1, massiv1[1000000], vvod2, massiv2[1000000], massiv[1000000];
+    ^
+000098.cpp:7:14: error: expected unqualified-id
+    longlong int vvod1, massiv1[1000000], vvod2, massiv2[1000000], massiv[1000000];
+             ^
+000098.cpp:8:17: error: use of undeclared identifier 'vvod1'
+    std::cin &gt;&gt; vvod1;
+                ^
+000098.cpp:9:26: error: use of undeclared identifier 'vvod1'
+    for (int i = 0; i &lt;= vvod1, i++)
+                         ^
+000098.cpp:9:36: error: expected ';' in 'for' statement specifier
+    for (int i = 0; i &lt;= vvod1, i++)
+                                   ^
+000098.cpp:11:9: error: use of undeclared identifier 'massiv'
+        massiv[i] = 0;
+        ^
+000098.cpp:13:26: error: use of undeclared identifier 'vvod1'
+    for (int i = 0; i &lt;= vvod1, i++)
+                         ^
+000098.cpp:13:36: error: expected ';' in 'for' statement specifier
+    for (int i = 0; i &lt;= vvod1, i++)
+                                   ^
+000098.cpp:15:21: error: use of undeclared identifier 'massiv1'
+        std::cin &gt;&gt; massiv1[i];
+                    ^
+000098.cpp:17:17: error: use of undeclared identifier 'vvod2'
+    std::cin &gt;&gt; vvod2;
+                ^
+000098.cpp:18:26: error: use of undeclared identifier 'vvod1'
+    for (int i = 0; i &lt;= vvod1, i++)
+                         ^
+000098.cpp:18:36: error: expected ';' in 'for' statement specifier
+    for (int i = 0; i &lt;= vvod1, i++)
+                                   ^
+000098.cpp:20:21: error: use of undeclared identifier 'massiv2'
+        std::cin &gt;&gt; massiv2[i];
+                    ^
+000098.cpp:21:26: error: use of undeclared identifier 'vvod1'
+        for (int e; e &lt;= vvod1, e++)
+                         ^
+000098.cpp:21:36: error: expected ';' in 'for' statement specifier
+        for (int e; e &lt;= vvod1, e++)
+                                   ^
+000098.cpp:23:17: error: use of undeclared identifier 'massiv1'
+            if (massiv1[e] == massiv2[i])
+                ^
+000098.cpp:23:31: error: use of undeclared identifier 'massiv2'
+            if (massiv1[e] == massiv2[i])
+                              ^
+000098.cpp:25:17: error: use of undeclared identifier 'massiv'
+                massiv[i] =+ 1;
+                ^
+18 errors generated.
+
+</compiler_output>
+</testing-report>

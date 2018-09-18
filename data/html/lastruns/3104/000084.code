@@ -1,0 +1,9 @@
+def fib(n):
+    fib0 = 0
+    fib1 = 1
+    for i in range(n):
+        fib0, fib1 = fib1, fib0 + fib1
+    return fib0
+n = int(input())
+print(fib(n))
+        

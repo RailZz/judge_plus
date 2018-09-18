@@ -1,0 +1,12 @@
+a = [int(i) for i in input().split()]
+f = True
+for i in range(len(a)):
+    for j in range(len(a)):
+        if i != j:
+            if a[i] == a[j]:
+                f = False
+                break
+    if f:
+        print(a[i])
+    else:
+        f = True

@@ -1,0 +1,65 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector <vector <int> > gr;
+
+void dfs (int a, int b)
+{
+	gr[a][b] = 1;
+	if (a != 0 && !gr[a - 1][b])
+	{
+	dfs(a - 1, b);
+	}
+	if (b != 0 && !gr[a][b - 1])
+	{
+	dfs(a, b - 1);
+	}
+	if (b < gr[a].size() - 1 && !gr[a][b + 1])
+	{
+	dfs(a, b + 1);
+	}
+	if (a < gr.size() - 1 && !gr[a + 1][b])
+	{
+	dfs(a + 1, b);
+	}
+}
+int main()
+{
+	int n, m;
+	cin >> m >> n;
+	gr.resize(m, vector <int> (n));
+
+	char c;
+	for (int i = 0; i < m; i++)
+	{
+		for (int k = 0; k < n; k++)
+		{
+			cin>> c;
+			if (c == '#')
+			{
+				gr[i][k] = 0;
+			}
+			else
+			{
+				gr[i][k] = 1;
+			}
+		}
+	}
+
+	int cnt = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int k = 0; k < n; k++)
+		{
+			if (gr[i][k] == 0)
+			{
+				cnt++;
+				dfs(i, k);
+			}
+		}
+	}
+	cout << cnt;
+	return 0;
+}

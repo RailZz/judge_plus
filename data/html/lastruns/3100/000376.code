@@ -1,0 +1,14 @@
+def if_prime(a):
+    b = 0
+    c = int(a ** 0.5)
+    for i in range(2, c + 1):
+        if a % i == 0:
+            b += 1
+    return b == 0
+
+n = int(input())
+for j in range(2, n + 1):
+    if if_prime(j):
+        while n % j == 0:
+            n = n // j
+            print(j)

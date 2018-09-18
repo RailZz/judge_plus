@@ -1,0 +1,5 @@
+n=int(input())
+m=int(input())
+a=n//m
+a=a//a
+print(a)

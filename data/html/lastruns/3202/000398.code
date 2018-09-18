@@ -1,0 +1,10 @@
+w=int(input())
+r=int(input())
+p=int(input())
+if (w>=r) and (w>=p):
+    print(w)
+elif (r>=w) and (r>=p):
+    print(r)
+elif (p>=r) and (p>=w):
+     print(p)
+    

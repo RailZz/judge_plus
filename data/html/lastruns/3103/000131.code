@@ -1,0 +1,37 @@
+N, M = list(map(int, input().split()))
+a1 = []
+for i in range(N):
+    a1.append([])
+for i in range(M):
+    x, y = list(map(int, input().split()))
+    a1[x - 1].append(y)
+    a1[y - 1].append(x)
+
+
+
+used = []
+for i in range(N):
+    used.append(0)
+k = 1
+g = 1
+def dfs(s, k):
+    global used, a1, g
+    used[s - 1] = k
+    for i in a1[s - 1]:
+        if used[i - 1] == 0:
+            dfs(i, 3 - k)
+        elif used[i - 1] == k:
+            g = 0
+for i in range(N):
+    if used[i] == 0:
+        dfs(i + 1, k)
+
+
+    
+if g:
+    print('YES')
+    for i in range(len(used)):
+        if used[i] == 1:
+            print(i + 1 , end = ' ')
+else:
+    print('NO')

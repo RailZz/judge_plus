@@ -1,0 +1,8 @@
+a=input()
+def IsDigit (a) :
+    if a.isdigit():
+        return "yes"
+    else:
+        return "no"
+print (IsDigit (a))
+

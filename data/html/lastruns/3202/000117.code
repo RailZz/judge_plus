@@ -1,0 +1,9 @@
+k = int(input())
+m = int(input())
+n = int(input())
+t = 0
+if k % n == 0 :
+    t = k * m * 2
+else:
+    t = k * m * 2 + m * 2
+print(t)

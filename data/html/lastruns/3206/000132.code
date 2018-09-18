@@ -1,0 +1,4 @@
+a = 'In the town where I was born'
+b = a.split()
+print(len(b))
+

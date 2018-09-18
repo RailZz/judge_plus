@@ -1,0 +1,7 @@
+var
+  n, k: integer;
+
+begin
+  read(n, k);
+  writeln(k mod n);
+end.

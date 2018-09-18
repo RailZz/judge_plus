@@ -1,0 +1,130 @@
+//#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<long long> a;
+vector<long long> t;
+
+int SPECIFIC_INDEX;
+
+void print_t()
+{
+    int i;
+    for (i = 0; i < 15; ++i)
+    {
+        //cout << i << '\t' << t[i] << endl;
+    }
+}
+
+long long maxx(int v1, int v2)
+{
+    //cout << v1 << ", " << v2 << ". max of " << a[v1] << " and " << a[v2] << " = ";
+    if (a[v1] > a[v2])
+    {
+        //cout << a[v1] << ". we return " << v1 << endl;
+        return v1;
+    }
+    //cout << a[v2] << ". we return " << v2 << endl;
+    return v2;
+}
+
+void build(int v, int left, int right)
+{
+    //cout << "build, v = " << v << ", l = " << left << ", right = " << right << endl;
+    if (left == right - 1)
+    {
+        t[v] = left;
+        return;
+    }
+    int m = (left + right) / 2;
+    build(2 * v + 1, left, m);
+    build(2 * v + 2, m, right);
+    //if (v == 6) cout << "V = 6!!!!" << endl;
+    //cout << "finding t[" << v << "]: " << endl;
+    t[v] = maxx(t[2 * v + 1], t[2 * v + 2]);
+    //else t[v] = 4;
+    //cout << "found! t[" << v << "] = " << t[v] << endl;
+    //cout << "end of v = 6" << endl;
+    //t[v] = t[2 * v + 1] + t[2 * v + 2];
+}
+
+long long ask(int v, int left, int right, int askl, int askr)
+{
+    if (askl >= right || askr <= left)
+    {
+        return SPECIFIC_INDEX;
+    }
+    if (askl <= left && right <= askr)
+    {
+        return t[v];
+    }
+    int m = (left + right) / 2;
+    return maxx(ask(2 * v + 1, left, m, askl, askr), ask(2 * v + 2, m, right, askl, askr));
+}
+
+void change(int v, int left, int right, int pos, int val)
+{
+    if (left == right - 1)
+    {
+        //cout << "FoUnD! v = " << v << endl;
+        t[v] = pos;
+        a[pos] = val;
+        return;
+    }
+    int m = (left + right) / 2;
+    if (pos < m)
+    {
+        change(2 * v + 1, left, m, pos, val);
+    } else {
+        change(2 * v + 2, m, right, pos, val);
+    }
+    t[v] = maxx(t[2 * v + 1], t[2 * v + 2]);
+    //t[v] = t[2 * v + 1] + t[2 * v + 2];
+}
+
+int main()
+{
+    int event, x, y;
+    int n;
+    cin >> n;
+    a.resize(n+1);
+    SPECIFIC_INDEX = n;
+    for (int i = 0; i < n; ++i)
+    {
+        cin >> a[i];
+    }
+    t.resize(4 * n);
+    build(0, 0, a.size()-1);
+    //print_t();
+    //cout << "a looks like ";
+    //for (int j = 0; j < a.size(); ++j) cout << a[j] << " ";
+    //cout << endl;
+    int m;
+    cin >> m;
+    char type;
+    for (int i = 0; i < m; ++i)
+    {
+        cin >> type >> x >> y;
+        if (type == 's')
+        {
+            //print_t();
+            cout << ask(0, 0, a.size()-1, x - 1, y) + 1 << " ";
+            //cout << endl;
+            //cout << "NOW A LOOKS LIKE ";
+            //for (int j = 0; j < a.size(); ++j) cout << a[j] << " ";
+            //cout << endl;
+        }
+        if (type == 'u')
+        {
+            //print_t();
+            change(0, 0, a.size()-1, x - 1, y);
+            //a[x] = y;
+            //cout << "NOW A LOOKS LIKE ";
+            //for (int j = 0; j < a.size(); ++j) cout << a[j] << " ";
+            //cout << endl;
+        }
+    }
+}

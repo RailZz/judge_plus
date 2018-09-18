@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a,b,c;
+	cin>>a>>b>>c;
+	if(a%2==0){
+		if(b%2!=0)
+			cout<<"YES"<<endl;
+		else{
+			if(c%2!=0)
+				cout<<"YES"<<endl;
+			else
+				cout<<"NO"<<endl;
+		}
+	}
+	else{
+		if(b%2==0)
+			cout<<"YES"<<endl;
+		else{
+			if(c%2==0)
+				cout<<"YES"<<endl;
+			else
+				cout<<"NO"<<endl;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+v=int(input())
+t=int(input())
+s=109
+if v>0:
+    s=v*t-s
+else:
+    if v<0:
+        s+=v*t
+print(s)
+    

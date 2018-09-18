@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int gcd(long long a, long long b) {
+    if (b == 0) return a;
+    return gcd(b, a % b);
+}
+int main() {
+    long long a, b, c, d;
+    cin >> a >> b >> c >> d;
+    long long nod = gcd(a * d + b * c, b * d);
+    cout << (a * d + b * c) / nod << " " << (b * d) / nod;
+
+    return 0;
+}

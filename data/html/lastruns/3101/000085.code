@@ -1,0 +1,20 @@
+nk_li = list(map(int, input().split()))
+n = nk_li[0]
+k = nk_li[1]
+nli = list(map(int, input().split()))
+kli = list(map(int, input().split()))
+for i in kli:
+    l = 0
+    r = len(nli)
+    if i not in nli:
+        print('NO')
+        continue
+    while r - l > 1:
+        m = (r + l) // 2
+        if nli[m] < i:
+            l = m
+        elif nli[m] == i:
+            print('YES')
+            break
+        else:
+            r = m

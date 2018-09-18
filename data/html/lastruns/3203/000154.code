@@ -1,0 +1,11 @@
+n = int(input())
+i = n
+k = 0
+while i > 0:
+    i = i // 10
+    k += 1
+while k > 0:
+    i = (n%10)+i
+    n = n//10
+    k -=1
+print(i)

@@ -1,0 +1,7 @@
+a, b , c, d = int(input()), int(input()), int(input()), int(input())
+if a == c and a == d:
+    print("YES") 
+elif  a == c or b == d:
+    print("YES")
+else:
+    print("NO")

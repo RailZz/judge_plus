@@ -1,0 +1,26 @@
+#открытие файла
+import os
+fileadress = input("Укажите расположение файла: ")
+file = open(fileadress,'r')
+#создание пароля
+code = ()
+code = input("Задайте код:")
+print("\n")
+answer = input("\nКакой код?")
+while (code != answer):
+    answer = input("\nКод неверный!Попробуй снова!")
+    if code == answer:
+        break 
+if code == answer:
+    print ("\nДоступ разрешён!")
+if code == answer:
+    print(file.read())
+file.close()
+#шифр файла
+#перемещение зашифрованного файла
+os.rename('"Откуда"','"Куда"')
+#либо
+shutil.copyfile(r'"Откуда", r'"Куда")
+#Вопросы:
+#как сделать так, чтобы пароль задавался один раз, далее только спрашивался
+#как встроить шифр в программу

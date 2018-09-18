@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="54" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3102" compile-error="yes" >
+  <uuid>646c0cfc-ec41-41a5-a018-7dc3dca5d952</uuid>
+  <compiler_output>000054.cpp: In function 'int main()':
+000054.cpp:18:23: error: 'x' was not declared in this scope
+  int l = 0, r = n*max(x, y);
+                       ^
+000054.cpp:18:26: error: 'y' was not declared in this scope
+  int l = 0, r = n*max(x, y);
+                          ^
+</compiler_output>
+</testing-report>

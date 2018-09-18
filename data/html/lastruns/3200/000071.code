@@ -1,0 +1,5 @@
+n=int(input())
+m=int(input())
+a=(n%m)+1
+b=(m%n)+1
+print((a**b)-a+1)

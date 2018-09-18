@@ -1,0 +1,66 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+const int SZ = 30228;
+int m, n;
+vector<int> gr[SZ], rgr[SZ], cgr[SZ], list[SZ];
+vector<int> topsort;
+int homies[SZ];
+vector<bool> used;
+
+void dfsts(int v) {
+    used[v] = true;
+    for (int u : gr[v]) {
+        if (!used[u]) {
+            dfsts(u);
+        }
+    }
+    topsort.push_back(v);
+}
+
+void dfscs(int v, int cur_comp) {
+    used[v] = true;
+    homies[v] = cur_comp;
+    list[cur_comp].push_back(v);
+    for (int u : rgr[v]) {
+        if (!used[u]) {
+            dfscs(u, cur_comp);
+        } else { if (homies[u] != cur_comp) {
+                cgr[homies[u]].push_back(cur_comp);
+            }
+        }
+    }
+}
+
+int main()
+{
+    cin >> n >> m;
+    used.assign(n, false);
+    for (int i = 0; i < m; ++i) {
+        int u, v;
+        cin >> u >> v;
+        gr[u - 1].push_back(v - 1);
+        rgr[v - 1].push_back(u - 1);
+    }
+    for (int i = 0; i < n; ++i) {
+        if (!used[i]) {
+            dfsts(i);
+        }
+    }
+    reverse(topsort.begin(), topsort.end());
+    used.assign(n, false);
+    int cur_comp = 0;
+    for (int v : topsort) {
+        if (!used[v]) {
+            dfscs(v, cur_comp);
+            cur_comp++;
+        }
+    }
+    cout << cur_comp << endl;
+    for (int i = 0; i < n; ++i) {
+        cout << homies[i] + 1 << " ";
+    }
+}

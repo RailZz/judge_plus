@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="114" judge-id="45" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>f943e6a6-6178-4a72-8ebe-f653fe523cf6</uuid>
+  <compiler_output>000114.cpp:8:6: warning: ISO C++ forbids declaration of 'main' with no type [-Wreturn-type]
+ main(){
+      ^
+000114.cpp: In function 'int main()':
+000114.cpp:19:1: error: expected ';' before '}' token
+ }
+ ^
+</compiler_output>
+</testing-report>

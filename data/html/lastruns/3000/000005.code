@@ -1,0 +1,52 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <random>
+#include <time.h>
+using namespace std;
+
+vector <long long> Hash;
+vector <long long> st;
+long long Mod, p;
+long long len_str, len_podstr;
+string str, podstr;
+
+int subHash(int l, int r) {
+  long long big = Hash[r];
+  long long small = 0;
+  if (l) {
+    small = (Hash[l - 1] * st[r - l + 1]) % Mod;
+  }
+  return (big + Mod - small) % Mod;
+}
+
+int main() {
+  srand(time(NULL));
+  long long Mod_arr[4] = {1000000007, 1000000011, 1073676287, 2971215073};
+  long long p_arr[4] = {41, 43, 47, 53};
+  Mod = Mod_arr[rand() % 4];
+  p = p_arr[rand() % 4];
+  cin >> str;
+  cin >> podstr;
+  len_str = str.length();
+  len_podstr = podstr.length();
+  Hash.resize(len_str);
+  st.resize(len_str);
+  Hash[0] = str[0];
+  st[0] = 1;
+  for (int i = 1; i < len_str; i++) {
+    Hash[i] = (Hash[i - 1] * p + str[i]) % Mod;
+  }
+  for (int i = 1; i < len_str; i++) {
+    st[i] = (st[i - 1] * p) % Mod;
+  }
+  long long pod_hash = 0;
+  for (char i : podstr) {
+    pod_hash = (pod_hash * p + i) % Mod;
+  }
+  for (int i = 0; i <= len_str - len_podstr; i++) {
+    if (subHash(i, len_podstr + i - 1) == pod_hash) {
+      cout << i << ' ';
+    }
+  }
+}

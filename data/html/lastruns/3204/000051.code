@@ -1,0 +1,7 @@
+a = [ int(i) for i in input().split() ]
+b = int(input( ))
+d = 0
+for i in range(len(a)) :
+    if (a[i] >= b ) :
+        d = i + 2
+print(d)

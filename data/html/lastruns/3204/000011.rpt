@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="11" judge-id="10" status="PE" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>2fd17b1d-b0bf-4544-aa6a-bd3ecd148d8f</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="PE" time="73" real-time="79" max-memory-used="30339072"  checker-comment="user program output: [1]: cannot parse int64 value" >
+  <program-stats-str>{ utime=70, stime=3, ptime=73, rtime=79, maxvsz=30339072, maxrss=27099136, nvcsw=1, nivcsw=13 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="10">3 4 5 2 1
+</input>
+      <output size="16">[3, 4, 1, 2, 5]
+</output>
+      <correct size="11">3 4 1 2 5 
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="51">user program output: [1]: cannot parse int64 value
+</checker>
+    </test>
+  </tests>
+</testing-report>

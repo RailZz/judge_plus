@@ -1,0 +1,7 @@
+n=int(input())
+i=0
+s=0
+while i**3<n**3:
+    i+=1
+    s+=i**3
+print(s)

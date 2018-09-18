@@ -1,0 +1,4 @@
+s=(input())
+i=s.split()
+if s==s:
+    print(YES)

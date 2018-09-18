@@ -1,0 +1,18 @@
+n = int(input())
+m = 0
+o = 0
+u = 0
+for i in range(n):
+    l = input()
+    l = l.split()
+    for j in range(len(l)):
+        if j == 2:
+            m += int(l[j])
+        elif j == 3:
+            o += int(l[j])
+        elif j == 4:
+            u += int(l[j])
+m = m / n
+o = o / n
+u = u / n
+print(m, o, u)

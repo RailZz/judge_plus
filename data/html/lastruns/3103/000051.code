@@ -1,0 +1,64 @@
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+vector <vector <int> > gr;
+vector <int> used;
+bool flag = false;
+
+void dfs (int v)
+{
+    used[v]++;
+    if (used[v] > 10)
+    {
+        flag = true;
+        return;
+    }
+    for (auto u: gr[v])
+    {
+        dfs(u);
+    }
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    gr.resize(n);
+    used.resize(n, 0);
+    int inp;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cin >> inp;
+            if (inp)
+            {
+                gr[i].push_back(j);
+            }
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (!used[i])
+        {
+            dfs(i);
+        }
+        if (flag)
+        {
+            break;
+        }
+    }
+
+    if (flag)
+    {
+        cout << 1;
+    }
+    else
+    {
+        cout << 0;
+    }
+    return 0;
+}

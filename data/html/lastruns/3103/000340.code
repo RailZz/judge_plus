@@ -1,0 +1,36 @@
+N = int(input())
+lst = []
+for i in range (N):
+    lst.append(str(input()))
+x, y = map(int, input().split())
+used = []
+for i in range (N):
+    used.append([0]* N)
+dx= [1,0,0,-1]
+dy =[0,1,-1,0]
+n = 0
+def good (x, y):
+    if x < 0 or y  < 0 or x > N - 1 or y > N - 1:
+        return -1
+    else:
+        return 0
+
+def DFS (x, y):
+    global n
+    used[x][y] = 1
+    n = n + 1
+    
+    if lst[x - 1][y] == '.' and good(x-1, y) == 0 and used[x-1][y] == 0:
+        DFS(x-1, y)
+    if lst[x][y - 1] == '.' and good(x, y - 1) == 0 and used[x][y-1] == 0:
+        DFS(x, y - 1)
+    if lst[x + 1][y] == '.' and good(x+1, y) == 0 and used[x+1][y] == 0:
+        DFS(x + 1, y)
+    if lst[x][y + 1] == '.' and good(x, y + 1) == 0 and used[x][y+1] == 0:
+        DFS(x, y + 1)
+DFS(x - 1, y - 1)
+##    for i in used:
+##        for j in i:
+##            n = n + j
+
+print(n)

@@ -1,0 +1,7 @@
+a = [int(i) for i in input().split()]
+m = -10**17
+for i in range(len(a)):
+    if a[i]>m:
+        m = a[i]
+        ind = i
+print(m, ind, sep = ' ')

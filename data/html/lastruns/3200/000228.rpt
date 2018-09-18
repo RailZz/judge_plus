@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="228" judge-id="229" status="SE" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>e4777a98-3826-4705-bd66-1256c081c60b</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="283" real-time="300" max-memory-used="18698240" >
+  <program-stats-str>{ utime=268, stime=15, ptime=283, rtime=300, maxvsz=18698240, maxrss=19144704, nvcsw=1, nivcsw=49 }</program-stats-str>
+      <input size="4">179
+</input>
+      <output size="0"></output>
+      <stderr size="299">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000228&quot;, line 5, in &lt;module&gt;
+    n=n//2
+TypeError: unsupported operand type(s) for //: 'str' and 'int'
+</stderr>
+    </test>
+  </tests>
+</testing-report>

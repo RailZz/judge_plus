@@ -1,0 +1,10 @@
+x = int(input())
+i = 2
+m = 30000
+while i<x:
+    if x%i==0:
+        if i<m:
+            m = i
+            print(m)
+    i = i+1
+    

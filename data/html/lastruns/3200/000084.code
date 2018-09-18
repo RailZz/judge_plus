@@ -1,0 +1,6 @@
+n = int(input())
+m = int(input())
+k1 = n%m + 1
+k2 = m%n + 1
+a = min(k1, k2)
+print(a)

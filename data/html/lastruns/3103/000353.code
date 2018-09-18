@@ -1,0 +1,29 @@
+def dfs(v, c):
+    ans[-1].append(v + 1)
+    used[v] = c
+    for u in G[v]:
+        if used[u] == 0:
+            dfs(u, c)
+
+
+data = list(map(int, input().split()))
+N = data[0]
+M = data[1]
+G = [[] for i in range(N)]
+for i in range(M):
+    data = list(map(int, input().split()))
+    G[data[0] - 1].append(data[1] - 1)
+    G[data[1] - 1].append(data[0] - 1)
+ans = []
+c = 1
+used = [0 for i in range(N)]
+for i in range(N):
+    if used[i] == 0:
+        ans.append([])
+        dfs(i, c)
+    c += 1
+
+print(len(ans))
+for i in range(len(ans)):
+    print(len(ans[i]))
+    print(*ans[i])

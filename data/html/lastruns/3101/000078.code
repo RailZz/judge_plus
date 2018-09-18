@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+double Func (long double x)
+{
+	long double C;
+	C = x*x + sqrt(x);
+	return (C);
+}
+int main ()
+{
+	long double c, x, left , right;
+	cin >> c;
+	left = 1;
+	right = c; 
+	while (right - left > 0.000001)
+	{
+		x = (right + left) / 2;
+		if (Func (x) <= c)
+			left = x;
+		else
+			right = x; 
+	}
+	cout << left;
+}

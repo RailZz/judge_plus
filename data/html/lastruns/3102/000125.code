@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int n;
+int x;
+int y;
+
+main(){
+cin>>n>>x>>y;
+if(x>y){
+    swap(x,y);
+    }
+cout<< (n * x * y/ (x + y)) + x;
+return(0);
+}

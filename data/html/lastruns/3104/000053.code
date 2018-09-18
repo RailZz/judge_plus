@@ -1,0 +1,12 @@
+var d:array of longint;
+i,n:longint;
+begin
+readln(n);
+setLength(d,n+1);
+d[0]:=1;
+d[1]:=1;
+d[2]:=2;
+for i:=3 to n do
+  d[i]:=d[i-1]+d[i-2]+d[i-3];
+writeln(d[n]);
+end.

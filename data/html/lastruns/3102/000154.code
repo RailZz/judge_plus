@@ -1,0 +1,48 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+bool f(long long t, long long a, long long b, long long n)
+{
+	if (a < b)
+	{
+		if (n <= (t / a + (t - a) / b))
+		{
+			return true;
+		} else {
+			return false;
+		}
+	} else {
+		if (n <= (t / b + (t - b) / a))
+		{
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
+
+int main()    
+{    
+	long long n, a, b, l, r;
+	cin >> n >> a >> b;
+	l = 0;
+	if (a > b)
+	{
+		r = n * a;
+	} else {
+		r = n * b;
+	}
+	while (r - l > 1)
+	{
+		long long m = (l + r) / 2;
+		if (f(m,a,b,n))
+		{
+			r = m;
+		} else {
+			l = m;
+		}
+	}
+	cout << r;
+	return 0;
+}

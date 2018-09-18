@@ -1,0 +1,10 @@
+program stroki;
+var s:string;
+    k,i:integer;
+begin write('Vvedite stroku:');
+      readln(s);
+      s:=' '+s;
+      for i:=1 to length(s) do
+        if s[i]=' ' then k:=k+1;
+      writeln(k);
+end.

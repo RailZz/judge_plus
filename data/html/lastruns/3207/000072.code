@@ -1,0 +1,15 @@
+def get_min(a,s,d,f):
+    if (a<=s) and (a<=d) and (a<=f):
+        return a
+    elif (s<=a) and (s<=d) and (s<=f):
+        return s
+    elif (d<=a) and (d<=s) and (d<=f):
+        return d
+elif (f<=a) and (f<=s) and (f<=d):
+    return f
+
+a=int(input())
+s=int(input())
+d=int(input())
+f=int(input())
+print(get_min(a,s,d,f))

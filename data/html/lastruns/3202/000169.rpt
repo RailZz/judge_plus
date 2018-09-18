@@ -1,0 +1,53 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="169" judge-id="18" status="PE" scoring="ACM" run-tests="3" contest-id="3202" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="3" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>bc4fccc8-74b4-4c06-a79e-870c3f9a7e01</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=2, ptime=26, rtime=29, maxvsz=307200, maxrss=6193152, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">1
+2
+</input>
+      <output size="2">2
+</output>
+      <correct size="2">2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="36" real-time="43" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=29, stime=7, ptime=36, rtime=43, maxvsz=307200, maxrss=6311936, nvcsw=1, nivcsw=14 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">5
+3
+</input>
+      <output size="2">5
+</output>
+      <correct size="2">5
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="PE" time="38" real-time="45" max-memory-used="307200"  checker-comment="user program output: Unexpected EOF" >
+  <program-stats-str>{ utime=31, stime=7, ptime=38, rtime=45, maxvsz=307200, maxrss=6066176, nvcsw=1, nivcsw=16 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">3
+3
+</input>
+      <output size="0"></output>
+      <correct size="2">3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="36">user program output: Unexpected EOF
+</checker>
+    </test>
+  </tests>
+</testing-report>

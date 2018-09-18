@@ -1,0 +1,73 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <utility>
+
+using namespace std;
+
+const int size = 12228;
+
+vector<int> gr[size];
+vector<int> ts;
+vector<bool> used;
+vector<int> tout;
+
+int timer = 0;
+
+void dfsts(int v)
+{   used[v] = true;
+    for (int u : gr[v])
+    {
+        if (!used[u])
+        {
+            dfsts(u);
+        }
+    }
+    tout[v] = timer++;
+    ts.push_back(v);
+}
+int main()
+{
+    tout.resize(size);
+    int n, m;
+    cin >> n >> m;
+    used.assign(n, false);
+    int num = 0;
+    for (int i = 0; i < m; ++i)
+    {
+        int a, b;
+        cin >> a >> b;
+        gr[a - 1].push_back(b - 1);
+    }
+    for (int i = 0; i < n; ++i)
+    {
+        if (!used[i])
+        {
+            dfsts(i);
+        }
+    }
+    //reverse(ts.begin(), ts.end());
+    //cout << "timeouts incoming !" << endl;
+    int hooker = 1;
+    for (int i =  1; i <= ts.size() - 1; ++i)
+    {
+        //cout << "first timeout " << tout[ts[i - 1]]  << " first soldier "  << ts[i - 1]
+        //<< " second timeout " << tout[ts[i]] << " second solier " << ts[i] << endl;
+        if (tout[ts[i - 1]] > tout[ts[i]])
+        {
+            hooker = -1;
+            break;
+        }
+    }
+    if (hooker == 1)
+    {
+        cout << "Yes" << endl;
+        for (int i =  ts.size() - 1; i >= 0; --i)
+        {
+            cout << ts[i] + 1 << " ";
+        }
+    } else {
+        cout << "No";
+    }
+    return 0;
+}

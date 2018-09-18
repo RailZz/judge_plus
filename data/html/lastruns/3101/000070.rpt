@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="70" judge-id="49" status="SV" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>04dcfea6-176b-4a8e-9199-465f982d3170</uuid>
+  <compiler_output>000070.cpp:16:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+Done processing 000070.cpp
+Total errors found: 1
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

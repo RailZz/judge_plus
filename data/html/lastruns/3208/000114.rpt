@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="114" judge-id="114" status="WA" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>d57e563c-91e1-4cb9-844f-c83b3d8ef484</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="30" real-time="36" max-memory-used="307200"  checker-comment="Answers do not match: output: 76176, correct: 8" >
+  <program-stats-str>{ utime=23, stime=7, ptime=30, rtime=36, maxvsz=307200, maxrss=6049792, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">23
+52
+8
+43
+</input>
+      <output size="6">76176
+</output>
+      <correct size="2">8
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="48">Answers do not match: output: 76176, correct: 8
+</checker>
+    </test>
+  </tests>
+</testing-report>

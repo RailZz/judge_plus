@@ -1,0 +1,63 @@
+#Стадия 1(шифрование)
+#открытие файла
+import os
+fileadress = input("Укажите расположение файла: ")
+file = open(fileadress,'r')
+#создание пароля
+code = ()
+code = input("Задайте код:")
+#шифр файла
+from Crypto.PublicKey import RSA
+
+file_to_encrypt = open('1234.txt', 'rb').read()
+pub_key = open('my_pub_key.pem', 'rb').read()
+o = RSA.importKey(pub_key)
+
+to_join = []
+step = 0
+
+while 1:
+    # Read 128 characters at a time.
+    s = file_to_encrypt[step*128:(step+1)*128]
+    if not s: break
+    # Encrypt with RSA and append the result to list.
+    # RSA encryption returns a tuple containing 1 string, so i fetch the string.
+    to_join.append(o.encrypt(s, 0)[0])
+    step += 1
+
+# Join the results.
+# I hope the \r\r\r sequence won't appear in the encrypted result,
+# when i explode the string back for decryption.
+encrypted = '\r\r\r'.join(to_join)
+# Write the encrypted file.
+open('encrypted_file.ext', 'wb').write(encrypted)
+#перемещение зашифрованного файла
+os.rename('"Откуда"','"Куда"')
+#либо
+shutil.copyfile(r'"Откуда", r'"Куда")
+
+
+#Стадия 2(дешифрование)
+#Открытие зашифрованного файла
+#Ввод пароля
+print("\n")
+answer = input("\nКакой код?")
+while (code != answer):
+    answer = input("\nКод неверный!Попробуй снова!")
+    if code == answer:
+        break 
+if code == answer:
+    print ("\nДоступ разрешён!")
+if code == answer:
+    print(file.read())
+file.close()
+#Доступ к работе с дешифрованным файлом
+
+
+
+
+
+
+
+#Вопросы:
+#как встроить шифр в программу

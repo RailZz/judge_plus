@@ -1,0 +1,61 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="134" judge-id="106" status="TL" scoring="ACM" run-tests="4" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="4" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>2a918afd-b5be-4f60-83c2-172a4ea3ae15</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Done processing 000134.cpp
+000134.cpp: In function 'int main()':
+000134.cpp:25:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j = 0; j &lt; vec.size(); j++)
+                       ^
+
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="6" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=6, maxvsz=307200, maxrss=3104768, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=8, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">2
+</input>
+      <output size="2">2 </output>
+      <correct size="2">2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="1" real-time="15" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=15, maxvsz=307200, maxrss=2945024, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=3, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=3 }</checker-stats-str>
+      <input size="2">3
+</input>
+      <output size="2">3 </output>
+      <correct size="2">3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="1" real-time="16" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=16, maxvsz=307200, maxrss=2891776, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=3, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">4
+</input>
+      <output size="4">2 2 </output>
+      <correct size="4">2 2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="TL" time="2049" real-time="2552" max-memory-used="4358144" >
+  <program-stats-str>{ utime=2022, stime=27, ptime=2049, rtime=2552, maxvsz=4358144, maxrss=2682880, nvcsw=1, nivcsw=248 }</program-stats-str>
+      <input size="2">5
+</input>
+      <output size="0"></output>
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

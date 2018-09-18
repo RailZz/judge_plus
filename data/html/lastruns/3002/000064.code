@@ -1,0 +1,86 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+const long long SIZE = 200006;
+vector<long long> ts, gr[SIZE], rgr[SIZE], cgr[SIZE], bros[SIZE];
+vector<bool> used;
+long long N, P, K;
+long long group[SIZE], ans[SIZE], howmuch[SIZE];
+
+void dfsts(long long v) {
+    used[v] = true;
+    for (long long u : gr[v]) {
+        if (!used[u]) {
+            dfsts(u);
+        }
+    }
+    ts.push_back(v);
+}
+
+void dfscs(long long v, long long comp) {
+    used[v] = true;
+    group[v] = comp;
+    bros[comp].push_back(v);
+    howmuch[comp]++;
+    for (long long u : rgr[v]) {
+        if (!used[u]) {
+            dfscs(u, comp);
+        } else if (group[u] != comp) {
+            cgr[group[u]].push_back(comp);
+        }
+    }
+}
+
+int main() {
+    cin >> N >> P;
+    used.assign(N, false);
+    for (long long i = 0; i < N; i++) {
+        for (long long j = 0; j < N; j++) {
+            char stat;
+            cin >> stat;
+            if (stat == '+') {
+                gr[i].push_back(j);
+                rgr[j].push_back(i);
+            }
+        }
+    }
+    for (long long i = 0; i < N; i++) {
+        if (!used[i]) {
+            dfsts(i);
+        }
+    }
+    reverse(ts.begin(), ts.end());
+    used.assign(N, false);
+    long long comp = 0;
+    for (long long v : ts) {
+        if (!used[v]) {
+            dfscs(v, comp);
+            comp++;
+        }
+    }
+    K = howmuch[group[ts[0]]];
+    cout << K << endl;
+    long long howmuchwas = K;
+    if (K == N) {
+        return 0;
+    }
+    long long nextown = howmuch[group[ts[0 + K]]];
+    if (K > 1 || nextown > 1) {
+        ans[K + nextown] = nextown * K;
+    }
+    howmuchwas += nextown;
+    for (int i = K + howmuch[group[ts[0 + K]]] + 1; i < N; i++) {
+        long long ingroup = howmuch[group[ts[i]]];
+        ans[howmuchwas + ingroup] += ingroup * K;
+        howmuchwas += ingroup;
+        i += ingroup;
+    }
+
+    for (int i = K + 1; i <= N; i++) {
+        cout << ans[i] << " ";
+    }
+    return 0;
+}

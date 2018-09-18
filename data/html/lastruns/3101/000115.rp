@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="115" judge-id="94" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>9bc2ff68-461d-4976-8cf3-2d60a037a4b9</uuid>
+  <compiler_output>000115.cpp: In function 'int main()':
+000115.cpp:39:34: error: expected ']' before ')' token
+             if (vec1[m1 &lt; vec2[i])
+                                  ^
+000115.cpp:51:34: error: expected ']' before ')' token
+             if (vec1[m2 &lt; vec2[i])
+                                  ^
+</compiler_output>
+</testing-report>

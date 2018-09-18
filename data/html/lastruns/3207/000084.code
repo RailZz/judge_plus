@@ -1,0 +1,5 @@
+def Firaksis(a, b, c, d):
+    print(min(a, b, c, d))
+
+a, b, c, d = list(map(int, input().split()))
+Firaksis(a, b, c, d)

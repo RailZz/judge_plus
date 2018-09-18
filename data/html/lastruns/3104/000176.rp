@@ -1,0 +1,9 @@
+<input size="17">3
+1 2 3
+3 
+2 3 1
+</input>
+      <output size="2">1 </output>
+      <correct size="5">2 3 
+</correct>
+      

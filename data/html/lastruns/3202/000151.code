@@ -1,0 +1,22 @@
+k = int(input())
+n = int(input())
+s = int(input())
+if s=<k:
+    if s=<n:
+        if n=<k:
+            print(s,n,k)
+        else:
+            print(s,k,n)
+    else:
+        if k>=s:
+            print(n,s,k)
+        else:
+            print(n,k,s)
+else:
+    if k>=n:
+        print(n,k,s)
+    else:
+        if n<=s:
+            print(k,n,s)
+        else:
+            print(k,s,n)

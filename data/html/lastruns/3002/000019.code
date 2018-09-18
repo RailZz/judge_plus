@@ -1,0 +1,87 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<int> used;
+vector<vector<int>> gr;
+vector<int> top_ans;
+vector<int> tout;
+
+int timer;
+
+void dfs_top(int v)
+{
+    used[v] = true;
+    for (int u : gr[v])
+    {
+        if (!used[u])
+        {
+            dfs_top(u);
+        }
+    }
+    tout[v] = timer++;
+    top_ans.push_back(v);
+}
+
+int main()
+{
+    timer = 1;
+    int n, m;
+    cin >> n >> m;
+    gr.resize(n);
+    used.resize(n, 0);
+    tout.resize(n, 0);
+    int i;
+    int a, b;
+    for (i = 0; i < m; ++i)
+    {
+        cin >> a >> b;
+        gr[b - 1].push_back(a - 1);
+    }
+
+    for (i = 0; i < n; ++i)
+    {
+        if (!used[i])
+        {
+            dfs_top(i);
+        }
+    }
+    for (auto h : top_ans)
+    {
+    }
+    int lasttimeihaveseenit = 0;
+    int bad = 0;
+    int j = 0;
+    for (auto h : top_ans)
+    {
+        if (lasttimeihaveseenit > tout[j])
+        {
+            bad = 1;
+        }
+        lasttimeihaveseenit = tout[j];
+        ++j;
+    }
+
+    if (bad)
+    {
+        cout << "No";
+        return 0;
+    }
+    cout << "Yes" << endl;
+    int counter = 1;
+    for (auto h : tout)
+    {
+        if (h == 0)
+        {
+            cout << counter + 1 << " ";
+        }
+        ++counter;
+    }
+
+    for (auto h : top_ans)
+    {
+        cout << h + 1 << " ";
+    }
+}

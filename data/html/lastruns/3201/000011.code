@@ -1,0 +1,9 @@
+n=int(input())
+n = n%(3600*24)
+h = n // 3600
+n = n%(3600)
+m = n//60
+s=n%60
+
+
+print(h,str(m//10) + str(m%10),str(s//10) + str(s%10),sep=":")

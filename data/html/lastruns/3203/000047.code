@@ -1,0 +1,7 @@
+n = int(input())
+a = 1
+b = 0
+while a ** 2 <= n :
+    b = a ** 2
+    print(b)
+    a = a + 1

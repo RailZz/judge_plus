@@ -1,0 +1,48 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="66" judge-id="5" status="RT" scoring="ACM" run-tests="2" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>5ea6847e-be90-4419-ac10-350518e09cbf</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000066.cpp: In function 'int main()':
+000066.cpp:6:9: warning: unused variable 'j' [-Wunused-variable]
+  int x, j=1, z=1, i=0;
+         ^
+000066.cpp:6:14: warning: unused variable 'z' [-Wunused-variable]
+  int x, j=1, z=1, i=0;
+              ^
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=3043328, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=2, stime=0, ptime=2, rtime=2, maxvsz=17264640, maxrss=3149824, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="2">1
+</input>
+      <output size="0"></output>
+      <correct size="2">0
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="RT" term-signal="6" time="1" real-time="3" max-memory-used="307200" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=3293184, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="2">5
+</input>
+      <output size="3">121</output>
+      <stderr size="381">*** Error in `./000066': free(): invalid next size (fast): 0x08682a30 ***
+======= Backtrace: =========
+/lib/libc.so.6(+0x6b09b)[0xafc8409b]
+/lib/libc.so.6(+0x7400a)[0xafc8d00a]
+/lib/libc.so.6(cfree+0x50)[0xafc906e0]
+/lib/libstdc++.so.6(_ZdlPv+0x1c)[0xafec0f2c]
+./000066[0x80488c4]
+/lib/libc.so.6(__libc_start_main+0xf5)[0xafc31545]
+./000066[0x80489a9]
+======= Memory map: ========
+</stderr>
+    </test>
+  </tests>
+</testing-report>

@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="47" judge-id="1" status="SE" scoring="ACM" run-tests="1" contest-id="3201" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>6cb69280-0a58-46e1-9eb5-09e2c5aa211d</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="288" real-time="310" max-memory-used="32251904" >
+  <program-stats-str>{ utime=236, stime=52, ptime=288, rtime=310, maxvsz=32251904, maxrss=19107840, nvcsw=1, nivcsw=51 }</program-stats-str>
+      <input size="5">60
+2
+</input>
+      <output size="60">Введите пароль: Пароль неверный.
+</output>
+      <stderr size="333">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000047&quot;, line 28, in &lt;module&gt;
+    d = open(&quot;kdata.txt.txt&quot;, 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'kdata.txt.txt'
+</stderr>
+    </test>
+  </tests>
+</testing-report>

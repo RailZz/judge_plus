@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    longlong int vvod1, massiv1[1000000], vvod2, massiv2[1000000], massiv[1000000];
+    std::cin >> vvod1;
+    for (int i = 0; i <= vvod1, i++)
+    {
+        massiv[i] = 0;
+    }
+    for (int i = 0; i <= vvod1, i++)
+    {
+        std::cin >> massiv1[i];
+    }
+    std::cin >> vvod2;
+    for (int i = 0; i <= vvod1, i++)
+    {
+        std::cin >> massiv2[i];
+        for (int e; e <= vvod1, e++)
+        {
+            if (massiv1[e] == massiv2[i])
+            {
+                massiv[i] =+ 1;
+            }
+        }
+    }
+}

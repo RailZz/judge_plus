@@ -1,0 +1,67 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="57" judge-id="11" status="PE" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>8cc4f2b9-0709-4b66-bd3b-2fb51597d010</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000057.cpp: In function 'int main()':
+000057.cpp:51:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int j=0;j&lt;G[i].size();j++)
+                  ^
+</compiler_output>
+  <tests>
+    <test num="1" status="PE" time="3" real-time="4" max-memory-used="311296"  checker-comment="3getNUm ready for 3 getcur 1 getcur 2 getcur 3 ready for 2 getcur 4 getcur 5 ready for 1 getcur 6 3getNUm ready for 3 ge..." >
+  <program-stats-str>{ utime=2, stime=1, ptime=3, rtime=4, maxvsz=311296, maxrss=2781184, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=2, stime=0, ptime=2, rtime=3, maxvsz=17285120, maxrss=3031040, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="20">6 4
+3 1
+1 2
+5 4
+2 3
+</input>
+      <output size="31">3
+3
+1 3 2 
+2
+4 5 
+1
+6 
+132233
+
+</output>
+      <correct size="23">3
+3
+1 2 3 
+2
+4 5 
+1
+6 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="253">3getNUm
+ready for 3
+getcur 1
+getcur 2
+getcur 3
+ready for 2
+getcur 4
+getcur 5
+ready for 1
+getcur 6
+3getNUm
+ready for 3
+getcur 1
+getcur 3
+getcur 2
+ready for 2
+getcur 4
+getcur 5
+ready for 1
+getcur 6
+wrong output format Extra information in the output file
+</checker>
+    </test>
+  </tests>
+</testing-report>

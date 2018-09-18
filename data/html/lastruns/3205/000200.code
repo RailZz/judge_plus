@@ -1,0 +1,6 @@
+a = [int(i) for i in input().split()]
+m = 0
+for index,value in enumerate (a):
+    if value!=a[m]:
+        m+=1
+print(a[m])

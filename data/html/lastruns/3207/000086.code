@@ -1,0 +1,12 @@
+Z = input()
+def proverka(Z):
+    if Z.isdigit() == True:
+        return True
+    else:
+        return False
+if proverka(Z) == True:
+    print("yes")
+else:
+    print("no")
+
+        

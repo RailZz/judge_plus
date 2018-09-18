@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+long long int p = 47, Mod = 1000000007, hashS[1000000], st[1000000], hashT;
+
+int get_hash(int l, int r){
+    int right = hashS[r];
+    int left = 0;
+    if (l != 0){
+        left = hashS[l - 1];
+    }
+    left = (left * st[r - l + 1]) % Mod;
+    return ((right - left) + Mod) % Mod;
+}
+
+int main(){
+    st[0] = 1;
+    for (int i = 1; i < 1000000; i++){
+        st[i] = (st[i - 1] * p) % Mod;
+    }
+    string S, T;
+    getline(cin, S);
+    getline(cin, T);
+    hashS[0] = S[0];
+    for (int i = 1; i < S.size(); i++){
+        hashS[i] = (hashS[i - 1] * p + S[i]) % Mod;
+    }
+    for (int i = 0; i < T.size(); i++){
+        hashT = (hashT * p + T[i]) % Mod;
+    }
+    int left = 0;
+    while (left + T.size() <= S.size()){
+        if (get_hash(left, left + T.size() - 1) == hashT){
+            cout << left << " ";
+        }
+        left++;
+    }
+    return 0;
+}

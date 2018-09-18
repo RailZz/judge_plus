@@ -1,0 +1,9 @@
+<input size="4">179
+</input>
+      <output size="83">The next number for the number 179 is 180.
+The previous for the number 179 is 178.
+</output>
+      <correct size="90">The next number for the number 179 is 180.
+The previous number for the number 179 is 178.
+</correct>
+      

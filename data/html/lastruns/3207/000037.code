@@ -1,0 +1,12 @@
+def int_min(a,b,c,d):
+    m = min(a,b,c,d)
+    return m
+
+n = input()
+m = n.replace(' ','')
+f = list(m)
+
+
+
+v = int_min(f[0],f[1],f[2],f[3])
+print(v)

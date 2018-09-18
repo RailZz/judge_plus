@@ -1,0 +1,11 @@
+n = int(input())
+def m(i):
+    f = [0] * (i + 1)
+    if len(f) == 1 or len(f) == 2:
+        return 1    
+    for j in range(2, len(f)):
+        f[0] = 1
+        f[1] = 1 
+        f[j] = f[j - 1] + f[j - 2]
+    return f[len(f) - 1]
+print(m(n))

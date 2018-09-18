@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	unsigned a;
+	cin >> a;
+	unsigned b = 1;
+	for(unsigned i = a; i > 1; i /= 2)
+		b++;
+	cout << b;
+	return 0;
+}

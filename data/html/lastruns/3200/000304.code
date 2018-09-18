@@ -1,0 +1,4 @@
+k=int(input())
+n=int(input())
+z=k//n
+print(z)

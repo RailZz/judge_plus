@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="265" judge-id="265" status="SE" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>a339d175-c5f1-483c-b0e9-7547405ff24c</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="288" real-time="303" max-memory-used="18698240" >
+  <program-stats-str>{ utime=239, stime=49, ptime=288, rtime=303, maxvsz=18698240, maxrss=19251200, nvcsw=1, nivcsw=47 }</program-stats-str>
+      <input size="6">1+1=2
+</input>
+      <output size="0"></output>
+      <stderr size="238">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000265&quot;, line 4
+    s='1'+'1'=2
+     ^
+SyntaxError: can't assign to operator
+</stderr>
+    </test>
+  </tests>
+</testing-report>

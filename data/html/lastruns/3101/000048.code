@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+    int n;
+    int a = 0;
+    scanf("%d", &n);
+    while (n != 0){
+        n = n / 2;
+        a += 1;
+    }
+    printf("%d", a);
+    return 0;
+}

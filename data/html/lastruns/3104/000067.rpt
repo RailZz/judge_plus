@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="67" judge-id="6" status="RT" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>81692205-1ee9-4cb5-aa99-0490697d2f9b</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="6" time="1" real-time="4" max-memory-used="307200" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=4, maxvsz=307200, maxrss=2932736, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="2">1
+</input>
+      <output size="0"></output>
+      <stderr size="372">*** Error in `./000067': free(): invalid pointer: 0x0847da20 ***
+======= Backtrace: =========
+/lib/libc.so.6(+0x6b09b)[0xafbbd09b]
+/lib/libc.so.6(+0x7400a)[0xafbc600a]
+/lib/libc.so.6(cfree+0x50)[0xafbc96e0]
+/lib/libstdc++.so.6(_ZdlPv+0x1c)[0xafdf9f2c]
+./000067[0x80488d4]
+/lib/libc.so.6(__libc_start_main+0xf5)[0xafb6a545]
+./000067[0x80489b9]
+======= Memory map: ========
+</stderr>
+    </test>
+  </tests>
+</testing-report>

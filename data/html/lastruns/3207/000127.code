@@ -1,0 +1,9 @@
+a=int(input())
+def Sum_ma(a):
+    s=0
+    while a >= 1:
+        k=a%10
+        a = a // 10
+        s+=k
+    return s
+print(Sum_ma(a))

@@ -1,0 +1,25 @@
+#include <iostream>
+#include  <cmath>
+using namespace std;
+int Func (int x, int y, int t)
+{
+	int rez1;
+	rez1=((t+1)/x)+((t+1)/y);
+	return rez1;
+}
+int main()
+{
+	int N, x, y, t, left, right, m;
+	cin >> N >> x >> y;
+	left =  0;
+	right = N*x;
+	while (right - left > 1)
+	{
+		m=(right+left)/2;
+		if (Func(x,y,m) > N)
+			right = m;
+		else
+			left = m;
+	}
+	cout << right+min(x,y);	
+}

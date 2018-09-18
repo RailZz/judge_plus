@@ -1,0 +1,5 @@
+a = int(input())
+i = a // 2
+while i<=a:
+    print(i)
+    i+=1

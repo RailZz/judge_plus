@@ -1,0 +1,8 @@
+def get_fibo(n):
+    if i <=2:
+        return 1
+    else:
+        a=get_fibo(i-1)
+        b=get_fibo(i-2)
+        return a+b
+print(get_fibo())

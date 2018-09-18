@@ -1,0 +1,18 @@
+#include <iostream>
+int vvod, vivod;
+using namespace std;
+int main()
+{
+	cin >> vvod;
+	for (int i = 2; i < vvod * vvod; i++)
+	{
+		if(i == vvod)
+		{
+			break;
+		}
+		if (vvod%i == 0)
+		{
+			cout << i << " ";
+		}
+	}
+}

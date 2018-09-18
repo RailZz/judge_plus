@@ -1,0 +1,4 @@
+i=int(input())
+n=int(input())
+m=int(input())
+print(i//2+//2+m//2+i%2+n%2+m%2)

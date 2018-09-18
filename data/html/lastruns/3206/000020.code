@@ -1,0 +1,8 @@
+b = list(input(). split())
+ml = 0
+a = 0
+for i in b:
+    if ml < len(i):
+        ml = len(i)
+        a = i
+print(a, ml, sep = '\n')

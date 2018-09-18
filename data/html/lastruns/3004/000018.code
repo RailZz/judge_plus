@@ -1,0 +1,72 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+vector<int> p;
+vector<int> d;
+
+int get_par(int v) {
+    if (p[v] == v) {
+        return v;
+    }
+    return p[v] = get_par(p[v]);
+}
+
+void unity(int u, int v) {
+    u = get_par(u);
+    v = get_par(v);
+    if (u != v) {
+        if (d[u] > d[v]) {
+            swap(u, v);
+        }
+        p[u] = v;
+        if (d[u] == d[v]) {
+            d[v]++;
+        }
+    }
+}
+
+int main() {
+    int n, m, k;
+    cin >> n >> m >> k;
+    vector<pair<string, pair<int, int>>> question(k);
+    for (int i = 0; i < m; i++) {
+        int a, b;
+        cin >> a >> b;
+    }
+    p.resize(n);
+    d.resize(n, 0);
+    for (int i = 0; i < n; i++) {
+        p[i] = i;
+    }
+    for (int i = 0; i < k; i++) {
+        int u, v;
+        string que;
+        cin >> que >> u >> v;
+        u--;
+        v--;
+        question[i] = {que, {u, v}};
+    }
+    vector<string> ans;
+    reverse(question.begin(), question.end());
+    for (auto e : question) {
+        if (e.first == "cut") {
+            if (get_par(e.second.first) != get_par(e.second.second)) {
+                unity(e.second.first, e.second.second);
+            }
+        } else {
+            if (get_par(e.second.first) == get_par(e.second.second)) {
+                ans.push_back("YES");
+            } else {
+                ans.push_back("NO");
+            }
+        }
+    }
+    reverse(ans.begin(), ans.end());
+    for (int i = 0; i < ans.size(); i++) {
+        cout << ans[i] << endl;
+    }
+}

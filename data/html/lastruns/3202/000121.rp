@@ -1,0 +1,8 @@
+<input size="3">12
+</input>
+      <output size="19">12 korov
+12 korovy
+</output>
+      <correct size="9">12 korov
+</correct>
+      

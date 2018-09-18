@@ -1,0 +1,68 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <random>
+#include <time.h>
+using namespace std;
+
+vector <long long> Hash1, Hash2;
+vector <long long> st1, st2;
+long long Mod, p;
+long long len_str1, len_str2;
+string str1, str2;
+
+int subHash(int l, int r, const vector <long long> & Hash, const vector <long long> & st) {
+  if (r < l) {
+    return 0;
+  }
+  long long big = Hash[r];
+  long long small = 0;
+  if (l) {
+    small = (Hash[l - 1] * st[r - l + 1]) % Mod;
+  }
+  return (big + Mod - small) % Mod;
+}
+
+int main() {
+  srand(time(NULL));
+  long long Mod_arr[4] = {1000000007, 1000000011, 1073676287, 2971215073};
+  long long p_arr[4] = {41, 43, 47, 53};
+  Mod = Mod_arr[rand() % 4];
+  p = p_arr[rand() % 4];
+  cin >> str1;
+  cin >> str2;
+  str1 += str1;
+  len_str1 = str1.length();
+  len_str2 = str2.length();
+
+  Hash1.resize(len_str1);
+  st1.resize(len_str1);
+  Hash2.resize(len_str2);
+  st2.resize(len_str2);
+
+  Hash1[0] = str1[0];
+  st1[0] = 1;
+  for (long long i = 1; i < len_str1; i++) {
+    Hash1[i] = (Hash1[i - 1] * p + str1[i]) % Mod;
+  }
+  for (long long i = 1; i < len_str1; i++) {
+    st1[i] = (st1[i - 1] * p) % Mod;
+  }
+
+  Hash2[0] = str2[0];
+  st2[0] = 1;
+  for (long long i = 1; i < len_str2; i++) {
+    Hash2[i] = (Hash2[i - 1] * p + str2[i]) % Mod;
+  }
+  for (long long i = 1; i < len_str2; i++) {
+    st2[i] = (st2[i - 1] * p) % Mod;
+  }
+
+  for (long long i = 0; i < len_str1; i++) {
+    if (Hash2[len_str2 - 1] == subHash(i, i + len_str2 - 1, Hash1, st1)) {
+        cout << len_str1 / 2 - i;
+        return 0;
+    }
+  }
+  cout << -1;
+}

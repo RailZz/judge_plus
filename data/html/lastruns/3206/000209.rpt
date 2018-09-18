@@ -1,0 +1,102 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="209" judge-id="114" status="WA" scoring="ACM" run-tests="3" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="3" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>40ac77c8-07a4-4cea-b6d4-c2eb53b91b6a</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=20, stime=6, ptime=26, rtime=29, maxvsz=307200, maxrss=6037504, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">Abrakadabra
+</input>
+      <output size="55">r
+r
+Abrak
+Abrakadab
+Arkdba
+baaar
+arbadakarbA
+abdkrA
+11
+</output>
+      <correct size="55">r
+r
+Abrak
+Abrakadab
+Arkdba
+baaar
+arbadakarbA
+abdkrA
+11
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6053888, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="6">Hello
+</input>
+      <output size="33">l
+l
+Hello
+Hel
+Hlo
+el
+olleH
+olH
+5
+</output>
+      <correct size="33">l
+l
+Hello
+Hel
+Hlo
+el
+olleH
+olH
+5
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="WA" time="27" real-time="29" max-memory-used="307200"  checker-comment="Line 6 differs: output: ?wryi? correct: ?wryip?" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=29, maxvsz=307200, maxrss=6148096, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">qwertyuiop
+</input>
+      <output size="50">e
+o
+qwert
+qwertyui
+qetuo
+wryi
+poiuytrewq
+piyrw
+10
+</output>
+      <correct size="51">e
+o
+qwert
+qwertyui
+qetuo
+wryip
+poiuytrewq
+piyrw
+10
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="48">Line 6 differs: output:
+&gt;wryi&lt;
+correct:
+&gt;wryip&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

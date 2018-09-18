@@ -1,0 +1,10 @@
+N = int(input())
+lst = list(map(int, input().split()))
+if N == 1:
+    print(lst[0])
+elif N == 2:
+    print(lst[1])
+else:
+    for i in range (2, N):
+        lst[i] = min(lst[i-2], lst[i-1]) + lst[i]
+    print(lst[-1])

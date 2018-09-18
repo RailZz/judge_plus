@@ -1,0 +1,7 @@
+a = list(map(int,input().split()))
+i = []
+k = len(a)-1
+i.append(a[k])
+a.pop(k)
+i += a
+print(i)

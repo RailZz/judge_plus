@@ -1,0 +1,102 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+vector<long long> mains;
+vector<long long> tree;
+
+long long maxx(long long i, long long j);
+
+void build(long long v, long long L, long long R)
+{
+    if (L == R - 1)
+    {
+        tree[v] = L;
+        return;
+    }
+    long long m = (L + R) / 2;
+    build(2 * v + 1, L, m);
+    build(2 * v + 2, m, R);
+    tree[v] = maxx(tree[2 * v + 1], tree[2 * v + 2]);
+}
+
+void change(long long v, long long L, long long R, long long pos, long long val)
+{
+    if (L == R - 1)
+    {
+            mains[pos] = val;
+            tree[v] = pos;
+        return;
+    }
+    long long m = (L + R) / 2;
+    if (pos < m)
+    {
+        change(2 * v + 1, L, m, pos, val);
+    } else {
+        change(2 * v + 2, m, R, pos, val);
+    }
+    tree[v] = maxx(tree[2 * v + 1], tree[2 * v + 2]);
+}
+
+long long ask(long long v, long long L, long long R, long long askL, long long askR)
+{
+    if (askL >= R || askR <= L)
+    {
+        return mains.size();
+    }
+    if (askL <= L && R <= askR)
+    {
+        return tree[v];
+    }
+    long long m = (L + R) / 2;
+    return maxx(ask(2 * v + 1, L, m, askL, askR), ask(2 * v + 2, m, R, askL, askR));
+}
+
+long long maxx(long long i, long long j)
+{
+    if (mains[i] < mains[j])
+    {
+        return j;
+    }
+    return i;
+}
+
+int main()
+{
+    long long N, Trainee;
+    cin >> N;
+    mains.resize(N);
+    for (long long i = 0; i < N; ++i)
+    {
+        cin >> Trainee;
+        mains[i] = Trainee;
+    }
+    tree.resize(4 * N);
+    build(0, 0, N);
+	mains.push_back(0);
+    long long request;
+    cin >> request;
+    vector<long long> ansuka;
+    for (int i = 1; i <= request; ++i)
+    {
+        char req;
+        cin >> req;
+        if (req == 's')
+        {
+            long long L, R;
+            cin >> L >> R;
+            ansuka.push_back(ask(0, 0, N, L-1, R));
+        } else {
+            long long pos, val;
+            cin >> pos >> val;
+            change(0, 0, N, pos - 1, val);
+        }
+    }
+    for (long long i = 0; i < ansuka.size(); ++i)
+    {
+        cout << ansuka[i] + 1 << " ";
+    }
+    return 0;
+}

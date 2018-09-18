@@ -1,0 +1,21 @@
+def isprime(x):
+    j = 2
+    c = 0
+    while j**2 <= x:
+        if x % j == 0:
+            c = 1
+        j += 1
+    return True if c == 0 else False
+
+
+n = int(input())
+i = 2
+a = 2
+b = 2
+while (a + b) != n:
+    if isprime(n - i):
+        a = i
+        b = n - i
+    else:
+        i += 1
+print(a, b)

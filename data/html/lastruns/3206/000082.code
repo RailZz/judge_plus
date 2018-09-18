@@ -1,0 +1,6 @@
+a = input()
+b = a.index('f')
+c = a[::-1]
+d = c.index('f')
+print(b)
+print(len(c)-d-1)

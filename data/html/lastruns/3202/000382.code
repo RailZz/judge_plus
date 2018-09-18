@@ -1,0 +1,6 @@
+a=int(input())
+b=int(input())
+if a//4 and a!//100:
+    print(no)
+if b!//4 and b//100:
+    print(yes)

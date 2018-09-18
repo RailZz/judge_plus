@@ -1,0 +1,16 @@
+#Стадия 1(шифрование)
+#открытие файла
+import os
+fileadress = input("Укажите расположение файла: ")
+file = open(fileadress,'r')
+#создание пароля
+code = ()
+code = input("Задайте код:")
+file.close()
+#шифр файла
+s1=open(fileadress,
+for i in text:
+    if ord(i)+13 > ord("я"):
+        s1+=chr(ord(i)+13 - 32)
+    else:
+        s1+=chr(ord(i)+13)

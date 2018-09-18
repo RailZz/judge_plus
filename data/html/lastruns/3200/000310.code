@@ -1,0 +1,9 @@
+a=int(input())
+h=int(input())
+k=int(input())
+j=int(input())
+m=int(input())
+r=int(input())
+t1=a*3600+h*60+k
+t2=j*3600+m*60+r
+print(t1-t2)

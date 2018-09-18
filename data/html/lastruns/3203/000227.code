@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+main(){
+	int A,i;
+	cin>>A;
+	if(A%2==0){
+		i=A/2;
+	}
+	else{
+		i=A/2+1;
+	}
+	for(i;i<=A;i++){
+		cout<<i<<" ";
+	}
+}

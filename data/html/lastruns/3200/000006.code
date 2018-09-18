@@ -1,0 +1,6 @@
+N = int(input())
+A = N//100
+B = (N//10)%10
+C = N%10
+R = A+B+C
+print(R)

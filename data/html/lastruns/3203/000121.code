@@ -1,0 +1,7 @@
+a = int(input())
+s, i = 0 , 1 
+while i <= a:
+    b = int(input())
+    s +=b
+    i +=1
+print(s)

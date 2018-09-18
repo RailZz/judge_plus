@@ -1,0 +1,9 @@
+n = int(input())
+s = 0
+i = 1
+k = i
+while i<=n:
+    k = i**2
+    s = s+k
+    i= i+1
+print(s)

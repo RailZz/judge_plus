@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int sum(int x) {
+    int summ = 0;
+    for (int i = 1; i <= x/2; ++i)
+        if (x%i == 0) summ += i;
+    return summ;
+}
+
+int main() {
+    
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    
+    int k;
+    cin >> k;
+    int summ[k+1];
+    for (int i = 1; i <= k; ++i)
+        summ[i] = sum(i);
+    for (int i = 1; i<k; ++i) {
+        int j = summ[i];
+        if (j <= i || j>k) continue;
+		else if (i == summ[j] && j == summ[i])
+           	cout << i << " " << j << endl;
+    }
+    
+    return 0;
+}

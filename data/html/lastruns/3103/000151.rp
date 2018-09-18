@@ -1,0 +1,12 @@
+<input size="60">5 10
+##..#####.
+.#.#.#....
+###..##.#.
+..##.....#
+.###.#####
+</input>
+      <output size="2">7
+</output>
+      <correct size="2">5
+</correct>
+      

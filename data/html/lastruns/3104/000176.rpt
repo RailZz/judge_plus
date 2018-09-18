@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="176" judge-id="16" status="WA" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>84a5c352-7f07-48d2-8a35-9285a2be2ad6</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="3" real-time="5" max-memory-used="311296"  checker-comment="wrong answer Participant has better answer, given - 1, our - 2" >
+  <program-stats-str>{ utime=3, stime=0, ptime=3, rtime=5, maxvsz=311296, maxrss=2916352, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17264640, maxrss=3198976, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="17">3
+1 2 3
+3 
+2 3 1
+</input>
+      <output size="2">1 </output>
+      <correct size="5">2 3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="63">wrong answer Participant has better answer, given - 1, our - 2
+</checker>
+    </test>
+  </tests>
+</testing-report>

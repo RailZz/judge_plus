@@ -1,0 +1,4 @@
+v = int(input())
+t = int(input())
+l = 109
+print((l + v * t) % l)

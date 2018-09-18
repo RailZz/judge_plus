@@ -1,0 +1,712 @@
+<!DOCTYPE html><html><head><base href="https://informatics.msk.ru/mod/statements/print3.php?id=33273"><meta charset="utf-8">
+      <title>Параллель B. Графомарафон</title>
+      <style type="text/css">@import url(http://informatics.mccme.ru/moodle/mod/statements/polygon.css);</style>      
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      <script src="/moodle/lib/jsMath/easy/load.js"></script><script src="https://informatics.msk.ru/moodle/lib/jsMath/jsMath-easy-load.js"></script><script src="https://informatics.msk.ru/moodle/lib/jsMath/plugins/autoload.js"></script>
+      <meta name="description" content="Параллель B. Графомарафон">
+      <style>/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <style type="text/css">#jsMath_test {font-size:200%}
+</style><style type="text/css">.math {font-family: serif; font-style: normal; font-weight: normal}
+.typeset {font-family: serif; font-style: normal; font-weight: normal; line-height: normal; text-indent: 0px}
+.typeset .normal {font-family: serif; font-style: normal; font-weight: normal}
+div.typeset {text-align: center; margin: 1em 0px}
+span.typeset {text-align: left}
+.typeset span {text-align: left; border: 0px; margin: 0px; padding: 0px}
+a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
+.typeset .size0 {font-size: 50%}
+.typeset .size1 {font-size: 60%}
+.typeset .size2 {font-size: 70%}
+.typeset .size3 {font-size: 85%}
+.typeset .size4 {font-size: 100%}
+.typeset .size5 {font-size: 120%}
+.typeset .size6 {font-size: 144%}
+.typeset .size7 {font-size: 173%}
+.typeset .size8 {font-size: 207%}
+.typeset .size9 {font-size: 249%}
+.typeset .cmr10 {font-family: jsMath-cmr10, serif}
+.typeset .cmbx10 {font-family: jsMath-cmbx10, jsMath-cmr10}
+.typeset .cmti10 {font-family: jsMath-cmti10, jsMath-cmr10}
+.typeset .cmmi10 {font-family: jsMath-cmmi10}
+.typeset .cmsy10 {font-family: jsMath-cmsy10}
+.typeset .cmex10 {font-family: jsMath-cmex10}
+.typeset .textit {font-family: serif; font-style: italic}
+.typeset .textbf {font-family: serif; font-weight: bold}
+.typeset .link {text-decoration: none}
+.typeset .error {font-size: 90%; font-style: italic; background-color: #FFFFCC; padding: 1px; border: 1px solid #CC0000}
+.typeset .blank {display: inline-block; overflow: hidden; border: 0px none; width: 0px; height: 0px}
+.typeset .spacer {display: inline-block}
+#jsMath_hiddenSpan {visibility: hidden; position: absolute; top: 0px; left: 0px; line-height: normal; text-indent: 0px}
+#jsMath_message {position: fixed; bottom: 1px; left: 2px; background-color: #E6E6E6; border: solid 1px #959595; margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: small; width: auto}
+#jsMath_panel {position: fixed; bottom: 1.75em; right: 1.5em; padding: .8em 1.6em; background-color: #DDDDDD; border: outset 2px; z-index: 103; width: auto; color: black; font-size: 10pt; font-style: normal}
+#jsMath_panel .disabled {color: #888888}
+#jsMath_panel .infoLink {font-size: 85%}
+#jsMath_panel * {font-size: inherit; font-style: inherit; font-family: inherit; line-height: normal}
+#jsMath_panel div {background-color: inherit; color: inherit}
+#jsMath_panel span {background-color: inherit; color: inherit}
+#jsMath_panel td {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel tr {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel table {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit; height: auto; width: auto}
+#jsMath_button {position: fixed; bottom: 1px; right: 2px; background-color: white; border: solid 1px #959595; margin: 0px; padding: 0px 3px 1px 3px; z-index: 102; color: black; text-decoration: none; font-size: x-small; width: auto; cursor: hand}
+#jsMath_button * {padding: 0px; border: 0px; margin: 0px; line-height: normal; font-size: inherit; font-style: inherit; font-family: inherit}
+#jsMath_global {font-style: italic}
+#jsMath_noFont .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: small; width: auto}
+#jsMath_noFont .link {padding: 0px 5px 2px 5px; border: 2px outset; background-color: #E8E8E8; color: black; font-size: 80%; width: auto; cursor: hand}
+#jsMath_PrintWarning .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: x-small; width: auto}
+@media print {#jsMath_button {display: none}
+#jsMath_Warning {display: none}
+}
+@media screen {#jsMath_PrintWarning {display: none}
+}
+.typeset .scale {font-size: 120%}
+</style><style type="text/css">.typeset .math {font-style: normal}
+.typeset .typeset {font-style: normal}
+.typeset .icmr10 {font-family: serif}
+.typeset .icmmi10 {font-family: serif; font-style: italic}
+.typeset .icmbx10 {font-family: serif; font-weight: bold}
+.typeset .icmti10 {font-family: serif; font-style: italic}
+</style></head>
+    <body><div id="jsMath_message" title="" style="visibility: visible;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
+<b>Hi-Res Fonts for Printing</b> button on the jsMath control panel.<br>
+</div><div style="width:22em; height:1px"></div></td></tr></tbody></table></center><hr></div><div id="jsMath_button" title=" Open jsMath Control Panel "><span onclick="jsMath.Controls.Panel()">jsMath</span></div><div id="jsMath_panel" style="display: none;"></div><div id="jsMath_Hidden" style="visibility: hidden; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; margin: 0px;"></div><div style="position: fixed; bottom: 1px; left: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: 75%; width: auto; visibility: hidden;"></div>
+    <a name="top"></a>
+    <p class="statements_title">Параллель B. Графомарафон</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch175"><b>Задача A.</b> Светофорчики</a></li><li><a href="#ch164"><b>Задача B.</b> Обход графа</a></li><li><a href="#ch111540"><b>Задача C.</b> Компоненты связности</a></li><li><a href="#ch474"><b>Задача D.</b> Истоки и стоки</a></li><li><a href="#ch165"><b>Задача E.</b> Банкет</a></li><li><a href="#ch2872"><b>Задача F.</b> Дерево?</a></li><li><a href="#ch200"><b>Задача G.</b> Площадь комнаты</a></li><li><a href="#ch652"><b>Задача H.</b> Удаление клеток</a></li><li><a href="#ch98"><b>Задача I.</b> Есть ли цикл?</a></li><li><a href="#ch166"><b>Задача J.</b> Построение</a></li><li><a href="#ch3376"><b>Задача K.</b> Кратчайший путь</a></li><li><a href="#ch1939"><b>Задача L.</b> Эвакуация</a></li><li><a href="#ch160"><b>Задача M.</b> Путь в графе</a></li><li><a href="#ch161"><b>Задача N.</b> Один конь</a></li><li><a href="#ch2001"><b>Задача O.</b> Числа</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch175">Светофорчики</a></h1><p class="statements_chapter_title"><b>Задача A.</b> Светофорчики</p><div class="problem-statement">
+   <div class="legend">
+
+<table cellpadding="1"><tbody> 
+  <tr> 
+    <td><font face="courier new,courier,monospace">Максимальное время работы на одном тесте:</font> 
+    </td> 
+    <td><font face="courier new,courier,monospace">5 секунд</font> 
+    </td> 
+  </tr></tbody> 
+</table>
+<p>В подземелье <em>M</em> тоннелей и <em>N</em> перекрестков, каждый тоннель соединяет какие-то два перекрестка. Мышиный король решил поставить по светофору в каждом тоннеле перед каждым перекрестком. Напишите программу, которая посчитает, сколько светофоров должно быть установлено на каждом из перекрестков. Перекрестки пронумерованы числами от 1 до <em>N</em>.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Первая строка входных данных содержит&nbsp;два числа <em>N</em> и <em>M</em> (0 &lt; <em>N</em> ≤ 100, 0 ≤ <em>M</em> ≤ <em>N</em>*(<em>N</em> – 1)/2). В каждой из следующих <em>M</em> строк записаны по два числа <em>i</em> и <em>j</em> (1 ≤ <em>i</em>,<em>j</em> ≤ <em>N</em>), которые означают, что перекрестки <em>i</em> и <em>j</em> соединены тоннелем.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Требуется вывести <em>N</em> чисел: <em>k</em>-ое число означает количество светофоров на <em>k</em>-ом перекрестке.</p>
+<p><i><strong>Примечание</strong>.</i> Можно считать, что любые два перекрестка соединены не более, чем одним тоннелем. Нет тоннелей от перекрестка <em>i</em> до него самого. </p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">7 10<br>5 1<br>3 2<br>7 1<br>5 2<br>7 4<br>6 5<br>6 4<br>7 5<br>2 1<br>5 3<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3 3 2 2 5 2 3 <br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch164">Обход графа</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Обход графа</p><div class="problem-statement">
+   <div class="legend">
+
+ <p>Дан неориентированный невзвешенный граф. Для него вам необходимо найти количество вершин, лежащих в одной компоненте связности с данной вершиной (считая эту вершину).</p> 
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>В первой строке&nbsp;входных данных&nbsp;содержатся два числа: <em>N</em> и <em>S</em> (1 ≤ <em>N</em> ≤ 100; 1 ≤ <em>S</em> ≤ <em>N</em>), где <em>N</em>&nbsp;– количество вершин графа, а <em>S</em>&nbsp;– заданная вершина. В следующих <em>N</em> строках записано по <em>N</em> чисел&nbsp;– матрица смежности графа, в которой 0 означает отсутствие ребра между вершинами, а 1&nbsp;– его наличие. <strong>Гарантируется, </strong>что на главной диагонали матрицы всегда стоят нули.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+ <p>Выведите одно целое число&nbsp;– искомое количество вершин.</p> 
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 1<br>0 1 1<br>1 0 0<br>1 0 0</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch111540">Компоненты связности</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Компоненты связности</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+		Дан неориентированный невзвешенный граф. Необходимо посчитать количество его компонент связности и вывести их.
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+		Во входном файле записано два числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> (0 &lt; <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 100000, 0 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 100000). В следующих <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> строках записаны по два числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">j</span><span class="spacer" style="margin-left:0.057em"></span></span></nobr></span> (1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">j</span><span class="spacer" style="margin-left:0.057em"></span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>), которые означают, что вершины <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">j</span><span class="spacer" style="margin-left:0.057em"></span></span></nobr></span> соединены ребром.
+    </p>
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+		В первой строчке выходного файла выведите количество компонент связности. Далее выведите сами компоненты связности в следующем формате: в первой строке количество вершин в компоненте, во второй - сами вершины в произвольном порядке.
+    </p>
+
+   </div>
+ </div>
+ <div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">6 4<br>3 1<br>1 2<br>5 4<br>2 3<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3<br>3<br>1 2 3 <br>2<br>4 5 <br>1<br>6 <br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch474">Истоки и стоки</a></h1><p class="statements_chapter_title"><b>Задача D.</b> Истоки и стоки</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Напомним, что вершина ориентированного графа называется истоком, если в нее не входит ни одно ребро и стоком, если из нее не выходит ни одного ребра. </p>
+<p>Ориентированный граф задан матрицей смежности. Найдите все вершины графа, которые являются истоками, и все его вершины, которые являются стоками. </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Сначала вводится&nbsp;число <i>n</i> (<!-- MATH
+ $1 le n le 100$
+ --> 1<img height="28" alt="$ le$" src="http://informatics.mccme.ru/moodle/file.php/6/img1.gif" width="16" align="middle" border="0"><i>n</i><img height="28" alt="$ le$" src="http://informatics.mccme.ru/moodle/file.php/6/img1.gif" width="16" align="middle" border="0">100)&nbsp;– количество вершин в графе,&nbsp;а затем <i>n</i> строк по <i>n</i> чисел, каждое из которых равно 0 или 1,&nbsp;– его матрица смежности. </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Вначале выведите <i>k</i>&nbsp;– число истоков в графе и затем <i>k</i> чисел&nbsp;– номера вершин, которые являются истоками, в возрастающем порядке.&nbsp;Затем выведите информацию о стоках в том же порядке. </p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5<br>0 0 0 0 0 <br>0 0 0 0 1 <br>1 1 0 0 0 <br>0 0 0 0 0 <br>0 0 0 0 0 <br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2<br>3<br>4<br>3<br>1<br>4<br>5<br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch165">Банкет</a></h1><p class="statements_chapter_title"><b>Задача E.</b> Банкет</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>На банкет были приглашены <em>N</em> Очень Важных Персон (ОВП). Были поставлены 2 стола. Столы достаточно большие, чтобы все посетители банкета могли сесть за любой из них. Проблема заключается в том, что некоторые ОВП не ладят друг с другом и не могут сидеть за одним столом. Вас попросили определить, возможно ли всех ОВП рассадить за двумя столами.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>В первой строке входных данных&nbsp;содержатся два числа: <em>N</em> и <em>M</em> (1 &lt;= <em>N</em>,<em>M</em> &lt;= 100), где <em>N</em>&nbsp;– количество ОВП, а <em>M</em>&nbsp;– количество пар ОВП, которые не могут сидеть за одним столом. В следующих <em>M</em> строках записано по 2 числа&nbsp;– пары ОВП, которые не могут сидеть за одним столом.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Если способ рассадить ОВП существует, то&nbsp; выведите <font face="courier new,courier,monospace">YES</font> в первой строке и номера ОВП, которых необходимо посадить за первый стол, во второй строке. В противном случае в первой и единственной строке выведите <font face="courier new,courier,monospace">NO</font>.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 2<br>1 2<br>1 3<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES<br>1 <br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2872">Дерево?</a></h1><p class="statements_chapter_title"><b>Задача F.</b> Дерево?</p><div class="problem-statement">
+
+
+<div class="legend">
+ 	
+<p>Имеется неориентированный граф, состоящий из <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> вершин и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ребер. Необходимо проверить, является ли граф деревом. Напомним, что дерево — это связный граф, в котором нет циклов (следовательно, между любой парой   вершин   существует   ровно   один   простой   путь).   Граф   называется   связным,   если   от   одной   вершины существует путь до любой другой.
+</p> 
+
+</div>
+
+
+<div class="input-specification">
+    <div class="section-title">Входные данные</div>
+
+<p>Во входном файле в первой строке содержатся два целых числа  <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>  и  <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>  (<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">00</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmr10">0</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span style="position: relative; margin-left:0.166em;"><span class="icmr10">0</span></span><span class="icmr10">00</span></span></nobr></span>), записанные через пробел. Далее следуют <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> различных строк с описаниями ребер, каждая из которых содержит два натуральных числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> (<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">A</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAQAAAD4iURRAAAAAmJLR0QA/4ePzL8AAABaSURBVHjaY/jPgB0ylDDsxy7RyfCZYT2DFLqwFMNchs8Mc6E8FIn1DJ8ZOpFEoJQRw36GlwwlaOb8Z2CQYjjP8JIhDtNuJgZ8gICxKA56icVBBL1CMBBQgw8AtHWIWymo2xwAAAAASUVORK5CYII=" style=" width:14px; vertical-align:-1px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">B</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>), где <span class="typeset"><nobr><span class="scale"><span class="icmmi10">A</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">B</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> — номера вершин, соединенных <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span></span></nobr></span>-м ребром.</p>
+
+</div>
+
+<div class="output-specification">
+    <div class="section-title">Выходные данные</div>
+
+<p>В выходной файл выведите слово «YES», если граф является деревом, или «NO» в противном случае.</p>
+
+</div>
+
+
+
+</div>
+
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 2<br>1 2<br>1 3</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">YES</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch200">Площадь комнаты</a></h1><p class="statements_chapter_title"><b>Задача G.</b> Площадь комнаты</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Требуется вычислить площадь комнаты в квадратном лабиринте.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>В первой строке&nbsp;&nbsp;вводится число <em>N</em> – размер лабиринта (3 &lt;= <em>N</em> &lt;= 10). В следующих <em>N</em> строках задан лабиринт (‘<b><font face="courier new,courier,monospace">.</font></b>’ – пустая клетка, ‘<b><font face="courier new,courier,monospace">*</font></b>’ – стенка).&nbsp;И наконец,&nbsp;последняя строка содержит&nbsp;&nbsp;два числа – номер строки и столбца клетки, находящейся в комнате, площадь которой необходимо вычислить. Гарантируется, что эта клетка пустая и что лабиринт окружен стенками со всех сторон.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Требуется&nbsp;вывести единственное число – количество пустых клеток в данной комнате.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5<br>*****<br>**..*<br>*.*.*<br>*..**<br>*****<br>2 4<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3<br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch652">Удаление клеток</a></h1><p class="statements_chapter_title"><b>Задача H.</b> Удаление клеток</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+		Из прямоугольного листа клетчатой бумаги (<span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> строк, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> столбцов) удалили некоторые клетки. На сколько кусков распадётся оставшаяся часть листа? Две клетки не распадаются, если они имеют общую сторону. 
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+		В первой строке находятся числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>, в следующих <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> строках - по <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> символов. Если клетка не была вырезана, этому соответствует знак #, если вырезана - точка. 1 &lt;= <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> &lt;= 100.  
+    </p>
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+		Вывести одно число.
+    </p>
+
+   </div>
+ </div>
+ <div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5 10<br>##..#####.<br>.#.#.#....<br>###..##.#.<br>..##.....#<br>.###.#####</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">5</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch98">Есть ли цикл?</a></h1><p class="statements_chapter_title"><b>Задача I.</b> Есть ли цикл?</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Дан ориентированный граф. Требуется определить, есть ли в нем цикл.<br></p>
+
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>В первой строке&nbsp;вводится число вершин <em>N</em>≤ 50. Далее в<em> N</em> строках следуют по <em>N</em> чисел, каждое из которых&nbsp;– 0 или 1. <em>j</em>-ое число в <em>i</em>-ой строке равно 1 тогда и только тогда, когда существует ребро, идущее из <em>i</em>-ой вершины в<em> j</em>-ую. Гарантируется, что на диагонали матрицы будут стоять нули.</p>
+
+  </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Выведите 0, если в заданном графе цикла нет, и 1, если он есть.</p>
+
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3<br>0 1 0<br>0 0 1<br>0 0 0<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">0<br></pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3<br>0 1 0<br>0 0 1<br>1 0 0<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1<br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch166">Построение</a></h1><p class="statements_chapter_title"><b>Задача J.</b> Построение</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Группа солдат-новобранцев прибыла в армейскую часть N666. После знакомства с прапорщиком стало очевидно, что от работ на кухне по очистке картофеля спасти солдат может только чудо.</p>
+<p>Прапорщик, будучи не в состоянии запомнить фамилии, пронумеровал новобранцев от 1 до <em>N</em>. После этого он велел им построиться по росту (начиная с самого высокого). С этой несложной задачей могут справиться даже совсем необученные новобранцы, да вот беда, прапорщик уверил себя, что знает про некоторых солдат, кто из них кого выше, и это далеко не всегда соответствует истине.</p>
+<p>После трех дней обучения новобранцам удалось выяснить, что знает (а точнее, думает, что знает) прапорщик. Помогите им, используя эти знания, построиться так, чтобы товарищ прапорщик остался доволен.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Сначала&nbsp;на вход программы поступают&nbsp;числа <em>N</em> и <em>M</em> (1 &lt; <em>N</em> &lt;= 100, 1 &lt;= <em>M</em> &lt;= 5000)&nbsp;– количество солдат в роте и количество пар солдат, про которых прапорщик знает, кто из них выше. Далее идут эти пары чисел <em>A</em> и <em>B</em> по одной на строке (1 &lt;= <em>A</em>,<em>B</em> &lt;= <em>N</em>), что означает, что, по мнению прапорщика, солдат <em>A</em> выше, чем <em>B</em>. Не гарантируется, что все пары чисел во входных данных различны.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>В первой строке выведите "<font face="courier new,courier,monospace">Yes"</font> (если можно построиться так, чтобы прапорщик остался доволен) или "<font face="courier new,courier,monospace">No</font>" (если нет). После ответа "<font face="courier new,courier,monospace">Yes</font>" на следующей строке выведите <em>N</em> чисел, разделенных пробелами, - одно из возможных построений.</p>
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">4 5<br>1 2<br>2 3<br>3 4<br>1 4<br>4 1</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">No</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch3376">Кратчайший путь</a></h1><p class="statements_chapter_title"><b>Задача K.</b> Кратчайший путь</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Дан ориентированный взвешенный граф.<br>
+Найдите кратчайшее расстояние от одной заданной вершины до другой. </p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+ <p>В первой строке входного файла два числа: <i>N</i> и <i>M</i> (1 ≤ <i>N</i> ≤ 100, 1 ≤ <i>M</i> ≤ 10000), где <i>N</i> - количество вершин графа, а <i>M</i> - количество ребер.<br>
+В следующей строке заданы числа <i>S</i> и <i>F</i> - начальная и конечная вершины.</p>
+
+<p>Далее следует <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> троек чисел <i>A<sub>i</sub></i>, <i>B<sub>i</sub></i>, <i>T<sub>i</sub></i> (1 ≤ <i>T<sub>i</sub></i> ≤ 10) - номера вершин соединенных ребром и вес данного ребра.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Вывести искомое расстояние или -1, если пути между указанными вершинами не существует.</p>
+
+    </div>
+    </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 6<br>2 1<br>1 2 1<br>1 3 1<br>2 1 4<br>2 3 1<br>3 1 2<br>3 2 1<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3<br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch1939">Эвакуация</a></h1><p class="statements_chapter_title"><b>Задача L.</b> Эвакуация</p><div class="problem-statement">
+   <div class="legend">
+    <p>
+		Одна из Сверхсекретных организаций, чье название мы не имеем право разглашать, представляет собой сеть из <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> подземных бункеров, соединенных равными по длине туннелями, по которым из любого бункера можно добраться до любого другого (не обязательно напрямую). Связь с внешним миром осуществляется через специальные засекреченные выходы, которые расположены в некоторых из бункеров.
+</p><p>
+Организации понадобилось составить план эвакуации персонала на случай экстренной ситуации. Для этого для каждого из бункеров необходимо узнать, сколько времени потребуется для того, чтобы добраться до ближайшего из выходов. Вам, как специалисту по таким задачам, поручено рассчитать необходимое время для каждого из бункеров по заданному описанию помещения Сверхсекретной организации. Для вашего же удобства бункеры занумерованы числами от 1 до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>.
+    </p>
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+    <p>
+		Сначала вводятся два натуральных числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span> (<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 100000, <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span> ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>) — количество бункеров и количество выходов соответственно.
+</p><p>
+Далее через пробел записаны <span class="typeset"><nobr><span class="scale"><span class="icmmi10">K</span><span class="spacer" style="margin-left:0.071em"></span></span></nobr></span> различных чисел от <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span></span></nobr></span> до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span>, обозначающих номера бункеров, в которых расположены выходы.
+</p><p>
+Потом идёт число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> (1 ≤ <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> ≤ 100000) — количество туннелей. Далее вводятся M пар чисел – номера бункеров, соединенных туннелем. По каждому из туннелей можно двигаться в обе стороны. В организации не существует туннелей, ведущих из бункера в самого себя, зато может существовать более одного туннеля между парой бункеров.
+    </p>
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+    <p>
+		Выведите <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> чисел, разделенных пробелом  — для каждого из бункеров минимальное время, необходимое чтобы добраться до выхода. Считайте, что время перемещения по одному туннелю равно <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span></span></nobr></span>.
+    </p>
+
+   </div>
+ </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3<br>1<br>2 <br>3<br>1 2<br>3 1<br>2 3</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 0 1 </pre></div></div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">10<br>2<br>10 8 <br>9<br>6 7<br>7 5<br>5 8<br>8 1<br>1 10<br>10 3<br>3 4<br>4 9<br>9 2</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 4 1 2 1 3 2 0 3 0 </pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch160">Путь в графе</a></h1><p class="statements_chapter_title"><b>Задача M.</b> Путь в графе</p><div class="problem-statement">
+   <div class="legend">
+
+<table cellpadding="1"><tbody> 
+  <tr> 
+    <td><font face="courier new,courier,monospace">Максимальное время работы на одном тесте: &nbsp; </font> 
+    </td> 
+    <td><font face="courier new,courier,monospace">5 секунд </font> 
+    </td> 
+  </tr></tbody> 
+</table>
+<p>В неориентированном графе требуется найти минимальный путь между двумя вершинами.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Первым на вход поступает&nbsp;число <em>N</em> – количество вершин в графе (1 ≤ <em>N</em> ≤ 100). Затем записана матрица смежности (0 обозначает отсутствие ребра, 1 – наличие ребра).&nbsp;Далее задаются&nbsp;номера двух вершин – начальной и конечной. </p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Выведите  сначала <em>L</em> – длину кратчайшего пути (количество ребер, которые нужно пройти), а потом сам путь. Если путь имеет длину 0, то его выводить не нужно, достаточно вывести длину.</p>
+<p>Необходимо вывести путь (номера всех вершин в правильном порядке). Если пути нет, нужно вывести -1.  
+
+    </p></div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5<br>0 1 0 0 1<br>1 0 1 0 0<br>0 1 0 0 0<br>0 0 0 0 0<br>1 0 0 0 0<br>3 5</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">3<br>3 2 1 5</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch161">Один конь</a></h1><p class="statements_chapter_title"><b>Задача N.</b> Один конь</p><div class="problem-statement">
+   <div class="legend">
+
+<table cellpadding="1"><tbody> 
+  <tr> 
+    <td><font face="courier new,courier,monospace">Максимальное время работы на одном тесте: </font> 
+    </td> 
+    <td><font face="courier new,courier,monospace">1 секунда</font> 
+    </td> 
+  </tr></tbody> 
+</table>
+<p>На шахматной доске <em>N</em>x<em>N</em> в клетке (<em>x1</em>, <em>y1</em>) стоит голодный шахматный конь. Он хочет попасть в клетку (<em>x2</em>, <em>y2</em>), где растет вкусная шахматная трава. Какое наименьшее количество ходов он должен для этого сделать?</p>
+
+  </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>На вход программы поступает &nbsp;пять чисел: <em>N</em>, <em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2 </em>(5 &lt;= <em>N</em> &lt;= 20, 1 &lt;= <em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em> &lt;= <em>N</em>). Левая верхняя клетка доски имеет координаты (1, 1), правая нижняя - (<em>N</em>, <em>N</em>). </p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>В первой строке&nbsp;выведите единственное число <em>K</em> - наименьшее необходимое число ходов коня. В каждой из следующих <em>K</em>+1 строк должно быть записано 2 числа - координаты очередной клетки в пути коня.</p>
+<p><b>Пример выходного файла ниже неполный, правильный пример такой:</b></p>
+<pre>4<br>3 3<br>2 1<br>1 3<br>3 2<br>5 1<br></pre>
+
+
+    </div>
+    </div>
+
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5<br>3 3<br>5 1</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2001">Числа</a></h1><p class="statements_chapter_title"><b>Задача O.</b> Числа</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Витя хочет придумать новую игру с числами. В этой игре
+от игроков требуется преобразовывать четырехзначные числа
+не содержащие нулей при помощи следующего разрешенного
+набора действий:</p>
+
+<p>1. Можно увеличить первую цифру числа на 1, если она не
+равна 9.</p>
+
+<p>2. Можно уменьшить последнюю цифру на 1, если она не
+равна 1.</p>
+
+<p>3. Можно циклически сдвинуть все цифры на одну вправо.</p>
+
+<p>4. Можно циклически сдвинуть все цифры на одну влево.</p>
+
+<p>Например, применяя эти правила к числу 1234 можно получить числа 2234, 1233, 4123 и 2341 соответственно. Точные правила игры Витя пока не придумал, но пока его интересует вопрос, как получить из одного числа другое за минимальное количество операций.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Во входном файле содержится два различных четырехзначных числа, каждое из которых не содержит нулей.</p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Программа должна вывести последовательность
+четырехзначных чисел, не содержащих нулей. Последовательность
+должна начинаться первым из данных чисел и заканчиваться
+вторым из данных чисел, каждое последующее число в
+последовательности должно быть получено из предыдущего числа
+применением одного из правил. Количество чисел в
+последовательности должно быть минимально возможным.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">1234<br>4321<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1234<br>2234<br>3234<br>4323<br>4322<br>4321<br></pre></div></div></div></div></div> </body>

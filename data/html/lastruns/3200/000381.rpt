@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="381" judge-id="1" status="RT" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>0690f269-a018-4c9b-841e-2aaf09782157</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="14" real-time="18" max-memory-used="307200" >
+  <program-stats-str>{ utime=12, stime=2, ptime=14, rtime=18, maxvsz=307200, maxrss=5357568, nvcsw=1, nivcsw=5 }</program-stats-str>
+      <input size="6">3
+14
+
+</input>
+      <output size="0"></output>
+      <stderr size="87">  File &quot;./000381&quot;, line 19
+    print (*index)
+           ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

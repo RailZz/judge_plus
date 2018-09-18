@@ -1,0 +1,12 @@
+n = int(input())
+i = 1
+l = 0
+while i**2 <= n:
+    if n%i == 0:
+        l+=1
+    i+=1
+if l > 1:
+    print('composite')
+else:
+    print('prime')
+    

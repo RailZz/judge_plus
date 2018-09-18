@@ -1,0 +1,16 @@
+n = int(input())
+a = []
+q = str('')
+while n > 1:
+    i = 2
+    while 1:
+        if n%i==0:
+            a.append(i)
+            n //= i
+            break
+        else:
+            i += 1
+for i in range(0, len(a)):
+    q += str(a[i])
+    q += ' '
+print(q)

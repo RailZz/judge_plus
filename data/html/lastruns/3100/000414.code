@@ -1,0 +1,11 @@
+n = int(input())
+a = []
+for i in range(n - 1):
+    a.append(1)
+for i in range(len(a)):
+    if a[i]:
+        for i1 in range( 2, n // ( i + 2 ) + 1):
+            a[ ( i + 2 ) * i1 - 2] = 0
+for i in range(len(a)):
+    if a[i]:
+        print(i + 2, end = ' ')

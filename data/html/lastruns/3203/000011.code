@@ -1,0 +1,11 @@
+x=int(input())
+i=2
+m=3**10
+while i<=x:
+    if (x%i==0) and i<m:
+        m=i
+    i=i+1
+print(m)
+    
+
+        

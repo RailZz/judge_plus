@@ -1,0 +1,4 @@
+m = input()
+for i in range(len(m)):
+    if m[i] == 'f':
+        print(i, end = ' ')

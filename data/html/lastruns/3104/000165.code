@@ -1,0 +1,77 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int n;
+    cin >> n;
+    vector<int> d(n + 1);
+    for (int i = 0; i < n + 1; i++)
+    {
+        d[i] = pow(10.0, 9);
+    }
+    d[0] = 0;
+    d[1] = 0;
+    d[2] = 1;
+    int p[100];
+    p[1] = 0;
+    p[2] = 1;
+    for (int i = 0; i <= n; i++)
+    {
+        if(i + 1 <= n)
+        {
+            if (d[i+1] > d[i] + 1)
+            {
+                d[i+1] = d[i] + 1;
+                p[i+1] = 1;
+            }
+        }
+        if(i * 2 <= n)
+        {
+            if (d[i*2] > d[i] + 1)
+            {
+                d[i*2] = d[i] + 1;
+                p[i*2] = 2;
+            }
+        }
+        if(i * 3 <= n)
+        {
+            if (d[i*3] > d[i] + 1)
+            {
+                d[i*3] = d[i] + 1;
+                p[i*3] = 3;
+            }
+        }
+    }
+    int c = n;
+    vector<int> ans;
+    ans.push_back(p[c]);
+    while (c != 1)
+    {
+        if (p[c] == 1)
+        {
+            c = c - 1;
+            ans.push_back(p[c]);
+        } else if (p[c] == 2) {
+            c = c / 2;
+            ans.push_back(p[c]);
+        } else if (p[c] == 3) {
+            c = c / 3;
+            ans.push_back(p[c]);
+        }
+
+    }
+    int size_ans = ans.size();
+    if (size_ans == 0)
+    {
+        return 0;
+    }
+    for (int i = size_ans - 2; i >= 0; i--)
+    {
+        cout << ans[i];
+    }
+    return 0;
+}

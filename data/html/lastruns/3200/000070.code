@@ -1,0 +1,4 @@
+n=int(input())
+a=n//10
+a=a%10
+print(n//100+a+n%10)

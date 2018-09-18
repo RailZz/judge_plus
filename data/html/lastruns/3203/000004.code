@@ -1,0 +1,6 @@
+x = int(input())
+f = 30000
+for i in range (2, 30000):
+    if x % i == 0 and i < f :
+        print(i)
+        f = i

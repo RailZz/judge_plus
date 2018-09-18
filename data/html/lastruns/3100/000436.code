@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	int k;
+	cin >> k;
+	vector<bool> used(1000, false);
+	for (int i = 1; i <= 9; ++i) {
+		unsigned long long curr_i = i, i_size = 1;
+		if (curr_i%k == 0) {
+			cout << i << " " << i_size;
+			return 0;
+		}
+		while (!used[curr_i%k]) {
+		    used[curr_i%k] = true;
+		    curr_i = (10*curr_i + i)%k;
+		    ++i_size;
+			if (curr_i%k == 0) {
+				cout << i << " " << i_size;
+				return 0;
+			}
+		}
+    }
+	
+	cout << "Impossible";
+	
+	return 0;
+}

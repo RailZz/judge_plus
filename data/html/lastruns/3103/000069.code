@@ -1,0 +1,59 @@
+program TaskC;
+
+const
+        SIZE = 100;
+        
+type
+        TRec = record
+                ist, st: LongInt
+        end;
+        
+var
+        n, i, j, c, kist, kst: LongInt;
+        a: array [1..SIZE] of TRec;
+        
+begin
+        Read (n);
+        
+        for i := 1 to n do
+        begin
+                a[i].ist := 0;
+                a[i].st := 0
+        end;
+        
+        for i := 1 to n do
+                for j := 1 to n do
+                begin
+                        Read (c);
+                        
+                        if c = 1 then
+                        begin
+                                Inc (a[i].ist);
+                                Inc (a[j].st)
+                        end
+                end;
+                
+        kist := 0;
+        kst := 0;
+        
+        for i := 1 to n do
+        begin
+                if a[i].ist = 0 then
+                        Inc (kst);
+                        
+                if a[i].st = 0 then
+                        Inc (kist)
+        end;
+        
+        WriteLn (kist);
+        
+        for i := 1 to n do
+                if a[i].st = 0 then
+                        WriteLn (i);
+
+        WriteLn (kst);
+        
+        for i := 1 to n do
+                if a[i].ist = 0 then
+                        WriteLn (i);
+end. 

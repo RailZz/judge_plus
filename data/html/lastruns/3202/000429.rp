@@ -1,0 +1,7 @@
+<input size="3">36
+</input>
+      <output size="10">0 2 1 1 0
+</output>
+      <correct size="11">0 0 0 0 1 
+</correct>
+      

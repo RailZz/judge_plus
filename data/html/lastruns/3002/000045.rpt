@@ -1,0 +1,35 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="45" judge-id="40" status="SV" scoring="ACM" run-tests="0" contest-id="3002" compile-error="yes" >
+  <uuid>78785b33-8a3b-43f9-9a62-c60b2464b597</uuid>
+  <compiler_output>000045.cpp:15:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000045.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:70:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:71:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:72:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:73:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:74:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:79:  Tab found; better to use spaces  [whitespace/tab] [1]
+000045.cpp:80:  Tab found; better to use spaces  [whitespace/tab] [1]
+Done processing 000045.cpp
+Total errors found: 23
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

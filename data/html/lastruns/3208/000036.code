@@ -1,0 +1,8 @@
+a=int(input())
+b=int(input())
+c=int(input())
+s=(a+b+c)//2
+if s % 2 == 0:
+    print(s)
+else:
+    print(s+1)

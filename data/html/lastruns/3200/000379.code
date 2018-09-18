@@ -1,0 +1,20 @@
+os.chdir(path) - смена текущей директории.
+
+os.listdir(path=".") - список файлов и директорий в папке.
+
+os.remove(path, *, dir_fd=None) - удаляет путь к файлу.
+
+os.remove(r'D:\test\readme.txt') - позволяет удалить файл.
+
+os.mkdir(path[, access=777]) - cоздаёт папку по указанному пути 
+
+import os
+
+path = os.getcwd()  
+print ("Текущая рабочая директория %s" % path)
+
+
+
+file = open("file.txt", "w")
+file.write("test test")
+file.close()

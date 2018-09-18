@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="121" judge-id="121" status="SE" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>8f952e34-7e89-4131-ab48-2b73d883832e</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="280" real-time="322" max-memory-used="32251904" >
+  <program-stats-str>{ utime=243, stime=37, ptime=280, rtime=322, maxvsz=32251904, maxrss=19107840, nvcsw=1, nivcsw=52 }</program-stats-str>
+      <input size="8">10
+15
+2
+</input>
+      <output size="0"></output>
+      <stderr size="282">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000121&quot;, line 12, in &lt;module&gt;
+    pribt(a1,b1)
+NameError: name 'pribt' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

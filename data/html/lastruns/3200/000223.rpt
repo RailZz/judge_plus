@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="223" judge-id="224" status="SE" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>4e90db2a-86fc-418f-bc67-cef36b5db67f</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="284" real-time="300" max-memory-used="18698240" >
+  <program-stats-str>{ utime=261, stime=23, ptime=284, rtime=300, maxvsz=18698240, maxrss=19116032, nvcsw=1, nivcsw=41 }</program-stats-str>
+      <input size="4">179
+</input>
+      <output size="0"></output>
+      <stderr size="281">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000223&quot;, line 4, in &lt;module&gt;
+    d=inp(input())
+NameError: name 'inp' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

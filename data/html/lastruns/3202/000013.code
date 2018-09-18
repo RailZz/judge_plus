@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+main(){
+	int k;
+	cin>>k;
+	if(k%4==0 and (k/4+1)*2+(k/4-1)*2==k)
+		cout<<"YES"<<endl;
+	else
+		cout<<"NO"<<endl;
+}

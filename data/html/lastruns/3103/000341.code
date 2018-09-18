@@ -1,0 +1,22 @@
+N, S = map(int, input().split())
+lst = [0] * N
+lst1 = 0
+used = [0] * N
+n = 0
+for i in range (N):
+    lst[i] = []
+for i in range (N):
+    lst1 = list(map(int, input().split()))
+    for j in range (N):
+        if lst1[j] == 1:
+            lst[i].append(j)
+        
+def DFS (N):
+    global n
+    used[N] = 1
+    n = n + 1
+    for i in lst[N]:
+        if used[i] == 0:
+            DFS(i)
+DFS(S - 1)
+print(n)

@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="44" judge-id="34" status="WA" scoring="ACM" run-tests="1" contest-id="3102" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>192f3107-e923-4720-a59e-3a44276a10fa</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="31" real-time="34" max-memory-used="307200"  checker-comment="Answers do not match: output: 13, correct: 9" >
+  <program-stats-str>{ utime=25, stime=6, ptime=31, rtime=34, maxvsz=307200, maxrss=6402048, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="19">6 3
+2 5 7 11 15 20
+</input>
+      <output size="3">13
+</output>
+      <correct size="2">9
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="45">Answers do not match: output: 13, correct: 9
+</checker>
+    </test>
+  </tests>
+</testing-report>

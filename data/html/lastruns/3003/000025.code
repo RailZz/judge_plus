@@ -1,0 +1,58 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+
+using namespace std;
+
+const long long inf = 2009000999, SIZE = 60000, maxMinutes = 1440, cup = 100, truck = 3000000;
+long long N, M, start = 0;
+vector<pair<int, int>> gr[SIZE];
+vector<pair<int, int>> cups[SIZE];
+
+long long deicstra(long long maxim) {
+    vector<int> d(N, inf);
+    d[start] = 0;
+    set<pair<int, int>> s;
+    s.insert({0, start});
+    while (!s.empty()) {
+        int v = s.begin() -> second;
+        s.erase(s.begin());
+        for (int i = 0; i < gr[v].size(); i++){
+            int u = gr[v][i].first, g = gr[v][i].second;
+            if (d[v] + g < d[u] && maxim <= cups[v][i].second) {
+                s.erase({d[u], u});
+                d[u] = d[v] + g;
+                s.insert({d[u], u});
+            }
+        }
+    }
+    if (d[N - 1] == inf || d[N - 1] > maxMinutes) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+int main() {
+    cin >> N >> M;
+    for (int i = 0; i < M; i++) {
+        int v, u, l, gramm;
+        cin >> v >> u >> l >> gramm;
+        gr[v - 1].push_back({u - 1, l});
+        gr[u - 1].push_back({v - 1, l});
+        cups[v - 1].push_back({u - 1, (gramm - truck) / cup});
+        cups[u - 1].push_back({v - 1, (gramm - truck) / cup});
+    }
+    long long l = 0, r = 10000001;
+    while (r - l > 1) {
+        long long m = (r + l) / 2;
+        if (deicstra(m)) {
+            l = m;
+        } else {
+            r = m;
+        }
+    }
+    cout << l;
+    return 0;
+}

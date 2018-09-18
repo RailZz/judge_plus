@@ -1,0 +1,46 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+vector <int> used;
+vector <vector <int> >G;
+int kol;
+int dfs (int S)
+{
+	
+	kol++;
+	used[S]=1;
+	for (auto u: G[S])
+	{
+		if (!used[u])
+		{
+				dfs(u);
+		}
+	}
+	return kol;
+}
+int main ()
+{
+	int N,S,a,b;
+	cin >> N >> S;
+	G.resize(N);
+	used.resize(N);
+	for (int i=0;i<G.size();i++)
+	{
+		for (int j=0;j<G.size();j++)
+		{
+			G[i].resize(N);
+			cin >> G[i][j];
+		}
+	}
+	for (int i=0;i<N;i++)
+	{
+		for (int j=0;j<N;j++)
+		{
+			if (G[i][j]==1)
+			{
+				G[i].push_back(j);
+			}
+		}
+	}
+	cout << dfs(S);
+}

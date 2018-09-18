@@ -1,0 +1,81 @@
+#include <iostream>
+#include <set>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int inf = 2009000999, start, finish;
+
+vector<vector<pair<int, int>>> gr;
+set<pair<int, int>> mains;
+
+void dejikstra(vector<int> &d, vector<int> &ancestors)
+{
+    mains.insert({0, start});
+    while (!mains.empty())
+    {
+        int v = mains.begin() -> second;
+        mains.erase(mains.begin());
+        for (auto UL : gr[v])
+        {
+            //U - graph number, L - weight
+            int L = UL.first, U = UL.second;
+            if (d[v] + L < d[U])
+            {
+                mains.erase({d[U], U});
+                ancestors[U] = v;
+                d[U] = d[v] + L;
+                mains.insert({d[U], U});
+            }
+        }
+    }
+}
+
+int main()
+{
+    int n;
+    cin >> n >> start >> finish;
+    start--;
+    finish--;
+    gr.assign(n, vector<pair<int, int>>(0));
+    vector<int> d(n, inf);
+    vector<int> ancestors(n, -1);
+    d[start] = 0;
+    for (int i = 0; i < n; ++i)
+    {
+        for (int y = 0; y < n; ++y)
+        {
+            int a;
+            cin >> a;
+            if (a != -1)
+            {
+                gr[i].push_back({a, y});
+            }
+        }
+    }
+    dejikstra(d, ancestors);
+    vector<int> Help_me_ouT;
+    //cout << "finish "<< endl;
+    int gg = n-1;
+    while (finish != -1)
+    {
+        Help_me_ouT.push_back(finish);
+        finish = ancestors[finish];
+    }
+    //cout << endl;
+    reverse(Help_me_ouT.begin(), Help_me_ouT.end());
+    //cout << "КАтаем шары? " << d[finish] << endl;
+    if (d[gg] == inf)
+    {
+        cout << -1;
+    } else {
+        for (int y = 0; y <= Help_me_ouT.size() - 1 ; ++y)
+        {
+            cout << Help_me_ouT[y] + 1 << " ";
+        }
+    }
+    return 0;
+}
+
+

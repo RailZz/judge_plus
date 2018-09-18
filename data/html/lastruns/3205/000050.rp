@@ -1,0 +1,11 @@
+<input size="34">4
+0 0 0 0
+0 0 0 0
+1 0 0 0
+0 0 0 0
+</input>
+      <output size="4">yes
+</output>
+      <correct size="3">no
+</correct>
+      

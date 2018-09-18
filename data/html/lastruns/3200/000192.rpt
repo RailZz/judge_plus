@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="192" judge-id="193" status="CE" scoring="ACM" run-tests="0" contest-id="3200" compile-error="yes" >
+  <uuid>aeade761-403d-4ca0-b837-7c16299da1c6</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000192.pas
+000192.pas(1,6) Fatal: Syntax error, &quot;BEGIN&quot; expected but &quot;identifier INPUT&quot; found
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

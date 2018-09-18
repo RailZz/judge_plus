@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="254" judge-id="254" status="SE" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>102387d9-f20a-409a-804f-7d7a2eac4269</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="291" real-time="380" max-memory-used="18698240" >
+  <program-stats-str>{ utime=262, stime=29, ptime=291, rtime=380, maxvsz=18698240, maxrss=19099648, nvcsw=2, nivcsw=42 }</program-stats-str>
+      <input size="9">20
+21
+22
+</input>
+      <output size="0"></output>
+      <stderr size="237">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000254&quot;, line 10
+    else (k+1)%2=0:
+         ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

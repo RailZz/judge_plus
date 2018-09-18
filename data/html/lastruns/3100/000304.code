@@ -1,0 +1,9 @@
+import math
+n=int(input())
+s=1
+b=1
+while s<n:
+    s=s*2
+    b=b+1
+b=b-1
+print(b)

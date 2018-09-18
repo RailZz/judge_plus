@@ -1,0 +1,67 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="38" judge-id="5" status="WA" scoring="ACM" run-tests="3" contest-id="3003" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="3" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>577de87f-e868-4170-9ae7-8b91be3b362f</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Done processing 000038.cpp
+000038.cpp: In function 'int main()':
+000038.cpp:69:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int y = 0; y &lt;= Help_me_ouT.size() - 1 ; ++y)
+                           ^
+
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="3" max-memory-used="315392"  checker-comment="ok" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=315392, maxrss=2928640, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=483328, maxrss=2928640, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="24">3 2 1
+0 1 1
+4 0 1
+2 1 0
+</input>
+      <output size="6">2 3 1 </output>
+      <correct size="2">3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="2" status="OK" time="1" real-time="3" max-memory-used="315392"  checker-comment="ok" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=315392, maxrss=2928640, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=483328, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="101">6 2 6
+0 -1 1 -1 -1 -1
+1 0 -1 4 2 -1
+-1 -1 0 1 -1 -1
+-1 -1 -1 0 -1 2
+-1 -1 -1 -1 0 4
+-1 -1 -1 -1 -1 0
+</input>
+      <output size="10">2 1 3 4 6 </output>
+      <correct size="2">5
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="3" status="WA" time="1" real-time="2" max-memory-used="315392"  checker-comment="WA ???????? ????? Wrong first vertex" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=315392, maxrss=2928640, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=483328, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="46">4 2 3
+0 -1 -1 -1
+1 0 -1 1
+1 -1 0 1
+-1 -1 -1 0
+</input>
+      <output size="2">3 </output>
+      <correct size="3">-1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="38">WA ???????? ????? Wrong first vertex 
+</checker>
+    </test>
+  </tests>
+</testing-report>

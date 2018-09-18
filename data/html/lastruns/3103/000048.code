@@ -1,0 +1,40 @@
+N = int(input())
+a = []
+for i in range(N):
+    a.append(list(map(int, input().split())))
+a1 = []
+for i in range(N):
+    a1.append([])
+for i in range(N):
+    for i1 in range(N):
+        if a[i][i1]:
+            a1[i].append(i1 + 1)
+a, b = list(map(int, input().split()))
+used = []
+p = []
+minp = []
+for i in range(N):
+    used.append(1)
+    minp.append(0)
+minp.append(0)
+def dfs(s, a1):
+    global used, minp, p, b
+    p.append(s)
+    used[s - 1] = 0
+    if b in a1[s - 1] and len(p) + 1 <= len(minp):
+        minp = p + [b]
+    for i in a1[s - 1]:
+        if used[i - 1]:
+            dfs(i, a1)
+    p.remove(s)
+    used[s - 1] = 1
+if b == a:
+    print(0)
+else:
+    dfs(a, a1)
+    if len(minp) > N:
+        print( - 1 )
+    else:
+        print(len(minp) - 1)
+        for i in minp:
+            print(i, end = ' ')

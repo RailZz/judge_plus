@@ -1,0 +1,4 @@
+n = int(input())
+l = int(input())
+m = int(input())
+print((n + 1) // 2 + (l + 1) // 2+ (m + 1) // 2)

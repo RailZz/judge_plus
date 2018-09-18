@@ -1,0 +1,26 @@
+a=list(map(int, input().split()))
+a1=[ a[0] * a[3] + a[2] * a[1] , a[1] * a[3] ]
+def f1(n):
+    a = []
+    a1 = []
+    i = 2
+    k = None
+    while i + i <= n:
+        k = 1
+        for i1 in a:
+            if i % i1 == 0:
+                k = 0
+                break
+        if k:
+            a.append(i)
+            while n % i == 0:
+                n //= i
+                a1.append(i)
+        i += 1
+    return a1
+OD=list(set(f1(a1[0]))&set(f1(a1[0])))
+for i in OD:
+    while a1[0] % i == 0 and a1[1] %i == 0:
+        a1[0] //= i
+        a1[1] //= i
+print(a1[0] , a[1] , sep=' ') 

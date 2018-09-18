@@ -1,0 +1,18 @@
+n = int(input())
+a = []
+a1 = []
+i = 2
+k = None
+while i + i <= n:
+    k = 1
+    for i1 in a:
+        if i % i1 == 0:
+            k = 0
+            break
+    if k:
+            a.append(i)
+            if n % i == 0:
+                a1.append(i)
+    i += 1
+for i in a1:
+    print(i, end = ' ')

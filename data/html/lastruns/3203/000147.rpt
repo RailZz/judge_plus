@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="147" judge-id="95" status="RT" scoring="ACM" run-tests="1" contest-id="3203" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>67e436be-13f4-46f5-90f1-27c30e159a7c</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="13" real-time="16" max-memory-used="307200" >
+  <program-stats-str>{ utime=11, stime=2, ptime=13, rtime=16, maxvsz=307200, maxrss=5328896, nvcsw=1, nivcsw=3 }</program-stats-str>
+      <input size="14">5
+28
+0
+0
+0
+0
+
+</input>
+      <output size="0"></output>
+      <stderr size="80">  File &quot;./000147&quot;, line 15
+    if d = 0:
+         ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

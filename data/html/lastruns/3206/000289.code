@@ -1,0 +1,32 @@
+s=input()
+t=0
+u=0
+g=0
+h=0
+for i in s:
+    if i.isdigit():
+        t=1
+for i in s:
+    if i.isalpha():
+        u=1
+
+for i in s:
+    if i.islower():
+        g=1
+
+for i in s:
+    if i.isupper():
+        h=1
+
+if t>0:
+    t=i
+if u>0:
+    u=i
+if g>0:
+    g=i
+if h>0:
+    h=i
+if len(s)>=8:
+    print('yes')
+else:
+    print('no')

@@ -1,0 +1,28 @@
+def dfs(v):
+    used[v] = 1
+    for i in G[v]:
+        if used[i] == 0:
+            dfs(i)
+    
+
+data = list(map(int, input().split()))
+N = data[0]
+S = data[1]
+G = [[] for i in range(N)]
+for i in range(N):
+    data = list(map(int, input().split()))
+    for j in range(len(data)):
+        if data[j] == 1:
+            G[i].append(j)
+used = [0 for i in range(N)]
+dfs(S - 1)
+counter = 0
+for i in range(len(used)):
+    if used[i] == 1:
+        counter += 1
+print(counter)
+        
+
+
+        
+        

@@ -1,0 +1,35 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="81" judge-id="2" status="WA" scoring="ACM" run-tests="1" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>374326be-2dc3-4059-9a03-d953b986d335</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000081.cpp: In function 'int main()':
+000081.cpp:11:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for( int i = 0; i &lt; a.size(); ++i){
+                    ^
+000081.cpp:24:15: warning: 'm' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  cout &lt;&lt; M &lt;&lt; m &lt;&lt; endl;
+               ^
+000081.cpp:24:10: warning: 'M' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  cout &lt;&lt; M &lt;&lt; m &lt;&lt; endl;
+          ^
+</compiler_output>
+  <tests>
+    <test num="1" status="WA" time="1" real-time="3" max-memory-used="307200"  checker-comment="Answers differ: [1]: output: 32, correct: 3" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2961408, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2682880, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">1 2 3 2 1
+</input>
+      <output size="3">32
+</output>
+      <correct size="4">3 2
+</correct>
+      <stderr size="10">1 2 3 2 1 </stderr>
+      <checker size="44">Answers differ: [1]: output: 32, correct: 3
+</checker>
+    </test>
+  </tests>
+</testing-report>

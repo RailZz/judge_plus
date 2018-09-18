@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    int n,m;
+    cin >> n >> m;
+    vector <vector<int>> ar(n);
+    for (int i=0; i<m;i++)
+    {
+        int a,b;
+        cin >> a >> b;
+        a--;
+        b--;
+        ar[a].push_back(b);
+        ar[b].push_back(a);
+    }
+    for (int i=0; i<n; i++)
+    {
+        cout<<ar[i].size()<<" ";
+    }
+    return 0;
+}

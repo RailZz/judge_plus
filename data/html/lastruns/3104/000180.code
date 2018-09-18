@@ -1,0 +1,24 @@
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+vector<int>ends_on_a(1,1);
+vector<int>ends_on_b(1,1);
+vector<int>ends_on_c(1,1);
+int a,b,c;
+int n;
+main(){
+cin>>n;
+
+for(int i = 1; i <= n ; i++){
+    a = ends_on_a[i - 1];
+    b = ends_on_b[i - 1];
+    c = ends_on_c[i - 1];
+    ends_on_a[i] = b + c;
+    ends_on_b[i] = a + b + c;
+    ends_on_c[i] = a + b + c;
+    }
+cout<<a + b + c;
+return(0);
+}

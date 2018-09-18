@@ -1,0 +1,13 @@
+from math import sqrt
+
+number = int(input())
+divisor = 2
+
+for i in range(2, int(sqrt(number)) + 1):
+    if number % i == 0:
+        divisor += 1
+        
+if divisor == 2:
+    print('prime')
+else:
+    print('composite')

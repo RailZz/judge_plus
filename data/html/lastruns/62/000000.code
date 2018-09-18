@@ -1,0 +1,198 @@
+#include <bits/stdc++.h>
+using namespace std;
+const long long INF = 10000000000;
+struct node {
+    node * left, * right;
+    long long priority, val, tsize, minimum, sum, change_to, add;
+    bool rev; // do we need to reverse the part of the array which refers to the tree with root
+    node() : left(nullptr), right(nullptr), priority(0), val(0), tsize(1), minimum(INF), rev(false), sum(0), add(0){}
+    node(long long val) : left(nullptr), right(nullptr), priority(rand()), val(val), tsize(1), minimum(val), rev(false), sum(val),
+    add(0){}
+};
+long long getSize(node * root){
+    if (!root) return 0;
+    return root-> tsize;
+}
+long long getMin(node * root){
+    return (! root ? INF : root-> minimum);
+}
+long long getSum (node * root){
+    return (! root ? 0 : root-> sum);
+}
+void push(node * root){
+    //  reverse of an array, pushing the "promise to reverse" to the left and right subtrees and swapping them;
+    if (! root || !root-> rev) return;
+    root-> rev = false;
+    auto tmp = root -> left;
+    root -> left = root -> right;
+    root-> right = tmp;
+    if (root-> left != nullptr){
+        root -> left -> rev ^= true;
+    }
+    if (root -> right != nullptr){
+        root -> right -> rev ^= true;
+    }
+}
+void push_add(node * root){
+    // push the promise to add something to the children of the root
+    // and recalculate the sum and minimum
+    if (root == nullptr || root-> add == 0) return;
+    if (root -> left){
+        root -> left -> add += root-> add;
+    }
+    if (root -> right){
+        root -> right -> add += root -> add;
+    }
+    root -> minimum += root -> add;
+    root -> sum += (root-> add) * (getSize(root -> left) + getSize(root -> right) + 1);
+    root -> val += root -> add;
+    root -> add = 0;
+}
+void update(node * root){
+    if (! root) return;
+    root-> tsize = getSize(root-> left) + getSize(root-> right) + 1;
+    if (root -> left && root -> left -> add != 0){
+        push_add(root -> left);
+    }
+    if (root -> right && root -> right -> add != 0){
+        push_add(root -> right);
+    }
+    root -> sum = getSum(root -> left) + getSum(root -> right) + root -> val;
+    root-> minimum = min(root-> val, min(getMin(root-> left) , getMin(root-> right)));
+}
+node * tMerge(node * root1, node * root2){
+    // keys dont really exist but it still thinks and works only because key(root1) < key(root2) for
+    // all in the subtrees of root1 and root2.so, with imlicit trees, tMerge will merge two trees so that first are all the
+    // keys of the first one, and then of the second one
+    push(root1);
+    push(root2);
+    push_add(root1);
+    push_add(root2);
+    if (! root1 || ! root2){
+        return (!root1 ? root2 : root1);
+    }
+    if (root1-> priority > root2-> priority){
+        root1-> right= tMerge(root1-> right, root2);
+        update(root1);
+        return root1;
+    }
+    else{
+        root2-> left = tMerge(root1, root2->left);
+        update(root2);
+        return root2;
+    }
+}
+pair <node *, node *> split(node * root, int k){
+    // split divides the tree which corresponds to our array into two parts which will correspond
+    // to parts of the array [0, k - 1] and [k, n - 1] where n = len(array)
+    if (root == nullptr) return {nullptr, nullptr};
+    push(root);
+    push_add(root);
+    long long leftsize = getSize(root-> left);
+    if (leftsize >= k){
+        auto tmp = split(root-> left, k);
+        root-> left = tmp.second;
+        update(root);
+        update(tmp.first);
+        return {tmp.first, root};
+    }
+    else{
+        auto tmp = split(root-> right, k - leftsize - 1);
+        root-> right = tmp.first;
+        update(root);
+        update(tmp.second);
+        return {root, tmp.second};
+    }
+}
+node * tReverse (node * root, int l, int r){
+    // reverse the array[l, ..., r] (0 - indexation)
+    auto tmp1 = split(root, r + 1);
+    auto tmp2 = split(tmp1.first, l);
+    tmp2.second -> rev ^= true;
+     return tMerge(tMerge(tmp2.first, tmp2.second), tmp1.second);
+}
+node * tInsert(node * root, long long pos, long long val){
+    auto tmp = split(root, pos);
+    return tMerge(tMerge(tmp.first, new node(val)), tmp.second);
+}
+node * tDelete(node * root, long long pos){
+    auto tmp1 = split(root, pos);
+    auto tmp2 = split(root, pos + 1);
+    return tMerge(tmp1.first, tmp2.second);
+}
+long long get_value(node * root, long long pos){
+    push(root);
+    push_add(root);
+    long long leftsize = getSize(root-> left);
+    if (leftsize == pos) return root-> val;
+    if (leftsize > pos){
+        return get_value(root-> left, pos);
+    }
+    else{
+        return get_value(root-> right, pos - leftsize - 1);
+    }
+}
+node * to_front(node * root, int l, int r){
+    // puts array[l ... r] in front (indexation from 0)
+    auto tmp1 = split(root, r + 1);
+    auto tmp2 = split(tmp1.first, l);
+    return tMerge(tMerge(tmp2.second, tmp2.first), tmp1.second);
+}
+node * from_vector( vector<long long> &q){
+    node * root = nullptr;
+    for (int i = 0; i < q.size(); i++){
+        root = tMerge(root, new node(q[i]));
+    }
+    return root;
+}
+void printTree(node * root){
+    if (root == nullptr) return;
+    push(root);
+    push_add(root);
+    printTree(root -> left);
+    cout << root -> val << " ";
+    printTree(root -> right);
+}
+long long Minimum(node * root, long long l, long long r){
+    auto tmp1 = split(root, r + 1);
+    auto tmp2 = split(tmp1.first, l);
+    long long ans = tmp2.second -> minimum;
+    tMerge(tMerge(tmp2.first, tmp2.second), tmp1.second);
+    return ans;
+}
+long long Sum(node * root, long long l, long long r){
+    auto tmp1 = split(root, r + 1);
+    auto tmp2 = split(tmp1.first, l);
+    long long ans = tmp2.second -> sum;
+    tMerge(tMerge(tmp2.first, tmp2.second), tmp1.second);
+    return ans;
+}
+node * Add_x(node * root, long long l, long long r, long long x){
+    auto tmp1 = split(root, r + 1);
+    auto tmp2 = split(tmp1.first, l);
+    tmp2.second -> add = x;
+    return tMerge(tMerge(tmp2.first, tmp2.second), tmp1.second);
+}
+int main(){
+    //ios_base::sync_with_stdio(false);
+    //cin.tie(nullptr);
+    //cout.tie(nullptr);
+    long long n, m;
+    cin >> n >> m;
+    vector<long long> a(n, 0);
+    node * t = from_vector(a);
+    for (long long i = 0; i < m; i ++){
+        long long q,  l, r;
+        cin >> q >>  l >> r;
+        if (q == 1){
+            long long s;
+            cin >> s;
+            t = Add_x(t, l, r - 1, s);
+        }
+        else if (q == 2){
+            cout << Sum(t, l, r - 1) << "\n";
+        }
+    }
+    return 0;
+}
+

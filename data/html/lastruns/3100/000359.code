@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int prov (int a)
+{
+    int i=2;
+    while (i*i<=a)
+    {
+        if(a%i==0)
+        {
+            return(false);
+        }
+        i++;
+    }
+    return(true);
+}
+
+int main()
+{
+    int k,ost;
+    cin>>k;
+    bool fl;
+    for(int i=2;i<k;i++)
+    {
+        fl=prov(i);
+        if (fl==true)
+        {
+            ost=k-i;
+            fl=prov(ost);
+            if(fl==true)
+            {
+                cout << i << " " << ost;
+                return 0;
+            }
+        }
+    }
+    return 0;
+}

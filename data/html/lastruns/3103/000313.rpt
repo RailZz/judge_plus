@@ -1,0 +1,35 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="313" judge-id="17" status="RT" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>6aa64a7d-3c2d-4e45-8687-272ffa5de1a8</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="190" real-time="205" max-memory-used="63664128" >
+  <program-stats-str>{ utime=168, stime=22, ptime=190, rtime=205, maxvsz=63664128, maxrss=45395968, nvcsw=1, nivcsw=40 }</program-stats-str>
+      <input size="207">10
+0 1 0 0 0 0 0 0 0 0
+1 0 0 1 1 0 1 0 0 0
+0 0 0 0 1 0 0 0 1 0
+0 1 0 0 0 0 1 0 0 0
+0 1 1 0 0 0 0 0 0 1
+0 0 0 0 0 0 1 0 0 1
+0 1 0 1 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0
+0 0 1 0 0 0 0 1 0 0
+0 0 0 0 1 1 0 0 0 0
+5 4
+</input>
+      <output size="0"></output>
+      <stderr size="158">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+  File &quot;./000313&quot;, line 41
+    print(i, end = ' ')
+                ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

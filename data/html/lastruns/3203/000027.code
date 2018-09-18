@@ -1,0 +1,14 @@
+N=int(input())
+s=0
+mx=-10**20
+mn=10**20
+while N>0:
+    s=N%10
+    if s<mn:
+        mn=s
+    if s>mx:
+        mx=s
+    N=N//10
+print(mn,mx)
+
+        

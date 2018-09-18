@@ -1,0 +1,3 @@
+x=int(input(12))
+y=x%10
+print(y)

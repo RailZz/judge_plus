@@ -1,0 +1,22 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="92" judge-id="71" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>62d6d176-8dae-4fb5-a0a6-c3fa22b83cc8</uuid>
+  <compiler_output>000092.cpp:5:1: error: stray '\321' in program
+ ште f(int x)
+ ^
+000092.cpp:5:1: error: stray '\210' in program
+000092.cpp:5:1: error: stray '\321' in program
+000092.cpp:5:1: error: stray '\202' in program
+000092.cpp:5:1: error: stray '\320' in program
+000092.cpp:5:1: error: stray '\265' in program
+000092.cpp:5:15: error: ISO C++ forbids declaration of 'f' with no type [-fpermissive]
+ ште f(int x)
+               ^
+000092.cpp: In function 'int main()':
+000092.cpp:18:11: warning: overflow in implicit constant conversion [-Woverflow]
+         r = pow(10, 10) + 1;
+           ^
+</compiler_output>
+</testing-report>

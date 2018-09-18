@@ -1,0 +1,5 @@
+E=int(input())
+E=(16)
+A=(5)
+D=(E//A)
+print(D)

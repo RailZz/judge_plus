@@ -1,0 +1,15 @@
+n = int(input())
+m = [[0] * n for i in range (n)]
+for i in range (n):
+    for j in range(n):
+        if m[i][j] == m [j][i] and (j + i) == n - 1 :
+            m[i][j] = 1
+            m[j][i] = 1
+        elif i >= j and i + j > n - 1:
+            m[i][j] = 2
+            m[i][j] = 2
+        elif i <= j and i + j >= n:
+            m[i][j] = 2
+            m[i][j] = 2            
+    print(*m[i])
+            

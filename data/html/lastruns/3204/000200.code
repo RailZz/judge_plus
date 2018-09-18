@@ -1,0 +1,8 @@
+a = input().split() 
+x = int(input())
+x_index = 0
+for i in range(0, len(a)):
+    n = int(a[i])
+    if n >= x:
+        x_index = i + 1
+print(x_index + 1)

@@ -1,0 +1,5 @@
+k=int(input())
+m=int(input())
+n=int(input())
+t=(n*m*2)/k
+print(t)

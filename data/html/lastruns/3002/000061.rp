@@ -1,0 +1,12 @@
+<input size="24">4 0
+.+--
+-.--
+++.+
+++-.
+</input>
+      <output size="8">1
+0 1 0 </output>
+      <correct size="8">1
+0 1 1
+</correct>
+      

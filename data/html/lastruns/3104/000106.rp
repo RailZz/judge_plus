@@ -1,0 +1,15 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="106" judge-id="34" status="CE" scoring="ACM" run-tests="0" contest-id="3104" compile-error="yes" >
+  <uuid>9b1e8b6d-fc44-43c7-8d0b-63125f246ddd</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000106.pas
+000106.pas(7,5) Error: Ordinal expression expected
+000106.pas(14,4) Fatal: There were 1 errors compiling module, stopping
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

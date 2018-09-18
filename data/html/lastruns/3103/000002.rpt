@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="2" judge-id="3" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>9d72fc1d-9def-404b-ac91-925a21070861</uuid>
+  <compiler_output>000002.cpp:17:51: warning: missing terminating &quot; character
+  for (int i = 0; i&lt;n; ++i) cout &lt;&lt; a[i].size() &lt;&lt; &quot; 
+                                                   ^
+000002.cpp:17:2: error: missing terminating &quot; character
+  for (int i = 0; i&lt;n; ++i) cout &lt;&lt; a[i].size() &lt;&lt; &quot; 
+  ^
+000002.cpp: In function 'int main()':
+000002.cpp:8:2: error: 'vector' was not declared in this scope
+  vector&lt;vector&lt;int&gt; &gt; a(n);
+  ^
+000002.cpp:8:16: error: expected primary-expression before 'int'
+  vector&lt;vector&lt;int&gt; &gt; a(n);
+                ^
+000002.cpp:14:6: error: 'a' was not declared in this scope
+      a[u].push_back(v);
+      ^
+000002.cpp:17:36: error: 'a' was not declared in this scope
+  for (int i = 0; i&lt;n; ++i) cout &lt;&lt; a[i].size() &lt;&lt; &quot; 
+                                    ^
+000002.cpp:19:5: error: expected primary-expression before 'return'
+     return 0;
+     ^
+</compiler_output>
+</testing-report>

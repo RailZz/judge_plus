@@ -1,0 +1,16 @@
+a = int(input())
+b = int(input())
+c = int(input())
+l = min(a, b, c)
+m = max(a, b, c)
+n = 0
+if (a == l and c == m) or (a == m and c == l):
+    n = b
+elif (b == l and a == m) or (b == m and a == l):
+    n = c
+else:
+    n = a
+b = n
+a = l
+c = m
+print(a, b, c)

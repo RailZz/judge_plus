@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+int moisha, moisha_s_ledder[1000];
+int israil(int moses);
+int main()
+{
+	std::cin >> moisha;
+	for (int step = 0; step < moisha; step++)
+	{
+		std::cin >> moisha_s_ledder[step];
+	}
+	std::cout << israil(moisha) << endl;
+}
+int israil(int moses)
+{
+	int shekeli = 0;
+	for (int isr = 0; isr < moisha; isr++)
+	{
+		if (moisha_s_ledder[isr] < moisha_s_ledder[isr + 1])
+		{
+			shekeli = shekeli + moisha_s_ledder[isr];
+		}
+		else
+		{
+			shekeli = shekeli + moisha_s_ledder[isr + 1];
+		}
+	}
+	return shekeli; //ибо еврейская задача
+}

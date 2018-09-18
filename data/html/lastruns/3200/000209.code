@@ -1,0 +1,8 @@
+a = input()
+s = input()
+d = input()
+    f = input()
+    g = input()
+    h = input()
+a = ((f - a)*3600) + ((g - s)*60) + (h - d)
+print(a)

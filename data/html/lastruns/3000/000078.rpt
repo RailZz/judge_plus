@@ -1,0 +1,16 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="78" judge-id="1" status="CE" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>f36660e0-be0d-4a22-9348-74ab0e8d9fb4</uuid>
+  <compiler_output>Done processing 000078.cpp
+000078.cpp:71:7: error: stray '`' in program
+       if (subHash(i + 1, len_str1 - 1, Hash1, st1) =`= subHash(0, len_str1 - i - 2, Hash2, st2)) {
+       ^
+000078.cpp: In function 'int main()':
+000078.cpp:71:54: error: expected primary-expression before '=' token
+       if (subHash(i + 1, len_str1 - 1, Hash1, st1) =`= subHash(0, len_str1 - i - 2, Hash2, st2)) {
+                                                      ^
+
+</compiler_output>
+</testing-report>

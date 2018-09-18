@@ -1,0 +1,43 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="408" judge-id="257" status="WA" scoring="ACM" run-tests="2" contest-id="3202" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>fb91e8f3-ade1-4e25-9c3e-e49af31a9174</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="78" real-time="86" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=72, stime=6, ptime=78, rtime=86, maxvsz=30339072, maxrss=27078656, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">1
+</input>
+      <output size="9">1 korova
+</output>
+      <correct size="9">1 korova
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="WA" time="75" real-time="81" max-memory-used="30339072"  checker-comment="Line 1 differs: output: ?2 korovi? correct: ?2 korovy?" >
+  <program-stats-str>{ utime=67, stime=8, ptime=75, rtime=81, maxvsz=30339072, maxrss=27045888, nvcsw=1, nivcsw=10 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">2
+</input>
+      <output size="9">2 korovi
+</output>
+      <correct size="9">2 korovy
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="55">Line 1 differs: output:
+&gt;2 korovi&lt;
+correct:
+&gt;2 korovy&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

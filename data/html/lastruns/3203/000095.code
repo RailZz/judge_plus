@@ -1,0 +1,6 @@
+s=int(input())
+n=int(input())
+a=int(input())
+while (a==n):
+    s==a+1
+    

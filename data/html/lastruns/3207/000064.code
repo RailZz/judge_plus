@@ -1,0 +1,11 @@
+def Fun_min(a, b, c, d):
+    if a <= b and a <= c and a <= d:
+        return a
+    if a >= b and b <= c and b <= d:
+        return b
+    if c <= b and a >= c and c <= d:
+        return c
+    if d <= b and d <= c and a >= d:
+        return d
+n = list(map(int,input().split()))
+print(Fun_min(n[0], n[1], n[2], n[3]))

@@ -1,0 +1,31 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="180" judge-id="9" status="SE" scoring="ACM" run-tests="1" contest-id="3101" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>6c01c613-19e5-4c1c-a3b8-8313c789f3a2</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="289" real-time="302" max-memory-used="18685952" >
+  <program-stats-str>{ utime=257, stime=32, ptime=289, rtime=302, maxvsz=18685952, maxrss=19189760, nvcsw=1, nivcsw=44 }</program-stats-str>
+      <input size="19">3
+1 2 1
+4
+0 1 2 3
+
+</input>
+      <output size="4">0 1 </output>
+      <stderr size="392">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000180&quot;, line 42, in &lt;module&gt;
+    print(f3(f1(i, N), f2(i, N)), end=' ')
+  File &quot;./000180&quot;, line 34, in f3
+    return f2 - ( f1 - 1 )
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+</stderr>
+    </test>
+  </tests>
+</testing-report>

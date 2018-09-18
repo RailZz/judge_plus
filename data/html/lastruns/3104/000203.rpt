@@ -1,0 +1,72 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="203" judge-id="43" status="PE" scoring="ACM" run-tests="4" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="4" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>33771bba-25e6-4bc3-a8b8-b3b5025a10db</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="4" real-time="6" max-memory-used="4329472"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=2, stime=2, ptime=4, rtime=6, maxvsz=4329472, maxrss=6914048, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3313664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="17">3
+1 2 3
+3 
+2 3 1
+</input>
+      <output size="4">2 3 </output>
+      <correct size="5">2 3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="OK" time="4" real-time="5" max-memory-used="4329472"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=4, ptime=4, rtime=5, maxvsz=4329472, maxrss=6758400, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3350528, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="17">3
+1 2 3
+3 
+3 2 1
+</input>
+      <output size="2">3 </output>
+      <correct size="3">1 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="3" status="OK" time="3" real-time="5" max-memory-used="4329472"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=2, stime=1, ptime=3, rtime=5, maxvsz=4329472, maxrss=2899968, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3043328, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="26">3
+1 2 3
+3 
+1001 1002 1003
+</input>
+      <output size="0"></output>
+      <correct size="1">
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="4" status="PE" time="2" real-time="4" max-memory-used="4329472"  checker-comment="wrong output format Sequence is not found in array a" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=4, maxvsz=4329472, maxrss=3088384, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17264640, maxrss=3059712, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="219">1
+1
+100
+1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 
+</input>
+      <output size="10">1111111111</output>
+      <correct size="3">1 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="53">wrong output format Sequence is not found in array a
+</checker>
+    </test>
+  </tests>
+</testing-report>

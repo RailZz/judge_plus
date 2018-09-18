@@ -1,0 +1,68 @@
+#include <iostream>
+#include <set>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+long long inf = numeric_limits<long long>::max();
+
+void dejikstra(vector<vector<pair<long long, long long>>> &gr,
+               vector<long long> &d,
+               int n, int start)
+{
+    d.clear();
+    d.resize(n, inf);
+    set<pair<int, int>> s;
+    d[start] = 0;
+    s.insert({0, start});
+    while (!s.empty())
+    {
+        int v = s.begin()->second;
+        s.erase(s.begin());
+        for (auto ul : gr[v])
+        {
+            long long u = ul.first;
+            long long l = ul.second;
+            if (d[v] + l < d[u])
+            {
+                s.erase({d[u], u});
+                d[u] = d[v] + l;
+                s.insert({d[u], u});
+            }
+        }
+    }
+}
+
+int main()
+{
+    vector<vector<pair<long long, long long>>> gr;
+    vector<long long> d;
+    long long n, f, w, m;
+    int start;
+    cin >> n;
+    vector<long long> petrol_cost(n);
+    for (int i = 0; i < n; ++i)
+    {
+        cin >> petrol_cost[i];
+    }
+    start = 0;
+    f = n - 1;
+    gr.clear();
+    gr.resize(n + 228);
+    cin >> m;
+    for (int i = 0; i < m; ++i)
+    {
+        int a, b;
+        cin >> a >> b;
+        --a;
+        --b;
+        gr[a].push_back({b, petrol_cost[a]});
+        gr[b].push_back({a, petrol_cost[b]});
+    }
+
+    dejikstra(gr, d, n, start);
+
+    vector<long long> ans;
+    cout << (d[f] == inf ? -1 : d[f]);
+}

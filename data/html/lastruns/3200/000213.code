@@ -1,0 +1,4 @@
+N = int(input())
+K = int(input())
+s = K / N - ((K / N) / 10)
+print(s)

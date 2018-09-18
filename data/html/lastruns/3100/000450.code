@@ -1,0 +1,27 @@
+Var
+ N,K,R: integer;
+ x,s: integer;
+begin
+ read(N,K);
+ R := N;
+ x := 2; s := 4;
+ while s <= K do
+  begin
+  while K mod x = 0 do
+    begin
+    if N mod x = 0 then
+      N := N div x
+    else
+      R := R * x;
+    K := K div x;
+    end;
+  s := s + 2*x + 1;
+  x := x + 1;
+  end;
+  if N mod K <> 0 then
+    R := R * K;
+  writeln(R);
+
+
+
+End.

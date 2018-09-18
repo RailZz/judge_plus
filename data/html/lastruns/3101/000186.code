@@ -1,0 +1,49 @@
+def f1(n,a):
+    l = - 1
+    r = len(a) - 1
+    m = None
+    while r - l > 1:
+        m = ( l + r ) // 2
+        if n <= a[m]:
+            r = m
+        else:
+            l = m       
+    if n == a[r]:
+        return r
+    else:
+        return 'NO'
+
+
+    
+def f2(n,a):
+    l = 0
+    r = len(a)
+    m = None
+    while r - l > 1:
+        m = ( l + r ) // 2
+        if n >= a[m]:
+            l = m
+        else:
+            r = m
+    if n == a[l]:
+        return l
+    else:
+        return 'NO'
+
+
+    
+def f3( f1, f2 ):    
+    if f1 != 'NO':
+        return f2 - ( f1 - 1 )
+    else:
+        return 0
+
+
+def f4():    
+    q = input()
+    N = list(map(int, input().split()))
+    N.sort()
+    q = input()
+    M = list(map(int, input().split()))
+    for i in M:
+        print(f3(f1(i, N), f2(i, N)), end=' ')

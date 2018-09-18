@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="27" judge-id="28" status="RU" scoring="ACM" run-tests="0" contest-id="3003" compile-error="yes" >
+  <uuid>6cb1bab5-25bb-495d-9981-abcdc6602b80</uuid>
+  <compiler_output>Done processing 000027.cpp
+000027.cpp: In function 'long long int Dijkstra(long long int)':
+000027.cpp:21:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i = 0; i &lt; gr[v].size(); i++){
+                           ^
+
+</compiler_output>
+</testing-report>

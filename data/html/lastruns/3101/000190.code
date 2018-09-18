@@ -1,0 +1,46 @@
+def main():
+    def right_bin_search(a, item, b):
+        left = 0
+        right = b
+        while right - left > 1:
+            mid = (right + left) // 2
+            if a[mid] <= item:
+                left = mid
+            else:
+                right = mid
+        if a[left] == item:
+            return left
+        else:
+            return -1
+
+
+    def left_bin_search(a, item, b):
+        left = -1
+        right = b - 1
+        while right - left > 1:
+            mid = (right + left) // 2
+            if a[mid] >= item:
+                right = mid
+            else:
+                left = mid  
+        if a[right] == item:
+            return right
+        else:
+            return -1
+
+
+    n = int(input())
+    numbers_1 = list(map(int, input().split()))
+    k = int(input())
+    numbers_2 = list(map(int, input().split()))
+    numbers_1.sort()
+    ans = []
+    for i in range(len(numbers_2)):
+        if left_bin_search(numbers_1, numbers_2[i], n) == -1 and right_bin_search(numbers_1, numbers_2[i], n) == -1:
+            ans.append(0)
+        elif left_bin_search(numbers_1, numbers_2[i], n) == right_bin_search(numbers_1, numbers_2[i], n):
+            ans.append(1)
+        else:
+            ans.append(right_bin_search(numbers_1, numbers_2[i], n) - left_bin_search(numbers_1, numbers_2[i], n) + 1)
+    print(*ans)
+main()    

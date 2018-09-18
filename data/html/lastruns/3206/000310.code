@@ -1,0 +1,5 @@
+s=input()
+if s.isalnum()and len(s) >8:
+    print ("YES")
+else:
+    print("NO")

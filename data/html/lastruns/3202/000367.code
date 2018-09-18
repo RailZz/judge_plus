@@ -1,0 +1,18 @@
+a = int(input())
+s = int(input())
+d = int(input())
+if a >= d :
+    if a >= s :
+        if s + d > a:
+            print('YES')
+    else:
+        if a + d > s:
+            print('YES')
+elif d >= s:
+    if s + a > d:
+            print('YES')
+elif s >= a:
+    if a + d > s:
+            print('YES')
+else:
+    print('NO')

@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#define ll long long
+using namespace std;
+int main()
+{
+    ll n;
+    ll i;
+    int isprime;
+    isprime = 1;
+    cin >> n;
+    for (i = 2; i * i <= n; i++)
+    {
+        if (n % i == 0) {cout << "composite"; isprime = 0; break;}
+    }
+    if (isprime == 1) {cout << "prime";}
+}

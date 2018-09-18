@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="78" judge-id="3" status="WA" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>949b6b1b-aa8b-4c62-9d5b-0c0a9a803bdb</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="27" real-time="46" max-memory-used="307200"  checker-comment="Line 1 differs: output: ?2Formula_!3? correct: ?Formula_!3?" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=46, maxvsz=307200, maxrss=6279168, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2969600, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="13">2Formula_1!3
+</input>
+      <output size="12">2Formula_!3
+</output>
+      <correct size="11">Formula_!3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="60">Line 1 differs: output:
+&gt;2Formula_!3&lt;
+correct:
+&gt;Formula_!3&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

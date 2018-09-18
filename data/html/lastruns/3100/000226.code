@@ -1,0 +1,55 @@
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main()
+{
+    int k;
+    cin >> k;
+    set <int> NotToCopy;
+    int sum1 = 1, sum2 = 1;
+    for (int i = 2; i <= k; i++)
+    {
+        sum1 = 1;
+        sum2 = 1;
+        for (int j = 2; j * j <= i; j++)
+        {
+            if ((i % j) == 0)
+            {
+                sum1 += j;
+                if (j != (i / j))
+                {
+                     sum1 += (i / j);
+                }
+            }
+        }
+
+        if (sum1 > k)
+        {
+            continue;
+        }
+
+        for (int j = 2; j * j <= sum1; j++)
+        {
+            if ((sum1 % j) == 0)
+            {
+                sum2 += j;
+                if (j != (sum1 / j))
+                {
+                     sum2 += (sum1 / j);
+                }
+            }
+        }
+
+        if ((i == sum2) && (i != sum1))
+        {
+            if ((NotToCopy.find(i) == NotToCopy.end()) && (NotToCopy.find(sum1) == NotToCopy.end()))
+                 {
+                     cout << i << ' ' << sum1 << '\n';
+                     NotToCopy.insert(i);
+                     NotToCopy.insert(sum1);
+                 }
+        }
+    }
+    return 0;
+}

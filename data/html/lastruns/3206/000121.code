@@ -1,0 +1,10 @@
+a = 'test ejudge hello'
+b = a.split()
+print(len(b))
+print(*b)
+
+m = 0
+for i in range(len(b)):
+    if len(b[i]) > len(b[m]):
+        m = i
+print(b[m])

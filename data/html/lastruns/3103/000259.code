@@ -1,0 +1,38 @@
+from sys import setrecursionlimit
+setrecursionlimit(10 ** 9)
+M, N = list(map(int, input().split()))
+a = []
+for i in range(M):
+    a.append(list(input()))
+
+
+    
+used = []
+for i in range(M):
+    used.append([])
+    for i1 in range(N):
+        used[- 1].append(0)
+def dfs(x, y):
+    global used, a
+    used[y][x] = 1
+    if y != 0 and a[y - 1][x] == '#' and not used[y - 1][x]:
+        dfs(x, y - 1)
+    if y != len(a) - 1 and a[y + 1][x] == '#' and not used[y + 1][x]:
+        dfs(x, y + 1)
+    if x != 0 and a[y][x - 1] == '#' and not used[y][x - 1]:
+        dfs(x - 1, y)
+    if x != len(a[y]) - 1 and a[y][x + 1] == '#' and not used[y][x + 1]:
+        dfs(x + 1, y)
+
+
+        
+k = 0        
+for y in range(M):
+    for x in range(N):
+        if used[y][x] == 0 and a[y][x] != '.':
+            dfs(x, y)
+            k += 1
+
+            
+            
+print(k)

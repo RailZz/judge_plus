@@ -1,0 +1,11 @@
+a = int(input())
+b = int(input())
+c = int(input())
+a1 = int(input())
+b1 = int(input())
+c1 = int(input())
+a = a*3600
+a1 = a1*3600
+b = b*60
+b1 = b1*60
+print(a1+b1+c1 - a - b - c)

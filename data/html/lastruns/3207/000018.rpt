@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="18" judge-id="5" status="RT" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>3c5dc6e3-3e80-4233-a5f8-3e75ab220728</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="185" real-time="2500" max-memory-used="66764800" >
+  <program-stats-str>{ utime=176, stime=9, ptime=185, rtime=2500, maxvsz=66764800, maxrss=45314048, nvcsw=19, nivcsw=36 }</program-stats-str>
+      <input size="2">1
+</input>
+      <output size="0"></output>
+      <stderr size="215">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000018&quot;, line 11, in &lt;module&gt;
+    print(get_fibo())
+TypeError: get_fibo() takes exactly 1 argument (0 given)
+</stderr>
+    </test>
+  </tests>
+</testing-report>

@@ -1,0 +1,23 @@
+<input size="6">Hello
+</input>
+      <output size="32">l
+l
+Hell
+Hel
+Hlo
+el
+olleH
+olH
+5
+</output>
+      <correct size="33">l
+l
+Hello
+Hel
+Hlo
+el
+olleH
+olH
+5
+</correct>
+      

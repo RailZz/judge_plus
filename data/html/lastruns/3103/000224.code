@@ -1,0 +1,92 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_map>
+
+using namespace std;
+
+queue <pair <int, int> > curr;
+unordered_map <int, int> used_and_par;
+vector <int> way;
+int start, finish;
+
+int cycleRight (int num)
+{
+    int last = num % 10;
+    num/=10;
+    num += last * 1000;
+    return num;
+}
+
+int cycleLeft (int num)
+{
+    int first = num / 1000;
+    num %= 1000;
+    num *= 10;
+    num += first;
+    return num;
+}
+
+int cnt = 10000;
+
+void unterBfs ()
+{
+    if (!curr.empty())
+    {
+        pair <int, int> a = curr.front();
+        curr.pop();
+        if (a.first == finish)
+        {
+            if (a.second < cnt)
+            {
+                cnt = a.second;
+                way.clear();
+                for (int i = a.first; i != -1; i = used_and_par[i])
+                {
+                    way.push_back(i);
+                }
+            }
+        }
+        else
+        {
+            if (a.first % 10 != 1 && used_and_par.find(a.first - 1) == used_and_par.end())
+            {
+                curr.push(make_pair(a.first - 1, a.second + 1));
+                used_and_par.insert({a.first - 1, a.first});
+            }
+            if (a.first / 1000 != 9 && used_and_par.find(a.first + 1000) == used_and_par.end())
+            {
+                curr.push(make_pair(a.first + 1000, a.second + 1));
+                used_and_par.insert({a.first + 1000, a.first});
+            }
+            if (used_and_par.find(cycleLeft(a.first)) == used_and_par.end())
+            {
+                curr.push(make_pair(cycleLeft(a.first), a.second + 1));
+                used_and_par.insert({cycleLeft(a.first), a.first});
+            }
+            if (used_and_par.find(cycleRight(a.first)) == used_and_par.end())
+            {
+                curr.push(make_pair(cycleRight(a.first), a.second + 1));
+                used_and_par.insert({cycleRight(a.first), a.first});
+            }
+        }
+        unterBfs();
+    }
+
+}
+
+int main()
+{
+    cin >> start >> finish;
+
+    curr.push(make_pair(start, 0));
+    used_and_par.insert({start, -1});
+    unterBfs();
+
+    cout << cnt << endl;
+    for (int i = way.size() - 1; i >= 0; i--)
+    {
+        cout << way[i] << '\n';
+    }
+    return 0;
+}

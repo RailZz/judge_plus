@@ -1,0 +1,6 @@
+a=int(input(1))
+b=int(input(2))
+if a>b:
+    print(a)
+if b>a:
+        print(b)

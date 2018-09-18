@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="162" judge-id="67" status="WA" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>5856c214-8c08-4786-885e-8f75c816eb33</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="27" real-time="35" max-memory-used="307200"  checker-comment="Different number of lines: output: 3, correct: 2" >
+  <program-stats-str>{ utime=23, stime=4, ptime=27, rtime=35, maxvsz=307200, maxrss=6356992, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2367488, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="31">Everyone of us has all we need
+</input>
+      <output size="42">7
+Everyone of us has all we need
+Everyone
+</output>
+      <correct size="11">Everyone
+8
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="49">Different number of lines: output: 3, correct: 2
+</checker>
+    </test>
+  </tests>
+</testing-report>

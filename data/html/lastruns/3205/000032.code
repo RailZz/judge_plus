@@ -1,0 +1,4 @@
+A = [int(i) for i in input().split()]
+m = A[len(A) - 1]
+b = [m] + A[0:-1]
+print(*b)

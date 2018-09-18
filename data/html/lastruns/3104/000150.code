@@ -1,0 +1,25 @@
+var d,cost:array of longint;
+i,n,z,a,f:longint;
+s:string;
+c:array of char;
+begin
+
+readln(n);
+setLength(d,n);
+setLength(c,n);
+setLength(cost,n);
+readln(s);
+
+for z := 1 to n do if s[z] = ' ' then Delete(s, z, 1);
+
+for a := 0 to length(c)-1 do c[a]:=s[a+1];  
+for i:=0 to length(s)-1 do
+cost[i]:=ord(c[i])-48;
+
+d[0]:=cost[0];
+if (d[0]<0) then d[1]:=d[0]+cost[1] else d[1]:=cost[1];
+for f:=2 to n-1 do
+if (d[f-1]<d[f-2]) then d[f]:=d[f-1]+cost[f] else d[f]:=d[f-2]+cost[f];
+writeln(d[n-1]);
+
+end.

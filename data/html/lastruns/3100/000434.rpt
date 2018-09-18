@@ -1,0 +1,159 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="434" judge-id="4" status="PE" scoring="ACM" run-tests="6" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="6" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>ffe47919-e75b-4bac-8e7d-b8c5e7be26c5</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000434.cpp: In function 'int main()':
+000434.cpp:26:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0; i &lt;= maxn; i++)
+                      ^
+000434.cpp:22:8: warning: unused variable 'n' [-Wunused-variable]
+     ll n, m, maxn;
+        ^
+000434.cpp:22:11: warning: unused variable 'm' [-Wunused-variable]
+     ll n, m, maxn;
+           ^
+000434.cpp:30:61: warning: 'numprev' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         if (sumdel(num2) == num1 &amp;&amp; num1 != num2 &amp;&amp; numprev != num2){
+                                                             ^
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="3" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2813952, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17268736, maxrss=3125248, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">300
+</input>
+      <output size="8">220 284
+</output>
+      <correct size="8">220 284
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="OK" time="3" real-time="4" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=3, ptime=3, rtime=4, maxvsz=307200, maxrss=2744320, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17268736, maxrss=3313664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="5">2000
+</input>
+      <output size="18">220 284
+1184 1210
+</output>
+      <correct size="18">220 284
+1184 1210
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="3" status="OK" time="8" real-time="9" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=0, stime=8, ptime=8, rtime=9, maxvsz=307200, maxrss=2912256, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=17268736, maxrss=3137536, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="5">5000
+</input>
+      <output size="28">220 284
+1184 1210
+2620 2924
+</output>
+      <correct size="28">220 284
+1184 1210
+2620 2924
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="4" status="OK" time="17" real-time="19" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=14, stime=3, ptime=17, rtime=19, maxvsz=307200, maxrss=3014656, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17268736, maxrss=3313664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="6">10000
+</input>
+      <output size="48">220 284
+1184 1210
+2620 2924
+5020 5564
+6232 6368
+</output>
+      <correct size="48">220 284
+1184 1210
+2620 2924
+5020 5564
+6232 6368
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="5" status="OK" time="165" real-time="182" max-memory-used="4362240"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=165, stime=0, ptime=165, rtime=182, maxvsz=4362240, maxrss=2867200, nvcsw=1, nivcsw=13 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=17268736, maxrss=3137536, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="6">50000
+</input>
+      <output size="84">220 284
+1184 1210
+2620 2924
+5020 5564
+6232 6368
+10744 10856
+12285 14595
+17296 18416
+</output>
+      <correct size="84">220 284
+1184 1210
+2620 2924
+5020 5564
+6232 6368
+10744 10856
+12285 14595
+17296 18416
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="6" status="PE" time="447" real-time="506" max-memory-used="4362240"  checker-comment="wrong output format Two equal pairs given" >
+  <program-stats-str>{ utime=443, stime=4, ptime=447, rtime=506, maxvsz=4362240, maxrss=2797568, nvcsw=2, nivcsw=36 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=6, maxvsz=17268736, maxrss=3084288, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="7">100000
+</input>
+      <output size="192">220 284
+1184 1210
+2620 2924
+5020 5564
+6232 6368
+10744 10856
+12285 14595
+17296 18416
+63020 76084
+66928 66992
+67095 71145
+69615 87633
+71145 67095
+76084 63020
+79750 88730
+87633 69615
+88730 79750
+</output>
+      <correct size="144">220 284
+1184 1210
+2620 2924
+5020 5564
+6232 6368
+10744 10856
+12285 14595
+17296 18416
+63020 76084
+66928 66992
+67095 71145
+69615 87633
+79750 88730
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="42">wrong output format Two equal pairs given
+</checker>
+    </test>
+  </tests>
+</testing-report>

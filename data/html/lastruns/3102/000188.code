@@ -1,0 +1,39 @@
+#include <stdio.h>
+long long mx (long long n, long long *arr){
+    long long mx = arr[0];
+    for (int i = 0; i < n; i += 1){
+        if (mx < arr[i]){
+            mx = arr[i];
+        }
+    }
+    return mx;
+}
+long long func (long long n, long long *arr, long long m){
+    long long k = 0;
+    for (int i = 0; i < n; i += 1){
+        k += arr[i] / m;
+    }
+    return k;
+}
+int main(void){
+    long long n, k, m, l, r, max;
+    scanf("%lld %lld", &n, &k);
+    long long arr[n];
+    for (int i = 0; i < n; i +=1){
+        scanf("%lld", &arr[i]);
+    }
+    max = mx (n, arr);
+    l = 0;
+    r = max + 1;
+    while (r - l > 1){
+        m = (r + l) / 2;
+        if (func(n, arr, m) >= k){
+            l = m;
+        }
+        else {
+            r = m;
+        }
+    }
+    printf ("%lld", l);
+    return 0;
+}

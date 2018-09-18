@@ -1,0 +1,51 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+vector <int> used;
+bool f = false;
+vector < vector<int> > gr;
+void dfs (int i)
+{
+	used[i]++;
+	if (used[i]>10)
+	{
+		f=true;
+		return;
+	}
+	
+	for (auto u: gr[i])
+	{
+		dfs(u);
+}	}
+
+int main ()
+{
+	int N;
+	cin >> N;
+	gr.resize(N);
+	used.resize(N);
+	vector < vector<int> > G(N);
+	for (int i=0;i<N;i++)
+	{
+		G[i].resize(N);
+		for (int j=0;j<N;j++)
+		{
+			cin >> G[i][j];
+			if (G[i][j]==1)
+			{
+				gr[i].push_back(j);
+			}
+		}
+	}
+	for (int i=0;i<N;i++)
+	{
+		if (used[i]==0)
+			dfs(i);
+		if (f)
+			break;
+	}
+	if (f)
+		cout << 1;
+	if (f==false)
+		cout << 0;
+}

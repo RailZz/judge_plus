@@ -1,0 +1,67 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="86" judge-id="1" status="SV" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>be171b73-1ea6-4a97-8035-0e111204c426</uuid>
+  <compiler_output>000086.py:1:1: E265 block comment should start with '# '
+000086.py:2:1: E265 block comment should start with '# '
+000086.py:3:1: E265 block comment should start with '# '
+000086.py:5:20: E703 statement ends with a semicolon
+000086.py:7:24: E703 statement ends with a semicolon
+000086.py:8:43: E703 statement ends with a semicolon
+000086.py:9:36: E703 statement ends with a semicolon
+000086.py:10:20: E703 statement ends with a semicolon
+000086.py:11:9: E703 statement ends with a semicolon
+000086.py:14:31: E702 multiple statements on one line (semicolon)
+000086.py:15:23: E702 multiple statements on one line (semicolon)
+000086.py:17:28: E231 missing whitespace after ';'
+000086.py:17:28: E702 multiple statements on one line (semicolon)
+000086.py:19:40: E702 multiple statements on one line (semicolon)
+000086.py:20:40: E231 missing whitespace after ';'
+000086.py:20:40: E702 multiple statements on one line (semicolon)
+000086.py:24:32: E702 multiple statements on one line (semicolon)
+000086.py:25:23: E702 multiple statements on one line (semicolon)
+000086.py:27:29: E231 missing whitespace after ';'
+000086.py:27:29: E702 multiple statements on one line (semicolon)
+000086.py:29:40: E702 multiple statements on one line (semicolon)
+000086.py:30:40: E231 missing whitespace after ';'
+000086.py:30:40: E702 multiple statements on one line (semicolon)
+000086.py:34:19: E702 multiple statements on one line (semicolon)
+000086.py:34:33: E702 multiple statements on one line (semicolon)
+000086.py:34:36: E226 missing whitespace around arithmetic operator
+000086.py:35:59: E702 multiple statements on one line (semicolon)
+000086.py:36:24: E702 multiple statements on one line (semicolon)
+000086.py:37:31: E702 multiple statements on one line (semicolon)
+000086.py:39:38: E702 multiple statements on one line (semicolon)
+000086.py:40:15: E225 missing whitespace around operator
+000086.py:46:14: E702 multiple statements on one line (semicolon)
+000086.py:47:19: E702 multiple statements on one line (semicolon)
+000086.py:47:30: E702 multiple statements on one line (semicolon)
+000086.py:47:33: E226 missing whitespace around arithmetic operator
+000086.py:48:38: E231 missing whitespace after ';'
+000086.py:48:38: E702 multiple statements on one line (semicolon)
+000086.py:50:20: E702 multiple statements on one line (semicolon)
+000086.py:51:20: E702 multiple statements on one line (semicolon)
+000086.py:52:19: E702 multiple statements on one line (semicolon)
+000086.py:52:33: E702 multiple statements on one line (semicolon)
+000086.py:52:36: E226 missing whitespace around arithmetic operator
+000086.py:53:51: E231 missing whitespace after ';'
+000086.py:53:51: E702 multiple statements on one line (semicolon)
+000086.py:55:32: E231 missing whitespace after ';'
+000086.py:55:32: E702 multiple statements on one line (semicolon)
+000086.py:55:33: E702 multiple statements on one line (semicolon)
+000086.py:56:21: E702 multiple statements on one line (semicolon)
+000086.py:57:19: E702 multiple statements on one line (semicolon)
+000086.py:57:33: E702 multiple statements on one line (semicolon)
+000086.py:57:36: E226 missing whitespace around arithmetic operator
+000086.py:58:53: E231 missing whitespace after ';'
+000086.py:58:53: E702 multiple statements on one line (semicolon)
+000086.py:60:15: E702 multiple statements on one line (semicolon)
+000086.py:63:24: E702 multiple statements on one line (semicolon)
+000086.py:64:13: E231 missing whitespace after ';'
+000086.py:64:13: E702 multiple statements on one line (semicolon)
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a,a1,b,b1;
+	cin>>a>>a1>>b>>b1;
+	if(a-a1==b-b1 or a-b+a1-b1==0)
+		cout<<"YES"<<endl;
+	else
+		cout<<"NO"<<endl;
+}

@@ -1,0 +1,10 @@
+a=input()
+def main_isdigit(a):
+    if a.isdigit():
+        return a
+
+    
+if a.isdigit():
+    print('yes')
+else:
+    print('no')

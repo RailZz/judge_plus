@@ -1,0 +1,51 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int used[1000], isgood=0;
+vector <vector<int>> g(1000);
+
+void dfs (int v, int p)
+{
+    used[v]=1;
+    for(auto u:g[v])
+    {
+        if (used[u]==0)
+        {
+            dfs(u, v);
+        }
+        else
+            if (used [u]==1 && p!=u)
+            isgood=1;
+    }
+}
+
+int main()
+{
+    int n, m;
+    cin >> n >> m;
+    for (int i=0; i<m; i++)
+    {
+        int a, b;
+        cin >> a >> b;
+        a--; b--;
+        g[a].push_back(b);
+        g[b].push_back(a);
+    }
+    dfs(0, -1);
+    for(int i=0; i<n; i++)
+    {
+        if (used[i]==0)
+        {
+            cout << "NO";
+            return 0;
+        }
+
+    }
+    if (isgood==0)
+        cout << "YES";
+    else
+        cout << "NO";
+    return 0;
+}

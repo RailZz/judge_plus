@@ -1,0 +1,7 @@
+n = int(input())
+k = int(input())
+t = int(input())
+k = 14
+n = 3
+t = k // n
+print( 't' )

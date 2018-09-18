@@ -1,0 +1,86 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+ 
+using namespace std;
+ 
+#define ll unsigned long long
+ 
+int main()
+{
+    ll n, i;
+   
+    cin >> n;
+   
+    vector <ll> d(n + 4, 1000000);
+   
+    vector <int> parent;
+   
+    parent.resize(n + 4, 0);
+   
+    d[1] = 0;
+    d[2] = 1;
+    d[3] = 1;
+    d[4] = 2;
+    parent[2] = 2;
+    parent[3] = 3;
+   
+    if (n == 1){
+        cout << " ";
+    }
+   
+    for (i = 3; i <= n; i++)
+    {
+        if(i + 1 <= n) {
+            if (d[i] + 1 <= d[i + 1])
+            {
+                d[i + 1] = d[i] + 1;
+                parent[i + 1] = 1;
+            }
+        }
+        if(i * 2 <= n){
+            if (d[i] + 1 <= d[i * 2])
+            {
+                d[i * 2] = d[i] + 1;
+                parent[i * 2] = 2;
+            }
+        }
+        if(i * 3 <= n){
+            if (d[i] + 1 <= d[i * 3])
+            {    
+                d[i * 3] = d[i] + 1;
+                parent[i * 3] = 3;
+            }        
+        }
+    }
+   
+    //3333312222122213312 for 562340(19)
+   
+    ll k, j;
+    k = d[n];  
+    i = n;
+    ll mas[k];
+    while (i != 1){
+        if (parent[i] == 1){
+            mas[k] = parent[i];
+            i -=1;
+            k--;
+        }
+        if (parent[i] == 2){
+            mas[k] = parent[i];
+            k--;
+            i = i / 2;
+        }
+        if (parent[i] == 3){
+            mas[k] = parent[i];
+            k--;
+            i = i / 3;
+        }
+    }
+   
+    for (int j = 1; j <= d[n]; j++){
+        cout << mas[j];
+    }
+   
+    return 0;
+}

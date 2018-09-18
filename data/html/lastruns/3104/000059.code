@@ -1,0 +1,16 @@
+step = int(input())
+cost = list(map(int, input().split()))
+d = [0 for i in range(step)]
+
+if step == 1:
+    d[0] = cost[0]
+    print(d[0])
+elif step == 2:
+    d[1] = min(cost[1], d[0] + cost[1])
+    print(d[1])    
+else:
+    d[0] = cost[0]
+    d[1] = min(cost[1], d[0] + cost[1])
+    for i in range(2, step):
+        d[i] = min(d[i - 1], d[i - 2]) + cost[i]
+    print(d[step - 1])

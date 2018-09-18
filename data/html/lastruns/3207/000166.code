@@ -1,0 +1,36 @@
+#Стадия 1(шифрование)
+#открытие файла
+import os
+fileadress = input("Укажите расположение файла: ")
+file = open(fileadress,'r').read()
+#создание пароля
+code = ()
+code = input("Задайте код:")
+#шифр файла
+s1=""
+for i in file:
+    s1+=chr((ord(i)+1)%123)
+    file = open(fileadress,'w')
+    file.write(s1)
+file.close()
+
+#Открытие зашифрованного файла
+fileadress = input("Укажите расположение файла: ")
+file = open(fileadress,'r').read()
+#Ввод пароля и дешифровка
+answer = input("\nКакой код?")
+while (code != answer):
+    answer = input("\nКод неверный!Попробуй снова!")
+    if code == answer:
+        break 
+if code == answer:
+if True:
+    s2=""
+    for i in file:
+        s2+=chr((ord(i)- 1 + 123)%123)
+        file = open(fileadress,'w')
+        file.write(s2)
+        print ("\nДоступ разрешён!")
+if code == answer:
+    print(file.read())
+file.close()

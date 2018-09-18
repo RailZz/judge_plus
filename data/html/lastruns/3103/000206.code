@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+int used[100] = {0};
+int mat[100][100];
+int isgood = 1;
+void dfs(int v, int p, int n){
+    used[v] = 1;
+    for (int u = 0; u < n; u++){
+        if (used[u] == 1 && mat[v][u] == 1 && p!= u){
+            isgood = 0;
+        }
+        else if (used[u] == 0 && mat[v][u] == 1){
+            dfs(u, p, n);
+        }
+
+    }
+}
+
+int main(void){
+    int n, m, a, b;
+    cin >> n >> m;
+    for (int i = 0; i < m; i ++){
+       cin >> a >> b;
+       mat[a - 1][b - 1] = 1;
+    }
+    dfs(0, 0, n);
+    if (isgood == 1){
+        cout << "YES";
+    }
+    else {
+        cout << "NO";
+    }
+    return 0;
+}

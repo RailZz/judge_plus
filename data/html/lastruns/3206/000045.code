@@ -1,0 +1,19 @@
+a = input()
+a1 = a[2:3]
+print(a1)
+a2 = a[-2:-1]
+print(a2)
+a3 = a[:5]
+print(a3)
+a4 = a[:-2]
+print(a4)
+a5 = a[::2]
+print(a5)
+a6 = a[1::2]
+print(a6)
+a7 = a[::-1]
+print(a7)
+a8 = a[::-2]
+print(a8)
+a9 = len(a)
+print(a9)

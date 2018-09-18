@@ -1,0 +1,2 @@
+s="2Formula_1!3"
+print(s.replace('1', '').replace('2', ''))

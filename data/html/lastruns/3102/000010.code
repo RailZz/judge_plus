@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int * mas = new int ();
+int Func (int N, int K, int m)
+{
+	int rez=0;
+	for (long long int i = 0;i < N;i++)
+	{
+		rez+=mas[i]/m;
+	}
+	return rez;
+}
+int main ()
+{
+	int N,K,right=-9999999,left,m;
+	cin >> N >> K;
+	for (int i=0;i<N;i++)
+	{
+		cin >> mas[i];
+		if (mas[i]>right)
+			right = mas[i];
+	}
+	left = 0;
+	right++;
+	while (right-left>1)
+	{
+		m=(right+left)/2;
+		if (Func(N,K,m)<K)
+			right = m;
+		else
+			left = m;
+	} 
+	cout << left;
+}

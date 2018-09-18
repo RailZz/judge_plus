@@ -1,0 +1,39 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int a[21][21];
+int d[21][21];
+char p[21][21];
+int main(void){
+    int n, m;
+    cin >> n >> m;
+    for (int i = 0; i < n; i ++){
+       for (int j = 0; j < n; j ++){
+       cin >> a[i][j];
+       }
+    }
+    d[0][0] = 0;
+    for (int i = 0; i < n; i ++){
+       for (int j = 0; j < m; j ++){
+          if (i != 0 && j == 0){
+             d[i][j]= d[i - 1][j] + a[i][j];
+             p[i][j] = 'D';
+          }
+          else if(j != 0 && i == 0){
+             d[i][j]= d[i][j - 1] + a[i][j];
+             p[i][j] = 'R';
+          }
+          else {
+             d[i][j]= max(d[i - 1][j], d[i][j - 1]) + a[i][j];
+             if (d[i - 1][j] > d[i][j - 1]){
+                p[i][j] = 'D';
+             }
+             else{
+                p[i][j] = 'R';
+             }
+          }
+       }
+    }
+    cout << d[n - 1][m - 1];
+    return 0;
+}

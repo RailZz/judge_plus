@@ -1,0 +1,79 @@
+//#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<long long> a;
+vector<long long> t;
+
+void bulid(int v, int left, int right);
+
+void bulid(int v, int left, int right)
+{
+    if (left == right - 1)
+    {
+        t[v] = a[left];
+        return;
+    }
+    int m = (left + right) / 2;
+    bulid(2 * v + 1, left, m);
+    bulid(2 * v + 2, m, right);
+    t[v] = t[2 * v + 1] + t[2 * v + 2];
+}
+long long ask (int v, int left, int right, int askl, int askr)
+{
+    if (askl >= right || askr <= left)
+    {
+        return 0;
+    }
+    if (askl <= left && right <= askr)
+    {
+        return t[v];
+    }
+    int m = (left + right) / 2;
+    return ask(2 * v + 1, left, m, askl, askr) + ask(2 * v + 2, m, right, askl, askr);
+}
+
+void change(int v, int left, int right, int pos, int val)
+{
+    if (left == right - 1)
+    {
+        t[v] += val;
+        return;
+    }
+    int m = (left + right) / 2;
+    if (pos < m)
+    {
+        change(2 * v + 1, left, m, pos, val);
+    } else
+    {
+        change(2 * v + 2, m, right, pos, val);
+    }
+    t[v] = t[2 * v + 1] + t[2 * v + 2];
+}
+
+int main()
+{
+    int event, x, y;
+    int n;
+    cin >> n;
+    a.resize(n);
+    t.resize(4 * n);
+    bulid(0, 0, a.size());
+    cin >> event;
+    while (event != 0)
+    {
+        if (event == 1)
+        {
+            cin >> x >> y; // x, y
+            change(0, 0, a.size(), x, y);
+        } else
+        {
+            cin >> x >> y;
+            cout << ask(0, 0, a.size(), x, y + 1) << " ";
+        }
+        cin >> event;
+    }
+}

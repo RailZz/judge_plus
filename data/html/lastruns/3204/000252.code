@@ -1,0 +1,7 @@
+N, A, B, C, D = [int(i) for i in input().split()]
+m = list(range(1, N + 1))
+m[A-1:B] = m[B-1:A - 2:-1]
+m[C-1:D] = m[D-1:C - 2:-1]
+print(*m)
+
+    

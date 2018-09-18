@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="7" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3002" compile-error="yes" >
+  <uuid>e9d21373-2576-4885-b29c-029a2ec53283</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000007.pas
+Fatal: Syntax error, &quot;BEGIN&quot; expected but &quot;identifier ASDASDAD&quot; found
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

@@ -1,0 +1,9 @@
+<input size="12">3 2
+1 2
+1 3
+</input>
+      <output size="6">YES 
+1</output>
+      <correct size="4">YES
+</correct>
+      

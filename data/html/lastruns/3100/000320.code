@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int nod(int a, int b)
+{
+    while (a != 0 && b != 0)
+    {
+        if (a > b)
+        {
+            swap(a,b);
+        }
+        b %= a;
+    }
+    return a + b;
+}
+int main()
+{
+    int a, b, c;
+    cin >> a >> b;
+    if (a == 0 || b == 0)
+    {
+        cout << 1;
+    } else {
+        c = a * b / nod(a,b);
+        cout << c;
+    }
+    return 0;
+}

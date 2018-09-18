@@ -1,0 +1,59 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<int> p;
+vector<int> d;
+vector<pair<int, pair<int, int>>> gr;
+
+int get_par(int v) {
+    if (p[v] == v) {
+        return v;
+    }
+    return p[v] = get_par(p[v]);
+}
+
+void unity(int u, int v) {
+    u = get_par(u);
+    v = get_par(v);
+    if (u != v) {
+        if (d[u] > d[v]) {
+            swap(u, v);
+        }
+        p[u] = v;
+        if (d[u] == d[v]) {
+            d[v]++;
+        }
+    }
+}
+
+int main() {
+    int n, m, ans = 0;
+    cin >> n >> m;
+    p.resize(n);
+    d.resize(n, 0);
+    for (int i = 0; i < n; i++) {
+        p[i] = i;
+    }
+    for (int i = 0; i < m; i++) {
+        int u, v, m;
+        cin >> u >> v >> m;
+        u--;
+        v--;
+        gr.push_back({m, {u, v}});
+    }
+    sort(gr.begin(), gr.end());
+    /*for (int i = 0; i < gr.size(); i++) {
+        cout << "{" << gr[i].first << ", {" << gr[i].second.first << ", " << gr[i].second.second << "}}  ";
+    }
+    cout << endl;*/
+    for (auto e : gr) {
+        if (get_par(e.second.first) != get_par(e.second.second)) {
+            unity(e.second.first, e.second.second);
+            ans += e.first;
+        }
+    }
+    cout << ans;
+}

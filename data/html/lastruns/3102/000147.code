@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+
+long long mn(long long a, long long b){
+    if (a < b){
+        return a;
+    }else{
+        return b;
+    }
+}
+
+long long  ft(long long t, long long  a, long long  b){
+       long long n = (t - mn(a, b))/a + (t - mn(a, b))/ b + 1;
+       return n;
+}
+int main(void){
+    long long  n, x, y, l, r, m;
+    scanf("%lld %lld %lld", &n, &x, &y);
+    l = 0;
+    r = n * mn(x, y);
+    while (r - l > 1 && n !=1){
+        m = (r + l) / 2;
+        if (ft(m, x, y) >= n){
+           r = m;
+        }else{
+           l = m;
+        }
+    }
+
+    printf("%lld", r);
+    return 0;
+}
+

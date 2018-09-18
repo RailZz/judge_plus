@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="41" judge-id="41" status="RT" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>bb0f57a7-4a8b-43fb-ab78-e523d29a5c45</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="14" real-time="16" max-memory-used="307200" >
+  <program-stats-str>{ utime=10, stime=4, ptime=14, rtime=16, maxvsz=307200, maxrss=5238784, nvcsw=1, nivcsw=4 }</program-stats-str>
+      <input size="1">
+</input>
+      <output size="0"></output>
+      <stderr size="174">Traceback (most recent call last):
+  File &quot;./000041&quot;, line 4, in &lt;module&gt;
+    a = int(input())
+  File &quot;&lt;string&gt;&quot;, line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+</stderr>
+    </test>
+  </tests>
+</testing-report>

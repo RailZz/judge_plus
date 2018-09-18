@@ -1,0 +1,6249 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="281" judge-id="186" status="OK" scoring="ACM" run-tests="99" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>2ec31e7c-7851-4c19-9796-b033df8f2c19</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="27" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=2, ptime=27, rtime=31, maxvsz=307200, maxrss=6250496, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="23">1
+Trifonov Roman 4 1 4
+</input>
+      <output size="12">4.0 1.0 4.0
+</output>
+      <correct size="7">4 1 4 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=19, stime=8, ptime=27, rtime=30, maxvsz=307200, maxrss=6295552, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="44">2
+Markov Valeriy 4 5 2
+Kozlov Georgiy 5 1 2
+</input>
+      <output size="12">4.5 3.0 2.0
+</output>
+      <correct size="9">4.5 3 2 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="28" real-time="32" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=4, ptime=28, rtime=32, maxvsz=307200, maxrss=6090752, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="60">3
+Babat Anna 2 5 1
+Belova Galina 5 1 4
+Moroz Yaroslav 3 4 3
+</input>
+      <output size="57">3.3333333333333335 3.3333333333333335 2.6666666666666665
+</output>
+      <correct size="25">3.33333 3.33333 2.66667 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="OK" time="28" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=28, stime=0, ptime=28, rtime=29, maxvsz=307200, maxrss=6311936, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="89">4
+Yakovlev Ivan 5 1 2
+Yapryntsev Aleksey 5 1 1
+Kozlov Georgiy 5 1 2
+Nikonova Elena 4 4 3
+</input>
+      <output size="14">4.75 1.75 2.0
+</output>
+      <correct size="13">4.75 1.75 2 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="5" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=4, ptime=28, rtime=30, maxvsz=307200, maxrss=6266880, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="113">5
+Mosyaykin Vladimir 5 3 1
+Nevolin Oleg 5 4 1
+Volzhin Ilya 1 2 5
+Beklemishev Vladimir 1 4 3
+Borisov Daniil 4 1 5
+</input>
+      <output size="12">3.2 2.8 3.0
+</output>
+      <correct size="11">3.2 2.8 3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="6" status="OK" time="28" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=28, stime=0, ptime=28, rtime=31, maxvsz=307200, maxrss=6303744, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="142">6
+Glushko Matvey 1 1 5
+Chayko Maksim 1 3 4
+Kuleshov Nikolay 1 3 5
+Contest Programming 4 4 2
+Vostrikova Nataliya 2 4 5
+Kazurova Kristina 2 2 5
+</input>
+      <output size="56">1.8333333333333333 2.8333333333333335 4.333333333333333
+</output>
+      <correct size="25">1.83333 2.83333 4.33333 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="7" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=5, ptime=27, rtime=29, maxvsz=307200, maxrss=6397952, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="163">7
+Skyabin Sergey 2 1 4
+Kuznetsov Grigoriy 1 4 2
+Larina Elena 4 2 1
+Kobylkina Svetlana 2 1 4
+Tomashpolskiy Maksim 2 1 1
+Kuleshov Nikolay 1 3 5
+Tsyganok Yuriy 2 4 1
+</input>
+      <output size="42">2.0 2.2857142857142856 2.5714285714285716
+</output>
+      <correct size="19">2 2.28571 2.57143 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="8" status="OK" time="28" real-time="32" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=4, ptime=28, rtime=32, maxvsz=307200, maxrss=6316032, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="181">8
+Tarasova Mariya 1 4 1
+Trenin Kirill 4 2 5
+Levin Sergey 4 1 3
+Chernov Vasiliy 1 3 2
+Oganesyan Vardan 3 2 3
+Gorbik Dmitriy 5 5 4
+Sveshnikddov Mihail 5 1 5
+Seythalilova Elvira 5 2 3
+</input>
+      <output size="13">3.5 2.5 3.25
+</output>
+      <correct size="14">3.5 2.5 3.25 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="9" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6389760, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="212">9
+Chuvileva Evgeniya 5 5 2
+Kuznetsov Grigoriy 1 4 2
+Hutuashvili Tamara 5 3 4
+Dedinskiy Ilya 1 2 2
+Ilyina Irina 5 5 4
+Tokareva Darya 2 2 4
+Zaostrovnyh Elizaveta 2 1 5
+Romanko Denis 5 3 5
+Pokrovskiy Vladimir 5 2 1
+</input>
+      <output size="42">3.4444444444444446 3.0 3.2222222222222223
+</output>
+      <correct size="19">3.44444 3 3.22222 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="10" status="OK" time="27" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=16, stime=11, ptime=27, rtime=31, maxvsz=307200, maxrss=6369280, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="218">10
+Zakurenko Aleksandr 2 4 3
+Kamelin Stanislav 2 2 4
+Vlasova Natalya 4 1 3
+Stolyarov Andrey 5 5 1
+Pavlov Nikita 3 4 5
+Ilyina Irina 5 5 4
+Petrova Mariya 3 2 5
+Dyagterev Igor 1 1 5
+Tamarova Inna 1 4 5
+Sheyh Sheyla 2 5 3
+</input>
+      <output size="12">2.8 3.3 3.8
+</output>
+      <correct size="13">2.8 3.3 3.8 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="11" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=6, ptime=28, rtime=30, maxvsz=307200, maxrss=6205440, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="248">11
+Petrov Evgeniy 5 2 3
+Gronskiy Dmitriy 3 2 1
+Obruch Evgeniya 3 4 5
+Astahova Kira 3 3 1
+Shimko Oleg 2 5 2
+Lisenkova Aleksandra 1 5 2
+Harlamov Nikolay 5 4 1
+Dedinskiy Ilya 1 2 2
+Ryabkina Anastasiya 4 3 1
+Vishnyakov Ivan 2 3 2
+Sirotin Vasiliy 1 2 5
+</input>
+      <output size="55">2.727272727272727 3.1818181818181817 2.272727272727273
+</output>
+      <correct size="25">2.72727 3.18182 2.27273 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="12" status="OK" time="28" real-time="104" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=28, stime=0, ptime=28, rtime=104, maxvsz=307200, maxrss=6303744, nvcsw=2, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="278">12
+Glushko Matvey 1 1 5
+Ivanov Dmitriy 1 5 4
+Morozov Aleksandr 4 3 1
+Bulhova Irina 2 5 1
+Marikot Anastasiya 2 4 2
+Baldina Eleonora 2 3 1
+Pankratova Lyudmila 2 2 5
+Kremenetskaya Mariya 5 3 5
+Chuvileva Evgeniya 5 5 2
+Mayatskiy Artem 3 4 4
+Madekin Sergey 4 5 5
+Pirogov Pavel 4 1 4
+</input>
+      <output size="43">2.9166666666666665 3.4166666666666665 3.25
+</output>
+      <correct size="22">2.91667 3.41667 3.25 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="13" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=17, stime=10, ptime=27, rtime=29, maxvsz=307200, maxrss=6287360, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="285">13
+Selezneva Natalya 2 2 5
+account Guest 5 1 5
+Geraskina Leylya 2 4 5
+Kuleshova Marina 1 5 3
+Grachev Ivan 5 3 2
+Bazhin Andrey 4 3 3
+Lobaznikov Dmitriy 3 1 5
+Dubrovin Sergey 3 2 1
+Safronov Dmitriy 3 5 1
+Kononihin Grigoriy 1 5 5
+Nefedov Pavel 2 5 1
+Afanasiev Petr 5 4 2
+Erin Anton 2 4 4
+</input>
+      <output size="55">2.923076923076923 3.3846153846153846 3.230769230769231
+</output>
+      <correct size="25">2.92308 3.38462 3.23077 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="14" status="OK" time="28" real-time="32" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=28, stime=0, ptime=28, rtime=32, maxvsz=307200, maxrss=6152192, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="322">14
+Vyazmin Maksim 3 2 4
+Pivnenko Igor 1 5 2
+Sokolova Elena 4 1 4
+Vorovyeva Vasilisa 5 2 2
+Kuznetsov Grigoriy 1 4 2
+Bazhin Andrey 4 3 3
+Golovkin Yuriy 1 1 5
+Madekin Sergey 4 5 5
+Harlamova Aleksandra 4 1 3
+Marina Svetlana 2 4 2
+Tokareva Darya 2 2 4
+Administration School 5 2 3
+Zakurenko Aleksandr 2 4 3
+Ataullin Ayrat 3 5 5
+</input>
+      <output size="56">2.9285714285714284 2.9285714285714284 3.357142857142857
+</output>
+      <correct size="25">2.92857 2.92857 3.35714 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="15" status="OK" time="28" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=6, ptime=28, rtime=31, maxvsz=307200, maxrss=6205440, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="350">15
+Morozov Aleksandr 4 3 1
+Shlyapugina Lyudmila 3 4 5
+Petropavlovskiy Dmitriy 2 3 5
+Zamyatina Viktoriya 2 4 4
+Aleynikov Pavel 5 1 5
+Tarasova Mariya 1 4 1
+Zibrov Ilya 2 4 2
+Nikolaev Maksim 4 3 1
+Lunev Aleksey 5 4 3
+Tsoy Svetlana 2 5 2
+Harlamova Aleksandra 4 1 3
+Korchina Anastasiya 3 4 3
+Elagina Elizaveta 4 1 4
+Kuleshov Sergey 5 2 1
+Yunin Oleg 4 5 3
+</input>
+      <output size="42">3.3333333333333335 3.2 2.8666666666666667
+</output>
+      <correct size="21">3.33333 3.2 2.86667 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="16" status="OK" time="28" real-time="35" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=28, stime=0, ptime=28, rtime=35, maxvsz=307200, maxrss=6262784, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="354">16
+Eremenko Aleksandra 1 4 1
+Fedyna Maksim 2 5 2
+Vahnichenko Aleksey 5 4 2
+Aleynikov Pavel 5 1 5
+Yapryntsev Aleksey 5 1 1
+Lazovskiy Ivan 4 1 2
+Voinov Pavel 3 2 5
+Erin Anton 2 4 4
+Avilov Evgeniy 2 1 4
+Mizitov Andrey 4 3 1
+Tarasenko Natalya 4 5 5
+Kolesnik Andrey 1 5 2
+Gusev Aleksey 3 5 3
+Kovalskiy Ivan 3 4 5
+Silaev Aleksandr 4 3 5
+Klimov Aleksandr 2 4 1
+</input>
+      <output size="15">3.125 3.25 3.0
+</output>
+      <correct size="14">3.125 3.25 3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="17" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6254592, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="367">17
+system Ejudge 2 1 1
+Baldina Eleonora 2 3 1
+Kolesnik Andrey 1 5 2
+Ligus Natalya 1 3 3
+Savostyanov Mihail 3 4 4
+Zaytsev Mihail 5 3 3
+Petrova Mariya 3 2 5
+Volodina Anna 2 1 3
+Shimko Oleg 2 5 2
+Savostin Evgeniy 2 3 2
+Zakurenko Aleksandr 2 4 3
+Titov Yuriy 2 5 5
+Bazhin Andrey 4 3 3
+Dedinskiy Ilya 1 2 2
+Samohina Anna 4 1 2
+Lebedev Viktor 2 3 1
+Martyanov Illarion 4 2 2
+</input>
+      <output size="56">2.4705882352941178 2.9411764705882355 2.588235294117647
+</output>
+      <correct size="25">2.47059 2.94118 2.58824 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="18" status="OK" time="27" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=19, stime=8, ptime=27, rtime=31, maxvsz=307200, maxrss=6381568, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="394">18
+Mizitov Andrey 4 3 1
+Afanasiev Petr 5 4 2
+Hutuashvili Tamara 5 3 4
+Marachev Aleksey 1 4 4
+Melichenko Ilya 1 1 4
+Osipova Vasilisa 5 4 2
+Klimov Nikita 2 3 1
+Baranova Kseniya 4 2 2
+Dedinskiy Ilya 1 2 2
+Gorinov Ivan 3 3 4
+Gayday Anton 3 2 5
+Tsyganok Yuriy 2 4 1
+Suhanov Aleksey 2 5 5
+Lazovskiy Ivan 4 1 2
+Alyabyeva Natalya 2 5 1
+Kudlo Mihail 5 1 5
+Starovoytova Darya 3 5 5
+Yuzhanin Kirill 1 2 3
+</input>
+      <output size="42">2.9444444444444446 3.0 2.9444444444444446
+</output>
+      <correct size="19">2.94444 3 2.94444 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="19" status="OK" time="28" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=6, ptime=28, rtime=31, maxvsz=307200, maxrss=6254592, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="424">19
+Shevchenko Vasiliy 4 1 5
+Nefedov Pavel 2 5 1
+Borisov Daniil 4 1 5
+Dobroserdov Konstantin 4 3 1
+Mosyaykin Vladimir 5 3 1
+Kruglihin Sergey 3 5 4
+Voinov Pavel 3 2 5
+Lukovich Aleksander 2 2 5
+Pavlov Nikita 3 4 5
+Saharov Denis 1 3 2
+Zhuravlev Aleksandr 4 2 5
+Kazanskaya Irina 5 3 1
+Zapletin Andrey 3 2 1
+Shimko Oleg 2 5 2
+Gayday Anton 3 2 5
+Utolin Dmitriy 2 4 2
+Petrov Evgeniy 5 2 3
+Pikalov Oleg 1 1 4
+Afanasiev Nikolay 3 1 3
+</input>
+      <output size="57">3.1052631578947367 2.6842105263157894 3.1578947368421053
+</output>
+      <correct size="25">3.10526 2.68421 3.15789 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="20" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=30, maxvsz=307200, maxrss=6361088, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="451">20
+Afanasiev Nikolay 3 1 3
+Husainova Nailya 2 1 1
+Dyagterev Igor 1 1 5
+Baranova Kseniya 4 2 2
+Oynas Taisiya 1 3 3
+Polonskiy Sergey 1 3 4
+Shibarova Elena 5 1 2
+Massov Nikolay 2 3 3
+Dudnik Elizaveta 1 4 1
+Tomashpolskiy Maksim 2 1 1
+Afanasiev Petr 5 4 2
+Harlamova Aleksandra 4 1 3
+Safronov Dmitriy 3 5 1
+Kalyuzhnaya Irina 2 1 4
+Vlasova Natalya 4 1 3
+Vorovyeva Vasilisa 5 2 2
+User Test 1 1 3
+Kazanskaya Irina 5 3 1
+Mironova Anna 3 3 4
+Kochulin Igor 3 2 1
+</input>
+      <output size="15">2.85 2.15 2.45
+</output>
+      <correct size="16">2.85 2.15 2.45 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="21" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=29, maxvsz=307200, maxrss=6393856, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="461">21
+Ryabichev Andrey 1 1 3
+Yakuchev Igor 4 1 4
+Kruglihin Sergey 3 5 4
+Larina Elena 4 2 1
+Afanasiev Petr 5 4 2
+Bubnov Nikolay 5 5 1
+Glushko Matvey 1 1 5
+Agapova Lyudmila 5 1 1
+Babat Anna 2 5 1
+Mayatskiy Artem 3 4 4
+Safronova Anna 5 5 2
+Shevchenko Vasiliy 4 1 5
+system Ejudge 2 1 1
+Krohina Darya 3 2 5
+Romanko Denis 5 3 5
+Nefedov Pavel 2 5 1
+Osadchiy Denis 5 5 2
+Smirnova Nadezhda 1 2 4
+Tsvelihovskiy Boris 5 4 4
+Harlamova Aleksandra 4 1 3
+Ryabtsev Grigoriy 2 5 2
+</input>
+      <output size="40">3.380952380952381 3.0 2.857142857142857
+</output>
+      <correct size="19">3.38095 3 2.85714 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="22" status="OK" time="28" real-time="35" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=28, stime=0, ptime=28, rtime=35, maxvsz=307200, maxrss=6356992, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="500">22
+Ilyina Irina 5 5 4
+Polonskiy Sergey 1 3 4
+Tsyganok Yuriy 2 4 1
+Chernyakov Mihail 3 1 4
+Sobakin Pavel 3 5 3
+Grachev Ivan 5 3 2
+Volobuev Aleksey 4 5 5
+Pokrovskiy Vladimir 5 2 1
+Turetskiy Andrey 2 3 1
+Danilenko Ekaterina 1 5 2
+Uschapovskiy Ivan 1 4 4
+Shishkin Aleksey 3 3 5
+Veyknis Violetta 3 4 5
+account Guest 5 1 5
+Blazhenova Anastasiya 5 2 5
+Danko Leonid 2 2 4
+Vlasova Natalya 4 1 3
+Lazovskiy Ivan 4 1 2
+Saharov Denis 1 3 2
+Lisenkova Aleksandra 1 5 2
+Yurzinova Tatyana 5 3 2
+Vakulenko Artem 4 4 5
+</input>
+      <output size="56">3.1363636363636362 3.1363636363636362 3.227272727272727
+</output>
+      <correct size="25">3.13636 3.13636 3.22727 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="23" status="OK" time="29" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=19, stime=10, ptime=29, rtime=31, maxvsz=307200, maxrss=6336512, nvcsw=1, nivcsw=9 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="514">23
+Levin Sergey 4 1 3
+Burmistrov Petr 5 4 4
+Seslavina Anna 1 5 3
+Golovkin Yuriy 1 1 5
+Vyazmin Maksim 3 2 4
+Tomashpolskiy Maksim 2 1 1
+Ivanov Dmitriy 1 5 4
+Okolotkov Aleksey 2 1 1
+Tamarova Inna 1 4 5
+Baranova Mariya 2 2 3
+Yuzhanin Kirill 1 2 3
+Novotortsev Leonid 5 1 1
+Afanasiev Petr 5 4 2
+Vishnyakov Ivan 2 3 2
+Parhomenko Elena 3 1 5
+Oynas Taisiya 1 3 3
+Saharov Denis 1 3 2
+Semenenko Mariya 1 4 3
+Mizitov Andrey 4 3 1
+Zorina Viktoriya 1 3 5
+Abyzova Tatyana 3 1 2
+Ryabkina Anastasiya 4 3 1
+Yapryntsev Aleksey 5 1 1
+</input>
+      <output size="56">2.5217391304347827 2.5217391304347827 2.782608695652174
+</output>
+      <correct size="25">2.52174 2.52174 2.78261 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="24" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=28, maxvsz=307200, maxrss=6336512, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="528">24
+Chernyakov Mihail 3 1 4
+Shabelskiy Yan 3 4 4
+Vaulina Tatyana 2 3 5
+Levin Sergey 4 1 3
+Skovitin Pavel 3 3 5
+Larina Elena 4 2 1
+Dudnik Elizaveta 1 4 1
+Zaostrovnyh Elizaveta 2 1 5
+Lazutov Evgeniy 5 3 5
+Dubrovin Sergey 3 2 1
+Chayko Maksim 1 3 4
+Kovalskiy Ivan 3 4 5
+Nikonova Elena 4 4 3
+Petrova Mariya 3 2 5
+Sashurin Aleksandr 1 2 1
+Bazhin Andrey 4 3 3
+Pahomova Veronika 4 5 5
+Pikalov Oleg 1 1 4
+Prokopiev Nikolay 1 5 5
+Bodrov Andrey 3 5 3
+Vasilenko Ilya 2 4 2
+Kaplin Vladimir 4 5 5
+Shibarova Elena 5 1 2
+Kalyuzhnaya Irina 2 1 4
+</input>
+      <output size="44">2.8333333333333335 2.875 3.5416666666666665
+</output>
+      <correct size="23">2.83333 2.875 3.54167 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="25" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=14, stime=13, ptime=27, rtime=28, maxvsz=307200, maxrss=6098944, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="570">25
+Saharov Denis 1 3 2
+Ryabkina Anastasiya 4 3 1
+Lazutov Evgeniy 5 3 5
+Zorina Viktoriya 1 3 5
+Loshkarev Vladimir 1 2 2
+Zapletin Andrey 3 2 1
+Vorovyeva Vasilisa 5 2 2
+Mantula Petr 5 3 2
+Dmitrieva Nadezhda 2 5 5
+Rinchinov Eduard 2 1 3
+Sashurin Aleksandr 1 2 1
+Safronov Dmitriy 3 5 1
+Safronova Anna 5 5 2
+Seythalilova Elvira 5 2 3
+Bataeva Elena 5 5 1
+Mayatskiy Artem 3 4 4
+Mashkarina Ulyana 2 3 3
+Erin Anton 2 4 4
+computer Library 4 3 4
+Elshin Denis 1 2 3
+Kononihin Grigoriy 1 5 5
+Volodin Sergey 1 4 2
+Voevodin Vadim 3 5 4
+Kalyuzhnaya Irina 2 1 4
+Zhuravlev Aleksandr 4 2 5
+</input>
+      <output size="15">2.84 3.16 2.96
+</output>
+      <correct size="16">2.84 3.16 2.96 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="26" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6287360, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="591">26
+Afanasiev Petr 5 4 2
+Hromyh Nadezhda 2 3 4
+Lobaznikov Dmitriy 3 1 5
+Avilov Evgeniy 2 1 4
+Okolotkov Aleksey 2 1 1
+Petropavlovskiy Dmitriy 2 3 5
+Chuvileva Evgeniya 5 5 2
+Marikot Anastasiya 2 4 2
+Pavlov Nikita 3 4 5
+Rozhin Nikita 3 5 2
+Kozlov Georgiy 5 1 2
+Husainova Nailya 2 1 1
+Lunev Aleksey 5 4 3
+Borisov Aleksandr 2 3 2
+Tamarova Inna 1 4 5
+Zhuravlev Aleksandr 4 2 5
+User Test 1 1 3
+Filatov Dmitriy 3 2 5
+Kirakosyan Vage 1 3 1
+Voevodin Vadim 3 5 4
+Egorova Viktoriya 1 1 2
+Abyzova Tatyana 3 1 2
+Zaostrovnyh Elizaveta 2 1 5
+Volkov Kirill 3 3 4
+Danilenko Ekaterina 1 5 2
+Bychkov Boris 5 2 5
+</input>
+      <output size="56">2.730769230769231 2.6923076923076925 3.1923076923076925
+</output>
+      <correct size="25">2.73077 2.69231 3.19231 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="27" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=28, maxvsz=307200, maxrss=6381568, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="611">27
+Osipova Vasilisa 5 4 2
+Petropavlovskiy Dmitriy 2 3 5
+Yapryntsev Aleksey 5 1 1
+Kruglihin Sergey 3 5 4
+Shabelskiy Yan 3 4 4
+Marachev Aleksey 1 4 4
+Kubrak Dmitriy 1 3 5
+Belova Galina 5 1 4
+Volzhin Denis 1 2 2
+Kalyuzhnaya Irina 2 1 4
+Panferova Tatyana 4 1 3
+Prokopiev Nikolay 1 5 5
+Geraskina Leylya 2 4 5
+Voevodin Vadim 3 5 4
+Sashurin Aleksandr 1 2 1
+Fedyna Maksim 2 5 2
+Yurzinova Tatyana 5 3 2
+Avilov Evgeniy 2 1 4
+Sheyh Sheyla 2 5 3
+Abbasova Narmina 2 5 1
+Hutuashvili Tamara 5 3 4
+Korchina Anastasiya 3 4 3
+Nosenko Valentin 5 2 5
+Klimov Aleksandr 2 4 1
+Nilova Olga 4 3 4
+Anikin Pavel 5 1 5
+Shamin Nikita 3 5 3
+</input>
+      <output size="55">2.925925925925926 3.185185185185185 3.3333333333333335
+</output>
+      <correct size="25">2.92593 3.18519 3.33333 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="28" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=28, maxvsz=307200, maxrss=6283264, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="620">28
+Shabelskiy Yan 3 4 4
+Gronskiy Dmitriy 3 2 1
+Uspenskiy Andrey 2 4 4
+Uschapovskiy Ivan 1 4 4
+Grachev Ivan 5 3 2
+Kuznetsov Nikita 3 1 1
+Kudlo Mihail 5 1 5
+Shlyapugina Lyudmila 3 4 5
+Pechkovskiy Oleg 3 5 1
+Safronov Dmitriy 3 5 1
+Solomatin Pavel 5 3 3
+Sytilin Igor 5 5 1
+Massov Nikolay 2 3 3
+Shibarova Elena 5 1 2
+Ataullin Ayrat 3 5 5
+Gayday Anton 3 2 5
+Popova Nataya 2 5 4
+Smolnikova Irina 2 5 4
+Chayko Maksim 1 3 4
+Nikonova Elena 4 4 3
+Zaostrovnyh Arseniy 1 3 3
+Turetskiy Andrey 2 3 1
+Yakuchev Igor 4 1 4
+Kremenetskaya Mariya 5 3 5
+Dubrovin Sergey 3 2 1
+Veyknis Violetta 3 4 5
+Hinko Evgeniy 4 1 2
+Ryabichev Andrey 1 1 3
+</input>
+      <output size="56">3.0714285714285716 3.107142857142857 3.0714285714285716
+</output>
+      <correct size="25">3.07143 3.10714 3.07143 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="29" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=8, ptime=26, rtime=28, maxvsz=307200, maxrss=6365184, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="670">29
+Lazovskiy Ivan 4 1 2
+Sirotin Vasiliy 1 2 5
+Volzhin Denis 1 2 2
+Tomashpolskiy Maksim 2 1 1
+system Ejudge 2 1 1
+Ryabkina Anastasiya 4 3 1
+Buzukashvili Sofya 2 5 4
+Nosenko Valentin 5 2 5
+Klimov Andrey 5 1 1
+Yapryntsev Aleksey 5 1 1
+Kazakova Galina 4 3 5
+Folomeev Andrey 2 5 1
+Dobroserdov Konstantin 4 3 1
+Egorova Viktoriya 1 1 2
+Abbasova Narmina 2 5 1
+Zhdanova Valeriya 2 3 1
+Marikot Anastasiya 2 4 2
+Smirnova Nadezhda 1 2 4
+Nefedov Pavel 2 5 1
+Chepala Mariya 5 4 1
+Vorovyeva Vasilisa 5 2 2
+Contest Programming 4 4 2
+Nevolin Oleg 5 4 1
+Agapova Lyudmila 5 1 1
+Sashurin Aleksandr 1 2 1
+Trifonov Roman 4 1 4
+Danko Leonid 2 2 4
+Savostin Evgeniy 2 3 2
+Domnina Svetlana 1 1 4
+</input>
+      <output size="57">2.9310344827586206 2.5517241379310347 2.1724137931034484
+</output>
+      <correct size="25">2.93103 2.55172 2.17241 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="30" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=28, maxvsz=307200, maxrss=6148096, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="649">30
+Vyazmin Maksim 3 2 4
+Osipova Vasilisa 5 4 2
+Kirakosyan Vage 1 3 1
+Aleynikov Pavel 5 1 5
+Belyh Andrey 3 3 2
+Baldina Eleonora 2 3 1
+Danekin Nikita 4 5 5
+Sveshnikddov Mihail 5 1 5
+Hutuashvili Tamara 5 3 4
+Turetskiy Andrey 2 3 1
+Afonina Nina 2 1 5
+Afanasiev Petr 5 4 2
+Volodina Anna 2 1 3
+Kuleshova Marina 1 5 3
+Tamarova Inna 1 4 5
+Anikin Pavel 5 1 5
+Babat Anna 2 5 1
+Folomeev Andrey 2 5 1
+Yakuchev Igor 4 1 4
+Plotnikova Olga 2 5 1
+Chernov Vasiliy 1 3 2
+Grachev Ivan 5 3 2
+Belova Galina 5 1 4
+Glikman Leonid 4 2 4
+Paredes Andrey 1 4 1
+Iznaurova Elizaveta 5 1 5
+Bychkov Boris 5 2 5
+Glushkov Sergey 3 5 5
+Skyabin Sergey 2 1 4
+Sydykova Shahrazada 4 2 5
+</input>
+      <output size="27">3.2 2.8 3.2333333333333334
+</output>
+      <correct size="17">3.2 2.8 3.23333 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="31" status="OK" time="27" real-time="34" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=34, maxvsz=307200, maxrss=6090752, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="691">31
+Silaev Aleksandr 4 3 5
+Melichenko Ilya 1 1 4
+Zorina Viktoriya 1 3 5
+Harlamova Aleksandra 4 1 3
+Dobroserdov Konstantin 4 3 1
+Avilov Evgeniy 2 1 4
+Shamin Nikita 3 5 3
+Pahomova Veronika 4 5 5
+Skyabin Sergey 2 1 4
+Krohina Darya 3 2 5
+Vishnyakov Ivan 2 3 2
+Danilin Konstantin 5 4 5
+Zakurenko Aleksandr 2 4 3
+Kuleshov Sergey 5 2 1
+Godzhaev Georgiy 4 5 2
+Geraskina Leylya 2 4 5
+Eryushova Karina 4 4 4
+Kazurova Kristina 2 2 5
+Shimko Oleg 2 5 2
+Ligus Natalya 1 3 3
+Ivanov Dmitriy 1 5 4
+Charikov Aleksandr 2 1 5
+Erin Anton 2 4 4
+Kalyuzhnaya Irina 2 1 4
+Ryabichev Andrey 1 1 3
+Bodrov Andrey 3 5 3
+Zimin Roman 3 3 5
+Larina Elena 4 2 1
+Gayday Anton 3 2 5
+Kuznetsov Grigoriy 1 4 2
+Trifonov Anton 4 4 2
+</input>
+      <output size="42">2.6774193548387095 3.0 3.5161290322580645
+</output>
+      <correct size="19">2.67742 3 3.51613 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="32" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=23, stime=3, ptime=26, rtime=28, maxvsz=307200, maxrss=6090752, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="728">32
+Pavlova Irina 4 2 4
+Volobuev Aleksey 4 5 5
+Voevodin Vadim 3 5 4
+Smirnova Viktoriya 1 4 2
+Zaostrovnyh Elizaveta 2 1 5
+Zaostrovnyh Arseniy 1 3 3
+Trifonov Roman 4 1 4
+Glushkov Sergey 3 5 5
+Bazhin Andrey 4 3 3
+Dubrovin Sergey 3 2 1
+Godzhaev Georgiy 4 5 2
+Shuleshkina Mariya 1 5 4
+Suhanov Aleksey 2 5 5
+Bulhova Irina 2 5 1
+Starovoytova Darya 3 5 5
+Pirogov Pavel 4 1 4
+Melnik Denis 2 4 5
+Sydykova Perizat 4 4 4
+Danilin Konstantin 5 4 5
+Lisenkova Aleksandra 1 5 2
+Yudahina Elizaveta 5 2 5
+Shibarova Elena 5 1 2
+Danilenko Ekaterina 1 5 2
+Razumov Aleksandr 3 1 4
+Khait Oleg 4 5 1
+Kuvshinov Mihail 3 5 3
+Rozhin Nikita 3 5 2
+Harlamova Aleksandra 4 1 3
+Bobko Ilya 2 5 5
+Shevchenko Vasiliy 4 1 5
+Sheyh Sheyla 2 5 3
+Oganesyan Vardan 3 2 3
+</input>
+      <output size="16">3.0 3.5 3.46875
+</output>
+      <correct size="15">3 3.5 3.46875 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="33" status="OK" time="26" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=16, stime=10, ptime=26, rtime=29, maxvsz=307200, maxrss=6258688, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="726">33
+Sobakin Pavel 3 5 3
+Selezneva Natalya 2 2 5
+Tarasova Mariya 1 4 1
+Mironova Anna 3 3 4
+Olisova Irina 5 2 5
+Petropavlovskiy Dmitriy 2 3 5
+Bodrov Andrey 3 5 3
+Popova Nataya 2 5 4
+Harlamova Aleksandra 4 1 3
+Pirogov Pavel 4 1 4
+Parhomenko Elena 3 1 5
+Yunin Oleg 4 5 3
+Kirakosyan Vage 1 3 1
+Lobaznikov Dmitriy 3 1 5
+Safronova Anna 5 5 2
+Levin Sergey 4 1 3
+Kazakova Galina 4 3 5
+Samohina Anna 4 1 2
+Lunev Aleksey 5 4 3
+Vityukov Maksim 1 4 5
+Skovitin Pavel 3 3 5
+Mizitov Andrey 4 3 1
+Osadchiy Denis 5 5 2
+Seslavina Anna 1 5 3
+Dudnik Elizaveta 1 4 1
+Vorovyeva Vasilisa 5 2 2
+Kuleshov Sergey 5 2 1
+Okolotkov Aleksey 2 1 1
+Godzhaev Georgiy 4 5 2
+Zibrov Ilya 2 4 2
+Vostrikova Nataliya 2 4 5
+Bubnov Nikolay 5 5 1
+Pechkovskiy Oleg 3 5 1
+</input>
+      <output size="56">3.1818181818181817 3.242424242424242 2.9696969696969697
+</output>
+      <correct size="24">3.18182 3.24242 2.9697 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="34" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=14, stime=13, ptime=27, rtime=29, maxvsz=307200, maxrss=6246400, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=5, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="742">34
+Shlyapugina Lyudmila 3 4 5
+Potapenko Evgeniya 3 1 1
+Mironova Anna 3 3 4
+Dmitrieva Nadezhda 2 5 5
+Matsievskiy Sergey 2 3 1
+Borisov Daniil 4 1 5
+Semerikov Ilya 2 4 3
+Volodin Sergey 1 4 2
+Baranova Kseniya 4 2 2
+computer Library 4 3 4
+Kuzmin Arsentiy 4 4 2
+Gayday Anton 3 2 5
+Petrova Mariya 3 2 5
+Olisova Irina 5 2 5
+Polonskiy Sergey 1 3 4
+Sevinyan Grant 2 4 2
+Nefedov Pavel 2 5 1
+Vasyutin Aleksandr 2 4 5
+Uspenskiy Andrey 2 4 4
+Medvedev Aleksey 1 2 2
+Tsyganok Yuriy 2 4 1
+Belova Galina 5 1 4
+Rinchinov Eduard 2 1 3
+Tsoy Svetlana 2 5 2
+Levin Sergey 4 1 3
+Larkin Aleksey 4 5 3
+Mizitov Andrey 4 3 1
+Lunyaev Aleksandr 4 2 1
+Kozlov Georgiy 5 1 2
+Bazhin Andrey 4 3 3
+Chepala Mariya 5 4 1
+Petrov Evgeniy 5 2 3
+Mironov Artem 3 1 3
+Panov Mihail 1 4 3
+</input>
+      <output size="56">3.0294117647058822 2.911764705882353 2.9411764705882355
+</output>
+      <correct size="25">3.02941 2.91176 2.94118 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="35" status="OK" time="26" real-time="27" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=27, maxvsz=307200, maxrss=6250496, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="791">35
+Danilov Aleksandr 4 4 2
+Kostyuchenok Ivan 2 2 1
+Vasilenko Ilya 2 4 2
+Lunev Aleksey 5 4 3
+Veyknis Violetta 3 4 5
+Bataeva Elena 5 5 1
+Zimin Roman 3 3 5
+Nikolaev Maksim 4 3 1
+Madekin Sergey 4 5 5
+Eremenko Aleksandra 1 4 1
+Mizitov Andrey 4 3 1
+Shlyapugina Lyudmila 3 4 5
+Prokopiev Nikolay 1 5 5
+Kudlo Mihail 5 1 5
+Zaostrovnyh Elizaveta 2 1 5
+Stogov Yuriy 4 4 3
+Yakuchev Igor 4 1 4
+Savostin Evgeniy 2 3 2
+Trunin Arseniy 4 4 2
+Blazhenova Anastasiya 5 2 5
+Polonskiy Sergey 1 3 4
+Gorbik Dmitriy 5 5 4
+Volkov Kirill 3 3 4
+Vityukov Maksim 1 4 5
+Krohina Darya 3 2 5
+Seslavina Anna 1 5 3
+Chernov Vasiliy 1 3 2
+Uspenskiy Andrey 2 4 4
+Medvedev Aleksey 1 2 2
+Shamin Nikita 3 5 3
+Vasyutin Aleksandr 2 4 5
+Danekin Nikita 4 5 5
+Administration School 5 2 3
+Kuvshinov Mihail 3 5 3
+Beklemishev Vladimir 1 4 3
+</input>
+      <output size="56">2.942857142857143 3.4857142857142858 3.3714285714285714
+</output>
+      <correct size="25">2.94286 3.48571 3.37143 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="36" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=20, stime=7, ptime=27, rtime=29, maxvsz=307200, maxrss=6352896, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="788">36
+Shabelskiy Yan 3 4 4
+Martyanov Illarion 4 2 2
+Ilyina Irina 5 5 4
+Kirakosyan Vage 1 3 1
+Volodin Sergey 1 4 2
+Petropavlovskiy Dmitriy 2 3 5
+Contest Programming 4 4 2
+Tulegenov Yuriy 3 5 4
+Borisov Aleksandr 2 3 2
+Vyazmin Maksim 3 2 4
+Klimov Andrey 5 1 1
+Parhomenko Elena 3 1 5
+Voinov Pavel 3 2 5
+Melichenko Ilya 1 1 4
+Kazanskaya Irina 5 3 1
+Bataeva Elena 5 5 1
+Pavlikov Maksim 2 5 2
+Varfolomeev Ivan 4 1 2
+Ryabichev Andrey 1 1 3
+Kolesnik Andrey 1 5 2
+Vishnyakov Ivan 2 3 2
+Astahova Kira 3 3 1
+Bobko Ilya 2 5 5
+Sobakin Pavel 3 5 3
+Klimov Nikita 2 3 1
+Fedyna Maksim 2 5 2
+Lunyaev Aleksandr 4 2 1
+Mosyaykin Vladimir 5 3 1
+Chernov Vasiliy 1 3 2
+Nefedov Pavel 2 5 1
+Danko Leonid 2 2 4
+Gorbik Dmitriy 5 5 4
+Abbasova Narmina 2 5 1
+Ivanov Dmitriy 1 5 4
+Okolotkov Aleksey 2 1 1
+Levin Sergey 4 1 3
+</input>
+      <output size="57">2.7777777777777777 3.2222222222222223 2.5555555555555554
+</output>
+      <correct size="25">2.77778 3.22222 2.55556 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="37" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=28, maxvsz=307200, maxrss=6311936, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="825">37
+Shlyapugina Lyudmila 3 4 5
+Ivanov Dmitriy 1 5 4
+Zimin Roman 3 3 5
+Burmistrov Petr 5 4 4
+Kozlov Georgiy 5 1 2
+Dyagterev Igor 1 1 5
+Yunin Oleg 4 5 3
+Tulegenov Yuriy 3 5 4
+Yurzinova Tatyana 5 3 2
+Rinchinov Eduard 2 1 3
+Zaytsev Mihail 5 3 3
+Pokrovskiy Vladimir 5 2 1
+Petrov Evgeniy 5 2 3
+Madekin Sergey 4 5 5
+Yakovlev Ivan 5 1 2
+Sevinyan Grant 2 4 2
+Trifonov Roman 4 1 4
+Vlasova Natalya 4 1 3
+Smirnova Nadezhda 1 2 4
+Smolnikova Irina 2 5 4
+Marina Svetlana 2 4 2
+Kremenetskaya Mariya 5 3 5
+Aleynikov Pavel 5 1 5
+Trifonov Anton 4 4 2
+Tarasenko Natalya 4 5 5
+Zorina Viktoriya 1 3 5
+Zakurenko Aleksandr 2 4 3
+Klimov Nikita 2 3 1
+account Guest 5 1 5
+Safronov Dmitriy 3 5 1
+Afanasiev Nikolay 3 1 3
+Belyh Andrey 3 3 2
+Iznaurova Elizaveta 5 1 5
+Hutuashvili Tamara 5 3 4
+Pahomova Veronika 4 5 5
+Kudlo Mihail 5 1 5
+Zaharov Sergey 3 3 2
+</input>
+      <output size="56">3.5135135135135136 2.918918918918919 3.4594594594594597
+</output>
+      <correct size="25">3.51351 2.91892 3.45946 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="38" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=8, ptime=26, rtime=28, maxvsz=307200, maxrss=6205440, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="834">38
+Morozov Aleksandr 4 3 1
+Vostrikova Nataliya 2 4 5
+account Guest 5 1 5
+User Test 1 1 3
+Godzhaev Georgiy 4 5 2
+Obruch Evgeniya 3 4 5
+Kuznetsova Antonina 1 1 5
+Yudahina Elizaveta 5 2 5
+Marina Svetlana 2 4 2
+Nikolaev Maksim 4 3 1
+Yakushenkov Pavel 2 5 4
+Kochulin Igor 3 2 1
+Lunev Aleksey 5 4 3
+Bataeva Elena 5 5 1
+Yakovlev Ivan 5 1 2
+Prokopiev Nikolay 1 5 5
+Belyh Kristina 5 2 4
+Bazhin Andrey 4 3 3
+Zorina Viktoriya 1 3 5
+Dobroserdov Konstantin 4 3 1
+Bobko Ilya 2 5 5
+Nilova Olga 4 3 4
+Astahova Kira 3 3 1
+Pavlikov Maksim 2 5 2
+Sokolova Elena 4 1 4
+Filatov Dmitriy 3 2 5
+Mironova Anna 3 3 4
+Pankratova Lyudmila 2 2 5
+Mantula Petr 5 3 2
+system Ejudge 2 1 1
+Lunyaev Aleksandr 4 2 1
+Shashkov Vladimir 2 4 4
+Dubrovin Sergey 3 2 1
+Kovalskiy Ivan 3 4 5
+Yurzinova Tatyana 5 3 2
+Kozlov Georgiy 5 1 2
+Klimov Nikita 2 3 1
+computer Library 4 3 4
+</input>
+      <output size="56">3.263157894736842 2.9210526315789473 3.0526315789473686
+</output>
+      <correct size="25">3.26316 2.92105 3.05263 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="39" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=28, maxvsz=307200, maxrss=6291456, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="885">39
+Hutuashvili Tamara 5 3 4
+Vasilenko Ilya 2 4 2
+Narimanova Kamilya 5 4 3
+Samohina Anna 4 1 2
+Shevchenko Vasiliy 4 1 5
+Gorbik Dmitriy 5 5 4
+Golovkin Yuriy 1 1 5
+Burmistrov Petr 5 4 4
+Titova Sofya 5 2 4
+Sotskov Denis 3 5 3
+Chernov Vasiliy 1 3 2
+Nikolaev Maksim 4 3 1
+Marikot Anastasiya 2 4 2
+Varfolomeev Ivan 4 1 2
+Morozov Aleksandr 4 3 1
+Melichenko Ilya 1 1 4
+Parhomenko Elena 3 1 5
+Smolnikova Irina 2 5 4
+Pivnenko Igor 1 5 2
+Yunin Oleg 4 5 3
+Elagina Elizaveta 4 1 4
+Podyapolskaya Marina 2 2 5
+Lunyaev Aleksandr 4 2 1
+Sashurin Aleksandr 1 2 1
+Panferova Tatyana 4 1 3
+Domnina Svetlana 1 1 4
+Starovoytova Darya 3 5 5
+Lazovskiy Ivan 4 1 2
+Vostrikova Nataliya 2 4 5
+Turetskiy Andrey 2 3 1
+Lisenkova Aleksandra 1 5 2
+Skovitin Pavel 3 3 5
+Pavlov Nikita 3 4 5
+Ryabtsev Grigoriy 2 5 2
+Avilov Evgeniy 2 1 4
+Glushkov Sergey 3 5 5
+Vaulina Tatyana 2 3 5
+Nalench Yuliya 3 2 2
+Tulegenov Yuriy 3 5 4
+</input>
+      <output size="56">2.923076923076923 2.9743589743589745 3.2564102564102564
+</output>
+      <correct size="25">2.92308 2.97436 3.25641 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="40" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=8, ptime=26, rtime=28, maxvsz=307200, maxrss=6291456, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=3 }</checker-stats-str>
+      <input size="895">40
+Safronova Anna 5 5 2
+Bodrov Andrey 3 5 3
+Vorovyeva Vasilisa 5 2 2
+Parhomenko Elena 3 1 5
+Belyh Andrey 3 3 2
+Hromyh Nadezhda 2 3 4
+Administration School 5 2 3
+Sizareva Irina 1 4 2
+Kazanskaya Irina 5 3 1
+Harlamova Aleksandra 4 1 3
+Kochulin Igor 3 2 1
+Paredes Andrey 1 4 1
+Zaostrovnyh Elizaveta 2 1 5
+Golovkin Yuriy 1 1 5
+Tsoy Svetlana 2 5 2
+Bagrova Anastasiya 4 5 2
+Kubrak Dmitriy 1 3 5
+Bulhova Irina 2 5 1
+Nikonova Elena 4 4 3
+Khait Oleg 4 5 1
+Varfolomeev Ivan 4 1 2
+Chuvileva Evgeniya 5 5 2
+Danekin Nikita 4 5 5
+Belova Galina 5 1 4
+Skovitin Pavel 3 3 5
+Bubnov Nikolay 5 5 1
+Martyanov Illarion 4 2 2
+Erin Anton 2 4 4
+Pechkovskiy Oleg 3 5 1
+Gorinov Ivan 3 3 4
+Anikin Pavel 5 1 5
+Okolotkov Aleksey 2 1 1
+Narimanova Kamilya 5 4 3
+Tsyganok Yuriy 2 4 1
+Kostyuchenok Ivan 2 2 1
+Vostrikova Nataliya 2 4 5
+Loshkarev Vladimir 1 2 2
+Abyzova Tatyana 3 1 2
+Korol Aleksandra 4 1 5
+Tashkeev Aleksandr 3 1 1
+</input>
+      <output size="18">3.175 2.975 2.725
+</output>
+      <correct size="19">3.175 2.975 2.725 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="41" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=19, stime=7, ptime=26, rtime=28, maxvsz=307200, maxrss=6295552, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="912">41
+Sergeev Ilya 3 5 1
+Sheyh Sheyla 2 5 3
+Shevchenko Vasiliy 4 1 5
+Pokrovskiy Vladimir 5 2 1
+Kuleshov Sergey 5 2 1
+Larina Elena 4 2 1
+Turetskiy Andrey 2 3 1
+Zaharov Sergey 3 3 2
+Belyh Kristina 5 2 4
+Tarasenko Natalya 4 5 5
+Yurzinova Tatyana 5 3 2
+Tarasova Mariya 1 4 1
+Nosenko Valentin 5 2 5
+Dudnik Elizaveta 1 4 1
+Eryushova Karina 4 4 4
+system Ejudge 2 1 1
+Martyanov Illarion 4 2 2
+Savostyanov Mihail 3 4 4
+Kalyuzhnaya Irina 2 1 4
+Shibarova Elena 5 1 2
+Seliverstova Anastasiya 2 3 1
+Glushkov Sergey 3 5 5
+Olisova Irina 5 2 5
+Yunin Oleg 4 5 3
+Danko Leonid 2 2 4
+Tokareva Darya 2 2 4
+Dedinskiy Ilya 1 2 2
+Bychkov Boris 5 2 5
+Aleynikov Pavel 5 1 5
+Polonskiy Sergey 1 3 4
+Tsvelihovskiy Boris 5 4 4
+Bazhin Andrey 4 3 3
+Mashkarina Ulyana 2 3 3
+Gayday Anton 3 2 5
+Zimin Roman 3 3 5
+Danilov Aleksandr 4 4 2
+Lunyaev Aleksandr 4 2 1
+Sevinyan Grant 2 4 2
+Pechkovskiy Oleg 3 5 1
+Varfolomeev Ivan 4 1 2
+Tulegenov Yuriy 3 5 4
+</input>
+      <output size="54">3.317073170731707 2.902439024390244 2.926829268292683
+</output>
+      <correct size="25">3.31707 2.90244 2.92683 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="42" status="OK" time="26" real-time="32" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=4, ptime=26, rtime=32, maxvsz=307200, maxrss=6295552, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="958">42
+Zaostrovnyh Elizaveta 2 1 5
+Chernov Vasiliy 1 3 2
+Vorovyeva Vasilisa 5 2 2
+computers Turgor 1 5 3
+Nalench Yuliya 3 2 2
+Keller Artem 1 1 2
+Turetskiy Andrey 2 3 1
+Trifonov Roman 4 1 4
+Volobuev Aleksey 4 5 5
+Smirnova Viktoriya 1 4 2
+Yudahina Elizaveta 5 2 5
+Selezneva Natalya 2 2 5
+Dubrovin Sergey 3 2 1
+Mashkarina Ulyana 2 3 3
+Avilov Evgeniy 2 1 4
+Zhuravlev Aleksandr 4 2 5
+Kuznetsova Antonina 1 1 5
+Afonina Nina 2 1 5
+Sergeev Ilya 3 5 1
+Polonskiy Sergey 1 3 4
+Shabelskiy Yan 3 4 4
+Charikov Aleksandr 2 1 5
+Lazovskiy Ivan 4 1 2
+Danilin Konstantin 5 4 5
+Ryabkina Anastasiya 4 3 1
+Tarasova Mariya 1 4 1
+Volodina Anna 2 1 3
+Lobaznikov Dmitriy 3 1 5
+Zaytsev Mihail 5 3 3
+Glikman Leonid 4 2 4
+Kochulin Igor 3 2 1
+Markov Valeriy 4 5 2
+Stolyarov Andrey 5 5 1
+Sokolova Elena 4 1 4
+Uschapovskiy Ivan 1 4 4
+Zamyatina Viktoriya 2 4 4
+Folomeev Andrey 2 5 1
+Kazurova Kristina 2 2 5
+Danilov Aleksandr 4 4 2
+Panov Mihail 1 4 3
+Mayatskiy Artem 3 4 4
+Marachev Aleksey 1 4 4
+</input>
+      <output size="57">2.7142857142857144 2.7857142857142856 3.1904761904761907
+</output>
+      <correct size="25">2.71429 2.78571 3.19048 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="43" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=8, ptime=26, rtime=28, maxvsz=307200, maxrss=6160384, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="970">43
+Dedinskiy Ilya 1 2 2
+Tokareva Darya 2 2 4
+Stogov Yuriy 4 4 3
+Sveshnikddov Mihail 5 1 5
+Ivanov Dmitriy 1 5 4
+Petrov Evgeniy 5 2 3
+Stolyarov Andrey 5 5 1
+Geraskina Leylya 2 4 5
+Petrova Mariya 3 2 5
+Ryabkina Anastasiya 4 3 1
+Chernyakov Mihail 3 1 4
+Svirida Anton 3 4 3
+Melichenko Ilya 1 1 4
+Prokopiev Nikolay 1 5 5
+Voevodin Vadim 3 5 4
+Lunyaev Aleksandr 4 2 1
+Pikalov Oleg 1 1 4
+Lazutov Evgeniy 5 3 5
+Marikot Anastasiya 2 4 2
+Kuzmin Arsentiy 4 4 2
+Sobakin Pavel 3 5 3
+Shuleshkina Mariya 1 5 4
+Lebedev Viktor 2 3 1
+Volzhin Ilya 1 2 5
+Osadchiy Denis 5 5 2
+Androsov Vladimir 3 2 4
+Yapryntsev Aleksey 5 1 1
+Massov Nikolay 2 3 3
+Seliverstova Anastasiya 2 3 1
+Larina Elena 4 2 1
+Gronskiy Dmitriy 3 2 1
+computers Turgor 1 5 3
+Starovoytova Darya 3 5 5
+Marina Svetlana 2 4 2
+Zaostrovnyh Arseniy 1 3 3
+Bubnov Nikolay 5 5 1
+Solomatin Pavel 5 3 3
+Domnina Svetlana 1 1 4
+Kozlov Georgiy 5 1 2
+Gorohova Anna 3 5 5
+Kamelin Stanislav 2 2 4
+Shibarova Elena 5 1 2
+Smirnova Viktoriya 1 4 2
+</input>
+      <output size="41">2.883720930232558 3.0697674418604652 3.0
+</output>
+      <correct size="19">2.88372 3.06977 3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="44" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=29, maxvsz=307200, maxrss=6344704, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="980">44
+Suhorukov Ilya 5 1 1
+Sheyh Sheyla 2 5 3
+Ryabkina Anastasiya 4 3 1
+Yunin Oleg 4 5 3
+Turetskiy Andrey 2 3 1
+Bubnov Nikolay 5 5 1
+Tomashpolskiy Maksim 2 1 1
+Voevodin Vadim 3 5 4
+Blazhenova Anastasiya 5 2 5
+Folomeev Andrey 2 5 1
+Vasyutin Aleksandr 2 4 5
+Dyagterev Igor 1 1 5
+Glikman Leonid 4 2 4
+Shimko Oleg 2 5 2
+Zaharov Sergey 3 3 2
+Burmistrov Petr 5 4 4
+Androsov Vladimir 3 2 4
+Vityukov Maksim 1 4 5
+Ivkin Evgeniy 2 5 3
+Samohina Anna 4 1 2
+Filatov Dmitriy 3 2 5
+Danilenko Ekaterina 1 5 2
+Pirogov Pavel 4 1 4
+Bulhova Irina 2 5 1
+Vostrikova Nataliya 2 4 5
+Novotortsev Leonid 5 1 1
+Elshin Denis 1 2 3
+Lunyaev Aleksandr 4 2 1
+Administration School 5 2 3
+Moroz Yaroslav 3 4 3
+Vasilenko Ilya 2 4 2
+Belova Galina 5 1 4
+Pechurova Anna 3 4 5
+Petrova Mariya 3 2 5
+Lazovskiy Ivan 4 1 2
+Chuvileva Evgeniya 5 5 2
+Sosnina Anna 5 1 3
+Konovalov Sergey 4 1 2
+Zaostrovnyh Arseniy 1 3 3
+Shishkin Aleksey 3 3 5
+Sytilin Igor 5 5 1
+Abbasova Narmina 2 5 1
+Gronskiy Dmitriy 3 2 1
+Shibarova Elena 5 1 2
+</input>
+      <output size="42">3.2045454545454546 3.0 2.7954545454545454
+</output>
+      <correct size="19">3.20455 3 2.79545 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="45" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=9, ptime=27, rtime=29, maxvsz=307200, maxrss=6086656, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="988">45
+Sobakin Pavel 3 5 3
+Mironova Anna 3 3 4
+Volodin Sergey 1 4 2
+Madekin Sergey 4 5 5
+Pavlov Nikita 3 4 5
+Hutuashvili Tamara 5 3 4
+Sytilin Igor 5 5 1
+Vakulenko Artem 4 4 5
+Gorohova Anna 3 5 5
+Larkin Aleksey 4 5 3
+Nilova Olga 4 3 4
+Vahnichenko Aleksey 5 4 2
+Bobko Ilya 2 5 5
+Shevchenko Vasiliy 4 1 5
+Abbasova Narmina 2 5 1
+Melichenko Ilya 1 1 4
+Rozhin Nikita 3 5 2
+Skyabin Sergey 2 1 4
+Androsov Vladimir 3 2 4
+Sydykova Perizat 4 4 4
+Filatov Dmitriy 3 2 5
+Nefedov Pavel 2 5 1
+computer Library 4 3 4
+Avilov Evgeniy 2 1 4
+Seslavina Anna 1 5 3
+Safronova Anna 5 5 2
+Dubrovin Sergey 3 2 1
+Yuzhanin Kirill 1 2 3
+Kaplin Vladimir 4 5 5
+Marina Svetlana 2 4 2
+Uschapovskiy Ivan 1 4 4
+Ligus Natalya 1 3 3
+Varfolomeev Ivan 4 1 2
+Belyh Kristina 5 2 4
+Lukovich Aleksander 2 2 5
+Veyknis Violetta 3 4 5
+Kudlo Mihail 5 1 5
+Shamin Nikita 3 5 3
+Eremenko Aleksandra 1 4 1
+Sizareva Irina 1 4 2
+Hripunova Veronika 2 5 1
+Volzhin Denis 1 2 2
+Tarasenko Natalya 4 5 5
+Chernyakov Mihail 3 1 4
+Yudahina Elizaveta 5 2 5
+</input>
+      <output size="27">2.9555555555555557 3.4 3.4
+</output>
+      <correct size="17">2.95556 3.4 3.4 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="46" status="OK" time="26" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=2, ptime=26, rtime=30, maxvsz=307200, maxrss=6303744, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1032">46
+Voevodin Vadim 3 5 4
+Pirogov Pavel 4 1 4
+Astahova Kira 3 3 1
+Loshkarev Vladimir 1 2 2
+Volodina Anna 2 1 3
+Shimko Oleg 2 5 2
+Levin Sergey 4 1 3
+Chernyakov Mihail 3 1 4
+Vityukov Maksim 1 4 5
+Tashkeev Aleksandr 3 1 1
+Eryushova Karina 4 4 4
+Gorbik Dmitriy 5 5 4
+Safronov Dmitriy 3 5 1
+Kabykin Aleksey 4 1 2
+Husainova Nailya 2 1 1
+Zaostrovnyh Arseniy 1 3 3
+Osipova Vasilisa 5 4 2
+Vahnichenko Aleksey 5 4 2
+Lisenkova Aleksandra 1 5 2
+Kirakosyan Vage 1 3 1
+Polonskiy Sergey 1 3 4
+Massov Nikolay 2 3 3
+Sytilin Igor 5 5 1
+Anikin Pavel 5 1 5
+Kuleshova Marina 1 5 3
+Lazovskiy Ivan 4 1 2
+Starovoytova Darya 3 5 5
+Vishnyakov Ivan 2 3 2
+Gorohova Anna 3 5 5
+Volzhin Denis 1 2 2
+Morozov Aleksandr 4 3 1
+Kononihin Grigoriy 1 5 5
+Sheyh Sheyla 2 5 3
+Sashurin Aleksandr 1 2 1
+Tomashpolskiy Maksim 2 1 1
+Babat Anna 2 5 1
+Beklemishev Vladimir 1 4 3
+Elagina Elizaveta 4 1 4
+Korol Aleksandra 4 1 5
+Olisova Irina 5 2 5
+Smirnova Nadezhda 1 2 4
+Sokolova Elena 4 1 4
+Suhorukov Ilya 5 1 1
+Panov Mihail 1 4 3
+Marachev Aleksey 1 4 4
+Shlyapugina Lyudmila 3 4 5
+</input>
+      <output size="55">2.717391304347826 2.9782608695652173 2.891304347826087
+</output>
+      <correct size="24">2.71739 2.97826 2.8913 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="47" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=8, ptime=26, rtime=28, maxvsz=307200, maxrss=6254592, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1044">47
+Sosnina Anna 5 1 3
+Stolyarov Andrey 5 5 1
+Melichenko Ilya 1 1 4
+Petropavlovskiy Dmitriy 2 3 5
+Panferova Tatyana 4 1 3
+Babat Anna 2 5 1
+Tashkeev Aleksandr 3 1 1
+Plotnikova Olga 2 5 1
+Zorina Viktoriya 1 3 5
+Kozlov Georgiy 5 1 2
+Folomeev Andrey 2 5 1
+Shishkin Aleksey 3 3 5
+Bataeva Elena 5 5 1
+Domnina Svetlana 1 1 4
+Baranova Kseniya 4 2 2
+Harlamova Aleksandra 4 1 3
+Volobuev Aleksey 4 5 5
+Abyzova Tatyana 3 1 2
+Nikolaev Maksim 4 3 1
+system Ejudge 2 1 1
+Lobaznikov Dmitriy 3 1 5
+Bobko Ilya 2 5 5
+Smirnova Nadezhda 1 2 4
+Grachev Ivan 5 3 2
+Marachev Aleksey 1 4 4
+Sveshnikddov Mihail 5 1 5
+Dyagterev Igor 1 1 5
+Bulhova Irina 2 5 1
+computers Turgor 1 5 3
+Tsoy Svetlana 2 5 2
+Bazhin Andrey 4 3 3
+Seythalilova Elvira 5 2 3
+Kirakosyan Vage 1 3 1
+Volodin Sergey 1 4 2
+User Test 1 1 3
+Korol Aleksandra 4 1 5
+Yakuchev Igor 4 1 4
+Vaulina Tatyana 2 3 5
+Moroz Yaroslav 3 4 3
+Semerikov Ilya 2 4 3
+Marina Svetlana 2 4 2
+Kolesnik Andrey 1 5 2
+Kazurova Kristina 2 2 5
+Varfolomeev Ivan 4 1 2
+Kononihin Grigoriy 1 5 5
+Ivkin Evgeniy 2 5 3
+Afanasiev Nikolay 3 1 3
+</input>
+      <output size="40">2.702127659574468 2.851063829787234 3.0
+</output>
+      <correct size="19">2.70213 2.85106 3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="48" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=28, maxvsz=307200, maxrss=6389760, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1096">48
+Charikov Aleksandr 2 1 5
+Tokareva Darya 2 2 4
+Grachev Ivan 5 3 2
+Madekin Sergey 4 5 5
+Blazhenova Anastasiya 5 2 5
+Oynas Taisiya 1 3 3
+Tamarova Inna 1 4 5
+Olisova Irina 5 2 5
+Gorohova Anna 3 5 5
+Dmitrieva Nadezhda 2 5 5
+Popova Nataya 2 5 4
+Pivnenko Igor 1 5 2
+Nosenko Valentin 5 2 5
+Shishkin Aleksey 3 3 5
+Polonskiy Sergey 1 3 4
+Melnik Denis 2 4 5
+Hutuashvili Tamara 5 3 4
+Uschapovskiy Ivan 1 4 4
+Medvedev Aleksey 1 2 2
+Selezneva Natalya 2 2 5
+Yudahina Elizaveta 5 2 5
+computers Turgor 1 5 3
+Loshkarev Vladimir 1 2 2
+Zhuravlev Aleksandr 4 2 5
+Uspenskiy Andrey 2 4 4
+Novotortsev Leonid 5 1 1
+Sevinyan Grant 2 4 2
+Borisov Aleksandr 2 3 2
+Zamyatina Viktoriya 2 4 4
+Zapletin Andrey 3 2 1
+Konovalov Sergey 4 1 2
+Parhomenko Elena 3 1 5
+Kruglihin Sergey 3 5 4
+Volobuev Aleksey 4 5 5
+Bubnov Nikolay 5 5 1
+Aleynikov Pavel 5 1 5
+Marikot Anastasiya 2 4 2
+Gorinov Ivan 3 3 4
+Agadzhanyan Darina 1 2 2
+Anikin Pavel 5 1 5
+Androsov Vladimir 3 2 4
+Kostyuchenok Ivan 2 2 1
+Martyanov Illarion 4 2 2
+Elagina Elizaveta 4 1 4
+Burmistrov Petr 5 4 4
+Varfolomeev Ivan 4 1 2
+Shamin Nikita 3 5 3
+Sashurin Aleksandr 1 2 1
+</input>
+      <output size="33">2.9375 2.9375 3.5208333333333335
+</output>
+      <correct size="23">2.9375 2.9375 3.52083 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="49" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=27, ptime=27, rtime=28, maxvsz=307200, maxrss=6098944, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1101">49
+Babat Anna 2 5 1
+Tokareva Darya 2 2 4
+Tsoy Svetlana 2 5 2
+Sveshnikddov Mihail 5 1 5
+Kuleshov Sergey 5 2 1
+Uschapovskiy Ivan 1 4 4
+User Test 1 1 3
+Mkrtchyan Anna 3 5 5
+Rinchinov Eduard 2 1 3
+Lunyaev Aleksandr 4 2 1
+Razumov Aleksandr 3 1 4
+Yakushenkov Pavel 2 5 4
+Yakuchev Igor 4 1 4
+Hromyh Nadezhda 2 3 4
+Safronova Anna 5 5 2
+Kuvshinov Mihail 3 5 3
+Kuzmin Arsentiy 4 4 2
+Bulhova Irina 2 5 1
+Zakurenko Aleksandr 2 4 3
+Chayko Maksim 1 3 4
+Narimanova Kamilya 5 4 3
+Ilyina Irina 5 5 4
+Petrov Evgeniy 5 2 3
+Lisenkova Aleksandra 1 5 2
+Starovoytova Darya 3 5 5
+Mantula Petr 5 3 2
+Vasilenko Ilya 2 4 2
+Agadzhanyan Darina 1 2 2
+Moroz Yaroslav 3 4 3
+Glushko Matvey 1 1 5
+Ryabtsev Grigoriy 2 5 2
+Safronov Dmitriy 3 5 1
+Chuvileva Evgeniya 5 5 2
+Shlyapugina Lyudmila 3 4 5
+Kazakova Galina 4 3 5
+Panteleeva Margarita 2 1 3
+Belyh Kristina 5 2 4
+Trunin Arseniy 4 4 2
+Gusev Aleksey 3 5 3
+Lazutov Evgeniy 5 3 5
+Kubrak Dmitriy 1 3 5
+Sheyh Sheyla 2 5 3
+Svirida Anton 3 4 3
+Krohina Darya 3 2 5
+Alyabyeva Natalya 2 5 1
+Tomashpolskiy Maksim 2 1 1
+Kamelin Stanislav 2 2 4
+Contest Programming 4 4 2
+Smirnova Viktoriya 1 4 2
+</input>
+      <output size="57">2.8979591836734695 3.3877551020408165 3.0408163265306123
+</output>
+      <correct size="25">2.89796 3.38776 3.04082 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="50" status="OK" time="27" real-time="33" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=33, maxvsz=307200, maxrss=6217728, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1123">50
+Kaplin Vladimir 4 5 5
+Kuvshinov Mihail 3 5 3
+Kuleshov Sergey 5 2 1
+Danekin Nikita 4 5 5
+Elshin Denis 1 2 3
+Massov Nikolay 2 3 3
+Smirnova Viktoriya 1 4 2
+Matsievskiy Sergey 2 3 1
+Vityukov Maksim 1 4 5
+Husainova Nailya 2 1 1
+Zhuravlev Aleksandr 4 2 5
+Afanasiev Petr 5 4 2
+Romanko Denis 5 3 5
+Volodin Sergey 1 4 2
+Kubrak Dmitriy 1 3 5
+Hromyh Nadezhda 2 3 4
+Stogov Yuriy 4 4 3
+Sizareva Irina 1 4 2
+Burmistrov Petr 5 4 4
+Sashurin Aleksandr 1 2 1
+Madekin Sergey 4 5 5
+Prokopiev Nikolay 1 5 5
+Lazutov Evgeniy 5 3 5
+Volodina Anna 2 1 3
+Varfolomeev Ivan 4 1 2
+Oganesyan Vardan 3 2 3
+Sirotin Vasiliy 1 2 5
+Hripunova Veronika 2 5 1
+Danko Leonid 2 2 4
+Shuleshkina Mariya 1 5 4
+Shibarova Elena 5 1 2
+Trenin Kirill 4 2 5
+Uschapovskiy Ivan 1 4 4
+Borisov Aleksandr 2 3 2
+Panov Mihail 1 4 3
+Zaytsev Mihail 5 3 3
+Pechurova Anna 3 4 5
+Olisova Irina 5 2 5
+Golovko Aleksandr 5 2 1
+Shevchenko Vasiliy 4 1 5
+computer Library 4 3 4
+Ryabkina Anastasiya 4 3 1
+Danilenko Ekaterina 1 5 2
+computers Turgor 1 5 3
+Nikonova Elena 4 4 3
+Lisenkova Aleksandra 1 5 2
+Savostyanov Mihail 3 4 4
+Melnik Denis 2 4 5
+Levin Sergey 4 1 3
+Seythalilova Elvira 5 2 3
+</input>
+      <output size="14">2.86 3.2 3.28
+</output>
+      <correct size="15">2.86 3.2 3.28 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="51" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=29, maxvsz=307200, maxrss=6209536, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1129">51
+Nosenko Valentin 5 2 5
+Kudlo Mihail 5 1 5
+Seslavina Anna 1 5 3
+Nilova Olga 4 3 4
+Trenin Kirill 4 2 5
+Marikot Anastasiya 2 4 2
+Tsvelihovskiy Boris 5 4 4
+Madekin Sergey 4 5 5
+Nefedov Pavel 2 5 1
+Kremenetskaya Mariya 5 3 5
+Trifonov Roman 4 1 4
+Baranova Kseniya 4 2 2
+Pechkovskiy Oleg 3 5 1
+Klimov Andrey 5 1 1
+Ryabichev Andrey 1 1 3
+Sizareva Irina 1 4 2
+Safronov Dmitriy 3 5 1
+Eremenko Aleksandra 1 4 1
+Pavlikov Maksim 2 5 2
+Chernyakov Mihail 3 1 4
+Vaulina Tatyana 2 3 5
+Zhdanova Valeriya 2 3 1
+Melichenko Ilya 1 1 4
+Geraskina Leylya 2 4 5
+Sirotin Vasiliy 1 2 5
+Ivanov Dmitriy 1 5 4
+Martyanov Illarion 4 2 2
+Kuzmin Arsentiy 4 4 2
+Grachev Ivan 5 3 2
+Nevolin Oleg 5 4 1
+Sydykova Perizat 4 4 4
+Ligus Natalya 1 3 3
+Semenenko Mariya 1 4 3
+Mkrtchyan Anna 3 5 5
+Silaev Aleksandr 4 3 5
+Tarasova Mariya 1 4 1
+Bubnov Nikolay 5 5 1
+Zapletin Andrey 3 2 1
+Belyh Andrey 3 3 2
+Medvedkova Anna 1 1 2
+Gorbik Dmitriy 5 5 4
+Folomeev Andrey 2 5 1
+Markov Valeriy 4 5 2
+Popova Nataya 2 5 4
+Baranova Mariya 2 2 3
+Tokareva Darya 2 2 4
+Uschapovskiy Ivan 1 4 4
+Sotskov Denis 3 5 3
+Blazhenova Anastasiya 5 2 5
+Ilyina Irina 5 5 4
+Tomashpolskiy Maksim 2 1 1
+</input>
+      <output size="42">2.9411764705882355 3.3137254901960786 3.0
+</output>
+      <correct size="19">2.94118 3.31373 3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="52" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=28, maxvsz=307200, maxrss=6250496, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1142">52
+Volkov Kirill 3 3 4
+Massov Nikolay 2 3 3
+Shabelskiy Yan 3 4 4
+Pokrovskiy Vladimir 5 2 1
+Zaharov Sergey 3 3 2
+Vasyutin Aleksandr 2 4 5
+Trenin Kirill 4 2 5
+Mayatskiy Artem 3 4 4
+Nikonova Elena 4 4 3
+Kruglihin Sergey 3 5 4
+Bychkov Boris 5 2 5
+Olisova Irina 5 2 5
+Mironov Artem 3 1 3
+Bulhova Irina 2 5 1
+Stolyarov Andrey 5 5 1
+Fedyna Maksim 2 5 2
+Volodina Anna 2 1 3
+Rinchinov Eduard 2 1 3
+Larina Elena 4 2 1
+Zibrov Ilya 2 4 2
+Varfolomeev Ivan 4 1 2
+Marina Svetlana 2 4 2
+Blazhenova Anastasiya 5 2 5
+Gorohova Anna 3 5 5
+Oynas Taisiya 1 3 3
+Mizitov Andrey 4 3 1
+Samohina Anna 4 1 2
+Administration School 5 2 3
+Ivanov Dmitriy 1 5 4
+Harlamov Nikolay 5 4 1
+Krohina Darya 3 2 5
+Ryabichev Andrey 1 1 3
+Popova Nataya 2 5 4
+computers Turgor 1 5 3
+Yuzhanin Kirill 1 2 3
+Chernyakov Mihail 3 1 4
+Morozov Aleksandr 4 3 1
+Titov Yuriy 2 5 5
+Agadzhanyan Darina 1 2 2
+Shibarova Elena 5 1 2
+Kuznetsov Grigoriy 1 4 2
+Trunin Arseniy 4 4 2
+Sizareva Irina 1 4 2
+Contest Programming 4 4 2
+Zhdanova Valeriya 2 3 1
+Astahova Kira 3 3 1
+Glushko Matvey 1 1 5
+Lunev Aleksey 5 4 3
+Pikalov Oleg 1 1 4
+Suhanov Aleksey 2 5 5
+Ryabkina Anastasiya 4 3 1
+Golovko Aleksandr 5 2 1
+</input>
+      <output size="56">2.9615384615384617 3.019230769230769 2.8846153846153846
+</output>
+      <correct size="25">2.96154 3.01923 2.88462 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="53" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=4, ptime=28, rtime=30, maxvsz=307200, maxrss=6356992, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1176">53
+Smolnikova Irina 2 5 4
+Moroz Yaroslav 3 4 3
+Smirnova Nadezhda 1 2 4
+Uspenskiy Andrey 2 4 4
+Yuzhanin Kirill 1 2 3
+Aleynikov Pavel 5 1 5
+Pokrovskiy Vladimir 5 2 1
+Semerikov Ilya 2 4 3
+Marachev Aleksey 1 4 4
+Safronova Anna 5 5 2
+Titov Yuriy 2 5 5
+Nevolin Oleg 5 4 1
+Trifonov Igor 2 5 4
+Marikot Anastasiya 2 4 2
+Krohina Darya 3 2 5
+Gusev Aleksey 3 5 3
+Bodrov Andrey 3 5 3
+Chayko Maksim 1 3 4
+Kostyuchenok Ivan 2 2 1
+Eremenko Aleksandra 1 4 1
+Sveshnikddov Mihail 5 1 5
+Bychkov Boris 5 2 5
+Lobaznikov Dmitriy 3 1 5
+Baranova Mariya 2 2 3
+Dmitrieva Nadezhda 2 5 5
+Mizitov Andrey 4 3 1
+Marina Svetlana 2 4 2
+Zorina Viktoriya 1 3 5
+Sydykova Perizat 4 4 4
+Belyh Andrey 3 3 2
+Babat Anna 2 5 1
+Vityukov Maksim 1 4 5
+Stogov Yuriy 4 4 3
+Dobroserdov Konstantin 4 3 1
+Bulhova Irina 2 5 1
+Seliverstova Anastasiya 2 3 1
+Zimin Roman 3 3 5
+Volzhin Ilya 1 2 5
+Domnina Svetlana 1 1 4
+Kaplin Vladimir 4 5 5
+Morozov Aleksandr 4 3 1
+Pavlova Irina 4 2 4
+Ivkin Evgeniy 2 5 3
+Trunin Arseniy 4 4 2
+Blazhenova Anastasiya 5 2 5
+Buzukashvili Sofya 2 5 4
+Harlamov Nikolay 5 4 1
+Volkov Kirill 3 3 4
+Gronskiy Dmitriy 3 2 1
+Tamarova Inna 1 4 5
+Belova Galina 5 1 4
+Kuleshov Nikolay 1 3 5
+computers Turgor 1 5 3
+</input>
+      <output size="56">2.7547169811320753 3.358490566037736 3.2452830188679247
+</output>
+      <correct size="25">2.75472 3.35849 3.24528 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="54" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=9, ptime=27, rtime=29, maxvsz=307200, maxrss=6340608, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1212">54
+Husainova Nailya 2 1 1
+Tashkeev Aleksandr 3 1 1
+Androsov Vladimir 3 2 4
+computer Library 4 3 4
+Klimov Andrey 5 1 1
+Prokopiev Nikolay 1 5 5
+Moroz Yaroslav 3 4 3
+Oynas Taisiya 1 3 3
+Novotortsev Leonid 5 1 1
+Gayday Anton 3 2 5
+Glushkov Sergey 3 5 5
+Tulegenov Yuriy 3 5 4
+Korchina Anastasiya 3 4 3
+Voinov Pavel 3 2 5
+Hromyh Nadezhda 2 3 4
+Afonina Nina 2 1 5
+Kostyuchenok Ivan 2 2 1
+Rozhin Nikita 3 5 2
+Sytilin Igor 5 5 1
+Golovkin Yuriy 1 1 5
+Lobaznikov Dmitriy 3 1 5
+Osipova Vasilisa 5 4 2
+Kalyuzhnaya Irina 2 1 4
+Volzhin Ilya 1 2 5
+Zhdanova Valeriya 2 3 1
+Nalench Yuliya 3 2 2
+Uschapovskiy Ivan 1 4 4
+Madekin Sergey 4 5 5
+Vakulenko Artem 4 4 5
+Stolyarov Andrey 5 5 1
+Zibrov Ilya 2 4 2
+Belyh Kristina 5 2 4
+Pavlov Nikita 3 4 5
+Kazurova Kristina 2 2 5
+Nilova Olga 4 3 4
+Podyapolskaya Marina 2 2 5
+Tamarova Inna 1 4 5
+Uspenskiy Andrey 2 4 4
+Alyabyeva Natalya 2 5 1
+Chebanov Georgiy 3 5 5
+Medvedkova Anna 1 1 2
+Savostyanov Mihail 3 4 4
+Harlamova Aleksandra 4 1 3
+Tomashpolskiy Maksim 2 1 1
+Lunev Aleksey 5 4 3
+Buzukashvili Sofya 2 5 4
+Harlamov Nikolay 5 4 1
+Pechkovskiy Oleg 3 5 1
+Korol Aleksandra 4 1 5
+Administration School 5 2 3
+Vishnyakov Ivan 2 3 2
+Ivkin Evgeniy 2 5 3
+Kolesnik Andrey 1 5 2
+account Guest 5 1 5
+</input>
+      <output size="55">2.9074074074074074 3.037037037037037 3.259259259259259
+</output>
+      <correct size="25">2.90741 3.03704 3.25926 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="55" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=28, maxvsz=307200, maxrss=6365184, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1234">55
+Seslavina Anna 1 5 3
+Kononihin Grigoriy 1 5 5
+Shuleshkina Mariya 1 5 4
+Chernov Vasiliy 1 3 2
+Selezneva Natalya 2 2 5
+Suhanov Aleksey 2 5 5
+Saharov Denis 1 3 2
+Kuzmin Arsentiy 4 4 2
+Zibrov Ilya 2 4 2
+Podyapolskaya Marina 2 2 5
+Pechurova Anna 3 4 5
+Razumov Aleksandr 3 1 4
+Alyabyeva Natalya 2 5 1
+Markov Valeriy 4 5 2
+Smolnikova Irina 2 5 4
+Shlyapugina Lyudmila 3 4 5
+Levin Sergey 4 1 3
+Zaostrovnyh Arseniy 1 3 3
+Medvedkova Anna 1 1 2
+Paredes Andrey 1 4 1
+Lazutov Evgeniy 5 3 5
+Gorinov Ivan 3 3 4
+Prokopiev Nikolay 1 5 5
+Danilin Konstantin 5 4 5
+Sheyh Sheyla 2 5 3
+Krohina Darya 3 2 5
+Semenenko Mariya 1 4 3
+Pirogov Pavel 4 1 4
+Sydykova Perizat 4 4 4
+Belova Galina 5 1 4
+Tsoy Svetlana 2 5 2
+Nikonova Elena 4 4 3
+Zorina Viktoriya 1 3 5
+Smirnova Nadezhda 1 2 4
+Sobakin Pavel 3 5 3
+Danilenko Ekaterina 1 5 2
+Kremenetskaya Mariya 5 3 5
+Kovalskiy Ivan 3 4 5
+Sevinyan Grant 2 4 2
+Kabykin Aleksey 4 1 2
+Dobroserdov Konstantin 4 3 1
+Abyzova Tatyana 3 1 2
+Matsievskiy Sergey 2 3 1
+Sokolova Elena 4 1 4
+Loshkarev Vladimir 1 2 2
+Nosenko Valentin 5 2 5
+Lebedev Viktor 2 3 1
+computers Turgor 1 5 3
+Tashkeev Aleksandr 3 1 1
+Tulegenov Yuriy 3 5 4
+Olisova Irina 5 2 5
+Vaulina Tatyana 2 3 5
+Rinchinov Eduard 2 1 3
+Babat Anna 2 5 1
+Afonina Nina 2 1 5
+</input>
+      <output size="56">2.5636363636363635 3.2181818181818183 3.327272727272727
+</output>
+      <correct size="25">2.56364 3.21818 3.32727 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="56" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=2, ptime=27, rtime=30, maxvsz=307200, maxrss=6369280, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1238">56
+Petrova Mariya 3 2 5
+Moroz Yaroslav 3 4 3
+Seslavina Anna 1 5 3
+Filatov Dmitriy 3 2 5
+Gayday Anton 3 2 5
+Madekin Sergey 4 5 5
+Bodrov Andrey 3 5 3
+Pavlikov Maksim 2 5 2
+Tsoy Svetlana 2 5 2
+Paredes Andrey 1 4 1
+Vyazmin Maksim 3 2 4
+Larkin Aleksey 4 5 3
+Ligus Natalya 1 3 3
+Ilyina Irina 5 5 4
+Lunyaev Aleksandr 4 2 1
+Pirogov Pavel 4 1 4
+Semenenko Mariya 1 4 3
+Vakulenko Artem 4 4 5
+Solomatin Pavel 5 3 3
+Tamarova Inna 1 4 5
+Kuvshinov Mihail 3 5 3
+Danilenko Ekaterina 1 5 2
+Kazakova Galina 4 3 5
+Kuleshov Sergey 5 2 1
+Zakurenko Aleksandr 2 4 3
+Danilov Aleksandr 4 4 2
+Pechurova Anna 3 4 5
+Klimov Andrey 5 1 1
+Eremenko Aleksandra 1 4 1
+Dudnik Elizaveta 1 4 1
+Kazanskaya Irina 5 3 1
+Kuznetsov Grigoriy 1 4 2
+Gorbik Dmitriy 5 5 4
+Abbasova Narmina 2 5 1
+Sobakin Pavel 3 5 3
+Afanasiev Petr 5 4 2
+Voinov Pavel 3 2 5
+Nevolin Oleg 5 4 1
+Marina Svetlana 2 4 2
+Sheyh Sheyla 2 5 3
+Kononihin Grigoriy 1 5 5
+Kudlo Mihail 5 1 5
+Nosenko Valentin 5 2 5
+Seliverstova Anastasiya 2 3 1
+Kuzmin Arsentiy 4 4 2
+Vorovyeva Vasilisa 5 2 2
+Kozlov Georgiy 5 1 2
+Sizareva Irina 1 4 2
+Kirakosyan Vage 1 3 1
+Ataullin Ayrat 3 5 5
+Uschapovskiy Ivan 1 4 4
+Oganesyan Vardan 3 2 3
+Rozhin Nikita 3 5 2
+Hripunova Veronika 2 5 1
+Loshkarev Vladimir 1 2 2
+Razumov Aleksandr 3 1 4
+</input>
+      <output size="57">2.9285714285714284 3.5357142857142856 2.9107142857142856
+</output>
+      <correct size="25">2.92857 3.53571 2.91071 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="57" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=28, maxvsz=307200, maxrss=6197248, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="1280">57
+Safronov Dmitriy 3 5 1
+Kononihin Grigoriy 1 5 5
+Vasyutin Aleksandr 2 4 5
+Saharov Denis 1 3 2
+Gorinov Ivan 3 3 4
+Anfinogenov Dmitriy 3 4 3
+Tokareva Darya 2 2 4
+Novotortsev Leonid 5 1 1
+Tulegenov Yuriy 3 5 4
+Dubrovin Sergey 3 2 1
+Sosnina Anna 5 1 3
+Kolesnik Andrey 1 5 2
+Shuleshkina Mariya 1 5 4
+Abyzova Tatyana 3 1 2
+Smirnova Nadezhda 1 2 4
+Anikin Pavel 5 1 5
+Prokopiev Nikolay 1 5 5
+Kuleshova Marina 1 5 3
+Aleynikov Pavel 5 1 5
+Kazanskaya Irina 5 3 1
+Yakushenkov Pavel 2 5 4
+Kuznetsov Grigoriy 1 4 2
+Kuznetsova Antonina 1 1 5
+Varfolomeev Ivan 4 1 2
+Mizitov Andrey 4 3 1
+Yurzinova Tatyana 5 3 2
+Petrov Evgeniy 5 2 3
+Ryabichev Andrey 1 1 3
+Tsyganok Yuriy 2 4 1
+Agadzhanyan Darina 1 2 2
+Burmistrov Petr 5 4 4
+Zimin Roman 3 3 5
+Chepala Mariya 5 4 1
+Kirakosyan Vage 1 3 1
+Tarasenko Natalya 4 5 5
+Pirogov Pavel 4 1 4
+Bubnov Nikolay 5 5 1
+Filatov Dmitriy 3 2 5
+Borisov Aleksandr 2 3 2
+Korol Aleksandra 4 1 5
+Suhorukov Ilya 5 1 1
+Yapryntsev Aleksey 5 1 1
+Danilin Konstantin 5 4 5
+Tashkeev Aleksandr 3 1 1
+Volobuev Aleksey 4 5 5
+Lazovskiy Ivan 4 1 2
+Uschapovskiy Ivan 1 4 4
+Kubrak Dmitriy 1 3 5
+Panov Mihail 1 4 3
+Markov Valeriy 4 5 2
+Harlamov Nikolay 5 4 1
+Sevinyan Grant 2 4 2
+Gronskiy Dmitriy 3 2 1
+Nikolaev Maksim 4 3 1
+Konovalov Sergey 4 1 2
+Oynas Taisiya 1 3 3
+Volzhin Ilya 1 2 5
+</input>
+      <output size="56">2.9649122807017543 2.9473684210526314 2.912280701754386
+</output>
+      <correct size="25">2.96491 2.94737 2.91228 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="58" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=9, ptime=27, rtime=29, maxvsz=307200, maxrss=6086656, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1288">58
+Volobuev Aleksey 4 5 5
+Saharov Denis 1 3 2
+Semerikov Ilya 2 4 3
+Hripunova Veronika 2 5 1
+Lunyaev Aleksandr 4 2 1
+Shashkov Vladimir 2 4 4
+Ilyina Irina 5 5 4
+Bagrova Anastasiya 4 5 2
+Martyanov Illarion 4 2 2
+Glushkov Sergey 3 5 5
+Mironov Artem 3 1 3
+Savostin Evgeniy 2 3 2
+Zaostrovnyh Elizaveta 2 1 5
+Korol Aleksandra 4 1 5
+Gorbik Dmitriy 5 5 4
+Lobaznikov Dmitriy 3 1 5
+Eremenko Aleksandra 1 4 1
+Kudlo Mihail 5 1 5
+Lebedev Viktor 2 3 1
+Volzhin Ilya 1 2 5
+system Ejudge 2 1 1
+Voevodin Vadim 3 5 4
+Shuleshkina Mariya 1 5 4
+Golovko Aleksandr 5 2 1
+Zorina Viktoriya 1 3 5
+Tokareva Darya 2 2 4
+Folomeev Andrey 2 5 1
+Shevchenko Vasiliy 4 1 5
+Veyknis Violetta 3 4 5
+Harlamov Nikolay 5 4 1
+Larina Elena 4 2 1
+Utolin Dmitriy 2 4 2
+Ligus Natalya 1 3 3
+Lazovskiy Ivan 4 1 2
+Nikolaev Maksim 4 3 1
+Klimov Nikita 2 3 1
+Lunev Aleksey 5 4 3
+Svirida Anton 3 4 3
+Sytilin Igor 5 5 1
+Shishkin Aleksey 3 3 5
+Kabykin Aleksey 4 1 2
+Morozov Aleksandr 4 3 1
+Yapryntsev Aleksey 5 1 1
+Tsoy Svetlana 2 5 2
+Hinko Evgeniy 4 1 2
+Borisov Daniil 4 1 5
+Sashurin Aleksandr 1 2 1
+Belova Galina 5 1 4
+Sokolova Elena 4 1 4
+Polonskiy Sergey 1 3 4
+Razumov Aleksandr 3 1 4
+Shamin Nikita 3 5 3
+Bobko Ilya 2 5 5
+Suhorukov Ilya 5 1 1
+Vakulenko Artem 4 4 5
+Abbasova Narmina 2 5 1
+Potapenko Evgeniya 3 1 1
+Tomashpolskiy Maksim 2 1 1
+</input>
+      <output size="56">3.0689655172413794 2.896551724137931 2.8448275862068964
+</output>
+      <correct size="25">3.06897 2.89655 2.84483 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="59" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=28, maxvsz=307200, maxrss=6365184, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1297">59
+Chayko Maksim 1 3 4
+Yakuchev Igor 4 1 4
+Lukovich Aleksander 2 2 5
+Moroz Yaroslav 3 4 3
+Rinchinov Eduard 2 1 3
+Sevinyan Grant 2 4 2
+Hinko Evgeniy 4 1 2
+Erin Anton 2 4 4
+Melnik Denis 2 4 5
+Tsoy Svetlana 2 5 2
+Ryabtsev Grigoriy 2 5 2
+Smolnikova Irina 2 5 4
+Tomashpolskiy Maksim 2 1 1
+Godzhaev Georgiy 4 5 2
+Saharov Denis 1 3 2
+Paredes Andrey 1 4 1
+Eryushova Karina 4 4 4
+Pavlikov Maksim 2 5 2
+Uschapovskiy Ivan 1 4 4
+Dobroserdov Konstantin 4 3 1
+Domnina Svetlana 1 1 4
+Kalyuzhnaya Irina 2 1 4
+account Guest 5 1 5
+Bulhova Irina 2 5 1
+Skovitin Pavel 3 3 5
+Kuzmin Arsentiy 4 4 2
+Kazurova Kristina 2 2 5
+Krohina Darya 3 2 5
+Kuleshov Sergey 5 2 1
+Kazanskaya Irina 5 3 1
+Larina Elena 4 2 1
+Kamelin Stanislav 2 2 4
+Romanko Denis 5 3 5
+Shimko Oleg 2 5 2
+Zimin Roman 3 3 5
+Glushko Matvey 1 1 5
+Bagrova Anastasiya 4 5 2
+Savostyanov Mihail 3 4 4
+Yapryntsev Aleksey 5 1 1
+Utolin Dmitriy 2 4 2
+Gayday Anton 3 2 5
+Danilov Aleksandr 4 4 2
+Danilin Konstantin 5 4 5
+Voinov Pavel 3 2 5
+Bodrov Andrey 3 5 3
+Panov Mihail 1 4 3
+Vishnyakov Ivan 2 3 2
+Tsyganok Yuriy 2 4 1
+Chernyakov Mihail 3 1 4
+Zorina Viktoriya 1 3 5
+Trenin Kirill 4 2 5
+Tarasova Mariya 1 4 1
+Chepala Mariya 5 4 1
+Svirida Anton 3 4 3
+Volzhin Ilya 1 2 5
+Harlamov Nikolay 5 4 1
+Chuvileva Evgeniya 5 5 2
+Kremenetskaya Mariya 5 3 5
+Kruglihin Sergey 3 5 4
+</input>
+      <output size="55">2.864406779661017 3.169491525423729 3.1016949152542375
+</output>
+      <correct size="25">2.86441 3.16949 3.10169 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="60" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6156288, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1343">60
+Zaytsev Mihail 5 3 3
+Mironov Artem 3 1 3
+Skyabin Sergey 2 1 4
+Abyzova Tatyana 3 1 2
+Iznaurova Elizaveta 5 1 5
+Gorinov Ivan 3 3 4
+Konovalov Sergey 4 1 2
+Vostrikova Nataliya 2 4 5
+Petrova Mariya 3 2 5
+Klimov Andrey 5 1 1
+Seslavina Anna 1 5 3
+Seliverstova Anastasiya 2 3 1
+Afanasiev Petr 5 4 2
+Morozov Aleksandr 4 3 1
+Pechkovskiy Oleg 3 5 1
+Marachev Aleksey 1 4 4
+Yurzinova Tatyana 5 3 2
+Paredes Andrey 1 4 1
+Plotnikova Olga 2 5 1
+Obruch Evgeniya 3 4 5
+Chebanov Georgiy 3 5 5
+Mantula Petr 5 3 2
+Kovalskiy Ivan 3 4 5
+Bodrov Andrey 3 5 3
+Shibarova Elena 5 1 2
+Tarasenko Natalya 4 5 5
+Melnik Denis 2 4 5
+Sergeev Ilya 3 5 1
+Chepala Mariya 5 4 1
+Larina Elena 4 2 1
+Lukovich Aleksander 2 2 5
+Eremenko Aleksandra 1 4 1
+Pokrovskiy Vladimir 5 2 1
+Mashkarina Ulyana 2 3 3
+Medvedkova Anna 1 1 2
+Trunin Arseniy 4 4 2
+Samohina Anna 4 1 2
+Kobylkina Svetlana 2 1 4
+Golovkin Yuriy 1 1 5
+Tomashpolskiy Maksim 2 1 1
+Shishkin Aleksey 3 3 5
+Filatov Dmitriy 3 2 5
+Yunin Oleg 4 5 3
+Osadchiy Denis 5 5 2
+Borisov Aleksandr 2 3 2
+Eryushova Karina 4 4 4
+Kononihin Grigoriy 1 5 5
+Klimov Aleksandr 2 4 1
+Vasyutin Aleksandr 2 4 5
+Veyknis Violetta 3 4 5
+Kamelin Stanislav 2 2 4
+Yakovlev Ivan 5 1 2
+Zaostrovnyh Arseniy 1 3 3
+Semenenko Mariya 1 4 3
+Tarasova Mariya 1 4 1
+Erin Anton 2 4 4
+Nevolin Oleg 5 4 1
+Elagina Elizaveta 4 1 4
+Prokopiev Nikolay 1 5 5
+Lunev Aleksey 5 4 3
+</input>
+      <output size="56">2.9833333333333334 3.1166666666666667 2.966666666666667
+</output>
+      <correct size="25">2.98333 3.11667 2.96667 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="61" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6295552, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1343">61
+Abyzova Tatyana 3 1 2
+Paredes Andrey 1 4 1
+Danekin Nikita 4 5 5
+Kaplin Vladimir 4 5 5
+Sydykova Perizat 4 4 4
+Romanko Denis 5 3 5
+Kuznetsov Nikita 3 1 1
+Savostin Evgeniy 2 3 2
+Sizareva Irina 1 4 2
+Yakushenkov Pavel 2 5 4
+Bubnov Nikolay 5 5 1
+Pivnenko Igor 1 5 2
+Avilov Evgeniy 2 1 4
+Harlamova Aleksandra 4 1 3
+Lunyaev Aleksandr 4 2 1
+Kuznetsov Grigoriy 1 4 2
+Gronskiy Dmitriy 3 2 1
+Parhomenko Elena 3 1 5
+Belyh Andrey 3 3 2
+Silaev Aleksandr 4 3 5
+Tulegenov Yuriy 3 5 4
+Vostrikova Nataliya 2 4 5
+Hripunova Veronika 2 5 1
+Panteleeva Margarita 2 1 3
+Nikolaev Maksim 4 3 1
+Sirotin Vasiliy 1 2 5
+Zimin Roman 3 3 5
+Kostyuchenok Ivan 2 2 1
+Nevolin Oleg 5 4 1
+Kubrak Dmitriy 1 3 5
+Abbasova Narmina 2 5 1
+Pikalov Oleg 1 1 4
+Trifonov Igor 2 5 4
+Pavlova Irina 4 2 4
+Panferova Tatyana 4 1 3
+Seythalilova Elvira 5 2 3
+Kudlo Mihail 5 1 5
+Suhorukov Ilya 5 1 1
+Varfolomeev Ivan 4 1 2
+Tsyganok Yuriy 2 4 1
+Kuznetsova Antonina 1 1 5
+Vaulina Tatyana 2 3 5
+Gorinov Ivan 3 3 4
+Ilyina Irina 5 5 4
+Harlamov Nikolay 5 4 1
+Shibarova Elena 5 1 2
+Prokopiev Nikolay 1 5 5
+Hutuashvili Tamara 5 3 4
+Ataullin Ayrat 3 5 5
+Melichenko Ilya 1 1 4
+Borisov Daniil 4 1 5
+Pechurova Anna 3 4 5
+Glushkov Sergey 3 5 5
+Pirogov Pavel 4 1 4
+Marachev Aleksey 1 4 4
+Aleynikov Pavel 5 1 5
+Matsievskiy Sergey 2 3 1
+Olisova Irina 5 2 5
+Shimko Oleg 2 5 2
+Keller Artem 1 1 2
+Nilova Olga 4 3 4
+</input>
+      <output size="41">3.0 2.918032786885246 3.2295081967213113
+</output>
+      <correct size="19">3 2.91803 3.22951 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="62" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=28, maxvsz=307200, maxrss=6295552, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="1377">62
+Petrova Mariya 3 2 5
+Stolyarov Andrey 5 5 1
+Bazhin Andrey 4 3 3
+Hutuashvili Tamara 5 3 4
+Baldina Eleonora 2 3 1
+system Ejudge 2 1 1
+Pokrovskiy Vladimir 5 2 1
+Semerikov Ilya 2 4 3
+Bychkov Boris 5 2 5
+Kazurova Kristina 2 2 5
+Danko Leonid 2 2 4
+Zapletin Andrey 3 2 1
+Dudnik Elizaveta 1 4 1
+Savostyanov Mihail 3 4 4
+Loshkarev Vladimir 1 2 2
+Obruch Evgeniya 3 4 5
+Trenin Kirill 4 2 5
+Ryabichev Andrey 1 1 3
+Beklemishev Vladimir 1 4 3
+Pavlikov Maksim 2 5 2
+Charikov Aleksandr 2 1 5
+Afonina Nina 2 1 5
+Grachev Ivan 5 3 2
+Danilov Aleksandr 4 4 2
+Vorovyeva Vasilisa 5 2 2
+Yakovlev Ivan 5 1 2
+Savostin Evgeniy 2 3 2
+Seslavina Anna 1 5 3
+Mashkarina Ulyana 2 3 3
+Baranova Mariya 2 2 3
+Babat Anna 2 5 1
+Medvedkova Anna 1 1 2
+Androsov Vladimir 3 2 4
+Lebedev Viktor 2 3 1
+Volkov Kirill 3 3 4
+Administration School 5 2 3
+Dmitrieva Nadezhda 2 5 5
+Svirida Anton 3 4 3
+Mkrtchyan Anna 3 5 5
+Mizitov Andrey 4 3 1
+Seliverstova Anastasiya 2 3 1
+Husainova Nailya 2 1 1
+Olisova Irina 5 2 5
+Volodina Anna 2 1 3
+Utolin Dmitriy 2 4 2
+computers Turgor 1 5 3
+Afanasiev Nikolay 3 1 3
+Sizareva Irina 1 4 2
+Bataeva Elena 5 5 1
+Ligus Natalya 1 3 3
+Yunin Oleg 4 5 3
+Iznaurova Elizaveta 5 1 5
+Sobakin Pavel 3 5 3
+Lazutov Evgeniy 5 3 5
+Baranova Kseniya 4 2 2
+Yakushenkov Pavel 2 5 4
+Mayatskiy Artem 3 4 4
+Konovalov Sergey 4 1 2
+Nikonova Elena 4 4 3
+Lukovich Aleksander 2 2 5
+Keller Artem 1 1 2
+Bobko Ilya 2 5 5
+</input>
+      <output size="55">2.8548387096774195 2.935483870967742 2.967741935483871
+</output>
+      <correct size="25">2.85484 2.93548 2.96774 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="63" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=28, maxvsz=307200, maxrss=6258688, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="1442">63
+Vityukov Maksim 1 4 5
+Suhorukov Ilya 5 1 1
+Baranova Mariya 2 2 3
+Burmistrov Petr 5 4 4
+Lebedev Viktor 2 3 1
+Ryabkina Anastasiya 4 3 1
+Bodrov Andrey 3 5 3
+Kuznetsova Antonina 1 1 5
+Ryabtsev Grigoriy 2 5 2
+Husainova Nailya 2 1 1
+Khait Oleg 4 5 1
+Saharov Denis 1 3 2
+Hutuashvili Tamara 5 3 4
+Polonskiy Sergey 1 3 4
+Nilova Olga 4 3 4
+Marina Svetlana 2 4 2
+Shabelskiy Yan 3 4 4
+Kobylkina Svetlana 2 1 4
+Iznaurova Elizaveta 5 1 5
+Loshkarev Vladimir 1 2 2
+Kuleshov Sergey 5 2 1
+Hinko Evgeniy 4 1 2
+Narimanova Kamilya 5 4 3
+Sveshnikddov Mihail 5 1 5
+Erin Anton 2 4 4
+Volzhin Denis 1 2 2
+Rinchinov Eduard 2 1 3
+Kuleshov Nikolay 1 3 5
+Novotortsev Leonid 5 1 1
+Pavlikov Maksim 2 5 2
+Bazhin Andrey 4 3 3
+Kuzmin Arsentiy 4 4 2
+Egorova Viktoriya 1 1 2
+Bagrova Anastasiya 4 5 2
+Semerikov Ilya 2 4 3
+Trunin Arseniy 4 4 2
+Lobaznikov Dmitriy 3 1 5
+Varfolomeev Ivan 4 1 2
+Volobuev Aleksey 4 5 5
+Shashkov Vladimir 2 4 4
+Vahnichenko Aleksey 5 4 2
+Geraskina Leylya 2 4 5
+Golovko Aleksandr 5 2 1
+Baldina Eleonora 2 3 1
+Chernov Vasiliy 1 3 2
+Kuznetsov Grigoriy 1 4 2
+Panteleeva Margarita 2 1 3
+Konovalov Sergey 4 1 2
+Lukovich Aleksander 2 2 5
+Uspenskiy Andrey 2 4 4
+Dudnik Elizaveta 1 4 1
+Tulegenov Yuriy 3 5 4
+system Ejudge 2 1 1
+Kostyuchenok Ivan 2 2 1
+Seliverstova Anastasiya 2 3 1
+Sergeev Ilya 3 5 1
+Seslavina Anna 1 5 3
+Dubrovin Sergey 3 2 1
+Nosenko Valentin 5 2 5
+Ataullin Ayrat 3 5 5
+Matsievskiy Sergey 2 3 1
+Sydykova Shahrazada 4 2 5
+Chepala Mariya 5 4 1
+</input>
+      <output size="55">2.873015873015873 2.9365079365079363 2.746031746031746
+</output>
+      <correct size="25">2.87302 2.93651 2.74603 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="64" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=13, stime=13, ptime=26, rtime=28, maxvsz=307200, maxrss=6156288, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="1408">64
+Vasilenko Ilya 2 4 2
+Mashkarina Ulyana 2 3 3
+Voevodin Vadim 3 5 4
+Dubrovin Sergey 3 2 1
+Afonina Nina 2 1 5
+Zimin Roman 3 3 5
+Bulhova Irina 2 5 1
+Matsievskiy Sergey 2 3 1
+Dobroserdov Konstantin 4 3 1
+Larina Elena 4 2 1
+Sokolova Elena 4 1 4
+Tarasova Mariya 1 4 1
+Titov Yuriy 2 5 5
+Ryabtsev Grigoriy 2 5 2
+Stogov Yuriy 4 4 3
+Bodrov Andrey 3 5 3
+Kostyuchenok Ivan 2 2 1
+Skovitin Pavel 3 3 5
+Sevinyan Grant 2 4 2
+Grachev Ivan 5 3 2
+Kazurova Kristina 2 2 5
+Solomatin Pavel 5 3 3
+Belyh Kristina 5 2 4
+Gayday Anton 3 2 5
+Bychkov Boris 5 2 5
+Savostyanov Mihail 3 4 4
+Volkov Kirill 3 3 4
+Panov Mihail 1 4 3
+Borisov Daniil 4 1 5
+system Ejudge 2 1 1
+Zhdanova Valeriya 2 3 1
+Marachev Aleksey 1 4 4
+Shevchenko Vasiliy 4 1 5
+Lebedev Viktor 2 3 1
+Lazovskiy Ivan 4 1 2
+Nalench Yuliya 3 2 2
+Filatov Dmitriy 3 2 5
+Krohina Darya 3 2 5
+Anikin Pavel 5 1 5
+Agadzhanyan Darina 1 2 2
+Tokareva Darya 2 2 4
+Mkrtchyan Anna 3 5 5
+Abyzova Tatyana 3 1 2
+Vityukov Maksim 1 4 5
+Marikot Anastasiya 2 4 2
+Pankratova Lyudmila 2 2 5
+Loshkarev Vladimir 1 2 2
+Sergeev Ilya 3 5 1
+Moroz Yaroslav 3 4 3
+Mosyaykin Vladimir 5 3 1
+Shabelskiy Yan 3 4 4
+Levin Sergey 4 1 3
+Zapletin Andrey 3 2 1
+Lobaznikov Dmitriy 3 1 5
+Podyapolskaya Marina 2 2 5
+Vorovyeva Vasilisa 5 2 2
+Zaharov Sergey 3 3 2
+Dyagterev Igor 1 1 5
+Harlamova Aleksandra 4 1 3
+Bubnov Nikolay 5 5 1
+Gusev Aleksey 3 5 3
+Polonskiy Sergey 1 3 4
+Sotskov Denis 3 5 3
+Shlyapugina Lyudmila 3 4 5
+</input>
+      <output size="24">2.875 2.859375 3.109375
+</output>
+      <correct size="23">2.875 2.85938 3.10938 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="65" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=23, stime=4, ptime=27, rtime=29, maxvsz=307200, maxrss=6385664, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1418">65
+Mironova Anna 3 3 4
+Elshin Denis 1 2 3
+Abyzova Tatyana 3 1 2
+Vityukov Maksim 1 4 5
+computers Turgor 1 5 3
+Korchina Anastasiya 3 4 3
+Eryushova Karina 4 4 4
+Kuznetsova Antonina 1 1 5
+Tokareva Darya 2 2 4
+Agapova Lyudmila 5 1 1
+Rozhin Nikita 3 5 2
+Kuleshov Sergey 5 2 1
+Bulhova Irina 2 5 1
+Ryabtsev Grigoriy 2 5 2
+Massov Nikolay 2 3 3
+Panov Mihail 1 4 3
+Larina Elena 4 2 1
+Pirogov Pavel 4 1 4
+Petrova Mariya 3 2 5
+Harlamova Aleksandra 4 1 3
+Mantula Petr 5 3 2
+Gorinov Ivan 3 3 4
+Pavlova Irina 4 2 4
+Chuvileva Evgeniya 5 5 2
+Vasilenko Ilya 2 4 2
+Loshkarev Vladimir 1 2 2
+Zaytsev Mihail 5 3 3
+Chayko Maksim 1 3 4
+Sokolova Elena 4 1 4
+Trifonov Roman 4 1 4
+Zimin Roman 3 3 5
+Vyazmin Maksim 3 2 4
+Hinko Evgeniy 4 1 2
+Shlyapugina Lyudmila 3 4 5
+Godzhaev Georgiy 4 5 2
+Vasyutin Aleksandr 2 4 5
+Zaharov Sergey 3 3 2
+Narimanova Kamilya 5 4 3
+Sydykova Perizat 4 4 4
+Ivanov Dmitriy 1 5 4
+Vostrikova Nataliya 2 4 5
+Babat Anna 2 5 1
+system Ejudge 2 1 1
+Pikalov Oleg 1 1 4
+Kozlov Georgiy 5 1 2
+Kochulin Igor 3 2 1
+Matsievskiy Sergey 2 3 1
+Silaev Aleksandr 4 3 5
+Kaplin Vladimir 4 5 5
+Lobaznikov Dmitriy 3 1 5
+Pechurova Anna 3 4 5
+Kudlo Mihail 5 1 5
+Pokrovskiy Vladimir 5 2 1
+Konovalov Sergey 4 1 2
+Ilyina Irina 5 5 4
+Volobuev Aleksey 4 5 5
+Savostyanov Mihail 3 4 4
+Astahova Kira 3 3 1
+Kononihin Grigoriy 1 5 5
+Mkrtchyan Anna 3 5 5
+Medvedkova Anna 1 1 2
+Samohina Anna 4 1 2
+Bataeva Elena 5 5 1
+Keller Artem 1 1 2
+Sotskov Denis 3 5 3
+</input>
+      <output size="55">3.046153846153846 2.9692307692307693 3.123076923076923
+</output>
+      <correct size="25">3.04615 2.96923 3.12308 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="66" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=28, maxvsz=307200, maxrss=6303744, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="1495">66
+Nefedov Pavel 2 5 1
+Kaplin Vladimir 4 5 5
+Sydykova Perizat 4 4 4
+Gorbik Dmitriy 5 5 4
+Golovkin Yuriy 1 1 5
+Massov Nikolay 2 3 3
+Afonina Nina 2 1 5
+Egorova Viktoriya 1 1 2
+Madekin Sergey 4 5 5
+Martyanov Illarion 4 2 2
+Kuleshova Marina 1 5 3
+Lisenkova Aleksandra 1 5 2
+Mayatskiy Artem 3 4 4
+Konovalov Sergey 4 1 2
+Kuleshov Nikolay 1 3 5
+Sydykova Shahrazada 4 2 5
+Olisova Irina 5 2 5
+Popova Nataya 2 5 4
+Lobaznikov Dmitriy 3 1 5
+Pechurova Anna 3 4 5
+Dyagterev Igor 1 1 5
+Baldina Eleonora 2 3 1
+Trunin Arseniy 4 4 2
+Zaostrovnyh Arseniy 1 3 3
+Titova Sofya 5 2 4
+Chuvileva Evgeniya 5 5 2
+Trifonov Igor 2 5 4
+Sytilin Igor 5 5 1
+Golovko Aleksandr 5 2 1
+Shuleshkina Mariya 1 5 4
+Kuzmin Arsentiy 4 4 2
+Sosnina Anna 5 1 3
+Volodin Sergey 1 4 2
+Mironov Artem 3 1 3
+Semenenko Mariya 1 4 3
+Levin Sergey 4 1 3
+Alyabyeva Natalya 2 5 1
+Anfinogenov Dmitriy 3 4 3
+Kobylkina Svetlana 2 1 4
+Chernyakov Mihail 3 1 4
+Astahova Kira 3 3 1
+Panov Mihail 1 4 3
+Kuznetsov Grigoriy 1 4 2
+Dedinskiy Ilya 1 2 2
+Smirnova Viktoriya 1 4 2
+Volzhin Ilya 1 2 5
+Kazurova Kristina 2 2 5
+Podyapolskaya Marina 2 2 5
+Zorina Viktoriya 1 3 5
+Korchina Anastasiya 3 4 3
+Kalyuzhnaya Irina 2 1 4
+Zaostrovnyh Elizaveta 2 1 5
+Danilov Aleksandr 4 4 2
+Bychkov Boris 5 2 5
+Belova Galina 5 1 4
+Gusev Aleksey 3 5 3
+Shishkin Aleksey 3 3 5
+Dmitrieva Nadezhda 2 5 5
+Ataullin Ayrat 3 5 5
+Turetskiy Andrey 2 3 1
+Volobuev Aleksey 4 5 5
+Vostrikova Nataliya 2 4 5
+Kruglihin Sergey 3 5 4
+Kononihin Grigoriy 1 5 5
+Domnina Svetlana 1 1 4
+Obruch Evgeniya 3 4 5
+</input>
+      <output size="42">2.6666666666666665 3.1666666666666665 3.5
+</output>
+      <correct size="21">2.66667 3.16667 3.5 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="67" status="OK" time="26" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=18, stime=8, ptime=26, rtime=29, maxvsz=307200, maxrss=6336512, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1534">67
+Kovalskiy Ivan 3 4 5
+Varfolomeev Ivan 4 1 2
+Voevodin Vadim 3 5 4
+Golovkin Yuriy 1 1 5
+Kamelin Stanislav 2 2 4
+Yakushenkov Pavel 2 5 4
+Burmistrov Petr 5 4 4
+Harlamov Nikolay 5 4 1
+Pankratova Lyudmila 2 2 5
+Hutuashvili Tamara 5 3 4
+Utolin Dmitriy 2 4 2
+Solomatin Pavel 5 3 3
+Seythalilova Elvira 5 2 3
+Danekin Nikita 4 5 5
+Trifonov Anton 4 4 2
+Uschapovskiy Ivan 1 4 4
+Zaostrovnyh Arseniy 1 3 3
+Sizareva Irina 1 4 2
+Pahomova Veronika 4 5 5
+Paredes Andrey 1 4 1
+Vasyutin Aleksandr 2 4 5
+Administration School 5 2 3
+Lobaznikov Dmitriy 3 1 5
+Abbasova Narmina 2 5 1
+Baldina Eleonora 2 3 1
+Tsyganok Yuriy 2 4 1
+Smolnikova Irina 2 5 4
+Dobroserdov Konstantin 4 3 1
+Kolesnik Andrey 1 5 2
+Larkin Aleksey 4 5 3
+Sydykova Shahrazada 4 2 5
+Larina Elena 4 2 1
+Avilov Evgeniy 2 1 4
+Egorova Viktoriya 1 1 2
+Vyazmin Maksim 3 2 4
+Zamyatina Viktoriya 2 4 4
+Sosnina Anna 5 1 3
+Shashkov Vladimir 2 4 4
+Folomeev Andrey 2 5 1
+Petrov Evgeniy 5 2 3
+Kobylkina Svetlana 2 1 4
+Mosyaykin Vladimir 5 3 1
+Hromyh Nadezhda 2 3 4
+Safronov Dmitriy 3 5 1
+Petropavlovskiy Dmitriy 2 3 5
+Nikonova Elena 4 4 3
+Volobuev Aleksey 4 5 5
+Vityukov Maksim 1 4 5
+Zaostrovnyh Elizaveta 2 1 5
+Zaytsev Mihail 5 3 3
+Lunyaev Aleksandr 4 2 1
+Bazhin Andrey 4 3 3
+Plotnikova Olga 2 5 1
+Pechurova Anna 3 4 5
+Chebanov Georgiy 3 5 5
+Panferova Tatyana 4 1 3
+Zapletin Andrey 3 2 1
+Glikman Leonid 4 2 4
+Savostin Evgeniy 2 3 2
+Gorohova Anna 3 5 5
+Trifonov Igor 2 5 4
+Bychkov Boris 5 2 5
+Mashkarina Ulyana 2 3 3
+Borisov Aleksandr 2 3 2
+Nevolin Oleg 5 4 1
+Kirakosyan Vage 1 3 1
+Kuleshov Sergey 5 2 1
+</input>
+      <output size="42">3.0 3.2238805970149254 3.1044776119402986
+</output>
+      <correct size="19">3 3.22388 3.10448 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="68" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=5, ptime=27, rtime=30, maxvsz=307200, maxrss=6094848, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1508">68
+Lobaznikov Dmitriy 3 1 5
+Avilov Evgeniy 2 1 4
+Trifonov Roman 4 1 4
+Loshkarev Vladimir 1 2 2
+Zibrov Ilya 2 4 2
+Madekin Sergey 4 5 5
+Abyzova Tatyana 3 1 2
+Volobuev Aleksey 4 5 5
+Chernov Vasiliy 1 3 2
+Pokrovskiy Vladimir 5 2 1
+Mantula Petr 5 3 2
+Rozhin Nikita 3 5 2
+Bubnov Nikolay 5 5 1
+Yuzhanin Kirill 1 2 3
+Kozlov Georgiy 5 1 2
+Gorohova Anna 3 5 5
+Mashkarina Ulyana 2 3 3
+Krohina Darya 3 2 5
+Gorinov Ivan 3 3 4
+Kuzmin Arsentiy 4 4 2
+Godzhaev Georgiy 4 5 2
+Borisov Aleksandr 2 3 2
+Shabelskiy Yan 3 4 4
+Kuznetsova Antonina 1 1 5
+Buzukashvili Sofya 2 5 4
+Suhanov Aleksey 2 5 5
+Osipova Vasilisa 5 4 2
+Konovalov Sergey 4 1 2
+Samohina Anna 4 1 2
+Ligus Natalya 1 3 3
+Chepala Mariya 5 4 1
+Belyh Andrey 3 3 2
+Shashkov Vladimir 2 4 4
+Dmitrieva Nadezhda 2 5 5
+Saharov Denis 1 3 2
+Shevchenko Vasiliy 4 1 5
+Iznaurova Elizaveta 5 1 5
+Shlyapugina Lyudmila 3 4 5
+Sokolova Elena 4 1 4
+Stogov Yuriy 4 4 3
+Husainova Nailya 2 1 1
+Elagina Elizaveta 4 1 4
+Korol Aleksandra 4 1 5
+Chebanov Georgiy 3 5 5
+Nilova Olga 4 3 4
+Ryabtsev Grigoriy 2 5 2
+Egorova Viktoriya 1 1 2
+Titov Yuriy 2 5 5
+Vostrikova Nataliya 2 4 5
+Bodrov Andrey 3 5 3
+Zorina Viktoriya 1 3 5
+Chuvileva Evgeniya 5 5 2
+Sobakin Pavel 3 5 3
+Kudlo Mihail 5 1 5
+Mironov Artem 3 1 3
+Kuleshova Marina 1 5 3
+Parhomenko Elena 3 1 5
+Pavlov Nikita 3 4 5
+Oynas Taisiya 1 3 3
+Narimanova Kamilya 5 4 3
+Plotnikova Olga 2 5 1
+Tsyganok Yuriy 2 4 1
+Anikin Pavel 5 1 5
+Marina Svetlana 2 4 2
+Podyapolskaya Marina 2 2 5
+Folomeev Andrey 2 5 1
+Panferova Tatyana 4 1 3
+Belyh Kristina 5 2 4
+</input>
+      <output size="56">3.014705882352941 3.0441176470588234 3.2794117647058822
+</output>
+      <correct size="25">3.01471 3.04412 3.27941 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="69" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=7, stime=20, ptime=27, rtime=28, maxvsz=307200, maxrss=6213632, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1514">69
+Sveshnikddov Mihail 5 1 5
+Zakurenko Aleksandr 2 4 3
+Kazanskaya Irina 5 3 1
+Belyh Andrey 3 3 2
+Selezneva Natalya 2 2 5
+Fedyna Maksim 2 5 2
+Charikov Aleksandr 2 1 5
+Shibarova Elena 5 1 2
+Pechurova Anna 3 4 5
+Baranova Kseniya 4 2 2
+Lobaznikov Dmitriy 3 1 5
+Plotnikova Olga 2 5 1
+Skovitin Pavel 3 3 5
+Zorina Viktoriya 1 3 5
+Erin Anton 2 4 4
+Skyabin Sergey 2 1 4
+Aleynikov Pavel 5 1 5
+Afanasiev Nikolay 3 1 3
+Stogov Yuriy 4 4 3
+Shlyapugina Lyudmila 3 4 5
+Seythalilova Elvira 5 2 3
+Pikalov Oleg 1 1 4
+Lazovskiy Ivan 4 1 2
+Bychkov Boris 5 2 5
+Pankratova Lyudmila 2 2 5
+Safronova Anna 5 5 2
+Zaharov Sergey 3 3 2
+Grachev Ivan 5 3 2
+Glikman Leonid 4 2 4
+Domnina Svetlana 1 1 4
+Harlamova Aleksandra 4 1 3
+Oynas Taisiya 1 3 3
+Shashkov Vladimir 2 4 4
+Vorovyeva Vasilisa 5 2 2
+Smirnova Viktoriya 1 4 2
+Dobroserdov Konstantin 4 3 1
+Hripunova Veronika 2 5 1
+Volzhin Denis 1 2 2
+Abyzova Tatyana 3 1 2
+Baranova Mariya 2 2 3
+Kolesnik Andrey 1 5 2
+Nevolin Oleg 5 4 1
+Zapletin Andrey 3 2 1
+Lukovich Aleksander 2 2 5
+Sevinyan Grant 2 4 2
+Mayatskiy Artem 3 4 4
+Elagina Elizaveta 4 1 4
+Yakovlev Ivan 5 1 2
+Bobko Ilya 2 5 5
+Vityukov Maksim 1 4 5
+Medvedkova Anna 1 1 2
+Oganesyan Vardan 3 2 3
+Levin Sergey 4 1 3
+Astahova Kira 3 3 1
+Madekin Sergey 4 5 5
+Popova Nataya 2 5 4
+Romanko Denis 5 3 5
+Pechkovskiy Oleg 3 5 1
+Sirotin Vasiliy 1 2 5
+Trenin Kirill 4 2 5
+Babat Anna 2 5 1
+Kuleshova Marina 1 5 3
+Bataeva Elena 5 5 1
+Nefedov Pavel 2 5 1
+Gusev Aleksey 3 5 3
+Lebedev Viktor 2 3 1
+Mashkarina Ulyana 2 3 3
+User Test 1 1 3
+Mantula Petr 5 3 2
+</input>
+      <output size="55">2.927536231884058 2.869565217391304 3.0579710144927534
+</output>
+      <correct size="25">2.92754 2.86957 3.05797 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="70" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=6, ptime=27, rtime=29, maxvsz=307200, maxrss=6205440, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1567">70
+Kolesnik Andrey 1 5 2
+Savostyanov Mihail 3 4 4
+Tarasova Mariya 1 4 1
+Smirnova Nadezhda 1 2 4
+Fedyna Maksim 2 5 2
+Lazovskiy Ivan 4 1 2
+Loshkarev Vladimir 1 2 2
+Bulhova Irina 2 5 1
+Pikalov Oleg 1 1 4
+Erin Anton 2 4 4
+Belyh Andrey 3 3 2
+Vasyutin Aleksandr 2 4 5
+Larina Elena 4 2 1
+Belyh Kristina 5 2 4
+Glushko Matvey 1 1 5
+Samohina Anna 4 1 2
+Lunyaev Aleksandr 4 2 1
+computers Turgor 1 5 3
+Shevchenko Vasiliy 4 1 5
+Husainova Nailya 2 1 1
+Voevodin Vadim 3 5 4
+Sosnina Anna 5 1 3
+Seslavina Anna 1 5 3
+Plotnikova Olga 2 5 1
+Yudahina Elizaveta 5 2 5
+Tomashpolskiy Maksim 2 1 1
+Ryabichev Andrey 1 1 3
+Pechurova Anna 3 4 5
+Bazhin Andrey 4 3 3
+Eremenko Aleksandra 1 4 1
+Uspenskiy Andrey 2 4 4
+Babat Anna 2 5 1
+Kruglihin Sergey 3 5 4
+Morozov Aleksandr 4 3 1
+Sotskov Denis 3 5 3
+Kuvshinov Mihail 3 5 3
+Moroz Yaroslav 3 4 3
+Gorinov Ivan 3 3 4
+Anfinogenov Dmitriy 3 4 3
+Kremenetskaya Mariya 5 3 5
+Yapryntsev Aleksey 5 1 1
+Beklemishev Vladimir 1 4 3
+Harlamov Nikolay 5 4 1
+Ataullin Ayrat 3 5 5
+Ilyina Irina 5 5 4
+Tarasenko Natalya 4 5 5
+Gronskiy Dmitriy 3 2 1
+Volobuev Aleksey 4 5 5
+Kuzmin Arsentiy 4 4 2
+Skyabin Sergey 2 1 4
+Shamin Nikita 3 5 3
+Agapova Lyudmila 5 1 1
+Hripunova Veronika 2 5 1
+Kazakova Galina 4 3 5
+Nalench Yuliya 3 2 2
+Potapenko Evgeniya 3 1 1
+Razumov Aleksandr 3 1 4
+Hinko Evgeniy 4 1 2
+Vostrikova Nataliya 2 4 5
+Bodrov Andrey 3 5 3
+Hromyh Nadezhda 2 3 4
+Sydykova Shahrazada 4 2 5
+Semenenko Mariya 1 4 3
+Smirnova Viktoriya 1 4 2
+Lunev Aleksey 5 4 3
+Mashkarina Ulyana 2 3 3
+Kovalskiy Ivan 3 4 5
+Pavlova Irina 4 2 4
+Abbasova Narmina 2 5 1
+Konovalov Sergey 4 1 2
+</input>
+      <output size="57">2.8857142857142857 3.1857142857142855 2.9285714285714284
+</output>
+      <correct size="25">2.88571 3.18571 2.92857 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="71" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=6, ptime=27, rtime=28, maxvsz=307200, maxrss=6201344, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1590">71
+Veyknis Violetta 3 4 5
+Volodin Sergey 1 4 2
+Safronova Anna 5 5 2
+Savostyanov Mihail 3 4 4
+Belova Galina 5 1 4
+Agadzhanyan Darina 1 2 2
+Pavlova Irina 4 2 4
+Ligus Natalya 1 3 3
+Melnik Denis 2 4 5
+Dedinskiy Ilya 1 2 2
+Nikolaev Maksim 4 3 1
+Dmitrieva Nadezhda 2 5 5
+Buzukashvili Sofya 2 5 4
+Sytilin Igor 5 5 1
+Zibrov Ilya 2 4 2
+Pikalov Oleg 1 1 4
+Lunev Aleksey 5 4 3
+Mantula Petr 5 3 2
+Suhorukov Ilya 5 1 1
+Kazanskaya Irina 5 3 1
+Trifonov Roman 4 1 4
+Glikman Leonid 4 2 4
+Alyabyeva Natalya 2 5 1
+Pirogov Pavel 4 1 4
+Astahova Kira 3 3 1
+Gorohova Anna 3 5 5
+Pechurova Anna 3 4 5
+Pechkovskiy Oleg 3 5 1
+Domnina Svetlana 1 1 4
+Prokopiev Nikolay 1 5 5
+Vorovyeva Vasilisa 5 2 2
+Polonskiy Sergey 1 3 4
+Kolesnik Andrey 1 5 2
+Chepala Mariya 5 4 1
+Trenin Kirill 4 2 5
+Dudnik Elizaveta 1 4 1
+Stogov Yuriy 4 4 3
+Ilyina Irina 5 5 4
+Selezneva Natalya 2 2 5
+Shamin Nikita 3 5 3
+Solomatin Pavel 5 3 3
+Chayko Maksim 1 3 4
+Petropavlovskiy Dmitriy 2 3 5
+Vahnichenko Aleksey 5 4 2
+Golovkin Yuriy 1 1 5
+Massov Nikolay 2 3 3
+Pokrovskiy Vladimir 5 2 1
+Kuzmin Arsentiy 4 4 2
+Kremenetskaya Mariya 5 3 5
+Kamelin Stanislav 2 2 4
+Kuznetsov Grigoriy 1 4 2
+Mironova Anna 3 3 4
+Podyapolskaya Marina 2 2 5
+Shuleshkina Mariya 1 5 4
+Zhuravlev Aleksandr 4 2 5
+Medvedev Aleksey 1 2 2
+Sokolova Elena 4 1 4
+Zamyatina Viktoriya 2 4 4
+account Guest 5 1 5
+Yakuchev Igor 4 1 4
+Godzhaev Georgiy 4 5 2
+Loshkarev Vladimir 1 2 2
+Chebanov Georgiy 3 5 5
+Marikot Anastasiya 2 4 2
+Tsyganok Yuriy 2 4 1
+Vasyutin Aleksandr 2 4 5
+Ivanov Dmitriy 1 5 4
+Kuznetsov Nikita 3 1 1
+Eryushova Karina 4 4 4
+Abyzova Tatyana 3 1 2
+Lobaznikov Dmitriy 3 1 5
+</input>
+      <output size="57">2.9295774647887325 3.1267605633802815 3.1971830985915495
+</output>
+      <correct size="25">2.92958 3.12676 3.19718 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="72" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=26, stime=0, ptime=26, rtime=28, maxvsz=307200, maxrss=6258688, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1592">72
+Bazhin Andrey 4 3 3
+Androsov Vladimir 3 2 4
+Savostyanov Mihail 3 4 4
+Shibarova Elena 5 1 2
+Kudlo Mihail 5 1 5
+Ryabtsev Grigoriy 2 5 2
+Polonskiy Sergey 1 3 4
+Trenin Kirill 4 2 5
+Potapenko Evgeniya 3 1 1
+Yakovlev Ivan 5 1 2
+Obruch Evgeniya 3 4 5
+Trifonov Igor 2 5 4
+Gorohova Anna 3 5 5
+Kubrak Dmitriy 1 3 5
+Gronskiy Dmitriy 3 2 1
+Mashkarina Ulyana 2 3 3
+Marachev Aleksey 1 4 4
+Dyagterev Igor 1 1 5
+Medvedev Aleksey 1 2 2
+Pirogov Pavel 4 1 4
+Nalench Yuliya 3 2 2
+Zaostrovnyh Arseniy 1 3 3
+Volzhin Denis 1 2 2
+Pavlov Nikita 3 4 5
+Sydykova Perizat 4 4 4
+Medvedkova Anna 1 1 2
+Agapova Lyudmila 5 1 1
+Danilin Konstantin 5 4 5
+Fedyna Maksim 2 5 2
+Tsoy Svetlana 2 5 2
+Rinchinov Eduard 2 1 3
+Lunyaev Aleksandr 4 2 1
+Zapletin Andrey 3 2 1
+Gayday Anton 3 2 5
+Agadzhanyan Darina 1 2 2
+Razumov Aleksandr 3 1 4
+Folomeev Andrey 2 5 1
+Suhanov Aleksey 2 5 5
+Erin Anton 2 4 4
+Skovitin Pavel 3 3 5
+Osipova Vasilisa 5 4 2
+Nefedov Pavel 2 5 1
+Danekin Nikita 4 5 5
+Ivkin Evgeniy 2 5 3
+Sizareva Irina 1 4 2
+Semerikov Ilya 2 4 3
+computer Library 4 3 4
+Dubrovin Sergey 3 2 1
+Zaharov Sergey 3 3 2
+Safronov Dmitriy 3 5 1
+Korchina Anastasiya 3 4 3
+Hripunova Veronika 2 5 1
+Turetskiy Andrey 2 3 1
+Popova Nataya 2 5 4
+Osadchiy Denis 5 5 2
+Kuvshinov Mihail 3 5 3
+Zamyatina Viktoriya 2 4 4
+Mkrtchyan Anna 3 5 5
+Domnina Svetlana 1 1 4
+Ataullin Ayrat 3 5 5
+Grachev Ivan 5 3 2
+Marina Svetlana 2 4 2
+Kruglihin Sergey 3 5 4
+Smirnova Viktoriya 1 4 2
+Danilov Aleksandr 4 4 2
+Volodin Sergey 1 4 2
+Hinko Evgeniy 4 1 2
+Uschapovskiy Ivan 1 4 4
+Kuznetsova Antonina 1 1 5
+Kolesnik Andrey 1 5 2
+Dedinskiy Ilya 1 2 2
+Svirida Anton 3 4 3
+</input>
+      <output size="41">2.638888888888889 3.25 3.013888888888889
+</output>
+      <correct size="22">2.63889 3.25 3.01389 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="73" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6254592, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1642">73
+Afanasiev Petr 5 4 2
+Gorinov Ivan 3 3 4
+Melnik Denis 2 4 5
+Parhomenko Elena 3 1 5
+Oganesyan Vardan 3 2 3
+Mironova Anna 3 3 4
+Bychkov Boris 5 2 5
+Zamyatina Viktoriya 2 4 4
+Dubrovin Sergey 3 2 1
+Glushkov Sergey 3 5 5
+Sveshnikddov Mihail 5 1 5
+Veyknis Violetta 3 4 5
+Mironov Artem 3 1 3
+Starovoytova Darya 3 5 5
+Vasyutin Aleksandr 2 4 5
+Alyabyeva Natalya 2 5 1
+Mosyaykin Vladimir 5 3 1
+Zapletin Andrey 3 2 1
+Vyazmin Maksim 3 2 4
+Klimov Andrey 5 1 1
+computer Library 4 3 4
+Dobroserdov Konstantin 4 3 1
+Blazhenova Anastasiya 5 2 5
+Osipova Vasilisa 5 4 2
+Sydykova Perizat 4 4 4
+User Test 1 1 3
+Seslavina Anna 1 5 3
+Samohina Anna 4 1 2
+Varfolomeev Ivan 4 1 2
+Abbasova Narmina 2 5 1
+Medvedkova Anna 1 1 2
+Bobko Ilya 2 5 5
+Klimov Aleksandr 2 4 1
+Potapenko Evgeniya 3 1 1
+Savostin Evgeniy 2 3 2
+Smirnova Viktoriya 1 4 2
+Kabykin Aleksey 4 1 2
+Gorbik Dmitriy 5 5 4
+Tomashpolskiy Maksim 2 1 1
+Mantula Petr 5 3 2
+Sevinyan Grant 2 4 2
+Podyapolskaya Marina 2 2 5
+Korol Aleksandra 4 1 5
+Zimin Roman 3 3 5
+Vasilenko Ilya 2 4 2
+Kobylkina Svetlana 2 1 4
+Shuleshkina Mariya 1 5 4
+Agapova Lyudmila 5 1 1
+Panteleeva Margarita 2 1 3
+Danilin Konstantin 5 4 5
+Oynas Taisiya 1 3 3
+Eremenko Aleksandra 1 4 1
+Pivnenko Igor 1 5 2
+Volobuev Aleksey 4 5 5
+Svirida Anton 3 4 3
+Grachev Ivan 5 3 2
+Pahomova Veronika 4 5 5
+Hutuashvili Tamara 5 3 4
+Trenin Kirill 4 2 5
+Madekin Sergey 4 5 5
+Selezneva Natalya 2 2 5
+Folomeev Andrey 2 5 1
+Vaulina Tatyana 2 3 5
+Yudahina Elizaveta 5 2 5
+Melichenko Ilya 1 1 4
+Nikolaev Maksim 4 3 1
+Solomatin Pavel 5 3 3
+Ivkin Evgeniy 2 5 3
+Sergeev Ilya 3 5 1
+Uspenskiy Andrey 2 4 4
+Zaytsev Mihail 5 3 3
+Kostyuchenok Ivan 2 2 1
+Pechurova Anna 3 4 5
+</input>
+      <output size="56">3.0821917808219177 3.041095890410959 3.1506849315068495
+</output>
+      <correct size="24">3.08219 3.0411 3.15068 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="74" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=4, ptime=26, rtime=28, maxvsz=307200, maxrss=6266880, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1617">74
+Kudlo Mihail 5 1 5
+Solomatin Pavel 5 3 3
+Panferova Tatyana 4 1 3
+Trifonov Igor 2 5 4
+Pirogov Pavel 4 1 4
+Sydykova Shahrazada 4 2 5
+Petropavlovskiy Dmitriy 2 3 5
+Ilyina Irina 5 5 4
+Burmistrov Petr 5 4 4
+Volodin Sergey 1 4 2
+Panov Mihail 1 4 3
+Blazhenova Anastasiya 5 2 5
+Tsvelihovskiy Boris 5 4 4
+Fedyna Maksim 2 5 2
+Erin Anton 2 4 4
+Shimko Oleg 2 5 2
+Sokolova Elena 4 1 4
+Olisova Irina 5 2 5
+Yudahina Elizaveta 5 2 5
+Medvedkova Anna 1 1 2
+Safronova Anna 5 5 2
+Melnik Denis 2 4 5
+Vahnichenko Aleksey 5 4 2
+Khait Oleg 4 5 1
+Domnina Svetlana 1 1 4
+Polonskiy Sergey 1 3 4
+Baranova Mariya 2 2 3
+Zaostrovnyh Elizaveta 2 1 5
+Lazutov Evgeniy 5 3 5
+Pavlikov Maksim 2 5 2
+Semerikov Ilya 2 4 3
+Smirnova Viktoriya 1 4 2
+Bobko Ilya 2 5 5
+Krohina Darya 3 2 5
+Danilov Aleksandr 4 4 2
+Agadzhanyan Darina 1 2 2
+Afonina Nina 2 1 5
+Chebanov Georgiy 3 5 5
+Lazovskiy Ivan 4 1 2
+Trifonov Anton 4 4 2
+Nevolin Oleg 5 4 1
+Narimanova Kamilya 5 4 3
+Folomeev Andrey 2 5 1
+Nilova Olga 4 3 4
+Kuleshov Nikolay 1 3 5
+Seslavina Anna 1 5 3
+Vasyutin Aleksandr 2 4 5
+Belova Galina 5 1 4
+Sizareva Irina 1 4 2
+Grachev Ivan 5 3 2
+Ataullin Ayrat 3 5 5
+Mantula Petr 5 3 2
+Yunin Oleg 4 5 3
+Plotnikova Olga 2 5 1
+Pechurova Anna 3 4 5
+Savostyanov Mihail 3 4 4
+Kuzmin Arsentiy 4 4 2
+Anikin Pavel 5 1 5
+Mironova Anna 3 3 4
+Oynas Taisiya 1 3 3
+Razumov Aleksandr 3 1 4
+Tarasova Mariya 1 4 1
+Bulhova Irina 2 5 1
+Smirnova Nadezhda 1 2 4
+Kovalskiy Ivan 3 4 5
+Kalyuzhnaya Irina 2 1 4
+Yuzhanin Kirill 1 2 3
+Veyknis Violetta 3 4 5
+Tsoy Svetlana 2 5 2
+Volkov Kirill 3 3 4
+Korchina Anastasiya 3 4 3
+Pankratova Lyudmila 2 2 5
+Alyabyeva Natalya 2 5 1
+Vasilenko Ilya 2 4 2
+</input>
+      <output size="55">2.945945945945946 3.2837837837837838 3.364864864864865
+</output>
+      <correct size="25">2.94595 3.28378 3.36486 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="75" status="OK" time="29" real-time="32" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=29, stime=0, ptime=29, rtime=32, maxvsz=307200, maxrss=6086656, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1668">75
+Petrova Mariya 3 2 5
+Nosenko Valentin 5 2 5
+Yapryntsev Aleksey 5 1 1
+Sokolova Elena 4 1 4
+Ryabkina Anastasiya 4 3 1
+Zorina Viktoriya 1 3 5
+Zakurenko Aleksandr 2 4 3
+Blazhenova Anastasiya 5 2 5
+Obruch Evgeniya 3 4 5
+Melichenko Ilya 1 1 4
+Mantula Petr 5 3 2
+Skovitin Pavel 3 3 5
+Vityukov Maksim 1 4 5
+Mironov Artem 3 1 3
+Nefedov Pavel 2 5 1
+Osadchiy Denis 5 5 2
+Keller Artem 1 1 2
+Kirakosyan Vage 1 3 1
+Varfolomeev Ivan 4 1 2
+Erin Anton 2 4 4
+Sergeev Ilya 3 5 1
+Borisov Aleksandr 2 3 2
+Solomatin Pavel 5 3 3
+Savostyanov Mihail 3 4 4
+Dmitrieva Nadezhda 2 5 5
+Belova Galina 5 1 4
+Zaostrovnyh Arseniy 1 3 3
+Madekin Sergey 4 5 5
+Anikin Pavel 5 1 5
+Babat Anna 2 5 1
+Panov Mihail 1 4 3
+Volodina Anna 2 1 3
+Safronov Dmitriy 3 5 1
+Zhdanova Valeriya 2 3 1
+Smolnikova Irina 2 5 4
+Markov Valeriy 4 5 2
+Harlamov Nikolay 5 4 1
+Harlamova Aleksandra 4 1 3
+Pankratova Lyudmila 2 2 5
+Pokrovskiy Vladimir 5 2 1
+Glushko Matvey 1 1 5
+Skyabin Sergey 2 1 4
+Parhomenko Elena 3 1 5
+Kuvshinov Mihail 3 5 3
+Volzhin Denis 1 2 2
+Sizareva Irina 1 4 2
+Shuleshkina Mariya 1 5 4
+Sosnina Anna 5 1 3
+Kalyuzhnaya Irina 2 1 4
+Borisov Daniil 4 1 5
+Kolesnik Andrey 1 5 2
+Uschapovskiy Ivan 1 4 4
+Kuznetsov Nikita 3 1 1
+Titov Yuriy 2 5 5
+Vasyutin Aleksandr 2 4 5
+Vasilenko Ilya 2 4 2
+Korol Aleksandra 4 1 5
+Mayatskiy Artem 3 4 4
+Vostrikova Nataliya 2 4 5
+Tulegenov Yuriy 3 5 4
+Dudnik Elizaveta 1 4 1
+Svirida Anton 3 4 3
+Bataeva Elena 5 5 1
+Utolin Dmitriy 2 4 2
+Suhorukov Ilya 5 1 1
+Shabelskiy Yan 3 4 4
+Zapletin Andrey 3 2 1
+Glikman Leonid 4 2 4
+Tarasenko Natalya 4 5 5
+Loshkarev Vladimir 1 2 2
+Mosyaykin Vladimir 5 3 1
+Kabykin Aleksey 4 1 2
+Pikalov Oleg 1 1 4
+Mashkarina Ulyana 2 3 3
+Kuleshov Sergey 5 2 1
+</input>
+      <output size="15">2.88 2.96 3.08
+</output>
+      <correct size="16">2.88 2.96 3.08 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="76" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=14, stime=13, ptime=27, rtime=28, maxvsz=307200, maxrss=6090752, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1699">76
+Petropavlovskiy Dmitriy 2 3 5
+Borisov Daniil 4 1 5
+Mironov Artem 3 1 3
+Keller Artem 1 1 2
+Saharov Denis 1 3 2
+Yuzhanin Kirill 1 2 3
+Seliverstova Anastasiya 2 3 1
+Shlyapugina Lyudmila 3 4 5
+Starovoytova Darya 3 5 5
+Varfolomeev Ivan 4 1 2
+Chernov Vasiliy 1 3 2
+Kovalskiy Ivan 3 4 5
+Melichenko Ilya 1 1 4
+Filatov Dmitriy 3 2 5
+Sotskov Denis 3 5 3
+Elshin Denis 1 2 3
+Tamarova Inna 1 4 5
+Ivkin Evgeniy 2 5 3
+Ivanov Dmitriy 1 5 4
+Shevchenko Vasiliy 4 1 5
+Skovitin Pavel 3 3 5
+Olisova Irina 5 2 5
+Vahnichenko Aleksey 5 4 2
+Baldina Eleonora 2 3 1
+Pavlikov Maksim 2 5 2
+Voevodin Vadim 3 5 4
+Lobaznikov Dmitriy 3 1 5
+Yudahina Elizaveta 5 2 5
+Marikot Anastasiya 2 4 2
+Rozhin Nikita 3 5 2
+Osipova Vasilisa 5 4 2
+Nikolaev Maksim 4 3 1
+Dyagterev Igor 1 1 5
+Kubrak Dmitriy 1 3 5
+Sveshnikddov Mihail 5 1 5
+Chuvileva Evgeniya 5 5 2
+Hinko Evgeniy 4 1 2
+Shimko Oleg 2 5 2
+Sydykova Perizat 4 4 4
+Chepala Mariya 5 4 1
+Kolesnik Andrey 1 5 2
+Burmistrov Petr 5 4 4
+Yakushenkov Pavel 2 5 4
+Potapenko Evgeniya 3 1 1
+Oganesyan Vardan 3 2 3
+Suhanov Aleksey 2 5 5
+Seslavina Anna 1 5 3
+Shishkin Aleksey 3 3 5
+Beklemishev Vladimir 1 4 3
+Danilin Konstantin 5 4 5
+Kuznetsov Grigoriy 1 4 2
+Korchina Anastasiya 3 4 3
+Belyh Andrey 3 3 2
+Folomeev Andrey 2 5 1
+Erin Anton 2 4 4
+Zimin Roman 3 3 5
+Shuleshkina Mariya 1 5 4
+Anikin Pavel 5 1 5
+Baranova Kseniya 4 2 2
+Mizitov Andrey 4 3 1
+Pikalov Oleg 1 1 4
+Seythalilova Elvira 5 2 3
+Kalyuzhnaya Irina 2 1 4
+Sashurin Aleksandr 1 2 1
+Shamin Nikita 3 5 3
+Vasyutin Aleksandr 2 4 5
+Bataeva Elena 5 5 1
+Lazovskiy Ivan 4 1 2
+Savostyanov Mihail 3 4 4
+Zaharov Sergey 3 3 2
+Gusev Aleksey 3 5 3
+Shabelskiy Yan 3 4 4
+User Test 1 1 3
+Bubnov Nikolay 5 5 1
+Panferova Tatyana 4 1 3
+Glushkov Sergey 3 5 5
+</input>
+      <output size="56">2.8289473684210527 3.1842105263157894 3.236842105263158
+</output>
+      <correct size="25">2.82895 3.18421 3.23684 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="77" status="OK" time="27" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=6, ptime=27, rtime=28, maxvsz=307200, maxrss=6393856, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1712">77
+Kubrak Dmitriy 1 3 5
+Panferova Tatyana 4 1 3
+Mironova Anna 3 3 4
+Mayatskiy Artem 3 4 4
+Lisenkova Aleksandra 1 5 2
+Larina Elena 4 2 1
+Bagrova Anastasiya 4 5 2
+Suhanov Aleksey 2 5 5
+Korchina Anastasiya 3 4 3
+Petrova Mariya 3 2 5
+Kamelin Stanislav 2 2 4
+Hinko Evgeniy 4 1 2
+Bobko Ilya 2 5 5
+Bubnov Nikolay 5 5 1
+Danilov Aleksandr 4 4 2
+Erin Anton 2 4 4
+Chernov Vasiliy 1 3 2
+Nikonova Elena 4 4 3
+Gorohova Anna 3 5 5
+Podyapolskaya Marina 2 2 5
+Kochulin Igor 3 2 1
+Lukovich Aleksander 2 2 5
+Romanko Denis 5 3 5
+Konovalov Sergey 4 1 2
+Kononihin Grigoriy 1 5 5
+Kuvshinov Mihail 3 5 3
+Voinov Pavel 3 2 5
+Abbasova Narmina 2 5 1
+Zibrov Ilya 2 4 2
+Tamarova Inna 1 4 5
+Gronskiy Dmitriy 3 2 1
+Saharov Denis 1 3 2
+Levin Sergey 4 1 3
+Kalyuzhnaya Irina 2 1 4
+Glushkov Sergey 3 5 5
+Iznaurova Elizaveta 5 1 5
+Kobylkina Svetlana 2 1 4
+Astahova Kira 3 3 1
+Kabykin Aleksey 4 1 2
+Marachev Aleksey 1 4 4
+Osadchiy Denis 5 5 2
+Sizareva Irina 1 4 2
+Volodina Anna 2 1 3
+Androsov Vladimir 3 2 4
+Yakushenkov Pavel 2 5 4
+Burmistrov Petr 5 4 4
+Trenin Kirill 4 2 5
+Agadzhanyan Darina 1 2 2
+Baranova Mariya 2 2 3
+Tulegenov Yuriy 3 5 4
+Eryushova Karina 4 4 4
+Zhdanova Valeriya 2 3 1
+Yapryntsev Aleksey 5 1 1
+Yuzhanin Kirill 1 2 3
+Popova Nataya 2 5 4
+Ryabtsev Grigoriy 2 5 2
+Tokareva Darya 2 2 4
+Shabelskiy Yan 3 4 4
+Mashkarina Ulyana 2 3 3
+Charikov Aleksandr 2 1 5
+Krohina Darya 3 2 5
+Kuzmin Arsentiy 4 4 2
+Chernyakov Mihail 3 1 4
+Vasilenko Ilya 2 4 2
+Osipova Vasilisa 5 4 2
+Volodin Sergey 1 4 2
+Yakuchev Igor 4 1 4
+Sydykova Shahrazada 4 2 5
+Zhuravlev Aleksandr 4 2 5
+Medvedkova Anna 1 1 2
+Stogov Yuriy 4 4 3
+Egorova Viktoriya 1 1 2
+Elshin Denis 1 2 3
+Domnina Svetlana 1 1 4
+Yudahina Elizaveta 5 2 5
+Vakulenko Artem 4 4 5
+Moroz Yaroslav 3 4 3
+</input>
+      <output size="56">2.779220779220779 2.9740259740259742 3.2987012987012987
+</output>
+      <correct size="24">2.77922 2.97403 3.2987 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="78" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=19, stime=8, ptime=27, rtime=29, maxvsz=307200, maxrss=6160384, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1741">78
+Geraskina Leylya 2 4 5
+Nikolaev Maksim 4 3 1
+Dubrovin Sergey 3 2 1
+Ryabtsev Grigoriy 2 5 2
+Pavlikov Maksim 2 5 2
+Prokopiev Nikolay 1 5 5
+Marikot Anastasiya 2 4 2
+Elshin Denis 1 2 3
+Babat Anna 2 5 1
+Kruglihin Sergey 3 5 4
+Titov Yuriy 2 5 5
+Kobylkina Svetlana 2 1 4
+Kazanskaya Irina 5 3 1
+Loshkarev Vladimir 1 2 2
+Polonskiy Sergey 1 3 4
+Petrova Mariya 3 2 5
+Yudahina Elizaveta 5 2 5
+Golovkin Yuriy 1 1 5
+Zapletin Andrey 3 2 1
+Danilenko Ekaterina 1 5 2
+Kochulin Igor 3 2 1
+Kirakosyan Vage 1 3 1
+Nefedov Pavel 2 5 1
+Chebanov Georgiy 3 5 5
+Sosnina Anna 5 1 3
+Sevinyan Grant 2 4 2
+Glushkov Sergey 3 5 5
+Agadzhanyan Darina 1 2 2
+Solomatin Pavel 5 3 3
+Okolotkov Aleksey 2 1 1
+Trunin Arseniy 4 4 2
+Kuvshinov Mihail 3 5 3
+Afonina Nina 2 1 5
+Shashkov Vladimir 2 4 4
+Zaharov Sergey 3 3 2
+Harlamov Nikolay 5 4 1
+Baranova Kseniya 4 2 2
+Seliverstova Anastasiya 2 3 1
+Rozhin Nikita 3 5 2
+Uschapovskiy Ivan 1 4 4
+Kostyuchenok Ivan 2 2 1
+Pechurova Anna 3 4 5
+Shuleshkina Mariya 1 5 4
+Kamelin Stanislav 2 2 4
+Titova Sofya 5 2 4
+Tomashpolskiy Maksim 2 1 1
+Svirida Anton 3 4 3
+Afanasiev Nikolay 3 1 3
+Kuleshov Sergey 5 2 1
+Dyagterev Igor 1 1 5
+Danilin Konstantin 5 4 5
+Krohina Darya 3 2 5
+Silaev Aleksandr 4 3 5
+Rinchinov Eduard 2 1 3
+Tarasova Mariya 1 4 1
+Belova Galina 5 1 4
+Kazakova Galina 4 3 5
+Kuzmin Arsentiy 4 4 2
+Ligus Natalya 1 3 3
+Pokrovskiy Vladimir 5 2 1
+Tokareva Darya 2 2 4
+Madekin Sergey 4 5 5
+Zorina Viktoriya 1 3 5
+Hinko Evgeniy 4 1 2
+Klimov Aleksandr 2 4 1
+computers Turgor 1 5 3
+Zimin Roman 3 3 5
+Nevolin Oleg 5 4 1
+Sotskov Denis 3 5 3
+Lazovskiy Ivan 4 1 2
+Danko Leonid 2 2 4
+Shishkin Aleksey 3 3 5
+Chepala Mariya 5 4 1
+Lisenkova Aleksandra 1 5 2
+Korchina Anastasiya 3 4 3
+Danilov Aleksandr 4 4 2
+Paredes Andrey 1 4 1
+Vityukov Maksim 1 4 5
+</input>
+      <output size="56">2.717948717948718 3.1538461538461537 2.9358974358974357
+</output>
+      <correct size="24">2.71795 3.15385 2.9359 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="79" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=23, stime=5, ptime=28, rtime=30, maxvsz=307200, maxrss=6385664, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1752">79
+Stolyarov Andrey 5 5 1
+Grachev Ivan 5 3 2
+Tashkeev Aleksandr 3 1 1
+Silaev Aleksandr 4 3 5
+Administration School 5 2 3
+Sosnina Anna 5 1 3
+Pankratova Lyudmila 2 2 5
+Pivnenko Igor 1 5 2
+Ivanov Dmitriy 1 5 4
+Yunin Oleg 4 5 3
+Keller Artem 1 1 2
+Madekin Sergey 4 5 5
+Tomashpolskiy Maksim 2 1 1
+Anikin Pavel 5 1 5
+Mironov Artem 3 1 3
+Elagina Elizaveta 4 1 4
+Glikman Leonid 4 2 4
+Titova Sofya 5 2 4
+Kuleshov Nikolay 1 3 5
+Harlamov Nikolay 5 4 1
+Kudlo Mihail 5 1 5
+Okolotkov Aleksey 2 1 1
+Nevolin Oleg 5 4 1
+Shlyapugina Lyudmila 3 4 5
+Savostin Evgeniy 2 3 2
+Kalyuzhnaya Irina 2 1 4
+Zakurenko Aleksandr 2 4 3
+Volzhin Ilya 1 2 5
+Nilova Olga 4 3 4
+Vishnyakov Ivan 2 3 2
+Panov Mihail 1 4 3
+Panferova Tatyana 4 1 3
+Gusev Aleksey 3 5 3
+Olisova Irina 5 2 5
+Tamarova Inna 1 4 5
+Afanasiev Nikolay 3 1 3
+Danilov Aleksandr 4 4 2
+Contest Programming 4 4 2
+Levin Sergey 4 1 3
+Golovkin Yuriy 1 1 5
+Suhorukov Ilya 5 1 1
+Lobaznikov Dmitriy 3 1 5
+Yapryntsev Aleksey 5 1 1
+Romanko Denis 5 3 5
+Martyanov Illarion 4 2 2
+Husainova Nailya 2 1 1
+Baranova Kseniya 4 2 2
+Kuvshinov Mihail 3 5 3
+Petrova Mariya 3 2 5
+Volodin Sergey 1 4 2
+Babat Anna 2 5 1
+Tsoy Svetlana 2 5 2
+Belyh Andrey 3 3 2
+Dudnik Elizaveta 1 4 1
+Varfolomeev Ivan 4 1 2
+Obruch Evgeniya 3 4 5
+Tokareva Darya 2 2 4
+Danilin Konstantin 5 4 5
+Shabelskiy Yan 3 4 4
+Uschapovskiy Ivan 1 4 4
+Sevinyan Grant 2 4 2
+Osipova Vasilisa 5 4 2
+Potapenko Evgeniya 3 1 1
+Matsievskiy Sergey 2 3 1
+Kononihin Grigoriy 1 5 5
+Pirogov Pavel 4 1 4
+Chepala Mariya 5 4 1
+Nosenko Valentin 5 2 5
+Zaytsev Mihail 5 3 3
+Avilov Evgeniy 2 1 4
+Kamelin Stanislav 2 2 4
+Dubrovin Sergey 3 2 1
+Kremenetskaya Mariya 5 3 5
+system Ejudge 2 1 1
+Medvedev Aleksey 1 2 2
+Sokolova Elena 4 1 4
+Klimov Aleksandr 2 4 1
+Androsov Vladimir 3 2 4
+Kruglihin Sergey 3 5 4
+</input>
+      <output size="56">3.1265822784810124 2.7088607594936707 3.037974683544304
+</output>
+      <correct size="25">3.12658 2.70886 3.03797 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="80" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=17, stime=10, ptime=27, rtime=29, maxvsz=307200, maxrss=6307840, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="1783">80
+Tokareva Darya 2 2 4
+Khait Oleg 4 5 1
+Mironova Anna 3 3 4
+Zaytsev Mihail 5 3 3
+Glikman Leonid 4 2 4
+Lobaznikov Dmitriy 3 1 5
+Veyknis Violetta 3 4 5
+Pavlikov Maksim 2 5 2
+Grachev Ivan 5 3 2
+Medvedev Aleksey 1 2 2
+Uschapovskiy Ivan 1 4 4
+Tarasenko Natalya 4 5 5
+Osipova Vasilisa 5 4 2
+Melichenko Ilya 1 1 4
+Konovalov Sergey 4 1 2
+Sheyh Sheyla 2 5 3
+Burmistrov Petr 5 4 4
+Smolnikova Irina 2 5 4
+Vyazmin Maksim 3 2 4
+Gronskiy Dmitriy 3 2 1
+Sevinyan Grant 2 4 2
+Tulegenov Yuriy 3 5 4
+Larina Elena 4 2 1
+Chayko Maksim 1 3 4
+Vasyutin Aleksandr 2 4 5
+Bobko Ilya 2 5 5
+Vostrikova Nataliya 2 4 5
+Kubrak Dmitriy 1 3 5
+Belova Galina 5 1 4
+Trifonov Igor 2 5 4
+Zhdanova Valeriya 2 3 1
+Vasilenko Ilya 2 4 2
+Glushko Matvey 1 1 5
+Korchina Anastasiya 3 4 3
+Dedinskiy Ilya 1 2 2
+Mayatskiy Artem 3 4 4
+Kaplin Vladimir 4 5 5
+Harlamov Nikolay 5 4 1
+Bulhova Irina 2 5 1
+Dudnik Elizaveta 1 4 1
+Shevchenko Vasiliy 4 1 5
+Kirakosyan Vage 1 3 1
+Zhuravlev Aleksandr 4 2 5
+Danilov Aleksandr 4 4 2
+Dyagterev Igor 1 1 5
+Beklemishev Vladimir 1 4 3
+Titova Sofya 5 2 4
+Lisenkova Aleksandra 1 5 2
+Kostyuchenok Ivan 2 2 1
+Selezneva Natalya 2 2 5
+Sashurin Aleksandr 1 2 1
+Zorina Viktoriya 1 3 5
+Kuleshov Sergey 5 2 1
+Stogov Yuriy 4 4 3
+Paredes Andrey 1 4 1
+Sydykova Perizat 4 4 4
+Medvedkova Anna 1 1 2
+Seliverstova Anastasiya 2 3 1
+Mashkarina Ulyana 2 3 3
+Savostyanov Mihail 3 4 4
+Dubrovin Sergey 3 2 1
+Trenin Kirill 4 2 5
+Iznaurova Elizaveta 5 1 5
+Ivanov Dmitriy 1 5 4
+Afanasiev Petr 5 4 2
+Zapletin Andrey 3 2 1
+Romanko Denis 5 3 5
+Pavlov Nikita 3 4 5
+Blazhenova Anastasiya 5 2 5
+Danko Leonid 2 2 4
+Mkrtchyan Anna 3 5 5
+Titov Yuriy 2 5 5
+Afonina Nina 2 1 5
+Borisov Daniil 4 1 5
+Bagrova Anastasiya 4 5 2
+Oganesyan Vardan 3 2 3
+Petrova Mariya 3 2 5
+Filatov Dmitriy 3 2 5
+Agapova Lyudmila 5 1 1
+Shuleshkina Mariya 1 5 4
+</input>
+      <output size="18">2.8125 3.0875 3.3
+</output>
+      <correct size="19">2.8125 3.0875 3.3 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="81" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=16, stime=11, ptime=27, rtime=29, maxvsz=307200, maxrss=6389760, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1827">81
+Borisov Aleksandr 2 3 2
+Kabykin Aleksey 4 1 2
+Matsievskiy Sergey 2 3 1
+Kremenetskaya Mariya 5 3 5
+Danekin Nikita 4 5 5
+Dyagterev Igor 1 1 5
+Lunev Aleksey 5 4 3
+Rinchinov Eduard 2 1 3
+Svirida Anton 3 4 3
+Kuleshov Nikolay 1 3 5
+Afanasiev Petr 5 4 2
+Hromyh Nadezhda 2 3 4
+Kazakova Galina 4 3 5
+Marachev Aleksey 1 4 4
+Afanasiev Nikolay 3 1 3
+Nosenko Valentin 5 2 5
+Elshin Denis 1 2 3
+Markov Valeriy 4 5 2
+Prokopiev Nikolay 1 5 5
+Shabelskiy Yan 3 4 4
+User Test 1 1 3
+Charikov Aleksandr 2 1 5
+Kobylkina Svetlana 2 1 4
+Harlamova Aleksandra 4 1 3
+Vasyutin Aleksandr 2 4 5
+Semerikov Ilya 2 4 3
+Chernyakov Mihail 3 1 4
+Panteleeva Margarita 2 1 3
+Tomashpolskiy Maksim 2 1 1
+Aleynikov Pavel 5 1 5
+Administration School 5 2 3
+Vostrikova Nataliya 2 4 5
+Sevinyan Grant 2 4 2
+Silaev Aleksandr 4 3 5
+Yudahina Elizaveta 5 2 5
+Gorbik Dmitriy 5 5 4
+Folomeev Andrey 2 5 1
+Agadzhanyan Darina 1 2 2
+Pokrovskiy Vladimir 5 2 1
+Glikman Leonid 4 2 4
+Turetskiy Andrey 2 3 1
+Sosnina Anna 5 1 3
+Tsyganok Yuriy 2 4 1
+Korchina Anastasiya 3 4 3
+Kozlov Georgiy 5 1 2
+Husainova Nailya 2 1 1
+Dmitrieva Nadezhda 2 5 5
+Trenin Kirill 4 2 5
+Belova Galina 5 1 4
+Zakurenko Aleksandr 2 4 3
+Tarasenko Natalya 4 5 5
+Kalyuzhnaya Irina 2 1 4
+Bulhova Irina 2 5 1
+Vyazmin Maksim 3 2 4
+Baranova Mariya 2 2 3
+Blazhenova Anastasiya 5 2 5
+Keller Artem 1 1 2
+Suhorukov Ilya 5 1 1
+Volodina Anna 2 1 3
+Lazutov Evgeniy 5 3 5
+Pavlov Nikita 3 4 5
+Abbasova Narmina 2 5 1
+Sirotin Vasiliy 1 2 5
+Hinko Evgeniy 4 1 2
+Sizareva Irina 1 4 2
+Sydykova Shahrazada 4 2 5
+Stolyarov Andrey 5 5 1
+Avilov Evgeniy 2 1 4
+Yunin Oleg 4 5 3
+Selezneva Natalya 2 2 5
+Lukovich Aleksander 2 2 5
+Babat Anna 2 5 1
+Bataeva Elena 5 5 1
+Pavlova Irina 4 2 4
+Levin Sergey 4 1 3
+Ivkin Evgeniy 2 5 3
+Krohina Darya 3 2 5
+Martyanov Illarion 4 2 2
+Baldina Eleonora 2 3 1
+Shuleshkina Mariya 1 5 4
+Pahomova Veronika 4 5 5
+</input>
+      <output size="57">2.9876543209876543 2.7777777777777777 3.2962962962962963
+</output>
+      <correct size="24">2.98765 2.77778 3.2963 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="82" status="OK" time="26" real-time="28" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=16, stime=10, ptime=26, rtime=28, maxvsz=307200, maxrss=6393856, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="1804">82
+Narimanova Kamilya 5 4 3
+Podyapolskaya Marina 2 2 5
+Androsov Vladimir 3 2 4
+Madekin Sergey 4 5 5
+Burmistrov Petr 5 4 4
+Kabykin Aleksey 4 1 2
+Baranova Kseniya 4 2 2
+Massov Nikolay 2 3 3
+Zhdanova Valeriya 2 3 1
+Kazakova Galina 4 3 5
+Samohina Anna 4 1 2
+Parhomenko Elena 3 1 5
+Petrova Mariya 3 2 5
+Svirida Anton 3 4 3
+Klimov Andrey 5 1 1
+Volobuev Aleksey 4 5 5
+Golovkin Yuriy 1 1 5
+Veyknis Violetta 3 4 5
+Yudahina Elizaveta 5 2 5
+Kochulin Igor 3 2 1
+Kuleshov Sergey 5 2 1
+Tarasova Mariya 1 4 1
+Shevchenko Vasiliy 4 1 5
+Sevinyan Grant 2 4 2
+Bataeva Elena 5 5 1
+Pechkovskiy Oleg 3 5 1
+Kubrak Dmitriy 1 3 5
+Moroz Yaroslav 3 4 3
+Folomeev Andrey 2 5 1
+Okolotkov Aleksey 2 1 1
+Kolesnik Andrey 1 5 2
+User Test 1 1 3
+Charikov Aleksandr 2 1 5
+Dyagterev Igor 1 1 5
+Sashurin Aleksandr 1 2 1
+Titov Yuriy 2 5 5
+Saharov Denis 1 3 2
+Marachev Aleksey 1 4 4
+Iznaurova Elizaveta 5 1 5
+Melnik Denis 2 4 5
+Anikin Pavel 5 1 5
+Dubrovin Sergey 3 2 1
+Sirotin Vasiliy 1 2 5
+Alyabyeva Natalya 2 5 1
+Sizareva Irina 1 4 2
+Abyzova Tatyana 3 1 2
+Mironova Anna 3 3 4
+Vityukov Maksim 1 4 5
+Kostyuchenok Ivan 2 2 1
+Starovoytova Darya 3 5 5
+Zibrov Ilya 2 4 2
+Mantula Petr 5 3 2
+Zakurenko Aleksandr 2 4 3
+Tamarova Inna 1 4 5
+Panferova Tatyana 4 1 3
+Volodin Sergey 1 4 2
+Marina Svetlana 2 4 2
+Borisov Daniil 4 1 5
+Suhorukov Ilya 5 1 1
+Voevodin Vadim 3 5 4
+Volzhin Denis 1 2 2
+Turetskiy Andrey 2 3 1
+Pavlova Irina 4 2 4
+Pavlikov Maksim 2 5 2
+Bodrov Andrey 3 5 3
+Polonskiy Sergey 1 3 4
+Elagina Elizaveta 4 1 4
+Trifonov Anton 4 4 2
+Trifonov Roman 4 1 4
+Borisov Aleksandr 2 3 2
+Vorovyeva Vasilisa 5 2 2
+Yuzhanin Kirill 1 2 3
+Shabelskiy Yan 3 4 4
+Panov Mihail 1 4 3
+Trenin Kirill 4 2 5
+Geraskina Leylya 2 4 5
+Sytilin Igor 5 5 1
+Danko Leonid 2 2 4
+Yurzinova Tatyana 5 3 2
+Lunyaev Aleksandr 4 2 1
+Kobylkina Svetlana 2 1 4
+Hripunova Veronika 2 5 1
+</input>
+      <output size="55">2.8048780487804876 2.902439024390244 3.073170731707317
+</output>
+      <correct size="25">2.80488 2.90244 3.07317 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="83" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=6, ptime=27, rtime=30, maxvsz=307200, maxrss=6156288, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1885">83
+Volodina Anna 2 1 3
+Ataullin Ayrat 3 5 5
+Avilov Evgeniy 2 1 4
+Kalyuzhnaya Irina 2 1 4
+Lebedev Viktor 2 3 1
+Paredes Andrey 1 4 1
+Kazakova Galina 4 3 5
+system Ejudge 2 1 1
+Romanko Denis 5 3 5
+Podyapolskaya Marina 2 2 5
+Pokrovskiy Vladimir 5 2 1
+Abbasova Narmina 2 5 1
+Tamarova Inna 1 4 5
+Vaulina Tatyana 2 3 5
+Pavlikov Maksim 2 5 2
+Dmitrieva Nadezhda 2 5 5
+Krohina Darya 3 2 5
+Nikolaev Maksim 4 3 1
+Mkrtchyan Anna 3 5 5
+Kudlo Mihail 5 1 5
+Eremenko Aleksandra 1 4 1
+Pankratova Lyudmila 2 2 5
+Sveshnikddov Mihail 5 1 5
+Sevinyan Grant 2 4 2
+Zaharov Sergey 3 3 2
+Sydykova Shahrazada 4 2 5
+Chepala Mariya 5 4 1
+Osipova Vasilisa 5 4 2
+Shashkov Vladimir 2 4 4
+Savostin Evgeniy 2 3 2
+Kuznetsova Antonina 1 1 5
+Sergeev Ilya 3 5 1
+Kostyuchenok Ivan 2 2 1
+Tomashpolskiy Maksim 2 1 1
+Ryabichev Andrey 1 1 3
+Golovkin Yuriy 1 1 5
+Loshkarev Vladimir 1 2 2
+Savostyanov Mihail 3 4 4
+Dedinskiy Ilya 1 2 2
+Egorova Viktoriya 1 1 2
+Dobroserdov Konstantin 4 3 1
+Baranova Kseniya 4 2 2
+Parhomenko Elena 3 1 5
+Filatov Dmitriy 3 2 5
+Yunin Oleg 4 5 3
+Pavlov Nikita 3 4 5
+Larkin Aleksey 4 5 3
+Gorinov Ivan 3 3 4
+Svirida Anton 3 4 3
+Shibarova Elena 5 1 2
+Borisov Daniil 4 1 5
+Vostrikova Nataliya 2 4 5
+Smirnova Nadezhda 1 2 4
+Tulegenov Yuriy 3 5 4
+Semerikov Ilya 2 4 3
+Zhdanova Valeriya 2 3 1
+Lunyaev Aleksandr 4 2 1
+Androsov Vladimir 3 2 4
+Contest Programming 4 4 2
+Kuzmin Arsentiy 4 4 2
+Afanasiev Petr 5 4 2
+Gorbik Dmitriy 5 5 4
+Chuvileva Evgeniya 5 5 2
+Lisenkova Aleksandra 1 5 2
+Voevodin Vadim 3 5 4
+computer Library 4 3 4
+Kirakosyan Vage 1 3 1
+Kuleshov Nikolay 1 3 5
+Ivanov Dmitriy 1 5 4
+Glushkov Sergey 3 5 5
+Smolnikova Irina 2 5 4
+Rinchinov Eduard 2 1 3
+Zakurenko Aleksandr 2 4 3
+Sheyh Sheyla 2 5 3
+Saharov Denis 1 3 2
+Shishkin Aleksey 3 3 5
+Mosyaykin Vladimir 5 3 1
+Charikov Aleksandr 2 1 5
+Voinov Pavel 3 2 5
+Korol Aleksandra 4 1 5
+Yapryntsev Aleksey 5 1 1
+Obruch Evgeniya 3 4 5
+Razumov Aleksandr 3 1 4
+</input>
+      <output size="56">2.7951807228915664 2.9879518072289155 3.216867469879518
+</output>
+      <correct size="25">2.79518 2.98795 3.21687 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="84" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6246400, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1837">84
+Kuznetsova Antonina 1 1 5
+Madekin Sergey 4 5 5
+computer Library 4 3 4
+Chernyakov Mihail 3 1 4
+Vahnichenko Aleksey 5 4 2
+Gusev Aleksey 3 5 3
+Uschapovskiy Ivan 1 4 4
+Gronskiy Dmitriy 3 2 1
+Eremenko Aleksandra 1 4 1
+Varfolomeev Ivan 4 1 2
+Mizitov Andrey 4 3 1
+Sergeev Ilya 3 5 1
+Baranova Kseniya 4 2 2
+Osadchiy Denis 5 5 2
+Borisov Daniil 4 1 5
+Polonskiy Sergey 1 3 4
+Savostin Evgeniy 2 3 2
+Pirogov Pavel 4 1 4
+Androsov Vladimir 3 2 4
+Hutuashvili Tamara 5 3 4
+Kazakova Galina 4 3 5
+Chayko Maksim 1 3 4
+Folomeev Andrey 2 5 1
+Panov Mihail 1 4 3
+Shimko Oleg 2 5 2
+Stogov Yuriy 4 4 3
+Buzukashvili Sofya 2 5 4
+Dmitrieva Nadezhda 2 5 5
+Titov Yuriy 2 5 5
+Okolotkov Aleksey 2 1 1
+Agadzhanyan Darina 1 2 2
+Tomashpolskiy Maksim 2 1 1
+Zimin Roman 3 3 5
+Hripunova Veronika 2 5 1
+Novotortsev Leonid 5 1 1
+Volzhin Ilya 1 2 5
+account Guest 5 1 5
+Harlamov Nikolay 5 4 1
+Samohina Anna 4 1 2
+Zapletin Andrey 3 2 1
+Khait Oleg 4 5 1
+Shevchenko Vasiliy 4 1 5
+Kremenetskaya Mariya 5 3 5
+Administration School 5 2 3
+Kuleshov Sergey 5 2 1
+Yunin Oleg 4 5 3
+Safronova Anna 5 5 2
+Kozlov Georgiy 5 1 2
+Trunin Arseniy 4 4 2
+Zibrov Ilya 2 4 2
+Gayday Anton 3 2 5
+Skyabin Sergey 2 1 4
+Trifonov Roman 4 1 4
+Kazanskaya Irina 5 3 1
+Vasilenko Ilya 2 4 2
+Sytilin Igor 5 5 1
+Babat Anna 2 5 1
+Bagrova Anastasiya 4 5 2
+Bubnov Nikolay 5 5 1
+Osipova Vasilisa 5 4 2
+Ivanov Dmitriy 1 5 4
+Plotnikova Olga 2 5 1
+Gorbik Dmitriy 5 5 4
+Aleynikov Pavel 5 1 5
+Morozov Aleksandr 4 3 1
+Pechurova Anna 3 4 5
+Kostyuchenok Ivan 2 2 1
+Sotskov Denis 3 5 3
+Sevinyan Grant 2 4 2
+Yurzinova Tatyana 5 3 2
+Trifonov Igor 2 5 4
+Chebanov Georgiy 3 5 5
+Obruch Evgeniya 3 4 5
+Grachev Ivan 5 3 2
+Afonina Nina 2 1 5
+Markov Valeriy 4 5 2
+Marina Svetlana 2 4 2
+Nikonova Elena 4 4 3
+Keller Artem 1 1 2
+Suhanov Aleksey 2 5 5
+Belova Galina 5 1 4
+Loshkarev Vladimir 1 2 2
+Nikolaev Maksim 4 3 1
+Klimov Andrey 5 1 1
+</input>
+      <output size="56">3.238095238095238 3.1904761904761907 2.8214285714285716
+</output>
+      <correct size="24">3.2381 3.19048 2.82143 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="85" status="OK" time="26" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=5, ptime=26, rtime=29, maxvsz=307200, maxrss=6250496, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1906">85
+Geraskina Leylya 2 4 5
+Kuleshova Marina 1 5 3
+Marina Svetlana 2 4 2
+Mashkarina Ulyana 2 3 3
+Sheyh Sheyla 2 5 3
+Lunyaev Aleksandr 4 2 1
+Varfolomeev Ivan 4 1 2
+Savostin Evgeniy 2 3 2
+Afonina Nina 2 1 5
+Tomashpolskiy Maksim 2 1 1
+Yurzinova Tatyana 5 3 2
+Voevodin Vadim 3 5 4
+Novotortsev Leonid 5 1 1
+Oynas Taisiya 1 3 3
+Pirogov Pavel 4 1 4
+Kruglihin Sergey 3 5 4
+Astahova Kira 3 3 1
+Charikov Aleksandr 2 1 5
+Ivanov Dmitriy 1 5 4
+Korol Aleksandra 4 1 5
+Shashkov Vladimir 2 4 4
+Kuznetsov Grigoriy 1 4 2
+Godzhaev Georgiy 4 5 2
+Moroz Yaroslav 3 4 3
+Vostrikova Nataliya 2 4 5
+Vasyutin Aleksandr 2 4 5
+Gusev Aleksey 3 5 3
+Podyapolskaya Marina 2 2 5
+Chuvileva Evgeniya 5 5 2
+Baldina Eleonora 2 3 1
+Pahomova Veronika 4 5 5
+Androsov Vladimir 3 2 4
+Iznaurova Elizaveta 5 1 5
+Parhomenko Elena 3 1 5
+Smolnikova Irina 2 5 4
+Egorova Viktoriya 1 1 2
+Buzukashvili Sofya 2 5 4
+Gayday Anton 3 2 5
+Zamyatina Viktoriya 2 4 4
+Belyh Kristina 5 2 4
+Uschapovskiy Ivan 1 4 4
+Pikalov Oleg 1 1 4
+Skyabin Sergey 2 1 4
+Gronskiy Dmitriy 3 2 1
+Volzhin Ilya 1 2 5
+Volodin Sergey 1 4 2
+Volzhin Denis 1 2 2
+Lobaznikov Dmitriy 3 1 5
+Yakushenkov Pavel 2 5 4
+Lazovskiy Ivan 4 1 2
+Eryushova Karina 4 4 4
+Zimin Roman 3 3 5
+Ataullin Ayrat 3 5 5
+Tarasenko Natalya 4 5 5
+Kuvshinov Mihail 3 5 3
+Melnik Denis 2 4 5
+Shevchenko Vasiliy 4 1 5
+Bulhova Irina 2 5 1
+Hripunova Veronika 2 5 1
+Bobko Ilya 2 5 5
+Romanko Denis 5 3 5
+Pavlikov Maksim 2 5 2
+Tarasova Mariya 1 4 1
+Ligus Natalya 1 3 3
+Solomatin Pavel 5 3 3
+Husainova Nailya 2 1 1
+Hromyh Nadezhda 2 3 4
+Sytilin Igor 5 5 1
+Madekin Sergey 4 5 5
+Melichenko Ilya 1 1 4
+Kuznetsov Nikita 3 1 1
+Kuznetsova Antonina 1 1 5
+Folomeev Andrey 2 5 1
+Glushkov Sergey 3 5 5
+Krohina Darya 3 2 5
+Vahnichenko Aleksey 5 4 2
+Glikman Leonid 4 2 4
+Aleynikov Pavel 5 1 5
+Seslavina Anna 1 5 3
+Yapryntsev Aleksey 5 1 1
+Grachev Ivan 5 3 2
+Mironov Artem 3 1 3
+Borisov Aleksandr 2 3 2
+Burmistrov Petr 5 4 4
+Zapletin Andrey 3 2 1
+</input>
+      <output size="56">2.776470588235294 3.0941176470588236 3.2823529411764705
+</output>
+      <correct size="25">2.77647 3.09412 3.28235 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="86" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=6, ptime=27, rtime=29, maxvsz=307200, maxrss=6365184, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1937">86
+Pirogov Pavel 4 1 4
+Korol Aleksandra 4 1 5
+Prokopiev Nikolay 1 5 5
+Varfolomeev Ivan 4 1 2
+Volzhin Ilya 1 2 5
+Sydykova Shahrazada 4 2 5
+Solomatin Pavel 5 3 3
+Dmitrieva Nadezhda 2 5 5
+Yunin Oleg 4 5 3
+computer Library 4 3 4
+Semenenko Mariya 1 4 3
+Zhdanova Valeriya 2 3 1
+Chernov Vasiliy 1 3 2
+Sytilin Igor 5 5 1
+Kudlo Mihail 5 1 5
+Kaplin Vladimir 4 5 5
+Agapova Lyudmila 5 1 1
+Afanasiev Nikolay 3 1 3
+Panov Mihail 1 4 3
+Pavlikov Maksim 2 5 2
+Yakuchev Igor 4 1 4
+Sirotin Vasiliy 1 2 5
+Vorovyeva Vasilisa 5 2 2
+Bobko Ilya 2 5 5
+Pokrovskiy Vladimir 5 2 1
+Tashkeev Aleksandr 3 1 1
+Morozov Aleksandr 4 3 1
+Danilenko Ekaterina 1 5 2
+Shuleshkina Mariya 1 5 4
+Sveshnikddov Mihail 5 1 5
+Pikalov Oleg 1 1 4
+Stolyarov Andrey 5 5 1
+Zapletin Andrey 3 2 1
+Mironov Artem 3 1 3
+Kochulin Igor 3 2 1
+Androsov Vladimir 3 2 4
+Suhorukov Ilya 5 1 1
+Silaev Aleksandr 4 3 5
+Nalench Yuliya 3 2 2
+Zaostrovnyh Arseniy 1 3 3
+Gayday Anton 3 2 5
+Tulegenov Yuriy 3 5 4
+Ivanov Dmitriy 1 5 4
+Rozhin Nikita 3 5 2
+Golovko Aleksandr 5 2 1
+Ryabichev Andrey 1 1 3
+Starovoytova Darya 3 5 5
+Suhanov Aleksey 2 5 5
+Samohina Anna 4 1 2
+Shevchenko Vasiliy 4 1 5
+Matsievskiy Sergey 2 3 1
+Trunin Arseniy 4 4 2
+Massov Nikolay 2 3 3
+Stogov Yuriy 4 4 3
+Mizitov Andrey 4 3 1
+Tsvelihovskiy Boris 5 4 4
+Baldina Eleonora 2 3 1
+Kozlov Georgiy 5 1 2
+Kuznetsov Grigoriy 1 4 2
+Tokareva Darya 2 2 4
+Aleynikov Pavel 5 1 5
+Kuleshova Marina 1 5 3
+Khait Oleg 4 5 1
+Folomeev Andrey 2 5 1
+Lukovich Aleksander 2 2 5
+Pankratova Lyudmila 2 2 5
+Kuleshov Sergey 5 2 1
+Kamelin Stanislav 2 2 4
+Eremenko Aleksandra 1 4 1
+Kazurova Kristina 2 2 5
+Borisov Aleksandr 2 3 2
+Klimov Andrey 5 1 1
+Smirnova Viktoriya 1 4 2
+Marachev Aleksey 1 4 4
+Harlamova Aleksandra 4 1 3
+Lazovskiy Ivan 4 1 2
+Kostyuchenok Ivan 2 2 1
+Dubrovin Sergey 3 2 1
+Vakulenko Artem 4 4 5
+Chepala Mariya 5 4 1
+Vaulina Tatyana 2 3 5
+Kuleshov Nikolay 1 3 5
+Lunev Aleksey 5 4 3
+Bazhin Andrey 4 3 3
+Smirnova Nadezhda 1 2 4
+Iznaurova Elizaveta 5 1 5
+</input>
+      <output size="55">3.011627906976744 2.8372093023255816 3.011627906976744
+</output>
+      <correct size="25">3.01163 2.83721 3.01163 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="87" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=6, ptime=27, rtime=29, maxvsz=307200, maxrss=6385664, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1911">87
+Vaulina Tatyana 2 3 5
+Iznaurova Elizaveta 5 1 5
+Larkin Aleksey 4 5 3
+Androsov Vladimir 3 2 4
+system Ejudge 2 1 1
+Suhorukov Ilya 5 1 1
+Romanko Denis 5 3 5
+Smolnikova Irina 2 5 4
+Osipova Vasilisa 5 4 2
+Sevinyan Grant 2 4 2
+Oganesyan Vardan 3 2 3
+Narimanova Kamilya 5 4 3
+Volobuev Aleksey 4 5 5
+Afonina Nina 2 1 5
+Vlasova Natalya 4 1 3
+Tomashpolskiy Maksim 2 1 1
+Pechkovskiy Oleg 3 5 1
+Dudnik Elizaveta 1 4 1
+Shibarova Elena 5 1 2
+Voinov Pavel 3 2 5
+Prokopiev Nikolay 1 5 5
+Pavlova Irina 4 2 4
+Marina Svetlana 2 4 2
+Lunyaev Aleksandr 4 2 1
+Utolin Dmitriy 2 4 2
+Kabykin Aleksey 4 1 2
+Kozlov Georgiy 5 1 2
+Yakuchev Igor 4 1 4
+Tarasenko Natalya 4 5 5
+computer Library 4 3 4
+Fedyna Maksim 2 5 2
+Trifonov Igor 2 5 4
+Vakulenko Artem 4 4 5
+Godzhaev Georgiy 4 5 2
+Gorinov Ivan 3 3 4
+Kuvshinov Mihail 3 5 3
+Gusev Aleksey 3 5 3
+Hripunova Veronika 2 5 1
+Pavlov Nikita 3 4 5
+Kazakova Galina 4 3 5
+Pahomova Veronika 4 5 5
+Belyh Andrey 3 3 2
+Massov Nikolay 2 3 3
+Kostyuchenok Ivan 2 2 1
+Kalyuzhnaya Irina 2 1 4
+Eremenko Aleksandra 1 4 1
+Gronskiy Dmitriy 3 2 1
+Astahova Kira 3 3 1
+Tamarova Inna 1 4 5
+Sydykova Perizat 4 4 4
+Abyzova Tatyana 3 1 2
+Yudahina Elizaveta 5 2 5
+Solomatin Pavel 5 3 3
+Geraskina Leylya 2 4 5
+Tulegenov Yuriy 3 5 4
+Klimov Andrey 5 1 1
+Danko Leonid 2 2 4
+Belova Galina 5 1 4
+Sobakin Pavel 3 5 3
+Mizitov Andrey 4 3 1
+Nalench Yuliya 3 2 2
+Moroz Yaroslav 3 4 3
+Glikman Leonid 4 2 4
+Hutuashvili Tamara 5 3 4
+Erin Anton 2 4 4
+Dedinskiy Ilya 1 2 2
+Danilenko Ekaterina 1 5 2
+Keller Artem 1 1 2
+Chayko Maksim 1 3 4
+Zamyatina Viktoriya 2 4 4
+Parhomenko Elena 3 1 5
+Markov Valeriy 4 5 2
+Melichenko Ilya 1 1 4
+Zhuravlev Aleksandr 4 2 5
+Starovoytova Darya 3 5 5
+Safronov Dmitriy 3 5 1
+Kuleshov Nikolay 1 3 5
+Lunev Aleksey 5 4 3
+Alyabyeva Natalya 2 5 1
+Kochulin Igor 3 2 1
+Kovalskiy Ivan 3 4 5
+Borisov Daniil 4 1 5
+Husainova Nailya 2 1 1
+Anikin Pavel 5 1 5
+Zaytsev Mihail 5 3 3
+Bulhova Irina 2 5 1
+Sosnina Anna 5 1 3
+</input>
+      <output size="57">3.1149425287356323 3.0344827586206895 3.1149425287356323
+</output>
+      <correct size="25">3.11494 3.03448 3.11494 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="88" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=21, stime=6, ptime=27, rtime=30, maxvsz=307200, maxrss=6213632, nvcsw=1, nivcsw=9 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1955">88
+Pechkovskiy Oleg 3 5 1
+Potapenko Evgeniya 3 1 1
+Astahova Kira 3 3 1
+Dubrovin Sergey 3 2 1
+Glushkov Sergey 3 5 5
+Popova Nataya 2 5 4
+Volobuev Aleksey 4 5 5
+Bobko Ilya 2 5 5
+Parhomenko Elena 3 1 5
+Hinko Evgeniy 4 1 2
+Zaostrovnyh Arseniy 1 3 3
+Dedinskiy Ilya 1 2 2
+Pavlov Nikita 3 4 5
+Suhorukov Ilya 5 1 1
+Vakulenko Artem 4 4 5
+Sytilin Igor 5 5 1
+Gorbik Dmitriy 5 5 4
+Folomeev Andrey 2 5 1
+Tamarova Inna 1 4 5
+Selezneva Natalya 2 2 5
+Lobaznikov Dmitriy 3 1 5
+Golovkin Yuriy 1 1 5
+Blazhenova Anastasiya 5 2 5
+Gorinov Ivan 3 3 4
+Saharov Denis 1 3 2
+Kovalskiy Ivan 3 4 5
+Svirida Anton 3 4 3
+Mironov Artem 3 1 3
+Zakurenko Aleksandr 2 4 3
+Prokopiev Nikolay 1 5 5
+Administration School 5 2 3
+Borisov Aleksandr 2 3 2
+Mantula Petr 5 3 2
+Volzhin Denis 1 2 2
+Seythalilova Elvira 5 2 3
+Shevchenko Vasiliy 4 1 5
+Volkov Kirill 3 3 4
+Volodin Sergey 1 4 2
+Stogov Yuriy 4 4 3
+Skovitin Pavel 3 3 5
+Sirotin Vasiliy 1 2 5
+Ivkin Evgeniy 2 5 3
+Varfolomeev Ivan 4 1 2
+Volzhin Ilya 1 2 5
+Savostin Evgeniy 2 3 2
+Olisova Irina 5 2 5
+Ataullin Ayrat 3 5 5
+Kamelin Stanislav 2 2 4
+Kuznetsov Grigoriy 1 4 2
+Safronova Anna 5 5 2
+Kuleshov Nikolay 1 3 5
+Geraskina Leylya 2 4 5
+Kalyuzhnaya Irina 2 1 4
+Tsoy Svetlana 2 5 2
+Gusev Aleksey 3 5 3
+Samohina Anna 4 1 2
+Tokareva Darya 2 2 4
+Nevolin Oleg 5 4 1
+Korol Aleksandra 4 1 5
+Larina Elena 4 2 1
+Beklemishev Vladimir 1 4 3
+Nosenko Valentin 5 2 5
+Agadzhanyan Darina 1 2 2
+Sobakin Pavel 3 5 3
+Tomashpolskiy Maksim 2 1 1
+Chuvileva Evgeniya 5 5 2
+Kuzmin Arsentiy 4 4 2
+Sydykova Shahrazada 4 2 5
+Lisenkova Aleksandra 1 5 2
+Sashurin Aleksandr 1 2 1
+Moroz Yaroslav 3 4 3
+Filatov Dmitriy 3 2 5
+Zhuravlev Aleksandr 4 2 5
+Mizitov Andrey 4 3 1
+Kazurova Kristina 2 2 5
+Bubnov Nikolay 5 5 1
+Borisov Daniil 4 1 5
+Lunev Aleksey 5 4 3
+Avilov Evgeniy 2 1 4
+Baldina Eleonora 2 3 1
+Ivanov Dmitriy 1 5 4
+Trifonov Roman 4 1 4
+Kabykin Aleksey 4 1 2
+Agapova Lyudmila 5 1 1
+Pokrovskiy Vladimir 5 2 1
+Kolesnik Andrey 1 5 2
+Danko Leonid 2 2 4
+Sydykova Perizat 4 4 4
+</input>
+      <output size="56">2.9431818181818183 2.977272727272727 3.1931818181818183
+</output>
+      <correct size="25">2.94318 2.97727 3.19318 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="89" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=0, ptime=27, rtime=29, maxvsz=307200, maxrss=6086656, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="1941">89
+Zaostrovnyh Elizaveta 2 1 5
+Gusev Aleksey 3 5 3
+Egorova Viktoriya 1 1 2
+Larina Elena 4 2 1
+Glushko Matvey 1 1 5
+Tamarova Inna 1 4 5
+Mkrtchyan Anna 3 5 5
+Kazanskaya Irina 5 3 1
+Kuleshov Nikolay 1 3 5
+User Test 1 1 3
+Lobaznikov Dmitriy 3 1 5
+Ivanov Dmitriy 1 5 4
+Bobko Ilya 2 5 5
+Yakuchev Igor 4 1 4
+Mantula Petr 5 3 2
+Kostyuchenok Ivan 2 2 1
+Glikman Leonid 4 2 4
+Kalyuzhnaya Irina 2 1 4
+Sizareva Irina 1 4 2
+Kuleshova Marina 1 5 3
+Tsyganok Yuriy 2 4 1
+Nefedov Pavel 2 5 1
+Vasyutin Aleksandr 2 4 5
+Petrova Mariya 3 2 5
+Dobroserdov Konstantin 4 3 1
+Trifonov Roman 4 1 4
+Trenin Kirill 4 2 5
+Bazhin Andrey 4 3 3
+Borisov Daniil 4 1 5
+Stolyarov Andrey 5 5 1
+Kononihin Grigoriy 1 5 5
+Obruch Evgeniya 3 4 5
+Volzhin Denis 1 2 2
+computers Turgor 1 5 3
+Afanasiev Petr 5 4 2
+Dedinskiy Ilya 1 2 2
+Hutuashvili Tamara 5 3 4
+Seythalilova Elvira 5 2 3
+Sytilin Igor 5 5 1
+Chebanov Georgiy 3 5 5
+Belyh Andrey 3 3 2
+Vorovyeva Vasilisa 5 2 2
+Agapova Lyudmila 5 1 1
+Geraskina Leylya 2 4 5
+Tarasova Mariya 1 4 1
+Yunin Oleg 4 5 3
+Titov Yuriy 2 5 5
+Korol Aleksandra 4 1 5
+Volkov Kirill 3 3 4
+Nalench Yuliya 3 2 2
+Melnik Denis 2 4 5
+Tarasenko Natalya 4 5 5
+Vyazmin Maksim 3 2 4
+Skovitin Pavel 3 3 5
+Dyagterev Igor 1 1 5
+Lazutov Evgeniy 5 3 5
+Osadchiy Denis 5 5 2
+Panteleeva Margarita 2 1 3
+Dubrovin Sergey 3 2 1
+Ivkin Evgeniy 2 5 3
+Ataullin Ayrat 3 5 5
+Babat Anna 2 5 1
+Zaostrovnyh Arseniy 1 3 3
+Shamin Nikita 3 5 3
+Belova Galina 5 1 4
+Yapryntsev Aleksey 5 1 1
+Varfolomeev Ivan 4 1 2
+Vlasova Natalya 4 1 3
+Kirakosyan Vage 1 3 1
+Pirogov Pavel 4 1 4
+Osipova Vasilisa 5 4 2
+Dmitrieva Nadezhda 2 5 5
+Ligus Natalya 1 3 3
+Kochulin Igor 3 2 1
+Mashkarina Ulyana 2 3 3
+Ryabkina Anastasiya 4 3 1
+Zimin Roman 3 3 5
+Danilov Aleksandr 4 4 2
+Lunev Aleksey 5 4 3
+Gorohova Anna 3 5 5
+Kaplin Vladimir 4 5 5
+Nikolaev Maksim 4 3 1
+Parhomenko Elena 3 1 5
+Tsvelihovskiy Boris 5 4 4
+Markov Valeriy 4 5 2
+Sevinyan Grant 2 4 2
+Titova Sofya 5 2 4
+Gronskiy Dmitriy 3 2 1
+Astahova Kira 3 3 1
+</input>
+      <output size="55">3.033707865168539 3.0786516853932584 3.168539325842697
+</output>
+      <correct size="25">3.03371 3.07865 3.16854 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="90" status="OK" time="27" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=23, stime=4, ptime=27, rtime=30, maxvsz=307200, maxrss=6307840, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2010">90
+Safronova Anna 5 5 2
+Narimanova Kamilya 5 4 3
+Stolyarov Andrey 5 5 1
+Medvedev Aleksey 1 2 2
+Ryabichev Andrey 1 1 3
+Rozhin Nikita 3 5 2
+Pavlov Nikita 3 4 5
+Silaev Aleksandr 4 3 5
+Zhdanova Valeriya 2 3 1
+Vasyutin Aleksandr 2 4 5
+Keller Artem 1 1 2
+Shibarova Elena 5 1 2
+Klimov Andrey 5 1 1
+Anfinogenov Dmitriy 3 4 3
+Danilov Aleksandr 4 4 2
+Sydykova Shahrazada 4 2 5
+Eryushova Karina 4 4 4
+Nevolin Oleg 5 4 1
+Savostin Evgeniy 2 3 2
+Zimin Roman 3 3 5
+Korol Aleksandra 4 1 5
+Kaplin Vladimir 4 5 5
+system Ejudge 2 1 1
+Gronskiy Dmitriy 3 2 1
+Potapenko Evgeniya 3 1 1
+Dyagterev Igor 1 1 5
+Geraskina Leylya 2 4 5
+Mizitov Andrey 4 3 1
+Volkov Kirill 3 3 4
+Yapryntsev Aleksey 5 1 1
+Konovalov Sergey 4 1 2
+Mironov Artem 3 1 3
+Mantula Petr 5 3 2
+Folomeev Andrey 2 5 1
+Afonina Nina 2 1 5
+Larkin Aleksey 4 5 3
+Pirogov Pavel 4 1 4
+Sirotin Vasiliy 1 2 5
+Danilin Konstantin 5 4 5
+Sotskov Denis 3 5 3
+Nalench Yuliya 3 2 2
+Novotortsev Leonid 5 1 1
+Solomatin Pavel 5 3 3
+Chuvileva Evgeniya 5 5 2
+Belyh Kristina 5 2 4
+Erin Anton 2 4 4
+Olisova Irina 5 2 5
+Podyapolskaya Marina 2 2 5
+Abyzova Tatyana 3 1 2
+Titova Sofya 5 2 4
+Razumov Aleksandr 3 1 4
+Kochulin Igor 3 2 1
+Contest Programming 4 4 2
+Pahomova Veronika 4 5 5
+Nosenko Valentin 5 2 5
+Suhanov Aleksey 2 5 5
+computers Turgor 1 5 3
+Eremenko Aleksandra 1 4 1
+Buzukashvili Sofya 2 5 4
+Panov Mihail 1 4 3
+Obruch Evgeniya 3 4 5
+Kuznetsov Nikita 3 1 1
+Sobakin Pavel 3 5 3
+Harlamov Nikolay 5 4 1
+Lunyaev Aleksandr 4 2 1
+Husainova Nailya 2 1 1
+Zhuravlev Aleksandr 4 2 5
+Trifonov Roman 4 1 4
+Mayatskiy Artem 3 4 4
+Kononihin Grigoriy 1 5 5
+Semenenko Mariya 1 4 3
+Rinchinov Eduard 2 1 3
+Pechurova Anna 3 4 5
+Seslavina Anna 1 5 3
+Avilov Evgeniy 2 1 4
+Bubnov Nikolay 5 5 1
+Lazutov Evgeniy 5 3 5
+Borisov Daniil 4 1 5
+Suhorukov Ilya 5 1 1
+Ivanov Dmitriy 1 5 4
+Ivkin Evgeniy 2 5 3
+Yakuchev Igor 4 1 4
+Hripunova Veronika 2 5 1
+Kobylkina Svetlana 2 1 4
+Administration School 5 2 3
+Golovko Aleksandr 5 2 1
+Marachev Aleksey 1 4 4
+Kazakova Galina 4 3 5
+Agapova Lyudmila 5 1 1
+Kovalskiy Ivan 3 4 5
+</input>
+      <output size="41">3.2333333333333334 2.9 3.088888888888889
+</output>
+      <correct size="21">3.23333 2.9 3.08889 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="91" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=4, ptime=28, rtime=30, maxvsz=307200, maxrss=6291456, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2049">91
+Grachev Ivan 5 3 2
+Dobroserdov Konstantin 4 3 1
+Sobakin Pavel 3 5 3
+Kazurova Kristina 2 2 5
+Keller Artem 1 1 2
+Zorina Viktoriya 1 3 5
+Charikov Aleksandr 2 1 5
+Lisenkova Aleksandra 1 5 2
+Semerikov Ilya 2 4 3
+Zakurenko Aleksandr 2 4 3
+Sevinyan Grant 2 4 2
+Hromyh Nadezhda 2 3 4
+Chayko Maksim 1 3 4
+Ryabtsev Grigoriy 2 5 2
+Ryabichev Andrey 1 1 3
+Gronskiy Dmitriy 3 2 1
+Kuznetsova Antonina 1 1 5
+Volzhin Denis 1 2 2
+Shuleshkina Mariya 1 5 4
+Kalyuzhnaya Irina 2 1 4
+Marikot Anastasiya 2 4 2
+Potapenko Evgeniya 3 1 1
+Babat Anna 2 5 1
+Mantula Petr 5 3 2
+Yakovlev Ivan 5 1 2
+Lebedev Viktor 2 3 1
+Ligus Natalya 1 3 3
+Vahnichenko Aleksey 5 4 2
+Savostyanov Mihail 3 4 4
+Seliverstova Anastasiya 2 3 1
+system Ejudge 2 1 1
+Mayatskiy Artem 3 4 4
+Nikonova Elena 4 4 3
+Klimov Aleksandr 2 4 1
+Voinov Pavel 3 2 5
+Selezneva Natalya 2 2 5
+Volobuev Aleksey 4 5 5
+Vyazmin Maksim 3 2 4
+Narimanova Kamilya 5 4 3
+Matsievskiy Sergey 2 3 1
+Zapletin Andrey 3 2 1
+Yunin Oleg 4 5 3
+Panteleeva Margarita 2 1 3
+Kuvshinov Mihail 3 5 3
+Abbasova Narmina 2 5 1
+Bubnov Nikolay 5 5 1
+Novotortsev Leonid 5 1 1
+Lazutov Evgeniy 5 3 5
+Tarasenko Natalya 4 5 5
+Danekin Nikita 4 5 5
+Chebanov Georgiy 3 5 5
+Seythalilova Elvira 5 2 3
+Loshkarev Vladimir 1 2 2
+Sergeev Ilya 3 5 1
+Marina Svetlana 2 4 2
+Mironova Anna 3 3 4
+Dubrovin Sergey 3 2 1
+Ataullin Ayrat 3 5 5
+Medvedkova Anna 1 1 2
+Kazanskaya Irina 5 3 1
+Ilyina Irina 5 5 4
+Avilov Evgeniy 2 1 4
+Mosyaykin Vladimir 5 3 1
+Kuleshova Marina 1 5 3
+Zhdanova Valeriya 2 3 1
+Sytilin Igor 5 5 1
+Seslavina Anna 1 5 3
+Larina Elena 4 2 1
+Uspenskiy Andrey 2 4 4
+Larkin Aleksey 4 5 3
+Kudlo Mihail 5 1 5
+Sveshnikddov Mihail 5 1 5
+Mizitov Andrey 4 3 1
+Eryushova Karina 4 4 4
+Agapova Lyudmila 5 1 1
+Morozov Aleksandr 4 3 1
+Gayday Anton 3 2 5
+Plotnikova Olga 2 5 1
+Trifonov Anton 4 4 2
+Iznaurova Elizaveta 5 1 5
+Kazakova Galina 4 3 5
+Podyapolskaya Marina 2 2 5
+Safronov Dmitriy 3 5 1
+Gusev Aleksey 3 5 3
+Pavlov Nikita 3 4 5
+Zhuravlev Aleksandr 4 2 5
+Filatov Dmitriy 3 2 5
+Mashkarina Ulyana 2 3 3
+Bulhova Irina 2 5 1
+Aleynikov Pavel 5 1 5
+Markov Valeriy 4 5 2
+</input>
+      <output size="55">2.989010989010989 3.1758241758241756 2.879120879120879
+</output>
+      <correct size="25">2.98901 3.17582 2.87912 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="92" status="OK" time="27" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=3, ptime=27, rtime=29, maxvsz=307200, maxrss=6250496, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2038">92
+Vaulina Tatyana 2 3 5
+Vishnyakov Ivan 2 3 2
+Smirnova Nadezhda 1 2 4
+Bobko Ilya 2 5 5
+Trenin Kirill 4 2 5
+Melnik Denis 2 4 5
+Danilov Aleksandr 4 4 2
+Vyazmin Maksim 3 2 4
+Yuzhanin Kirill 1 2 3
+Yudahina Elizaveta 5 2 5
+Petrov Evgeniy 5 2 3
+Savostyanov Mihail 3 4 4
+Zimin Roman 3 3 5
+Pankratova Lyudmila 2 2 5
+Oganesyan Vardan 3 2 3
+Pavlikov Maksim 2 5 2
+Svirida Anton 3 4 3
+Kaplin Vladimir 4 5 5
+Loshkarev Vladimir 1 2 2
+Tsvelihovskiy Boris 5 4 4
+Borisov Daniil 4 1 5
+Pivnenko Igor 1 5 2
+Korol Aleksandra 4 1 5
+Belyh Kristina 5 2 4
+Savostin Evgeniy 2 3 2
+Kuznetsov Grigoriy 1 4 2
+Safronova Anna 5 5 2
+Tsyganok Yuriy 2 4 1
+Veyknis Violetta 3 4 5
+Moroz Yaroslav 3 4 3
+Stogov Yuriy 4 4 3
+Volobuev Aleksey 4 5 5
+Kamelin Stanislav 2 2 4
+Sotskov Denis 3 5 3
+Harlamov Nikolay 5 4 1
+Prokopiev Nikolay 1 5 5
+Zaostrovnyh Elizaveta 2 1 5
+Yapryntsev Aleksey 5 1 1
+Pechkovskiy Oleg 3 5 1
+Marachev Aleksey 1 4 4
+Afanasiev Petr 5 4 2
+Glushko Matvey 1 1 5
+Marikot Anastasiya 2 4 2
+Kochulin Igor 3 2 1
+Androsov Vladimir 3 2 4
+Polonskiy Sergey 1 3 4
+Bubnov Nikolay 5 5 1
+Trifonov Roman 4 1 4
+Ligus Natalya 1 3 3
+Vlasova Natalya 4 1 3
+Shashkov Vladimir 2 4 4
+Pahomova Veronika 4 5 5
+Saharov Denis 1 3 2
+Okolotkov Aleksey 2 1 1
+Administration School 5 2 3
+Shamin Nikita 3 5 3
+Kuleshov Nikolay 1 3 5
+Seythalilova Elvira 5 2 3
+Paredes Andrey 1 4 1
+Morozov Aleksandr 4 3 1
+Chebanov Georgiy 3 5 5
+Baranova Kseniya 4 2 2
+Medvedkova Anna 1 1 2
+Tokareva Darya 2 2 4
+Bychkov Boris 5 2 5
+Geraskina Leylya 2 4 5
+Kuleshov Sergey 5 2 1
+Khait Oleg 4 5 1
+Gronskiy Dmitriy 3 2 1
+Volkov Kirill 3 3 4
+Golovko Aleksandr 5 2 1
+Nikolaev Maksim 4 3 1
+Eremenko Aleksandra 1 4 1
+Voinov Pavel 3 2 5
+Shevchenko Vasiliy 4 1 5
+Safronov Dmitriy 3 5 1
+Dyagterev Igor 1 1 5
+Volzhin Denis 1 2 2
+Gorinov Ivan 3 3 4
+Kabykin Aleksey 4 1 2
+Sergeev Ilya 3 5 1
+Chayko Maksim 1 3 4
+Mayatskiy Artem 3 4 4
+Danekin Nikita 4 5 5
+Utolin Dmitriy 2 4 2
+Sizareva Irina 1 4 2
+Zhuravlev Aleksandr 4 2 5
+Romanko Denis 5 3 5
+Tarasova Mariya 1 4 1
+Pavlov Nikita 3 4 5
+system Ejudge 2 1 1
+Kubrak Dmitriy 1 3 5
+</input>
+      <output size="56">2.880434782608696 3.0760869565217392 3.1847826086956523
+</output>
+      <correct size="25">2.88043 3.07609 3.18478 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="93" status="OK" time="27" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=22, stime=5, ptime=27, rtime=31, maxvsz=307200, maxrss=6078464, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2094">93
+Abyzova Tatyana 3 1 2
+Klimov Aleksandr 2 4 1
+Ryabichev Andrey 1 1 3
+Anikin Pavel 5 1 5
+Markov Valeriy 4 5 2
+Mosyaykin Vladimir 5 3 1
+Bulhova Irina 2 5 1
+Nikonova Elena 4 4 3
+Kubrak Dmitriy 1 3 5
+Plotnikova Olga 2 5 1
+Borisov Aleksandr 2 3 2
+Nosenko Valentin 5 2 5
+Kobylkina Svetlana 2 1 4
+Tulegenov Yuriy 3 5 4
+Ryabtsev Grigoriy 2 5 2
+Savostin Evgeniy 2 3 2
+Hripunova Veronika 2 5 1
+Zaostrovnyh Elizaveta 2 1 5
+Kononihin Grigoriy 1 5 5
+Shashkov Vladimir 2 4 4
+Kaplin Vladimir 4 5 5
+Konovalov Sergey 4 1 2
+Yakovlev Ivan 5 1 2
+Medvedev Aleksey 1 2 2
+Semenenko Mariya 1 4 3
+Lobaznikov Dmitriy 3 1 5
+Blazhenova Anastasiya 5 2 5
+Kovalskiy Ivan 3 4 5
+Vasyutin Aleksandr 2 4 5
+Okolotkov Aleksey 2 1 1
+Stogov Yuriy 4 4 3
+Tamarova Inna 1 4 5
+Yapryntsev Aleksey 5 1 1
+Pikalov Oleg 1 1 4
+Yurzinova Tatyana 5 3 2
+Suhanov Aleksey 2 5 5
+Yakuchev Igor 4 1 4
+Seslavina Anna 1 5 3
+Starovoytova Darya 3 5 5
+Tashkeev Aleksandr 3 1 1
+Kirakosyan Vage 1 3 1
+Tsvelihovskiy Boris 5 4 4
+Sobakin Pavel 3 5 3
+Afanasiev Petr 5 4 2
+Uspenskiy Andrey 2 4 4
+Zamyatina Viktoriya 2 4 4
+Eryushova Karina 4 4 4
+Petropavlovskiy Dmitriy 2 3 5
+Tarasova Mariya 1 4 1
+Shibarova Elena 5 1 2
+Ivanov Dmitriy 1 5 4
+Pokrovskiy Vladimir 5 2 1
+Solomatin Pavel 5 3 3
+Shamin Nikita 3 5 3
+Sheyh Sheyla 2 5 3
+Vorovyeva Vasilisa 5 2 2
+Dudnik Elizaveta 1 4 1
+Baranova Kseniya 4 2 2
+Oganesyan Vardan 3 2 3
+Danilenko Ekaterina 1 5 2
+computer Library 4 3 4
+Kozlov Georgiy 5 1 2
+Alyabyeva Natalya 2 5 1
+Volkov Kirill 3 3 4
+Volobuev Aleksey 4 5 5
+Gusev Aleksey 3 5 3
+Khait Oleg 4 5 1
+Voinov Pavel 3 2 5
+Zaostrovnyh Arseniy 1 3 3
+Sirotin Vasiliy 1 2 5
+Mkrtchyan Anna 3 5 5
+Filatov Dmitriy 3 2 5
+Shevchenko Vasiliy 4 1 5
+Kudlo Mihail 5 1 5
+Krohina Darya 3 2 5
+Marina Svetlana 2 4 2
+Tarasenko Natalya 4 5 5
+Trifonov Igor 2 5 4
+Borisov Daniil 4 1 5
+Podyapolskaya Marina 2 2 5
+Yuzhanin Kirill 1 2 3
+Gorbik Dmitriy 5 5 4
+Elshin Denis 1 2 3
+Kalyuzhnaya Irina 2 1 4
+Danilin Konstantin 5 4 5
+Yakushenkov Pavel 2 5 4
+Sosnina Anna 5 1 3
+Danko Leonid 2 2 4
+Kuleshova Marina 1 5 3
+Ilyina Irina 5 5 4
+Nefedov Pavel 2 5 1
+Volodina Anna 2 1 3
+Smolnikova Irina 2 5 4
+</input>
+      <output size="55">2.881720430107527 3.193548387096774 3.2688172043010755
+</output>
+      <correct size="25">2.88172 3.19355 3.26882 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="94" status="OK" time="28" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=3, ptime=28, rtime=31, maxvsz=307200, maxrss=6094848, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2068">94
+Pechurova Anna 3 4 5
+Mayatskiy Artem 3 4 4
+Danilin Konstantin 5 4 5
+Sheyh Sheyla 2 5 3
+Razumov Aleksandr 3 1 4
+Kirakosyan Vage 1 3 1
+Mantula Petr 5 3 2
+Astahova Kira 3 3 1
+Afonina Nina 2 1 5
+Sevinyan Grant 2 4 2
+Volodina Anna 2 1 3
+Trifonov Igor 2 5 4
+Pikalov Oleg 1 1 4
+Selezneva Natalya 2 2 5
+Pavlova Irina 4 2 4
+Mizitov Andrey 4 3 1
+Pivnenko Igor 1 5 2
+Danilov Aleksandr 4 4 2
+Kuznetsova Antonina 1 1 5
+Saharov Denis 1 3 2
+Sirotin Vasiliy 1 2 5
+Oynas Taisiya 1 3 3
+Trifonov Anton 4 4 2
+Starovoytova Darya 3 5 5
+Rozhin Nikita 3 5 2
+Nilova Olga 4 3 4
+Melichenko Ilya 1 1 4
+Novotortsev Leonid 5 1 1
+Kamelin Stanislav 2 2 4
+Baranova Mariya 2 2 3
+Zhdanova Valeriya 2 3 1
+Moroz Yaroslav 3 4 3
+Tokareva Darya 2 2 4
+Kolesnik Andrey 1 5 2
+Samohina Anna 4 1 2
+Mosyaykin Vladimir 5 3 1
+Yapryntsev Aleksey 5 1 1
+Chebanov Georgiy 3 5 5
+Tomashpolskiy Maksim 2 1 1
+Belyh Kristina 5 2 4
+Nefedov Pavel 2 5 1
+Alyabyeva Natalya 2 5 1
+Volodin Sergey 1 4 2
+Abbasova Narmina 2 5 1
+Suhorukov Ilya 5 1 1
+Lebedev Viktor 2 3 1
+Panteleeva Margarita 2 1 3
+Klimov Nikita 2 3 1
+Vyazmin Maksim 3 2 4
+Mashkarina Ulyana 2 3 3
+Plotnikova Olga 2 5 1
+Pankratova Lyudmila 2 2 5
+Lukovich Aleksander 2 2 5
+Volzhin Ilya 1 2 5
+Zorina Viktoriya 1 3 5
+Trifonov Roman 4 1 4
+Svirida Anton 3 4 3
+Kremenetskaya Mariya 5 3 5
+Baldina Eleonora 2 3 1
+Tashkeev Aleksandr 3 1 1
+Dubrovin Sergey 3 2 1
+Klimov Andrey 5 1 1
+Petrov Evgeniy 5 2 3
+Ilyina Irina 5 5 4
+Ivkin Evgeniy 2 5 3
+computers Turgor 1 5 3
+Shabelskiy Yan 3 4 4
+Markov Valeriy 4 5 2
+Dudnik Elizaveta 1 4 1
+Sizareva Irina 1 4 2
+Rinchinov Eduard 2 1 3
+Ivanov Dmitriy 1 5 4
+Korol Aleksandra 4 1 5
+Kuvshinov Mihail 3 5 3
+Vlasova Natalya 4 1 3
+Kovalskiy Ivan 3 4 5
+Kazakova Galina 4 3 5
+Mkrtchyan Anna 3 5 5
+Elagina Elizaveta 4 1 4
+Gorbik Dmitriy 5 5 4
+Anikin Pavel 5 1 5
+Bazhin Andrey 4 3 3
+Vishnyakov Ivan 2 3 2
+Romanko Denis 5 3 5
+Kuznetsov Nikita 3 1 1
+Afanasiev Nikolay 3 1 3
+Dyagterev Igor 1 1 5
+Korchina Anastasiya 3 4 3
+Lunev Aleksey 5 4 3
+Avilov Evgeniy 2 1 4
+Pirogov Pavel 4 1 4
+Seythalilova Elvira 5 2 3
+Sobakin Pavel 3 5 3
+Kazanskaya Irina 5 3 1
+</input>
+      <output size="54">2.872340425531915 2.904255319148936 3.021276595744681
+</output>
+      <correct size="25">2.87234 2.90426 3.02128 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="95" status="OK" time="29" real-time="31" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=29, stime=0, ptime=29, rtime=31, maxvsz=307200, maxrss=6344704, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2105">95
+Dyagterev Igor 1 1 5
+Egorova Viktoriya 1 1 2
+Zhuravlev Aleksandr 4 2 5
+Sokolova Elena 4 1 4
+Volkov Kirill 3 3 4
+Suhorukov Ilya 5 1 1
+Folomeev Andrey 2 5 1
+Eremenko Aleksandra 1 4 1
+Mashkarina Ulyana 2 3 3
+Bataeva Elena 5 5 1
+Smolnikova Irina 2 5 4
+Saharov Denis 1 3 2
+Vakulenko Artem 4 4 5
+Mosyaykin Vladimir 5 3 1
+Solomatin Pavel 5 3 3
+Lobaznikov Dmitriy 3 1 5
+Kobylkina Svetlana 2 1 4
+Vasyutin Aleksandr 2 4 5
+Dubrovin Sergey 3 2 1
+Larina Elena 4 2 1
+Paredes Andrey 1 4 1
+Madekin Sergey 4 5 5
+Golovko Aleksandr 5 2 1
+Elagina Elizaveta 4 1 4
+Yakuchev Igor 4 1 4
+Zibrov Ilya 2 4 2
+Stogov Yuriy 4 4 3
+Glikman Leonid 4 2 4
+Yurzinova Tatyana 5 3 2
+Hromyh Nadezhda 2 3 4
+Kruglihin Sergey 3 5 4
+Pavlikov Maksim 2 5 2
+Vishnyakov Ivan 2 3 2
+Borisov Aleksandr 2 3 2
+Sizareva Irina 1 4 2
+Gayday Anton 3 2 5
+Shabelskiy Yan 3 4 4
+Aleynikov Pavel 5 1 5
+Okolotkov Aleksey 2 1 1
+Kuleshov Sergey 5 2 1
+Beklemishev Vladimir 1 4 3
+Polonskiy Sergey 1 3 4
+Glushko Matvey 1 1 5
+Seliverstova Anastasiya 2 3 1
+Shibarova Elena 5 1 2
+Sydykova Shahrazada 4 2 5
+Markov Valeriy 4 5 2
+Veyknis Violetta 3 4 5
+Erin Anton 2 4 4
+Tarasova Mariya 1 4 1
+Nalench Yuliya 3 2 2
+Sergeev Ilya 3 5 1
+Belyh Andrey 3 3 2
+Klimov Andrey 5 1 1
+Petrova Mariya 3 2 5
+Popova Nataya 2 5 4
+Savostyanov Mihail 3 4 4
+Shlyapugina Lyudmila 3 4 5
+Ryabkina Anastasiya 4 3 1
+Pavlova Irina 4 2 4
+Volodin Sergey 1 4 2
+Vorovyeva Vasilisa 5 2 2
+Pirogov Pavel 4 1 4
+computers Turgor 1 5 3
+Pivnenko Igor 1 5 2
+Fedyna Maksim 2 5 2
+Kuleshov Nikolay 1 3 5
+Starovoytova Darya 3 5 5
+Kremenetskaya Mariya 5 3 5
+Titov Yuriy 2 5 5
+Safronova Anna 5 5 2
+Nevolin Oleg 5 4 1
+Keller Artem 1 1 2
+Osadchiy Denis 5 5 2
+Ivkin Evgeniy 2 5 3
+Kabykin Aleksey 4 1 2
+Charikov Aleksandr 2 1 5
+Baranova Kseniya 4 2 2
+Mkrtchyan Anna 3 5 5
+Afanasiev Petr 5 4 2
+Osipova Vasilisa 5 4 2
+Rinchinov Eduard 2 1 3
+Danekin Nikita 4 5 5
+Kazakova Galina 4 3 5
+Babat Anna 2 5 1
+Shevchenko Vasiliy 4 1 5
+Volzhin Ilya 1 2 5
+Marachev Aleksey 1 4 4
+computer Library 4 3 4
+Mizitov Andrey 4 3 1
+Volobuev Aleksey 4 5 5
+Turetskiy Andrey 2 3 1
+Kuznetsova Antonina 1 1 5
+Yuzhanin Kirill 1 2 3
+Ligus Natalya 1 3 3
+</input>
+      <output size="57">2.9473684210526314 3.0631578947368423 3.0526315789473686
+</output>
+      <correct size="25">2.94737 3.06316 3.05263 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="96" status="OK" time="29" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=20, stime=9, ptime=29, rtime=30, maxvsz=307200, maxrss=6291456, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2141">96
+Zaytsev Mihail 5 3 3
+Zimin Roman 3 3 5
+Stogov Yuriy 4 4 3
+Domnina Svetlana 1 1 4
+Okolotkov Aleksey 2 1 1
+Glushko Matvey 1 1 5
+Golovkin Yuriy 1 1 5
+Olisova Irina 5 2 5
+Veyknis Violetta 3 4 5
+Smirnova Nadezhda 1 2 4
+Chayko Maksim 1 3 4
+Hutuashvili Tamara 5 3 4
+Eryushova Karina 4 4 4
+Seythalilova Elvira 5 2 3
+Sheyh Sheyla 2 5 3
+Vaulina Tatyana 2 3 5
+Pavlova Irina 4 2 4
+Kolesnik Andrey 1 5 2
+Nikonova Elena 4 4 3
+Zibrov Ilya 2 4 2
+Beklemishev Vladimir 1 4 3
+Yakushenkov Pavel 2 5 4
+Tashkeev Aleksandr 3 1 1
+Baldina Eleonora 2 3 1
+Kuvshinov Mihail 3 5 3
+Vityukov Maksim 1 4 5
+Osipova Vasilisa 5 4 2
+Kamelin Stanislav 2 2 4
+Pivnenko Igor 1 5 2
+Konovalov Sergey 4 1 2
+Gorbik Dmitriy 5 5 4
+Borisov Daniil 4 1 5
+Prokopiev Nikolay 1 5 5
+Shamin Nikita 3 5 3
+Nevolin Oleg 5 4 1
+Sashurin Aleksandr 1 2 1
+Chuvileva Evgeniya 5 5 2
+Solomatin Pavel 5 3 3
+Kudlo Mihail 5 1 5
+Kazurova Kristina 2 2 5
+computer Library 4 3 4
+Zamyatina Viktoriya 2 4 4
+Belova Galina 5 1 4
+Kochulin Igor 3 2 1
+Novotortsev Leonid 5 1 1
+Filatov Dmitriy 3 2 5
+account Guest 5 1 5
+Obruch Evgeniya 3 4 5
+Sobakin Pavel 3 5 3
+Bychkov Boris 5 2 5
+Lazovskiy Ivan 4 1 2
+Levin Sergey 4 1 3
+Pahomova Veronika 4 5 5
+Kuznetsov Grigoriy 1 4 2
+Voinov Pavel 3 2 5
+Pechurova Anna 3 4 5
+Klimov Aleksandr 2 4 1
+Safronova Anna 5 5 2
+Lobaznikov Dmitriy 3 1 5
+Kononihin Grigoriy 1 5 5
+Nilova Olga 4 3 4
+Plotnikova Olga 2 5 1
+Elagina Elizaveta 4 1 4
+Danilenko Ekaterina 1 5 2
+Abyzova Tatyana 3 1 2
+Zorina Viktoriya 1 3 5
+Bobko Ilya 2 5 5
+Vishnyakov Ivan 2 3 2
+Yapryntsev Aleksey 5 1 1
+Vahnichenko Aleksey 5 4 2
+Belyh Kristina 5 2 4
+Trenin Kirill 4 2 5
+system Ejudge 2 1 1
+Marachev Aleksey 1 4 4
+Mashkarina Ulyana 2 3 3
+Yakovlev Ivan 5 1 2
+Stolyarov Andrey 5 5 1
+Zaostrovnyh Elizaveta 2 1 5
+Podyapolskaya Marina 2 2 5
+Martyanov Illarion 4 2 2
+Markov Valeriy 4 5 2
+Nalench Yuliya 3 2 2
+Danilin Konstantin 5 4 5
+Petrova Mariya 3 2 5
+Anikin Pavel 5 1 5
+Vorovyeva Vasilisa 5 2 2
+Uspenskiy Andrey 2 4 4
+Afanasiev Nikolay 3 1 3
+Shlyapugina Lyudmila 3 4 5
+Avilov Evgeniy 2 1 4
+Sydykova Shahrazada 4 2 5
+Gorinov Ivan 3 3 4
+Gorohova Anna 3 5 5
+Contest Programming 4 4 2
+Hinko Evgeniy 4 1 2
+Danko Leonid 2 2 4
+</input>
+      <output size="44">3.125 2.8958333333333335 3.3958333333333335
+</output>
+      <correct size="23">3.125 2.89583 3.39583 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="97" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=3, ptime=28, rtime=30, maxvsz=307200, maxrss=6316032, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2128">97
+Belova Galina 5 1 4
+Kovalskiy Ivan 3 4 5
+Zorina Viktoriya 1 3 5
+Danilenko Ekaterina 1 5 2
+Pavlov Nikita 3 4 5
+Dudnik Elizaveta 1 4 1
+Trifonov Igor 2 5 4
+Petrov Evgeniy 5 2 3
+Selezneva Natalya 2 2 5
+Domnina Svetlana 1 1 4
+Prokopiev Nikolay 1 5 5
+Keller Artem 1 1 2
+Petropavlovskiy Dmitriy 2 3 5
+Kuznetsov Nikita 3 1 1
+Tulegenov Yuriy 3 5 4
+Khait Oleg 4 5 1
+Yunin Oleg 4 5 3
+Kozlov Georgiy 5 1 2
+Rozhin Nikita 3 5 2
+Zapletin Andrey 3 2 1
+Mironov Artem 3 1 3
+Yapryntsev Aleksey 5 1 1
+Semenenko Mariya 1 4 3
+Sheyh Sheyla 2 5 3
+Nevolin Oleg 5 4 1
+Klimov Aleksandr 2 4 1
+Gayday Anton 3 2 5
+Pirogov Pavel 4 1 4
+Utolin Dmitriy 2 4 2
+Samohina Anna 4 1 2
+Zhdanova Valeriya 2 3 1
+Zamyatina Viktoriya 2 4 4
+Stolyarov Andrey 5 5 1
+Shuleshkina Mariya 1 5 4
+Madekin Sergey 4 5 5
+Sirotin Vasiliy 1 2 5
+Kazakova Galina 4 3 5
+Kuleshova Marina 1 5 3
+Savostyanov Mihail 3 4 4
+Romanko Denis 5 3 5
+Suhanov Aleksey 2 5 5
+Tokareva Darya 2 2 4
+Ryabichev Andrey 1 1 3
+Uspenskiy Andrey 2 4 4
+Turetskiy Andrey 2 3 1
+Hinko Evgeniy 4 1 2
+Shashkov Vladimir 2 4 4
+Ligus Natalya 1 3 3
+Trenin Kirill 4 2 5
+account Guest 5 1 5
+Tsoy Svetlana 2 5 2
+Grachev Ivan 5 3 2
+Sobakin Pavel 3 5 3
+Buzukashvili Sofya 2 5 4
+Rinchinov Eduard 2 1 3
+Petrova Mariya 3 2 5
+Bulhova Irina 2 5 1
+Panov Mihail 1 4 3
+Yuzhanin Kirill 1 2 3
+Gronskiy Dmitriy 3 2 1
+Bobko Ilya 2 5 5
+Martyanov Illarion 4 2 2
+Yakovlev Ivan 5 1 2
+Trifonov Anton 4 4 2
+Lebedev Viktor 2 3 1
+Osadchiy Denis 5 5 2
+Afanasiev Nikolay 3 1 3
+computer Library 4 3 4
+Vakulenko Artem 4 4 5
+Harlamov Nikolay 5 4 1
+Markov Valeriy 4 5 2
+Folomeev Andrey 2 5 1
+Korchina Anastasiya 3 4 3
+Borisov Daniil 4 1 5
+Morozov Aleksandr 4 3 1
+Avilov Evgeniy 2 1 4
+Mizitov Andrey 4 3 1
+Baldina Eleonora 2 3 1
+Afanasiev Petr 5 4 2
+Melichenko Ilya 1 1 4
+Abyzova Tatyana 3 1 2
+Kuznetsova Antonina 1 1 5
+Charikov Aleksandr 2 1 5
+Pikalov Oleg 1 1 4
+Lukovich Aleksander 2 2 5
+Nosenko Valentin 5 2 5
+Marina Svetlana 2 4 2
+Ilyina Irina 5 5 4
+Ryabkina Anastasiya 4 3 1
+Popova Nataya 2 5 4
+Kudlo Mihail 5 1 5
+Voinov Pavel 3 2 5
+Volodina Anna 2 1 3
+Kazanskaya Irina 5 3 1
+Matsievskiy Sergey 2 3 1
+Kolesnik Andrey 1 5 2
+Zaostrovnyh Arseniy 1 3 3
+</input>
+      <output size="56">2.845360824742268 3.0412371134020617 3.0618556701030926
+</output>
+      <correct size="25">2.84536 3.04124 3.06186 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="98" status="OK" time="29" real-time="32" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=27, stime=2, ptime=29, rtime=32, maxvsz=307200, maxrss=6209536, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2215">98
+Vakulenko Artem 4 4 5
+Larkin Aleksey 4 5 3
+User Test 1 1 3
+Zhuravlev Aleksandr 4 2 5
+Egorova Viktoriya 1 1 2
+Nikonova Elena 4 4 3
+Kazurova Kristina 2 2 5
+Korol Aleksandra 4 1 5
+Gronskiy Dmitriy 3 2 1
+Volodina Anna 2 1 3
+Vorovyeva Vasilisa 5 2 2
+Skyabin Sergey 2 1 4
+Sokolova Elena 4 1 4
+Varfolomeev Ivan 4 1 2
+Pechurova Anna 3 4 5
+Petrova Mariya 3 2 5
+Astahova Kira 3 3 1
+Smolnikova Irina 2 5 4
+Gorohova Anna 3 5 5
+Mkrtchyan Anna 3 5 5
+Blazhenova Anastasiya 5 2 5
+Bodrov Andrey 3 5 3
+Kobylkina Svetlana 2 1 4
+Ilyina Irina 5 5 4
+Buzukashvili Sofya 2 5 4
+Vostrikova Nataliya 2 4 5
+Ivanov Dmitriy 1 5 4
+Avilov Evgeniy 2 1 4
+computer Library 4 3 4
+Contest Programming 4 4 2
+Shlyapugina Lyudmila 3 4 5
+Paredes Andrey 1 4 1
+Ryabtsev Grigoriy 2 5 2
+Lazovskiy Ivan 4 1 2
+Danilenko Ekaterina 1 5 2
+Sashurin Aleksandr 1 2 1
+Klimov Nikita 2 3 1
+Danilov Aleksandr 4 4 2
+Kudlo Mihail 5 1 5
+Baldina Eleonora 2 3 1
+Fedyna Maksim 2 5 2
+Burmistrov Petr 5 4 4
+Safronov Dmitriy 3 5 1
+Suhanov Aleksey 2 5 5
+Shibarova Elena 5 1 2
+Panteleeva Margarita 2 1 3
+Baranova Kseniya 4 2 2
+Sytilin Igor 5 5 1
+Silaev Aleksandr 4 3 5
+Kozlov Georgiy 5 1 2
+Tsvelihovskiy Boris 5 4 4
+Zimin Roman 3 3 5
+Plotnikova Olga 2 5 1
+Tsoy Svetlana 2 5 2
+Sevinyan Grant 2 4 2
+Kazanskaya Irina 5 3 1
+Tarasenko Natalya 4 5 5
+Trifonov Igor 2 5 4
+Sheyh Sheyla 2 5 3
+Dedinskiy Ilya 1 2 2
+Lukovich Aleksander 2 2 5
+Savostyanov Mihail 3 4 4
+Iznaurova Elizaveta 5 1 5
+Zaytsev Mihail 5 3 3
+Glushkov Sergey 3 5 5
+Kuleshova Marina 1 5 3
+Alyabyeva Natalya 2 5 1
+Danilin Konstantin 5 4 5
+Ivkin Evgeniy 2 5 3
+Sobakin Pavel 3 5 3
+Folomeev Andrey 2 5 1
+Tashkeev Aleksandr 3 1 1
+Hromyh Nadezhda 2 3 4
+Sirotin Vasiliy 1 2 5
+Trifonov Anton 4 4 2
+Seliverstova Anastasiya 2 3 1
+Matsievskiy Sergey 2 3 1
+Obruch Evgeniya 3 4 5
+Zaostrovnyh Arseniy 1 3 3
+computers Turgor 1 5 3
+Morozov Aleksandr 4 3 1
+Kochulin Igor 3 2 1
+Nilova Olga 4 3 4
+Parhomenko Elena 3 1 5
+Pokrovskiy Vladimir 5 2 1
+Kirakosyan Vage 1 3 1
+Trenin Kirill 4 2 5
+Harlamova Aleksandra 4 1 3
+Aleynikov Pavel 5 1 5
+Veyknis Violetta 3 4 5
+Chernov Vasiliy 1 3 2
+Glikman Leonid 4 2 4
+Danko Leonid 2 2 4
+Husainova Nailya 2 1 1
+Yudahina Elizaveta 5 2 5
+Eremenko Aleksandra 1 4 1
+Dudnik Elizaveta 1 4 1
+Zapletin Andrey 3 2 1
+</input>
+      <output size="55">2.938775510204082 3.122448979591837 3.0816326530612246
+</output>
+      <correct size="25">2.93878 3.12245 3.08163 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="99" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=25, stime=3, ptime=28, rtime=30, maxvsz=307200, maxrss=6156288, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2210">99
+Seythalilova Elvira 5 2 3
+Trifonov Roman 4 1 4
+Medvedkova Anna 1 1 2
+Romanko Denis 5 3 5
+Lisenkova Aleksandra 1 5 2
+Oynas Taisiya 1 3 3
+Sirotin Vasiliy 1 2 5
+Gorbik Dmitriy 5 5 4
+Larkin Aleksey 4 5 3
+Sydykova Perizat 4 4 4
+Zhdanova Valeriya 2 3 1
+Shibarova Elena 5 1 2
+Pikalov Oleg 1 1 4
+Konovalov Sergey 4 1 2
+Erin Anton 2 4 4
+Godzhaev Georgiy 4 5 2
+Grachev Ivan 5 3 2
+Harlamov Nikolay 5 4 1
+Sheyh Sheyla 2 5 3
+Uspenskiy Andrey 2 4 4
+Stolyarov Andrey 5 5 1
+Skovitin Pavel 3 3 5
+Kazanskaya Irina 5 3 1
+Tsyganok Yuriy 2 4 1
+Eryushova Karina 4 4 4
+Zimin Roman 3 3 5
+Trenin Kirill 4 2 5
+Vorovyeva Vasilisa 5 2 2
+Bychkov Boris 5 2 5
+Pavlov Nikita 3 4 5
+Hinko Evgeniy 4 1 2
+Baranova Kseniya 4 2 2
+Dudnik Elizaveta 1 4 1
+Lazovskiy Ivan 4 1 2
+Belyh Kristina 5 2 4
+Kuleshov Nikolay 1 3 5
+Buzukashvili Sofya 2 5 4
+Kamelin Stanislav 2 2 4
+Afanasiev Nikolay 3 1 3
+Sizareva Irina 1 4 2
+Mosyaykin Vladimir 5 3 1
+Kononihin Grigoriy 1 5 5
+Afonina Nina 2 1 5
+Golovkin Yuriy 1 1 5
+Osipova Vasilisa 5 4 2
+Mantula Petr 5 3 2
+Sobakin Pavel 3 5 3
+Matsievskiy Sergey 2 3 1
+Yakovlev Ivan 5 1 2
+Gusev Aleksey 3 5 3
+Gorinov Ivan 3 3 4
+Zamyatina Viktoriya 2 4 4
+Hromyh Nadezhda 2 3 4
+Zapletin Andrey 3 2 1
+Shuleshkina Mariya 1 5 4
+Osadchiy Denis 5 5 2
+computers Turgor 1 5 3
+Vyazmin Maksim 3 2 4
+Zhuravlev Aleksandr 4 2 5
+Baranova Mariya 2 2 3
+Dobroserdov Konstantin 4 3 1
+Tarasova Mariya 1 4 1
+Kuznetsova Antonina 1 1 5
+Abbasova Narmina 2 5 1
+Sotskov Denis 3 5 3
+Anfinogenov Dmitriy 3 4 3
+Nikonova Elena 4 4 3
+Belova Galina 5 1 4
+Beklemishev Vladimir 1 4 3
+Mizitov Andrey 4 3 1
+Kovalskiy Ivan 3 4 5
+Mironov Artem 3 1 3
+Kabykin Aleksey 4 1 2
+Vasyutin Aleksandr 2 4 5
+Vahnichenko Aleksey 5 4 2
+Kuznetsov Nikita 3 1 1
+Trunin Arseniy 4 4 2
+Abyzova Tatyana 3 1 2
+Safronov Dmitriy 3 5 1
+Kostyuchenok Ivan 2 2 1
+Voinov Pavel 3 2 5
+Mironova Anna 3 3 4
+Petropavlovskiy Dmitriy 2 3 5
+Kazakova Galina 4 3 5
+Semenenko Mariya 1 4 3
+Domnina Svetlana 1 1 4
+Polonskiy Sergey 1 3 4
+Suhanov Aleksey 2 5 5
+Folomeev Andrey 2 5 1
+Veyknis Violetta 3 4 5
+Petrova Mariya 3 2 5
+Khait Oleg 4 5 1
+Zaharov Sergey 3 3 2
+Lukovich Aleksander 2 2 5
+Pechkovskiy Oleg 3 5 1
+Plotnikova Olga 2 5 1
+Melichenko Ilya 1 1 4
+Uschapovskiy Ivan 1 4 4
+Golovko Aleksandr 5 2 1
+</input>
+      <output size="54">2.95959595959596 3.090909090909091 3.0303030303030303
+</output>
+      <correct size="23">2.9596 3.09091 3.0303 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+  </tests>
+</testing-report>

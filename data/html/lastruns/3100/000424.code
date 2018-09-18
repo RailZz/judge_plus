@@ -1,0 +1,18 @@
+n = int(input())
+primes = [True] * (n + 2)
+
+
+for i in range(2, n + 1):
+    if primes[i] == True:
+        for j in range(i ** 2, n + 1, i):
+            primes[j] = False
+
+pack = 0
+for i in range(2, len(primes) - 1):
+    if primes[i] == True:
+        if n - i > 1:
+            if primes[n - i] == True:
+                pack = 1
+                break
+print(i, n - i)
+        

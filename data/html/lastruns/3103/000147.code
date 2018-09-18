@@ -1,0 +1,19 @@
+n = int(input())
+matrix = []
+for i in range(n):
+    i = list(map(int, input().split()))
+    matrix.append(i)
+
+sink_list = []
+source_list = []
+
+for i in range(len(matrix)):
+    if matrix[i].count(0) == n:  
+        sink_list.append(i + 1)
+    else:
+        source_list.append(i + 1)
+
+print(len(source_list))
+print(*source_list, sep = '\n')
+print(len(sink_list))
+print(*sink_list, sep = '\n')

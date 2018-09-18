@@ -1,0 +1,7 @@
+<input size="13">5 41 2 1 100
+</input>
+      <output size="44">1000000000 35 67 71 1000000000 1000000000 
+3</output>
+      <correct size="2">3
+</correct>
+      

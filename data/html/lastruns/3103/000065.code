@@ -1,0 +1,54 @@
+program TaskB;
+
+const
+        SIZE = 100;
+        
+type
+        TArr = array [0..SIZE - 1] of LongInt;
+        TGraph = array of array of LongInt;
+        
+procedure Dfs (const g: TGraph; var used: TArr; v: LongInt; var cnt: LongInt);
+
+var
+        i: LongInt;
+        
+begin
+        used[v] := 1;
+        Inc (cnt);
+        
+        for i := 0 to Length (g[v]) - 1 do
+                if used[g[v, i]] = 0 then
+                        Dfs (g, used, g[v, i], cnt)
+end;
+        
+var
+        n, s, i, j, c, cnt: LongInt;
+        used: TArr;
+        g: TGraph;
+        
+begin
+        Read (n, s);
+        
+        SetLength (g, n);
+        
+        for i := 0 to n - 1 do
+                used[i] := 0;
+        
+        for i := 0 to n - 1 do
+                for j := 0 to n - 1 do
+                begin
+                        Read (c);
+                        
+                        if c = 1 then
+                        begin
+                                SetLength (g[i], Length (g[i]) + 1);
+                                g[i, Length (g[i]) - 1] := j
+                        end
+                end;
+                
+        cnt := 0;
+                
+        Dfs (g, used, s - 1, cnt);
+        
+        WriteLn (cnt)
+end.

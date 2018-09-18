@@ -1,0 +1,18 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="315" judge-id="19" status="RU" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>590d0743-76d9-4901-a698-fd99c57aaf8a</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000315.pas
+Linking 000315
+
+
+
+
+/usr/bin/ld: warning: link.res contains output sections; did you forget -T?
+57 lines compiled, 0.0 sec 
+</compiler_output>
+</testing-report>

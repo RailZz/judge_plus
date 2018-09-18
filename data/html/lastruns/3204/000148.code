@@ -1,0 +1,2 @@
+lst = list(map(int, input().split()))
+print(len([1 for i, e in enumerate(lst[1:-1]) if lst[i] < e > lst[i+2]]))

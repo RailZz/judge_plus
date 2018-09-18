@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+long long int nod (long long int a, long long int b)
+{
+    while (a!=0 && b!=0)
+        {
+            if (a>b)
+            {
+                swap(a,b);
+            }
+            b=b%a;
+        }
+        return(b+a);
+}
+
+int main()
+{
+    long long int n,k,l=0,nood=0;;
+    cin >> n;
+    cin >> l;
+    nood=l;
+    for (long long int i=1; i<n; i++)
+    {
+        cin >> l;
+        nood=nod(nood,l);
+    }
+    cout<<nood;
+}

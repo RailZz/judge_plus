@@ -1,0 +1,66 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector < vector<int>> gr;
+vector <int> used;
+vector < vector<int>> G;
+vector <int> component;
+
+int S=0, k=0;
+
+void dfs (int v)
+{ 
+    k++;
+    used[v]++;
+    G[S].push_back(v); 
+    for (auto u: gr[v])
+    {
+        if (used[u]==0)
+        {
+            dfs(u);
+        }
+    }
+}
+int main ()
+{
+    int N, M, a, b;
+    cin >> N >> M;
+    gr.resize(N);
+    used.resize(N,0);
+    G.resize (N);
+    for (int i = 0; i < M; i++)
+    {
+        cin >> a >> b;
+        gr[a-1].push_back(b-1);
+        gr[b-1].push_back(a-1);
+    }
+    for (int i = 0;i < N; i++)
+    {
+        k=0;
+        if (used[i]==0)
+        {
+            dfs(i);
+            component.push_back(k);
+            S++; 
+        }
+    }
+    for (int i = 0; i < N; i++)
+    {
+        sort(G[i].begin(),G[i].end());
+    }
+    cout << S << endl;
+    for (int i = 0; i < component.size(); i++)
+    {
+    if (component[i]>0)
+    {
+        cout << component[i] << endl;
+        for (int j = 0; j < G[i].size(); j++)
+            cout << G[i][j]+1 << " ";
+        cout << endl;
+    }
+    }
+    return 0;
+}

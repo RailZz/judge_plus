@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int f(int x)
+{
+    return x * x + sqrt(x);
+}
+
+int main()
+{
+    int c;
+    cin >> c;
+    int l, r, m;
+    while (r - l > pow(10, -5))
+    {
+        l = 0;
+        r = pow(10, 10) + 1;
+        m = (l + r) / 2;
+        if (f(m) < c)
+        {
+            l = m;
+        } else {
+            r = m;
+        }
+    }
+    cout << l;
+
+    return 0;
+}

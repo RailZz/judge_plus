@@ -1,0 +1,13 @@
+<input size="18">5
+0
+-7
+23
+29
+-14
+
+</input>
+      <output size="6">3 2 2
+</output>
+      <correct size="6">1 2 2
+</correct>
+      

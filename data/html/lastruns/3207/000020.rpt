@@ -1,0 +1,23 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="20" judge-id="7" status="RT" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>65fd688b-fb17-4c5a-aaea-abfca4ea4dac</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="14" real-time="16" max-memory-used="307200" >
+  <program-stats-str>{ utime=10, stime=4, ptime=14, rtime=16, maxvsz=307200, maxrss=5337088, nvcsw=1, nivcsw=3 }</program-stats-str>
+      <input size="2">1
+</input>
+      <output size="0"></output>
+      <stderr size="154">Traceback (most recent call last):
+  File &quot;./000020&quot;, line 11, in &lt;module&gt;
+    print(get_fibo())
+TypeError: get_fibo() takes exactly 1 argument (0 given)
+</stderr>
+    </test>
+  </tests>
+</testing-report>

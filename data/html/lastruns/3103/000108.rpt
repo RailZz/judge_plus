@@ -1,0 +1,59 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="108" judge-id="39" status="PE" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>d7cef1dc-6d00-4aab-bc90-0db058c5e90e</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="PE" time="26" real-time="29" max-memory-used="307200"  checker-comment="3getNUm ready for 3 getcur 1 getcur 2 getcur 3 ready for 2 getcur 4 getcur 5 ready for 1 getcur 6 3getNUm ready for 3 ge..." >
+  <program-stats-str>{ utime=13, stime=13, ptime=26, rtime=29, maxvsz=307200, maxrss=6348800, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17285120, maxrss=2965504, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="20">6 4
+3 1
+1 2
+5 4
+2 3
+</input>
+      <output size="41">3
+3
+1 2 3
+[1, 2, 3]
+2
+4 5
+[4, 5]
+1
+6
+[6]
+</output>
+      <correct size="23">3
+3
+1 2 3 
+2
+4 5 
+1
+6 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="199">3getNUm
+ready for 3
+getcur 1
+getcur 2
+getcur 3
+ready for 2
+getcur 4
+getcur 5
+ready for 1
+getcur 6
+3getNUm
+ready for 3
+getcur 1
+getcur 2
+getcur 3
+wrong output format Expected integer, but &quot;[1,&quot; found
+</checker>
+    </test>
+  </tests>
+</testing-report>

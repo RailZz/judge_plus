@@ -1,0 +1,24 @@
+#include <stdio.h>
+int nod (int a, int b){
+    if (a < b){
+        int c = a;
+        a = b;
+        b = c;
+    }
+    while ( b != 0){
+        int c = a;
+        a = b;
+        b = c % b;
+    }
+    return a;
+}
+int main(void){
+    int a, b, c, d, nodik, znam, chis, m, n;
+    scanf ("%d %d %d %d", &a, &b, &c, &d);
+    chis = a * d + b * c;
+    znam = b * d;
+    nodik = nod (chis, znam);
+    m = chis / nodik;
+    n = znam / nodik;
+    printf ("%d %d", m, n);
+}

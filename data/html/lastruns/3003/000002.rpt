@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="2" judge-id="3" status="SV" scoring="ACM" run-tests="0" contest-id="3003" compile-error="yes" >
+  <uuid>75397e5f-0c0a-43d0-80e6-9002826b4dd7</uuid>
+  <compiler_output>000002.cpp:44:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+Done processing 000002.cpp
+Total errors found: 1
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

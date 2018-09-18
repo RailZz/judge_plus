@@ -1,0 +1,21 @@
+ function min(a, b : longint) : longint;
+begin
+  if a < b then min := a else min := b;
+end;
+ 
+var
+  n, i : longint;
+  a, d: array [1..100] of Integer;
+begin
+  readLn(n);
+  for i := 1 to n do
+         read(a[i]);
+ 
+  d[1] := a[1];
+  d[2] := a[2];
+  
+  for i := 3 to n do
+          d[i] := min(d[i-2], d[i-1]) + a[i];
+    
+  writeLn(d[n]);
+end.

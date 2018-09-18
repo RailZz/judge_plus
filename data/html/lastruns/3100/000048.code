@@ -1,0 +1,10 @@
+n = int(input())
+count = int()
+for i in range(2, int((n)**0.5)):
+    count = 0
+    if n % i == 0:
+        print('composite')
+        count += 1
+        break
+if count == 0:
+    print('prime')

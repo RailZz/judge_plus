@@ -1,0 +1,6 @@
+n=int(input())
+S=0
+while n <= 100 :
+    S=S + (n**2)
+    n+=1
+print (S)

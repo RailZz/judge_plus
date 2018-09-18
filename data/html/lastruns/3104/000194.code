@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+const int INF = 1000000000;
+
+int main() {
+
+	int n, c, k, b, m;
+	cin >> n >> c >> k >> b >> m;
+    vector<int> a(n);
+    a[0] = c;
+    for (int i = 1; i<n; ++i) a[i] = (k * a[i-1] + b) % m;
+    vector<int> dp(n+1, INF);
+    vector<int> id(n + 1, -1);
+	vector<int> parent(n + 1, -1);
+    dp[0] = -INF;
+    id[1] = 0;
+    for (int i=0; i<n; ++i) cout << a[i] << " ";
+
+    for (int i=0; i<n; ++i) {
+        int j = int (upper_bound (dp.begin(), dp.end(), a[i]) - dp.begin());
+        if (dp[j-1] < a[i] && a[i] < dp[j]) {
+            dp[j] = a[i];
+            id[j] = i;
+            parent[i] = id[j-1];
+        }
+    }
+
+    int max;
+	for (int i = n; i >= 0; --i) {
+		if (dp[i] < INF) {
+			cout << i << endl;
+			max = i;
+			break;
+		}
+	}
+
+    max = id[max];
+    while(max != -1){
+        cout << a[n - max - 1] << " ";
+        max = parent[max];
+    }
+
+	return 0;
+}
+

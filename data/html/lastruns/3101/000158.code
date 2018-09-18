@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main ()
+{
+	int N, K, left, right, m, kol, max=-999999;
+	cin >> N >> K;
+	vector <int> mas1 (N);
+	vector <int> mas2 (K);
+	for (int i = 0; i < N; i++)
+		cin >> mas1[i];
+	for (int i = 0; i < K; i++)
+		cin >> mas2[i];
+	for (int i=0;i<K;i++)
+	{
+		left=0;
+		right=mas1.size()-1;
+		if (mas2[i]>=mas1[left] && mas1[i]<=mas1[right])
+		{
+			while (right-left>1)
+			{
+				m=(right+left)/2;
+				if (mas1[m]<=mas2[i])
+					left = m;
+				else
+					right = m;				
+			}
+			if (mas1[left]== mas2[i]||mas1[right]==mas2[i])
+				cout << "YES" << endl; 
+			else
+				cout << "NO" << endl;
+		}
+		else
+			cout << "NO" << endl;
+	}
+}

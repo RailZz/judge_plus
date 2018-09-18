@@ -1,0 +1,35 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int nod(int a, int b)
+{
+    while (a != 0 && b != 0)
+    {
+        if (a > b)
+        {
+            swap(a, b);
+        }
+        b %= a;
+    }
+    return a + b;
+}
+
+int main()
+{
+    vector<int> vec;
+    for (int i = 0; i < 4; i++)
+    {
+        int n;
+        cin >> n;
+        vec.push_back(n);
+    }
+    int x1, x2;
+    int NOD;
+    NOD = nod((vec[3] * vec[0] + vec[2] * vec[1]), (vec[1] * vec[3]));
+    x1 = ((vec[3] * vec[0]) + (vec[2] * vec[1])) / NOD;
+    x2 = (vec[1] * vec[3]) / NOD;
+    cout << x1 << " " << x2;
+    return 0;
+}

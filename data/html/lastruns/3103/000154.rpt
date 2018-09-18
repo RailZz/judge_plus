@@ -1,0 +1,19 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="154" judge-id="26" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>f65d33db-c28b-4722-ad42-bf36dc95624f</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000154.pas
+000154.pas(33,13) Error: Identifier not found &quot;inp&quot;
+000154.pas(34,15) Warning: Variable &quot;x&quot; does not seem to be initialized
+000154.pas(34,18) Warning: Variable &quot;y&quot; does not seem to be initialized
+000154.pas(59,55) Error: Identifier not found &quot;wrileln&quot;
+000154.pas(59,60) Error: Identifier not found &quot;outp&quot;
+000154.pas(62,4) Fatal: There were 3 errors compiling module, stopping
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

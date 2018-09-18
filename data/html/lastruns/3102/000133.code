@@ -1,0 +1,20 @@
+function f(a,b,c,n:int64):boolean;
+begin
+if (a div b)+ (a div c)<n then f:=true else f:=false;
+end;
+var n,x,y,l,r,m:int64;
+begin
+read (n,x,y);
+n:=n-1;
+l:=0;
+if x>y then r:=n*x 
+else r:=n*y;
+while r-l>1 do begin
+m:=(l+r) div 2;
+if f(m,x,y,n)=true
+then l:=m
+else r:=m;
+end;
+ if x<y then writeln(r+x)
+ else writeln(r+y)
+end.

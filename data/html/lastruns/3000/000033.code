@@ -1,0 +1,69 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+vector <long long> pow_memory;
+
+long long poww(long long p, long long i, long long mod)
+{
+    if (pow_memory[i] != 0)
+    {
+        return pow_memory[i];
+    }
+    long long ans = 1;
+    for (int j = 1; j <= i; ++j)
+    {
+        ans = ans * p % mod;
+    }
+    pow_memory[i] = ans;
+    return ans;
+}
+
+int main()
+{
+    pow_memory.resize(10000, 0);
+    srand(time(0));
+    string s, t, diez = "#";
+    //long long seeds[8] = {29, 31, 37, 41, 43, 1000000007, 1000000009, 2000000011};
+    long long p = 37;//seeds[rand() % 5];
+    long long mod = 1000000007; //seeds[rand() % 4 + 5];
+    //cout << "p = " << p << ", mod = " << mod << endl;
+    int i;
+    cin >> s >> t;
+    vector <long long> hash_s(s.size());
+    hash_s[0] = s[0];
+    //cout << "hashing s: " << endl;
+    for (i = 1; i < s.size(); ++i)
+    {
+        hash_s[i] = ((long long) hash_s[i-1] * p % mod + s[i]) % mod;
+        //cout << hash_s[i] << endl;
+    }
+    //cout << endl;
+
+    vector <long long> hash_t(t.size());
+    hash_t[0] = t[0];
+    for (i = 1; i < t.size(); ++i)
+    {
+        hash_t[i] = (hash_t[i-1] * p % mod + t[i]) % mod;
+    }
+
+    long long hashed_t = hash_t[t.size()-1];
+    //cout << "t_hashed = " << hashed_t << endl;
+
+    for (i = 0; i <= (long long) s.size() - (long long) t.size(); ++i)
+    {
+        //найдем сабхэш
+        long long big = hash_s[i+t.size()-1];
+        long long small = 0;
+        if (i != 0)
+        {
+            small = (long long)(hash_s[i-1] * poww(p, (long long) t.size(), mod)) % mod;
+        }
+        long long subhash = (big - small + mod) % mod;
+        //cout << subhash << endl;
+        if (subhash == hash_t[t.size()-1])
+        {
+            cout << i << " ";
+        }
+    }
+}

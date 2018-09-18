@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+main(){
+	int n,m,k;
+	cin>>n>>m>>k;
+	if((k>=m or k>=n) and m*n>k){
+		if((n*m-(k/n)*n)%n==0){
+		cout<<"YES"<<endl;
+		}
+		else{
+			if((n*m-(k/m)*m)%m==0){
+				cout<<"YES"<<endl;
+			}
+			else{
+				cout<<"NO"<<endl;
+			}
+		}
+	}
+	else{
+		cout<<"NO"<<endl;
+	}
+}

@@ -1,0 +1,21 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="157" judge-id="5" status="CE" scoring="ACM" run-tests="0" contest-id="3207" compile-error="yes" >
+  <uuid>30c8e416-ac96-462a-9ccd-193eba1ba635</uuid>
+  <compiler_output>000157.cpp:1:1: error: unknown type name 'def'
+def store(a):
+^
+000157.cpp:1:11: error: unknown type name 'a'
+def store(a):
+          ^
+000157.cpp:2:6: error: expected '('
+    f=open('25.txt', 'w')
+     ^
+000157.cpp:2:6: error: expected '{' or ','
+000157.cpp:1:13: error: only constructors take base initializers
+def store(a):
+            ^
+5 errors generated.
+</compiler_output>
+</testing-report>

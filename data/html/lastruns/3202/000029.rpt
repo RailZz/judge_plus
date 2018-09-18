@@ -1,0 +1,38 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="29" judge-id="16" status="SE" scoring="ACM" run-tests="2" contest-id="3202" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>faa1ce5f-743c-4c37-84a3-0e987448a3e4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=23, stime=3, ptime=26, rtime=29, maxvsz=307200, maxrss=6381568, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">3
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="SE" time="285" real-time="299" max-memory-used="18698240" >
+  <program-stats-str>{ utime=253, stime=32, ptime=285, rtime=299, maxvsz=18698240, maxrss=19238912, nvcsw=1, nivcsw=34 }</program-stats-str>
+      <input size="3">-5
+</input>
+      <output size="0"></output>
+      <stderr size="280">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000029&quot;, line 12, in &lt;module&gt;
+    print(sign)
+NameError: name 'sign' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

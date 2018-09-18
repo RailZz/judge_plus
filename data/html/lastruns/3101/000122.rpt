@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="122" judge-id="101" status="TL" scoring="ACM" run-tests="1" contest-id="3101" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>92389b9a-4cfb-40af-9488-552269e30259</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Done processing 000122.c
+000122.c: In function 'main':
+000122.c:21:5: warning: implicit declaration of function 'qsort' [-Wimplicit-function-declaration]
+     qsort (b, sizeof(b)/sizeof(*b), sizeof(*b), comp);
+     ^
+
+</compiler_output>
+  <tests>
+    <test num="1" status="TL" time="2012" real-time="2436" max-memory-used="2531328" >
+  <program-stats-str>{ utime=1970, stime=42, ptime=2012, rtime=2436, maxvsz=2531328, maxrss=2387968, nvcsw=1, nivcsw=191 }</program-stats-str>
+      <input size="109">10 10
+1 61 126 217 2876 6127 39162 98126 712687 1000000000 
+100 6127 1 61 200 -10000 1 217 10000 1000000000 
+</input>
+      <output size="0"></output>
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

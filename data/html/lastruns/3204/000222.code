@@ -1,0 +1,10 @@
+N, K = [int(i) for i in input().split()]
+m = list(range (1, N + 1))
+for u in range(len(m)):
+    m[u] = 'I'
+for i in range (K):
+    l, r = [int(i) for i in input().split()]
+    for p in range(len(m)):
+        if l <= p + 1 <= r :
+            m[p] = "."
+print(*m)

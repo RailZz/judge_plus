@@ -1,0 +1,56 @@
+program RoomSquare;
+
+const
+        SIZE = 10;
+        d: array [1..4, 1..2] of Integer = ((1, 0), (-1, 0), (0, 1), (0, -1));
+        
+type
+        TUsed = array [1..SIZE, 1..SIZE] of LongInt;
+        TGraph = array [0..SIZE + 1, 0..SIZE + 1] of Char;
+        
+procedure Dfs (const g: TGraph; var used: TUsed; r, c: LongInt; var cnt: LongInt);
+
+var
+        i: LongInt;
+        
+begin
+        used[r, c] := 1;
+        Inc (cnt);
+        
+        for i := 1 to 4 do
+                if (g[r + d[i, 1], c + d[i, 2]] = '.') and (used[r + d[i, 1], c + d[i, 2]] = 0) then
+                        Dfs (g, used, r + d[i, 1], c + d[i, 2], cnt)
+end;
+        
+var
+        g: TGraph;
+        used: TUsed;
+        n, i, j, r, c, cnt: LongInt;
+        
+begin
+        ReadLn (n);
+        
+        for i := 0 to SIZE + 1 do
+                for j := 0 to SIZE + 1 do
+                        g[i, j] := '#';
+                        
+        for i := 1 to SIZE do
+                for j := 1 to SIZE do
+                        used[i, j] := 0;
+                        
+        for i := 1 to n do
+        begin
+                for j := 1 to n do
+                        Read (g[i, j]);
+                        
+                ReadLn
+        end;
+        
+        Read (r, c);
+        
+        cnt := 0;
+        
+        Dfs (g, used, r, c, cnt);
+        
+        WriteLn (cnt)
+end.

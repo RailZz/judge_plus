@@ -1,0 +1,31 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int N, x, y,m;
+    int l=0, r;
+    cin>>N;
+    cin>>x;
+    cin>>y;
+    r = N;
+    if((N >=1 &&N <= 2*pow(10,8))&&(x >= 1)&&(y <= 10)){
+        do{
+            m =(l+r)/2;
+            if((m/x+m/y)>=(r-1)){
+               r=m;}
+               else
+                l=m;
+
+    }while((r-l)>1);
+
+    if(N>2){
+        if(x>y){
+          r+=y;}
+          else{
+            r+=x;
+          }
+        }
+
+   cout<<r;}
+}

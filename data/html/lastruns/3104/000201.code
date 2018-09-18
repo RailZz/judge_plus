@@ -1,0 +1,55 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int a[21][21];
+int d[21][21];
+char p[21][21];
+vector <char> ans;
+int main(void){
+    int n, m, x, y;
+    cin >> n >> m;
+    for (int i = 0; i < n; i ++){
+       for (int j = 0; j < n; j ++){
+       cin >> a[i][j];
+       }
+    }
+    d[0][0] = 0;
+    for (int i = 0; i < n; i ++){
+       for (int j = 0; j < m; j ++){
+          if (i != 0 && j == 0){
+             d[i][j]= d[i - 1][j] + a[i][j];
+             p[i][j] = 'D';
+          }
+          else if(j != 0 && i == 0){
+             d[i][j]= d[i][j - 1] + a[i][j];
+             p[i][j] = 'R';
+          }
+          else {
+             d[i][j]=max(d[i - 1][j], d[i][j - 1]) + a[i][j];
+             if (d[i - 1][j] > d[i][j - 1]){
+                p[i][j] = 'D';
+             }
+             else{
+                p[i][j] = 'R';
+             }
+          }
+       }
+    }
+    x = n - 1;
+    y = m - 1;
+    while (x >= 0 && y >= 0){
+        if (p[x][y] == 'R'){
+            y--;
+            ans.push_back ('R');
+        }
+        else if (p[x][y] == 'D'){
+            x--;
+            ans.push_back ('D');
+        }
+    }
+    cout << d[n - 1][m - 1] << "\n";
+    for (int i = ans.size() - 2; i>= 0; i --){
+        cout << ans[i] << " ";
+    }
+    return 0;
+}

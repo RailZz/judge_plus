@@ -1,0 +1,25 @@
+function koren(Pod,Nad:integer):integer;
+begin
+koren:=trunc(exp(ln(Pod)*Nad));
+end;
+
+var    kolOpV,KolV,Kol:longint;
+begin
+repeat
+
+ReadLn(Kol);
+until (Kol>1) and (Kol<21);
+if Kol <> 1 then
+begin  
+ KolV:=koren(3,kol);
+
+ 
+ kolOpV:=koren(3,Kol-2)+ 2*(Kol-2)*koren(3,Kol-3);
+ WriteLn(KolV-kolOpV);
+end 
+ else
+  begin
+   
+   WriteLn('3');
+  end;
+end.

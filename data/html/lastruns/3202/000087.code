@@ -1,0 +1,8 @@
+A = int(input())
+B = int(input())
+C = int(input())
+if A * B * C % 2 == 0 and ((A + B) % 2 != 0 or (A + C) % 2 != 0):
+    print('YES')
+else:
+    print('NO')
+    

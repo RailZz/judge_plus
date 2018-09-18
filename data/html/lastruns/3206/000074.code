@@ -1,0 +1,8 @@
+n = int(input())
+sum = [0, 0, 0]
+for i in range(n):
+    a = [int(i) for i in input().split()[2::]]
+    sum[0] += a[0]
+    sum[1] += a[1]
+    sum[2] += a[2]
+print(sum[0] / n, sum[1] / n, sum[2] / n)

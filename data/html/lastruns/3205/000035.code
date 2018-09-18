@@ -1,0 +1,13 @@
+n = int(input())
+f = True
+matrix = [[int(i) for i in input().split()]for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if matrix[i][j] != matrix[j][i]:
+            f = False
+            break
+        else: f = True
+if f:
+    print('yes')
+else:
+    print('no')

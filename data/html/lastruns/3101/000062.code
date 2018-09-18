@@ -1,0 +1,10 @@
+n = int(input())
+li = list(range(1, n + 1))
+l = 0
+r = len(li)
+k = 0
+while r - l > 1:
+    m = (r + l) // 2
+    l = m
+    k += 1
+print(k)

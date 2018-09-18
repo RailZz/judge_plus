@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="300" judge-id="25" status="SE" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>1f6068e0-e8fc-4a3e-9c51-8533de14befc</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="286" real-time="300" max-memory-used="18698240" >
+  <program-stats-str>{ utime=267, stime=19, ptime=286, rtime=300, maxvsz=18698240, maxrss=19116032, nvcsw=1, nivcsw=39 }</program-stats-str>
+      <input size="2">7
+</input>
+      <output size="0"></output>
+      <stderr size="229">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000300&quot;, line 6
+    else:
+    ^
+IndentationError: unexpected indent
+</stderr>
+    </test>
+  </tests>
+</testing-report>

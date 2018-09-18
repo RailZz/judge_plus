@@ -1,0 +1,5 @@
+n, m, k, l = [int(i) for i in input().split()]
+def f(a, b, c, d):
+    p = min(n, m, k, l)
+    return p
+print(f(n, m, k, l))

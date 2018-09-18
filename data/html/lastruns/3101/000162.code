@@ -1,0 +1,12 @@
+N = int(input())
+n = 0
+if N == 1:
+    print(n)
+else:
+    while N != 1:
+        N = N // 2
+        n += 1
+    if N % 2 == 0:
+        print(n)
+    else:
+        print(n + 1)

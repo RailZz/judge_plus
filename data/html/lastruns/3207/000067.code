@@ -1,0 +1,8 @@
+def get_sum(a):
+    sumofd = 0
+    while a > 0:
+        lastd = a % 10
+        sumofd += lastd
+        a = a // 10
+    return sumofd
+print(get_sum(int(input())))

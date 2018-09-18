@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long int x, y, n, l=0,r,m;
+    cin >> n;
+    n--;
+    cin >> x >> y;
+    r=n*max(x,y);
+    while (l<r)
+    {
+        m=(l+r)/2;
+        if (m/x+m/y<n)
+        {
+            l=m+1;
+        }
+        else
+        {
+            r=m;
+        }
+    }
+    cout<<r+min(x,y);
+    return 0;
+}

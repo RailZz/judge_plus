@@ -1,0 +1,36 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="311" judge-id="15" status="RT" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>dc34aed1-8510-47c9-9dbf-773b871bec51</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000311.cpp: In function 'int main()':
+000311.cpp:13:12: warning: unused variable 'k' [-Wunused-variable]
+     int n, k, s, f, c;
+            ^
+</compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="6" time="351" real-time="471" max-memory-used="205737984" >
+  <program-stats-str>{ utime=164, stime=187, ptime=351, rtime=471, maxvsz=205737984, maxrss=137183232, nvcsw=2, nivcsw=32 }</program-stats-str>
+      <input size="207">10
+0 1 0 0 0 0 0 0 0 0
+1 0 0 1 1 0 1 0 0 0
+0 0 0 0 1 0 0 0 1 0
+0 1 0 0 0 0 1 0 0 0
+0 1 1 0 0 0 0 0 0 1
+0 0 0 0 0 0 1 0 0 1
+0 1 0 1 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0
+0 0 1 0 0 0 0 1 0 0
+0 0 0 0 1 1 0 0 0 0
+5 4
+</input>
+      <output size="0"></output>
+      <stderr size="90">terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+</stderr>
+    </test>
+  </tests>
+</testing-report>

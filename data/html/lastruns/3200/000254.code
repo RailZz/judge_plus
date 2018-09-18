@@ -1,0 +1,3 @@
+a = int(input())
+m = a //10 - a //100 * 10
+print(m)

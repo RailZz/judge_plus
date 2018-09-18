@@ -1,0 +1,8 @@
+a=input()
+b=a.rfind('f')
+k=a.find('f')
+if b != -1 and k != -1:
+    if b == k:
+        print(k)
+    else:
+        print(k,b)

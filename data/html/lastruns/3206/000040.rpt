@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="40" judge-id="41" status="RT" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>4277946c-2895-40a2-9cb0-8138f9ad4760</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="185" real-time="200" max-memory-used="64462848" >
+  <program-stats-str>{ utime=157, stime=28, ptime=185, rtime=200, maxvsz=64462848, maxrss=45633536, nvcsw=1, nivcsw=44 }</program-stats-str>
+      <input size="12">Abrakadabra
+</input>
+      <output size="0"></output>
+      <stderr size="240">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000040&quot;, line 4, in &lt;module&gt;
+    v=input()
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
+NameError: global name 'Abrakadabra' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

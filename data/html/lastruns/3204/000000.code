@@ -1,0 +1,9 @@
+a = [ int(i) for i in input().split()]
+l = (min(int(i) for i in a))
+m = (max(int(i) for i in a))
+for j in range(len(a)):
+    if a[j] == l:
+        a[j] = m
+    elif a[j] == m:
+        a[j] = l 
+print(*a)

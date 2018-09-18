@@ -1,0 +1,4 @@
+m = [int(i) for i in input().split()]
+for i in range(len(m)):
+    if m.count(m[i]) == 1:
+        print(m[i], end = ' ')

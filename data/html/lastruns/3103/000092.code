@@ -1,0 +1,16 @@
+data = list(map(int, input().split()))
+answer = []
+N = data[0]
+M = data[1]
+G = [[] for i in range(N + 1)]
+for i in range(M):
+    edge = list(map(int, input().split()))
+    G[edge[0]].append(edge[1])
+    G[edge[1]].append(edge[0])
+for i in G:
+    answer.append(len(i))
+print(*answer[1:])
+
+
+            
+    

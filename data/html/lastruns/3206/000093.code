@@ -1,0 +1,7 @@
+a = input()
+b = a.find('h')
+c = a.rfind('h')
+x = a[:b]
+z = a[c+1:]
+y = x + z
+print(y)

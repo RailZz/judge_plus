@@ -1,0 +1,6 @@
+a = [int(i) for i in input().split()]
+for i in sorted(a):
+    a[1] = max(a)
+    a[-1] = min(a)
+print(sorted(a))
+print(a)

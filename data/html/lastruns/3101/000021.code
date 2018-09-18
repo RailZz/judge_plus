@@ -1,0 +1,11 @@
+import math
+a = float(input())
+l = -math.pi/2
+r = math.pi/2
+while r - l > 10**-6:
+    c = (r + l) // 2
+    if math.sin(c) < math.sin(a):
+        l = c
+    elif math.sin(c) >= math.sin(a):
+        r = c
+print(c)

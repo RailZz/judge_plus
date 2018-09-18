@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="186" judge-id="1" status="SV" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>4e50854e-e615-4af6-a890-341faba3b90c</uuid>
+  <compiler_output>000186.py:1:9: E231 missing whitespace after ','
+000186.py:6:14: E201 whitespace after '('
+000186.py:6:20: E202 whitespace before ')'
+000186.py:17:1: W293 blank line contains whitespace
+000186.py:18:1: E303 too many blank lines (3)
+000186.py:18:9: E231 missing whitespace after ','
+000186.py:23:14: E201 whitespace after '('
+000186.py:23:20: E202 whitespace before ')'
+000186.py:34:1: W293 blank line contains whitespace
+000186.py:35:1: E303 too many blank lines (3)
+000186.py:35:8: E201 whitespace after '('
+000186.py:35:15: E202 whitespace before ')'
+000186.py:37:22: E201 whitespace after '('
+000186.py:37:29: E202 whitespace before ')'
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

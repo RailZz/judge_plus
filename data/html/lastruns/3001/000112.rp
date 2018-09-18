@@ -1,0 +1,12 @@
+<input size="34">5
+0 0 3 0 2
+3
+u 1 5
+u 1 0
+s 1 5 3
+</input>
+      <output size="2">0
+</output>
+      <correct size="2">4
+</correct>
+      

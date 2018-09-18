@@ -1,0 +1,30 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="42" judge-id="43" status="WA" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>4bc20018-cb84-453c-9028-8444881f19a5</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="25" real-time="29" max-memory-used="307200"  checker-comment="Line 2 differs: output: ?The next previous for the number 179 is 178.? correct: ?The previous number for the number 179 is 178.?" >
+  <program-stats-str>{ utime=19, stime=6, ptime=25, rtime=29, maxvsz=307200, maxrss=6172672, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">179
+</input>
+      <output size="88">The next number for the number 179 is 180.
+The next previous for the number 179 is 178.
+</output>
+      <correct size="90">The next number for the number 179 is 180.
+The previous number for the number 179 is 178.
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="129">Line 2 differs: output:
+&gt;The next previous for the number 179 is 178.&lt;
+correct:
+&gt;The previous number for the number 179 is 178.&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

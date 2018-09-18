@@ -1,0 +1,13 @@
+n, k = map(int, input().split())
+res = input().split()[:n]
+res2 = input().split()[:k]
+b = False
+for a in res2:
+    for i in res:
+        if a == i:
+            print("YES")
+            b = True
+            break
+    if b == False:
+        print("NO")
+    b = False

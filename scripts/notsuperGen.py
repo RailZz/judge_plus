@@ -159,7 +159,7 @@ for name, logins, contest in data:
     header = [wrapCell(i) for i in ['Имя', 'login']]
     
     for ci, i in enumerate(contests):
-        task_nums = open('/home/judges/nums/'+str(i)).readline().split('#')
+        task_nums = open('/home/judges/nums/' + str(i)).readline().split('#')
         for j in conXml[i]:
             clr = 'FFFFFF'
             if j in marked[ci]:

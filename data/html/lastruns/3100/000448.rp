@@ -1,0 +1,18 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="448" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>4955e810-a385-4c24-838f-7ff6a9500544</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000448.pas
+000448.pas(4,5) Error: Identifier not found &quot;a&quot;
+000448.pas(9,16) Error: Identifier not found &quot;a&quot;
+000448.pas(10,8) Error: Identifier not found &quot;a&quot;
+000448.pas(13,7) Error: Identifier not found &quot;Prost&quot;
+000448.pas(14,4) Fatal: Syntax error, &quot;.&quot; expected but &quot;;&quot; found
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

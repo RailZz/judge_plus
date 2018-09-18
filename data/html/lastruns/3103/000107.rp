@@ -1,0 +1,56 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="107" judge-id="38" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>e3b9b217-dfd4-4906-9bc2-81547652fdf8</uuid>
+  <compiler_output>000107.cpp: In function 'int main()':
+000107.cpp:32:19: error: conflicting declaration 'std::vector&lt;int&gt; stok'
+  vector&lt;int&gt; stok(n, 0);
+                   ^
+000107.cpp:31:13: note: previous declaration as 'int stok'
+  int istok, stok;
+             ^
+000107.cpp:33:20: error: conflicting declaration 'std::vector&lt;int&gt; istok'
+  vector&lt;int&gt; istok(n, 0);
+                    ^
+000107.cpp:31:6: note: previous declaration as 'int istok'
+  int istok, stok;
+      ^
+000107.cpp:38:18: error: request for member 'push_back' in 'stok', which is of non-class type 'int'
+             stok.push_back(i);
+                  ^
+000107.cpp:39:19: error: request for member 'push_back' in 'istok', which is of non-class type 'int'
+             istok.push_back(i);
+                   ^
+000107.cpp:41:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int j = 0; j &lt; vec[i].size(); j++)
+                     ^
+000107.cpp:43:19: error: request for member 'push_back' in 'istok', which is of non-class type 'int'
+             istok.push_back(vec[i][j]);
+                   ^
+000107.cpp:46:24: error: invalid types 'int[int]' for array subscript
+                 istok[i].erase(istok[i].brgin() + j);
+                        ^
+000107.cpp:46:39: error: invalid types 'int[int]' for array subscript
+                 istok[i].erase(istok[i].brgin() + j);
+                                       ^
+000107.cpp:50:19: error: request for member 'size' in 'istok', which is of non-class type 'int'
+     cout &lt;&lt; istok.size() &lt;&lt; endl; 
+                   ^
+000107.cpp:51:28: error: request for member 'size' in 'istok', which is of non-class type 'int'
+  for (int i = 0; i &lt; istok.size(); i++)
+                            ^
+000107.cpp:53:24: error: invalid types 'int[int]' for array subscript
+         cout &lt;&lt; istok[i] &lt;&lt; endl;   
+                        ^
+000107.cpp:55:18: error: request for member 'size' in 'stok', which is of non-class type 'int'
+     cout &lt;&lt; stok.size() &lt;&lt; endl; 
+                  ^
+000107.cpp:56:31: error: request for member 'size' in 'istok', which is of non-class type 'int'
+     for (int i = 0; i &lt; istok.size(); i++)
+                               ^
+000107.cpp:58:23: error: invalid types 'int[int]' for array subscript
+         cout &lt;&lt; stok[i] &lt;&lt; endl;   
+                       ^
+</compiler_output>
+</testing-report>

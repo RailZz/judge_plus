@@ -1,0 +1,13 @@
+N,x,y = map(int,input().split())
+N -= 1
+l = 0 
+r = N * max(x,y)
+m = 0
+while (l < r): 
+    m =(r + l) // 2
+    if ((m // x + m // y) <N):
+        l = m + 1
+    else:
+        r = m
+print(r + min(x,y))
+     

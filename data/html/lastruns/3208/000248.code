@@ -1,0 +1,2 @@
+Python=input()
+print(("Python")*100)

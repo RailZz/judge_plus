@@ -1,0 +1,15 @@
+def get_min_4(a,b,c,d):
+    k=[a,b,c,d]
+    s=10**10
+    for i in k:
+        if i<s:
+            s=i
+    return(s)
+
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+print(get_min_4(a,b,c,d))
+    

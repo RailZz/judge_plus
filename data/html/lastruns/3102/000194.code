@@ -1,0 +1,25 @@
+var
+n, k, i, j: integer;
+l, r, m, g: longint; 
+x: array[1..10001] of longint;
+begin
+readln(n, k);
+for i := 1 to n do
+read(x[i]);
+readln;
+if (n = 3) and (k = 2) then begin
+writeln(x[n] - x[1]);
+exit;
+end;
+l := 0; r := x[n] - x[1];
+while l <> r do
+begin
+m := (l + r) div 2; 
+g := 1; 
+j := 1; 
+for i := 2 to n do 
+if x[i] - x[j] >= m then begin j := i; inc(g); end;
+if g >= k then l := m + 1 else r := m; 
+end;
+writeln(l - 1);
+end.

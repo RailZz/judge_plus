@@ -1,0 +1,6 @@
+n = int(input())
+l = int(input())
+if n > l:
+    print(n)
+else:
+    print(l)

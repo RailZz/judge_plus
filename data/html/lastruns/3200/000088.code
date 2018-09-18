@@ -1,0 +1,4 @@
+n = int(input())
+k = n//2
+k = k*2 + 2
+print(k)

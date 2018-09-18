@@ -1,0 +1,20 @@
+N, M = map(int, input().split())
+lst = [0] * N
+lst1 = [0] * N
+used = [0] * N
+n = 0
+for i in range (N):
+    lst[i] = []
+for i in range (M):
+    a, b = map(int, input().split())
+    lst[a -1].append(b - 1)
+    lst[b - 1].append(a - 1)
+def DFS (N):
+    used[N] = 1
+    lst1[N] = lst1[N] + 1
+    for i in lst[N]:
+        if used[i] == 0:
+            return DFS(i)
+for i in range (N):
+    lst1[i] = str(len(lst[i]))
+print(' '.join(lst1))

@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n, rez = 0;
+	cin >> n;
+	while (n!=1)
+	{
+		rez++;
+		if (n % 2 == 1)
+			n = n / 2 + 1;
+		else
+			n /= 2;
+	}
+	cout << rez;
+}

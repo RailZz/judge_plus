@@ -1,0 +1,36 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="267" judge-id="19" status="WA" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>0c3d28e3-af1f-4310-99d4-2ca23171902a</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="2" real-time="4" max-memory-used="315392"  checker-comment="Answers differ: [1]: output: 0, correct: 1" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=4, maxvsz=315392, maxrss=3014656, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2367488, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="21">3
+1
+2 
+3
+1 2
+3 1
+2 3
+</input>
+      <output size="48">0 -&gt; 1
+1 -&gt; 0
+2 -&gt; 0
+0 -&gt; 2
+1 -&gt; 2
+2 -&gt; 1
+1 0 1 </output>
+      <correct size="7">1 0 1 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="43">Answers differ: [1]: output: 0, correct: 1
+</checker>
+    </test>
+  </tests>
+</testing-report>

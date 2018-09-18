@@ -1,0 +1,5 @@
+c = input()
+if c .count('f') == 1:
+    print(c .find('f'))
+elif c .count('f') >= 2:
+    print(c .find('f'), c .rfind('f'))

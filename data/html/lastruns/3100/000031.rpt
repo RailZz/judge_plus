@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="31" judge-id="50" status="SE" scoring="ACM" run-tests="1" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>6078a25c-1846-48d5-87b6-9f8bd14c8bc4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="284" real-time="687" max-memory-used="29560832" >
+  <program-stats-str>{ utime=260, stime=24, ptime=284, rtime=687, maxvsz=29560832, maxrss=19316736, nvcsw=1, nivcsw=87 }</program-stats-str>
+      <input size="2">2
+</input>
+      <output size="0"></output>
+      <stderr size="288">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000031&quot;, line 13, in &lt;module&gt;
+    if divisor == 2:
+NameError: name 'divisor' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

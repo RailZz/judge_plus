@@ -1,0 +1,19 @@
+var
+N,M,b,c,d:integer;
+a:array[1..100] of integer;
+begin
+readln(N,M);
+for b:=1 to 100 do
+a[b]:=0;
+for b:=1 to M do
+begin
+readln(c,d);
+a[c]:=a[c]+1;
+a[d]:=a[d]+1;
+end;
+for b:=1 to N do
+begin
+write(a[b]);
+write(' ');
+end;
+end.

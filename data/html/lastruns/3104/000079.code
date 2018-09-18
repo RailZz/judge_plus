@@ -1,0 +1,17 @@
+program myach;
+var
+  a : array[0..107] of uint64;
+  n, i : integer;
+  
+begin
+  readln(n);
+  for i := 0 to 107 do a[i] := 0;
+  a[n] := 1; 
+  
+  for i := n - 1 downto 0 do begin
+    a[i] := a[i + 1] + a[i + 2] + a[i + 3]; 
+  end;
+  
+  
+  writeln(a[0]);
+end.

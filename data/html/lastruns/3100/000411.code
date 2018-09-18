@@ -1,0 +1,11 @@
+mass = [int(x) for x in input().split()] 
+a = mass[0] 
+b = mass[1] 
+
+while a!=0 and b!=0: 
+    if a > b: 
+        a = a % b 
+    else: 
+        b = b % a 
+
+print(int((mass[0] * mass[1]) / (a + b))) 

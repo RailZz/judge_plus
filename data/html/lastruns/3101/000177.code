@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int vvod, quest;
+    std::cin >> vvod;
+    quest = 0;
+    while (vvod != 1){
+        vvod = (vvod + 1) / 2;
+        quest++;
+    }
+    cout << quest;
+    return 0;
+}

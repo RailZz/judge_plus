@@ -1,0 +1,9 @@
+a=[int (i) for i in input().split()]
+def get_min(a):
+    m=0
+    for i in range(len(a)):
+        if a[i]<a[m]:
+                m=i
+    return a[m]
+
+print(get_min(a))

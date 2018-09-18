@@ -1,0 +1,17 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="78" judge-id="3" status="CE" scoring="ACM" run-tests="0" contest-id="3205" compile-error="yes" >
+  <uuid>ee236f6a-34f6-45c7-b793-083c258ec637</uuid>
+  <compiler_output>000078.cpp: In function 'int main()':
+000078.cpp:11:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for( int i = 0; i &lt; a.size(); ++i){
+                    ^
+000078.cpp:14:7: error: 'i' was not declared in this scope
+  for( i = 0; i &lt; n; i = i + 2){
+       ^
+000078.cpp:14:18: error: 'n' was not declared in this scope
+  for( i = 0; i &lt; n; i = i + 2){
+                  ^
+</compiler_output>
+</testing-report>

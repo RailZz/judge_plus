@@ -1,0 +1,18 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="154" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3207" compile-error="yes" >
+  <uuid>73a6cd4e-4173-4fe1-ab2f-bdd1e1d3de54</uuid>
+  <compiler_output>000154.cpp:1:1: error: C++ requires a type specifier for all declarations
+a=[int(i) for i in input().split()]
+^
+000154.cpp:1:3: error: expected expression
+a=[int(i) for i in input().split()]
+  ^
+000154.cpp:8:29: error: expected ';' after top level declarator
+print(open(&quot;25.txt&quot;).read())
+                            ^
+                            ;
+3 errors generated.
+</compiler_output>
+</testing-report>

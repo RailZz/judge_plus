@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="27" judge-id="1" status="RU" scoring="ACM" run-tests="0" contest-id="3004" compile-error="yes" >
+  <uuid>2b36d01d-a282-4cfc-af0c-734f95ddc0f7</uuid>
+  <compiler_output>Done processing 000027.cpp
+000027.cpp: In function 'int main()':
+000027.cpp:46:19: warning: unused variable 'c' [-Wunused-variable]
+         int a, b, c;
+                   ^
+
+</compiler_output>
+</testing-report>

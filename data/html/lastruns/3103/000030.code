@@ -1,0 +1,31 @@
+istok = []
+stok = []
+n = int(input())
+b = []
+for i in range(n):
+    a = [int(x) for x in input().split()]
+    b.append(a)
+for i in range(n):
+    k = 0
+    for j in range(n):
+        if b[i][j] == 1:
+            break
+        else:
+            k += 1
+    if k == n:
+        stok.append(i + 1)
+for i in range(n):
+    k = 0
+    for j in range(n):
+        if b[j][i] == 1:
+            break
+        else:
+            k += 1
+    if k == n:
+        istok.append(i + 1)
+print(len(istok))
+for i in range(len(istok)):
+    print(istok[i])
+print(len(stok))
+for i in range(len(stok)):
+    print(stok[i])

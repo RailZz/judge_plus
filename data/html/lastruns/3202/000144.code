@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a,a1,b,b1;
+	cin>>a>>a1>>b>>b1;
+	if(a==b or a1==b1){
+		cout<<"YES"<<endl;
+	}
+	else{
+		cout<<"NO"<<endl;
+	}
+}

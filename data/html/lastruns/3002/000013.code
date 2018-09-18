@@ -1,0 +1,53 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int n, m;
+const int SZ = 10228;
+vector<int> ts;
+vector<bool> used;
+vector<int> gr[SZ];
+int tin[SZ], tout[SZ];
+int timer = 0;
+
+void dfs(int v) {
+    used[v] = true;
+    tin[v] = timer++;
+    for (int u : gr[v]) {
+        if (!used[u]) {
+            dfs(u);
+        }
+    }
+    tout[v] = timer++;
+    ts.push_back(v);
+}
+
+int main()
+{
+    bool flag = true;
+    cin >> n >> m;
+    for (int i = 0; i < m; ++i) {
+        int u, v;
+        cin >> u >> v;
+        --u;
+        --v;
+        gr[u].push_back(v);
+    }
+    used.assign(n, false);
+    for (int i = 0; i < n; ++i) {
+        if (!used[i]) {
+            dfs(i);
+        }
+    }
+    reverse(ts.begin(), ts.end());
+
+    for (int i = 1; i < n; ++i) {
+        if (tout[i] < tout[i - 1]) {
+            flag = false;
+            break;
+        }
+    }
+   cout << (flag ? "Yes" : "No");
+}

@@ -1,0 +1,11 @@
+a,b,c,d=[int(i) for i in input().split()]
+def min_check(a,b,c,d):
+    if a <= b  and a <=  c and a <= d:
+        return a
+    elif c <= b  and c <=  a and c <= d:
+        return c
+    elif b <= c  and b <=  a and b <= d:
+        return b
+    else:
+        return d
+print(min_check(a,b,c,d))

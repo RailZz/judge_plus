@@ -1,0 +1,8 @@
+N=int(input())
+M=int(input())
+x=int(input())
+y=int(input())
+if x <= y and x < (N*M):
+    print(x)
+elif y <= x and y < (N*M):
+    print(y)

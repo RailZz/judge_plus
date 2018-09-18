@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+bool func (unsigned long long int a, unsigned long long int k, unsigned long long int b, unsigned long long int m, unsigned long long int x, unsigned long long int t)
+{
+    if ((t - (t / k)) * a + (t - (t / m)) * b >= x)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int main()
+{
+    unsigned long long int a, b, k, m, x;
+    cin >> a >> k >> b >> m >> x;
+    unsigned long long int left = 0, right = x + 1, mid = 0;
+    if (a + b >= x)
+    {
+        cout << '1';
+        return 0;
+    }
+    while (right - left > 1)
+    {
+        mid = (right + left) / 2;
+        if (func(a, k, b, m, x, mid))
+        {
+            right = mid;
+        }
+        else
+        {
+            left = mid;
+        }
+    }
+    cout << right;
+    return 0;
+}

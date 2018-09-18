@@ -1,0 +1,56 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main ()
+{
+	int N,M,kol=0,x=0,y=0,max=-999999,ind1,ind2;
+	cin >> N >> M;
+	vector < vector<int> > gr(N);
+	vector <char> v;
+	for (int i =0;i<N;i++)
+	{
+		gr[i].push_back(M);
+		for (int j=0;j<M;j++)
+			cin >> gr[i][j];
+	}
+	kol=0;
+	ind1=0;
+	int i,j;
+	while (ind1+y!=(N-1)+(M-1))
+	{
+		max=-999999;
+		if (y+1<N)
+		{
+			j=y+1;
+			for (int i=0;i<M;i++)
+			{
+				if (gr[j][i]>max&&i>=ind1&&i<N)
+				{
+					max=gr[j][i];
+					ind2=i;
+				}
+			}
+			for (int i=ind1;i<ind2;i++)
+			{
+				kol+=gr[y][i];
+				v.push_back('R');
+			}
+			y++;
+			v.push_back('D');
+			ind1=ind2;
+			kol+=gr[y][ind2];
+		}
+		if (y==N-1)
+		{
+			for (int i = ind1;i<M;i++)
+			{
+				kol+=gr[y][i];
+			}
+		}
+	}
+	if (N==1&&M==1)
+		kol=gr[0][0];
+	cout << kol << endl;
+	for (int i=0;i<(M-1)+(N-1);i++)
+		cout << v[i] << " ";
+}

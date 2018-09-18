@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
+
+
+int main()
+{
+	const int MaxN = 100;
+	vector<int> ar[MaxN];
+	int n, m;
+	cin >> n >> m;
+	int a , b;
+	for (int i = 0; i < m; i++)
+	{
+		cin >> a >> b;
+		a -= 1;
+		b -= 1;
+		ar[a].push_back(b + 1);
+		ar[b].push_back(a + 1);
+	}
+	for (int i = 0; i < n; i++)
+	{
+		cout << ar[i].size() << " ";
+	}
+	return 0;
+}

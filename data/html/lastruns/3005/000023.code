@@ -1,0 +1,66 @@
+program Numbers;
+
+const
+        SIZE = 50000;
+        
+function myPower (x, y: Int64): Int64;
+
+var
+        t: Int64;
+        
+begin
+        if y = 0 then
+                myPower := 1
+        else if y mod 2 = 1 then
+                myPower := myPower (x, y div 2) * x
+        else
+        begin
+                t := myPower (x, y div 2);
+                myPower := t * t
+        end
+end;
+
+function Number (s: string): Int64;
+
+var
+        n, p: Int64;
+        i: Longint;
+        
+begin
+        p := 1;
+        n := 0;
+        
+        for i := Length (s) downto 1 do
+        begin
+                Inc (n, (Ord (s[i]) - Ord ('0')) * p);
+                p := p * 10
+        end;
+        
+        Number := n
+end;
+
+var
+        s: array [0..SIZE] of Int64;
+        seq: string;
+        n, c, k, i, j, m: LongInt;
+        
+begin
+        ReadLn (n, c, k);
+        ReadLn (seq);
+        
+        s[0] := 1;
+        m := myPower (10, k);
+        
+        for i := 1 to n do
+        begin
+                j := i - 1;
+                
+                while (j >= 0) and ((seq[j + 1] <> '0') or (j = i - 1)) and (Number (Copy (seq, j + 1, i - j)) <= c) do
+                begin
+                        s[i] := (s[i] + s[j]) mod m;
+                        Dec (j)
+                end
+        end;
+        
+        WriteLn (s[n])
+end.

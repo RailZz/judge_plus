@@ -1,0 +1,55 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="47" judge-id="7" status="CE" scoring="ACM" run-tests="0" contest-id="3005" compile-error="yes" >
+  <uuid>58bd2a20-389d-431f-9b57-3b7e21f8c24d</uuid>
+  <compiler_output>Done processing 000047.cpp
+000047.cpp: In function 'int main()':
+000047.cpp:73:42: error: no matching function for call to 'max(int, long long int)'
+         for (int j = i; j &gt; max(0, i - 15); j--) {
+                                          ^
+In file included from /usr/include/c++/5.3.1/bits/char_traits.h:39:0,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000047.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_algobase.h:219:5: note: candidate: template&lt;class _Tp&gt; const _Tp&amp; std::max(const _Tp&amp;, const _Tp&amp;)
+     max(const _Tp&amp; __a, const _Tp&amp; __b)
+     ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:219:5: note:   template argument deduction/substitution failed:
+000047.cpp:73:42: note:   deduced conflicting types for parameter 'const _Tp' ('int' and 'long long int')
+         for (int j = i; j &gt; max(0, i - 15); j--) {
+                                          ^
+In file included from /usr/include/c++/5.3.1/bits/char_traits.h:39:0,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000047.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_algobase.h:265:5: note: candidate: template&lt;class _Tp, class _Compare&gt; const _Tp&amp; std::max(const _Tp&amp;, const _Tp&amp;, _Compare)
+     max(const _Tp&amp; __a, const _Tp&amp; __b, _Compare __comp)
+     ^
+/usr/include/c++/5.3.1/bits/stl_algobase.h:265:5: note:   template argument deduction/substitution failed:
+000047.cpp:73:42: note:   deduced conflicting types for parameter 'const _Tp' ('int' and 'long long int')
+         for (int j = i; j &gt; max(0, i - 15); j--) {
+                                          ^
+In file included from /usr/include/c++/5.3.1/algorithm:62:0,
+                 from 000047.cpp:4:
+/usr/include/c++/5.3.1/bits/stl_algo.h:3457:5: note: candidate: template&lt;class _Tp&gt; _Tp std::max(std::initializer_list&lt;_Tp&gt;)
+     max(initializer_list&lt;_Tp&gt; __l)
+     ^
+/usr/include/c++/5.3.1/bits/stl_algo.h:3457:5: note:   template argument deduction/substitution failed:
+000047.cpp:73:42: note:   mismatched types 'std::initializer_list&lt;_Tp&gt;' and 'int'
+         for (int j = i; j &gt; max(0, i - 15); j--) {
+                                          ^
+In file included from /usr/include/c++/5.3.1/algorithm:62:0,
+                 from 000047.cpp:4:
+/usr/include/c++/5.3.1/bits/stl_algo.h:3463:5: note: candidate: template&lt;class _Tp, class _Compare&gt; _Tp std::max(std::initializer_list&lt;_Tp&gt;, _Compare)
+     max(initializer_list&lt;_Tp&gt; __l, _Compare __comp)
+     ^
+/usr/include/c++/5.3.1/bits/stl_algo.h:3463:5: note:   template argument deduction/substitution failed:
+000047.cpp:73:42: note:   mismatched types 'std::initializer_list&lt;_Tp&gt;' and 'int'
+         for (int j = i; j &gt; max(0, i - 15); j--) {
+                                          ^
+
+</compiler_output>
+</testing-report>

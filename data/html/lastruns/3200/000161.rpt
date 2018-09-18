@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="161" judge-id="162" status="RT" scoring="ACM" run-tests="1" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>3d9f1e8a-b94e-48ae-b758-a53937f47eaf</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="183" real-time="196" max-memory-used="64729088" >
+  <program-stats-str>{ utime=161, stime=22, ptime=183, rtime=196, maxvsz=64729088, maxrss=45326336, nvcsw=1, nivcsw=38 }</program-stats-str>
+      <input size="4">179
+</input>
+      <output size="0"></output>
+      <stderr size="263">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+  File &quot;./000161&quot;, line 5
+    print(&quot;The next number for the number &quot;, a, &quot; is &quot;, a + 1, &quot;.&quot;, sep='')
+                                                                      ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

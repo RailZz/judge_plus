@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+int vvod, vivod;
+int feb(int num);
+int main ()
+{
+	std::cin >> vvod;
+	std::cout << feb(vvod);
+}
+int feb(int num)
+{
+	int ans, febon[50];
+	for (int i = 0; i < num; i++)
+	{
+		febon[i] = 0;
+	}
+	if (num <= 2)
+	{
+		ans = 1;
+	}
+	else
+	{
+		febon[0] = 0;
+		febon[1] = 1;
+		for (int i = 2; i <= num; i++)
+		{
+			febon[i] = febon[i - 1] + febon[i - 2];
+		}
+		ans = febon[num];
+	}
+	return ans;
+}

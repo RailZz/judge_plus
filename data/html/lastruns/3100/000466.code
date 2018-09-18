@@ -1,0 +1,23 @@
+function Prost(a:longint):boolean;
+var i:longint;
+    f:boolean;
+begin
+if a<2 then f:=false
+else
+ begin
+  f:=true;
+  i:=2;
+  while (i*i<=a) and f do
+  if a mod i=0 then f:=false
+  else i:=i+1;
+ end;
+ Prost:=f;
+end;
+var N,k:integer;
+begin
+
+readln(N);
+for k:=1 to N do begin
+if Prost(k) then write(k,' ');
+end;
+end.

@@ -1,0 +1,7 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=(a+b+c)//2
+if (a+b+c)//2<(a+b+c)/2:
+    d+=1
+print(d)

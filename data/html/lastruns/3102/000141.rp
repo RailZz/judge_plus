@@ -1,0 +1,5 @@
+<input too-big="yes" original-size="78918" />
+      <output size="7">9999477</output>
+      <correct size="8">9999478
+</correct>
+      

@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="19" judge-id="4" status="SE" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>0af90cd6-457e-4f5b-8aea-a70af0110392</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="282" real-time="299" max-memory-used="18702336" >
+  <program-stats-str>{ utime=254, stime=28, ptime=282, rtime=299, maxvsz=18702336, maxrss=19189760, nvcsw=1, nivcsw=38 }</program-stats-str>
+      <input size="4">1 0
+</input>
+      <output size="0"></output>
+      <stderr size="268">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000019&quot;, line 20, in &lt;module&gt;
+    stroka += str(b[i]) + &quot; &quot;
+KeyError: 1
+</stderr>
+    </test>
+  </tests>
+</testing-report>

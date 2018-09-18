@@ -1,0 +1,20 @@
+c = list(map(int,(input().split())))
+a = list(map(int,(input().split())))
+def f(k):
+    i = 0
+    cnf = 1
+    last = a[i]
+    for i in range(c[1]):
+        if a[i] * a[0] >= m:
+            cnf += 1
+            last = a[i]
+    return cnf
+l = 0
+r = 10 ** 9
+while r - l > 1:
+    m = (l + r) // 2
+    if f(m) >= c[1]:
+        l = m
+    else:
+        r = m
+print(l)

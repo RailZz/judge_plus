@@ -1,0 +1,6 @@
+a=input.str()
+b=a.split()
+for i in range(len(b)):
+    if len(b[i])>len(b[a]):
+        a=i
+print(b[a])

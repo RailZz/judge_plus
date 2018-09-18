@@ -1,0 +1,25 @@
+uses crt;
+const nmax=150;
+var k:longint;
+    b:array[0..nmax,0..nmax] of longint;
+    n,i,j:integer;
+begin
+clrscr;
+repeat
+
+readln(n);
+until n in [1..nmax];
+for i:=1 to n do
+b[i,0]:=0;
+for j:=0 to n do
+b[0,j]:=1;
+for i:=1 to n do
+ begin
+  for j:=1 to i do
+  b[i,j]:=b[i,j-1]+b[i-j,j-1];
+  for j:=i+1 to n do
+  b[i,j]:=b[i,i];
+ end;
+write(b[n,n]);
+readln
+end.

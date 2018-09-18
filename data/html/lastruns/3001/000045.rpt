@@ -1,0 +1,16 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="45" judge-id="5" status="SV" scoring="ACM" run-tests="0" contest-id="3001" compile-error="yes" >
+  <uuid>548cdd36-04e3-4af2-ab4b-76f11cee168e</uuid>
+  <compiler_output>000045.cpp:8:  Extra space before ( in function call  [whitespace/parens] [4]
+000045.cpp:19:  Extra space before ( in function call  [whitespace/parens] [4]
+000045.cpp:33:  Lines should be &lt;= 100 characters long  [whitespace/line_length] [2]
+000045.cpp:33:  Extra space before ( in function call  [whitespace/parens] [4]
+Done processing 000045.cpp
+Total errors found: 4
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

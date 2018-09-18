@@ -1,0 +1,20 @@
+var a,b,c,d,min,n,i,j: integer;
+s: array [1..1000] of integer;
+Begin
+read(n);
+ for i:=1 to n do
+ read(s[i]);
+min:=s[1];
+           for i:=2 to n do
+           begin
+           if min>s[i] then min:=s[i];
+           end;
+                                      for i:=min downto 1 do
+                                      begin
+                                       for j:=1 to n do
+                                       begin
+                                       if s[j] mod i<>0 then break;
+                                       if j=n then begin writeln(i); exit; end;
+                                       end;
+                                      end;
+End.

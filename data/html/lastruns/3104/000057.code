@@ -1,0 +1,13 @@
+n = int(input())
+numbers = list(map(int, input().split()))
+if n == 1:
+    print(*numbers)
+else:
+    pay = [numbers[0], numbers[1]]
+    if n == 2:
+        print(pay[n - 1])
+    else:
+        for i in range(2, n):
+            pay.append(min(pay[i - 1], pay[i - 2]) + numbers[i])
+        print(pay[n - 1])   
+            

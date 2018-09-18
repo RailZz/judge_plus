@@ -1,0 +1,23 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="100" judge-id="5" status="RT" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>399520b0-29d5-4669-80ae-ca70ad0645d8</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="14" real-time="15" max-memory-used="307200" >
+  <program-stats-str>{ utime=14, stime=0, ptime=14, rtime=15, maxvsz=307200, maxrss=5378048, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="29">In the town where I was born
+</input>
+      <output size="0"></output>
+      <stderr size="93">  File &quot;./000100&quot;, line 4
+    program stroki;
+                 ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

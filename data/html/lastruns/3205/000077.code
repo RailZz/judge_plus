@@ -1,0 +1,14 @@
+n = int(input())
+m = []
+o = 0
+for i in range(n):
+    a = [int(i) for i in input().split()]
+    m.append(a)
+for j in range(n):
+    for p in range(n):
+        if m[j][p] == m[p][j] and j != p:
+            o += 1    
+if o == n ** 2 - n:
+    print('yes')
+else:
+    print('no')

@@ -1,0 +1,7 @@
+<input size="4">0.5
+</input>
+      <output size="15">0.521289062500
+</output>
+      <correct size="15">0.523598775598
+</correct>
+      

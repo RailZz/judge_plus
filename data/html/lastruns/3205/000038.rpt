@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="38" judge-id="39" status="RT" scoring="ACM" run-tests="1" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>e29d1869-8c03-407c-99c2-742462114ee7</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="74" real-time="80" max-memory-used="30339072" >
+  <program-stats-str>{ utime=66, stime=8, ptime=74, rtime=80, maxvsz=30339072, maxrss=27041792, nvcsw=1, nivcsw=11 }</program-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="0"></output>
+      <stderr size="151">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+  File &quot;./000038&quot;, line 6
+    if (i%2) == 0
+                ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

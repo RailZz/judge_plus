@@ -1,0 +1,15 @@
+Var
+A,N,d:integer;
+Begin
+ReadLn(N);
+For N := 2 to N do
+    Begin
+    d :=0 ;
+    A := 2;
+    Repeat
+    if N mod A = 0 then d := d + 1;
+    A := A + 1
+    Until A > Sqrt(N) + 1;
+    if d = 0 then Write(N,' ')
+    End
+End.

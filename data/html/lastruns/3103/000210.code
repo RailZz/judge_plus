@@ -1,0 +1,51 @@
+#include <iostream>
+#include <cmath>
+#include <vector>
+
+using namespace std;
+
+vector <vector<int>> gr;
+vector <int> used;
+int c, p;
+bool cycle = false;
+
+void dfs(int v, int p)
+{
+    used[v] = 1;
+    for (auto u: gr[v])
+    {
+        if (used[u] == 0) {
+            dfs(u, v);
+        }
+        else if (used[u] == 1 && p != u) cycle = true;
+    }
+}
+
+int main()
+{
+    int n, m, i;
+    cin >> n >> m;
+    used.resize(n + 1);
+    gr.resize(n + 1);
+    for (i = 0; i < m; i++){
+        int k, l;
+        cin >> k >> l;
+        gr[k].push_back(l);
+        gr[l].push_back(k);
+    }
+    
+    c = 0, p = -1;
+    for (int i = 1; i <= n; ++i)
+        if (used[i] == 0) {
+            dfs(i, p);
+            ++c;
+        }
+    
+    if (cycle == false && c == 1)
+    {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+    return 0;
+}

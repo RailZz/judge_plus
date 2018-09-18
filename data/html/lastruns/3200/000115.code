@@ -1,0 +1,6 @@
+n = int(input())
+m = int(input())
+s = max(n, m)
+l = min(n, m) 
+r = s % l + 1
+print(r)

@@ -1,0 +1,13 @@
+n, s = map(int, input().split())
+graph = [list(map(int, input().split())) for x in range(n)]
+visit = []
+def dfs(v):
+    visit.append(v)
+
+    for i in range(n):
+        if graph[v][i] == 1 and i not in visit:
+            dfs(i)
+
+
+dfs(s-1)
+print(len(visit))

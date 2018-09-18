@@ -1,0 +1,6 @@
+a=[int(i ) for i in input().split()]
+i=0
+for i in range (len(a)):
+    if a[i]:
+        print(a[i-1])
+    

@@ -1,0 +1,10 @@
+def qew(a)
+    if a.isdigit():
+        return True
+    else:
+        return False
+
+if qew(input())
+    print("yes")
+else:
+    print("no")

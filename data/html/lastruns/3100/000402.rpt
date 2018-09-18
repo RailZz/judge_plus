@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="402" judge-id="34" status="WA" scoring="ACM" run-tests="1" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>d358fca6-88d2-419b-8cc4-31849a9598ff</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="83" real-time="90" max-memory-used="30339072"  checker-comment="Line 1 differs: output: ?No? correct: ?NO?" >
+  <program-stats-str>{ utime=67, stime=16, ptime=83, rtime=90, maxvsz=30339072, maxrss=27058176, nvcsw=1, nivcsw=14 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2392064, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="4">100
+</input>
+      <output size="3">No
+</output>
+      <correct size="3">NO
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="43">Line 1 differs: output:
+&gt;No&lt;
+correct:
+&gt;NO&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

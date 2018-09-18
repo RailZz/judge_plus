@@ -1,0 +1,6 @@
+a = input()
+s = input()
+d = s // a
+d = d * a
+a = s - d
+print(a)

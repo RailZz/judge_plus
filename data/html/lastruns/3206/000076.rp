@@ -1,0 +1,11 @@
+<input size="44">2
+Markov Valeriy 4 5 2
+Kozlov Georgiy 5 1 2
+</input>
+      <output size="12">2.0
+3.0
+4.5
+</output>
+      <correct size="9">4.5 3 2 
+</correct>
+      

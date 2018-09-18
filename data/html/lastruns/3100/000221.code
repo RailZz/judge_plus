@@ -1,0 +1,11 @@
+li = list(map(int, input().split()))
+a, b, c, d = li[0], li[1], li[2], li[3]
+i = 2
+m = a*d + c*b
+n = b*d
+while i < n and i < m:
+    while n % i == 0 and m % i == 0:
+        n //= i
+        m //= i
+    i += 1
+print(m, n)

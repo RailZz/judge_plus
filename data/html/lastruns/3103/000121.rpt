@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="121" judge-id="52" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>d816348e-59a6-41ea-a1cf-7842605e5a8a</uuid>
+  <compiler_output>000121.cpp: In function 'int main()':
+000121.cpp:59:26: error: request for member 'erase' in 'istok.std::vector&lt;_Tp, _Alloc&gt;::operator[]&lt;int, std::allocator&lt;int&gt; &gt;(((std::vector&lt;int&gt;::size_type)i))', which is of non-class type '__gnu_cxx::__alloc_traits&lt;std::allocator&lt;int&gt; &gt;::value_type {aka int}'
+                 istok[i].erase(istok[i].begin() + j);
+                          ^
+000121.cpp:59:41: error: request for member 'begin' in 'istok.std::vector&lt;_Tp, _Alloc&gt;::operator[]&lt;int, std::allocator&lt;int&gt; &gt;(((std::vector&lt;int&gt;::size_type)i))', which is of non-class type '__gnu_cxx::__alloc_traits&lt;std::allocator&lt;int&gt; &gt;::value_type {aka int}'
+                 istok[i].erase(istok[i].begin() + j);
+                                         ^
+</compiler_output>
+</testing-report>

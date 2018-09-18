@@ -1,0 +1,65 @@
+program TaskE;
+
+const
+        SIZE = 100;
+        
+type
+        TGraph = array of array of LongInt;
+        TArr = array [0..SIZE - 1] of LongInt;
+        
+procedure Dfs (const g: TGraph; var used: TArr; v, p: LongInt);
+
+var
+        i: LongInt;
+        
+begin
+        used[v] := 1;
+        
+        for i := 0 to Length (g[v]) - 1 do
+                if (used[g[v, i]] = 1) and (g[v, i] <> p) then
+                begin
+                        WriteLn ('NO');
+                        Halt
+                end
+                else if used[g[v, i]] = 0 then
+                        Dfs (g, used, g[v, i], v)
+end;
+        
+var
+        g: TGraph;
+        used: TArr;
+        n, m, i, a, b: LongInt;
+        
+begin
+        Read (n, m);
+        
+        SetLength (g, n);
+        
+        for i := 1 to m do
+        begin
+                Read (a, b);
+                
+                Dec (a);
+                Dec (b);
+                
+                SetLength (g[a], Length (g[a]) + 1);
+                SetLength (g[b], Length (g[b]) + 1);
+                
+                g[a, Length (g[a]) - 1] := b;
+                g[b, Length (g[b]) - 1] := a
+        end;
+        
+        for i := 0 to n - 1 do
+                used[i] := 0;
+        
+        Dfs (g, used, 0, -1);
+        
+        for i := 0 to n - 1 do
+                if used[i] = 0 then
+                begin
+                        WriteLn ('NO');
+                        Exit
+                end;
+                
+        WriteLn ('YES')
+end.

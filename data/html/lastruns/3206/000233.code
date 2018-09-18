@@ -1,0 +1,10 @@
+a=input()
+f=True
+for i in range (len(a)//2):
+    if a [i]!=a[len(a)-i-1]:
+        f=False
+
+if f == True:
+    print('yes')
+else:
+    print('no')

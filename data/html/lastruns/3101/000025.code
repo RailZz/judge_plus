@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+//#include <iostream>
+using namespace std;
+
+int main() {
+    int n, k;
+    cin >> n >> k;
+    vector<int> a(n + 1);
+    vector<int> b(k);
+    for (int i = 0; i < n; i++) cin >> a[i];
+    for (int i = 0; i < k; i++) cin >> b[i];
+    for (int i = 0; i < k; i++) {
+    int l = 0, r = n;
+    while (r - l > 1) {
+        int mid = (l + r) / 2;
+        if (b[i] < a[mid]) r = mid;
+        else l = mid;
+        }
+        if (a[l] == b[i]) cout << "YES" << endl;
+        else cout << "NO" << endl;
+    }
+
+    return 0;
+}

@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a,b,c;
+	cin>>a>>b>>c;
+	if(a<=c){
+		if(a<=b){
+			cout<<a;
+			if(b<=c){
+				cout<<" "<<b<<" "<<c;
+			}
+			else{
+				cout<<" "<<c<<" "<<b;
+			}
+		}
+		else{
+			cout<<b<<" "<<a<<" "<<c;
+		}
+	}
+	else{
+		if(a<=b){
+			cout<<c<<" "<<a<<" "<<b;
+		}
+		else{
+			if(c<=b){
+				cout<<c<<" "<<b<<" "<<a;
+			}
+			else{
+				cout<<b<<" "<<c<<" "<<a;
+			}
+		}
+	}
+}

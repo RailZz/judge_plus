@@ -1,0 +1,21 @@
+def bin_search(a, item, b):
+    left = 0
+    right = b
+    while right - left > 1:
+        mid = (right + left) // 2
+        if a[mid] <= item:
+            left = mid
+        else:
+            right = mid
+    if a[left] == item:
+        return 'YES'
+    else:
+        return 'NO'
+
+
+n, k = map(int, input().split())
+numbers_1 = list(map(int, input().split()))
+numbers_2 = list(map(int, input().split()))
+
+for i in range(len(numbers_2)):
+    print(bin_search(numbers_1, numbers_2[i], n))

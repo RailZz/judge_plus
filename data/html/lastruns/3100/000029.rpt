@@ -1,0 +1,54 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="29" judge-id="48" status="WA" scoring="ACM" run-tests="3" contest-id="3100" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="3" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>3a36fca8-b424-45cf-a912-389d2299faf5</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="29" real-time="61" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=29, stime=0, ptime=29, rtime=61, maxvsz=307200, maxrss=6316032, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=7, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">2
+</input>
+      <output size="6">prime
+</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="28" real-time="60" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=20, stime=8, ptime=28, rtime=60, maxvsz=307200, maxrss=6193152, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=10, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">3
+</input>
+      <output size="6">prime
+</output>
+      <correct size="6">prime
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="WA" time="26" real-time="48" max-memory-used="307200"  checker-comment="Line 1 differs: output: ?prime? correct: ?composite?" >
+  <program-stats-str>{ utime=21, stime=5, ptime=26, rtime=48, maxvsz=307200, maxrss=6279168, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=8, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">4
+</input>
+      <output size="6">prime
+</output>
+      <correct size="10">composite
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="53">Line 1 differs: output:
+&gt;prime&lt;
+correct:
+&gt;composite&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

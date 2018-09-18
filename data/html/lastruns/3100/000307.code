@@ -1,0 +1,36 @@
+﻿var
+  a : array [1..100000] of Longint;
+  n, k, i, z, first, last, mid : Longint;
+  fin, fout : Text;
+begin
+  Assign(fin, 'input.txt'); Assign(fout, 'output.txt');
+  Reset(fin); Rewrite(fout);
+ 
+  ReadLn(fin, n, k);
+  for i := 1 to n do Read(fin, a[i]); ReadLn(fin);
+ 
+  for i := 1 to k do
+    begin
+      Read(fin, z);
+      if (z < a[1]) or (z > a[n]) then
+        WriteLn(fout, 'NO')
+      else
+        begin
+          first := 1; last := n + 1;
+          while first <> last do
+            begin
+              mid := first + (last - first) div 2;
+              if z <= a[mid] then
+                last := mid
+              else
+                first := mid + 1;
+            end;
+          if a[last] = z then
+            WriteLn(fout, 'YES')
+          else
+            WriteLn(fout, 'NO');
+        end;
+    end;
+  
+  Close(fin); Close(fout);
+end.

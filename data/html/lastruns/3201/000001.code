@@ -1,0 +1,9 @@
+A = int(input())
+B = int(input())
+C = int(input())
+X = A+B+C
+Y = X//2
+Z = X%2
+if Z > 0:
+    Y = Y + 1
+print(Y)

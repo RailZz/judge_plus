@@ -1,0 +1,4 @@
+a = input()
+i = a[::-1]
+if a==i:
+    print('yes')

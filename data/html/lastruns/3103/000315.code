@@ -1,0 +1,58 @@
+﻿type
+d=array[1..100] of integer;
+e=array[1..100] of d;
+var
+N,b,c,i,j:integer;
+a:e;
+f,g:d;
+h:boolean;
+begin
+i:=0;
+j:=0;
+readln(N);
+for b:=1 to N do
+begin
+f[b]:=0;
+g[b]:=0;
+end;
+for b:=1 to N do
+begin
+for c:=1 to N do
+read(a[b,c]);
+readln();
+end;
+for b:=1 to N do
+begin
+h:=true;
+for c:=1 to N do
+begin
+if a[c,b]=1 then
+h:=false;
+end;
+if h then
+begin
+i:=i+1;
+f[i]:=b;
+end;
+end;
+for b:=1 to N do
+begin
+h:=true;
+for c:=1 to N do
+begin
+if a[b,c]=1 then
+h:=false;
+end;
+if h then
+begin
+j:=j+1;
+g[j]:=b;
+end;
+end;
+writeln(i);
+for b:=1 to i do
+writeln(f[i]);
+writeln(j);
+for b:=1 to j do
+writeln(g[i]);
+end.

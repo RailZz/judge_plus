@@ -1,0 +1,62 @@
+#include <iostream>
+#include <set>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int size = 22228, start, finish;
+
+vector<vector<pair<int, int>>> gr;
+set<pair<int, int>> mains;
+
+void dejikstra(vector<int> &d)
+{
+    mains.insert({0, start});
+    while (!mains.empty())
+    {
+        int v = mains.begin() -> second;
+        //cout << "first top " << v << endl;
+        mains.erase(mains.begin());
+        for (auto UL : gr[v])
+        {
+            //U - graph number, L - weight
+            int L = UL.first, U = UL.second;
+            //cout << "U " << U << " L " << L << endl;
+            if (d[v] + L < d[U])
+            {
+                mains.erase({d[U], U});
+                //cout << "entered changing cycle" << endl;
+                d[U] = d[v] + L;
+                mains.insert({d[U], U});
+            }
+        }
+    }
+}
+
+int main()
+{
+    int num, n, m;
+    cin >> num;
+    for (int j = 0; j < num; ++j)
+    {
+        cin >> n >> m;
+        gr.assign(n, vector<pair<int, int>>(0));
+        vector<int> d(n, 2009000999);
+        for (int i = 0; i < m; ++i)
+        {
+            int a, b, c;
+            cin >> a >> b >> c;
+            gr[a].push_back({c, b});
+            gr[b].push_back({c, a});
+        }
+        cin >> start;
+        d[start] = 0;
+        dejikstra(d);
+        for (int y = 0; y <= d.size() - 1; ++y)
+        {
+            cout << d[y] << " ";
+        }
+    }
+    return 0;
+}

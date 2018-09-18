@@ -1,0 +1,35 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="24" judge-id="3" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>ea8c2812-8932-41cd-acb5-3158fe6b20b4</uuid>
+  <compiler_output>000024.cpp: In function 'int main()':
+000024.cpp:8:5: error: 'vector' was not declared in this scope
+     vector&lt;int&gt; a(n + 1);
+     ^
+000024.cpp:8:12: error: expected primary-expression before 'int'
+     vector&lt;int&gt; a(n + 1);
+            ^
+000024.cpp:9:12: error: expected primary-expression before 'int'
+     vector&lt;int&gt; b(k);
+            ^
+000024.cpp:10:40: error: 'a' was not declared in this scope
+     for (int i = 0; i &lt; n; i++) cin &gt;&gt; a[i];
+                                        ^
+000024.cpp:11:40: error: 'b' was not declared in this scope
+     for (int i = 0; i &lt; k; i++) cin &gt;&gt; b[i];
+                                        ^
+000024.cpp:16:13: error: 'b' was not declared in this scope
+         if (b[i] &lt; a[mid]) r = mid;
+             ^
+000024.cpp:16:20: error: 'a' was not declared in this scope
+         if (b[i] &lt; a[mid]) r = mid;
+                    ^
+000024.cpp:19:13: error: 'a' was not declared in this scope
+         if (a[l] == b[i]) cout &lt;&lt; &quot;YES&quot; &lt;&lt; endl;
+             ^
+000024.cpp:19:21: error: 'b' was not declared in this scope
+         if (a[l] == b[i]) cout &lt;&lt; &quot;YES&quot; &lt;&lt; endl;
+                     ^
+</compiler_output>
+</testing-report>

@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+bool Func (unsigned long long int A, unsigned long long int K,unsigned long long int B,unsigned long long int M,unsigned long long int m,unsigned long long int X)
+{
+	unsigned long long int rez = (m-(m/K))*A;
+	if (rez >= X)
+		return 1;
+	else
+	{
+		X-=rez;
+		rez=(m-(m/M))*B;
+		if (rez >= X)
+			return 1;
+		else
+			return 0;
+	}
+}
+int main ()
+{
+	unsigned long long int A,K,B,M,X,left,right,m;
+	cin >> A >> K >> B >> M >> X;
+	left=0;
+	right=X;
+	while (right - left > 1)
+	{
+		m=(right+left)/2;
+		if (Func(A,K,B,M,m,X))
+			right = m;
+		else
+			left = m;
+	}
+	if (X==A||X==B||X<A||X<B)
+		cout << 1;
+	else
+		cout << right;
+	
+}

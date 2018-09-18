@@ -30,6 +30,8 @@ class Problem:
         self.checker_description = None
         self.archive_path = None
         self.archive_exists = None
+        self.ejudgeID = None
+        self.problemLetter = None
 
     def get_archive_path(self):
         if self.archive_path is None:
@@ -45,9 +47,9 @@ class Problem:
     def check_checker_in_archive(self):
         arhive_path = self.get_archive_path()
         zf = [i.filename for i in zipfile.ZipFile(open(arhive_path, 'rb')).filelist if i.filename.lower().startswith('checker')]
-        if 'checker.dpr' in zf:
+        if 'checker.dpr' in zf or 'checker.pas' in zf or 'checker.cpp' in zf:
             return True
-        if 'checkerNone' in zf:
+        if 'checkerNone' in zf or 'CheckerNone' in zf:
             return False
         print("Unexpected type of checker in archive")
         exit(1)
@@ -73,7 +75,7 @@ class Problem:
             if self.check_standart_checker():
                 self.checker_path = self.get_standart_checker_path()
                 self.checker_type = Problem.standart_checker_type
-                self.checker_description = open(self.checker_path).read()
+                self.checker_description = open(self.checker_path).read().strip()
                 return
             if self.check_checker_in_archive():
                 self.checker_path = self.get_archive_path()
@@ -106,6 +108,8 @@ class Problem:
             s += "No archive\n"
         if self.check_name_exists():
             s += 'Problem name: "{}"\n'.format(self.get_name())
+        else:
+            s += "!No problem name specified\n"
         return s
 
     def get_problem_name_path(self):
@@ -120,10 +124,18 @@ class Problem:
     def get_name(self):
         if self.name is None:
             if self.check_name_exists():
-                self.name = open(self.get_problem_name_path()).read()
+                self.name = open(self.get_problem_name_path()).read().strip()
             else:
                 self.name = ""
         return self.name
+
+    def getJSON(self):
+        d = {"InformaticsID": self.problemID, "Name": self.get_name()}
+        if self.ejudgeID is not None:
+            d["EjudgeID"] = self.ejudgeID
+        if self.problemLetter is not None:
+            d["Letter"] = self.problemLetter
+        return d
 
     
 

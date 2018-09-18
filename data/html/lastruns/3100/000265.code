@@ -1,0 +1,14 @@
+def proverka(n):
+    k = 2
+    j = 0 
+    while k**2 <= n and j != 1:
+        if n % k == 0:
+            j = 1
+        k += 1
+    if j == 1:
+        print("composite")
+    else:
+        print("prime")
+
+        
+proverka(int(input()))   

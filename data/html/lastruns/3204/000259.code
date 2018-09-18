@@ -1,0 +1,6 @@
+a = [int(i) for i in input() .split()]
+x = int(input())
+for i in range(len(a)):
+    if a[i] < x:
+        print(i + 1)
+        break

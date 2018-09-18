@@ -1,0 +1,21 @@
+from math import *
+
+
+def get_digitals(x):
+    d = 2
+    ans = [1, x]
+    while d <= sqrt(x):
+        if x % d == 0:
+            x /= d
+            ans.append(d)
+            d = 2
+        else:
+            d += 1
+    return ans
+
+
+h = int(input())
+if len(get_digitals(h)) == 2 and (get_digitals(h))[1] == h:
+    print("prime")
+else:
+    print("composite")

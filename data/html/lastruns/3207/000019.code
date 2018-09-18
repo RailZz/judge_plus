@@ -1,0 +1,7 @@
+a=input()
+def cifra(a):
+    if a.isdigit()==True:
+        return('yes')
+    else:
+        return('no')
+print(cifra(a))

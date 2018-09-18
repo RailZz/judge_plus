@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="14" judge-id="15" status="SV" scoring="ACM" run-tests="0" contest-id="3004" compile-error="yes" >
+  <uuid>69d41794-4721-45be-b2e1-9b019070124d</uuid>
+  <compiler_output>000014.cpp:7:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000014.cpp:22:  Mismatching spaces inside () in if  [whitespace/parens] [5]
+Done processing 000014.cpp
+Total errors found: 2
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

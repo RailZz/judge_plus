@@ -1,0 +1,15 @@
+n, x, y = list(map(int, input().split()))
+
+left = 0
+right = 10 ** 9
+
+if n == 1:
+    print(min(x, y))
+else:   
+    while right - left > 1:
+        mid = (left + right) // 2
+        if mid // x + mid // y >= n - 1:
+            right = mid
+        else:
+            left = mid
+            print(right + min(x, y))

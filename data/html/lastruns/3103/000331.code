@@ -1,0 +1,66 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <cmath>
+
+using namespace std;
+
+vector< vector<char> > field;
+vector< vector<long long> > vec;
+vector< vector<long long> > used;
+vector<int> dx = {0, 1, 0, -1};
+vector<int> dy = {1, 0, -1, 0};
+
+long long size_field_y;
+long long size_field_x;
+
+void dfs(long long x, long long y, long long c)
+{
+	used[x][y] = c;
+    for (int d = 0; d <= 3; d++)
+	{
+		long long nx = x + dx[d];
+		long long ny = y + dy[d];
+		if (0 <= nx && nx < size_field_x && 0 <= ny && ny < size_field_y && field[nx][ny] == '#')
+        {
+            if (used[nx][ny] == 0)
+            {
+                dfs(nx, ny, c);
+            }
+        }
+	}
+};
+
+int main()
+{
+	long long n, m;
+    cin >> n >> m;
+    size_field_y = m;
+    size_field_x = n;
+    field.resize(n, vector<char>(m, '#'));
+    used.resize(n, vector<long long>(m));
+	for (long long i = 0; i < n; i++)
+    {
+        for (long long j = 0; j < m; j++)
+        {
+            cin >> field[i][j];
+        }
+    }
+    long long c = 1;
+    for (long long i = 0; i < n; i++)
+    {
+        for (long long j = 0; j < m; j++)
+        {
+            if (field[i][j] == '#')
+            {
+                if (used[i][j] == 0)
+                {
+                    dfs(i, j, c);
+                    c++;
+                }
+            }
+        }
+    }
+    cout << c - 1;
+    return 0;
+}

@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<vector<int> > g;
+vector<int> color;
+bool is_bipartite = true;
+
+void dfs(int start) {
+    for (auto u: g[start]) {
+        if (color[u] == 0) {
+            color[u] = 3 - color[start];
+            dfs(u);
+        }
+        else if (color[u] == color[start]) is_bipartite = false;
+    }
+}
+
+int main() {
+    
+    int n, m;
+	cin >> n >> m;
+	g.resize(n);
+	color.resize(n);
+	
+	for (int i = 0; i<m; ++i) {
+	    int u, v;
+	    cin >> u >> v;
+	    --u;
+	    --v;
+        g[u].push_back(v);
+	    g[v].push_back(u);
+	}
+	
+	int ncomp = 0;
+	for (int i = 0; i<n; ++i)
+        if (color[i] == 0) {
+            ++ncomp;
+            dfs(i);
+    	}
+	
+	if (is_bipartite == true) {
+	    cout << "YES" << endl;
+	    for (int i = 0; i<n; ++i)
+	        if (color[i] == 0) cout << i+1 << " ";
+	}
+	else cout << "NO";
+	
+    return 0;
+}

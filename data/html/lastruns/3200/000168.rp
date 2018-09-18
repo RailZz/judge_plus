@@ -1,0 +1,7 @@
+<input size="2">7
+</input>
+      <output size="14">3((n//2+1)*2)
+</output>
+      <correct size="2">8
+</correct>
+      

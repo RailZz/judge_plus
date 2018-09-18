@@ -1,0 +1,12 @@
+n = int(input())
+m = [[int(i) for i in input() .split()] for i in range(n)]
+f =True
+for i in range(n):
+    for j in range(n):
+        if m[i][j] != m[j][i]:
+            f = False
+            break
+if f:
+    print('yes')
+else:
+    print('no')

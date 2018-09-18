@@ -1,0 +1,8 @@
+def Navalny_2018(a, b, c):
+    if a + b + c >= 2:
+        return 1
+    else:
+        return 0
+n = list(map(int, input().split()))
+print(Navalny_2018(n[0], n[1], n[2]))
+     

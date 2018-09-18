@@ -1,0 +1,67 @@
+program Numbers;
+
+const
+        SIZE = 50000;
+        
+type
+        Int64 = QWord;
+        
+function myPower (x, y: Int64): Int64;
+
+var
+        n: Int64;
+        i: Integer;
+        
+begin
+        n := 1;
+        
+        for i := 1 to y do
+                n := n * x;
+                
+        myPower := n
+end;
+
+function Number (s: string): Int64;
+
+var
+        n, p: Int64;
+        i: Longint;
+        
+begin
+        p := 1;
+        n := 0;
+        
+        for i := Length (s) downto 1 do
+        begin
+                Inc (n, (Ord (s[i]) - Ord ('0')) * p);
+                p := p * 10
+        end;
+        
+        Number := n
+end;
+
+var
+        s: array [0..SIZE] of Int64;
+        seq: string;
+        n, c, k, i, j, m: LongInt;
+        
+begin
+        ReadLn (n, c, k);
+        ReadLn (seq);
+        
+        s[0] := 1;
+        m := myPower (10, k);
+        
+        for i := 1 to n do
+        begin
+                j := i - 1;
+                
+                while (j >= 0) and ((seq[j + 1] <> '0') or (j = i - 1)) and (Number (Copy (seq, j + 1, i - j)) <= c) do
+                begin
+                        s[i] := (s[i] + s[j]) mod m;
+                        Dec (j)
+                end
+        end;
+        
+        WriteLn (s[n])
+end.

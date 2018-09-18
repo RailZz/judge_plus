@@ -1,0 +1,10 @@
+z = int(input())
+x = int(input())
+c = int(input())
+if c and x < z:
+    print(z)
+elif x and z < c:
+    print(c)
+elif z and c < x:
+    print(x)
+  

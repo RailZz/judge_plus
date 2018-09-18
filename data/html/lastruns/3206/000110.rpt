@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="110" judge-id="15" status="SE" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>185188fb-6b6f-4d9d-9576-231552e2ef14</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="289" real-time="301" max-memory-used="18685952" >
+  <program-stats-str>{ utime=275, stime=14, ptime=289, rtime=301, maxvsz=18685952, maxrss=19197952, nvcsw=1, nivcsw=40 }</program-stats-str>
+      <input size="29">In the town where I was born
+</input>
+      <output size="0"></output>
+      <stderr size="407">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000110&quot;, line 4, in &lt;module&gt;
+    a = [int(i) for i in input().split()]
+  File &quot;./000110&quot;, line 4, in &lt;listcomp&gt;
+    a = [int(i) for i in input().split()]
+ValueError: invalid literal for int() with base 10: 'In'
+</stderr>
+    </test>
+  </tests>
+</testing-report>

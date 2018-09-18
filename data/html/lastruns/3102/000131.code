@@ -1,0 +1,11 @@
+N, x, y = map(int, input().split())
+m = 0
+r = N*(x+y)
+l = 0
+N -= 1;
+while ((r - l) > 1):
+    if ((m/x + m/y) >= N):
+        r = m
+    else:
+        l = m
+print(r + min(x, y))

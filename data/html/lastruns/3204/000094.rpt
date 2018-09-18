@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="94" judge-id="24" status="RT" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>0092be25-cd6b-4ea6-af0c-8a2908d4ebb4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="15" real-time="103" max-memory-used="7938048" >
+  <program-stats-str>{ utime=15, stime=0, ptime=15, rtime=103, maxvsz=7938048, maxrss=5132288, nvcsw=2, nivcsw=5 }</program-stats-str>
+      <input size="12">1 -2 3 -4 5
+</input>
+      <output size="0"></output>
+      <stderr size="197">Traceback (most recent call last):
+  File &quot;./000094&quot;, line 4, in &lt;module&gt;
+    a = [int(i) for i in input().split()]
+  File &quot;&lt;string&gt;&quot;, line 1
+    1 -2 3 -4 5
+         ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

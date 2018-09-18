@@ -1,0 +1,6 @@
+def get_min(i):
+    if i .isdigit() == True:
+        return('yes')
+    else:
+        return('no')
+print(get_min(input()))

@@ -1,0 +1,52 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="19" judge-id="20" status="WA" scoring="ACM" run-tests="2" contest-id="3004" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>f0958264-1824-4d18-b730-87fe9a1a5a9f</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Done processing 000019.cpp
+
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="1110016"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=1110016, maxrss=2957312, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2654208, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="28">4 4
+1 2 1
+2 3 2
+3 4 5
+4 1 4
+</input>
+      <output size="1">7</output>
+      <correct size="2">7
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="WA" time="1" real-time="2" max-memory-used="1110016"  checker-comment="Answers do not match: output: 179222, correct: 107923" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=1110016, maxrss=2809856, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=3, maxvsz=307200, maxrss=2654208, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="104">5 10
+4 3 3046
+4 5 90110
+5 1 57786
+3 2 28280
+4 3 18010
+4 5 61367
+4 1 18811
+4 2 69898
+3 5 72518
+3 1 85838
+</input>
+      <output size="6">179222</output>
+      <correct size="7">107923
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="54">Answers do not match: output: 179222, correct: 107923
+</checker>
+    </test>
+  </tests>
+</testing-report>

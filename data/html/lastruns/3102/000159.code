@@ -1,0 +1,37 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+#define ll long long
+
+int f(int a, int k, int b, int m, int n) {
+    int tree = 0;
+    for (int i = 1; i <= n; ++i) {
+        if (i%k != 0) tree += a;
+        if (i%m != 0) tree += b;
+    }
+    return tree;
+}
+
+int main() {
+    
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    
+    int a, k, b, m, x;
+	cin >> a >> k >> b >> m >> x;
+    vector<int> vec(x+1);
+    for (int i = 0; i <= x; ++i) vec[i] = f(a, k, b, m, i);
+    
+    int l = 0, r = x+1;
+    while (r-l > 1) {
+        int mid = (l+r) / 2;
+        if (vec[mid] < x) l = mid;
+        else r = mid;
+    }
+    
+    cout << r;
+    
+    return 0;
+}

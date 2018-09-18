@@ -1,0 +1,7 @@
+n=100
+i=1
+S=0
+while i <= n :
+    S=S + (i**2)
+    i+=1
+print (S)

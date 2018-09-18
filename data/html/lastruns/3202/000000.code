@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a,n;
+	cin>>a;
+	cin>>n;
+	if(a>=n)
+		cout<<a<<endl;
+	else
+		cout<<n<<endl;
+}

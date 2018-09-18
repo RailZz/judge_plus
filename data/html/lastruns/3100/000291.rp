@@ -1,0 +1,14 @@
+<input size="4">300
+</input>
+      <output size="32">0 0
+0 0
+4 4
+0 0
+0 0
+0 0
+0 0
+0 0
+</output>
+      <correct size="8">220 284
+</correct>
+      

@@ -1,0 +1,47 @@
+#include <iostream>
+#include <cmath>
+#include <vector>
+using namespace std;
+int main ()
+{
+	int k, num1, n, sum1, sum, i1=1,i2;
+	bool m=0;
+	cin >> k;
+	vector <int> mas (1);
+	for (int i=2;i<=k;i++)
+	{
+		sum1=1;
+		num1 = i;
+		for (int j=2;j*j<=num1;j++)
+		{
+			if (num1%j==0)
+				sum1=sum1+j+num1/j;
+		}
+		n=sum1;
+		sum=1;
+		for (int j=2;j*j<=n;j++)
+		{
+		if (n%j==0)
+			sum=sum+j+n/j;
+		}
+		if (sum==num1&&sum1==n&&num1!=n&&num1<k&&n<k)
+		{
+			i2=1;
+			m=0;
+			while (i2 < mas.size())
+			{
+				if (num1==mas[i2]);
+				{
+					m=1;
+					break;
+				}
+				i2++;
+			}
+			if (m==0)
+			{
+				mas.push_back(n);
+				cout << num1 << " " << n << endl;
+			}
+		}
+	}
+}

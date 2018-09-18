@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    int Count = 0;
+    while (n > 1)
+    {
+        n = (n + 1)/2;
+        Count++;
+    }
+    cout << Count;
+    return 0;
+}

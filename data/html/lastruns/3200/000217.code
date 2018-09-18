@@ -1,0 +1,11 @@
+a = input()
+s = input()
+d = input()
+    f = input()
+    g = input()
+    h = input()
+a = (f - a)*3600
+s = (g - s)*60
+d = h - d
+a = a + s + d
+print(a)

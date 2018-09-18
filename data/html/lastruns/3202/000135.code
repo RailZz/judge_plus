@@ -1,0 +1,9 @@
+k = int(input())
+n = int(input())
+s  = int(input())
+if s>k and s>n:
+    print(s)
+if k>s and k>n:
+    print(k)
+else:
+    print(n)

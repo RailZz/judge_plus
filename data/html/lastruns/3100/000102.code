@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    int is_prime = 1;
+    int i = 2;
+    while (i * i <= n)
+    {
+        if (n % i == 0)
+        {
+            is_prime = 0;
+        }
+        i++;
+    }
+    if (is_prime)
+    {
+        cout << "prime";
+    } else {
+        cout << "composite";
+    }
+
+    return 0;
+}

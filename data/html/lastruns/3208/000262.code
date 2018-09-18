@@ -1,0 +1,9 @@
+h=int(input())
+j=int(input())
+y=int(input())
+k=h+j+y
+if k%2==0:
+    print(k)
+elif k%2=!0
+    k+1
+    print(k)

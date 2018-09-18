@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="90" judge-id="6" status="SE" scoring="ACM" run-tests="1" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>f9d4ac66-924d-4abb-a2ce-659e0ef57f72</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="309" real-time="338" max-memory-used="29560832" >
+  <program-stats-str>{ utime=287, stime=22, ptime=309, rtime=338, maxvsz=29560832, maxrss=19447808, nvcsw=1, nivcsw=38 }</program-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="10">1 2 3 4 5
+</output>
+      <stderr size="277">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000090&quot;, line 8, in &lt;module&gt;
+    print(a[i])
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

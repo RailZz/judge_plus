@@ -1,0 +1,17 @@
+n = int(input())
+d = [10 ** 9] * (n * 3)
+d[0] = 0
+d[1] = 1
+d[2] = 2
+p = []
+for i in range(2, n):
+    if d[i + 1] > (d[i] + 1) and (i + 1) <= n:
+        d[i + 1] = d[i] + 1
+        p.append(1)
+    if d[i * 2] > (d[i] + 1) and (i * 2) < n:
+        d[i * 2] = d[i] + 1
+        p.append(2)
+    if d[i * 3] > (d[i] + 1) and (i * 3) < n:
+        d[i * 3] = d[i] + 1
+        p.append(3)
+print(*p, sep='')

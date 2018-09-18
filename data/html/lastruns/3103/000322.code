@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+int n = 0, m = 0;
+int used[100];
+int c = 0;
+int matrix[100][100];
+void dfs(int);
+int main()
+{
+	for (int i = 0; i<100;i++)
+	{
+		used[i] = 0;
+	}
+	cin >> n >> m;
+	for (int i = 0; i < m;i++)
+	{
+		int a, b;
+		cin >> a >> b;
+		a--;b--;
+		matrix[a][b] = 1;
+		matrix[b][a] = 1;
+	}
+	if ((n - 1) == m)
+	{
+		dfs(matrix[0][0]);
+		if (c == n)
+		{
+			cout << "YES";
+			return 0;
+		}
+		else{
+			cout << "NO";
+			return 0;
+		}
+	}
+	else cout << "NO";;
+	return 0;
+}
+void dfs(int v)
+{
+	c++;
+	used[v] = 1;
+	for (int i = 0; i < n; i++)
+	{
+		if (matrix[v][i] == 1)
+		{
+			if (used[i] == 0)
+			{
+				dfs(i);
+			}
+		}
+	}
+}

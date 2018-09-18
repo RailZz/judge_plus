@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+c = int(input())
+n = (a + b + c)//2
+if n % 2 >= 0.1:
+    n +=1
+print (n)

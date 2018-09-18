@@ -1,0 +1,5 @@
+n = int(input())
+stairs = [1, 1, 2]
+for i in range(3, n + 1):
+    stairs.append(stairs[i - 1] + stairs[i - 2] + stairs[i - 3])
+print(stairs[n])    

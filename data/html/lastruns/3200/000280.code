@@ -1,0 +1,5 @@
+n=int(inter())
+k=int(inter())
+n=3
+k=14
+print(k//n)

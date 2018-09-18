@@ -1,0 +1,6 @@
+c = input()
+answ = ""
+for i in range(len(c) - 1): 
+    answ += c[i] + "*"
+answ += c[-1]
+print(answ)

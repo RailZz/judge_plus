@@ -1,0 +1,18 @@
+def f(a, b, c, ru):
+    return a // b + a // c < ru
+
+
+inp = list(map(int, input().split()))
+n = inp[0]
+x = inp[1]
+y = inp[2]
+n -= 1
+l = 0
+r = n * max(x, y)
+while r - l > 1:
+    m = (l + r) // 2
+    if f(m, x, y, n):
+        l = m
+    else:
+        r = m
+print(r + min(x, y))

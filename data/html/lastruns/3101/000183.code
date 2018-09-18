@@ -1,0 +1,22 @@
+n, k = list(map(int, input().split()))
+
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+def isInA(x):
+    l = 0
+    r = len(a) - 1
+    while r != l:
+        m = (l + r) // 2
+        if x <= a[m]:
+            r = m
+        else:
+            l = m + 1
+    return a[l] == x
+
+
+for e in b:
+    if isInA(e):
+        print("YES")
+    else:
+        print("NO")

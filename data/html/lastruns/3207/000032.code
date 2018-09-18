@@ -1,0 +1,5 @@
+def int_min(a,b,c,d) :
+    m = min(a,b,c,d)
+    return m
+v = int_min(int(input()),int(input()),int(input()),int(input()))
+print(v)

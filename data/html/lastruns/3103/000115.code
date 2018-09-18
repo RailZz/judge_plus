@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int n;
+int m;
+int l1;
+int l2;
+main(){
+cin>>n>>m;
+vector <int> light_count(n);
+for(int i;i<m;i++){
+    cin>>l1>>l2;
+    light_count[l1]++;
+    light_count[l2]++;
+    }for(int i;i<n;i++){
+    cout<<light_count[i];
+    }
+return(0);
+}

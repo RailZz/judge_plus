@@ -1,0 +1,6 @@
+x=int(input())
+i=int(input())
+while i <= x :
+    if x % i != x  :
+    print (i)
+       i+=1

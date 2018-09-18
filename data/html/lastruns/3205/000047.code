@@ -1,0 +1,13 @@
+n = [int(i) for i in input().split()]
+m = 0
+l = 0
+for i in range(len(n)):
+    if m == 0 and l == 0 :
+        m = n[i]
+    elif  m == 0 and l != 0:
+        m = n[i]
+        l = i
+    elif n[i] > m:
+        m = n[i]
+        l = i
+print(m, l, end = ' ')

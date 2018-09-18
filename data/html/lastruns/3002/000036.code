@@ -1,0 +1,83 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<long long> used;
+vector<vector<long long>> gr;
+vector<long long> top_ans;
+vector<long long> tout;
+vector<pair<int, int>> pairs;
+
+long long timer;
+
+void dfs_top(long long v)
+{
+    used[v] = true;
+    for (long long u : gr[v])
+    {
+        if (!used[u])
+        {
+            dfs_top(u);
+        }
+    }
+    tout[v] = timer++;
+    top_ans.push_back(v);
+}
+
+int main()
+{
+    timer = 1;
+    long long n, m;
+    cin >> n >> m;
+    gr.resize(n);
+    used.resize(n, 0);
+    tout.resize(n, 0);
+    long long i;
+    long long a, b;
+    for (i = 0; i < m; ++i)
+    {
+        cin >> a >> b;
+        gr[b - 1].push_back(a - 1);
+        pairs.push_back(make_pair(b-1, a-1));
+    }
+
+    for (i = 0; i < n; ++i)
+    {
+        if (!used[i])
+        {
+            dfs_top(i);
+        }
+    }
+    long long bad = 0;
+    long long j = 0;
+    for (auto p : pairs)
+    {
+        if (tout[p.first] < tout[p.second])
+        {
+            bad = 1;
+        }
+    }
+
+    if (bad)
+    {
+        cout << "No";
+        return 0;
+    }
+    cout << "Yes" << endl;
+    long long counter = 1;
+    for (auto h : tout)
+    {
+        if (h == 0)
+        {
+            cout << counter + 1 << " ";
+        }
+        ++counter;
+    }
+
+    for (auto h : top_ans)
+    {
+        cout << h + 1 << " ";
+    }
+}

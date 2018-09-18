@@ -1,0 +1,22 @@
+def dfs(v, c):
+    ans[c-1].append(v)
+    used[v] = c
+    for u in ar[v]:
+        if used[u] == 0:
+            dfs(u, c)
+
+
+inp = list(map(int, input().split()))
+n = inp[0]
+m = inp[1]
+ar = [[int(i) for i in input().split()] for i in range(m)]
+k = 0
+c = 1
+ans = []
+used = [0] * n
+for i in range(n - 1):
+    if used[i] == 0:
+        ans.append([])
+        dfs(i, c)
+        c += 1
+print(ans)

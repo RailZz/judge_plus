@@ -1,0 +1,9 @@
+<input size="12">4 5 3 4 2 3
+</input>
+      <output size="6">2
+3
+6
+</output>
+      <correct size="7">4 3 2 
+</correct>
+      

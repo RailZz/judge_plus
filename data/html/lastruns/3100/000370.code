@@ -1,0 +1,9 @@
+s = list(map(int,(input().split())))
+a = s[0]
+b = s[1]
+while a != 0 and b != 0:
+    if a > b:
+        a = a % b
+    else:
+        b = b % a
+print((s[0] * s[1]) / (a + b))

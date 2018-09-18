@@ -1,0 +1,10 @@
+A, K, B, M, X = map(int, input().split())
+l = 0
+r = 2 * 10**8 
+while r - l > 1:
+    m = (r + l) // 2
+    if A * (m - m//K) + B * (m - m//M) >= X:
+        r = m
+    else:
+        l = m
+print(r)

@@ -1,0 +1,11 @@
+a = int(input())
+b,  cr, cr1, cr2 = [], 0, 0, 0
+for j in range(a):
+    b = input().split()
+    o = int(b[2])
+    o1 = int(b[3])
+    o2 = int(b[4])
+    cr += o
+    cr1 += o1
+    cr2 += o2
+print(cr / a, cr1 / a, cr2 / a)

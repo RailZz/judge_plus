@@ -1,0 +1,5 @@
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+while a < b:
+    if a % d == c:
+        print(a)
+    a +=1

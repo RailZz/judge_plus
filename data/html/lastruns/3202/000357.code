@@ -1,0 +1,9 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+a,b,c,d <=8
+if (a == c) or (a == d) or (b == c) or (b == d):
+    print ("YES")
+else:
+    print ("NO")

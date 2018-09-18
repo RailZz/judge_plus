@@ -1,0 +1,13 @@
+fi1 = 1
+fi2 = 1
+
+n = int(input())
+ 
+i = 2 
+while i < n:
+    fi_sum = fi2 + fi1
+    fi1 = fi2
+    fi2 = fi_sum
+    i += 1
+ 
+print (fi_sum)

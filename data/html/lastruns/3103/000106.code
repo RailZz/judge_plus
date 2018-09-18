@@ -1,0 +1,44 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector <vector<int>> gr;
+vector <int> st1;
+vector <int> st2;
+int main()
+{
+	int m, n;
+	cin >> n >> m;
+    gr.resize(n + 1, vector<int>(n + 1)); 
+	for (int i = 1; i <= m; i++)
+	{
+        int k, l;
+        cin >> k >> l;
+        gr[k].push_back(l);
+	}
+
+    for (int i = 0; i <= n; i ++)
+    {
+        for (int j = 0; j <= n; j++)
+        {
+            if (gr[i][j] == j && gr[j][i] == i)
+            {
+                st1.push_back(i + 1);
+            } else {
+                st2.push_back(i + 1);
+            }
+        }
+    }
+    if(st1.size() != 0) {
+        cout << "YES" << endl;
+        for (int i = 0; i < st1.size(); i++)
+        {
+            cout << st1[i] << " ";
+        }
+    } else {
+        cout << "NO";
+    }
+    
+    return 0;
+}

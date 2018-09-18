@@ -1,0 +1,56 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int n;
+int dx[8] = {1, 2, 2, 1, -1, -2, -2, -1};
+int dy[8] = {-2, -1, 1, 2, 2, 1, -1, -2};
+
+vector<pair<int, int> > f(int x, int y) {
+    vector<pair<int, int> > a;
+    for (int i = 0; i<8; ++i) {
+        if (x+dx[i] >= 0 && x+dx[i] < n && y+dy[i] >= 0 && y+dy[i] < n) a.push_back({x+dx[i], y+dy[i]});
+    }
+    return a;
+}
+
+int main() {
+    
+    int x1, y1, x2, y2;
+	cin >> n >> x1 >> y1 >> x2 >> y2;
+	--x1;
+	--y1;
+	--x2;
+	--y2;
+
+	queue<pair<int, int> > q;
+	q.push ({x1, y1});
+	vector<vector<int> > dist(n, vector<int> (n));
+	vector<vector<pair<int, int> > > prev(n, vector<pair<int, int> > (n));
+	vector<vector<bool> > used(n, vector<bool> (n));
+	used[x1][y1] = true;
+	prev[x1][y1] = {-1, -1};
+	while (!q.empty()) {
+		pair<int, int> v = q.front();
+		q.pop();
+		vector<pair<int, int> > g = f(v.first, v.second);
+		for (int i = 0; i<g.size(); ++i) {
+		    pair<int, int> to = g[i];
+			if (!used[to.first][to.second]) {
+				used[to.first][to.second] = true;
+				q.push(to);
+				dist[to.first][to.second] = dist[v.first][v.second] + 1;
+				prev[to.first][to.second] = v;
+			}
+		}
+	}
+    
+	vector<pair<int, int> > path;
+	for (pair<int, int> i = {x2, y2}; i != make_pair(-1, -1); i = prev[i.first][i.second])
+	    path.push_back(i);
+	reverse (path.begin(), path.end());
+	cout << path.size() - 1 << endl;
+	for (int i = 0; i<path.size(); ++i)
+		cout << path[i].first + 1 << " " << path[i].second + 1 << endl;
+
+	return 0;
+}

@@ -1,0 +1,13 @@
+N = int(input())
+R = 0
+if N >= 10:
+    R = N%10
+else:
+    R = N
+if R == 1:
+    print(N, "korova")
+elif 4>=R>=2:
+    print(N, "korovy")
+else:
+    print(N, "korov")
+          

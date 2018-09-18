@@ -1,0 +1,10 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="195" judge-id="125" status="CE" scoring="ACM" run-tests="0" contest-id="3204" compile-error="yes" >
+  <uuid>0ca8f601-db75-44c8-8ed5-a1860cc2956f</uuid>
+  <compiler_output>000195.cpp:1:1: error: 'a' does not name a type
+ a = [int(i) for i in input().split()]
+ ^
+</compiler_output>
+</testing-report>

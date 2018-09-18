@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="109" judge-id="88" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>af37584f-486e-4b8e-b380-39a911a3022e</uuid>
+  <compiler_output>000109.cpp: In function 'int main()':
+000109.cpp:31:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i &lt; vec2.size(); i++)
+                       ^
+000109.cpp:33:16: error: 'r' was not declared in this scope
+         while (r - l &gt; 1)
+                ^
+000109.cpp:33:20: error: 'l' was not declared in this scope
+         while (r - l &gt; 1)
+                    ^
+000109.cpp:38:34: error: expected ']' before ')' token
+             if (vec1[m1 &lt; vec2[i])
+                                  ^
+000109.cpp:45:16: error: 'r' was not declared in this scope
+         while (r - l &gt; 1)
+                ^
+000109.cpp:45:20: error: 'l' was not declared in this scope
+         while (r - l &gt; 1)
+                    ^
+000109.cpp:50:34: error: expected ']' before ')' token
+             if (vec1[m2 &lt; vec2[i])
+                                  ^
+</compiler_output>
+</testing-report>

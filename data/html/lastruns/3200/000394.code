@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s;
+    int x = atoi(s.c_str());
+    cout << x + 1 << endl;
+}

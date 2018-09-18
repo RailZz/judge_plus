@@ -1,0 +1,12 @@
+from math import pi
+from math import sin
+a = float(input())
+l = -pi/2
+r = pi/2
+for i in range(50):
+    m = (r + l) / 2
+    if sin(m) < a:
+        l = m
+    else:
+        r = m
+print(l)

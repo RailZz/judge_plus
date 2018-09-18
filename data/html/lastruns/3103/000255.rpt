@@ -1,0 +1,63 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="255" judge-id="7" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>2be9b0de-a89f-4f4e-968c-b4327161b59d</uuid>
+  <compiler_output>000255.cpp:7:14: error: 'std::vector&lt;int&gt; time' redeclared as different kind of symbol
+ vector &lt;int&gt; time;
+              ^
+In file included from /usr/include/pthread.h:24:0,
+                 from /usr/include/c++/5.3.1/i686-redhat-linux/bits/gthr-default.h:35,
+                 from /usr/include/c++/5.3.1/i686-redhat-linux/bits/gthr.h:148,
+                 from /usr/include/c++/5.3.1/ext/atomicity.h:35,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:39,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000255.cpp:1:
+/usr/include/time.h:192:15: note: previous declaration 'time_t time(time_t*)'
+ extern time_t time (time_t *__timer) __THROW;
+               ^
+000255.cpp: In function 'void unterBfs()':
+000255.cpp:21:35: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+             if (!used[u] &amp;&amp; time[u] &gt; time[a] + 1)
+                                   ^
+000255.cpp:21:45: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+             if (!used[u] &amp;&amp; time[u] &gt; time[a] + 1)
+                                             ^
+000255.cpp:21:49: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+             if (!used[u] &amp;&amp; time[u] &gt; time[a] + 1)
+                                                 ^
+000255.cpp:25:27: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+                     time[u] = time[a] + 1;
+                           ^
+000255.cpp:25:37: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+                     time[u] = time[a] + 1;
+                                     ^
+000255.cpp:25:41: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+                     time[u] = time[a] + 1;
+                                         ^
+000255.cpp:25:29: error: assignment of read-only location '*(time + ((sizetype)u))'
+                     time[u] = time[a] + 1;
+                             ^
+000255.cpp:25:29: error: cannot convert 'time_t (*)(time_t*) throw () {aka long int (*)(long int*) throw ()}' to 'time_t(time_t*) throw () {aka long int(long int*) throw ()}' in assignment
+000255.cpp: In function 'int main()':
+000255.cpp:39:10: error: request for member 'resize' in 'time', which is of non-class type 'time_t(time_t*) throw () {aka long int(long int*) throw ()}'
+     time.resize(n, 100000);
+          ^
+000255.cpp:46:19: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+         time[a - 1] = 0;
+                   ^
+000255.cpp:46:19: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+000255.cpp:46:21: error: assignment of read-only location '*(time + (((sizetype)a) + 4294967295u))'
+         time[a - 1] = 0;
+                     ^
+000255.cpp:46:21: error: cannot convert 'int' to 'time_t(time_t*) throw () {aka long int(long int*) throw ()}' in assignment
+000255.cpp:60:19: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+         if (time[i] == 0)
+                   ^
+000255.cpp:71:23: warning: pointer to a function used in arithmetic [-Wpointer-arith]
+         cout &lt;&lt; time[i] &lt;&lt; ' ';
+                       ^
+</compiler_output>
+</testing-report>

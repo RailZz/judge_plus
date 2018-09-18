@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A, B, NOD, NOK, left, right;
+    cin >> A >> B;
+    NOD = A;
+    left = NOD;
+    right = B;
+    while (left != 0 && right != 0)
+    {
+        if (left < right)
+        {
+            swap(left, right);
+        }
+        left %= right;
+    }
+    NOD = left + right;
+    NOK = A * B / NOD;
+    cout << NOK;
+}

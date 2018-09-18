@@ -1,0 +1,82 @@
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+vector<int> p;
+vector<int> d;
+
+int get_par(int v)
+{
+    if (p[v] == v)
+    {
+        return v;
+    }
+    return p[v] = get_par(p[v]);
+}
+
+void unionn(int v, int u)
+{
+    v = get_par(v);
+    u = get_par(u);
+    if (u != v)
+    {
+        if (d[u] > d[v])
+        {
+            swap(u, v);
+        }
+        p[u] = v;
+        if (d[u] == d[v])
+        {
+            ++d[v];
+        }
+    }
+}
+
+int main()
+{
+    int n, m, k;
+    int i;
+    cin >> n >> m >> k;
+    vector<pair<int, pair<int, int>>> edges;
+    vector<pair<int, pair<int, int>>> calls;
+    int w_ans = 0;
+    string type;
+    for (i = 0; i < m; ++i)
+    {
+        int a, b, c;
+        cin >> a >> b;
+        edges.push_back({1, {a - 1, b - 1}});
+    }
+    p.resize(n);
+    d.resize(n, 0);
+    for (int i = 0; i < n; ++i)
+    {
+        p[i] = i;
+    }
+    for (i = 0; i < k; ++i)
+    {
+        int a, b;
+        cin >> type >> a >> b;
+        calls.push_back({(type == "cut" ? 1 : 0), {a - 1, b - 1}});
+    }
+    reverse(calls.begin(), calls.end());
+    vector<bool> ans;
+    for (i = 0; i < calls.size(); ++i)
+    {
+        if (calls[i].first)
+        {
+            // ADD
+            unionn(calls[i].second.first, calls[i].second.second);
+        } else {
+            // ASK
+            ans.push_back(get_par(calls[i].second.first) == get_par(calls[i].second.second));
+        }
+    }
+    reverse(ans.begin(), ans.end());
+    for (i = 0; i < ans.size(); ++i)
+    {
+        cout << (ans[i] ? "YES" : "NO") << endl;
+    }
+}

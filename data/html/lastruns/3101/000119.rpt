@@ -1,0 +1,23 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="119" judge-id="98" status="SV" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>9a5f9462-4526-430a-b79d-521bc3e6902d</uuid>
+  <compiler_output>000119.c:3:  Extra space before ( in function call  [whitespace/parens] [4]
+000119.c:13:  Extra space before ( in function call  [whitespace/parens] [4]
+000119.c:17:  Extra space before ( in function call  [whitespace/parens] [4]
+000119.c:21:  Extra space before ( in function call  [whitespace/parens] [4]
+000119.c:23:  Missing space after ,  [whitespace/comma] [3]
+000119.c:36:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+000119.c:36:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+000119.c:41:  Extra space before ( in function call  [whitespace/parens] [4]
+000119.c:43:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+000119.c:43:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+000119.c:44:  Extra space before ( in function call  [whitespace/parens] [4]
+Done processing 000119.c
+Total errors found: 11
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

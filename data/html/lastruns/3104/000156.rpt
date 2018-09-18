@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="156" judge-id="14" status="PE" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>e69276c9-78ce-4cab-8fa4-192272a52747</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="PE" time="27" real-time="29" max-memory-used="307200"  checker-comment="wrong output format More output than needed" >
+  <program-stats-str>{ utime=23, stime=4, ptime=27, rtime=29, maxvsz=307200, maxrss=6340608, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17268736, maxrss=2998272, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">1 1
+179
+</input>
+      <output size="7">179
+[]
+</output>
+      <correct size="5">179
+
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="44">wrong output format More output than needed
+</checker>
+    </test>
+  </tests>
+</testing-report>

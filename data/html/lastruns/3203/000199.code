@@ -1,0 +1,10 @@
+a = int(input())
+i = 2
+s = 0
+while i<=a:
+    s=a%i
+    if s==0:
+        print(i)
+        break
+    i=i+1
+    

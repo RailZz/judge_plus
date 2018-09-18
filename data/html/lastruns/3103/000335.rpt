@@ -1,0 +1,47 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="335" judge-id="5" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>fa106a90-c465-4d7f-8347-d24956967760</uuid>
+  <compiler_output>000335.cpp:32:2: error: stray '\302' in program
+  cin » m » n;
+  ^
+000335.cpp:32:2: error: stray '\273' in program
+000335.cpp:32:2: error: stray '\302' in program
+000335.cpp:32:2: error: stray '\273' in program
+000335.cpp:40:2: error: stray '\302' in program
+  cin » c;
+  ^
+000335.cpp:40:2: error: stray '\273' in program
+000335.cpp:66:2: error: stray '\302' in program
+  cout « cnt;
+  ^
+000335.cpp:66:2: error: stray '\253' in program
+000335.cpp: In function 'void dfs(int, int)':
+000335.cpp:19:8: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (b &lt; gr[a].size() - 1 &amp;&amp; !gr[a][b + 1])
+        ^
+000335.cpp:23:8: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (a &lt; gr.size() - 1 &amp;&amp; !gr[a + 1][b])
+        ^
+000335.cpp: In function 'int main()':
+000335.cpp:32:9: error: expected ';' before 'm'
+  cin » m » n;
+         ^
+000335.cpp:32:15: warning: statement has no effect [-Wunused-value]
+  cin » m » n;
+               ^
+000335.cpp:40:9: error: expected ';' before 'c'
+  cin » c;
+         ^
+000335.cpp:40:10: warning: statement has no effect [-Wunused-value]
+  cin » c;
+          ^
+000335.cpp:66:10: error: expected ';' before 'cnt'
+  cout « cnt;
+          ^
+000335.cpp:66:13: warning: statement has no effect [-Wunused-value]
+  cout « cnt;
+             ^
+</compiler_output>
+</testing-report>

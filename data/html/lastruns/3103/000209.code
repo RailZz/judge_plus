@@ -1,0 +1,33 @@
+﻿type
+d=array[1..100] of integer;
+e=array[1..100] of d;
+procedure count(var a:e; var f:d; var b,N,S:integer);
+var
+g:integer;
+begin
+b:=b+1;
+f[S]:=2;
+for g:=1 to N do
+begin
+if (a[S,g]=1) and (f[g]=1) then
+count(a,f,b,N,g);
+end;
+end;
+var
+N,S,b,c:integer;
+a:e;
+f:d;
+begin
+readln(N,S);
+for b:=1 to N do
+f[b]:=1;
+for b:=1 to N do
+begin
+for c:=1 to N do
+read(a[b,c]);
+readln();
+end;
+b:=0;
+count(a,f,b,N,S);
+writeln(b);
+end.

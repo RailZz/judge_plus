@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="83" judge-id="8" status="WA" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>4f3ba4a3-990e-42f8-9584-8cc7c38e91a6</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="37" real-time="48" max-memory-used="307200"  checker-comment="Different number of lines: output: 2, correct: 1" >
+  <program-stats-str>{ utime=34, stime=3, ptime=37, rtime=48, maxvsz=307200, maxrss=6193152, nvcsw=1, nivcsw=13 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2969600, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">comfort
+</input>
+      <output size="4">3
+3
+</output>
+      <correct size="2">3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="49">Different number of lines: output: 2, correct: 1
+</checker>
+    </test>
+  </tests>
+</testing-report>

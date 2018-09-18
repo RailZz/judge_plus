@@ -1,0 +1,12 @@
+a,f,h,j)=[int(i)for i in input().split()]
+def int_min(a,f,h,j):
+    if a<=f and a<=h and a<=j:
+        return(a)
+    elif f<=a and f<=h and f<=j:
+        return(f)
+    elif h<=a and h<=j and h<=f:
+        return(h)
+    elif j<=a and j<=f and j<=h:
+        return(j)
+
+print(int_min(a,f,h,j))

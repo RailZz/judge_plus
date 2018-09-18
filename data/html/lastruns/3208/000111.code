@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = (a + b + c) // 2
+if d % 2 !=0:
+    d = d + 1
+print(d)

@@ -1,0 +1,10 @@
+a = [int(i) for i in input().split()]
+x = int(input())
+a.append(x)
+m = 0
+i = 0
+while i<len(a):
+    if a[len(a)-1]<=a[i]:
+        m = m+1
+    i = i+1
+print(m)

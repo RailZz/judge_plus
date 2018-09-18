@@ -1,0 +1,17 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="458" judge-id="1" status="SV" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>3ded4b2c-55be-4d8e-bd17-ff8d93cff3e2</uuid>
+  <compiler_output>000458.c:7:  Missing space before ( in if(  [whitespace/parens] [5]
+000458.c:9:  If/else bodies with multiple statements require braces  [readability/braces] [4]
+000458.c:10:  Missing space before ( in for(  [whitespace/parens] [5]
+000458.c:16:  Missing space before ( in for(  [whitespace/parens] [5]
+000458.c:21:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+Done processing 000458.c
+Total errors found: 5
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

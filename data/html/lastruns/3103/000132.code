@@ -1,0 +1,41 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int used[100], k=0;
+vector <vector<int>> g(100);
+
+void dfs (int v)
+{
+    k++;
+    used[v]=1;
+    for(auto u:g[v])
+    {
+        if (used[u]==0)
+        {
+            dfs(u);
+        }
+    }
+}
+
+int main()
+{
+    int n, s;
+    cin >> n >> s;
+    int ar [100][100];
+    for (int i=0; i<n; i++)
+    {
+        for (int j=0; j<n; j++)
+        {
+            cin >> ar[i][j];
+            if (ar[i][j]==1)
+            {
+                g[i].push_back(j);
+            }
+        }
+    }
+    dfs(s);
+    cout<<k;
+    return 0;
+}

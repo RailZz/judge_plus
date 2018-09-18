@@ -1,0 +1,16 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="34" judge-id="1" status="SV" scoring="ACM" run-tests="0" contest-id="3003" compile-error="yes" >
+  <uuid>60cb5874-31a9-454c-b90d-209356305056</uuid>
+  <compiler_output>000034.cpp:27:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000034.cpp:56:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000034.cpp:57:  Missing space after ,  [whitespace/comma] [3]
+000034.cpp:65:  Extra space for operator  ++   [whitespace/operators] [4]
+Done processing 000034.cpp
+Total errors found: 4
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

@@ -1,0 +1,5 @@
+a = list(map(int,input().split()))
+i = list(a)
+a.sort()
+print(a[len(a)-1], i.index(a[len(a)-1]))
+

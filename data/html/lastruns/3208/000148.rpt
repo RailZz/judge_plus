@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="148" judge-id="148" status="WA" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>36bb1d4b-aff3-4c37-983c-bb2b3f020a25</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="13" real-time="15" max-memory-used="307200"  checker-comment="Answers differ: [1]: output: 120835, correct: 20" >
+  <program-stats-str>{ utime=7, stime=6, ptime=13, rtime=15, maxvsz=307200, maxrss=5103616, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">10
+15
+2
+</input>
+      <output size="7">120835
+</output>
+      <correct size="6">20 30
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="49">Answers differ: [1]: output: 120835, correct: 20
+</checker>
+    </test>
+  </tests>
+</testing-report>

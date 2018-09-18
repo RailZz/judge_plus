@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="234" judge-id="83" status="RT" scoring="ACM" run-tests="1" contest-id="3202" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>ff593def-5a8f-4e61-9a65-86e41a4e49dc</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="15" real-time="16" max-memory-used="307200" >
+  <program-stats-str>{ utime=4, stime=11, ptime=15, rtime=16, maxvsz=307200, maxrss=5140480, nvcsw=1, nivcsw=4 }</program-stats-str>
+      <input size="8">1
+1
+1
+2
+</input>
+      <output size="0"></output>
+      <stderr size="126">Traceback (most recent call last):
+  File &quot;./000234&quot;, line 9, in &lt;module&gt;
+    print(YES)
+NameError: name 'YES' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

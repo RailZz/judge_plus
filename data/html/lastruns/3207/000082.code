@@ -1,0 +1,8 @@
+Z = input()
+def sacred_satanism(Z):
+    if Z.isdigit() == True:
+        print("yes")
+    else:
+        print("no")
+sacred_satanism(Z)
+        

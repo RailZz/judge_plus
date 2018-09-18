@@ -1,0 +1,64 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+
+const long long ST = pow(10, 6);
+long long st[ST];
+long long hash_1[ST];
+long long hash_2[ST];
+
+long long subhash1(long long l, long long r, long long mod)
+{
+    long long big = hash_1[r], small = 0;
+    if (l != 0)                   {
+        small = (hash_1[l - 1] * st[r - l + 1]) % mod;
+    }
+    return (big - small + mod) % mod;
+}
+
+long long subhash2(long long l, long long r, long long mod)
+{
+    long long big = hash_2[r], small = 0;
+    if (l != 0)                   {
+        small = (hash_2[l - 1] * st[r - l + 1]) % mod;
+    }
+    return (big - small + mod) % mod;
+}
+
+int main() {
+    long long p = 37, mod = (pow(10, 9) + 7);
+    string s, t;
+    cin >> s >> t;
+
+    hash_1[0] = s[0];
+    int m = s.size();
+    for (int i = 1; i < m; ++i)            {
+        hash_1[i] = (hash_1[i - 1] * p + s[i]) % mod;
+        cout << "hash 1:  " << hash_1[i] << endl;
+    }
+    hash_2[0] = t[0];
+    for (int i = 1; i < m; ++i)            {
+        hash_2[i] = (hash_2[i - 1] * p + t[i]) % mod;
+    }
+    st[0] = 1;
+    for (int i = 1; i < ST; ++i)           {
+        st[i] = (st[i - 1] * p) % mod;
+    }
+    long long i = 0, ans = -1;
+    while (i < m)  {
+        ++i;
+        cout << "hash 1                   hash 2" <<
+        endl << subhash1(i, m, mod) << "                   "
+             << subhash2(0, m - i, mod) << endl;
+
+        if (subhash1(i, m, mod) ==
+                subhash2(0, m - i, mod)) {
+            ans = i;
+            break;
+        }
+    }
+    cout << ans;
+    return 0;
+}

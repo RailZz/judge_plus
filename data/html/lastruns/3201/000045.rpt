@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="45" judge-id="1" status="SE" scoring="ACM" run-tests="1" contest-id="3201" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>34816fd1-86d9-4b3d-8a5e-03e85c75a5a1</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="292" real-time="328" max-memory-used="31440896" >
+  <program-stats-str>{ utime=265, stime=27, ptime=292, rtime=328, maxvsz=31440896, maxrss=19099648, nvcsw=1, nivcsw=56 }</program-stats-str>
+      <input size="2">3
+</input>
+      <output size="0"></output>
+      <stderr size="314">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000045&quot;, line 5, in &lt;module&gt;
+    l = 45 * n + n // 2 * 5 + ((n + 1) // 2 - 1) * 15
+NameError: name 'n' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

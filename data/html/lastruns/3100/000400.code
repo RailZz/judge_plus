@@ -1,0 +1,21 @@
+def f1(n):
+    i = 2
+    k = 1
+    while i ** 2 <= n and k:
+        if n % i == 0:
+            k = 0
+        i += 1
+    return k
+n = int(input())
+i = None
+while not f1(n):
+    i = 2
+    while i ** 2 <= n: 
+        if f1(i) and n % i == 0:
+            print(i, end = " ")
+            break
+        i += 1
+    n //= i
+print(n)    
+        
+    

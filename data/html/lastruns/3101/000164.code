@@ -1,0 +1,13 @@
+a = int(input())
+N = a
+n = 0
+if N == 1 or N == 0:
+    print(n)
+else:
+    while N != 1:
+        N = N // 2
+        n += 1
+if 2**n == a:
+    print(n)
+else:
+    print(n + 1)

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- $Id$ -->
+<contest id="auto"
+invisible="yes"
+         disable_team_password="yes"
+         managed="yes"
+         run_managed="yes">
+  <name>all</name>
+  <name_en>all</name_en>
+  <register_access default="allow"/>
+  <users_access default="allow"/>
+  <master_access default="allow"/>
+  <judge_access default="allow"/>
+  <team_access default="allow"/>
+  <serve_control_access default="allow"/>
+  <caps>
+    <cap login = "ejudge">
+      FULL_SET,
+    </cap>
+  </caps>
+</contest>
+<!-- audit: created 2017/07/06 00:12:47 1 (ejudge) 172.20.10.3 -->

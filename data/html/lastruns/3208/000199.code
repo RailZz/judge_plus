@@ -1,0 +1,9 @@
+x = int(input())
+y = int(input())
+z = int(input())
+a=x*z
+b=y*z
+if b >=100:
+    a = a=b//100
+    b = b%100
+print(a,b)

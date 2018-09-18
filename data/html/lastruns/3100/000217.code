@@ -1,0 +1,15 @@
+﻿var
+N,i:integer;
+begin
+read(N);
+i:=2;
+if N=1 then ;
+while i**2<=N 
+do if N mod i=0 then begin writeln('composite');
+break
+end;
+
+else
+  i:=i+1;
+  if i**2>N then writeln('prime') 
+end. 

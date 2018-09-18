@@ -1,0 +1,62 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="104" judge-id="35" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>89a50c1b-359f-465d-8914-28ddd17d3164</uuid>
+  <compiler_output>000104.cpp: In function 'int main()':
+000104.cpp:13:2: error: 'used' was not declared in this scope
+  used.resize(n);
+  ^
+000104.cpp:36:19: error: conflicting declaration 'std::vector&lt;int&gt; stok'
+  vector&lt;int&gt; stok(n, 0);
+                   ^
+000104.cpp:35:13: note: previous declaration as 'int stok'
+  int istok, stok;
+             ^
+000104.cpp:37:20: error: conflicting declaration 'std::vector&lt;int&gt; istok'
+  vector&lt;int&gt; istok(n, 0);
+                    ^
+000104.cpp:35:6: note: previous declaration as 'int istok'
+  int istok, stok;
+      ^
+000104.cpp:42:18: error: request for member 'push_back' in 'stok', which is of non-class type 'int'
+             stok.push_back(i);
+                  ^
+000104.cpp:43:19: error: request for member 'push_back' in 'istok', which is of non-class type 'int'
+             istok.push_back(i);
+                   ^
+000104.cpp:45:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int j = 0; j &lt; vec[i].size(); j++)
+                     ^
+000104.cpp:47:19: error: request for member 'push_back' in 'istok', which is of non-class type 'int'
+             istok.push_back(vec[i][j]);
+                   ^
+000104.cpp:50:24: error: invalid types 'int[int]' for array subscript
+                 istok[i].erase(istok[i].brgin() + j);
+                        ^
+000104.cpp:50:39: error: invalid types 'int[int]' for array subscript
+                 istok[i].erase(istok[i].brgin() + j);
+                                       ^
+000104.cpp:54:19: error: request for member 'size' in 'istok', which is of non-class type 'int'
+     cout &lt;&lt; istok.size() &lt;&lt; endl; 
+                   ^
+000104.cpp:55:31: error: request for member 'size' in 'istok', which is of non-class type 'int'
+     for (int i = 0; i &lt; istok.size(); i++)
+                               ^
+000104.cpp:57:24: error: invalid types 'int[int]' for array subscript
+         cout &lt;&lt; istok[i] &lt;&lt; endl;   
+                        ^
+000104.cpp:59:18: error: request for member 'size' in 'stok', which is of non-class type 'int'
+     cout &lt;&lt; stok.size() &lt;&lt; endl; 
+                  ^
+000104.cpp:60:31: error: request for member 'size' in 'istok', which is of non-class type 'int'
+     for (int i = 0; i &lt; istok.size(); i++)
+                               ^
+000104.cpp:62:23: error: invalid types 'int[int]' for array subscript
+         cout &lt;&lt; stok[i] &lt;&lt; endl;   
+                       ^
+000104.cpp:14:6: warning: unused variable 'Count' [-Wunused-variable]
+  int Count;
+      ^
+</compiler_output>
+</testing-report>

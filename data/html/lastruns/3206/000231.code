@@ -1,0 +1,18 @@
+a = input()
+b = 0
+c = 0
+d = 0
+e = 0
+for i in range(len(a)):
+    if a[i].isalpha() and b<1:
+        b+=1
+    if a[i].isdigit() and c<1:
+        c+=1
+    if a[i].islower() and d<1:
+        d+=1
+    if a[i].isupper() and e<1:
+        e+=1
+if (b+c+d+e>=4) and (len(a)>=8):
+    print ('YES')
+else:
+    print ('NO')

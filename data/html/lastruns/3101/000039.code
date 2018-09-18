@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	if (a<1)return 1;
+	cin >> a;
+	int b = 1;
+	for(int i = a; i > 1; i /= 2)
+		b++;
+	cout << b;
+	system("pause");
+	return 0;
+}

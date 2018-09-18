@@ -1,0 +1,17 @@
+from math import sqrt
+
+
+def f(x):
+    return x**2 + sqrt(x)
+
+
+c = float(input())
+l = 0.0
+r = 10**5.0
+for i in range(50):
+    m = (r + l) / 2
+    if f(m) < c:
+        l = m
+    else:
+        r = m
+print('{:.7f}'.format(l))

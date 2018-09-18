@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="118" judge-id="118" status="PE" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>b980ced5-b39b-4774-87d3-843e0c70b8b3</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="PE" time="28" real-time="33" max-memory-used="307200"  checker-comment="user program output: [1]: cannot parse int64 value" >
+  <program-stats-str>{ utime=26, stime=2, ptime=28, rtime=33, maxvsz=307200, maxrss=6242304, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2621440, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="16">[5, 4, 3, 2, 1]
+</output>
+      <correct size="11">5 4 3 2 1 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="51">user program output: [1]: cannot parse int64 value
+</checker>
+    </test>
+  </tests>
+</testing-report>

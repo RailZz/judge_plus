@@ -1,0 +1,10 @@
+n=int(input())
+s1=0
+s2=0
+s3=0
+for i in range(n):
+    k=[int(i) for i in input().split()[2::]]
+    s1+=k[0]
+    s2+=k[1]
+    s3+=k[2]
+print(s1 / n,s2 / n, s3 / n)

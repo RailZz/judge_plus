@@ -1,0 +1,17 @@
+n=int(input())
+a=int(input())
+b=int(input())
+if (n>a)and(n>b):
+    print(n)
+elif (a>n)and(a>b):
+    print(a)
+elif (b>n)and(b>a):
+    print(b)
+elif (b==n==a):
+    print(b)
+elif (a==b)and(a>n):
+    print(a)
+elif (b==n)and(b>a):
+    print(b)
+elif (a==n)and(n>b):
+    print(n)

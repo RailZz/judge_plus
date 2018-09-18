@@ -1,0 +1,75 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <set>
+
+using namespace std;
+
+vector<vector<pair<int, int>>> gr;
+vector<int> d;
+set<pair<int, int>> s;
+vector<vector<int>> weight;
+
+int f(int mass, int start, int finish) {
+    d.assign(gr.size(), 2009000999);
+    d[start] = 0;
+    s.clear();
+    s.insert({0, start});
+    while (!s.empty()) {
+        int v = s.begin()->second;
+        s.erase(s.begin());
+        for (auto ul : gr[v]) {
+            int u = ul.second;
+            int l = ul.first;
+            if (d[v] + l < d[u] && mass <= weight[v][u]) {
+                s.erase({d[u], u});
+                d[u] = d[v] + l;
+                s.insert({d[u], u});
+            }
+        }
+    }
+    if (d[finish] <= 1440 && d[finish] != -1) {
+        return 1;
+    }
+    return 0;
+}
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+    int start, finish;
+    int max_w = 0;
+    start = 0;
+    finish = n - 1;
+    gr.resize(n);
+    d.resize(n, 2009000999);
+    d[start] = 0;
+    weight.resize(n, vector<int>(n, -1));
+    for (int i = 0; i < m; i++) {
+        int st, fin, time, w;
+        cin >> st >> fin >> time >> w;
+        w = (w - 3000000) / 100;
+        st--;
+        fin--;
+        gr[st].push_back({time, fin});
+        gr[fin].push_back({time, st});
+        weight[st][fin] = w;
+        weight[fin][st] = w;
+        if (w > max_w) {
+            max_w = w;
+        }
+    }
+    int L = -1, R = max_w;
+    while (R - L > 1){
+        int m = (L + R) / 2;
+        if (f(m, start, finish) == 0){
+            R = m;
+        }
+        else{
+            L = m;
+        }
+        d.assign(n, 2009000999);
+        s.clear();
+    }
+    cout << R;
+}

@@ -1,0 +1,55 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int k;
+    cin >> k;
+
+    if (k < 10)
+    {
+        cout << k << " 1";
+        return 0;
+    }
+    vector <int> mods(k, 0);
+    int mod = 0;
+    int cnt = 2;
+    int mincnt = 1000, minI = 0;
+    for (int i = 1; i < 10; i++)
+    {
+        mod = (i * 10 + i) % k;
+        if (mod == 0)
+        {
+            mincnt = cnt;
+            minI = i;
+            break;
+        }
+        do
+        {
+            mods[mod] = 1;
+            mod = (mod * 10 + i) % k;
+            cnt++;
+            if (mod == 0)
+            {
+                if(cnt < mincnt)
+                {
+                    mincnt = cnt;
+                    minI = i;
+                }
+            }
+        }while (mods[mod] == 0);
+        cnt = 2;
+        mods.assign(k, 0);
+    }
+
+    if (minI != 0)
+    {
+        cout << minI << ' ' << mincnt;
+    }
+    else
+    {
+        cout << "Impossible";
+    }
+    return 0;
+}

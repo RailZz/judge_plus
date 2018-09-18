@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="8" judge-id="3" status="CE" scoring="ACM" run-tests="0" contest-id="3002" compile-error="yes" >
+  <uuid>112484e8-0559-403a-9f64-6f949918ba1f</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000008.pas
+Fatal: Syntax error, &quot;BEGIN&quot; expected but &quot;identifier ASFAJKFASJFGASJFG&quot; found
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

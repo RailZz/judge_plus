@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+	vector<long long> mass;
+	vector<long long> mass_odin;
+	vector<long long> anss;
+	long long h, sum, k, u;
+	cin >> h;
+	cin >> k;
+	sum = k;
+	mass_odin.push_back(sum);
+	mass.push_back(sum);
+	for (long long i = 1; i < h; ++i)
+	{	
+	    cin >> k;
+		sum += k;
+		mass_odin.push_back(k);
+		mass.push_back(sum);
+	}
+	cin >> u;
+	for (long long i = 1; i <= u; ++i)
+	{
+		cin >> h >> k;
+		anss.push_back(mass[k - 1] - mass[h - 1] + mass_odin[h - 1]);
+	}
+	for (long long i = 0; i <= anss.size() - 1; ++i)
+	{
+		cout << anss[i] << " ";
+	}
+	return 0;
+}

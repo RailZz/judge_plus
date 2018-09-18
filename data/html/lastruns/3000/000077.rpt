@@ -1,0 +1,141 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="77" judge-id="1" status="OK" scoring="ACM" run-tests="8" contest-id="3000" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>992eed32-8699-4bc1-b2ea-bee990c9e1e4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Done processing 000077.cpp
+000077.cpp: In function 'bool check(std::__cxx11::string, std::__cxx11::string, int)':
+000077.cpp:23:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (i = 1; i &lt; s.size(); ++i)
+                   ^
+000077.cpp:31:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (i = 1; i &lt; t.size(); ++i)
+                   ^
+000077.cpp:39:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (i = 0; i &lt;= s.length() - t.length(); ++i)
+                   ^
+000077.cpp:36:15: warning: unused variable 'hashed_t' [-Wunused-variable]
+     long long hashed_t = hash_t[t.size() - 1];
+               ^
+000077.cpp: In function 'int main()':
+000077.cpp:74:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (i = 1; i &lt;= s1.length(); ++i)
+                   ^
+000077.cpp:80:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (i = 1; i &lt; s1.size(); ++i)
+                   ^
+000077.cpp:84:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int moving = 0; moving &lt; s1.size(); ++moving)
+                                 ^
+
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="598" real-time="643" max-memory-used="4460544"  checker-comment="OK" >
+  <program-stats-str>{ utime=570, stime=28, ptime=598, rtime=643, maxvsz=4460544, maxrss=2961408, nvcsw=1, nivcsw=60 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="9320">RdMWGNAzJDsDGcipCfaDtAOnpNXQAgWTBqxifQPRRddLRtdjuOLldvZRnwxnkvoqIraFEvWsmQcfeOOjdQUUVRxYfzRPeYcPBlcDRTiRpNHYnPryNHXIdRSDjxLWGbHWDMJXYtpSJNPFeLWQTOCXToyZRUCUmMGkVvZyysULAtUyiOjFaLYhSVfmEaCUWfCgQBinYCOGDIRBWapSpqfhnQgIHBCanhKavqPjqKeIGVMejhYaoAmcahZNibGefVyPRomRoOZdoRcRQRYKfHRgqRGjgotqzjLBUbBPVyxjSXGgvSadZAKrTuSOMgmEAKaKIqLodZHiNxVapdvnOdRwTfOtBbEZjItLaoCmRwWSHxdPBthDUAkBVEkcLFbeDhRsrmwRRMaXidhnDBRySkRzvBWsqtLcNfndeujAODnkRRlHNGmUnIeWngnACoFXOzlfsnlejXKzGyyoVKypSyizIFsmLFMbztfRNncsmXaEPoqNvvywolwbfRVtPPIUqkFZBlYVJSacVwNBRguLqvqCAiaRPoQdNUepkjQMsyhaRbZjuTFmwOGbrwoCwPFSHrjzWFvPHtYmYPRuhxXZnREZDMmGIRHeHvNJqNWDHiGKBgyTnaRRgcLmQwNWtKQbjRRBPwvwApGnNPDofyOKlWOMYhqWzXLOQKfQRVqwRJqQChBAPHKcnWgqQPREOFANRrsPMwcIciWaATBSBXBiGqkBuKNzGeTgEHeuZLnUIxrAoRExKXIRMLzZKiZeBkpNxuPgDGwfrFdhSIDJwUpeGKUwBsRaPjRzUXhdperPaXSzkgMPMThuRFsHRmihPuOTOWCHkwuTXQSRQqWCqKwffIAoDyKsAgvIJhXvoeAbUdVyvbtDBRSpRfFjXNxjRKRHbUFiHjGryydUkUtagXmtXzgJYHyYjCERAhzdzQWrRoyxKdMCZmTDDRKxsCKZpmKMLlTzInTiRqRrqpDbIMwJBORrEoPkBQpnGJaYZDBNUADfIoryFejoJhREpUczwcCHSmciogGRJWypVgLXgmfwsFRLARyyRiaLvjZRuFnmXfiObStOyeHPrAkDbgMZrfSsxnkLPEJyIbsjNXkbNXDLtBojhBEOpfmzhtcCaafVeuOMIEgqOrZhRslOdnKVvCiDQRMLhRAXitKbigzTabMHloZSOLKRlAuFaTPDSPXFFseSIxStdidrWLXrmsRUmExdRpEZbZEeoBkdXcGecjKGFyYUPtApRGWTCZmyvIXbiBdFqkLhnCybzPDNSxpCVKpcdRhYHXVYVHlYEVQOaouogjRplHKnCRlUhgJDnAALMJmghPlpBpJfiBlUcPMkoTlQjsyGJdTKKQYgAWmzTxfkviZpFfrOrKRdLATfRxjAhOQSwNNKVatASeRtQVadhCExnggAWShRYUJUTUhhxjElvGTBJzybQfOZxYggobfRRThIQMPSZKhBwLDvIZqwuhjpKRHZHIGCQWVkATISWvKfGsZwRtuoUCQLNmVlNHjTiQfRxRoyiptrMzJTlrYMShsTMKYDVKGHuNdPpDDneRldRPAdJPCuDTuFRcqRWItKxXRvMHToxdxHRhkjzaMPWKUTElTlNDcsywLKIcOFpMIvJTRAHUbegNgRDErARgUruvIlxeFJNXDUGxbahhHqnHVvUXEeFazxvtUehpOiJxEisXsqVngZjbceEKGeCIVIRjRkRQNKUMsLNgcOTkdRPedImGVkLsxRIyUZkHvURbajhwEFuKsccwOghMKNqDSgDiiyJHjcCCdYwswXmRPztgOcquEqwpaeRgZfRSoCoZmMwiVvnNQynAKAyOpFbyQZZQZOeHURXSeAbRRyWjjjVfBBJMOIYAfksNHzCDeZAARnnaZqhopJZFRPSbeTKhOuOGhFPZJJQCtrAjimbvRHAUuTVsLAMkMHHedvjyRRwziVQePZlzoTJjShYWZrGZQkKRRVwwOtjEYDgLrhldQTXjZzltznvJslQfGWETeffvKzjRMEOBoiWZuevfxAZbViLKquNBXozHspHnMpXDNnhauEtbwXzkisKkvAahgDTHTCAWRHmwAvLlPrVYvxtrzpGzEmRrTpAvwCJAkPTCTuEcRJOuqNBMPZjlRcnRRwhziwxxRkQHrkrzLuzXlxoUTOqINaRRpJZMHhDoYXgSygYMEqijTyxMfdRBDsXPxYvHoKYfUYvvVycNMuTGZdsuzUYfRdiFwnaNjjwPnoVRZiMdkKymwgAgLNCwFdPpuwbwzRLNNUNunoFRRhBKfbqXrrRsAmseOovceAPPddXgKPEJLhhjuxaLBfdBPqIwlisrdsJpyVgnDzEJIGaYABJzSRNZUyeFIRobJoRSTpYaIRCdeYRRtVlVJPRitJhidAhtRdTDIrOiRVnoqDOzJOaPYkEoznOUdmQKEILkTLFyzqRRYOCaFxlUlTFLdnCtrscrylbLfVTMxfwdeHDHfRMeVMYelGiAJNHVaMsrRhZUXSzUIJbKCClzkEseJcuBvVkGPIMmejShNuRUQvuazzAgUjVZRIIVWKYbvjnoRdtZsfcvyAYXPEFMtHAKGLRMaWHnjdAcYahyjrvNPwboexWEkmjbqxQPYQVoUYMdkTvLQThkytlRMjNJBNxpJESRwVxgPcsnJHrrrxWeeqRtjQRuktrQwUDofYPRdTReCLCaGwHdgVtldsclRRRIHpygMedIzRxwXJHkrpBnqmRbRUxmMPNLHbiWtaurkBqwDtFDLjqLGghjEFqfSNCNoioNDsSuUeUDKPLGGiEwPuFPrqlfnyYCqFrsKJRcJoCTEEvaGyWgXgCzSKDoHvmZGcOLPeyQLIwnzzfjGRWEsMvQSRqxRwerwpOThsRFGdtFtSkPDzpPOzVeMTbNRxkBjHeBeGshRKRKaRQWKbCRKXSijUkovDLIMcxuYMaISRaavXRIjmMNLvRCzKGTQIMkMYyBHQjjLLEWBxihhqhqmbhDgKvmsLMmHKbjwGuiJpAiOOWIaeeAIznCAkcOPKwhmNrCzdbdHaozWAVcRAGMeqVKjoGwvcvVJESXgYruNCVfLVqWiunoVipmQdbtblZbBdKMtPnTouuZNZohUawbYPNslVEArUwAFFRyGuKrfPmAOfrfXwRtvYTRwLHZdPpRHBGweIXBTrnpDGAqTpiOKjdTvksRRkKYDspKcXyPRPbmeEdKlxslMrracouaURBnlvnQMMRRbzBPkgiIfwynOWLrcRzIvRyOrAlshawRNplfECDRZARBulMoDZsUTRavRDKYSBkgHwSGgrWxTfoEeWLREsJfaoKKQfjQLRVDaRrjtJoLXRuxymPNRVyhOcGYDRPDloctwarGgnYhqyURORdHCzdfVuGsegSTBGXaHbyAuJiqPjyRitMwyTJwuWnaSUsyfVqlxxhdVbnBLuRGLBRFOFfOdbQZGcrgafDnwLnaEjvulPcdkGLZTqGSRyHomwDUtPMoDTjeYEnKjvYiVZRBJRADLBURlOvfKciBgRCjlRYhEoVDhboCVjzMHOfwPaZTuJLEhOllRSoAlPuDloQIUrvyHVcOoGwiCjtRNCFlMhSRyYDslxJvKtNhEQRxtMoDKQORcGsEPAjNmyurHGqLpBRyFkgEhoGwUWRjTzrRRBGJnddSWTQjdHRaYuiHvuTiRMfNLmdsRELTpEMxUpIGsyOafxPmyFMTUsglEigSuRrHGHmtHXTVcRxhUeAxDyleoGzmGpcjEvODNRRleCkPthXdZgRBOscWrFUJPIOCKRwRdicSBvfAURyBNERtBLIZwEvmRZZOirjFcNQpyaKEoKdChcUHHraincOARYllhfqQPiatASQvGxvrQTUocfRbJGxMcfgYLabVTPzujMzfnlRLMgNAeeRhOdVXezVRQJtQUsNgORRchTkhSQStteoJYpWDqEqmRRluXHuzWFBKCNHjbSbIiqRxsLtgzhNiwdhCcVjRRoiUFAzILKgricIsaFzBqhAoJSNcpYulQIRopeqAFZcQjnNqvxXeYuMVicSykWwtvXCaSaqWbRcSzxOgCRurBOBRRAutSyDjSXObCXGotruQksOsYaFysRXjXIHhOgdULlsSGpZYTkiqOZfORnQXUUnvhgyvKymHmCdaUoTPCGTfLOitCdzdZhKRfORogOvkTRFgMrOexTovHqNljRIsxkPRuqXFoOAdufPRtoyaztRCzvyLoYWxHtGIRRVpSRVInlnFJYVRTpQoYjEzabmhRlbVkGGcRltXopHojtEJpMvdfWbGhGRUZapxEDibjWznXeJFRbWVxRoRfMrQRHtFMdwMsgqEdiRRdBWRCzUcpOxkemygJjIwqzRgsnRwjeEBjgepGpgVZVesVceEBrUjrSqnHXBaQhZqwqBGccdXKuOkaAtXZWEiFRYRmtizRnxCcEqPQuBUXiEsetSkRGfbewVFvhHXsaIfppklXkwmRLsjLKSLrKfRqSPVRCgrRFapOesnKQRCRiJFYRyJjMtpJhKmauhUAKcRVuKMOZRPKRgFNPRRkGbbzGcINSFuNvBsOpTLytCRjKhBVwrXEveejYBAunNchGYCmRGLFDNiRhRqjHoCrRWIjUNGxFKKRJraozkXlRtwaaYRnYjRULxHiOAicugrNpcWwNKOSXnRrFxBuRsohthnmvYyM
+WEsMvQSRqxRwerwpOThsRFGdtFtSkPDzpPOzVeMTbNRxkBjHeBeGshRKRKaRQWKbCRKXSijUkovDLIMcxuYMaISRaavXRIjmMNLvRCzKGTQIMkMYyBHQjjLLEWBxihhqhqmbhDgKvmsLMmHKbjwGuiJpAiOOWIaeeAIznCAkcOPKwhmNrCzdbdHaozWAVcRAGMeqVKjoGwvcvVJESXgYruNCVfLVqWiunoVipmQdbtblZbBdKMtPnTouuZNZohUawbYPNslVEArUwAFFRyGuKrfPmAOfrfXwRtvYTRwLHZdPpRHBGweIXBTrnpDGAqTpiOKjdTvksRRkKYDspKcXyPRPbmeEdKlxslMrracouaURBnlvnQMMRRbzBPkgiIfwynOWLrcRzIvRyOrAlshawRNplfECDRZARBulMoDZsUTRavRDKYSBkgHwSGgrWxTfoEeWLREsJfaoKKQfjQLRVDaRrjtJoLXRuxymPNRVyhOcGYDRPDloctwarGgnYhqyURORdHCzdfVuGsegSTBGXaHbyAuJiqPjyRitMwyTJwuWnaSUsyfVqlxxhdVbnBLuRGLBRFOFfOdbQZGcrgafDnwLnaEjvulPcdkGLZTqGSRyHomwDUtPMoDTjeYEnKjvYiVZRBJRADLBURlOvfKciBgRCjlRYhEoVDhboCVjzMHOfwPaZTuJLEhOllRSoAlPuDloQIUrvyHVcOoGwiCjtRNCFlMhSRyYDslxJvKtNhEQRxtMoDKQORcGsEPAjNmyurHGqLpBRyFkgEhoGwUWRjTzrRRBGJnddSWTQjdHRaYuiHvuTiRMfNLmdsRELTpEMxUpIGsyOafxPmyFMTUsglEigSuRrHGHmtHXTVcRxhUeAxDyleoGzmGpcjEvODNRRleCkPthXdZgRBOscWrFUJPIOCKRwRdicSBvfAURyBNERtBLIZwEvmRZZOirjFcNQpyaKEoKdChcUHHraincOARYllhfqQPiatASQvGxvrQTUocfRbJGxMcfgYLabVTPzujMzfnlRLMgNAeeRhOdVXezVRQJtQUsNgORRchTkhSQStteoJYpWDqEqmRRluXHuzWFBKCNHjbSbIiqRxsLtgzhNiwdhCcVjRRoiUFAzILKgricIsaFzBqhAoJSNcpYulQIRopeqAFZcQjnNqvxXeYuMVicSykWwtvXCaSaqWbRcSzxOgCRurBOBRRAutSyDjSXObCXGotruQksOsYaFysRXjXIHhOgdULlsSGpZYTkiqOZfORnQXUUnvhgyvKymHmCdaUoTPCGTfLOitCdzdZhKRfORogOvkTRFgMrOexTovHqNljRIsxkPRuqXFoOAdufPRtoyaztRCzvyLoYWxHtGIRRVpSRVInlnFJYVRTpQoYjEzabmhRlbVkGGcRltXopHojtEJpMvdfWbGhGRUZapxEDibjWznXeJFRbWVxRoRfMrQRHtFMdwMsgqEdiRRdBWRCzUcpOxkemygJjIwqzRgsnRwjeEBjgepGpgVZVesVceEBrUjrSqnHXBaQhZqwqBGccdXKuOkaAtXZWEiFRYRmtizRnxCcEqPQuBUXiEsetSkRGfbewVFvhHXsaIfppklXkwmRLsjLKSLrKfRqSPVRCgrRFapOesnKQRCRiJFYRyJjMtpJhKmauhUAKcRVuKMOZRPKRgFNPRRkGbbzGcINSFuNvBsOpTLytCRjKhBVwrXEveejYBAunNchGYCmRGLFDNiRhRqjHoCrRWIjUNGxFKKRJraozkXlRtwaaYRnYjRULxHiOAicugrNpcWwNKOSXnRrFxBuRsohthnmvYyMRdMWGNAzJDsDGcipCfaDtAOnpNXQAgWTBqxifQPRRddLRtdjuOLldvZRnwxnkvoqIraFEvWsmQcfeOOjdQUUVRxYfzRPeYcPBlcDRTiRpNHYnPryNHXIdRSDjxLWGbHWDMJXYtpSJNPFeLWQTOCXToyZRUCUmMGkVvZyysULAtUyiOjFaLYhSVfmEaCUWfCgQBinYCOGDIRBWapSpqfhnQgIHBCanhKavqPjqKeIGVMejhYaoAmcahZNibGefVyPRomRoOZdoRcRQRYKfHRgqRGjgotqzjLBUbBPVyxjSXGgvSadZAKrTuSOMgmEAKaKIqLodZHiNxVapdvnOdRwTfOtBbEZjItLaoCmRwWSHxdPBthDUAkBVEkcLFbeDhRsrmwRRMaXidhnDBRySkRzvBWsqtLcNfndeujAODnkRRlHNGmUnIeWngnACoFXOzlfsnlejXKzGyyoVKypSyizIFsmLFMbztfRNncsmXaEPoqNvvywolwbfRVtPPIUqkFZBlYVJSacVwNBRguLqvqCAiaRPoQdNUepkjQMsyhaRbZjuTFmwOGbrwoCwPFSHrjzWFvPHtYmYPRuhxXZnREZDMmGIRHeHvNJqNWDHiGKBgyTnaRRgcLmQwNWtKQbjRRBPwvwApGnNPDofyOKlWOMYhqWzXLOQKfQRVqwRJqQChBAPHKcnWgqQPREOFANRrsPMwcIciWaATBSBXBiGqkBuKNzGeTgEHeuZLnUIxrAoRExKXIRMLzZKiZeBkpNxuPgDGwfrFdhSIDJwUpeGKUwBsRaPjRzUXhdperPaXSzkgMPMThuRFsHRmihPuOTOWCHkwuTXQSRQqWCqKwffIAoDyKsAgvIJhXvoeAbUdVyvbtDBRSpRfFjXNxjRKRHbUFiHjGryydUkUtagXmtXzgJYHyYjCERAhzdzQWrRoyxKdMCZmTDDRKxsCKZpmKMLlTzInTiRqRrqpDbIMwJBORrEoPkBQpnGJaYZDBNUADfIoryFejoJhREpUczwcCHSmciogGRJWypVgLXgmfwsFRLARyyRiaLvjZRuFnmXfiObStOyeHPrAkDbgMZrfSsxnkLPEJyIbsjNXkbNXDLtBojhBEOpfmzhtcCaafVeuOMIEgqOrZhRslOdnKVvCiDQRMLhRAXitKbigzTabMHloZSOLKRlAuFaTPDSPXFFseSIxStdidrWLXrmsRUmExdRpEZbZEeoBkdXcGecjKGFyYUPtApRGWTCZmyvIXbiBdFqkLhnCybzPDNSxpCVKpcdRhYHXVYVHlYEVQOaouogjRplHKnCRlUhgJDnAALMJmghPlpBpJfiBlUcPMkoTlQjsyGJdTKKQYgAWmzTxfkviZpFfrOrKRdLATfRxjAhOQSwNNKVatASeRtQVadhCExnggAWShRYUJUTUhhxjElvGTBJzybQfOZxYggobfRRThIQMPSZKhBwLDvIZqwuhjpKRHZHIGCQWVkATISWvKfGsZwRtuoUCQLNmVlNHjTiQfRxRoyiptrMzJTlrYMShsTMKYDVKGHuNdPpDDneRldRPAdJPCuDTuFRcqRWItKxXRvMHToxdxHRhkjzaMPWKUTElTlNDcsywLKIcOFpMIvJTRAHUbegNgRDErARgUruvIlxeFJNXDUGxbahhHqnHVvUXEeFazxvtUehpOiJxEisXsqVngZjbceEKGeCIVIRjRkRQNKUMsLNgcOTkdRPedImGVkLsxRIyUZkHvURbajhwEFuKsccwOghMKNqDSgDiiyJHjcCCdYwswXmRPztgOcquEqwpaeRgZfRSoCoZmMwiVvnNQynAKAyOpFbyQZZQZOeHURXSeAbRRyWjjjVfBBJMOIYAfksNHzCDeZAARnnaZqhopJZFRPSbeTKhOuOGhFPZJJQCtrAjimbvRHAUuTVsLAMkMHHedvjyRRwziVQePZlzoTJjShYWZrGZQkKRRVwwOtjEYDgLrhldQTXjZzltznvJslQfGWETeffvKzjRMEOBoiWZuevfxAZbViLKquNBXozHspHnMpXDNnhauEtbwXzkisKkvAahgDTHTCAWRHmwAvLlPrVYvxtrzpGzEmRrTpAvwCJAkPTCTuEcRJOuqNBMPZjlRcnRRwhziwxxRkQHrkrzLuzXlxoUTOqINaRRpJZMHhDoYXgSygYMEqijTyxMfdRBDsXPxYvHoKYfUYvvVycNMuTGZdsuzUYfRdiFwnaNjjwPnoVRZiMdkKymwgAgLNCwFdPpuwbwzRLNNUNunoFRRhBKfbqXrrRsAmseOovceAPPddXgKPEJLhhjuxaLBfdBPqIwlisrdsJpyVgnDzEJIGaYABJzSRNZUyeFIRobJoRSTpYaIRCdeYRRtVlVJPRitJhidAhtRdTDIrOiRVnoqDOzJOaPYkEoznOUdmQKEILkTLFyzqRRYOCaFxlUlTFLdnCtrscrylbLfVTMxfwdeHDHfRMeVMYelGiAJNHVaMsrRhZUXSzUIJbKCClzkEseJcuBvVkGPIMmejShNuRUQvuazzAgUjVZRIIVWKYbvjnoRdtZsfcvyAYXPEFMtHAKGLRMaWHnjdAcYahyjrvNPwboexWEkmjbqxQPYQVoUYMdkTvLQThkytlRMjNJBNxpJESRwVxgPcsnJHrrrxWeeqRtjQRuktrQwUDofYPRdTReCLCaGwHdgVtldsclRRRIHpygMedIzRxwXJHkrpBnqmRbRUxmMPNLHbiWtaurkBqwDtFDLjqLGghjEFqfSNCNoioNDsSuUeUDKPLGGiEwPuFPrqlfnyYCqFrsKJRcJoCTEEvaGyWgXgCzSKDoHvmZGcOLPeyQLIwnzzfjGR
+</input>
+      <output size="4">1819</output>
+      <correct size="5">1819
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2805760, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">a
+b
+</input>
+      <output size="2">-1</output>
+      <correct size="3">-1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="1" real-time="3" max-memory-used="311296"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=311296, maxrss=2838528, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">zabcd
+abcdz
+</input>
+      <output size="1">4</output>
+      <correct size="2">4
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2936832, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="14">fzabcd
+abfcdz
+</input>
+      <output size="2">-1</output>
+      <correct size="3">-1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="5" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=3010560, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="56">aaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaa
+</input>
+      <output size="1">0</output>
+      <correct size="2">0
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="6" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=3006464, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="56">aaaaaaaaaaaaaaaaaaaaaaaaaab
+aaaaaaaaaaaaaaaaaaaaaaaaaba
+</input>
+      <output size="2">26</output>
+      <correct size="3">26
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="7" status="OK" time="67" real-time="70" max-memory-used="311296"  checker-comment="OK" >
+  <program-stats-str>{ utime=67, stime=0, ptime=67, rtime=70, maxvsz=311296, maxrss=2936832, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2850">ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZaZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZaZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+</input>
+      <output size="3">540</output>
+      <correct size="4">540
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="8" status="OK" time="1" real-time="3" max-memory-used="311296"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=311296, maxrss=3080192, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">a
+a
+</input>
+      <output size="1">0</output>
+      <correct size="2">0
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+  </tests>
+</testing-report>

@@ -1,0 +1,23 @@
+function prostota(x:integer):boolean;
+var j:integer;
+a,result:boolean;
+begin
+a:=true;
+for j:=2 to (x-1) do
+if ((x mod j)=0) then a:=false;
+result:=a;
+end;
+var y, i, m, n:integer;
+f:boolean;
+begin
+readln(y);
+f:=false;
+for i:=1 to (y div 2) do
+if prostota(i) and prostota(y-i) then 
+begin
+f:=true;
+m:=i;
+n:=y-i;
+end;
+writeln(m,' ',n);
+end.

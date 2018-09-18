@@ -1,0 +1,10 @@
+def SumOFDigits(n):
+    k = 0
+    while n >= 10:
+        k += n%10
+        n = n // 10
+    return k+n
+
+f = int(input())
+print(SumOFDigits(f))
+

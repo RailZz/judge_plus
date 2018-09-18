@@ -1,0 +1,36 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="323" judge-id="27" status="PE" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>f86260bc-f5a5-4e56-9d9d-6f05e3c3956d</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="PE" time="28" real-time="31" max-memory-used="307200"  checker-comment="PE ???????? ?????? ?????? ?????? ?????????? ? ???????? ?????" >
+  <program-stats-str>{ utime=19, stime=9, ptime=28, rtime=31, maxvsz=307200, maxrss=6320128, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=323584, maxrss=2289664, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="207">10
+0 1 0 0 0 0 0 0 0 0
+1 0 0 1 1 0 1 0 0 0
+0 0 0 0 1 0 0 0 1 0
+0 1 0 0 0 0 1 0 0 0
+0 1 1 0 0 0 0 0 0 1
+0 0 0 0 0 0 1 0 0 1
+0 1 0 1 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0
+0 0 1 0 0 0 0 1 0 0
+0 0 0 0 1 1 0 0 0 0
+5 4
+</input>
+      <output size="10">2
+5 2 7 4 </output>
+      <correct size="2">2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="62">PE ???????? ?????? ?????? ?????? ?????????? ? ???????? ????? 
+</checker>
+    </test>
+  </tests>
+</testing-report>

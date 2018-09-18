@@ -1,0 +1,19 @@
+<input size="57">5
+0 0 0 0 0 
+0 0 0 0 1 
+1 1 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+</input>
+      <output size="4">8
+8
+</output>
+      <correct size="14">2
+3
+4
+3
+1
+4
+5
+</correct>
+      

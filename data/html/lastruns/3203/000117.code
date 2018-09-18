@@ -1,0 +1,9 @@
+a = int(input())
+i = 2
+mk = 9999999
+while i <= a:
+    if a % i == 0:
+        if i < mk:
+            mk = i
+    i +=1
+print(mk)

@@ -1,0 +1,62 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<vector<int>> vec;
+
+int main()
+{
+	int n;
+	cin >> n;
+	vector<vector<int>> ar(n, vector<int>(n, 0));
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			cin >> ar[i][j];
+		}
+	}
+	vec.resize(n);
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			if (ar[i][j] == 1)
+			{
+				vec[i].push_back(j);
+			}
+		}
+	}
+	int istok, stok;
+	vector<int> stok(n, 0);
+	vector<int> istok(n, 0);
+    for (int i = 0; i < n; i++)
+	{
+        if (vec[i].size() == 0)
+        {
+            stok.push_back(i);
+            istok.push_back(i);
+        }
+        int SIZE_I = vec[i].size();
+		for (int j = 0; j < SIZE_I; j++)
+		{
+            istok.push_back(vec[i][j]);
+            if (vec[i][j] == i)
+            {
+                istok[i].erase(istok[i].brgin() + j);
+            }
+		}
+	}
+    cout << istok.size() << endl; 
+	for (int i = 0; i < SIZE_I; i++)
+    {
+        cout << istok[i] << endl;   
+    }
+    cout << stok.size() << endl; 
+    for (int i = 0; i < SIZE_I; i++)
+    {
+        cout << stok[i] << endl;   
+    }
+    return 0;
+}

@@ -1,0 +1,22 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="185" judge-id="133" status="TL" scoring="ACM" run-tests="1" contest-id="3203" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>382fc94b-18fe-4aa0-8277-5cf9635006bb</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="TL" time="2117" real-time="2209" max-memory-used="8204288" >
+  <program-stats-str>{ utime=2055, stime=62, ptime=2117, rtime=2209, maxvsz=8204288, maxrss=5337088, nvcsw=1, nivcsw=155 }</program-stats-str>
+      <input size="8">2
+5
+0
+2
+</input>
+      <output too-big="yes" original-size="7450624" />
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

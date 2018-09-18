@@ -1,0 +1,51 @@
+#include <iostream>
+#include <queue>
+ 
+using namespace std;
+ 
+int dy[4] = {1, -1, 0, 0};
+int dx[4] = {0, 0, 1, -1};
+int n, m, count=0;
+bool matrix[100][100];
+ 
+bool check(int y, int x){return ((0<=y) && (y<n) && (0<=x) && (x<m));}
+ 
+void non_recursive_dfs(int start_y, int start_x){
+    queue <int> queue_y, queue_x;
+    queue_y.push(start_y);
+    queue_x.push(start_x);
+    int y, x;
+   
+    while(not queue_y.empty()){
+        y = queue_y.front();
+        x = queue_x.front();
+        matrix[y][x] = 1;
+        for(int i=0; i<4; i++)
+            if(check(y+dy[i], x+dx[i]) and not matrix[y+dy[i]][x+dx[i]]){
+                queue_y.push(y+dy[i]);
+                queue_x.push(x+dx[i]);
+            }
+        queue_y.pop();
+        queue_x.pop();
+    }
+}
+ 
+int main(){
+    cin >>n>>m;
+   
+    char ch;
+    for(int i=0; i<n; i++)
+        for(int j=0; j<m; j++) {cin >>ch; matrix[i][j] = ch=='.';}
+   
+   
+    for(int i=0; i<n; i++)
+        for(int j=0; j<m; j++)
+            if(not matrix[i][j]){
+                count++;
+                non_recursive_dfs(i, j);
+            }
+   
+    cout<<count;
+   
+    return 0;
+}

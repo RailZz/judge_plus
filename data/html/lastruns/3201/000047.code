@@ -1,0 +1,31 @@
+def shivr(a):
+    for i in a:
+        a[i] = ord(a[i])
+    return a
+def rasshivr(a):
+    for i in a:
+        a[i] = chr(a[i])
+    return a
+parol ='1'
+k = input("Введите пароль: ")
+if parol == k:
+    f = open("data.txt.txt", "r")
+    print("Приветствую вас в программе шифровальщиков")
+    print("Что вы хотите сделать? \n Для того, чтобы зашивровать файл введите 0.")
+    c = int(input())
+    q = f.readlines()
+    f = open("data.txt.txt", "w")
+    if c == 0:
+        q = shivr(q)
+        f.close()
+
+else:
+    print("Пароль неверный.")
+
+d = open("kdata.txt.txt", 'r')
+q = d.readlines()
+c = int(input("Чтобы расшифровать файл введите 1."))
+d = open("kdata.txt.txt", "w")
+if c == 1:
+    q = rasshivr(q)
+d.close()

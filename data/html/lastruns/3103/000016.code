@@ -1,0 +1,7 @@
+n, m = map(int, input().split())
+answers = [0] * n
+for i in range(m):
+    i, j = map(int, input().split())
+    answers[i - 1] += 1
+    answers[j - 1] += 1
+print(*answers)

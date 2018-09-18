@@ -1,0 +1,37 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="99" judge-id="78" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>c1c2b4c3-ca13-49eb-acb1-0ae63ee6421c</uuid>
+  <compiler_output>Done processing 000099.cpp
+000099.cpp:9:23: warning: relational comparison result unused [-Wunused-comparison]
+    for (int i = 0; i &lt;= vvod1, i++)
+                    ~~^~~~~~~~
+000099.cpp:9:36: error: expected ';' in 'for' statement specifier
+    for (int i = 0; i &lt;= vvod1, i++)
+                                   ^
+000099.cpp:13:23: warning: relational comparison result unused [-Wunused-comparison]
+    for (int i = 0; i &lt;= vvod1, i++)
+                    ~~^~~~~~~~
+000099.cpp:13:36: error: expected ';' in 'for' statement specifier
+    for (int i = 0; i &lt;= vvod1, i++)
+                                   ^
+000099.cpp:18:23: warning: relational comparison result unused [-Wunused-comparison]
+    for (int i = 0; i &lt;= vvod1, i++)
+                    ~~^~~~~~~~
+000099.cpp:18:36: error: expected ';' in 'for' statement specifier
+    for (int i = 0; i &lt;= vvod1, i++)
+                                   ^
+000099.cpp:21:23: warning: relational comparison result unused [-Wunused-comparison]
+        for (int e; e &lt;= vvod1, e++)
+                    ~~^~~~~~~~
+000099.cpp:21:36: error: expected ';' in 'for' statement specifier
+        for (int e; e &lt;= vvod1, e++)
+                                   ^
+000099.cpp:25:27: warning: use of unary operator that may be intended as compound assignment (+=)
+                massiv[i] =+ 1;
+                          ^~
+5 warnings and 4 errors generated.
+
+</compiler_output>
+</testing-report>

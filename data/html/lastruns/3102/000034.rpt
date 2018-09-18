@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="34" judge-id="24" status="SE" scoring="ACM" run-tests="1" contest-id="3102" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>591cb2e1-4019-42cc-a80a-79d1f6b655c3</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="280" real-time="296" max-memory-used="18698240" >
+  <program-stats-str>{ utime=252, stime=28, ptime=280, rtime=296, maxvsz=18698240, maxrss=19152896, nvcsw=1, nivcsw=40 }</program-stats-str>
+      <input size="6">4 1 1
+</input>
+      <output size="0"></output>
+      <stderr size="317">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000034&quot;, line 4, in &lt;module&gt;
+    A, K, B, M, X = map(int, input().split())
+ValueError: need more than 3 values to unpack
+</stderr>
+    </test>
+  </tests>
+</testing-report>

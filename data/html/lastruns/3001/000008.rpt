@@ -1,0 +1,65 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="8" judge-id="9" status="WA" scoring="ACM" run-tests="2" contest-id="3001" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>446e1c24-88a5-4253-8094-0f795a721f11</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2912256, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=3 }</checker-stats-str>
+      <input size="22">5
+4 4 8 7 8
+2
+1 2
+1 3
+</input>
+      <output size="5">8
+16
+</output>
+      <correct size="5">8 16
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="WA" time="1" real-time="2" max-memory-used="311296"  checker-comment="Answers differ: [1]: output: 167, correct: 163" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2940928, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="77">10
+67 55 59 23 26 8 35 100 96 27
+10
+2 5
+6 8
+8 10
+3 7
+1 3
+6 9
+1 3
+1 3
+4 9
+6 6
+</input>
+      <output size="39">167
+170
+219
+115
+169
+266
+169
+169
+291
+35
+</output>
+      <correct size="38">163 143 223 151 181 239 181 181 288 8
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="47">Answers differ: [1]: output: 167, correct: 163
+</checker>
+    </test>
+  </tests>
+</testing-report>

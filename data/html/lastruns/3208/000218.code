@@ -1,0 +1,4 @@
+s=(input())
+i=s.split()
+(s[::-1])
+print(s[::-1])

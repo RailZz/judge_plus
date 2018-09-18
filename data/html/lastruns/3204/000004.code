@@ -1,0 +1,14 @@
+a = [int(i) for i in input().split()]
+b = 0
+m = max(a)
+for i in range(len(a)):
+    if a[i] > b:
+        b = a[i]
+        c = i
+e = a[i]
+for i in range(len(a)):
+    if a[i] < m:
+        m = a[i]
+        d = i
+a[c] = a[d]
+print(a)

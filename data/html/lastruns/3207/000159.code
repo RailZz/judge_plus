@@ -1,0 +1,12 @@
+def store(a):
+    f=open('25.txt', 'w')
+    f.writelines("%s " % i for i in a)
+    f.close()
+def restore(b):
+    c=[int(i) for i in open("25.txt").read().split()]
+    return c
+
+a=[int(i) for i in input().split()]
+store(a)
+b = restore('25.txt')
+print(b)

@@ -1,0 +1,8 @@
+<input size="36">-2147483648 -2147483647 -2147483646
+</input>
+      <output size="7">-100
+0
+</output>
+      <correct size="14">-2147483646 2
+</correct>
+      

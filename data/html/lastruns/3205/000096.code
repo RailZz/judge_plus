@@ -1,0 +1,7 @@
+a = [int(i) for i in input().split()]
+c = a
+for b in range(len(a) - 2):
+    if a[b] % 2 == 0:
+        
+        c.pop(b)
+print(*c)

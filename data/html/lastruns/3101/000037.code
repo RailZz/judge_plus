@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+const float PI = 3.14159265;
+int main()
+{
+	float a;
+	cin >> a;
+	float left = -PI / 2,right = PI / 2, m;
+	while (right - left > 0.00001)
+	{
+		m = (right + left) / 2;
+		if (sin(m) <= a )
+			left = m;
+		else
+			right = m;
+	}
+	cout.precision (6);
+	cout << left;
+}

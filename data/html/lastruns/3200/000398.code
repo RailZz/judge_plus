@@ -1,0 +1,6 @@
+a=int(input())
+s=int(input())
+c=int(input())
+e=a*c
+w=s*c
+print(w)

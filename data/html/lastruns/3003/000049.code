@@ -1,0 +1,44 @@
+#include <iostream>
+#include <set>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+const long long SZ = 100228, MCR = 2009000999;
+
+int main()
+{
+    int num, n, m, start, u, v, len;
+    cin >> num;
+    for (int i = 0; i < num; ++i) {
+        cin >> n >> m;
+        vector<pair<int, int>> gr[SZ];
+        for (int j = 0; j < m; ++j) {
+            cin >> u >> v >> len;
+            gr[u].push_back({v, len});
+            gr[v].push_back({u, len});
+        }
+        vector<int> d(n, MCR);
+        cin >> start;
+        set<pair<int, int>> s;
+        s.insert({0, start});
+        d[start] = 0;
+        while (!s.empty()) {
+            int v = s.begin()->second;
+            s.erase(s.begin());
+            for (auto ul : gr[v]) {
+                int u = ul.first;
+                int l = ul.second;
+                if (d[v] + l < d[u]) {
+                    s.erase({d[u], u});
+                    d[u] = d[v] + l;
+                    s.insert({d[u], u});
+                }
+            }
+        }
+        for (int k = 0; k < n; ++k) {
+            cout << d[k] << " ";
+        }
+    }
+}

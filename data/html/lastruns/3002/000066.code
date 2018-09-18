@@ -1,0 +1,80 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+vector<vector<int>> gr, rgr, cgr;
+vector<int> mass_comp;
+vector<int> ts;
+vector<int> used;
+
+void bfs_ts(int v) {
+    used[v] = 1;
+    for (int u : gr[v]) {
+        if (!used[u]) {
+            bfs_ts(u);
+        }
+    }
+    ts.push_back(v);
+}
+
+void dfs_cs(int v, int cur_comp) {
+    mass_comp[cur_comp]++;
+    used[v] = 1;
+    for (int u : rgr[v]) {
+        if (!used[u]) {
+            dfs_cs(u, cur_comp);
+        }
+    }
+}
+
+int main() {
+    int n, pos;
+    cin >> n >> pos;
+    gr.resize(n);
+    rgr.resize(n);
+    cgr.resize(n);
+    for (int i = 0; i < n; i++) {
+        string data;
+        cin >> data;
+        for (int j = 0; j < n; j++) {
+            if (data[j] == '+') {
+                gr[i].push_back(j);
+                rgr[j].push_back(i);
+            }
+        }
+    }
+    used.assign(n, 0);
+    for (int i = 0; i < n; i++) {
+        if (!used[i]) {
+            bfs_ts(i);
+        }
+    }
+    mass_comp.resize(n);
+    reverse(ts.begin(), ts.end());
+    used.assign(n, 0);
+    int cur_comp = 0;
+    for (v : ts) {
+        if (!used[v]) {
+            dfs_cs(v, cur_comp);
+            cur_comp++;
+        }
+    }
+    int k = mass_comp[0];
+    cout << k << endl;
+    if (cur_comp == 1) {
+        return 0;
+    }
+    vector<int> ans(n - k + 1);
+    if (mass_comp[0] > 1 || mass_comp[1] > 1) {
+        ans[mass_comp[1]] += mass_comp[0] * mass_comp[1];
+    }
+    int s = mass_comp[1];
+    for (int i = 2; i < cur_comp; i++) {
+        s += mass_comp[i];
+        ans[s] += mass_comp[0] * mass_comp[i];
+    }
+    for (int i = 1; i <= n - k; i++) {
+        cout << ans[i] << ' ';
+    }
+}

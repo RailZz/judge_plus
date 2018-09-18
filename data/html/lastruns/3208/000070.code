@@ -1,0 +1,9 @@
+a=int(input())
+b=int(input())
+c=int(input())
+if (a+b+c)%2==0 :
+    N=(a+b+c)//2
+    print(N)
+if (a+b+c)%2!=0 :
+    M=((a+b+c)//2)+1
+    print(M)

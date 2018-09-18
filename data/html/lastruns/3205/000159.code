@@ -1,0 +1,19 @@
+a = [int(i) for i in input().split()]
+j = 0
+i = 0
+f = True
+while i < len(a):
+    while j < len(a):
+        if a[i] < a[j]:
+            f = False
+            break
+        j += 1
+    j = 0
+    if  f == True:
+        print(a[i])
+        break
+    else:
+        f = True
+        i += 1
+        
+    

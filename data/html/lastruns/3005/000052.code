@@ -1,0 +1,53 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+const long long SIZE = 30000;
+long long N, K, T;
+pair<long long, pair<long long, long long>> gang[SIZE]; // time, money, fat;
+long long cool_money[SIZE];
+
+int main() {
+    cin >> N >> K >> T;
+    for (int i = 0; i < N; i++) {
+        cin >> gang[i].first;
+    }
+    for (int i = 0; i < N; i++) {
+        cin >> gang[i].second.first;
+    }
+    for (int i = 0; i < N; i++) {
+        cin >> gang[i].second.second;
+    }
+    for (int i = 0; i < N; i++) {
+       if (gang[i].second.second > gang[i].first) {
+            gang[i].second.first = 0;
+        }
+    }
+    sort(gang, gang + N);
+    for (int i = 0; i < N; i++) {
+        long long cool_max_money = gang[i].second.first;
+        for (int j = 0; j < i; j++) {
+            if (cool_money[j] != 0) {
+                long long time_for_size;
+                if (gang[i].second.second > gang[j].second.second) {
+                    time_for_size = gang[i].second.second - gang[j].second.second;
+                } else {
+                    time_for_size = gang[j].second.second - gang[i].second.second;
+                }
+                if ((gang[i].first - gang[j].first) >= time_for_size) {
+                    cool_max_money = max(cool_max_money, cool_money[j] + gang[i].second.first);
+                }
+            }
+        }
+        cool_money[i] = cool_max_money;
+    }
+    long long maxans = 0;
+    for (int i = 0; i < N; i++) {
+        if (cool_money[i] > maxans) {
+            maxans = cool_money[i];
+        }
+    }
+    cout << maxans;
+    return 0;
+}

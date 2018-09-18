@@ -1,0 +1,13 @@
+m = [int(i) for i in input().split()]
+n = int(input())
+b = []
+k = 0
+for i in range(len(m)):
+    if m[i] < n:
+        b = m[0:i] + [n] + m[i:]
+        k = i + 1
+        break
+else:
+    b = m.append(n)
+    k = len(m)    
+print(k)

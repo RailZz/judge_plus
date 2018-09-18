@@ -1,0 +1,6 @@
+a=input().split
+b= 'python'
+c=0
+n=c+1
+while n<100:
+    print(b)

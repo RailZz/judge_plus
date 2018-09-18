@@ -1,0 +1,38 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="96" judge-id="75" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>619e2057-d773-4f1d-ba08-98651019179d</uuid>
+  <compiler_output>Done processing 000096.cpp
+000096.cpp:7:5: error: unknown type name 'longlong'
+    longlong vvod1, massiv1[1000000], vvod2, massiv2[1000000], massiv[1000000];
+    ^
+000096.cpp:11:9: error: use of undeclared identifier 'massiv'
+        massiv[i] = 0;
+        ^
+000096.cpp:15:21: error: use of undeclared identifier 'massiv1'
+        std::cin &gt;&gt; massiv1[i];
+                    ^
+000096.cpp:17:17: error: use of undeclared identifier 'vvod2'; did you mean 'vvod1'?
+    std::cin &gt;&gt; vvod2;
+                ^~~~~
+                vvod1
+000096.cpp:7:14: note: 'vvod1' declared here
+    longlong vvod1, massiv1[1000000], vvod2, massiv2[1000000], massiv[1000000];
+             ^
+000096.cpp:20:21: error: use of undeclared identifier 'massiv2'
+        std::cin &gt;&gt; massiv2[i];
+                    ^
+000096.cpp:23:17: error: use of undeclared identifier 'massiv1'
+            if (massiv1[e] == massiv2[i])
+                ^
+000096.cpp:23:31: error: use of undeclared identifier 'massiv2'
+            if (massiv1[e] == massiv2[i])
+                              ^
+000096.cpp:25:17: error: use of undeclared identifier 'massiv'
+                massiv[i] =+ 1;
+                ^
+8 errors generated.
+
+</compiler_output>
+</testing-report>

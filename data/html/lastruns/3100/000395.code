@@ -1,0 +1,18 @@
+def is_prime(q):
+    e = 0
+    for i in range(2, int(q ** 0.5) + 1):
+        if q % i == 0:
+            e += 1
+    if e == 0:
+        return True
+    else:
+        return False
+
+
+n = int(input())
+divisours = []
+for i in range(2, round(n / 2) + 1):
+    while n % i == 0 and is_prime(i) == True:
+        divisours.append(i)
+        n /= i
+print(*divisours)

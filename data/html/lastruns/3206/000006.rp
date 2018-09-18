@@ -1,0 +1,19 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="6" judge-id="7" status="CE" scoring="ACM" run-tests="0" contest-id="3206" compile-error="yes" >
+  <uuid>ba949fa4-10f4-498c-8a91-10cd41b66fbd</uuid>
+  <compiler_output>000006.cpp:1:1: error: C++ requires a type specifier for all declarations
+a = (input(''))
+^
+000006.cpp:1:12: warning: empty character constant [-Winvalid-pp-token]
+a = (input(''))
+           ^
+000006.cpp:1:12: error: expected expression
+000006.cpp:3:14: error: expected ';' after top level declarator
+print(len(a))
+             ^
+             ;
+1 warning and 3 errors generated.
+</compiler_output>
+</testing-report>

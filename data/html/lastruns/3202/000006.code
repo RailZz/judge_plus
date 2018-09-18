@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+main(){
+	int n,m,k;
+	cin>>n;
+	cin>>m;
+	cin>>k;
+	if((k%m==0 or k%n==0) or (k%m==0 and k%n==0))
+		cout<<"YES"<<endl;
+	else
+		cout<<"NO"<<endl;
+}

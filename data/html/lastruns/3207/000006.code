@@ -1,0 +1,11 @@
+x, y, z = [int(i) for i in input().split()]
+def f(a, b, c):
+    v = [a, b, c]
+    ans = 0
+    m = v.count(0)
+    n = v.count(1)
+    if m > n:
+        return 0
+    else:
+        return 1
+print(f(x, y, z))

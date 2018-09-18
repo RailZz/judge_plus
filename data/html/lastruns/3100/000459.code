@@ -1,0 +1,14 @@
+n = int(input())
+d = 2
+k = 4
+ans = []
+while k <= n:
+    while n % d == 0:
+        ans.append(d)
+        n //= d
+    k = k + 2 * d + 1
+    d = d + 1
+
+if n > 1:
+    ans.append(n)
+    print(*ans)

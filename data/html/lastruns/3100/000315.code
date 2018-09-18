@@ -1,0 +1,15 @@
+def nod(x, y):
+    while x != 0 and y != 0:
+        x, y = y, x
+        x = x % y
+        y = y % x
+    return x + y
+
+
+nk = list(map(int, input().split()))
+n = nk[0]
+k = nk[1]
+if nod(n, k) == 1:
+    print(n * k)
+else:
+    print(nod(n, k) / (n * k))

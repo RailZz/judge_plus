@@ -1,0 +1,16 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="96" judge-id="41" status="CE" scoring="ACM" run-tests="0" contest-id="3102" compile-error="yes" >
+  <uuid>fc40650c-ec9c-4b94-9bdd-bd726b1e2cca</uuid>
+  <compiler_output>000096.cpp:1:3: error: invalid preprocessing directive #?
+ # читываем данные
+   ^
+000096.cpp:2:1: error: 'N' does not name a type
+ N, x, y = map(int, input().split())
+ ^
+000096.cpp:6:1: error: 'm' does not name a type
+ m = 0
+ ^
+</compiler_output>
+</testing-report>

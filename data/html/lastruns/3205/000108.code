@@ -1,0 +1,8 @@
+a = [int(i) for i in input().split()]
+i = 0
+ma = 101
+while i <= len(a) - 1:
+    if a[i] < ma and a[i] > 0:
+        ma = a[i]
+    i+=1
+print(ma)

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    int bull = 0;
+    cin >> n;
+    for (int i=2; i*i<n; i++) {
+        if (n % i == 0) {
+            bull = 1;
+        }
+    }
+    if (bull == 1) {
+        cout << "composite";
+    } else {
+        cout << "prime";
+    }
+    return 0;
+}

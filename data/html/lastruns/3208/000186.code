@@ -1,0 +1,1 @@
+print(input().replase("1" , "one"))

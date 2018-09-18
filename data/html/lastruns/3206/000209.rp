@@ -1,0 +1,23 @@
+<input size="11">qwertyuiop
+</input>
+      <output size="50">e
+o
+qwert
+qwertyui
+qetuo
+wryi
+poiuytrewq
+piyrw
+10
+</output>
+      <correct size="51">e
+o
+qwert
+qwertyui
+qetuo
+wryip
+poiuytrewq
+piyrw
+10
+</correct>
+      

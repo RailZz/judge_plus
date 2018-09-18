@@ -1,0 +1,266 @@
+<!DOCTYPE html><html><head><base href="https://informatics.msk.ru/mod/statements/print3.php?id=33271"><meta charset="utf-8">
+      <title>Параллель A. LCA</title>
+      <style type="text/css">@import url(http://informatics.mccme.ru/moodle/mod/statements/polygon.css);</style>      
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      <script src="/moodle/lib/jsMath/easy/load.js"></script><script src="https://informatics.msk.ru/moodle/lib/jsMath/jsMath-easy-load.js"></script><script src="https://informatics.msk.ru/moodle/lib/jsMath/plugins/autoload.js"></script>
+      <meta name="description" content="Параллель A. LCA">
+      <style>/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <style type="text/css">#jsMath_test {font-size:200%}
+</style><style type="text/css">.math {font-family: serif; font-style: normal; font-weight: normal}
+.typeset {font-family: serif; font-style: normal; font-weight: normal; line-height: normal; text-indent: 0px}
+.typeset .normal {font-family: serif; font-style: normal; font-weight: normal}
+div.typeset {text-align: center; margin: 1em 0px}
+span.typeset {text-align: left}
+.typeset span {text-align: left; border: 0px; margin: 0px; padding: 0px}
+a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
+.typeset .size0 {font-size: 50%}
+.typeset .size1 {font-size: 60%}
+.typeset .size2 {font-size: 70%}
+.typeset .size3 {font-size: 85%}
+.typeset .size4 {font-size: 100%}
+.typeset .size5 {font-size: 120%}
+.typeset .size6 {font-size: 144%}
+.typeset .size7 {font-size: 173%}
+.typeset .size8 {font-size: 207%}
+.typeset .size9 {font-size: 249%}
+.typeset .cmr10 {font-family: jsMath-cmr10, serif}
+.typeset .cmbx10 {font-family: jsMath-cmbx10, jsMath-cmr10}
+.typeset .cmti10 {font-family: jsMath-cmti10, jsMath-cmr10}
+.typeset .cmmi10 {font-family: jsMath-cmmi10}
+.typeset .cmsy10 {font-family: jsMath-cmsy10}
+.typeset .cmex10 {font-family: jsMath-cmex10}
+.typeset .textit {font-family: serif; font-style: italic}
+.typeset .textbf {font-family: serif; font-weight: bold}
+.typeset .link {text-decoration: none}
+.typeset .error {font-size: 90%; font-style: italic; background-color: #FFFFCC; padding: 1px; border: 1px solid #CC0000}
+.typeset .blank {display: inline-block; overflow: hidden; border: 0px none; width: 0px; height: 0px}
+.typeset .spacer {display: inline-block}
+#jsMath_hiddenSpan {visibility: hidden; position: absolute; top: 0px; left: 0px; line-height: normal; text-indent: 0px}
+#jsMath_message {position: fixed; bottom: 1px; left: 2px; background-color: #E6E6E6; border: solid 1px #959595; margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: small; width: auto}
+#jsMath_panel {position: fixed; bottom: 1.75em; right: 1.5em; padding: .8em 1.6em; background-color: #DDDDDD; border: outset 2px; z-index: 103; width: auto; color: black; font-size: 10pt; font-style: normal}
+#jsMath_panel .disabled {color: #888888}
+#jsMath_panel .infoLink {font-size: 85%}
+#jsMath_panel * {font-size: inherit; font-style: inherit; font-family: inherit; line-height: normal}
+#jsMath_panel div {background-color: inherit; color: inherit}
+#jsMath_panel span {background-color: inherit; color: inherit}
+#jsMath_panel td {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel tr {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel table {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit; height: auto; width: auto}
+#jsMath_button {position: fixed; bottom: 1px; right: 2px; background-color: white; border: solid 1px #959595; margin: 0px; padding: 0px 3px 1px 3px; z-index: 102; color: black; text-decoration: none; font-size: x-small; width: auto; cursor: hand}
+#jsMath_button * {padding: 0px; border: 0px; margin: 0px; line-height: normal; font-size: inherit; font-style: inherit; font-family: inherit}
+#jsMath_global {font-style: italic}
+#jsMath_noFont .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: small; width: auto}
+#jsMath_noFont .link {padding: 0px 5px 2px 5px; border: 2px outset; background-color: #E8E8E8; color: black; font-size: 80%; width: auto; cursor: hand}
+#jsMath_PrintWarning .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: x-small; width: auto}
+@media print {#jsMath_button {display: none}
+#jsMath_Warning {display: none}
+}
+@media screen {#jsMath_PrintWarning {display: none}
+}
+.typeset .scale {font-size: 120%}
+</style><style type="text/css">.typeset .math {font-style: normal}
+.typeset .typeset {font-style: normal}
+.typeset .icmr10 {font-family: serif}
+.typeset .icmmi10 {font-family: serif; font-style: italic}
+.typeset .icmbx10 {font-family: serif; font-weight: bold}
+.typeset .icmti10 {font-family: serif; font-style: italic}
+</style></head>
+    <body><div id="jsMath_message" title="" style="visibility: hidden;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
+<b>Hi-Res Fonts for Printing</b> button on the jsMath control panel.<br>
+</div><div style="width:22em; height:1px"></div></td></tr></tbody></table></center><hr></div><div id="jsMath_button" title=" Open jsMath Control Panel "><span onclick="jsMath.Controls.Panel()">jsMath</span></div><div id="jsMath_panel" style="display: none;"></div><div id="jsMath_Hidden" style="visibility: hidden; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; margin: 0px;"></div><div style="position: fixed; bottom: 1px; left: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: 75%; width: auto; visibility: hidden;"></div>
+    <a name="top"></a>
+    <p class="statements_title">Параллель A. LCA</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch111724"><b>Задача A.</b> LCA</a></li><li><a href="#ch111894"><b>Задача B.</b> Чип и Дейл в лабиринте</a></li><li><a href="#ch111711"><b>Задача C.</b> Dynamic LCA</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch111724">LCA</a></h1><p class="statements_chapter_title"><b>Задача A.</b> LCA</p><div class="problem-statement"><div class="legend"><p>Задано подвешенное дерево, содержащее <span class="tex-span"><i>n</i></span> (<span class="tex-span">1 ≤ <i>n</i> ≤ 100 000</span>) вершин, пронумерованных от <span class="tex-span">0</span> до <span class="tex-span"><i>n</i> - 1</span>. Требуется ответить на <span class="tex-span"><i>m</i></span> (<span class="tex-span">1 ≤ <i>m</i> ≤ 10 000 000</span>) запросов о наименьшем общем предке для пары вершин. Запросы генерируются следующим образом. Заданы числа <span class="tex-span"><i>a</i><sub class="lower-index">1</sub></span>, <span class="tex-span"><i>a</i><sub class="lower-index">2</sub></span> и числа <span class="tex-span"><i>x</i></span>, <span class="tex-span"><i>y</i></span> и <span class="tex-span"><i>z</i></span>. Числа <span class="tex-span"><i>a</i><sub class="lower-index">3</sub></span>, ..., <span class="tex-span"><i>a</i><sub class="lower-index">2<i>m</i></sub></span> генерируются следующим образом: <span class="tex-span"><i>a</i><sub class="lower-index"><i>i</i></sub></span> = <img align="middle" class="tex-formula" src="http://informatics.mccme.ru/moodle_probpics/111724/35315d0231b6c9f78ffdd1efdce6e6b45820bd4b.png">. Первый запрос имеет вид {<span class="tex-span"><i>a</i>1</span>, <span class="tex-span"><i>a</i>2</span>}. Если ответ на <span class="tex-span">(<i>i</i> - 1)</span>-й запрос равен <span class="tex-span"><i>v</i></span>, то <span class="tex-span"><i>i</i></span>-й запрос имеет вид {<img align="middle" class="tex-formula" src="http://informatics.mccme.ru/moodle_probpics/111724/111bef7a24e59b8bea761b5548965e2b577c8cb9.png">, <span class="tex-span"><i>a</i><sub class="lower-index">2<i>i</i></sub></span>}.</p></div><p></p><p></p><div class="input-specification"><div class="section-title">Входные данные</div><p></p><p>Первая строка содержит два числа: <span class="tex-span"><i>n</i></span> и <span class="tex-span"><i>m</i></span>. Корень дерева имеет номер <span class="tex-span">0</span>. Вторая строка содержит <span class="tex-span"><i>n</i> - 1</span> целых чисел, <span class="tex-span"><i>i</i></span>-е из этих чисел равно номеру родителя вершины <span class="tex-span"><i>i</i></span>. Третья строка содержит число содержит два целых числа в диапазоне от <span class="tex-span">0</span> до <span class="tex-span"><i>n</i> - 1</span>: <span class="tex-span"><i>a</i><sub class="lower-index">1</sub></span> и <span class="tex-span"><i>a</i><sub class="lower-index">2</sub></span>. Четвертая строка содержит три целых числа: <span class="tex-span"><i>x</i></span>, <span class="tex-span"><i>y</i></span> и <span class="tex-span"><i>z</i></span>, эти числа неотрицательны и не превосходят <span class="tex-span">10<sup class="upper-index">9</sup></span>.</p></div><p></p><p></p><div class="output-specification"><div class="section-title">Выходные данные</div><p></p><p>Выведите в выходной файл сумму номеров вершин — ответов на все запросы.</p></div><p></p><p></p></div><div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">3 2<br>0 1<br>2 1<br>1 1 0<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2<br></pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch111894">Чип и Дейл в лабиринте</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Чип и Дейл в лабиринте</p><div class="problem-statement"><div class="legend">
+
+<p>Чип и Дейл спешат на помощь! Но внимательные зрители знают, что помощь как правило нужна самим Чипу и Дейлу, поэтому сегодня вам надо будет сыграть роль сообразительной Гаечки. Итак, Чип и Дейл снова попали в лапы к Толстопузу. Кот очень не любит грызунов и поэтому приготовил им изощренное испытание. Он собирается поместить их в лабиринт и посмотреть смогут ли они из него выбраться. Лабиринт представляет собой дерево, в котором каждое ребро имеет одно направление. Гаечка подслушала разговор Толстопузу со своими сообщниками и теперь знает несколько возможных вариантов: в какую точку лабиринта поместят её друзей, и где будет выход. Для каждого такого варианта она хочет понять, смогут ли Чип и Дейл найти выход, или нет.</p>
+
+</div> <!-- legend ends here -->
+<div class="input-specification"><div class="section-title">Входные данные</div>
+
+<p>В первой строке записано число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> (<span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">5</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>) - количество вершин дерева. В следующих <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span><span style="position: relative; margin-left:0.222em;"><span class="icmsy10">−</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">1</span></span></span></nobr></span> строках описаны ребра дерева. В <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">+</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">1</span></span></span></nobr></span>-ой строке записано номера вершин <span class="typeset"><nobr><span class="scale"><span class="icmmi10">a</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmmi10">b</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>, означающие, что в дереве есть ребро из вершины <span class="typeset"><nobr><span class="scale"><span class="icmmi10">a</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> в вершину <span class="typeset"><nobr><span class="scale"><span class="icmmi10">b</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>.</p>
+
+<p>Далее на отдельной строке записано число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">m</span></span></nobr></span> (<span class="typeset"><nobr><span class="scale"><span class="icmmi10">m</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">5</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>) -- количество запросов. После этого идут <span class="typeset"><nobr><span class="scale"><span class="icmmi10">m</span></span></nobr></span> строк с описанием запросов,  в <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">+</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">1</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">+</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmmi10">i</span></span></span></nobr></span>-ой строке записаны через пробел числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">y</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span>.</p>
+</div> <!-- input specification ends here -->
+
+<div class="output-specification"><div class="section-title">Выходные данные</div>
+
+<p>Для каждого запроса на отдельной строке требуется вывести Yes, если в графе есть путь между вершинами <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">y</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span>, и No иначе.</p>
+
+</div> <!-- output specification ends here -->
+</div> <!-- end -->
+
+<table border="1">
+<tbody><tr><td>input.txt</td><td>output.txt</td></tr>
+<tr><td><pre>4<br>1 2<br>3 1<br>4 1<br>6<br>1 2<br>3 2<br>2 3<br>4 2<br>4 3<br>2 1</pre>
+</td><td><pre>Yes<br>Yes<br>No<br>Yes<br>No<br>No</pre>
+</td></tr></tbody></table>
+</div><hr><div class="statements_chapter"><h1><a name="ch111711">Dynamic LCA</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Dynamic LCA</p><div class="problem-statement"><div class="legend"><p>Постановка задачи о {Наименьшем общем предке} такова: дано дерево <span class="tex-span"><i>T</i></span> с выделенным корнем и две вершины <span class="tex-span"><i>u</i></span> и <span class="tex-span"><i>v</i></span>, <span class="tex-span"><i>lca</i>(<i>u</i>, <i>v</i>)</span> - вершина с максимальной глубиной, которая является предком и <span class="tex-span"><i>u</i></span>, и <span class="tex-span"><i>v</i></span>. Например, в картинке внизу <span class="tex-span"><i>lca</i>(8, 7)</span> - вершина <span class="tex-span">3</span>.</p><p></p><center> <img class="tex-graphics" height="189px" src="http://informatics.mccme.ru/moodle_probpics/111711/87f96fc650e18c1cfcee825661129e4c391c399f.png" width="189px"> </center><p></p><p>С помощью операции <span class="tex-span"><i>chroot</i>(<i>u</i>)</span> мы можем менять корень дерева, достаточно отметить <span class="tex-span"><i>u</i></span>, как новый корень, и направить ребра вдоль пути от корня. Наименьшие общие предки вершин поменяются соответствующе. Например, если мы сделаем <span class="tex-span"><i>chroot</i>(6)</span> на картинке сверху, <span class="tex-span"><i>lca</i>(8, 7)</span> станет вершина 6. Получившееся дерево изображено снизу.</p><p></p><center> <img class="tex-graphics" height="189px" src="http://informatics.mccme.ru/moodle_probpics/111711/864322005c313870e6033d64530adc60ffe8ae9d.png" width="189px"> </center><p></p><p>Вам дано дерево <span class="tex-span"><i>T</i></span>. Изначально корень этого дерева - вершина 1. Напишите программу, которая поддерживает эти две операции: <span class="tex-span"><i>lca</i>(<i>u</i>, <i>v</i>)</span> и <span class="tex-span"><i>chroot</i>(<i>u</i>)</span>.</p></div><p></p><p></p><div class="input-specification"><div class="section-title">Входные данные</div><p></p><p>Входной файл состоит из нескольких тестов.</p><p>Первая строка каждого теста содержит натуральное число <span class="tex-span"><i>n</i></span> &nbsp;— количество вершин в дереве (<span class="tex-span">1 ≤ <i>n</i> ≤ 100 000</span>). Следующие <span class="tex-span"><i>n</i> - 1</span> строки содержат по 2 натуральных числа и описывают ребра дерева. Далее идет строка с единственным натуральным числом <span class="tex-span"><i>m</i></span>&nbsp;— число операций&nbsp;—. Следующие <span class="tex-span"><i>m</i></span> строк содержат операции. Строка "<span class="tex-font-style-tt">? <span class="tex-span"><i>u</i></span> <span class="tex-span"><i>v</i></span></span>" означает операцию <span class="tex-span"><i>lca</i>(<i>u</i>, <i>v</i>)</span>, a строка "<span class="tex-font-style-tt">! <span class="tex-span"><i>u</i></span></span>" - <span class="tex-span"><i>chroot</i>(<i>u</i>)</span>. Последняя строка содержит число <span class="tex-span">0</span>.</p><p>Сумма <span class="tex-span"><i>n</i></span> для всех тестов не превосходит <span class="tex-span">100 000</span>. Сумма <span class="tex-span"><i>m</i></span> для всех тестов не превосходит <span class="tex-span">200 000</span>.</p></div><p></p><p></p><div class="output-specification"><div class="section-title">Выходные данные</div><p></p><p>Для каждой операции "<span class="tex-font-style-tt">? <span class="tex-span"><i>u</i></span> <span class="tex-span"><i>v</i></span></span>" выведите значение <span class="tex-span"><i>lca</i>(<i>u</i>, <i>v</i>)</span>. Числа разделяйте переводами строк.</p></div><p></p><p>
+</p><div class="output-specification">
+  <div class="section-title">Система оценки:</div><p>
+  </p><p>Система тестов состоит из двух групп:</p>
+  <p>
+  </p><p>Первая группа состоит из тестов, для которых выполняется ограничение <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">00</span></span></nobr></span>, <span class="typeset"><nobr><span class="scale"><span class="icmmi10">m</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">0000</span></span></nobr></span>. За прохождение всех тестов группы ставится 55 баллов. </p>
+  <p>Вторая группа стоит из тестов, в которых нет дополнительных ограничений. За прохождение тестов этой группы <b>и всех предыдущих тестов</b> ставится дополнительно 45 баллов.</p>
+</div><p></p><p></p></div><div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">9<br>1 2<br>1 3<br>2 4<br>2 5<br>3 6<br>3 7<br>6 8<br>6 9<br>10<br>? 4 5<br>? 5 6<br>? 8 7<br>! 6<br>? 8 7<br>? 4 5<br>? 4 7<br>? 5 9<br>! 2<br>? 4 3<br>0<br></pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">2<br>1<br>3<br>6<br>2<br>3<br>6<br>2<br></pre></div></div></div></div></div> </body>

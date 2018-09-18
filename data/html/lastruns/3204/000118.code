@@ -1,0 +1,11 @@
+a=[input()]
+i=1
+n=1
+c=len(a)
+while i!=c:
+    if a[n]>-1:
+        print(a[n])
+        n=n+1
+    else:
+        n=n+1
+    i=i+1

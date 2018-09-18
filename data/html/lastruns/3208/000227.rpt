@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="227" judge-id="227" status="SE" scoring="ACM" run-tests="1" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>fd80105c-8fc5-4b0d-b778-f92cbaa4e0fa</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="284" real-time="310" max-memory-used="32260096" >
+  <program-stats-str>{ utime=256, stime=28, ptime=284, rtime=310, maxvsz=32260096, maxrss=19152896, nvcsw=1, nivcsw=47 }</program-stats-str>
+      <input size="8">2
+1
+4
+0
+</input>
+      <output size="0"></output>
+      <stderr size="276">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000227&quot;, line 6, in &lt;module&gt;
+    while s&lt;=i:
+NameError: name 'i' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

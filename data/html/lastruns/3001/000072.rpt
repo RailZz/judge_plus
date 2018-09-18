@@ -1,0 +1,70 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="72" judge-id="33" status="WA" scoring="ACM" run-tests="2" contest-id="3001" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>7b623eed-270f-44b7-82d8-bfe0b36a4c2a</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Done processing 000072.cpp
+
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="8310784"  checker-comment="OK" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=8310784, maxrss=2940928, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="34">5
+0 0 3 0 2
+3
+u 1 5
+u 1 0
+s 1 5 3
+</input>
+      <output size="2">4 </output>
+      <correct size="2">4
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="WA" time="1" real-time="2" max-memory-used="8310784"  checker-comment="Answers differ: [6]: output: 14, correct: 8" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=8310784, maxrss=3080192, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="247">15
+0 0 30 0 0 17 0 0 18 36 10 42 15 19 35
+25
+s 6 15 8
+s 14 15 1
+s 7 14 6
+s 8 11 4
+s 4 14 7
+s 8 9 1
+s 13 15 4
+u 3 5
+u 2 0
+u 12 0
+s 11 12 1
+u 5 0
+s 4 15 9
+u 2 97
+s 3 5 2
+s 1 8 10
+u 2 0
+s 12 15 1
+u 1 40
+s 8 11 7
+u 5 47
+s 4 10 14
+s 5 9 4
+u 4 37
+u 9 0
+</input>
+      <output size="44">-1 -1 -1 -1 -1 14 -1 14 -1 6 -1 14 -1 -1 -1 </output>
+      <correct size="44">-1 -1 -1 -1 -1 8 -1 12 -1 5 -1 12 -1 -1 -1 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="44">Answers differ: [6]: output: 14, correct: 8
+</checker>
+    </test>
+  </tests>
+</testing-report>

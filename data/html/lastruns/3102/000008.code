@@ -1,0 +1,62 @@
+#include <iostream>
+#include <cstdio>
+#include <vector>
+ 
+using namespace std;
+ 
+vector <int> p;
+ 
+int last;
+int n;
+int i, j;
+int ans;
+ 
+int f(int x)
+{
+    ans = 1;
+    last = p[0];
+    for (i = 0; i < n; i++)
+    {
+        if (p[i] - last >= x)
+        {
+            last = p[i];
+            ans += 1;
+        }
+    }
+    return ans;
+}
+ 
+int main()
+{
+    int l, r;
+    int k;
+ 
+    l = 0;
+    r = 1000000000;
+ 
+    int m;
+ 
+    cin >> n >> k;
+ 
+    p.resize(n);
+ 
+    for (i = 0; i < n; i++)
+    {
+        cin >> p[i];
+    }
+ 
+    while (r - l > 1)
+    {
+        m = (r + l) / 2;
+        if (f(m) >= k)
+        {
+            l = m;
+        }
+        else {
+            r = m;
+        }
+    }
+ 
+    cout << l;
+    return 0;
+}

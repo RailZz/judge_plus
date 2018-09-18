@@ -1,0 +1,20 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="299" judge-id="3" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>2804742a-53ec-4b9d-a0a7-a3b4293e8e64</uuid>
+  <compiler_output>000299.cpp: In function 'int main()':
+000299.cpp:32:23: error: void value not ignored as it ought to be
+         int c = q.pop();
+                       ^
+000299.cpp:42:9: error: request for member 'push_back' in 'ans', which is of non-class type 'int [100]'
+     ans.push_back(f);
+         ^
+000299.cpp:43:5: error: 'c' was not declared in this scope
+     c = f;
+     ^
+000299.cpp:46:13: error: request for member 'push_back' in 'ans', which is of non-class type 'int [100]'
+         ans.push_back(c);
+             ^
+</compiler_output>
+</testing-report>

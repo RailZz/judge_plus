@@ -1,0 +1,66 @@
+program TaskD;
+
+const
+        SIZE = 100;
+        
+type
+        TGraph = array of array of LongInt;
+        TColor = array [0..SIZE - 1] of LongInt;
+        
+procedure Dfs (const g: TGraph; var clr: TColor; v, c: LongInt);
+
+var
+        i: LongInt;
+        
+begin
+        clr[v] := c;
+        
+        for i := 0 to Length (g[v]) - 1 do
+                if clr[g[v, i]] = clr[v] then
+                begin
+                        WriteLn ('NO');
+                        Halt
+                end;
+                
+        for i := 0 to Length (g[v]) - 1 do
+                if clr[g[v, i]] = -1 then
+                        Dfs (g, clr, g[v, i], (c + 1) mod 2)
+end;
+        
+var
+        n, m, i, a, b: LongInt;
+        g: TGraph;
+        clr: TColor;
+        
+begin
+        Read (n, m);
+        
+        for i := 0 to n - 1 do
+                clr[i] := -1;
+        
+        SetLength (g, n);
+        
+        for i := 1 to m do
+        begin
+                Read (a, b);
+                
+                Dec (a);
+                Dec (b);
+                
+                SetLength (g[a], Length (g[a]) + 1);
+                SetLength (g[b], Length (g[b]) + 1);
+                
+                g[a, Length (g[a]) - 1] := b;
+                g[b, Length (g[b]) - 1] := a
+        end;
+        
+        for i := 0 to n - 1 do
+                if clr[i] = -1 then
+                        Dfs (g, clr, i, 0);
+                        
+        WriteLn ('YES');
+        
+        for i := 0 to n - 1 do
+                if clr[i] = 1 then
+                        Write (i + 1, ' ')
+end.

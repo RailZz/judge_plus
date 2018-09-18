@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="19" judge-id="20" status="SV" scoring="ACM" run-tests="0" contest-id="3005" compile-error="yes" >
+  <uuid>90ba6f44-f572-4047-b1ed-6ff17f9c497f</uuid>
+  <compiler_output>000019.cpp:50:  Missing space before ( in if(  [whitespace/parens] [5]
+Done processing 000019.cpp
+Total errors found: 1
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

@@ -1,0 +1,31 @@
+N = int(input())
+a = []
+for i in range(N):
+    a.append(list(map(int, input().split())))
+a1 = []
+for i in range(N):
+    a1.append([])
+for i in range(N):
+    for i1 in range(N):
+        if a[i][i1]:
+            a1[i].append(i1 + 1) 
+st = []
+for i in range(len(a1)):
+    if a1[i] == []:
+        st.append(i + 1)        
+ist = []
+k = None
+for i in range(len(a1)):
+    k = 1
+    for i1 in a1:
+        if i + 1 in i1:
+            k = 0
+            break
+    if k:
+        ist.append(i + 1)        
+print(len(ist))
+for i in ist:
+    print(i)
+print(len(st))
+for i in st:
+    print(i)

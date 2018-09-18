@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="36" judge-id="23" status="RT" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>25db6e6b-35f5-4b7e-a339-8a7632e47186</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="74" real-time="90" max-memory-used="30339072" >
+  <program-stats-str>{ utime=47, stime=27, ptime=74, rtime=90, maxvsz=30339072, maxrss=27373568, nvcsw=1, nivcsw=13 }</program-stats-str>
+      <input size="8">4 5 6 7
+</input>
+      <output size="0"></output>
+      <stderr size="218">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000036&quot;, line 13, in &lt;module&gt;
+    print(get_min_4())
+TypeError: get_min_4() takes exactly 4 arguments (0 given)
+</stderr>
+    </test>
+  </tests>
+</testing-report>

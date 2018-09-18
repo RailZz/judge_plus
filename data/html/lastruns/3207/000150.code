@@ -1,0 +1,9 @@
+def zadolbalsa():
+    a = input()
+    return a
+def aaa(a):
+    if a.isdigit():
+         return 'yes'
+    return'no'
+a =  zadolbalsa()
+print (aaa(a))

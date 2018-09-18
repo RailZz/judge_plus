@@ -1,0 +1,16 @@
+a = input()
+s = 0
+k = 0
+m = 0
+for i in range(len(a)) :
+    if (a[i] == 'f') :
+        s += 1
+        if (s == 1) :
+            k = i
+        else:
+            b = a[::-1]
+            for i in range(len(b)):
+                if (a[i] == 'f'):
+                    m = i
+print(k)
+print(m)

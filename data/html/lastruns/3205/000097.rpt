@@ -1,0 +1,38 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="97" judge-id="13" status="SE" scoring="ACM" run-tests="2" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>f5290175-fff1-44fe-a745-a20157d4f6a5</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="28" real-time="30" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=24, stime=4, ptime=28, rtime=30, maxvsz=307200, maxrss=6238208, nvcsw=1, nivcsw=6 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">1 2 3 2 1
+</input>
+      <output size="4">3 2
+</output>
+      <correct size="4">3 2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="SE" time="284" real-time="301" max-memory-used="18698240" >
+  <program-stats-str>{ utime=275, stime=9, ptime=284, rtime=301, maxvsz=18698240, maxrss=19308544, nvcsw=1, nivcsw=39 }</program-stats-str>
+      <input size="6">1 2 3
+</input>
+      <output size="0"></output>
+      <stderr size="275">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000097&quot;, line 10, in &lt;module&gt;
+    c = a[i]
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

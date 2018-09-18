@@ -1,0 +1,8 @@
+def func_fibo(n):
+    if n <= 1:
+        return 1
+    else:
+        a = func_fibo(n-1)
+        b = func_fibo(n-2)
+        return a+b
+print(func_fibo(int(input())))

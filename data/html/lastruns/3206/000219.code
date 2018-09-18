@@ -1,0 +1,7 @@
+a=input()
+b=a.rfind('h')
+k=a.find('h')
+o=a[:k]
+s=a[-1:b:-1]
+l=s[::-1]
+print(o,l, sep='')

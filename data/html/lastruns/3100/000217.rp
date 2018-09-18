@@ -1,0 +1,15 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="217" judge-id="58" status="CE" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>e4e843de-f2d6-47b6-960b-3d4b7854ec9f</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000217.pas
+000217.pas(7,8) Error: Operator is not overloaded: &quot;SmallInt&quot; ** &quot;ShortInt&quot;
+000217.pas(12,1) Fatal: Syntax error, &quot;;&quot; expected but &quot;ELSE&quot; found
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

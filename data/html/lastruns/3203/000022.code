@@ -1,0 +1,8 @@
+N=int(input())
+s=0
+while N>0:
+    s=s+(N%10)
+    N=N//10
+print(s)
+
+        

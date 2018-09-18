@@ -1,0 +1,10 @@
+def trib(n):
+    trib0 = 0
+    trib1 = 1
+    trib2 = 1
+    for i in range(n - 1):
+        trib0, trib1, trib2 = trib1, trib2, trib0 + trib1 + trib2
+    return trib2
+n = int(input())
+print(trib(n))
+        

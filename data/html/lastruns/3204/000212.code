@@ -1,0 +1,10 @@
+n = [int(i) for i in input().split()]
+mi = min(n)
+ma = max(n)
+mi1= n.index(mi)
+ma1= n.index(ma)
+n.insert(mi1, ma)
+n.pop(n.index(mi))
+n.insert(ma1, mi)
+n.pop(n.index(mi) + 1)
+print(*n)

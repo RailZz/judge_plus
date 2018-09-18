@@ -1,0 +1,53 @@
+program Supermin;
+
+const
+        LEVEL_SIZE = 20;
+        SIZE = 150000;
+        
+type
+        TSparse = array [0..LEVEL_SIZE, 1..SIZE] of Integer;
+
+function Ans (const sparse: TSparse; l, r: Integer): Integer;
+
+var
+        len, level: Integer;
+        
+begin
+        len := r - l + 1;
+        level := Trunc (Log2 (len));
+        
+        Ans := Min (sparse[level, l], sparse[level, r - 1 shl level + 1])
+end;
+        
+var
+        n, k, i, j: LongInt;
+        a: array [1..SIZE] of Integer;
+        sparse: TSparse;
+        
+begin
+        Read (n, k);
+        
+        for i := 1 to n do
+                Read (a[i]);
+                
+        for i := 1 to n do
+                sparse[0, i] := a[i];
+                
+        i := 1;
+        
+        while 1 shl i <= n do
+        begin
+                j := 1;
+                
+                while j <= n - 1 shl i + 1 do
+                begin
+                        sparse[i, j] := Min (sparse[i - 1, j], sparse[i - 1, j + 1 shl (i - 1)]);
+                        Inc (j)
+                end;
+                
+                Inc (i)
+        end;
+        
+        for i := 1 to n - k + 1 do
+                Write (Ans (sparse, i, i + k - 1), ' ')
+end.

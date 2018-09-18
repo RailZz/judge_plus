@@ -1,0 +1,5 @@
+a = [int(i) for i in input().split()]
+last = a[len(a)-1]
+a = a[0:-1]
+a = [last] + a
+print(*a)

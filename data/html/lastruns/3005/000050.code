@@ -1,0 +1,79 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+#define int long long
+
+long long pow(int a, int b) {
+    if (b == 0) {
+        return 1;
+    }
+    if (b % 2 == 0) {
+        int c = pow(a, b / 2);
+        return c * c;
+    }
+    return pow(a, b - 1) * a;
+}
+
+long long atoi(string str) {
+    long long ans = 0;
+    for (int i = 0; i < str.length(); i++) {
+        ans *= 10;
+        if (str[i] == '0') {
+            ans += 0;
+        }
+        if (str[i] == '1') {
+            ans += 1;
+        }
+        if (str[i] == '2') {
+            ans += 2;
+        }
+        if (str[i] == '3') {
+            ans += 3;
+        }
+        if (str[i] == '4') {
+            ans += 4;
+        }
+        if (str[i] == '5') {
+            ans += 5;
+        }
+        if (str[i] == '6') {
+            ans += 6;
+        }
+        if (str[i] == '7') {
+            ans += 7;
+        }
+        if (str[i] == '8') {
+            ans += 8;
+        }
+        if (str[i] == '9') {
+            ans += 9;
+        }
+    }
+    return ans;
+}
+
+signed main() {
+    int n;
+    long long k, c;
+    cin >> n >> c >> k;
+    string str;
+    cin >> str;
+    vector<int> dp(n + 1);
+    string em_pty;
+    if (atoi(em_pty + str[0]) <= c) {
+        dp[0] = 1;
+    }
+    k = pow(10, k);
+    for (int i = 1; i < n + 1; i++) {
+        for (int j = i; j > max((long long)0, i - 15); j--) {
+            if ((atoi(em_pty + str[j - 1]) || i == j) && atoi(em_pty + str.substr(j - 1, i - j + 1)) <= c) {
+                dp[i] = (dp[i] + dp[j - 1]) % k;
+            }
+        }
+    }
+    cout << dp[n];
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+// #include <conio.h>
+int main(void)
+{
+    int N, i = 2, k;
+    scanf("%i", &N);
+    if(N == 1)
+        printf("1");
+    else
+        for(i; i <= N; i++)
+        {
+             if (N%i == 0)
+            {
+                printf("%i", i);
+
+                    for(k = 0; N%i == 0; k++)
+                    {
+                        N /= i;
+                    }
+                printf(" ", k);
+
+            }
+        }
+        return 0;

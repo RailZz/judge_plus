@@ -1,0 +1,114 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+long long int N, M, p = 47, Mod = 1000000007, howmuchi = 0;
+long long int cubes[1000000], st[1000000], hashC[1000000], hashCR[1000000], howmuch[1000000];
+string C = "", CR = "";
+
+string tostring(long long int cube) {
+    string color = "";
+    while (cube > 0) {
+        int ost = cube % 10;
+        cube /= 10;
+        if (ost == 0) {
+            color += "0";
+        }
+        if (ost == 1) {
+            color += "1";
+        }
+        if (ost == 2) {
+            color += "2";
+        }
+        if (ost == 3) {
+            color += "3";
+        }
+        if (ost == 4) {
+            color += "4";
+        }
+        if (ost == 5) {
+            color += "5";
+        }
+        if (ost == 6) {
+            color += "6";
+        }
+        if (ost == 7) {
+            color += "7";
+        }
+        if (ost == 8) {
+            color += "8";
+        }
+        if (ost == 9) {
+            color += "9";
+        }
+    }
+    reverse(color.begin(), color.end());
+    return color + " ";
+}
+
+long long int get_hash_C(long long int l, long long int r) {
+    long long int right = hashC[r];
+    long long int left = 0;
+    if (l != 0) {
+        left = hashC[l - 1];
+    }
+    left = (left * st[r - l + 1]) % Mod;
+    return ((right - left) + Mod) % Mod;
+}
+
+long long int get_hash_CR(long long int l, long long int r) {
+    long long int right = hashCR[r];
+    long long int left = 0;
+    if (l != 0) {
+        left = hashCR[l - 1];
+    }
+    left = (left * st[r - l + 1]) % Mod;
+    return ((right - left) + Mod) % Mod;
+}
+
+void ans() {
+    long long int pos = 0;
+    for (long long int i = 0; (pos <= N / 2) && (pos < N); i++) {
+        if (C[i] == ' '){
+            pos++;
+            if (get_hash_C(i, i + i) == get_hash_CR(CR.size() - 2 - i, CR.size() - 2)) {
+                howmuch[howmuchi] = N - pos;
+                howmuchi++;
+            }
+        }
+    }
+}
+
+int main() {
+    st[0] = 1;
+    for (long long int i = 1; i < 1000000; i++) {
+        st[i] = (st[i - 1] * p) % Mod;
+    }
+
+    cin >> N >> M;
+    for (long long int i = 0; i < N; i++) {
+        cin >> cubes[i];
+        C += tostring(cubes[i]);
+    }
+    for (long long int i = N - 1; i >= 0; i--) {
+        CR += tostring(cubes[i]);
+    }
+
+    hashC[0] = C[0];
+    for (long long int i = 1; i < C.size(); i++) {
+        hashC[i] = (hashC[i - 1] * p + C[i]) % Mod;
+    }
+
+    hashCR[0] = CR[0];
+    for (long long int i = 1; i < CR.size(); i++) {
+        hashCR[i] = (hashCR[i - 1] * p + CR[i]) % Mod;
+    }
+    ans();
+    for (long long int i = howmuchi - 1; i >= 0; i--) {
+        cout << howmuch[i] << " ";
+    }
+    cout << N;
+    return 0;
+}

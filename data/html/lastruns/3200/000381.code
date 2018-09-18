@@ -1,0 +1,16 @@
+ 
+lst = input()
+lst = lst.split()
+x = int(input())
+index = []
+c = 0
+d = str(x)
+if lst.count(d) == 0:
+    print("Отсутствует")
+while c < len(lst):
+    if x == int(lst[c]):
+        index.append(c)
+    c+=1
+index = set(index)
+if index:
+    print (*index)

@@ -1,0 +1,15 @@
+n = input()
+m = 0
+for i in n:
+    if len(n) >= 8 and ord('A') <= ord(i) <= ord('Z'):
+        m += 1
+for j in n:
+    if len(n) >= 8 and ord('a') <= ord(j) <= ord('z'):
+        m += 1
+for p in n:
+    if len(n) >= 8 and ord('0') <= ord(p) <= ord('9'):
+        m += 1
+if m >= 3:
+    print('YES')
+else:
+    print('NO')

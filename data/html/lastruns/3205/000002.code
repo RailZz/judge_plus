@@ -1,0 +1,8 @@
+n = [int(i) for i in input().split()]
+m = 0
+l = 0
+for i in range(len(n)):
+    if (n[i] not in n[:i]) and (n[i] > m):
+            m = n[i]
+            l = i
+print(m, l, end = ' ')

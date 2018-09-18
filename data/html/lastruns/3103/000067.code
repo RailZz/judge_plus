@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+int ans = 1;
+
+vector<vector<int> > g;
+vector<bool> visited;
+
+void dfs(int start) {
+    ++ans;
+    visited[start] = true;
+    for (auto u: g[start])
+        if (!visited[u]) dfs(u);
+}
+
+int main() {
+    
+    int n, s;
+	cin >> n >> s;
+	--s;
+	g.resize(n, vector<int> (n));
+	visited.resize(n, false);
+	for (int i = 0; i<n; ++i) {
+	    for (int j = 0; j<n; ++j) cin >> g[i][j];
+	}
+	
+    dfs(s);
+	
+	cout << ans;
+    
+    return 0;
+}

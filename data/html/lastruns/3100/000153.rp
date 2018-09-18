@@ -1,0 +1,36 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="153" judge-id="100" status="CE" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>aaa80b0d-2327-43c6-b10a-147c7e4c4350</uuid>
+  <compiler_output>000153.cpp: In function 'int nod(int, int)':
+000153.cpp:8:14: warning: suggest parentheses around comparison in operand of '&amp;' [-Wparentheses]
+     while (a != 0 &amp; b != 0)
+              ^
+000153.cpp: At global scope:
+000153.cpp:19:5: error: 'cin' does not name a type
+     cin &gt;&gt; n;
+     ^
+000153.cpp:22:5: error: expected unqualified-id before 'while'
+     while (cin &gt;&gt; n)
+     ^
+000153.cpp:26:5: error: expected unqualified-id before 'for'
+     for (int i = 0; i &lt; vec.size(); i++)
+     ^
+000153.cpp:26:21: error: 'i' does not name a type
+     for (int i = 0; i &lt; vec.size(); i++)
+                     ^
+000153.cpp:26:37: error: 'i' does not name a type
+     for (int i = 0; i &lt; vec.size(); i++)
+                                     ^
+000153.cpp:30:5: error: 'cout' does not name a type
+     cout &lt;&lt; ans;
+     ^
+000153.cpp:31:5: error: expected unqualified-id before 'return'
+     return 0;
+     ^
+000153.cpp:32:1: error: expected declaration before '}' token
+ }
+ ^
+</compiler_output>
+</testing-report>

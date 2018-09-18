@@ -1,0 +1,18 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="137" judge-id="4" status="CE" scoring="ACM" run-tests="0" contest-id="3102" compile-error="yes" >
+  <uuid>6c68cde2-e497-462e-9a14-1021ed93a520</uuid>
+  <compiler_output>000137.c: In function 'ft':
+000137.c:3:27: warning: implicit declaration of function 'mini' [-Wimplicit-function-declaration]
+        long long n = (t - mini(a, b))/a + (t - mini(a, b))/ b + 1;
+                           ^
+000137.c: At top level:
+000137.c:6:12: error: conflicting types for 'mini'
+ long long  mini(long long a, long long  b){
+            ^
+000137.c:3:27: note: previous implicit declaration of 'mini' was here
+        long long n = (t - mini(a, b))/a + (t - mini(a, b))/ b + 1;
+                           ^
+</compiler_output>
+</testing-report>

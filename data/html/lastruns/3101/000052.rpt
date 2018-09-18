@@ -1,0 +1,48 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="52" judge-id="31" status="WA" scoring="ACM" run-tests="1" contest-id="3101" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>fb583c0d-6938-43d4-8c46-c4910495d717</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="2" real-time="4" max-memory-used="307200"  checker-comment="Line 2 differs: output: ?NO? correct: ?YES?" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=4, maxvsz=307200, maxrss=2748416, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="109">10 10
+1 61 126 217 2876 6127 39162 98126 712687 1000000000 
+100 6127 1 61 200 -10000 1 217 10000 1000000000 
+</input>
+      <output size="33">NO
+NO
+YES
+NO
+NO
+NO
+YES
+YES
+NO
+NO
+</output>
+      <correct size="36">NO
+YES
+YES
+YES
+NO
+NO
+YES
+YES
+NO
+YES
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="44">Line 2 differs: output:
+&gt;NO&lt;
+correct:
+&gt;YES&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

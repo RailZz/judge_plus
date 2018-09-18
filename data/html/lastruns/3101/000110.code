@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+	int N, K, left, right, m, max = -99999;
+	cin >> N >> K;
+	int* mas1 = new int ();
+	int* mas2 = new int ();
+	for (int i = 0; i < N; i++)
+	{
+		cin >> mas1[i];
+		if (mas1[i]>max)
+			max=mas1[i];
+	}
+	for (int i = 0; i < K; i++)
+		cin >> mas2[i];
+	for (int i=0;i<K;i++)
+	{
+		left = mas1[1];
+		right = max;
+		if (mas2[i]>left&&mas2[i]<right)
+		{
+			while (right-left > 1)
+			{
+				if ((right + left) % 2 != 0)
+					m = (right +left) / 2 +1;
+				else
+					m = (right + left) / 2; 
+				if (m <= mas2[i])
+					left = m;
+				else
+					right = m;
+			}
+	    }
+	    if (left == mas2[i] || right == mas2 [i] || mas2[i] == mas1[0] || mas2[i] == max)
+	    	cout << "YES" << endl;
+	    else
+	    	cout << "NO" << endl;
+	}	
+}

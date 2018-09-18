@@ -1,0 +1,137 @@
+##print("Type "Dir" for full list of commands")
+##print("Type something ...")
+##def run_program(inputValue):
+##    if inputValue == 'Ls':
+##        return
+##                import os
+##                arr = os.listdir(r"input()")
+##                print(arr)
+##    elif inputValue == 'Cd':
+##        return
+##                import os
+##                path = input()
+##                os.chdir(path)
+##                print(os.getcwd())
+##    elif inputValue == 'CCCd':
+##        return
+##                import os
+##                print('Current', 'Directory:', os.getcwd())
+##    elif inputValue == 'Mkfile':
+##        return
+##                print("Type file name")
+##                file_name = input()
+##                try:
+##                    new_file = open(file_name)
+##                    new_file.close()
+##                except OSError:
+##                    print ("Could not create file %s" % new_file)
+##                else:
+##                    print ("File %s cuccesfully created" % new_file)
+##    elif inputValue == 'MakeWriteFile':
+##        return
+##                print("Type file name")
+##                file_name = input()
+##                try:
+##                    new_file = open(file_name, 'w')
+##                    text = input()
+##                    new_file.write(text)
+##                    new_file.close()
+##                except OSError:
+##                    print ("Could not create cile %s" % new_file)
+##                else:
+##                    print ("File %s cuccesfully created" % new_file)
+##                    
+##        
+##                
+##print(run_program(input()))
+##
+######Mkdir(5) Make new direcrories 
+##import os  
+##path = '/input()'
+##try:
+##    os.makedirs(path)
+##except OSError:
+##    print ("Could not create directoy %s" % path)
+##else:
+##    print ("Directory %s succesfully created " % path)
+##
+##############################################################################
+##
+######Ls(1) List of files and folders in directory
+##import os
+##arr = os.listdir(r"input()")
+##print(arr)
+##
+##############################################################################
+##
+######CCCd(2) Current Directory
+##import os
+##print('Current', 'Directory:', os.getcwd())
+##
+######Cd(2) Change Current Directory
+##import os
+##path = input()
+##os.chdir(path)
+##print(os.getcwd())
+##
+##############################################################################
+######Mkfile(3) Make new files
+file_name = input()
+try:
+    new_file = open("file_name")
+    new_file.close()
+except OSError:
+    print ("Could not create file %s" % new_file)
+else:
+    print ("File %s cuccesfully created" % new_file)
+##
+##############################################################################
+##
+######MakeWriteFile Make and Write New File
+##try:
+##    new_file = open('New_File.txt', 'w')
+##    text = input()
+##    new_file.write(text)
+##    new_file.close()
+##except OSError:
+##    print ("Could not create cile %s" % new_file)
+##else:
+##    print ("File %s cuccesfully created" % new_file)
+##
+##############################################################################
+##
+######Rmfile Remove file
+##import os
+##path = input()
+##try:
+##    os.remove(path)
+##except OSError:
+##    print('File %s was succesfully deleted' % path)
+##else:
+##    print('Could not delete file %s' % path)
+##
+##############################################################################
+##
+######Rmdir - Delete Directory
+##import shutil
+##path = input()
+##try:
+##    shutil.rmtree(path)
+##except OSError:
+##    print ('Directory %s was succesfully deleted' % path)
+##else:
+##    print('Could not delete directory %s' % path)
+##
+##############################################################################
+##
+######Edit - Edit file
+##import os
+##path = input()
+##os.startfile(path)
+##
+##############################################################################
+##
+######Dir - List of functions
+##dir = ["Ls - List of files and folders in directory", "CCCd - Current directory",
+##       "Cd - Change current directory", "Mkfile - Make new file", "MakeWriteFile - Make and write new file", "Rmfile Remove file",
+##       "Mkdir - Make new direcroriy", "Rmdir - Delete Directory", "Edit - Edit file", "Dir - List of functions"]

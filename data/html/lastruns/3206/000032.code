@@ -1,0 +1,2 @@
+a =  input()
+print(a[2], a[-2], a[0:5], a[:-2], a[::2], a[1::2], a[len(a)::-1], a[len(a)::-2], len(a), sep = '\n')

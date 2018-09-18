@@ -1,0 +1,45 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <set>
+
+using namespace std;
+
+int main() {
+    int col;
+    cin >> col;
+    for (int j = 0; j < col; j++) {
+        int n, m, start;
+        cin >> n >> m;
+        vector<vector<pair<int, int>>> gr(n);
+        for (int i = 0; i < m; i++) {
+            int st, fin, len;
+            cin >> st >> fin >> len;
+            gr[st].push_back({len, fin});
+            gr[fin].push_back({len, st});
+        }
+        cin >> start;
+        vector<int> d(n, 2009000999);
+        set<pair<int, int>> s;
+        d[start] = 0;
+        s.insert({0, start});
+        while (!s.empty()) {
+            int v = s.begin()->second;
+            s.erase(s.begin());
+            for (auto ul : gr[v]) {
+                int u = ul.second;
+                int l = ul.first;
+                if (d[v] + l < d[u]) {
+                    s.erase({d[u], u});
+                    d[u] = d[v] + l;
+                    s.insert({d[u], u});
+                }
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            cout << d[i] << ' ';
+        }
+        cout << endl;
+    }
+
+}

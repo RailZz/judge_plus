@@ -1,0 +1,62 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="347" judge-id="2" status="WA" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>de011467-06a9-489a-8c05-7cbe094a6aae</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="74" real-time="78" max-memory-used="30339072"  checker-comment="3getNUm ready for 3 getcur 1 getcur 2 getcur 3 ready for 2 getcur 4 getcur 5 ready for 1 getcur 6 3getNUm ready for 3 ge..." >
+  <program-stats-str>{ utime=41, stime=33, ptime=74, rtime=78, maxvsz=30339072, maxrss=27021312, nvcsw=1, nivcsw=11 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17285120, maxrss=3211264, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="20">6 4
+3 1
+1 2
+5 4
+2 3
+</input>
+      <output size="26">3
+3
+1 3 2
+2
+2
+4 5
+5
+1
+6
+6
+</output>
+      <correct size="23">3
+3
+1 2 3 
+2
+4 5 
+1
+6 
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="198">3getNUm
+ready for 3
+getcur 1
+getcur 2
+getcur 3
+ready for 2
+getcur 4
+getcur 5
+ready for 1
+getcur 6
+3getNUm
+ready for 3
+getcur 1
+getcur 3
+getcur 2
+ready for 2
+getcur 2
+wrong answer Number 2 dublicate
+</checker>
+    </test>
+  </tests>
+</testing-report>

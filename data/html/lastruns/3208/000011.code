@@ -1,0 +1,4 @@
+a = []
+for i in range(100):
+    a += ['Python']
+print(*a, sep='')

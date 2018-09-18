@@ -1,0 +1,13 @@
+a=int(input())
+b=int(input())
+c=int(input())
+a=a*60**2
+b=b*60
+d=a+b+c
+a1=int(input())
+b1=int(input())
+c1=int(input())
+a1=a1*60**2
+b1=b1*60
+d1=a1+b1+c1
+print(d1-d)

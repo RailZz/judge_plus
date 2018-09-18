@@ -1,0 +1,9 @@
+N = int(input())
+cost = list(map(int, input().split()))
+ans = [0 for i in range(N)]
+for i in range(min(2, len(cost))):
+    ans[i] = cost[i]
+for i in range(2, N):
+    ans[i] = min(cost[i - 2], cost[i - 1]) + cost[i]
+print(ans[-1])
+    

@@ -1,0 +1,3 @@
+a = input(14)
+b = input(3)
+print(a // b)

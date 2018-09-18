@@ -1,0 +1,9 @@
+n = input()
+r = 0
+rab = 0
+for i in list(n) :
+    rab += 1
+    if i == ' ':
+        rab == 0
+        r += 1
+print(r+1)

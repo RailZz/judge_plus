@@ -1,0 +1,10 @@
+b = ''
+def a(c) :
+    d = c.isdigit()
+    if ( d == True) :
+        b = 'yes'
+    else:
+        b = 'no'
+    return b
+c = input()
+print(a(c))

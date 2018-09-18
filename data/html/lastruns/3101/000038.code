@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+#define ll long long
+
+int main()
+{
+    ll l, n, m, k;
+
+    cin >> n;
+    l = 0; 
+    k = 0;
+    while (n - l > 1)
+    {
+        m = (n + l) / 2;
+        l = m;
+        k++;
+    }
+    cout << k;
+    return 0;
+}

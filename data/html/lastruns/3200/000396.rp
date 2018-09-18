@@ -1,0 +1,22 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="396" judge-id="1" status="CE" scoring="ACM" run-tests="0" contest-id="3200" compile-error="yes" >
+  <uuid>188cc064-936b-4e90-85cf-5c8f7c1b97a6</uuid>
+  <compiler_output>000396.cpp:1:6: warning: character constant too long for its type
+ a = ['sdfhbsdf', 'hello', 'world']
+      ^
+000396.cpp:1:18: warning: character constant too long for its type
+ a = ['sdfhbsdf', 'hello', 'world']
+                  ^
+000396.cpp:1:27: warning: character constant too long for its type
+ a = ['sdfhbsdf', 'hello', 'world']
+                           ^
+000396.cpp:2:8: warning: character constant too long for its type
+ word = 'hella'
+        ^
+000396.cpp:1:1: error: 'a' does not name a type
+ a = ['sdfhbsdf', 'hello', 'world']
+ ^
+</compiler_output>
+</testing-report>

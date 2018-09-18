@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	int n;
+	cin >> n;
+	vector<int> ab(n+1);
+	vector<int> c(n+1);
+	
+	ab[1] = 2;
+	c[1] = 1;
+	
+	for (int i = 2; i <= n; ++i) {
+		ab[i] = 2*(ab[i-1]+c[i-1]);
+		c[i] = ab[i-1]; 
+	}
+	
+	cout << ab[n] + c[n];
+	
+	return 0;
+}

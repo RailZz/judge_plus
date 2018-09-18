@@ -1,0 +1,18 @@
+k = list(map(int,(input().split())))
+q =str('')
+a = k[0]
+b = k[1]
+c = k[2]
+d = k[3]
+z = b * d
+f = a * d
+j = c * b
+x = f + j
+def gcd(f,g):
+    while g - f != 0:
+        while g > f:
+            g = g - f
+        while f > g:
+            f = f - g
+    return f
+print(int(x/gcd(x, z)), int(z/gcd(x, z)))

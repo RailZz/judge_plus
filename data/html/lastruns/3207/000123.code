@@ -1,0 +1,11 @@
+N=int(input())
+def get_sum_of_digits (N):
+    while N>0:
+        s=0
+        N=N%10
+        a=N%10+N
+        s+=a
+        return(s)
+print(get_sum_of_digits (N))
+        
+        

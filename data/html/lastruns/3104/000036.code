@@ -1,0 +1,22 @@
+ #include <iostream>
+#include <vector>
+using namespace std;
+int main ()
+{
+	int n;
+	cin >> n;
+	vector <int> kol (n);
+	for (int i=0;i<n;i++)
+	{
+		cin >> kol[i];
+	}
+	vector <int> fib(n);
+	fib[0]=kol[0];
+	fib[1]=kol[1];
+	for (int i=2;i<n;i++)
+	{
+		fib[i]=min(fib[i-1],fib[i-2])+kol[i];
+	}
+	cout << fib[n-1];
+	
+}

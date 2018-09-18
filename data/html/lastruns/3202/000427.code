@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+main(){
+	int k;
+	cin>>k;
+	if(k%4==0 or k==1){
+		cout<<"YES"<<endl;
+	}
+	else{
+		cout<<"NO"<<endl;
+	}
+}

@@ -1,0 +1,40 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="123" judge-id="51" status="PE" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>29a26aa6-82ad-46ae-b73f-9aa513fc6f00</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000123.cpp: In function 'int main()':
+000123.cpp:52:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i&lt;v.size();i++)
+                ^
+000123.cpp:6:16: warning: unused variable 'x' [-Wunused-variable]
+  int N,M,kol=0,x=0,y=0,max=-999999,ind1,ind2;
+                ^
+000123.cpp:18:6: warning: unused variable 'i' [-Wunused-variable]
+  int i,j;
+      ^
+000123.cpp:33:21: warning: 'ind2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    for (int i=ind1;i&lt;ind2;i++)
+                     ^
+</compiler_output>
+  <tests>
+    <test num="1" status="PE" time="2" real-time="3" max-memory-used="311296"  checker-comment="wrong output format Sum of the way does not match the given sum, sum - 179, given - 0" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=3, maxvsz=311296, maxrss=3080192, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=17268736, maxrss=3125248, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="8">1 1
+179
+</input>
+      <output size="2">0
+</output>
+      <correct size="5">179
+
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="86">wrong output format Sum of the way does not match the given sum, sum - 179, given - 0
+</checker>
+    </test>
+  </tests>
+</testing-report>

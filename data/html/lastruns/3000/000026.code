@@ -1,0 +1,61 @@
+program SubStringSearch;
+
+const
+        SIZE = 50000;
+        a: array [0..4] of Int64 = (29, 31, 37, 41, 43);
+        mods: array [0..2] of Int64 = (1000000000 + 7, 1000000000 + 9, 2 * 1000000000 + 11);
+        
+type
+        THash = array [-1..SIZE] of Int64;
+        TPower = array [0..SIZE] of Int64;
+        
+function SubHash (const Hash: THash; const p: TPower; l, r: Int64; m: Int64): Int64;
+var
+        big, small: Int64;
+        
+begin
+        big := Hash[r];
+        
+        small := 0;
+        if l <> 1 then
+                small := (Hash[l - 1] * p[r - l + 1]) mod m;
+                
+        SubHash := (big - small + m) mod m
+end;
+
+var
+        s, t: String;
+        i: LongInt;
+        p, m: Int64;
+        Hash: THash;
+        pwr: TPower;
+
+begin
+        Randomize;
+        
+        ReadLn (s);
+        ReadLn (t);
+        
+        p := a[Random (5)];
+        m := mods[Random (3)];
+        
+        Hash[0] := 0;
+        Hash[-1] := Ord (t[1]);
+        
+        for i := 2 to Length (t) do
+                Hash[-1] := (Hash[-1] * p + Ord (t[i])) mod m;
+                
+        Hash[1] := Ord (s[1]);
+                
+        for i := 2 to Length (s) do
+                Hash[i] := (Hash[i - 1] * p + Ord (s[i])) mod m;      
+                
+        pwr[0] := 1;
+                
+        for i := 1 to Length (s) do
+                pwr[i] := (p * pwr[i - 1]) mod m;
+        
+        for i := 1 to Length (s) - Length (t) + 1 do
+                if Hash[-1] = SubHash (Hash, pwr, i, i + Length (t) - 1, m) then
+                        Write (i - 1, ' ')
+end.

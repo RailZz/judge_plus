@@ -1,0 +1,43 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="197" judge-id="197" status="SE" scoring="ACM" run-tests="2" contest-id="3208" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>8af848f5-5be9-4a42-ba98-21611bcb4e54</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="29" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=23, stime=3, ptime=26, rtime=29, maxvsz=307200, maxrss=6033408, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2625536, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">10
+15
+2
+</input>
+      <output size="6">20
+30
+</output>
+      <correct size="6">20 30
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="SE" time="284" real-time="302" max-memory-used="18698240" >
+  <program-stats-str>{ utime=239, stime=45, ptime=284, rtime=302, maxvsz=18698240, maxrss=19324928, nvcsw=1, nivcsw=46 }</program-stats-str>
+      <input size="7">2
+50
+4
+</input>
+      <output size="0"></output>
+      <stderr size="285">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000197&quot;, line 13, in &lt;module&gt;
+    print(d//100,d%100)
+NameError: name 'd' is not defined
+</stderr>
+    </test>
+  </tests>
+</testing-report>

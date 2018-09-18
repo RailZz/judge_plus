@@ -1,0 +1,43 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+int cnt = 0;
+vector <int> used;
+vector <vector <int> > gr;
+
+void dfs (int v)
+{
+    cnt++;
+    used[v] = 1;
+    for (auto u: gr[v])
+    {
+        if (!used[u])
+        {
+            dfs(u);
+        }
+    }
+}
+
+int main()
+{
+    int n, s;
+    cin >> n >> s;
+    used.resize(n, 0);
+    gr.resize(n);
+    int inp;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cin >> inp;
+            if (inp)
+            {
+                gr[i].push_back(j);
+            }
+        }
+    }
+    dfs(s - 1);
+    cout << cnt;
+    return 0;
+}

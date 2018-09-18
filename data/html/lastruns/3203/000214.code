@@ -1,0 +1,9 @@
+var
+  a, b, c, d, i: integer;
+
+begin
+  read(a, b, c, d);
+  for i := a to b do
+    if (i mod d = c) then 
+      writeln(i);
+end.

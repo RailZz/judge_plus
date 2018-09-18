@@ -1,7 +1,11 @@
 import os
 import os.path
+from config import *
+import json
 
-def c(x):
+verbose_mode = False
+
+def corr(x):
     if x < 10:
         return str(x)
     return chr(ord('A') + x - 10)
@@ -12,13 +16,15 @@ def getPath(run):
     second = run // (36 * 32)
     run %= (36 * 32)
     third = run // 32
-    return c(first) + '/' + c(second) + '/' + c(third) + '/'
+    if verbose_mode:
+        print(first, second, third)
+    return corr(first) + '/' + corr(second) + '/' + corr(third) + '/'
 
 def corr_name(name):
     return ('0' * 6 + str(name))[-6:]
 
 def makeGoodRp(c_id, r_id):
-    filename = '/var/www/html/scripts/lastruns/' + c_id + '/' + corr_name(r_id)
+    filename = lastruns_path + c_id + '/' + corr_name(r_id)
     data = open(filename + '.rpt').read()
     if data.find('WA') == -1 and data.find('TL') == -1 and data.find('PE') == -1 and data.find('RT') == -1 and data.find('WTL') == -1:
         if data.find('CE') != -1:
@@ -37,8 +43,9 @@ def makeGoodRp(c_id, r_id):
 def copyFile(c_id, r_id, fold, ext):
     f_path = getPath(int(r_id))
     path = '/home/judges/' + corr_name(c_id) + '/var/archive/' + fold + f_path + corr_name(r_id)
-    print(path)
-    n_path = '/var/www/html/scripts/lastruns/' + c_id + '/' + corr_name(r_id)
+    if verbose_mode:
+        print(path)
+    n_path = lastruns_path + c_id + '/' + corr_name(r_id)
     if os.path.isfile(path):
         os.system('cp ' + path + ' ' + n_path + ext)
     elif os.path.isfile(path + '.gz'):
@@ -53,11 +60,12 @@ def copyFile(c_id, r_id, fold, ext):
         
 
 def copyRuns(contest):
-    nextrun = int(open('/var/www/html/scripts/lastruns/' + contest + '.num').readline())
+    nextrun = int(open(lastruns_path + contest + '.num').readline())
     c_num = int(contest)
     glob_path = '/home/judges/' + ('0' * 6 + contest)[-6:] + '/var/archive/'
-    print(glob_path)
-    fullp = '/var/www/html/scripts/lastruns/'
+    if verbose_mode:
+        print(glob_path)
+    fullp = lastruns_path
     while True:
         c_f = copyFile(contest, str(nextrun), 'runs/', '.code')
         r_f = copyFile(contest, str(nextrun), 'xmlreports/', '.rpt')
@@ -68,14 +76,19 @@ def copyRuns(contest):
 
 
 
-contests_data = [i.strip().split('#')[2] for i in open("/var/www/html/scripts/info.txt").readlines()]
+
+
+info = json.load(open(info_path))
 contest = []
-for i in contests_data:
-    contest += [j.split()[0] for j in i.split(',')]
-print(contest)
+for par in sorted(info.keys()):
+    for c in info[par][Contests]:
+        contest.append(str(c['EjudgeID']))
+if verbose_mode:
+    print(contest)  
 for i in contest:
-    filePath = '/var/www/html/scripts/lastruns/' + i + '.num'
+    filePath = lastruns_path + i + '.num'
+    #filePath = '/' + i + '.num'
     if os.path.isfile(filePath) == False:
         open(filePath, "w").write('0')
-        os.system('mkdir /var/www/html/scripts/lastruns/' + i)
+        os.system('mkdir ' + lastruns_path + i)
     copyRuns(i)

@@ -1,0 +1,5 @@
+<input size="4">179
+</input>
+      <output size="63">('the previous number for the number ', 179, ' is ', 178, '.')
+</output>
+      

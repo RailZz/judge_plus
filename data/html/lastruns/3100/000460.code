@@ -1,0 +1,24 @@
+function prost(x:longint):boolean;
+var y:longint;
+f:boolean;
+begin
+x:=abs(x);
+if x mod 2=0 then f:=false
+else
+  begin
+    f:=true;
+    y:=3;
+    while(y*y<=x) and f do
+    if x mod y=0 then f:=false
+    else inc(y,2);
+  end;
+if x<2 then f:=false;
+if x=2 then f:=true;
+prost:=f;
+end;
+
+var n:longint;
+begin
+readln(n);
+if prost(n) then writeln('prime') else writeln('composite');
+end.

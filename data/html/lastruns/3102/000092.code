@@ -1,0 +1,18 @@
+def f(t, x, y):
+    return ((t - min(x, y)) // x) + ((t - min(x, y)) // y) + 1
+
+
+data = list(map(int, input().split()))
+N = data[0]
+x = data[1]
+y = data[2]
+l = 0
+r = N * min(x, y)
+while r - l > 1:
+    m = (l + r) // 2
+    if f(m, x, y) < N:
+        l = m
+    else:
+        r = m
+print(r)
+    

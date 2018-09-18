@@ -1,0 +1,28 @@
+from sys import setrecursionlimit
+setrecursionlimit(10**9)
+inp = list(map(int, input().split()))
+n = inp[0]
+m = inp[1]
+ar = [[int(i) for i in input().split()] for i in range(m)]
+used = [0] * (n + 2)
+ar.append([])
+isgood = 1
+
+def dfs(v, c):
+    global isgood
+    used[v] = c
+    for u in ar[v]:
+        if used[u] == 0:
+            dfs(u, 3 - c)
+        elif used[u] == c:
+            isgood = 0
+
+
+for i in range(0, n - 1):
+    if used[i] == 0:
+        dfs(i, 1)
+if isgood == 1:
+    print('YES')
+    print(used.count(1))
+else:
+    print('NO')

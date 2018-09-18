@@ -1,0 +1,8 @@
+d = 0
+for i in range(3):
+    a = int(input())
+    if a%2==1:
+        d = a//2 + 1 + d
+    else:
+        d = a//2 + d
+print(d)

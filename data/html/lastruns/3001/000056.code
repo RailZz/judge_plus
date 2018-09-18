@@ -1,0 +1,65 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+vector<int> t;
+vector<int> arr;
+
+void bild(int v, int l, int r) {
+    if (l == r - 1) {
+        t[v] = arr[l];
+        return;
+    }
+    int m = (r + l) / 2;
+    bild(v * 2 + 1, l, m);
+    bild(v * 2 + 2, m, r);
+    t[v] = t[v * 2 + 1] + t[v * 2 + 2];
+}
+
+int ask(int v, int l, int r, int askl, int askr) {
+    if (askl >= r || askr <= l) {
+        return 0;
+    }
+    if (askl <= l && askr >= r) {
+        return t[v];
+    }
+    int m = (r + l) / 2;
+    return ask(v * 2 + 1, l, m, askl, askr) + ask(v * 2 + 2, m, r, askl, askr);
+}
+
+void change(int v, int l, int r, int pos, int val) {
+    if (l == r - 1) {
+        t[v] += val;
+        //arr[l] += val;
+        return;
+    }
+    int m = (l + r) / 2;
+    if (pos < m) {
+        change(v * 2 + 1, l, m, pos, val);
+    } else {
+        change(v * 2 + 2, m, r, pos, val);
+    }
+    t[v] = t[v * 2 + 1] + t[v * 2 + 2];
+}
+
+int main() {
+    int n;
+    cin >> n;
+    arr.resize(n, 0);
+    t.resize(n * 4);
+    int comand, par1, par2;
+    while (1) {
+        cin >> comand;
+        if (!comand) {
+            return 0;
+        }
+        cin >> par1 >> par2;
+        par1--;
+        if (comand == 1) {
+            change(0, 0, n, par1, par2);
+        } else {
+            cout << ask(0, 0, n, par1, par2);
+        }
+    }
+}

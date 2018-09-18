@@ -1,0 +1,5 @@
+K = int(input())
+G = K + 1
+H = K - 1
+print(G)
+print(H)

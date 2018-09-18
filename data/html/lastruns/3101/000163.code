@@ -1,0 +1,9 @@
+N = int(input())
+n = 0
+if N == 1 or N == 0:
+    print(n)
+elif N % 2 != 0:
+    while N != 1:
+        N = N // 2
+        n += 1    
+    print(n + 1)

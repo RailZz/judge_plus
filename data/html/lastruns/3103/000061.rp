@@ -1,0 +1,18 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="61" judge-id="15" status="CE" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>cb983a6a-b292-4a15-bfb3-87c924ed0aaa</uuid>
+  <compiler_output>000061.cpp:7:20: error: a space is required between consecutive right angle brackets (use '&gt; &gt;')
+vector &lt; vector&lt;int&gt;&gt; G;
+                   ^~
+                   &gt; &gt;
+000061.cpp:15:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto u: gr[i])
+             ^
+000061.cpp:15:13: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto u: gr[i])
+                   ^
+2 warnings and 1 error generated.
+</compiler_output>
+</testing-report>

@@ -1,0 +1,261 @@
+informatics ID: 103
+Have archive; standart checker; cmp_file_nospace
+Problem name: "Перевести символ в верхний регистр"
+
+informatics ID: 2864
+No archive
+Problem name: "Вполоборота"
+
+informatics ID: 3128
+Have archive; standart checker; cmp_file_nospace
+Problem name: "Вставка символов"
+
+informatics ID: 105
+No archive
+Problem name: "Совпадают ли строки?" cmp_yesno
+
+informatics ID: 106
+Have archive; standart checker; cmp_long_long
+Problem name: "Количество слов"
+
+informatics ID: 3598
+No archive
+Problem name: "Сапер" cmp_file_nospace
+3598 cmp_file_nospace
+informatics ID: 3735
+Have archive; standart checker; cmp_file_nospace
+Problem name: "Делаем срезы"
+
+informatics ID: 107
+Have archive; standart checker; cmp_file_nospace
+Problem name: "Самое длинное слово"
+
+informatics ID: 3739
+No archive
+Problem name: "Первое и последнее вхождение"
+cmp_long_long_seq
+
+informatics ID: 108
+Have archive; standart checker; cmp_yesno
+Problem name: "Является ли слово палиндромом?"
+
+informatics ID: 3740
+No archive
+Problem name: "Второе вхождение"
+cmp_long_long
+
+informatics ID: 110
+No archive
+Problem name: "Поиск подстроки"
+cmp_yesno
+
+informatics ID: 3748
+No archive
+Problem name: "Удалить каждый третий символ"
+cmp_file_nospace
+
+informatics ID: 111
+No archive
+Problem name: "Капитан Флинт"
+cmp_long_long_seq
+
+informatics ID: 111184
+No archive
+Problem name: "Питон"
+cmp_long_long
+
+informatics ID: 115
+No archive
+Problem name: "Количество нулей"
+cmp_long_long
+
+informatics ID: 240
+Have archive; standart checker; cmp_yesno
+Problem name: "Негласный палиндром"
+
+informatics ID: 111506
+No archive
+Problem name: "Скучная лекция"
+cmp_file_nospace
+
+informatics ID: 111838
+No archive
+!No problem name specified
+cmp_yesno
+
+informatics ID: 328
+Have archive; standart checker; cmp_long_double_seq
+Problem name: "Средний балл по предметам"
+
+informatics ID: 111857
+No archive
+Problem name: "Телефонные номера"
+cmp_file_nospace
+
+informatics ID: 329
+No archive
+Problem name: "Учащиеся без троек"
+cmp_file_nospace
+
+informatics ID: 501
+Have archive; standart checker; cmp_yesno
+Problem name: "Пароль"
+
+informatics ID: 111872
+No archive
+Problem name: "Запятые и пробелы"
+cmp_file_nospace
+
+informatics ID: 111874
+No archive
+Problem name: "ФИО"
+cmp_file_nospace
+
+informatics ID: 509 cmp_long_long
+No archive
+Problem name: "Количество слов"
+
+
+informatics ID: 112531
+No archive
+Problem name: "Время ужина" свой чекер
+
+informatics ID: 774
+No archive
+Problem name: "Шифровка"
+cmp_file_nospace
+
+informatics ID: 792
+No archive
+Problem name: "Число"
+cmp_file_nospace
+
+informatics ID: 112812
+No archive
+!No problem name specified
+custom
+
+informatics ID: 113448
+No archive
+Problem name: "Королевская лотерея"
+cmp_yesno
+
+informatics ID: 848
+No archive
+Problem name: "ЕГЭ"
+cmp_yesno
+
+informatics ID: 113451
+No archive
+!No problem name specified
+cmp_file_nospace
+
+informatics ID: 857
+No archive
+Problem name: "Контрольная по ударениям"
+cmp_long_long
+
+informatics ID: 113454
+No archive
+!No problem name specified
+cmp_file_nospace
+
+informatics ID: 1004
+No archive
+Problem name: "Таймер"
+ERROR
+
+informatics ID: 1026
+No archive
+Problem name: "Многочлен"
+custom
+
+informatics ID: 113653
+No archive
+Problem name: ""
+cmp_long_long_seq
+
+informatics ID: 113654
+No archive
+Problem name: ""
+cmp_long_long_seq
+
+informatics ID: 1173
+Have archive; standart checker; cmp_file_nospace
+Problem name: "Удаление цифр"
+
+informatics ID: 1181
+No archive
+Problem name: "Благозвучное слово"
+cmp_long_long_seq
+
+
+informatics ID: 1200
+No archive
+Problem name: "Определите порядок действий"
+cmp_file_nospace
+
+informatics ID: 1230
+No archive
+Problem name: "EuroEnglish"
+checker
+
+informatics ID: 1236
+No archive
+Problem name: "Сортировка масс"
+checker
+
+informatics ID: 1415
+No archive
+Problem name: "Шифр Юлия"
+ERROR
+
+informatics ID: 1421
+No archive
+Problem name: "Удали пробелы"
+cmp_file_nospace
+
+
+informatics ID: 1435
+No archive
+Problem name: "IP-адрес"
+cmp_long_long
+
+informatics ID: 1619
+No archive
+Problem name: "Смайлики"
+cmp_long_long
+
+informatics ID: 1631
+No archive
+Problem name: "Язык Мумба-Юмба"
+cmp_yesno
+
+informatics ID: 1926
+No archive
+Problem name: "Миша и&nbsp;не&shy;га&shy;тив"
+checker
+
+informatics ID: 2763
+Have archive; archive checker
+Problem name: "«У моего папы больше денег»"
+
+informatics ID: 2765
+Have archive; standart checker; cmp_file_nospace
+Problem name: "Считалочка"
+
+informatics ID: 2767
+No archive
+Problem name: "Хорошие стихи"
+cmp_long_long
+
+informatics ID: 2794
+Have archive; standart checker; cmp_file_nospace
+Problem name: "Строки-1"
+
+informatics ID: 2795
+No archive
+Problem name: "$ax+b=0$"
+checker
+
+Not all problems are ready, exiting

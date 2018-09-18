@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int ar[100];
+    int a;
+    int price = 0;
+    cin >> a;
+    for (int i = 0; i < a; i++)
+    {
+        cin >> ar[i];
+        cout << "\b";
+    }
+    ar[a] = 0;
+    ar[a + 1] = 0;
+    ar[a+2] = 0;
+    price += ar[0];
+    for (int i = 0; i < a - 1;i)
+    {
+        if (i + 3 == a)
+        {
+            price += ar[a - 1];
+            break;
+        }
+        if (ar[i + 1] + ar[i + 2] == ar[i + 3])
+        {
+            price += ar[i + 2];
+            i += 2;
+            continue;
+        }
+        if (ar[i + 1] + ar[i + 2] > ar[i + 3])
+        {
+            int m = min(ar[i + 1],ar[i + 2]);
+            if (ar[i + 1] == m)
+            {
+                price += ar[i + 1];
+                i++;
+                continue;
+            }
+            else if (ar[i + 2] == m)
+            {
+                price += ar[i + 2];
+                i += 2;
+                continue;
+            }
+        }
+        if ( ar[i + 1] + ar[i + 2] < ar[i + 3])
+        {
+            price += ar[i + 2];
+            i+=2;
+            continue;
+        }
+    }
+    cout << price;
+    return 0;
+}

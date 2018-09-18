@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+n=int(input())
+c=a*100+b
+d=c*n
+if b*n < 100:
+    print(a*n)
+    print(b*n)
+if b*n > 100:
+        print(d//100,d%100)

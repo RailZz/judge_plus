@@ -1,0 +1,89 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+const int SZ = 100004;
+const int SIZE = 30040;
+
+long long ans[SIZE];
+long long t[SZ * 4];
+long long a[SZ];
+
+int superMax(int i1, int i2) {
+    if (i1 == -3) {
+        return i2;
+    }
+    if (i2 == -3) {
+        return i1;
+    }
+    if (a[i1] > a[i2]) {
+        return i1;
+    }
+    return i2;
+}
+
+void build(int v, int l, int r) {
+    if (l == r - 1) {
+        t[v] = l;
+        return;
+    }
+    int m = (l + r) / 2;
+    build(2 * v + 1, l, m);
+    build(2 * v + 2, m, r);
+    t[v] = superMax(t[2 * v + 1], t[2 * v + 2]);
+}
+
+int ask(int v, int l, int r, int ask_l, int ask_r) {
+    if (ask_l >= r || ask_r <= l) {
+        return -3;
+    }
+    if (ask_l <= l && ask_r >= r) {
+        return t[v];
+    }
+    int m = (l + r) / 2;
+    return superMax(ask(2 * v + 1, l, m, ask_l, ask_r),
+                   ask(2 * v + 2, m, r, ask_l, ask_r));
+}
+
+void change(int v, int l, int r, int pos, int val) {
+    if (l == r - 1) {
+        a[l] = val;
+        return;
+    }
+    int m = (l + r) / 2;
+    if (pos < m) {
+        change(2 * v + 1, l, m, pos, val);
+    } else {
+        change(2 * v + 2, m, r, pos, val);
+    }
+    t[v] = superMax(t[2 * v + 1], t[2 * v + 2]);
+}
+
+int main()
+{
+    int n, m, len = 0;
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+    cin >> m;
+    build(0, 0, n);
+    for (int i = 0; i < m; ++i) {
+        string todo;
+        cin >> todo;
+        int ask_1, ask_2;
+        cin >> ask_1 >> ask_2;
+        if (todo == "s") {
+            ans[len] = ask(0, 0, n, ask_1 - 1, ask_2);
+            ++len;
+        }
+        if (todo == "u") {
+            change(0, 0, n, ask_1 - 1, ask_2);
+        }
+    }
+    for (int i = 0; i < len; ++i) {
+        cout << ans[i] + 1 << endl;
+    }
+}

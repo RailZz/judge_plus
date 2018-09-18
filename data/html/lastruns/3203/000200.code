@@ -1,0 +1,9 @@
+x = int(input())
+n = 1
+while n < x:
+    if n % x == 0:
+        break
+    else:
+        n += 1
+
+print(n)

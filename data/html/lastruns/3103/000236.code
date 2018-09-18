@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+int search();
+int tonnel_num, cross, tonnels[10000], built[10000], lights[100000], n;
+int main()
+{
+	cin >> cross >> tonnel_num;
+	for (int i = 0; i < tonnel_num * 2; i++)
+	{
+		cin >> tonnels[i];
+	}
+	search();
+	for (int i = 1; i <= cross; i++){
+		std::cout << lights[i] << " ";
+	}
+	return 0;
+}
+int search()
+{
+	for (int i = 0; i < tonnel_num * 2; i++)
+	{
+	for (int f = 0; f < tonnel_num * 2; f++)
+	{
+	if (tonnels[f] == i)
+	{
+		lights[i]++;
+		built[i] = 1;
+	}
+	}
+	}
+	return 0;
+}

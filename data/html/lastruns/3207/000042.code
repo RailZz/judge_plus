@@ -1,0 +1,10 @@
+s = 0
+def sum(n):
+    a = list(str(n))
+    s = 0
+    for i in range(len(a)):
+        s += (int(a[i])) % 10
+    return s
+q = int(input())
+f = sum(q)
+print(f)

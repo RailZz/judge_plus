@@ -1,0 +1,10 @@
+k=int(input())
+m=int(input())
+n=int(input())
+s = 0
+if (n % k == 0 ):
+    s = 2*m*(n//k)
+    print(s)
+else:
+    s = 2*m*((n//k)+1)
+    print(s)

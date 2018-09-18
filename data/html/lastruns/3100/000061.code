@@ -1,0 +1,10 @@
+def gcd(a, b):
+    while a != 0:
+        b %= a
+        a, b = b, a
+    return b
+
+
+n, k = list(map(int, input().split()))
+
+print(n * k // gcd(n, k))

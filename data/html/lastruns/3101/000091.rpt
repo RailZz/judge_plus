@@ -1,0 +1,81 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="91" judge-id="70" status="WA" scoring="ACM" run-tests="2" contest-id="3101" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>86e40984-8e09-4795-a55f-35190b209d75</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="2" real-time="3" max-memory-used="307200"  checker-comment="OK" >
+  <program-stats-str>{ utime=2, stime=0, ptime=2, rtime=3, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="109">10 10
+1 61 126 217 2876 6127 39162 98126 712687 1000000000 
+100 6127 1 61 200 -10000 1 217 10000 1000000000 
+</input>
+      <output size="46">NO 
+YES 
+YES 
+YES 
+NO 
+NO 
+YES 
+YES 
+NO 
+YES 
+</output>
+      <correct size="36">NO
+YES
+YES
+YES
+NO
+NO
+YES
+YES
+NO
+YES
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="WA" time="1" real-time="2" max-memory-used="307200"  checker-comment="Line 1 differs: output: ?YES? correct: ?NO?" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2453504, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="58">10 10
+-8 -6 -4 -4 -2 -1 0 2 3 3 
+8 3 -3 -2 2 -1 2 9 -8 0 
+</input>
+      <output size="47">YES 
+NO 
+YES 
+YES 
+YES 
+YES 
+YES 
+YES 
+NO 
+NO 
+</output>
+      <correct size="37">NO
+YES
+NO
+YES
+YES
+YES
+YES
+NO
+YES
+YES
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="44">Line 1 differs: output:
+&gt;YES&lt;
+correct:
+&gt;NO&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

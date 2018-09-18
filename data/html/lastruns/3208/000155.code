@@ -1,0 +1,6 @@
+m=int(input())
+g=int(input())
+t=int(input())
+d=(m//2+g//2+t//2+m%2+g%2+t%2)
+print(d)
+

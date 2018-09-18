@@ -1,0 +1,92 @@
+program Gangsters;
+
+const
+        SIZE = 100;
+        
+type
+        TGang = record
+                t, p, s: LongInt
+        end;
+        TGangsters = array [0..SIZE] of TGang;
+        
+procedure QSort (var a: TGangsters; l, r: LongInt);
+
+var
+        i, j, m: LongInt;
+        t: TGang;
+        
+begin
+        i := l;
+        j := r;
+        m := a[l + (r - l) div 2].t;
+        
+        while i <= j do
+        begin
+                while a[i].t < m do
+                        Inc (i);
+                        
+                while a[j].t > m do
+                        Dec (j);
+                        
+                if i <= j then
+                begin
+                        t := a[i];
+                        a[i] := a[j];
+                        a[j] := t;
+                        
+                        Inc (i);
+                        Dec (j)
+                end
+        end;
+        
+        if i < r then
+                QSort (a, i, r);
+                
+        if l < j then
+                QSort (a, l, j)
+end;
+        
+var
+        gang: TGangsters;
+        s: array [0..SIZE] of LongInt;
+        n, k, i, j, t, max: LongInt;
+
+begin
+        Read (n, k, t);
+        
+        for i := 1 to n do
+                Read (gang[i].t);
+                
+        for i := 1 to n do
+                Read (gang[i].p);
+                
+        for i := 1 to n do
+                Read (gang[i].s);
+                
+        gang[0].t := 0;
+        gang[0].p := 0;
+        gang[0].s := 0;
+        s[0] := 0;
+        
+        QSort (gang, 1, n);
+        
+        for i := 1 to n do
+        begin
+                max := 0;
+                
+                for j := 0 to i - 1 do
+                        if ((gang[i].t - gang[j].t) >= Abs (gang[i].s - gang[j].s)) and
+                           ((m[j] > 0) or (j = 0))(s[j] + gang[i].p > max) then 
+                                max := s[j] + gang[i].p;
+                               
+                s[i] := max
+        end;
+        
+        max := 0;
+        
+        for i := 1 to n do
+                if s[i] > max then
+                        max := s[i];
+                        
+        WriteLn (max)
+end.

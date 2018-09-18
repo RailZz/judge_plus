@@ -1,0 +1,8 @@
+n=int(input())
+a=n%10
+b=n//10
+b=b%10
+c=n//10
+c=c//10
+d=a+b+c
+print(d)

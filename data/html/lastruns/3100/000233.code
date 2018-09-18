@@ -1,0 +1,22 @@
+def dividers_summ(a):
+    i = 2
+    summ = 1
+    while i * i <= a:
+        if a % i == 0:
+            if i * i == a:
+                summ += i
+            else:
+                summ += i + (a // i)
+        i += 1
+    return summ
+
+
+ans = []
+k = int(input())
+for n in range(1, k + 1):
+    m = dividers_summ(n)
+    if (n == dividers_summ(m)) and \
+       (m <= k) and \
+       (n < m) and \
+       (n != m):
+           print(n, m)

@@ -1,0 +1,10 @@
+def phi(i):
+    if (i <= 1):
+        return 1
+    else:
+        a = phi(i-1) + phi(i-2)
+        return a
+
+n = int(input())
+s = phi(n)
+print(s)

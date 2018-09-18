@@ -1,0 +1,9 @@
+def schitivalka():
+    a = input()
+    return a
+def neznau(a):
+    if a.isdigit():
+        return 'yes'
+    return 'no'
+a = schitivalka()
+print(neznau(a))

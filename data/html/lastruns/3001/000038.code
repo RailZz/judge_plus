@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int sparse[20][150000];
+
+int ans(int l, int r) {
+    int len = r - l + 1;
+    int level = log(len) / log(2);
+    return min (sparse[level][l],
+                sparse[level][r - (1 << level) + 1]);
+}
+
+int main()
+{
+    int n, k;
+    cin >> n >> k;
+    int a[n];
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+    for (int i = 0; i < n; ++i) {
+        sparse[0][i] = a[i];
+    }
+    for (int i = 1; (1 << i) <= n; ++i) {
+        for (int j = 0; j <= n - (1 << i); ++j) {
+            sparse[i][j] = min (sparse[i - 1][j],
+                                sparse[i - 1][j + (1 << (i - 1))]);
+        }
+    }
+    for (int i = 0; i <= n - k; ++i) {
+        cout << ans(i, i + k - 1) << " ";
+    }
+}

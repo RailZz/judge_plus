@@ -1,0 +1,6 @@
+n=int(input())
+i=int(input())
+if n>=i:
+    print(n)
+elif i>n:
+    print(i)

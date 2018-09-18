@@ -1,0 +1,24 @@
+def f1(N, K, a, min):
+    K -= 1
+    j1 = 1
+    j = 0
+    while j1 < len(a):
+        if a[j1] - a[j] >= min:
+            K -= 1
+            j = j1
+        j1 += 1    
+    if K > 0:
+        return 0
+    else:
+        return 1
+N, K = list(map(int, input().split()))
+a = list(map(int, input().split()))
+r = a[len(a)- 1] + 1
+l = 0
+while r - l > 1:
+    m = ( r + l ) // 2
+    if f1(N, K, a, m):
+        l = m
+    else:
+        r = m
+print(l)

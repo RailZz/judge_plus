@@ -1,0 +1,32 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="68" judge-id="7" status="RT" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>ad5cbfe8-f656-4507-86fa-eb0a12eb4042</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000068.cpp: In function 'int main()':
+000068.cpp:51:11: warning: unused variable 'j' [-Wunused-variable]
+     ll k, j;
+           ^
+</compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="6" time="1" real-time="3" max-memory-used="311296" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=311296, maxrss=2932736, nvcsw=1, nivcsw=2 }</program-stats-str>
+      <input size="2">1
+</input>
+      <output size="0"></output>
+      <stderr size="344">*** Error in `./000068': munmap_chunk(): invalid pointer: 0x0853fa20 ***
+======= Backtrace: =========
+/lib/libc.so.6(+0x6b09b)[0xafc4b09b]
+/lib/libc.so.6(cfree+0x198)[0xafc57828]
+/lib/libstdc++.so.6(_ZdlPv+0x1c)[0xafe87f2c]
+./000068[0x8048b60]
+/lib/libc.so.6(__libc_start_main+0xf5)[0xafbf8545]
+./000068[0x8048c7e]
+======= Memory map: ========
+</stderr>
+    </test>
+  </tests>
+</testing-report>

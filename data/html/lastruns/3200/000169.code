@@ -1,0 +1,7 @@
+A1 = int(input())
+A2 = int(input())
+A3 = int(input())
+B1 = int(input())
+B2 = int(input())
+B3 = int(input())
+print(B1*3600+B2*60+B3-(A1*3600+A2*60+A3))

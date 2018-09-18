@@ -1,0 +1,7 @@
+<input size="2">1
+</input>
+      <output size="14">(1, 'korova')
+</output>
+      <correct size="9">1 korova
+</correct>
+      

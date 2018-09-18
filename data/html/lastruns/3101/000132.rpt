@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="132" judge-id="111" status="CE" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>9dbfe809-8578-4166-9f7a-6a0acef6cc3e</uuid>
+  <compiler_output>000132.cpp: In function 'int main()':
+000132.cpp:10:23: warning: left operand of comma operator has no effect [-Wunused-value]
+     for (int i = 1; i &gt; vvod, i++)
+                       ^
+000132.cpp:10:34: error: expected ';' before ')' token
+     for (int i = 1; i &gt; vvod, i++)
+                                  ^
+</compiler_output>
+</testing-report>

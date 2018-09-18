@@ -1,0 +1,10 @@
+a = [int(i) for i in input().split()]
+i = 0
+if len(a) % 2 == 0:
+    while i < len(a):
+        .replace(i,i+1)
+        i+=2
+else:
+    while i < len(a)-1:
+        .replace(i,i+1)
+        i+=2

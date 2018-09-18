@@ -1,0 +1,9 @@
+h=int(input())
+j=int(input())
+y=int(input())
+k=h+j+y
+def int_min(k):
+    if k%2==0:
+        print(int_min(k))
+    else (k+1)%2=0:
+        print(int_min(k))

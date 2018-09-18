@@ -1,0 +1,34 @@
+import sys
+
+sys.setrecursionlimit(10 ** 9)
+
+size = list(map(int, input().split()))
+m = size[0]
+n = size[1]
+sheet = [input() for i in range(m)]
+used = [[0 for i in range(n)] for j in range(m)]
+dx = [-1, 0, 0, 1]
+dy = [0, -1, 1, 0]
+count = 0
+
+
+def is_good(x, y):
+    if x >= 0 and x < m and y < n and y >= 0 and sheet[x][y] == '#':
+        return True
+    else:
+        return False
+
+
+def dfs(x, y):
+    used[x][y] = 1
+    for i in range(4):
+        if is_good(x + dx[i], y + dy[i]) and used[x + dx[i]][y + dy[i]] == 0:
+            dfs(x + dx[i], y + dy[i])
+
+for i in range(0, m):
+    for j in range(0, n):
+        if sheet[i][j] == '#' and used[i][j] == 0:
+            dfs(i, j)
+            count += 1
+print(count)
+            

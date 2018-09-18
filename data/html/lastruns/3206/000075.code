@@ -1,0 +1,15 @@
+word = input()
+newWord = ""
+f = True
+for i in word:
+    if i != 'a' and i != 'e' and i != 'u' and i != 'i' and i != 'o':
+        newWord += i
+
+for i in range(len(newWord) // 2):
+    if newWord[i] != newWord[len(newWord) - i - 1]:
+        f = False
+        break
+if f:
+    print('YES')
+else:
+    print('NO')

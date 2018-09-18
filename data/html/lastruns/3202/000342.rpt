@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="342" judge-id="191" status="RT" scoring="ACM" run-tests="1" contest-id="3202" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>2bd873a7-ff9c-4385-b058-bc2a692bb8d4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="14" real-time="22" max-memory-used="307200" >
+  <program-stats-str>{ utime=14, stime=0, ptime=14, rtime=22, maxvsz=307200, maxrss=5099520, nvcsw=1, nivcsw=4 }</program-stats-str>
+      <input size="6">1
+2
+3
+</input>
+      <output size="0"></output>
+      <stderr size="90">  File &quot;./000342&quot;, line 13
+    else a&gt;=b and b&lt;=c:
+         ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

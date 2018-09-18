@@ -1,0 +1,16 @@
+def rime(n):
+    for i in range(2,int(n ** 0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+a=int(input())
+res=[]
+i=2
+while rime(a)==0:
+    if rime(i)==1 and a%i==0:
+        a=int(a/i)
+        res.append(i)
+        i=2
+    i+=1
+res.append(a)
+print(sorted(res))

@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int cnt = 0, m, n;
+vector<vector<bool> > visited;
+
+void dfs(int x, int y) {
+    visited[y][x] = true;
+    if (x > 0 && !visited[y][x-1]) dfs(x-1, y);
+    if (x < n-1 && !visited[y][x+1]) dfs(x+1, y);
+    if (y > 0 && !visited[y-1][x]) dfs(x, y-1);
+    if (y < m-1 && !visited[y+1][x]) dfs(x, y+1);
+}
+
+int main() {
+	
+	int x, y;
+	char c;
+	cin >> m >> n;
+	visited.resize(m, vector<bool> (n));
+	for (int y = 0; y<m; ++y) {
+        for (int x = 0; x<n; ++x) {
+            cin >> c;
+            if (c == '.') visited[y][x] = true;
+        }
+	}
+    
+    for (int y = 0; y<m; ++y) {
+        for (int x = 0; x<n; ++x) {
+            if (visited[y][x] == false) {
+                ++cnt;
+                dfs(x, y);
+            }
+        }
+	}
+    
+	cout << cnt;
+	
+	return 0;
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html><html><head><base href="https://informatics.msk.ru/mod/statements/print3.php?id=33268"><meta charset="utf-8">
+      <title>Параллель A. Декартово дерево два</title>
+      <style type="text/css">@import url(http://informatics.mccme.ru/moodle/mod/statements/polygon.css);</style>      
+      <meta http-equiv="Content-Type" content="text/html; charset=">
+      <script src="/moodle/lib/jsMath/easy/load.js"></script><script src="https://informatics.msk.ru/moodle/lib/jsMath/jsMath-easy-load.js"></script><script src="https://informatics.msk.ru/moodle/lib/jsMath/plugins/autoload.js"></script>
+      <meta name="description" content="Параллель A. Декартово дерево два">
+      <style>/* $Id: statements_print.css,v 1.1 2006/03/12 18:39:59 skodak Exp $ */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 0px;
+    font-family: "Times New Roman", Times, serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+.statements_title {
+    margin-left: -40px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.statements_summary {
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.statements_chapter_title {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: bold;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+
+    margin-left: -40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.statements_chapter {
+    page-break-before: always;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* link rewriting for mozilla - collides with filters :-( */
+/*
+a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " ["attr(href)"]";
+}
+*/
+
+/* just some hack - ignore user defined <font> */
+font {
+    color: #000000;
+    background-color: #EEEEEE;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* ===== TOC numbering styles ===== */
+
+/* numbering == NONE */
+.statements_toc_none {
+    page-break-before: always;
+}
+.statements_toc_none ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_none li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_none li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == NUMBERED */
+.statements_toc_numbered {
+    page-break-before: always;
+}
+.statements_toc_numbered ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered ul ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_numbered li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_numbered li li {
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* numbering == BULLETS */
+.statements_toc_bullets {
+    page-break-before: always;
+}
+.statements_toc_bullets ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_bullets ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_bullets li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_bullets li li {
+    margin-top: 0px;
+    list-style: circle;
+}
+
+/* numbering == INDENTED */
+.statements_toc_indented {
+    page-break-before: always;
+}
+.statements_toc_indented ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.statements_toc_indented ul ul {
+    margin-left: 20px;
+    padding-left: 0px;
+}
+.statements_toc_indented li {
+    margin-top: 10px;
+    list-style: none;
+}
+.statements_toc_indented li li {
+    margin-top: 0px;
+    list-style: none;
+}
+</style>
+    <style type="text/css">#jsMath_test {font-size:200%}
+</style><style type="text/css">.math {font-family: serif; font-style: normal; font-weight: normal}
+.typeset {font-family: serif; font-style: normal; font-weight: normal; line-height: normal; text-indent: 0px}
+.typeset .normal {font-family: serif; font-style: normal; font-weight: normal}
+div.typeset {text-align: center; margin: 1em 0px}
+span.typeset {text-align: left}
+.typeset span {text-align: left; border: 0px; margin: 0px; padding: 0px}
+a .typeset img, .typeset a img {border: 0px; border-bottom: 1px solid blue;}
+.typeset .size0 {font-size: 50%}
+.typeset .size1 {font-size: 60%}
+.typeset .size2 {font-size: 70%}
+.typeset .size3 {font-size: 85%}
+.typeset .size4 {font-size: 100%}
+.typeset .size5 {font-size: 120%}
+.typeset .size6 {font-size: 144%}
+.typeset .size7 {font-size: 173%}
+.typeset .size8 {font-size: 207%}
+.typeset .size9 {font-size: 249%}
+.typeset .cmr10 {font-family: jsMath-cmr10, serif}
+.typeset .cmbx10 {font-family: jsMath-cmbx10, jsMath-cmr10}
+.typeset .cmti10 {font-family: jsMath-cmti10, jsMath-cmr10}
+.typeset .cmmi10 {font-family: jsMath-cmmi10}
+.typeset .cmsy10 {font-family: jsMath-cmsy10}
+.typeset .cmex10 {font-family: jsMath-cmex10}
+.typeset .textit {font-family: serif; font-style: italic}
+.typeset .textbf {font-family: serif; font-weight: bold}
+.typeset .link {text-decoration: none}
+.typeset .error {font-size: 90%; font-style: italic; background-color: #FFFFCC; padding: 1px; border: 1px solid #CC0000}
+.typeset .blank {display: inline-block; overflow: hidden; border: 0px none; width: 0px; height: 0px}
+.typeset .spacer {display: inline-block}
+#jsMath_hiddenSpan {visibility: hidden; position: absolute; top: 0px; left: 0px; line-height: normal; text-indent: 0px}
+#jsMath_message {position: fixed; bottom: 1px; left: 2px; background-color: #E6E6E6; border: solid 1px #959595; margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: small; width: auto}
+#jsMath_panel {position: fixed; bottom: 1.75em; right: 1.5em; padding: .8em 1.6em; background-color: #DDDDDD; border: outset 2px; z-index: 103; width: auto; color: black; font-size: 10pt; font-style: normal}
+#jsMath_panel .disabled {color: #888888}
+#jsMath_panel .infoLink {font-size: 85%}
+#jsMath_panel * {font-size: inherit; font-style: inherit; font-family: inherit; line-height: normal}
+#jsMath_panel div {background-color: inherit; color: inherit}
+#jsMath_panel span {background-color: inherit; color: inherit}
+#jsMath_panel td {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel tr {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit}
+#jsMath_panel table {border: 0px; padding: 0px; margin: 0px; background-color: inherit; color: inherit; height: auto; width: auto}
+#jsMath_button {position: fixed; bottom: 1px; right: 2px; background-color: white; border: solid 1px #959595; margin: 0px; padding: 0px 3px 1px 3px; z-index: 102; color: black; text-decoration: none; font-size: x-small; width: auto; cursor: hand}
+#jsMath_button * {padding: 0px; border: 0px; margin: 0px; line-height: normal; font-size: inherit; font-style: inherit; font-family: inherit}
+#jsMath_global {font-style: italic}
+#jsMath_noFont .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: small; width: auto}
+#jsMath_noFont .link {padding: 0px 5px 2px 5px; border: 2px outset; background-color: #E8E8E8; color: black; font-size: 80%; width: auto; cursor: hand}
+#jsMath_PrintWarning .message {text-align: center; padding: .8em 1.6em; border: 3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size: x-small; width: auto}
+@media print {#jsMath_button {display: none}
+#jsMath_Warning {display: none}
+}
+@media screen {#jsMath_PrintWarning {display: none}
+}
+.typeset .scale {font-size: 120%}
+</style><style type="text/css">.typeset .math {font-style: normal}
+.typeset .typeset {font-style: normal}
+.typeset .icmr10 {font-family: serif}
+.typeset .icmmi10 {font-family: serif; font-style: italic}
+.typeset .icmbx10 {font-family: serif; font-weight: bold}
+.typeset .icmti10 {font-family: serif; font-style: italic}
+</style></head>
+    <body><div id="jsMath_message" title="" style="visibility: hidden;">Processing Math: Done</div><div id="jsMath_PrintWarning"><center><table><tbody><tr><td><div class="message">To print higher-resolution math symbols, click the<br>
+<b>Hi-Res Fonts for Printing</b> button on the jsMath control panel.<br>
+</div><div style="width:22em; height:1px"></div></td></tr></tbody></table></center><hr></div><div id="jsMath_button" title=" Open jsMath Control Panel "><span onclick="jsMath.Controls.Panel()">jsMath</span></div><div id="jsMath_panel" style="display: none;"></div><div id="jsMath_Hidden" style="visibility: hidden; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; margin: 0px;"></div><div style="position: fixed; bottom: 1px; left: 2px; background-color: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 1px 8px; z-index: 102; color: black; font-size: 75%; width: auto; visibility: hidden;"></div>
+    <a name="top"></a>
+    <p class="statements_title">Параллель A. Декартово дерево два</p>
+    <p class="statements_summary"></p>
+    
+
+    <div class="statements_toc_alpha"><a name="toc"></a><p class="statements_chapter_title">Список задач</p><ul><li><a href="#ch2791"><b>Задача A.</b> В начало строя!</a></li><li><a href="#ch2790"><b>Задача B.</b> Range Minimum Query</a></li><li><a href="#ch2789"><b>Задача C.</b> Своппер</a></li></ul></div><hr><div class="statements_chapter"><h1><a name="ch2791">В начало строя!</a></h1><p class="statements_chapter_title"><b>Задача A.</b> В начало строя!</p><div class="problem-statement">
+   <div class="legend">
+
+<p>Капрал Питуца любит командовать своим отрядом. Его любимый приказ
+«в начало строя». Он выстраивает свой отряд в шеренгу и оглашает
+последовательность приказов. Каждая приказ имеет вид 
+«Солдаты с <span class="typeset"><nobr><span class="scale"><span class="icmmi10">l</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> по <span class="typeset"><nobr><span class="scale"><span class="icmmi10">r</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> — в начало строя!»
+</p>
+<p>
+Пронумеруем солдат в начальном положении с 1 до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span>, слева направо.
+Приказ «Солдаты с <span class="typeset"><nobr><span class="scale"><span class="icmmi10">l</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> по <span class="typeset"><nobr><span class="scale"><span class="icmmi10">r</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> — в начало строя!» означает, что
+солдаты, стоящие с <span class="typeset"><nobr><span class="scale"><span class="icmmi10">l</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> по <span class="typeset"><nobr><span class="scale"><span class="icmmi10">r</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> включительно, перемещаются в начало строя,
+сохраняя относительный порядок.
+</p>
+<p>
+Например, если в некоторый момент солдаты стоят в порядке
+<span class="typeset"><nobr><span class="scale"><span class="icmr10">2</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">3</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">6</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">1</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">5</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">4</span></span></span></nobr></span>, после приказа: 
+«Солдаты с <span class="typeset"><nobr><span class="scale"><span class="icmr10">2</span></span></nobr></span> по <span class="typeset"><nobr><span class="scale"><span class="icmr10">4</span></span></nobr></span> — в начало строя!» порядок будет <span class="typeset"><nobr><span class="scale"><span class="icmr10">3</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">6</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">1</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">2</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">5</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.166em;"><span class="icmr10">4</span></span></span></nobr></span>.
+</p>
+<p>
+По данной последовательности приказов найти конечный порядок солдат в строю.</p>
+
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>В первой строке два целых числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> and <span class="typeset"><nobr><span class="scale"><span class="icmmi10">m</span></span></nobr></span> (<span class="typeset"><nobr><span class="scale"><span class="icmr10">2</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">n</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">00</span><span style="position: relative; margin-left:0.166em;"><span class="icmr10">0</span></span><span class="icmr10">00</span></span></nobr></span>, 
+<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">m</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">00</span><span style="position: relative; margin-left:0.166em;"><span class="icmr10">0</span></span><span class="icmr10">00</span></span></nobr></span>) — количество солдат и количество приказов.
+Следующие <span class="typeset"><nobr><span class="scale"><span class="icmmi10">m</span></span></nobr></span> строк содержат по два целых числа <span class="typeset"><nobr><span class="scale"><span class="icmmi10">l</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">r</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span>
+(<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">l</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">r</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">n</span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>).</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Выведите <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> целых чисел — порядок солдат в конечном положении
+после выполнения всех приказов.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">6 3<br>2 4<br>3 5<br>2 2</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">1 4 5 2 3 6 </pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2790">Range Minimum Query</a></h1><p class="statements_chapter_title"><b>Задача B.</b> Range Minimum Query</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p>Компания <em>Giggle</em> открывает свой новый офис в Судиславле, и вы
+приглашены на собеседование. Ваша задача&nbsp;— решить поставленную задачу.
+</p>
+
+<p>
+Вам нужно создать структуру данных, которая представляет из себя 
+массив целых чисел. Изначально массив пуст. Вам нужно поддерживать 
+две операции:
+</p><ul>
+    <li> запрос: «<code>? i j</code>» — возвращает минимальный
+        элемент между <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span></span></nobr></span>-ым и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">j</span><span class="spacer" style="margin-left:0.057em"></span></span></nobr></span>-м, включительно;
+    </li><li> изменение: «<code>+ i x</code>» — добавить элемент <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span></span></nobr></span> после <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span></span></nobr></span>-го
+        элемента списка. Если <span class="typeset"><nobr><span class="scale"><span class="icmmi10">i</span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">=</span></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">0</span></span></span></nobr></span>, то элемент добавляется в начало
+        массива.
+</li></ul>
+<p></p>
+<p>
+Конечно, эта структура должна быть достаточно хорошей.</p>
+
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+
+<p>Первая строка входного файла содержит единственное целое число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span>&nbsp;—
+число операций над массивом (<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">n</span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">2</span></span><span class="icmr10">00</span><span style="position: relative; margin-left:0.166em;"><span class="icmr10">0</span></span><span class="icmr10">00</span></span></nobr></span>). Следующие <span class="typeset"><nobr><span class="scale"><span class="icmmi10">n</span></span></nobr></span> 
+строк описывают сами операции.
+Все операции добавления являются корректными.
+Все числа, хранящиеся в массиве, по модулю не превосходят <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">9</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span>.</p>
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+<p>Для каждой операции в отдельной строке выведите её результат.</p>
+
+
+<p><em><strong>Комментарий к примеру тестов.</strong></em></p>
+
+Нижеследующая таблица показывает процесс изменения массива из примера.
+<p></p><p align="center">
+
+<table border="1">
+<tbody><tr><td><b>Операция</b></td><td><b>Массив после её выполнения</b></td>
+</tr><tr><td><em>изначально</em></td><td><em>пуст</em></td></tr>
+
+<tr><td><code>+ 0 5</code></td><td>5</td></tr>
+
+<tr><td><code>+ 1 3</code></td><td>5, 3</td></tr>
+
+<tr><td><code>+ 1 4</code></td><td>5, 4, 3</td></tr>
+
+<tr><td><code>+ 0 2</code></td><td>2, 5, 4, 3</td></tr>
+
+<tr><td><code>+ 4 1</code></td><td>2, 5, 4, 3, 1</td></tr>
+</tbody></table>
+
+   </p></div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">8<br>+ 0 5<br>+ 1 3<br>+ 1 4<br>? 1 2<br>+ 0 2<br>? 2 4<br>+ 4 1<br>? 3 5</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">4<br>3<br>1</pre></div></div></div></div></div><hr><div class="statements_chapter"><h1><a name="ch2789">Своппер</a></h1><p class="statements_chapter_title"><b>Задача C.</b> Своппер</p><div class="problem-statement">
+   <div class="legend">
+
+
+<p align="right">Современные компьютеры зацикливаются в десятки раз эффективнее человека<br><i>Рекламный проспект OS Vista-N</i>
+</p>
+<p>
+Перед возвращением в штаб-квартиру корпорации Аазу и Скиву пришлось заполнить
+на местной таможне декларацию о доходах за время визита. Получилась довольно
+внушительная последовательность чисел. Обработка этой последовательности
+заняла весьма долгое время.
+</p>
+<p>
+— Своппер кривой, — со знанием дела сказал таможенник.
+</p>
+<p>
+— А что такое своппер? — спросил любопытный Скив.
+</p>
+<p>
+Ааз объяснил, что своппер — это структура данных, которая умеет делать следующее.
+</p>
+<p>
+</p><ul>
+<li> Взять отрезок чётной длины от <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span></span></nobr></span> до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">y</span><span class="spacer" style="margin-left:0.035em"></span></span></nobr></span> и поменять местами число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span></span></nobr></span> с <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">+</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">1</span></span></span></nobr></span>,
+<span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">+</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">2</span></span></span></nobr></span> с <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">+</span></span><span style="position: relative; margin-left:0.222em;"><span class="icmr10">3</span></span></span></nobr></span>, и т.д.
+</li><li> Посчитать сумму чисел на произвольном отрезке от <span class="typeset"><nobr><span class="scale"><span class="icmmi10">a</span></span></nobr></span> до <span class="typeset"><nobr><span class="scale"><span class="icmmi10">b</span></span></nobr></span>.
+</li></ul>
+<p></p>
+<p>
+Учитывая, что обсчёт может затянуться надолго, корпорация «МИФ»
+попросила Вас решить проблему со своппером и промоделировать ЭТО эффективно.</p>
+
+   </div>
+
+   <div class="input-specification">
+    <div class="section-title">
+     Входные данные
+    </div>
+
+<p>Во входном файле заданы один или несколько тестов.
+В первой строке каждого теста
+записаны число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> — длина последовательности и число <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> — число
+операций (<span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">N</span></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAAmJLR0QA/4ePzL8AAAA1SURBVHjaNcoxDYBAAMDAAw1MDIh4l6+QCSckZQC25lKJPRFDrqzgdiCJ+SubN5fh/AYzeQAsxBNrys/g0QAAAABJRU5ErkJggg==" style=" width:5px; vertical-align:-4px; margin-right:0.028em;"><span style="position: relative; margin-left:0.333em;"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmr10">1</span></span><span class="icmr10">00</span><span style="position: relative; margin-left:0.166em;"><span class="icmr10">0</span></span><span class="icmr10">00</span></span></nobr></span>).
+Во второй строке теста содержится <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> целых чисел,
+не превосходящих <span class="typeset"><nobr><span class="scale"><span class="icmr10">1</span><span class="icmr10">0</span><span style="position: relative; top:-0.362em;"><span class="size2"><span class="icmr10">6</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span></nobr></span> по модулю — сама последовательность.
+Далее следуют <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> строк — запросы в формате <code>1</code> <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> <span class="typeset"><nobr><span class="scale"><span class="icmmi10">y</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> — запрос
+первого типа, и <code>2</code> <span class="typeset"><nobr><span class="scale"><span class="icmmi10">a</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:0.850em;vertical-align:-0.327em"></span></span></nobr></span> <span class="typeset"><nobr><span class="scale"><span class="icmmi10">b</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span> — запрос второго типа.
+Сумма всех <span class="typeset"><nobr><span class="scale"><span class="icmmi10">N</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> и <span class="typeset"><nobr><span class="scale"><span class="icmmi10">M</span><span class="spacer" style="margin-left:0.109em"></span></span></nobr></span> по всему файлу не превосходит <span class="typeset"><nobr><span class="scale"><span class="icmr10">200</span><span style="position: relative; margin-left:0.166em;"><span class="icmr10">0</span></span><span class="icmr10">00</span></span></nobr></span>.
+Файл завершается строкой из двух нулей. Гарантируется, что <span class="typeset"><nobr><span class="scale"><span class="icmmi10">x</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">y</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span><span class="blank" style="height:1.013em;vertical-align:-0.327em"></span></span></nobr></span>, а
+<span class="typeset"><nobr><span class="scale"><span class="icmmi10">a</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span><span style="position: relative; margin-left:0.277em;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAQAAACMnYaxAAAAAmJLR0QA/4ePzL8AAACSSURBVHjafZC9EcMgDEaffBnCpyJFRvAUbr2Ap/ASDJCSGRjBI7hJmyZF7qidXml8+QHZUAD3xAN9YvhDRgbMmUxkZroaBDIJNYx/EFmJP+dtURIrobAYKDOZqX67AVrOvLg5X94EPQt3xkr72XalvmxESd8CLwIlkgmG7MYXuexCgOaAcQIQ9ZA9xZCeq3vx8Qa/HXn8wA2tTAAAAABJRU5ErkJggg==" style=" width:14px; vertical-align:-3px; margin-right:0.077em;"></span><span style="position: relative; margin-left:0.277em;"><span class="icmmi10">b</span><span style="position: relative; top:0.277em;"><span class="size2"><span class="icmmi10">i</span></span><span class="spacer" style="margin-left:0.05em"></span></span></span><span class="blank" style="height:1.117em;vertical-align:-0.327em"></span></span></nobr></span>.</p>
+
+
+   </div>
+
+   <div class="output-specification">
+    <div class="section-title">
+     Выходные данные
+    </div>
+
+
+<p>Для каждого теста выведите ответы на запросы второго типа, как
+показано в примере. Разделяйте ответы на тесты пустой строкой.</p>
+
+   </div>
+   </div>
+<div class="problem-statement"><div class="sample-tests"><div class="section-title">Примеры</div><div class="sample-test"><div class="input"><div class="title">Входные данные</div><pre class="content">5 5<br>1 2 3 4 5<br>1 2 5<br>2 2 4<br>1 1 4<br>2 1 3<br>2 4 4<br>5 5<br>1 2 3 4 5<br>1 2 5<br>2 2 4<br>1 1 4<br>2 1 3<br>2 4 4<br>0 0</pre></div><div class="output"><div class="title">Выходные данные</div><pre class="content">Swapper 1:<br>10<br>9<br>2<br><br>Swapper 2:<br>10<br>9<br>2</pre></div></div></div></div></div> </body>

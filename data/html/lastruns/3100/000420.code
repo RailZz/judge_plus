@@ -1,0 +1,19 @@
+var a,b,c,d,m,n,nd,result:integer;
+function nod(a,b:integer):integer;
+begin
+  while a<>b do
+     if a>b then
+        a:=a-b
+     else
+        b:=b-a;
+  result:=a;
+end;
+begin
+  readln(a,b,c,d);
+  m:=a*d+c*b;
+  n:=b*d;
+  nd:=nod(m,n);
+  m:=m div nd;
+  n:=n div nd;
+  writeln(m,' ',n);
+end.

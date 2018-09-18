@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int gcd(long long a, long long b) {
+    while (b > 0) {
+        a %= b;
+        swap(a, b);
+    }
+    return a;
+}
+
+int main() {
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    int nod = gcd(a * d + b * c, b * d);
+    cout << (a * d + b * c) / nod << " " << (b * d) / nod;
+
+    return 0;
+}

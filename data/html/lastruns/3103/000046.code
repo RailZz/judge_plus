@@ -1,0 +1,23 @@
+n = int(input())
+a = []
+for i in range(n):
+    a.append(list(input()))
+x, y = list(map(int, input().split()))
+x -= 1
+y -= 1
+used = []
+for i in range(n ** 2):
+    used.append(0)
+def dfs(a, x, y, n):
+    global used
+    used[x * n + y + 1] = 1
+    if y != 0 and a[x][y - 1] == '.' and not used[x * n + y]:
+        dfs(a, x, y - 1, n)
+    if y != len(a[x]) - 1 and a[x][y + 1] == '.' and not used[x * n + y + 2]:
+        dfs(a, x, y + 1, n)
+    if x != 0 and a[x - 1][y] == '.' and not used[( x - 1 ) * n + y + 1]:
+        dfs(a, x - 1, y, n)
+    if x != len(a) - 1 and a[x + 1][y] == '.' and not used[( x + 1 ) * n + y + 1]:
+        dfs(a, x + 1, y, n)
+dfs(a, x, y, n)
+print(sum(used))

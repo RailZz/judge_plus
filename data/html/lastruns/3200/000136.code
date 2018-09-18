@@ -1,0 +1,4 @@
+n=int(input(13))
+k=int(input(50))
+z=k%n
+print(z)

@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cstdio>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+vector<int> l;
+
+int main()
+{
+	int k, n, h, r, j, a;
+	int ans;
+	cin>> n >> k;
+	
+	a = 0;
+	l.resize(n);
+	int m;
+
+	for (h = 0; h < n; h++)
+	{
+		cin>>l[h];
+		a += l[h];
+	}
+	
+	r = 10000001;
+	j = 0;
+	while ( r - j > 1)
+	{
+		ans = 0;
+		m = (j + r) / 2;
+		
+		for(h = 0; h < n; h++)
+		{
+			ans = ans + l[h] / m;
+		}
+		if(ans < k)
+		{
+			r = m;	
+		} else {
+			j = m;
+		}
+	}
+	cout << j;
+}

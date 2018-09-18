@@ -1,0 +1,15 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="11" judge-id="12" status="CE" scoring="ACM" run-tests="0" contest-id="3005" compile-error="yes" >
+  <uuid>282b7d04-52f9-4601-a517-3f4cec2122c2</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000011.pas
+000011.pas(79,31) Error: Identifier not found &quot;m&quot;
+000011.pas(79,51) Fatal: Syntax error, &quot;THEN&quot; expected but &quot;(&quot; found
+Fatal: Compilation aborted
+Error: /usr/bin/ppc386 returned an error exitcode (normal if you did not specify a source file to be compiled)
+</compiler_output>
+</testing-report>

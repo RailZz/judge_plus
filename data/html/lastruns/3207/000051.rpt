@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="51" judge-id="38" status="SE" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>2611fb8d-6232-4da3-b2f9-eb26911f2aec</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="288" real-time="311" max-memory-used="32260096" >
+  <program-stats-str>{ utime=278, stime=10, ptime=288, rtime=311, maxvsz=32260096, maxrss=19443712, nvcsw=1, nivcsw=48 }</program-stats-str>
+      <input size="2">1
+</input>
+      <output size="0"></output>
+      <stderr size="226">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000051&quot;, line 5
+    s = 06
+         ^
+SyntaxError: invalid token
+</stderr>
+    </test>
+  </tests>
+</testing-report>

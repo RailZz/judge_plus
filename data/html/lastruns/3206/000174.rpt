@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="174" judge-id="79" status="SE" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>43cfe3c8-aca3-4298-8c19-a96004cf3c93</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="285" real-time="301" max-memory-used="18698240" >
+  <program-stats-str>{ utime=264, stime=21, ptime=285, rtime=301, maxvsz=18698240, maxrss=19382272, nvcsw=1, nivcsw=46 }</program-stats-str>
+      <input size="31">Everyone of us has all we need
+</input>
+      <output size="0"></output>
+      <stderr size="238">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000174&quot;, line 14
+    print{maxLength)
+         ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

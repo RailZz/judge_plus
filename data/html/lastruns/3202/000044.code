@@ -1,0 +1,8 @@
+L1 = int(input())
+L2 = int(input())
+P1 = int(input())
+P2 = int(input())
+if L1 == P1 or L2 == P2:
+   print("YES")
+else:
+    print("NO")

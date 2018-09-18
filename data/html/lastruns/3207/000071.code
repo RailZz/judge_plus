@@ -1,0 +1,6 @@
+def Is_digit(n):
+    if ord(n)<=57 and ord(n)>=48:
+        print('yes')
+    else:
+        print('no')
+Is_digit((input()))

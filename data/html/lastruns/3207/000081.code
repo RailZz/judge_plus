@@ -1,0 +1,6 @@
+Z = input()
+if Z.isdigit() == True:
+    print("yes")
+else:
+    print("no")
+        

@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+//bez translita tak bez translita (
+{
+    int n, i, counter = 0;
+    int* mult = new int ();
+    cin >> n;
+    i = 2;
+    while (i * i <= n)
+    {
+        while (n % i == 0)
+        {
+            mult[counter] = i;
+            counter++;
+            n /= i;
+        }
+        i++;
+    }
+    for (int j = 0; j < counter; j++)
+        cout << mult[j] << " ";
+    if (n != 1)
+        cout << n;
+}

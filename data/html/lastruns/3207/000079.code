@@ -1,0 +1,8 @@
+def Voting(a,b,c):
+    if a+b+c >=2:
+        return 1
+    else:
+        return 0
+a = list(map(int,input().split()))
+print(Voting(a[0],a[1],a[2]))
+

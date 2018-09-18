@@ -1,0 +1,7 @@
+a = input()
+b = a.replace('a', '').replace('e', '').replace('i', '').replace('u', '').replace('o', '')
+c = b[::-1]
+if b == c:
+    print ('YES')
+else:
+    print ('NO')

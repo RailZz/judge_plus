@@ -1,0 +1,17 @@
+def int_min (a, b, c, d):
+    if a<=b and a<=b and a<c:
+        return a
+    else:
+        if b<=a and b<=c and b<=d:
+            return b
+        else:
+            if c<=a and c<=b and c<=d:
+                return c
+            else:
+                return d
+s = [int(i) for i in input().split()]
+a = s[0]
+b = s[1]
+c = s[2]
+d = s[3]
+print(int_min(a, b, c, d))

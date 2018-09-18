@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="112" judge-id="42" status="SE" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>6aea7e4d-c1e2-4acc-925d-9442cb6ea755</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="284" real-time="299" max-memory-used="18698240" >
+  <program-stats-str>{ utime=254, stime=30, ptime=284, rtime=299, maxvsz=18698240, maxrss=19120128, nvcsw=1, nivcsw=44 }</program-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="0"></output>
+      <stderr size="301">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000112&quot;, line 9, in &lt;module&gt;
+    if a[i] &gt; a[i-1] and a[i] &gt; a[i+1]:
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

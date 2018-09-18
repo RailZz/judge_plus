@@ -1,0 +1,46 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="182" judge-id="22" status="TL" scoring="ACM" run-tests="2" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>340ebff3-564d-4d4b-8e90-1aeba88e663f</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000182.cpp: In function 'int main()':
+000182.cpp:6:16: warning: unused variable 'x' [-Wunused-variable]
+  int N,M,kol=0,x=0,y=0,max=-999999,ind1,ind2;
+                ^
+000182.cpp:18:6: warning: unused variable 'i' [-Wunused-variable]
+  int i,j;
+      ^
+000182.cpp:33:21: warning: 'ind2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    for (int i=ind1;i&lt;ind2;i++)
+                     ^
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="2" real-time="4" max-memory-used="311296"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=2, stime=0, ptime=2, rtime=4, maxvsz=311296, maxrss=2830336, nvcsw=1, nivcsw=3 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=4, maxvsz=17268736, maxrss=2998272, nvcsw=1, nivcsw=4 }</checker-stats-str>
+      <input size="8">1 1
+179
+</input>
+      <output size="4">179
+</output>
+      <correct size="5">179
+
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="TL" time="2042" real-time="2191" max-memory-used="4362240" >
+  <program-stats-str>{ utime=1886, stime=156, ptime=2042, rtime=2191, maxvsz=4362240, maxrss=2830336, nvcsw=1, nivcsw=222 }</program-stats-str>
+      <input size="12">2 2
+1 2
+3 1
+</input>
+      <output size="0"></output>
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

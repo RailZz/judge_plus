@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+const long long SIZE = 10000, Size = 100;
+long long M, N, ans = 0;
+long long weight[Size], cost[Size], d[Size][SIZE];
+pair<long long, pair<long long, long long >> p[Size][SIZE];
+
+int main() {
+    cin >> N >> M;
+    for (int i = 0; i < N; i++) {
+        cin >> weight[i];
+    }
+    for (int i = 0; i < N; i++) {
+        cin >> cost[i];
+    }
+    d[0][weight[0]] = cost[0];
+
+    for (int i = 1; i < N; i++) {
+        for (int j = 0; j < M + 1 ; j++) {
+            if (j - weight[i] < 0) {
+                d[i][j] = d[i - 1][j];
+                p[i][j].first = 1;
+                p[i][j].second.first = i - 1;
+                p[i][j].second.second = j;
+            } else {
+                if (d[i - 1][j] > d[i - 1][j - weight[i]] + cost[i]) {
+                    d[i][j] = d[i - 1][j];
+                    p[i][j].first = 1;
+                    p[i][j].second.first = i - 1;
+                    p[i][j].second.second = j;
+                } else {
+                    d[i][j] = d[i - 1][j - weight[i]] + cost[i];
+                    p[i][j].first = 2;
+                    p[i][j].second.first = i - 1;
+                    p[i][j].second.second = j - weight[i];
+                }
+            }
+        }
+    }
+    for (int i = 0; i < M + 1; i++) {
+        if (d[N - 1][ans] < d[N - 1][i]) {
+            ans = i;
+        }
+    }
+    long long i = N - 1;
+    long long j = ans;
+    while (p[i][j].first > 0) {
+        if (p[i][j].first == 2) {
+            cout << i + 1 << endl;
+        }
+        long long helpi = p[i][j].second.first;
+        j = p[i][j].second.second;
+        i = helpi;
+    }
+    cout << i + 1 <<endl;
+    return 0;
+}

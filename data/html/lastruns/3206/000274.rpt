@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="274" judge-id="179" status="WA" scoring="ACM" run-tests="1" contest-id="3206" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>acd8f334-4a5e-4273-a19f-64d693fd0223</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="26" real-time="28" max-memory-used="307200"  checker-comment="Line 1 differs: output: ?P*y*t*h*o*? correct: ?P*y*t*h*o*n?" >
+  <program-stats-str>{ utime=20, stime=6, ptime=26, rtime=28, maxvsz=307200, maxrss=6107136, nvcsw=1, nivcsw=4 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2658304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="7">Python
+</input>
+      <output size="11">P*y*t*h*o*
+</output>
+      <correct size="12">P*y*t*h*o*n
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="60">Line 1 differs: output:
+&gt;P*y*t*h*o*&lt;
+correct:
+&gt;P*y*t*h*o*n&lt;
+</checker>
+    </test>
+  </tests>
+</testing-report>

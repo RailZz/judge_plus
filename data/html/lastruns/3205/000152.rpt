@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="152" judge-id="68" status="WA" scoring="ACM" run-tests="1" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>18c654a8-b948-4d70-a294-408964e5da1d</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="WA" time="31" real-time="36" max-memory-used="307200"  checker-comment="Too few numbers in the output" >
+  <program-stats-str>{ utime=26, stime=5, ptime=31, rtime=36, maxvsz=307200, maxrss=6139904, nvcsw=1, nivcsw=7 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2928640, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="10">1 2 3 2 1
+</input>
+      <output size="2">3
+</output>
+      <correct size="4">3 2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="30">Too few numbers in the output
+</checker>
+    </test>
+  </tests>
+</testing-report>

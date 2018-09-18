@@ -1,0 +1,6 @@
+n=int(input())
+r=int(input())
+while r<=n:
+    r=r+1
+    r**2
+    print(r)

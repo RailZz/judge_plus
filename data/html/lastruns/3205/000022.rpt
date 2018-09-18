@@ -1,0 +1,124 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="22" judge-id="23" status="OK" scoring="ACM" run-tests="8" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>105f4cdc-3338-47ca-8485-f806722367dd</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="76" real-time="82" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=62, stime=14, ptime=76, rtime=82, maxvsz=30339072, maxrss=27176960, nvcsw=1, nivcsw=14 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">5 -4 3 -2 1
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="2" status="OK" time="71" real-time="79" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=62, stime=9, ptime=71, rtime=79, maxvsz=30339072, maxrss=27144192, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="14">10 5 0 -5 -10
+</input>
+      <output size="2">5
+</output>
+      <correct size="2">5
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="3" status="OK" time="73" real-time="78" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=64, stime=9, ptime=73, rtime=78, maxvsz=30339072, maxrss=27041792, nvcsw=1, nivcsw=10 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="16">-1 -2 -3 -4 100
+</input>
+      <output size="4">100
+</output>
+      <correct size="4">100
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="4" status="OK" time="73" real-time="77" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=64, stime=9, ptime=73, rtime=77, maxvsz=30339072, maxrss=27074560, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">5 4 3 2 1 0
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="5" status="OK" time="72" real-time="77" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=51, stime=21, ptime=72, rtime=77, maxvsz=30339072, maxrss=27267072, nvcsw=1, nivcsw=10 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="11">0 1 2 3 4 
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="6" status="OK" time="73" real-time="77" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=59, stime=14, ptime=73, rtime=77, maxvsz=30339072, maxrss=27258880, nvcsw=1, nivcsw=10 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="45">577 -328 -237 -436 -718 -2 -720 921 -341 455
+</input>
+      <output size="4">455
+</output>
+      <correct size="4">455
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="7" status="OK" time="73" real-time="79" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=71, stime=2, ptime=73, rtime=79, maxvsz=30339072, maxrss=27078656, nvcsw=1, nivcsw=13 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="442">-543 -475 -674 497 -724 407 636 -994 -373 -993 -182 -447 504 498 217 183 -97 -926 526 -521 -994 385 205 -209 -249 814 492 326 940 -714 75 794 -828 -331 128 594 -135 237 -649 -300 198 950 -798 -980 -163 -841 865 -201 804 345 -884 407 -39 490 -627 -550 42 756 147 543 937 -969 225 248 287 -660 637 -235 -477 223 -436 -513 -650 21 815 -396 8 -513 -985 -156 -583 696 -892 -892 379 -973 -868 138 518 364 737 -582 345 881 965 -766 378 -865 583 702
+</input>
+      <output size="2">8
+</output>
+      <correct size="2">8
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+    <test num="8" status="OK" time="74" real-time="80" max-memory-used="30339072"  checker-comment="OK" >
+  <program-stats-str>{ utime=65, stime=9, ptime=74, rtime=80, maxvsz=30339072, maxrss=27234304, nvcsw=1, nivcsw=11 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4355">-843 683 100 -773 -982 -503 -63 -23 -389 341 160 -772 642 -714 804 -188 797 -280 973 -788 -191 96 366 248 -634 824 896 -933 32 -85 -761 508 -120 517 -357 155 -963 683 950 -431 251 -442 576 556 744 -376 -598 618 417 -814 -519 842 647 603 221 -627 -759 -928 -2 -882 -561 124 -211 -778 -93 -920 705 110 -764 258 -110 514 539 979 -479 257 274 -516 -521 72 36 87 -650 106 113 -310 -868 -579 -917 293 84 -443 -1 739 706 864 229 -950 205 116 905 -390 -977 -797 -216 210 682 -218 226 970 -541 796 342 554 541 221 810 -549 191 497 -782 -519 -749 -329 580 880 -489 -774 -904 -116 422 406 -594 -760 -659 514 -805 -826 879 416 -757 -474 323 970 -407 702 -745 963 814 39 -712 268 974 505 357 -62 778 -115 289 136 18 98 731 -361 608 -78 274 560 2 780 396 791 -69 889 -571 -232 -470 651 -51 455 296 246 480 -716 125 850 -76 368 423 -22 -972 -479 -163 -963 272 430 716 338 -147 59 917 263 -47 959 -734 661 843 476 614 -532 -679 527 8 181 -178 -92 -704 -67 580 819 894 -745 -822 255 -5 -395 567 -101 -294 -884 -485 -5 -372 -441 112 124 204 -888 -577 -836 232 -322 702 987 238 -796 388 8 -136 -962 -621 -803 435 528 -302 -270 -807 38 157 986 176 97 698 -874 32 224 285 850 449 135 381 789 -781 436 -847 -297 244 180 -873 963 -719 -145 -210 -758 566 -492 -821 450 68 117 82 39 980 -501 -561 -420 -114 -90 367 173 561 783 497 -447 177 -757 401 89 -123 -212 410 216 45 694 688 -980 721 -616 -189 81 942 166 38 -940 -759 -534 -223 -534 722 269 446 640 -748 -470 143 280 -787 219 261 983 292 -650 -537 365 54 190 550 829 29 513 -402 32 861 -481 -969 -188 290 802 -217 351 148 500 463 -954 -472 11 559 506 472 -976 -503 890 -826 15 -20 578 231 184 -304 783 113 588 679 280 -586 825 -164 264 -23 -288 312 -269 67 -106 596 207 -967 857 568 779 -798 -68 -731 916 401 611 155 463 98 -724 -541 607 742 -190 -280 -388 509 -931 829 -96 525 -885 -239 392 487 662 -351 896 759 62 -684 -984 49 450 560 863 -418 591 909 291 -691 99 5 -852 -644 -203 836 -900 428 575 -26 -398 416 -297 -48 537 -443 321 411 456 13 23 -77 679 -476 227 966 182 -107 184 -408 524 -555 835 -868 -389 87 -849 -458 -531 521 59 -914 272 -97 -192 729 910 719 -781 449 -2 248 -197 350 -937 242 -44 596 548 123 180 349 282 -461 -526 256 -640 -88 171 -204 -130 237 -90 529 -344 544 775 -131 -947 -145 622 937 -949 -596 -815 547 -610 -299 731 -402 -213 478 -153 491 -817 -655 805 532 849 -936 168 -374 -547 -356 221 -152 84 908 416 -384 -471 -918 62 -472 -672 474 -67 -119 262 748 -291 -170 196 -670 -347 -201 -413 -636 -239 43 866 176 65 -37 829 -237 -32 -180 -587 -339 -68 -431 350 366 -300 985 -636 487 745 -769 408 782 -244 -765 676 -194 680 459 -869 798 304 -498 760 105 633 837 -693 758 -147 291 -518 -878 670 -435 -322 -160 453 3 85 -719 -975 -723 998 -986 957 122 -905 -827 428 150 228 102 -873 46 -875 -962 449 881 245 -227 -800 752 167 -666 605 -687 -973 720 -513 -839 -887 -947 -793 -411 -174 -632 -394 364 601 449 -479 37 755 -161 -490 909 763 -802 845 33 946 -729 708 132 -538 266 451 -745 804 -642 -873 976 -758 -489 442 984 -646 -212 -893 819 -650 -984 -877 -543 -704 -921 758 570 -578 -691 840 640 389 -117 550 -89 -149 -67 -806 -424 918 -353 -985 -924 -317 547 -675 -687 -836 690 539 -456 -626 -199 -543 798 799 889 -172 -828 216 700 695 -312 -54 -189 -331 -512 -57 -193 -62 -777 14 38 -634 -295 64 570 224 12 -191 982 381 -751 -598 -352 -349 -809 -814 212 707 -781 355 187 -358 627 548 805 -379 325 483 -938 -748 341 70 -153 754 89 -812 -83 -829 908 432 941 -552 347 519 -702 196 -170 843 -250 -492 -705 792 -385 -980 213 695 -633 -544 -266 -950 569 -810 -472 -26 -780 848 -581 -603 -302 332 -643 276 979 -289 -842 57 505 -163 407 -700 -427 -354 -68 -47 -93 96 486 910 468 97 -602 112 571 110 -420 986 -526 111 164 437 713 -890 243 -556 -37 -763 -926 336 95 -605 631 -221 125 817 259 -526 804 -743 855 388 -746 193 -439 -225 660 -154 -43 703 -141 938 -599 652 -978 170 130 -294 92 -679 740 -26 -402 -113 -994 -376 527 571 403 -650 -900 -981 327 276 -102 -827 674 586 731 914 -147 -370 97 -351 -808 -79 -774 -206 -634 -90 -781 -384 -375 -933 70 45 -594 154 740 953 -933 125 308 -836 935 80 -786 -1 -213 -553 698 42 665 -767 -929 487 43 -743 483 -727 427 -752 801 -730 318 -615 944 949 -726 -888 736 -278 -456 -562 982 995 898 123 -833 -876 -432 384 -598 -314 485 -963 725 535 520 -362 -816 791 460 420 -833 828 -732 813 640 -562 -832 -333 -506 -766 624 -881 592 7 102 -281 955 393 10 855 837 -84 -38 277
+</input>
+      <output size="2">2
+</output>
+      <correct size="2">2
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="3">OK
+</checker>
+    </test>
+  </tests>
+</testing-report>

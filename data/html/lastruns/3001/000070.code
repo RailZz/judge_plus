@@ -1,0 +1,61 @@
+#include <iostream>
+
+using namespace std;
+
+int t[8192 * 4];
+int a[8192 * 4];
+
+void build(int v, int l, int r) {
+    if (l == r - 1) {
+        t[v] = a[l];
+        return;
+    }
+    int m = (l + r) / 2;
+    build(2 * v + 1, l, m);
+    build(2 * v + 2, m, r);
+    t[v] = t[2 * v + 1] + t[2 * v + 2];
+}
+
+int ask(int v, int l, int r, int ask_l, int ask_r) {
+    if (ask_l >= r || ask_r <= l) {
+        return 0;
+    }
+    if (ask_l <= l && ask_r >= r) {
+        return t[v];
+    }
+    int m = (l + r) / 2;
+    return ask(2 * v + 1, l, m, ask_l, ask_r) +
+           ask(2 + v + 2, m, r, ask_l, ask_r);
+}
+
+void change(int v, int l, int r, int pos, int val) {
+    if (l == r - 1) {
+        t[v] += val;
+        return;
+    }
+    int m = (l + r) / 2;
+    if (pos < m) {
+        change(2 * v + 1, l, m, pos, val);
+    } else {
+        change(2 * v + 2, m, r, pos, val);
+    }
+    t[v] = t[2 * v + 1] + t[2 * v + 2];
+}
+
+int main()
+{
+    int n, m;
+    cin >> n >> m;
+    build(0, 0, n);
+    while (m) {
+        int x, y;
+        cin >> x >> y;
+        if (m == 1) {
+            change(0, 0, n, x - 1, y);
+        }
+        if (m == 2) {
+            cout << ask(0, 0, n, x - 1, y) << endl;
+        }
+        cin >> m;
+    }
+}

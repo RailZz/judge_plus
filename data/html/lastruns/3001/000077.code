@@ -1,0 +1,99 @@
+program Satellite;
+
+const
+        SIZE = 8192;
+        
+type
+        LongInt = Int64;
+        TTree = array [1..4 * SIZE] of LongInt;
+        TArr = array [1..SIZE] of LongInt;
+        
+procedure Change (var t: TTree; v, l, r, pos, val: LongInt);
+
+var
+        m: LongInt;
+        
+begin
+        if l = r - 1 then
+        begin
+                Inc (t[v], val);
+                Exit
+        end;
+        
+        m := l + (r - l) div 2;
+        
+        if pos < m then
+                Change (t, 2 * v + 1, l, m, pos, val)
+        else
+                Change (t, 2 * v + 2, m, r, pos, val);
+                
+        t[v] := t[2 * v + 1] + t[2 * v + 2]
+end;
+
+function Ask (const t: TTree; v, l, r, askl, askr: LongInt): LongInt;
+
+var
+        m: LongInt;
+        
+begin
+        if (askl >= r) or (askr < l) then
+                Ask := 0
+        else if (askl <= l) and (askr >= r - 1) then
+                Ask := t[v]
+        else
+        begin
+                m := l + (r - l) div 2;
+                Ask := Ask (t, 2 * v + 1, l, m, askl, askr) + Ask (t, 2 * v + 2, m, r, askl, askr)
+        end
+end;
+
+procedure Build (var t: TTree; const a: TArr; v, l, r: LongInt);
+
+var
+        m: LongInt;
+        
+begin
+        if l = r - 1 then
+        begin
+                t[v] := a[l];
+                Exit
+        end;
+        
+        m := l + (r - l) div 2;
+        
+        Build (t, a, 2 * v + 1, l, m);
+        Build (t, a, 2 * v + 2, m, r);
+        t[v] := t[2 * v + 1] + t[2 * v + 2]
+end;
+        
+var
+        a: TArr;
+        t: TTree;
+        n, c, x, y, l, r, i: LongInt;
+
+begin
+        Read (n);
+        
+        for i := 1 to n do
+                a[i] := 0;
+
+        Build (t, a, 1, 1, n);
+        
+        Read (c);
+        
+        while c <> 0 do
+        begin
+                if c = 1 then
+                begin
+                        Read (x, y);
+                        Change (t, 1, 1, n, x, y)                
+                end
+                else 
+                begin
+                        Read (l, r);        
+                        WriteLn (Ask (t, 1, 1, n, l, r))
+                end;
+                
+                Read (c)
+         end
+end.

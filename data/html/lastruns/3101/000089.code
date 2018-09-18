@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+//#include <iostream>
+//#include <cmath>
+using namespace std;
+
+int main() {
+    int n, m;
+	cin >> n;
+	vector<int> a(n);
+	for (int i = 0; i<n; ++i) cin >> a[i];
+	sort(a.begin(), a.end());
+	cin >> m;
+	vector<int> b(m);
+	for (int i = 0; i<m; ++i) cin >> b[i];
+	int ll = -1, rl = n-1, lr = 0, rr = n;
+	for (int i = 0; i<m; ++i) {
+		int left, right;
+   		while (rl - ll > 1) {
+			int mid = (rl + ll) / 2;
+			if (a[mid] < b[i]) ll = mid;
+			else rl = mid;
+		}
+		while (rr - lr > 1) {
+			int mid = (rr + lr) / 2;
+			if (a[mid] <= b[i]) lr = mid;
+			else rr = mid;
+		}
+		cout << rl-lr+1 << " ";
+	}
+	
+    return 0;
+}

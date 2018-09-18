@@ -1,0 +1,80 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+const int SIZE = 100000;
+long long Mod = 100000011, p = 47, ans = 0;
+long long hashs[SIZE], hashsr[SIZE];
+long long st[100000];
+string s;
+
+long long get_hash_s(long long l, long long r) {
+    long long right = hashs[r];
+    long long left = 0;
+    if (l != 0) {
+        left = hashs[l - 1];
+    }
+    left = (left * st[r - l + 1]) % Mod;
+    return ((right - left) + Mod) % Mod;
+}
+
+long long get_hash_sr(long long l, long long r) {
+    long long right = hashsr[r];
+    long long left = 0;
+    if (l != 0) {
+        left = hashsr[l - 1];
+    }
+    left = (left * st[r - l + 1]) % Mod;
+    return ((right - left) + Mod) % Mod;
+}
+
+long long find_ans() {
+    for (int i = 0; i < s.size(); i++) {
+        long long size_pal = min(i, (int)s.size() - i - 1);
+        long long l = 0;
+        long long r = size_pal + 1;
+        while (r - l > 1) {
+            long long m = (r + l) / 2;
+            if (get_hash_s(i, i + m) == get_hash_sr(s.size() - 1 - i, s.size() - 1 - i + m)) {
+                l = m;
+            } else {
+                r = m;
+            }
+        }
+        ans += r;
+        size_pal = min(i + 1, (int)s.size() - i - 1);
+        l = 0;
+        r = size_pal + 1;
+        while (r - l > 1) {
+            long long m = (r + l) / 2;
+            if (get_hash_s(i, i + m) == get_hash_sr(s.size() - 2 - i, s.size() - 2 - i + m)) {
+                l = m;
+            } else {
+                r = m;
+            }
+        }
+        ans += l;
+    }
+}
+
+int main() {
+    st[0] = 1;
+    for (int i = 1; i < 100000; i++) {
+        st[i] = (st[i - 1] * p) % Mod;
+    }
+    getline(cin, s);
+    hashs[0] = s[0];
+    for (int i = 1; i < s.size(); i++) {
+        hashs[i] = (hashs[i - 1] * p + s[i]) % Mod;
+    }
+    reverse(s.begin(), s.end());
+    hashsr[0] = s[0];
+    for (int i = 1; i < s.size(); i++) {
+        hashsr[i] = (hashsr[i - 1] * p + s[i]) % Mod;
+    }
+    find_ans();
+    cout << ans;
+    return 0;
+}

@@ -1,0 +1,15 @@
+a = input()
+b = 0
+c = 0
+d = 0
+for i in a:
+    if ord(i) >= ord('a') and ord(i) <= ord('z'):
+        b = 1
+    elif ord(i) >= ord('1') and ord(i) <= ord('9'):
+        c = 1
+    elif ord(i) >= ord('A') and ord(i) <= ord('Z'):
+        d = 1
+if b + d + c >= 3 and len(a) >= 8:
+    print('YES')
+else:
+    print('NO')

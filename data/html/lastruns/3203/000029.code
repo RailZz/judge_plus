@@ -1,0 +1,12 @@
+N = int(input())
+i = 0
+s = 10**18
+m = -10**17
+while i<N:
+    a = N%10
+    if a>m:
+        m = a
+    if a<s:
+        s = a
+    N = N//10
+print(s, m)

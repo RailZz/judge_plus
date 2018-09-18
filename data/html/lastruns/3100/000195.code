@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long long int n;
+    cin >> n;
+    long long int* numb = new long long int [n];
+    for (long long int i = 0; i < n; i++)
+        numb[i] = 1;
+    numb [n] = 1;
+    for (long long int i = 2; i <= n; i++)
+    {
+        if (numb[i] != 1)
+        {
+            continue;
+        } else {
+            for (long long int j = i * i; j <= n; j += i)
+            {
+                numb [j] = 0;
+            }
+       }
+    }
+    for (long long int i = 2; i <= n; i++)
+    {
+        if (numb [i] == 1)
+        {
+            cout << i << " ";
+        }
+    }
+}

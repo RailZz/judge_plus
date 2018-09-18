@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, c, d, NOK, NOD, left, right, up, down;
+	cin >> a >> b >> c >> d;
+	left = b;
+	right = d;
+	while (left != 0 && right != 0)
+    {
+        if (left < right)
+        {
+            swap(left, right);
+        }
+        left %= right;
+    }
+    NOD = left + right;
+    NOK = b * d / NOD;
+	a *= NOK / b;
+	c *= NOK / d;
+	down = NOK;
+	up = a + c;
+	left = up;
+	right = down;
+	while (left != 0 && right != 0)
+    {
+        if (left < right)
+        {
+            swap(left, right);
+        }
+        left %= right;
+    }
+    NOD = left + right;	
+    up = up / NOD;
+    down = down / NOD;
+    cout << up << " " << down;
+}

@@ -1,0 +1,13 @@
+a = input()
+b = True
+for i in range(len(a)):
+    if a[i] == a[len(a)-i-1]:
+        b = True
+    else:
+        b = False
+if b == True:
+    print('yes')
+else:
+    print('no')
+
+    

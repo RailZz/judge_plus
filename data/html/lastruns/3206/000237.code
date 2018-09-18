@@ -1,0 +1,5 @@
+c=input()
+if c.islower() == True:
+    print(c.upper())
+else:
+    print(c)

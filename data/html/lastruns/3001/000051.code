@@ -1,0 +1,74 @@
+#include <iostream>
+//#include <bits/stdc++.h>
+#include <algorithm>
+#include <vector>
+using namespace std;
+vector<long long> mains; 
+vector<long long> tree;
+void build(long long v, long long L, long long R)
+{
+    if (L == R - 1)
+    {
+        tree[v] = mains[L];
+        return;
+    }
+    long long m = (L + R) / 2;
+    build(2 * v + 1, L, m);
+    build(2 * v + 2, m, R);
+    tree[v] = tree[2 * v + 1] + tree[2 * v + 2];
+}
+
+void change(long long v, long long L, long long R, long long pos, long long val)
+{
+    if (L == R - 1)
+    {
+        tree[v] = val;
+        return;
+    }
+    long long m = (L + R) / 2;
+    if (pos < m)
+    {
+        change(2 * v + 1, L, m, pos, val);
+    } else {
+        change(2 * v + 2, m, R, pos, val);
+    }
+    tree[v] = tree[2 * v + 1] + tree[2 * v + 2];
+}
+
+long long ask(long long v, long long L, long long R, long long askL, long long askR)
+{
+    if (askL >= R || askR <= L)
+    {
+        return 0;
+    }
+    if (askL <= L && R <= askR)
+    {
+        return tree[v];
+    }
+    long long m = (L + R) / 2;
+    return ask(2 * v + 1, L, m, askL, askR) + ask(2 * v + 2, m, R, askL, askR);
+}
+
+int main()
+{
+    long long N, request;
+    cin >> N >> request;
+    mains.resize(N);
+    tree.resize(4 * N);
+    build(0, 0, N);
+    while (request != 0)
+    {
+        if (request == 1)
+        {
+            long long x, y;
+            cin >> x >> y;
+            change(0, 0, N, x - 1, y);
+        } else {
+            long long R, L;
+            cin >> L >> R;
+            cout << ask(0, 0, N, L - 1, R) << endl;
+        }
+        cin >> request;
+    }
+    return 0;
+}

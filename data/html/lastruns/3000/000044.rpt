@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="44" judge-id="1" status="SV" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>b5d3ee1c-5d7b-46ad-bee8-0e4f3205948d</uuid>
+  <compiler_output>000044.cpp:9:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+Done processing 000044.cpp
+Total errors found: 1
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

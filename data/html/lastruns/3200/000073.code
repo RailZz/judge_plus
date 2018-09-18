@@ -1,0 +1,11 @@
+n=int(input())
+a=n%10
+b=n//10
+b=b%10
+c=n//100
+c=c%10
+d=n//1000
+e=a-d
+f=b-c
+g=e+f+1
+print(g)

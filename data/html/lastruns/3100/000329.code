@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+long long fact(int n)
+{
+    int s = 1;
+    while (n > 1)
+    {
+       s *= n;
+       n--;
+    }
+    return s;
+}
+
+int main()
+{
+    int n;
+    long long Count, ans;
+    Count = 0;
+    cin >> n;
+    ans = fact(n);
+    for (int i = 1; i <= ans; i++)
+    {
+        if (ans % i == 0)
+        {
+            Count++;
+        }
+    }
+    cout << Count;
+    return 0;
+}

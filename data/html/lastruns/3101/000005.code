@@ -1,0 +1,13 @@
+import math
+
+
+a = float(input())
+left = -math.pi / 2
+right = math.pi / 2
+while right - left > 10 ** (-5):
+    m = (left + right) / 2
+    if math.sin(m) < a:
+        left = m
+    else:
+        right = m
+print(m)

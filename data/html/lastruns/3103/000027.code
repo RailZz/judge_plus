@@ -1,0 +1,72 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector <vector <int> > gr;
+
+int main()
+{
+    int n;
+    cin >> n;
+    gr.resize(n);
+    int inp;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cin >> inp;
+            if (inp)
+            {
+                gr[i].push_back(j);
+            }
+        }
+    }
+
+    int k = 0;
+    vector <int> source;
+    bool flag;
+    for (int i = 0; i < n; i++)
+    {
+        flag = true;
+        for(auto j: gr)
+        {
+            for (auto l: j)
+            {
+                if (l == i)
+                {
+                    flag = false;
+                }
+            }
+        }
+        if (flag)
+        {
+            k++;
+            source.push_back(i + 1);
+        }
+    }
+
+    cout << k << '\n';
+    for (auto i: source)
+    {
+        cout << i << '\n';
+    }
+
+    k = 0;
+    vector <int> sink;
+    for (int i = 0; i < n; i++)
+    {
+        if (gr[i].empty())
+        {
+            k++;
+            sink.push_back(i + 1);
+        }
+    }
+    cout << k << '\n';
+    for (auto i: sink)
+    {
+        cout << i << '\n';
+    }
+
+    return 0;
+}

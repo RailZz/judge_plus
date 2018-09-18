@@ -1,0 +1,11 @@
+a = [int(i) for i in input().split()]
+i=0
+e=0
+b=len(a)
+while i<b:
+    if a[i]>e:
+        e=a[i]
+        i+=1
+    else:
+        i+=1
+print(e)

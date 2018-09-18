@@ -1,0 +1,14 @@
+a = list(map(int,input().split))
+ma = -1
+mi = a[0]
+maxI = 0
+minI = 0
+for i in range(len(a)):
+    if a[i]>ma:
+        ma=a[i]
+        maxI = i
+    if a[i]<mi:
+        mi=a[i]
+        minI = i
+a[maxI], a[minI] = a[minI], a[maxI]
+print(*a)

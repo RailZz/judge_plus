@@ -1,0 +1,15 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="46" judge-id="3" status="SV" scoring="ACM" run-tests="0" contest-id="3000" compile-error="yes" >
+  <uuid>def56c5f-cfb4-4b61-b146-632fb46aa55b</uuid>
+  <compiler_output>000046.cpp:53:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+000046.cpp:53:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+000046.cpp:55:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+Done processing 000046.cpp
+Total errors found: 3
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

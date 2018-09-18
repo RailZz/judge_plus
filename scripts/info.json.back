@@ -1,0 +1,396 @@
+{
+    "P": {
+        "Contests": [
+            {
+                "ContestName": "Задачи на строки",
+                "EjudgeID": 200100,
+                "Problems": [
+                    {
+                        "EjudgeID": 1,
+                        "InformaticsID": 103,
+                        "Letter": "A",
+                        "Name": "Перевести символ в верхний регистр"
+                    },
+                    {
+                        "EjudgeID": 2,
+                        "InformaticsID": 2864,
+                        "Letter": "B",
+                        "Name": "Вполоборота"
+                    },
+                    {
+                        "EjudgeID": 3,
+                        "InformaticsID": 3128,
+                        "Letter": "C",
+                        "Name": "Вставка символов"
+                    },
+                    {
+                        "EjudgeID": 4,
+                        "InformaticsID": 105,
+                        "Letter": "D",
+                        "Name": "Совпадают ли строки?"
+                    },
+                    {
+                        "EjudgeID": 5,
+                        "InformaticsID": 106,
+                        "Letter": "E",
+                        "Name": "Количество слов"
+                    },
+                    {
+                        "EjudgeID": 6,
+                        "InformaticsID": 3598,
+                        "Letter": "F",
+                        "Name": "Сапер"
+                    },
+                    {
+                        "EjudgeID": 7,
+                        "InformaticsID": 3735,
+                        "Letter": "G",
+                        "Name": "Делаем срезы"
+                    },
+                    {
+                        "EjudgeID": 8,
+                        "InformaticsID": 107,
+                        "Letter": "H",
+                        "Name": "Самое длинное слово"
+                    },
+                    {
+                        "EjudgeID": 9,
+                        "InformaticsID": 3739,
+                        "Letter": "I",
+                        "Name": "Первое и последнее вхождение"
+                    },
+                    {
+                        "EjudgeID": 10,
+                        "InformaticsID": 108,
+                        "Letter": "J",
+                        "Name": "Является ли слово палиндромом?"
+                    },
+                    {
+                        "EjudgeID": 11,
+                        "InformaticsID": 3740,
+                        "Letter": "K",
+                        "Name": "Второе вхождение"
+                    },
+                    {
+                        "EjudgeID": 12,
+                        "InformaticsID": 110,
+                        "Letter": "L",
+                        "Name": "Поиск подстроки"
+                    },
+                    {
+                        "EjudgeID": 13,
+                        "InformaticsID": 3748,
+                        "Letter": "M",
+                        "Name": "Удалить каждый третий символ"
+                    },
+                    {
+                        "EjudgeID": 14,
+                        "InformaticsID": 111,
+                        "Letter": "N",
+                        "Name": "Капитан Флинт"
+                    },
+                    {
+                        "EjudgeID": 15,
+                        "InformaticsID": 111184,
+                        "Letter": "O",
+                        "Name": "Питон"
+                    },
+                    {
+                        "EjudgeID": 16,
+                        "InformaticsID": 115,
+                        "Letter": "P",
+                        "Name": "Количество нулей"
+                    },
+                    {
+                        "EjudgeID": 17,
+                        "InformaticsID": 240,
+                        "Letter": "Q",
+                        "Name": "Негласный палиндром"
+                    },
+                    {
+                        "EjudgeID": 18,
+                        "InformaticsID": 111506,
+                        "Letter": "R",
+                        "Name": "Скучная лекция"
+                    },
+                    {
+                        "EjudgeID": 19,
+                        "InformaticsID": 111838,
+                        "Letter": "S",
+                        "Name": "Буква и цифра"
+                    },
+                    {
+                        "EjudgeID": 20,
+                        "InformaticsID": 328,
+                        "Letter": "T",
+                        "Name": "Средний балл по предметам"
+                    },
+                    {
+                        "EjudgeID": 21,
+                        "InformaticsID": 111857,
+                        "Letter": "U",
+                        "Name": "Телефонные номера"
+                    },
+                    {
+                        "EjudgeID": 22,
+                        "InformaticsID": 329,
+                        "Letter": "V",
+                        "Name": "Учащиеся без троек"
+                    },
+                    {
+                        "EjudgeID": 23,
+                        "InformaticsID": 501,
+                        "Letter": "W",
+                        "Name": "Пароль"
+                    },
+                    {
+                        "EjudgeID": 24,
+                        "InformaticsID": 111872,
+                        "Letter": "X",
+                        "Name": "Запятые и пробелы"
+                    },
+                    {
+                        "EjudgeID": 25,
+                        "InformaticsID": 111874,
+                        "Letter": "Y",
+                        "Name": "ФИО"
+                    },
+                    {
+                        "EjudgeID": 26,
+                        "InformaticsID": 509,
+                        "Letter": "Z",
+                        "Name": "Количество слов"
+                    },
+                    {
+                        "EjudgeID": 27,
+                        "InformaticsID": 112531,
+                        "Letter": "AA",
+                        "Name": "Время ужина"
+                    },
+                    {
+                        "EjudgeID": 28,
+                        "InformaticsID": 774,
+                        "Letter": "AB",
+                        "Name": "Шифровка"
+                    },
+                    {
+                        "EjudgeID": 29,
+                        "InformaticsID": 792,
+                        "Letter": "AC",
+                        "Name": "Число"
+                    },
+                    {
+                        "EjudgeID": 30,
+                        "InformaticsID": 112812,
+                        "Letter": "AD",
+                        "Name": "Шляпа"
+                    },
+                    {
+                        "EjudgeID": 31,
+                        "InformaticsID": 113448,
+                        "Letter": "AE",
+                        "Name": "Королевская лотерея"
+                    },
+                    {
+                        "EjudgeID": 32,
+                        "InformaticsID": 848,
+                        "Letter": "AF",
+                        "Name": "ЕГЭ"
+                    },
+                    {
+                        "EjudgeID": 33,
+                        "InformaticsID": 113451,
+                        "Letter": "AG",
+                        "Name": "Шифровальный диск"
+                    },
+                    {
+                        "EjudgeID": 34,
+                        "InformaticsID": 857,
+                        "Letter": "AH",
+                        "Name": "Контрольная по ударениям"
+                    },
+                    {
+                        "EjudgeID": 35,
+                        "InformaticsID": 113454,
+                        "Letter": "AI",
+                        "Name": "Шифр по решетке"
+                    },
+                    {
+                        "EjudgeID": 36,
+                        "InformaticsID": 1004,
+                        "Letter": "AJ",
+                        "Name": "Таймер"
+                    },
+                    {
+                        "EjudgeID": 37,
+                        "InformaticsID": 1026,
+                        "Letter": "AK",
+                        "Name": "Многочлен"
+                    },
+                    {
+                        "EjudgeID": 38,
+                        "InformaticsID": 113653,
+                        "Letter": "AL",
+                        "Name": ""
+                    },
+                    {
+                        "EjudgeID": 39,
+                        "InformaticsID": 113654,
+                        "Letter": "AM",
+                        "Name": ""
+                    },
+                    {
+                        "EjudgeID": 40,
+                        "InformaticsID": 1173,
+                        "Letter": "AN",
+                        "Name": "Удаление цифр"
+                    },
+                    {
+                        "EjudgeID": 41,
+                        "InformaticsID": 1181,
+                        "Letter": "AO",
+                        "Name": "Благозвучное слово"
+                    },
+                    {
+                        "EjudgeID": 42,
+                        "InformaticsID": 1200,
+                        "Letter": "AP",
+                        "Name": "Определите порядок действий"
+                    },
+                    {
+                        "EjudgeID": 43,
+                        "InformaticsID": 1230,
+                        "Letter": "AQ",
+                        "Name": "EuroEnglish"
+                    },
+                    {
+                        "EjudgeID": 44,
+                        "InformaticsID": 1236,
+                        "Letter": "AR",
+                        "Name": "Сортировка масс"
+                    },
+                    {
+                        "EjudgeID": 45,
+                        "InformaticsID": 1415,
+                        "Letter": "AS",
+                        "Name": "Шифр Юлия"
+                    },
+                    {
+                        "EjudgeID": 46,
+                        "InformaticsID": 1421,
+                        "Letter": "AT",
+                        "Name": "Удали пробелы"
+                    },
+                    {
+                        "EjudgeID": 47,
+                        "InformaticsID": 1435,
+                        "Letter": "AU",
+                        "Name": "IP-адрес"
+                    },
+                    {
+                        "EjudgeID": 48,
+                        "InformaticsID": 1619,
+                        "Letter": "AV",
+                        "Name": "Смайлики"
+                    },
+                    {
+                        "EjudgeID": 49,
+                        "InformaticsID": 1631,
+                        "Letter": "AW",
+                        "Name": "Язык Мумба-Юмба"
+                    },
+                    {
+                        "EjudgeID": 50,
+                        "InformaticsID": 1926,
+                        "Letter": "AX",
+                        "Name": "Миша и&nbsp;не&shy;га&shy;тив"
+                    },
+                    {
+                        "EjudgeID": 51,
+                        "InformaticsID": 2763,
+                        "Letter": "AY",
+                        "Name": "«У моего папы больше денег»"
+                    },
+                    {
+                        "EjudgeID": 52,
+                        "InformaticsID": 2765,
+                        "Letter": "AZ",
+                        "Name": "Считалочка"
+                    },
+                    {
+                        "EjudgeID": 53,
+                        "InformaticsID": 2767,
+                        "Letter": "BA",
+                        "Name": "Хорошие стихи"
+                    },
+                    {
+                        "EjudgeID": 54,
+                        "InformaticsID": 2794,
+                        "Letter": "BB",
+                        "Name": "Строки-1"
+                    },
+                    {
+                        "EjudgeID": 55,
+                        "InformaticsID": 2795,
+                        "Letter": "BC",
+                        "Name": "$ax+b=0$"
+                    }
+                ],
+                "StatementLink": "P1.htm"
+            },
+            {
+                "ContestName": "Параллель P. Линейные алгоритмы",
+                "EjudgeID": 200101,
+                "Problems": [
+                    {
+                        "EjudgeID": 1,
+                        "InformaticsID": 3456,
+                        "Letter": "A",
+                        "Name": "Hello, Harry!"
+                    },
+                    {
+                        "EjudgeID": 2,
+                        "InformaticsID": 3457,
+                        "Letter": "B",
+                        "Name": "Следующее и предыдущее"
+                    },
+                    {
+                        "EjudgeID": 3,
+                        "InformaticsID": 50002,
+                        "Letter": "C",
+                        "Name": "Слово в рамке"
+                    },
+                    {
+                        "EjudgeID": 4,
+                        "InformaticsID": 50003,
+                        "Letter": "D",
+                        "Name": "Квадрат"
+                    },
+                    {
+                        "EjudgeID": 5,
+                        "InformaticsID": 50004,
+                        "Letter": "E",
+                        "Name": "Рамка 2"
+                    },
+                    {
+                        "EjudgeID": 6,
+                        "InformaticsID": 50005,
+                        "Letter": "F",
+                        "Name": "Плюсик"
+                    },
+                    {
+                        "EjudgeID": 7,
+                        "InformaticsID": 3535,
+                        "Letter": "G",
+                        "Name": "Пингвины"
+                    }
+                ],
+                "StatementLink": "P2.htm"
+            }
+        ],
+        "HTMLComment": "",
+        "RegisterContest": 100,
+        "StartContest": 200100,
+        "Users": []
+    }
+}

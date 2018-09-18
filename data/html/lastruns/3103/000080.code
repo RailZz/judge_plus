@@ -1,0 +1,14 @@
+ar = list(map(int, input().split()))
+n = ar[0]
+m = ar[1]
+otvet = [0] * n
+for k in range(m):
+    li = list(map(int, input().split()))
+    i = li[0] - 1
+    j = li[1] - 1
+    otvet[i] += 1
+    otvet[j] += 1
+otvet = str(otvet).replace('[', '')
+otvet = otvet.replace(']', '')
+otvet = otvet.replace(',', '')
+print(otvet)

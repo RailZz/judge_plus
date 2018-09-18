@@ -1,0 +1,5 @@
+n = int(input())
+a = n // 3600
+b = n % 3600 // 60
+c = n % 3600 % 60
+print(a, ':', '{:02}'.format(b), ':', '{:02}'.format(c), sep = '')

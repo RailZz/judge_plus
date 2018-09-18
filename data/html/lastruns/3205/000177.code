@@ -1,0 +1,10 @@
+n, m = [int(i) for i in input() .split()]
+b = 0
+matrix = [[int(i) for i in input() .split()]*n for i in range(n)]
+for i in range(n - 1):
+    for j in range(m - 1):
+        if matrix[i][j] + matrix[i][j + 1] > matrix[i + 1][j] + matrix[i + 1][j + 1]:
+            b = matrix[i][j] + matrix[i][j + 1]
+        else:
+            b = matrix[i + 1][j] + matrix[i + 1][j + 1]
+print(b, i, sep = '\n')

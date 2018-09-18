@@ -1,0 +1,4 @@
+n=int(input())
+b=n%2
+n=n-b+2
+print(n)

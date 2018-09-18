@@ -1,0 +1,7 @@
+s=input()
+b=s.split()
+m=0
+for i in range (len(b)):
+    if (len(b[i])) >(len(b[m])):
+        m=i
+print(b[m],len(b[m]),sep='\n')

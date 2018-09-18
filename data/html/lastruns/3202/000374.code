@@ -1,0 +1,11 @@
+n = int(input())
+if n >= 11 and n <= 14:
+        print(n, 'korov')
+else:
+        konec = n % 10
+        if konec == 0 or (konec >= 5 and konec <= 9):
+                print(n, 'korov')
+        if konec == 1:
+                print(n, 'korova')
+        if konec >=2 and konec <=4:
+                print(n, 'korovy')

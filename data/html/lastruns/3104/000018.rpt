@@ -1,0 +1,43 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="18" judge-id="19" status="PE" scoring="ACM" run-tests="2" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="2" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>c022016e-e3bc-430f-88ab-33a97317a47e</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="3" max-memory-used="311296"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=311296, maxrss=2785280, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=17268736, maxrss=3137536, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">1 1
+179
+</input>
+      <output size="4">179
+</output>
+      <correct size="5">179
+
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="PE" time="1" real-time="2" max-memory-used="311296"  checker-comment="wrong output format Sum of the way does not match the given sum, sum - 4, given - 5" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=3006464, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=2, stime=1, ptime=3, rtime=98, maxvsz=17268736, maxrss=3125248, nvcsw=2, nivcsw=2 }</checker-stats-str>
+      <input size="12">2 2
+1 2
+3 1
+</input>
+      <output size="6">5
+R D </output>
+      <correct size="7">5
+D R 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="84">wrong output format Sum of the way does not match the given sum, sum - 4, given - 5
+</checker>
+    </test>
+  </tests>
+</testing-report>

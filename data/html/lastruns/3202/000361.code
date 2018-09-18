@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+c=int(input())
+k=(a+b)
+n=(a+c)
+m=(c+b)
+if c <= k and b <= n and a <= m:
+ print('YES')
+else:
+ print('NO')

@@ -1,0 +1,28 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="215" judge-id="3" status="WA" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>5ff2f718-4298-4b7d-a30d-40d008272f83</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000215.cpp: In function 'int main()':
+000215.cpp:11:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i &lt; a.size(); ++i){
+                   ^
+</compiler_output>
+  <tests>
+    <test num="1" status="WA" time="2" real-time="3" max-memory-used="307200"  checker-comment="Too few numbers in the output" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=3, maxvsz=307200, maxrss=3006464, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">1 2 3 4 5
+</input>
+      <output size="0"></output>
+      <correct size="11">5 1 2 3 4 
+</correct>
+      <stderr size="10">1 2 3 4 5 </stderr>
+      <checker size="30">Too few numbers in the output
+</checker>
+    </test>
+  </tests>
+</testing-report>

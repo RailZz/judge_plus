@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+bool f (vector<int> &a, int n, int k, int ans) {
+	int summ = 0;
+	for (int i = 0; i<n; ++i) summ += (a[i] / ans);
+	if (summ >= k) return true;
+	else return false;
+}
+
+int main() {
+	
+	int n, k;
+	cin >> n >> k;
+	vector<int> a(n);
+	for (int i = 0; i<n; ++i) cin >> a[i];
+	
+	int l = 0, r = n*max(x, y);
+	while (r-l > 1) {
+		int mid = (r+l) / 2;
+		if (f(a, n, k, mid)) r = mid;
+		else l = mid;
+	}
+	
+	cout << r;
+	
+    return 0;
+}

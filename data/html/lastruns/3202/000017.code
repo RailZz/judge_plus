@@ -1,0 +1,9 @@
+x = int(input())
+l = int(input())
+m = int(input())
+if x > l and x > m:
+    print(x)
+if l > x and l > m:
+    print(l)
+if m > l and m > x:
+    print(m)

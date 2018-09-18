@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="77" judge-id="64" status="RT" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>66964a06-0d0d-4bcc-be1b-e9a29c453c88</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="73" real-time="79" max-memory-used="30339072" >
+  <program-stats-str>{ utime=70, stime=3, ptime=73, rtime=79, maxvsz=30339072, maxrss=27295744, nvcsw=1, nivcsw=11 }</program-stats-str>
+      <input size="6">0 0 0
+</input>
+      <output size="0"></output>
+      <stderr size="215">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000077&quot;, line 19, in &lt;module&gt;
+    x=int(input())
+ValueError: invalid literal for int() with base 10: '0 0 0'
+</stderr>
+    </test>
+  </tests>
+</testing-report>

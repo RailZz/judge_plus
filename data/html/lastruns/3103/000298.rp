@@ -1,0 +1,11 @@
+<input size="26">4
+****
+*..*
+*..*
+****
+3 3
+</input>
+      <output size="1">2</output>
+      <correct size="2">4
+</correct>
+      

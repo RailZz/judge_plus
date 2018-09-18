@@ -1,0 +1,4 @@
+n=int(input())
+k=int(input())
+a= (n-k % n)% n
+print(a)

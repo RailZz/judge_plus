@@ -1,0 +1,18 @@
+import os
+fileaddres = "тот самый.txt" 
+file = open(fileaddres,'r')
+code = ()
+code = input("Задайте код:")
+print("\n" * 100)
+answer = input("\nКакой код?")
+while code != answer:
+    answer = int(input("\nКод неверный!Попробуй снова!"))
+    if code == answer:
+        break 
+if code == answer:
+    print ("\nДоступ разрешён!")
+if code == answer:
+    print(file.read())
+else:
+    print()
+file.close()

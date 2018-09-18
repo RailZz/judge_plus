@@ -1,0 +1,37 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="216" judge-id="26" status="SE" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>6d4abe2f-2a89-4d33-8d89-dbb2007d6aa4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="280" real-time="298" max-memory-used="18698240" >
+  <program-stats-str>{ utime=258, stime=22, ptime=280, rtime=298, maxvsz=18698240, maxrss=19410944, nvcsw=1, nivcsw=43 }</program-stats-str>
+      <input size="20">6 4
+3 1
+1 2
+5 4
+2 3
+</input>
+      <output size="0"></output>
+      <stderr size="474">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000216&quot;, line 23, in &lt;module&gt;
+    dfs(i, c)
+  File &quot;./000216&quot;, line 9, in dfs
+    dfs(u, c)
+  File &quot;./000216&quot;, line 9, in dfs
+    dfs(u, c)
+  File &quot;./000216&quot;, line 9, in dfs
+    dfs(u, c)
+  File &quot;./000216&quot;, line 7, in dfs
+    for u in ar[v]:
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

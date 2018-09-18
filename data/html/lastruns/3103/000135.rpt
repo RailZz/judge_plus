@@ -1,0 +1,216 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="135" judge-id="7" status="OK" scoring="ACM" run-tests="10" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>4b97dd57-991f-4e2f-a0b1-2b86dea7b0b4</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000135.cpp: In function 'void unterBfs()':
+000135.cpp:22:64: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 if ((a.first + dx[i] &gt; -1) &amp;&amp; (a.first + dx[i] &lt; used.size()) &amp;&amp; (a.second + dy[i] &gt; -1) &amp;&amp; (a.second + dy[i] &lt; used.size()) &amp;&amp; (!used[a.first + dx[i]][a.second + dy[i]]))
+                                                                ^
+000135.cpp:22:127: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 if ((a.first + dx[i] &gt; -1) &amp;&amp; (a.first + dx[i] &lt; used.size()) &amp;&amp; (a.second + dy[i] &gt; -1) &amp;&amp; (a.second + dy[i] &lt; used.size()) &amp;&amp; (!used[a.first + dx[i]][a.second + dy[i]]))
+                                                                                                                               ^
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="2" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=319488, maxrss=2928640, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">5
+1 1
+3 2
+</input>
+      <output size="10">1
+1 1
+3 2
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="2" status="OK" time="2" real-time="3" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=1, stime=1, ptime=2, rtime=3, maxvsz=319488, maxrss=2969600, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="11">10
+9 7
+8 9
+</input>
+      <output size="10">1
+9 7
+8 9
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="3" status="OK" time="1" real-time="2" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=319488, maxrss=2928640, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">5
+3 3
+5 1
+</input>
+      <output size="22">4
+3 3
+1 2
+2 4
+3 2
+5 1
+</output>
+      <correct size="2">4
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="4" status="OK" time="1" real-time="2" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=319488, maxrss=3018752, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="10">7
+6 3
+1 7
+</input>
+      <output size="18">3
+6 3
+4 4
+2 5
+1 7
+</output>
+      <correct size="2">3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="5" status="OK" time="1" real-time="2" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=319488, maxrss=2928640, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">5
+1 5
+5 1
+</input>
+      <output size="22">4
+1 5
+2 3
+1 1
+3 2
+5 1
+</output>
+      <correct size="2">4
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="6" status="OK" time="1" real-time="3" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=319488, maxrss=3158016, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">17
+7 4
+15 8
+</input>
+      <output size="25">4
+7 4
+9 5
+11 6
+13 7
+15 8
+</output>
+      <correct size="2">4
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="7" status="OK" time="1" real-time="3" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=319488, maxrss=2994176, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">19
+8 5
+10 3
+</input>
+      <output size="23">4
+8 5
+6 4
+7 6
+8 4
+10 3
+</output>
+      <correct size="2">4
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="8" status="OK" time="1" real-time="2" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=319488, maxrss=3076096, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">6
+5 4
+5 6
+</input>
+      <output size="14">2
+5 4
+3 5
+5 6
+</output>
+      <correct size="2">2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="9" status="OK" time="1" real-time="2" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=319488, maxrss=3026944, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">8
+6 7
+4 3
+</input>
+      <output size="14">2
+6 7
+5 5
+4 3
+</output>
+      <correct size="2">2
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="10" status="OK" time="1" real-time="2" max-memory-used="319488"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=319488, maxrss=3051520, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2928640, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="13">20
+2 3
+19 20
+</input>
+      <output size="69">12
+2 3
+1 5
+2 7
+3 9
+4 11
+5 13
+7 14
+9 15
+11 16
+13 17
+15 18
+17 19
+19 20
+</output>
+      <correct size="3">12
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+  </tests>
+</testing-report>

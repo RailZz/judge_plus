@@ -1,0 +1,26 @@
+c = float(input())
+left = 0
+right = 5 * 10 ** 9
+while right - left > 10 ** (-6):
+    m = (left + right) / 2
+    if m * m + m ** 0.5 < c:
+        left = m
+    else:
+        right = m
+print(m)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

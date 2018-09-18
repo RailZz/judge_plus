@@ -1,0 +1,16 @@
+N = int(input())
+s = 0
+p = 0
+m = 0
+i = 0
+while i<N:
+    l = int(input())
+    if l==0:
+        s = s+1
+    else:
+        if l>0:
+            p = p+1
+        else:
+            m = m+1
+    i = i+1
+print(s, p, m)

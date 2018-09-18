@@ -1,0 +1,45 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="113" judge-id="41" status="TL" scoring="ACM" run-tests="3" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="3" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>a93aa7d2-4b2c-4974-8d58-c71526904327</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="26" real-time="29" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=24, stime=2, ptime=26, rtime=29, maxvsz=307200, maxrss=6352896, nvcsw=1, nivcsw=5 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17264640, maxrss=3170304, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="2">1
+</input>
+      <output size="1">
+</output>
+      <correct size="2">0
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="OK" time="30" real-time="34" max-memory-used="307200"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=26, stime=4, ptime=30, rtime=34, maxvsz=307200, maxrss=6307840, nvcsw=1, nivcsw=8 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=17264640, maxrss=3313664, nvcsw=1, nivcsw=3 }</checker-stats-str>
+      <input size="2">5
+</input>
+      <output size="4">121
+</output>
+      <correct size="2">3
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="3" status="TL" time="2058" real-time="2173" max-memory-used="24461312" >
+  <program-stats-str>{ utime=1938, stime=120, ptime=2058, rtime=2173, maxvsz=24461312, maxrss=21303296, nvcsw=1, nivcsw=152 }</program-stats-str>
+      <input size="7">962340
+</input>
+      <output size="0"></output>
+      <stderr size="0"></stderr>
+    </test>
+  </tests>
+</testing-report>

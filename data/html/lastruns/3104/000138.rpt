@@ -1,0 +1,36 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="138" judge-id="66" status="RT" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>ed12f7d7-1428-499b-87f5-55e39beb9c74</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000138.cpp: In function 'int main()':
+000138.cpp:86:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j = 1; j &lt;= d[n]; j++){
+                       ^
+000138.cpp:64:11: warning: unused variable 'j' [-Wunused-variable]
+     ll k, j;
+           ^
+</compiler_output>
+  <tests>
+    <test num="1" status="RT" term-signal="6" time="1" real-time="3" max-memory-used="307200" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2908160, nvcsw=1, nivcsw=3 }</program-stats-str>
+      <input size="2">1
+</input>
+      <output size="0"></output>
+      <stderr size="372">*** Error in `./000138': free(): invalid pointer: 0x082a9a28 ***
+======= Backtrace: =========
+/lib/libc.so.6(+0x6b09b)[0xafbf009b]
+/lib/libc.so.6(+0x7400a)[0xafbf900a]
+/lib/libc.so.6(cfree+0x50)[0xafbfc6e0]
+/lib/libstdc++.so.6(_ZdlPv+0x1c)[0xafe2cf2c]
+./000138[0x8048abc]
+/lib/libc.so.6(__libc_start_main+0xf5)[0xafb9d545]
+./000138[0x8048c79]
+======= Memory map: ========
+</stderr>
+    </test>
+  </tests>
+</testing-report>

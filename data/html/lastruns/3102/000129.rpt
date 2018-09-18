@@ -1,0 +1,26 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="129" judge-id="74" status="SE" scoring="ACM" run-tests="1" contest-id="3102" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>8f768103-f3d2-4b70-90a4-a43a32bebce2</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="281" real-time="296" max-memory-used="18698240" >
+  <program-stats-str>{ utime=260, stime=21, ptime=281, rtime=296, maxvsz=18698240, maxrss=19382272, nvcsw=1, nivcsw=37 }</program-stats-str>
+      <input size="19">6 3
+2 5 7 11 15 20
+</input>
+      <output size="0"></output>
+      <stderr size="242">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000129&quot;, line 4
+    ﻿var
+       ^
+SyntaxError: invalid character in identifier
+</stderr>
+    </test>
+  </tests>
+</testing-report>

@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="245" judge-id="153" status="SV" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>dbe8f2d0-133a-4786-9729-a65c25297dad</uuid>
+  <compiler_output>000245.py:5:9: E228 missing whitespace around modulo operator
+000245.py:6:10: E225 missing whitespace around operator
+000245.py:7:6: E225 missing whitespace around operator
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

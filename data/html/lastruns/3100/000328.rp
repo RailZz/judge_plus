@@ -1,0 +1,12 @@
+<input size="5">2000
+</input>
+      <output size="43">220 284
+346 492
+566 870
+914 1240
+1294 1770
+</output>
+      <correct size="18">220 284
+1184 1210
+</correct>
+      

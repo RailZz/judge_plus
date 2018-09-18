@@ -1,0 +1,18 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="68" judge-id="29" status="SV" scoring="ACM" run-tests="0" contest-id="3001" compile-error="yes" >
+  <uuid>67e86b07-3837-4e4a-bd1d-13e8ad43675a</uuid>
+  <compiler_output>000068.cpp:28:  Extra space before ( in function call  [whitespace/parens] [4]
+000068.cpp:38:  Extra space before ( in function call  [whitespace/parens] [4]
+000068.cpp:40:  Extra space before ( in function call  [whitespace/parens] [4]
+000068.cpp:48:  Extra space before ( in function call  [whitespace/parens] [4]
+000068.cpp:53:  Extra space before ( in function call  [whitespace/parens] [4]
+000068.cpp:56:  Extra space before ( in function call  [whitespace/parens] [4]
+Done processing 000068.cpp
+Total errors found: 6
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

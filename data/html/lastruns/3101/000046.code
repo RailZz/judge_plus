@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+const double PI = 3.14159265358979323846;
+using namespace std;
+
+int main()
+{
+    double a;
+    cin >> a;
+    double left = -(PI / 2);
+    double right = PI / 2;
+    double mid = 0;
+    for (int i = 0; i < 100; i++)
+    {
+        mid = (left + right) / 2;
+        if (sin(mid) <= a)
+        {
+            left = mid;
+        }
+        else
+        {
+            right = mid;
+        }
+    }
+    cout.precision(10);
+    cout << left;
+    return 0;
+}

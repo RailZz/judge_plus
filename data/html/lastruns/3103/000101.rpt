@@ -1,0 +1,128 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="101" judge-id="32" status="WA" scoring="ACM" run-tests="6" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="6" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>fb934e67-5bf5-4993-b2c8-5db137e0de13</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000101.cpp: In function 'int main()':
+000101.cpp:21:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int j=0;j&lt;G1.size();j++)
+                 ^
+000101.cpp:23:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int z=0;z&lt;gr[i].size();z++)
+                  ^
+000101.cpp:37:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j2=0;j2&lt;G2.size();j2++)
+                     ^
+000101.cpp:39:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      for (int z2=0;z2&lt;gr[i2].size();z2++)
+                      ^
+000101.cpp:64:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i&lt;min(G1.size(),G2.size());i++)
+                 ^
+</compiler_output>
+  <tests>
+    <test num="1" status="OK" time="1" real-time="3" max-memory-used="311296"  checker-comment="ok Answer NO" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=311296, maxrss=2912256, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=462848, maxrss=2682880, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="16">4 3
+1 2
+2 3
+1 3
+</input>
+      <output size="2">NO</output>
+      <correct size="3">NO
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="14">ok Answer NO 
+</checker>
+    </test>
+    <test num="2" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2949120, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=462848, maxrss=2682880, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">5 0
+</input>
+      <output size="4">YES
+</output>
+      <correct size="15">YES
+1 2 3 4 5 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="3" status="OK" time="2" real-time="3" max-memory-used="311296"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=2, ptime=2, rtime=3, maxvsz=311296, maxrss=3080192, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=462848, maxrss=2682880, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">3 2
+1 2
+1 3
+</input>
+      <output size="6">YES
+1 </output>
+      <correct size="7">YES
+1 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="4" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="ok Ok!!!" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2781184, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=462848, maxrss=2682880, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="24">5 5
+1 2
+1 3
+2 4
+3 4
+4 5
+</input>
+      <output size="8">YES
+1 4 </output>
+      <correct size="9">YES
+1 4 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="10">ok Ok!!! 
+</checker>
+    </test>
+    <test num="5" status="OK" time="1" real-time="2" max-memory-used="311296"  checker-comment="ok Answer NO" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2899968, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=462848, maxrss=2682880, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="24">5 5
+1 2
+2 3
+3 4
+4 5
+5 1
+</input>
+      <output size="2">NO</output>
+      <correct size="3">NO
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="14">ok Answer NO 
+</checker>
+    </test>
+    <test num="6" status="WA" time="1" real-time="2" max-memory-used="311296"  checker-comment="WA ???????? ????? NO when solution exists" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=311296, maxrss=2789376, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=462848, maxrss=2682880, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="28">8 6
+1 3
+3 4
+2 4
+5 6
+6 7
+5 8
+</input>
+      <output size="2">NO</output>
+      <correct size="13">YES
+1 4 5 7 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="43">WA ???????? ????? NO when solution exists 
+</checker>
+    </test>
+  </tests>
+</testing-report>

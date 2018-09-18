@@ -1,0 +1,11 @@
+a = int(input())
+i = 1
+s = 0
+o = 0
+while i<=a:
+    o=a%i
+    if o==0:
+        s=s+1
+    i=i+1
+print(s)
+    

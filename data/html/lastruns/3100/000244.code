@@ -1,0 +1,13 @@
+program a1;
+var a,i:longint; n:string;
+begin
+read(a);
+n:='prime';
+i:=2;
+while i*i<=a do
+begin
+if (a mod i=0) then n:='composite';
+i:=i+1;
+end;
+writeln(n);
+end.

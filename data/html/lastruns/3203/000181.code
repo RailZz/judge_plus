@@ -1,0 +1,7 @@
+n=int(input())
+h=1
+k=0
+while h <=n:
+    k=k+h**2
+    h+=1
+print(k)

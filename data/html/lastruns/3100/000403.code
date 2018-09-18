@@ -1,0 +1,12 @@
+n = int(input())
+a = 1
+if n % 2 == 0 or n % 10 == 5:
+    print("No")
+else:
+    for i in range (n):
+        if a % n == 0:
+            print(a)
+            break
+        else:
+            a = a * 10 + 1
+        

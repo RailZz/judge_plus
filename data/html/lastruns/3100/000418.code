@@ -1,0 +1,18 @@
+var a:array[1..10000] of longint;
+    i,n:longint;
+begin
+read(n);
+for i:=1 to n do
+    read(a[i]);
+for i:=1 to n-1 do 
+
+begin
+while a[i]<>a[i+1] do
+    if a[i]>a[i+1] 
+            then a[i]:=a[i]-a[i+1] 
+    else a[i+1]:=a[i+1]-a[i];
+a[i+1]:=a[i];
+end;
+
+writeln(a[i]);
+end.

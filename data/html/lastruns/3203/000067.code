@@ -1,0 +1,16 @@
+n = int(input())
+i = 1
+s1 = 0
+s2 = 0
+s3 = 0
+while (i <= n ) :
+    b = int(input())
+    if (b == 0 ) :
+        s1 += 1
+    elif (b > 0) :
+        s2 += 1
+    else :
+        s3 += 1
+    i += 1
+print(s1,s2,s3)
+

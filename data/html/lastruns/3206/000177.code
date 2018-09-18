@@ -1,0 +1,8 @@
+s=input().split
+maxIndex= 0
+maxLength= 0
+for n in range (len(s)):
+    maxLength= n
+    maxLength= len (s[n])
+print (s[maxIndex]
+print (maxLength)

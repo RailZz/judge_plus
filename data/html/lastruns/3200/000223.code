@@ -1,0 +1,3 @@
+d=inp(input())
+a=d%10
+print(d)

@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="186" judge-id="5" status="SE" scoring="ACM" run-tests="1" contest-id="3205" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>6e5bda02-1fac-449c-b9b1-02719cd992bc</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="285" real-time="298" max-memory-used="18698240" >
+  <program-stats-str>{ utime=256, stime=29, ptime=285, rtime=298, maxvsz=18698240, maxrss=19320832, nvcsw=1, nivcsw=41 }</program-stats-str>
+      <input size="14">1 2 2 3 3 3 4
+</input>
+      <output size="0"></output>
+      <stderr size="263">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000186&quot;, line 4
+    a=[int(i)fori i in input().split()]
+                ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

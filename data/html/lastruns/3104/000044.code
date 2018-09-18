@@ -1,0 +1,10 @@
+n = int(input())
+a = 1
+b = 1
+for i in range(2, n):
+    if i % 2 == 0:
+        a = a + b
+    else:
+        b = b + a
+print(max(a, b))
+

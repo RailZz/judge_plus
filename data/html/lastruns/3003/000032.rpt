@@ -1,0 +1,20 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="32" judge-id="33" status="CE" scoring="ACM" run-tests="0" contest-id="3003" compile-error="yes" >
+  <uuid>ff402b85-6218-48c0-b2ca-907afaf49973</uuid>
+  <compiler_output>Done processing 000032.cpp
+000032.cpp:9:1: error: expected ',' or ';' before 'vector'
+ vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; gr;
+ ^
+000032.cpp: In function 'int f(int, int, int)':
+000032.cpp:15:14: error: 'gr' was not declared in this scope
+     d.assign(gr.size(), INF2);
+              ^
+000032.cpp: In function 'int main()':
+000032.cpp:49:5: error: 'gr' was not declared in this scope
+     gr.resize(n);
+     ^
+
+</compiler_output>
+</testing-report>

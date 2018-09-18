@@ -1,0 +1,5 @@
+n=int(input())
+k=int(input())
+n=(32749)
+k=(173856)
+print(k//n)

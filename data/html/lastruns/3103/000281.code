@@ -1,0 +1,47 @@
+var
+  i, n, s, u, z, f, count: integer;
+  x1: string;
+  gr: array of array of boolean;
+  visited: array of boolean;
+
+procedure dfs(v: longint);
+var
+  k: longint;
+begin
+  visited[v] := true;
+  
+  for k := 0 to length(gr[v]) - 1 do
+    if gr[v, k] and not visited[k] then dfs(k);
+end;
+
+begin
+  readln(n, s);
+  
+  s := s - 1;
+  
+  setLength(gr, n);
+  setLength(visited, n);
+  
+  for i := 1 to n do
+  
+  begin
+    
+    readln(x1);
+    
+    for z := 1 to n do if x1[z] = ' ' then Delete(x1, z, 1);
+    
+    
+    for u := 0 to length(x1) - 1 do 
+    begin
+      setLength(gr[u], length(gr[u]) + 1);
+      
+      if x1[u + 1] = '0' then gr[u, length(gr[u]) - 1] := false;//0
+      if x1[u + 1] = '1' then gr[u, length(gr[u]) - 1] := true;//1
+      
+    end;
+  end;
+  dfs(s);
+  for f := 0 to length(visited) - 1 do
+    if visited[f] = true then count := count + 1;
+  writeln(count);
+end.

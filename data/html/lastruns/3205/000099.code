@@ -1,0 +1,4 @@
+a = [int(i) for i in input().split()]
+for b in range(len(a)):
+    if a[b] % 2 != 0: 
+        print(b + 1)

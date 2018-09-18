@@ -1,0 +1,13 @@
+import math
+a=int(input())
+i=2
+x=int(math.sqrt(a))
+if a==2:
+    print('prime')
+    exit()
+while (i<=x):
+    if (a%i==0):
+        print('composite')
+        exit()
+    i+=1
+print('prime')

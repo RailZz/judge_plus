@@ -1,0 +1,3 @@
+x=int(input(225))
+y=x%10
+prit(y)

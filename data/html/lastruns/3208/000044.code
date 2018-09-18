@@ -1,0 +1,2 @@
+while python < 100:
+print('А')

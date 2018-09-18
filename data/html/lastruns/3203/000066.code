@@ -1,0 +1,9 @@
+n = int(input())
+i = 1
+s = 0
+while (i <= n ) :
+    b = int(input())
+    s += b
+    i += 1
+print(s)
+

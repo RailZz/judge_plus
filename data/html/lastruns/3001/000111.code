@@ -1,0 +1,100 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+const int SZ = 100228;
+const int SIZE = 30666;
+
+long long ans[SIZE], t[SZ * 4];
+long long a[SZ];
+
+void build(int v, int l, int r) {
+    if (l == r - 1) {
+        if (a[l] == 0) {
+            ++(t[v]);
+        }
+        return;
+    }
+    int m = (l + r) / 2;
+    build(2 * v + 1, l, m);
+    build(2 * v + 2, m, r);
+    t[v] = t[2 * v + 1] + t[2 * v + 2];
+}
+
+int ask(int v, int l, int r, int ask_l, int ask_r) {
+    if (ask_l >= r || ask_r <= l) {
+        return 0;
+    }
+    if (ask_l <= l && ask_r >= r) {
+        return t[v];
+    }
+    int m = (l + r) / 2;
+    return ask(2 * v + 1, l, m, ask_l, ask_r) +
+           ask(2 * v + 2, m, r, ask_l, ask_r);
+}
+
+void change(int v, int l, int r, int pos, int val) {
+    if (l == r - 1) {
+        if (val) {
+            t[v] = 228;
+        } else {
+            t[v] = 0;
+        }
+        return;
+    }
+    int m = (l + r) / 2;
+    if (pos < m) {
+        change(2 * v + 1, l, m, pos, val);
+    } else {
+        change(2 * v + 2, m, r, pos, val);
+    }
+    t[v] = t[2 * v + 1] + t[2 * v + 2];
+}
+
+int get_kth(int v, int l, int r, int k) {
+    if (r == l + 1) {
+        return ll;
+    }
+    int m = (l + r) / 2;
+    if (t[2 * v + 1] < k) {
+        return get_kth(2 * v + 2, m, r, k - t[2 * v + 1]);
+    } else {
+        return get_kth(2 * v + 1, l, m, k);
+    }
+}
+
+int main()
+{
+    int n, m, k;
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+    cin >> m;
+    build(0, 0, n);
+    for (int i = 0; i < m; ++i) {
+        string todo;
+        int x, y;
+        cin >> todo;
+        cin >> x >> y;
+        if (todo == "s") {
+            cin >> k;
+            if (k + ask(0, 0, n, 0, l) < ans(0, 0, n, 0, r)) {
+                int anser = ask(0, 0, n, 0, l - 1);
+                ans[len] = get_kth(0, 0, n, anser) + 1;
+                ++len;
+            } else {
+                ans[len] = -1;
+                ++len;
+            }
+        }
+        if (todo == "u") {
+            change(0, 0, n, ask_1 - 1, ask_2);
+        }
+    }
+    for (int i = 0; i < len; ++i) {
+        cout << ans[i] << endl;
+    }
+}

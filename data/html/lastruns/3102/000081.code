@@ -1,0 +1,42 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
+
+int f(int m, vector<int> vec, int n)
+{
+	int b, k;
+	k = 0;
+	for (int i = 0; i < n; i++)
+	{
+		b = vec[i] / m;
+		k += b;
+	}
+	return k;
+}
+
+int main()    
+{    
+	int n, k, l, r, t;
+	cin >> n >> k;
+	vector<int> vec;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> t;
+		vec.push_back(t);
+	}
+	l = 0;
+	r = pow(10.0, 7);
+	while (r - l > 1)
+	{
+		int m = (l + r) / 2;
+		if (k > f(m,vec,n))
+		{
+			r = m;
+		} else {
+			l = m;
+		}
+	}
+	cout << l;
+	return 0;
+}

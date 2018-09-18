@@ -1,0 +1,21 @@
+def function(a, b, c):
+    count = 1
+    last = a[0]
+    for i in range(c):
+        if a[i] - last >= b:
+            count += 1
+            last = a[i]
+    return count
+
+
+n, k = map(int, input().split())
+stables = list(map(int, input().split()))
+left = 0
+right = 10 ** 9
+while right - left > 1:
+    mid = (right + left) // 2
+    if function(stables, mid, n) >= k:
+        left = mid
+    else:
+        right = mid
+print(left)        

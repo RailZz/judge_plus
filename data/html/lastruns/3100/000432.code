@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+	
+	int k;
+	cin >> k;
+	for (int i = 1; i <= 9; ++i) {
+		unsigned long long curr_i = i, i_size = 1, ost;
+		while (curr_i<k) {
+			curr_i = 10*curr_i + i;
+			++i_size;
+		}
+		if (curr_i%k == 0) {
+			cout << i << " " << i_size;
+			return 0;
+		}
+		ost = curr_i%k;
+		while (curr_i%k != ost) {
+		    curr_i = 10*curr_i + i;
+		    ++i_size;
+			if (curr_i%k == 0) {
+				cout << i << " " << i_size;
+				return 0;
+			}
+		}
+    }
+	
+	cout << "Impossible";
+	
+	return 0;
+}

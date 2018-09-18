@@ -1,0 +1,62 @@
+var
+  n, m, x, y, i, j: integer; 
+  relations: array[1..100, 1..100] of integer;
+  used: array[1..100] of boolean;
+  ability: boolean;
+  color: array[1..100] of integer;
+ 
+ 
+procedure DFS(v,col: integer);
+var
+ j: integer;
+ 
+begin
+  used[v] := false;
+  color[v] := col;  
+  for j := 1 to n do
+    if (relations[v, j] <> 0) and used[j] then DFS(j,col*-1);
+end;
+ 
+ 
+ 
+ 
+begin
+  
+  read( n, m);
+  
+  for i := 1 to n do 
+    for j := 1 to n do
+      relations[i, j] := 0;
+  
+  for i := 1 to m do
+  begin
+    read(x, y);
+    relations[x, y] := 1;
+    relations[y, x] := 1;
+  end;
+  
+  for i := 1 to n do
+    used[i] := true;
+    
+ 
+  
+  for i := 1 to n do
+    color[i] := 0;
+  for i := 1 to n do  
+  if used[i]=true then
+  DFS(i,1);
+  
+  ability := true;
+  
+  for i := 1 to n do
+    for j := 1 to n do
+      if (color[i] = color[j]) and (relations[i, j] <> 0) then ability := false;
+  
+  if ability then 
+  begin
+    writeln('YES'); 
+    for i := 1 to n do
+      if color[i] = 1 then begin write(i,' '); writeln(outp); end;
+  end
+  else writeln('NO');
+end.

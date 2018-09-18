@@ -1,0 +1,4 @@
+a = 'Python'+'Python'
+for i in range(25):
+    a = a + ('Python'+'Python')
+print (a)

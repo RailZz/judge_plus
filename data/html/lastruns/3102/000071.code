@@ -1,0 +1,30 @@
+function b(a,x,y,N:integer):boolean;
+begin
+if ((a div x)+(a div y))>=(N-1) then
+b:=true
+else
+b:=false;
+end;
+function min(x,y:integer):integer;
+begin
+if x>y then
+min:=y
+else
+min:=x;
+end;
+var
+l,r,N,x,y,a:integer;
+begin
+readln(N,x,y);
+l:=0;
+r:=N*x;
+repeat
+a:=(l+r) div 2;
+if b(a,x,y,N) then
+r:=a
+else
+l:=a;
+until (r-l<2);
+r:=r+min(x,y);
+writeln(r);
+end.

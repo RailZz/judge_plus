@@ -1,0 +1,126 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="53" judge-id="14" status="WA" scoring="ACM" run-tests="1" contest-id="3001" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>c04d924c-e423-47ef-81fb-8b08924eeb5c</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>Done processing 000053.cpp
+
+</compiler_output>
+  <tests>
+    <test num="1" status="WA" time="1" real-time="3" max-memory-used="311296"  checker-comment="Answers differ: [8]: output: 75484, correct: 80039" >
+  <program-stats-str>{ utime=0, stime=1, ptime=1, rtime=3, maxvsz=311296, maxrss=2740224, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=307200, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="436">20
+1 20 16666
+2 7 12
+2 9 14
+1 7 30846
+1 5 12017
+1 3 25097
+2 6 20
+1 17 5641
+1 14 21957
+2 10 17
+1 10 8101
+1 4 12190
+1 11 4555
+2 1 13
+2 8 17
+2 5 16
+1 4 8899
+1 19 13770
+1 6 4764
+1 9 3478
+1 11 5461
+2 7 18
+2 7 14
+1 8 3732
+2 4 13
+2 4 18
+2 1 12
+1 17 3154
+1 15 5784
+2 1 16
+1 18 21003
+2 5 14
+2 4 14
+2 6 14
+2 9 19
+2 6 14
+1 14 -14920
+2 9 17
+1 20 -816
+1 13 5516
+2 3 13
+1 1 5961
+1 13 26691
+2 4 20
+1 15 -4767
+2 10 17
+1 13 -4931
+2 6 20
+2 9 15
+2 3 11
+0
+</input>
+      <output size="148">0
+0
+47512
+27598
+92806
+40254
+77476
+75484
+69843
+77298
+104896
+102395
+130136
+90356
+99255
+78339
+82708
+78339
+11058
+107911
+131964
+23720
+68875
+-7578
+102395
+</output>
+      <correct size="150">0
+0
+47512
+27598
+92806
+40254
+77476
+80039
+74398
+94043
+121641
+119140
+146881
+94911
+116000
+82894
+92904
+82894
+43211
+124656
+198489
+67173
+155685
+56925
+119140
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="51">Answers differ: [8]: output: 75484, correct: 80039
+</checker>
+    </test>
+  </tests>
+</testing-report>

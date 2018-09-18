@@ -1,0 +1,10 @@
+a = [int(i) for i in input().split()]
+a.append(0)
+b = a
+for i in range(0, len(a) - 1):
+    b = a.append(0)
+    if a.count(a[i]) == 1:
+               print(a[i])
+if max(a) == min(a):
+     for i in range(len(a)):
+         print(a[i])

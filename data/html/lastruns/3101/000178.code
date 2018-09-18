@@ -1,0 +1,21 @@
+n = int(input())
+nli = list(map(int, input().split()))
+m = int(input())
+mli = list(map(int, input().split()))
+ar = []
+nlis = nli.copy()
+nlis.sort()
+for i in mli:
+    j = 0
+    l = 0
+    r = n
+    while r - l > 1:
+        m = (r + l) // 2
+        if nlis[m] <= i:
+            l = m
+        else:
+            r = m
+    if nlis[l] == i:
+        j += 1
+    ar.append(j)
+print(ar)

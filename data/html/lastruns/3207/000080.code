@@ -1,0 +1,18 @@
+def som(x,y,z):
+    g=[x, y, z]
+    s=0
+    d=0
+    for i in g:
+        if i==0:
+            s+=1
+        else:
+            d+=1
+    if s>d:
+        return 0
+    else:
+        return 1
+
+x=int(input())
+y=int(input())
+z=int(input())
+print(som(x,y,z))

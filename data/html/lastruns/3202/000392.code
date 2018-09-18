@@ -1,0 +1,6 @@
+a=int(input())
+w=int(input())
+if a%==0 and a%100!=0:
+    print("yes")
+    else:
+        print("no")

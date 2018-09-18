@@ -1,0 +1,9 @@
+a = [int(i) for i in input().split()]
+m = 0
+for l in range(len(a)):
+    if a[l - 1] != a[l]:
+        m += 1
+if m == 0:
+    print(1)
+else:
+    print(m)

@@ -1,0 +1,15 @@
+var
+a,n:integer;
+b:string;
+begin
+readln(n); 
+b:='prime';
+a:=2;
+while not (a*a>n) do
+begin
+if  n mod a=0 then
+b:='composite';
+a:=a+1;
+end;
+writeln(b);
+end/ 

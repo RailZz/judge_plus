@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="172" judge-id="12" status="RU" scoring="ACM" run-tests="0" contest-id="3104" compile-error="yes" >
+  <uuid>0e5179bd-e898-47a5-824c-293608ed8072</uuid>
+  <compiler_output>Free Pascal Compiler version 2.6.4 [2015/06/17] for i386
+Copyright (c) 1993-2014 by Florian Klaempfl and others
+Target OS: Linux for i386
+Compiling 000172.pas
+000172.pas(3,5) Note: Local variable &quot;k&quot; not used
+Linking 000172
+
+
+
+
+
+
+
+
+
+
+
+/usr/bin/ld: warning: link.res contains output sections; did you forget -T?
+24 lines compiled, 1.5 sec 
+1 note(s) issued
+</compiler_output>
+</testing-report>

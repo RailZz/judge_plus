@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="135" judge-id="2" status="CE" scoring="ACM" run-tests="0" contest-id="3102" compile-error="yes" >
+  <uuid>93bf33df-e1d9-434d-87fa-c4cdd4d78542</uuid>
+  <compiler_output>000135.c: In function 'ft':
+000135.c:3:27: warning: implicit declaration of function 'mini' [-Wimplicit-function-declaration]
+        long long n = (t - mini(a, b))/a + (t - mini(a, b))/ b + 1;
+                           ^
+000135.c: At top level:
+000135.c:6:12: error: conflicting types for 'mini'
+ long long  mini(long long a, long long  b){
+            ^
+000135.c:3:27: note: previous implicit declaration of 'mini' was here
+        long long n = (t - mini(a, b))/a + (t - mini(a, b))/ b + 1;
+                           ^
+000135.c: In function 'main':
+000135.c:15:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'long long int *' [-Wformat=]
+     scanf(&quot;%d %d %d&quot;, &amp;n, &amp;x, &amp;y);
+           ^
+000135.c:15:11: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'long long int *' [-Wformat=]
+000135.c:15:11: warning: format '%d' expects argument of type 'int *', but argument 4 has type 'long long int *' [-Wformat=]
+000135.c:27:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+     printf(&quot;%d&quot;, r);
+            ^
+</compiler_output>
+</testing-report>

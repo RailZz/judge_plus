@@ -1,0 +1,15 @@
+<input size="35">5 660
+8 42 16 35 33
+16 26 12 12 25
+</input>
+      <output size="7">1
+5
+4
+3</output>
+      <correct size="10">1
+2
+3
+4
+5
+</correct>
+      

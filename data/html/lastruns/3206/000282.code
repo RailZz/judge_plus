@@ -1,0 +1,7 @@
+s = input()
+if len(s)<=8:
+    for i in s:
+        if i.isalpha() or i.isdigit() and i.isupper() or i.islower:
+             print('YES')
+    else:
+        print('NO')

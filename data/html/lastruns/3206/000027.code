@@ -1,0 +1,12 @@
+a = (input(''))
+i = 0
+k = -1
+while i < len(a)/2:
+    if a[i] == a[k]:
+        i += 1
+        k -= 1
+    else:
+        print('no')
+        break
+if i >= len(a)/2 or i+1 >= len(a)/2:
+    print('yes')

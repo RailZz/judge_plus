@@ -1,0 +1,20 @@
+ var a, b, c, sum: longint;
+function nok(a,b:longint):longint;
+var i:longint;
+begin
+  for i:=1 to a do
+    if (a mod i = 0) and (b mod i = 0) then nok:=i;
+end;
+ 
+begin
+  read(a, b);
+  c:=nok(a,b);
+  a:=a div c;
+  b:=b div c;
+  
+  repeat
+    sum := sum + a;
+  until (sum mod b) = 0;
+   write(sum*c);
+ 
+end.

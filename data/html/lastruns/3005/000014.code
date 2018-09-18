@@ -1,0 +1,39 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+const int SZ = 228;
+const int W = 10228;
+int dp[SZ][W];
+
+void read_array(int *data, int n) {
+    for (int i = 0; i < n; ++i) {
+        cin >> data[i];
+    }
+}
+
+int main()
+{
+    int n, m;
+    int w[SZ], c[SZ];
+    cin >> n >> m;
+    read_array(w, n);
+    read_array(c, n);
+    dp[0][w[0]] = c[0];
+    for (int i = 1; i < n; ++i) {
+        for (int j = 0; j <= m; ++j) {
+            if (j < w[i]) {
+                dp[i][j] = dp[i - 1][j];
+            } else {
+                dp[i][j] = max(dp[i - 1][j],
+                    dp[i - 1][j - w[i]] + c[i]);
+            }
+         }
+    }
+    int ans = 0;
+    for (int i = 0; i <= m; ++i) {
+        ans = max(ans, dp[n - 1][i]);
+    }
+    cout << ans << endl;
+}

@@ -1,0 +1,4 @@
+n = [int(i) for i in input().split()]
+for elem in n:
+    if elem % 2 == 0:
+        print(elem, end = ' ')

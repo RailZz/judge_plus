@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="162" judge-id="10" status="RT" scoring="ACM" run-tests="1" contest-id="3207" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>b488f8fd-6cad-4752-90e9-7f5cb9ed748f</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="RT" exit-code="1" time="183" real-time="202" max-memory-used="64196608" >
+  <program-stats-str>{ utime=145, stime=38, ptime=183, rtime=202, maxvsz=64196608, maxrss=45264896, nvcsw=1, nivcsw=51 }</program-stats-str>
+      <input size="8">4 5 6 7
+</input>
+      <output size="52">Укажите расположение файла: </output>
+      <stderr size="287">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000162&quot;, line 7, in &lt;module&gt;
+    fileadress = input(&quot;Укажите расположение файла: &quot;)
+  File &quot;&lt;string&gt;&quot;, line 1
+    4 5 6 7
+     ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

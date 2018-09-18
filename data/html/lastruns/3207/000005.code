@@ -1,0 +1,8 @@
+N = int(input())
+def f(a):
+    s = 0
+    m = str(N)
+    for i in m:
+        s += int(i)
+    return s
+print(f(N))

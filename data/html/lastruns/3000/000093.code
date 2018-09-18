@@ -1,0 +1,68 @@
+program Strings;
+
+const
+        SIZE = 10000;
+        mods: array [0..2] of LongInt = (1000000000 + 7, 1000000000 + 9, 2000000000 + 11);
+        a: array [0..4] of LongInt = (29, 31, 37, 41, 43);
+        
+type
+        THash = array [-1..2 * SIZE] of Int64;
+        TPower = array [0..SIZE] of Int64;
+        
+function SubHash (const hash: THash; const p: TPower; l, r, m: Int64): Int64;
+
+var
+        big, small: Int64;
+        
+begin
+        big := Hash[r];
+        
+        small := 0;
+        
+        if l <> 1 then
+                small := (hash[l - 1] * p[r - l + 1]) mod m;
+                
+        SubHash := (big - small + m) mod m
+end;
+
+var
+        s1, s2, s: string;
+        p, m: Int64;
+        i: LongInt;
+        hash: THash;
+        pwr: TPower;
+
+begin
+        ReadLn (s1);
+        ReadLn (s2);
+        
+        s := s2 + s2;
+        
+        p := a[Random (5)];
+        m := mods[Random (3)];
+        
+        hash[0] := 0;
+        hash[-1] := Ord (s1[1]);
+        
+        for i := 2 to Length (s1) do
+                hash[-1] := (hash[-1] * p + Ord (s1[i])) mod m;
+                
+        hash[1] := Ord (s[1]);
+                
+        for i := 2 to Length (s) do
+                hash[i] := (hash[i - 1] * p + Ord (s[i])) mod m;
+                
+        pwr[0] := 1;
+        
+        for i := 1 to Length (s) do
+                pwr[i] := (pwr[i - 1] * p) mod m;
+        
+        for i := 1 to Length (s) - Length (s1) do
+                if SubHash (hash, pwr, i, i + Length (s1) - 1, m) = hash[-1] then
+                begin
+                        WriteLn (i - 1);
+                        Exit
+                end;
+                
+        WriteLn (-1)
+end.

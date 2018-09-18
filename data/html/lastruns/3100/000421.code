@@ -1,0 +1,15 @@
+n = int(input())
+primes = [True] * (n + 2)
+
+
+for i in range(2, n + 1):
+    if primes[i] == True:
+        for j in range(i ** 2, n + 1, i):
+            primes[j] = False
+
+for i in range(2, len(primes) - 1):
+    if primes[i] == True:
+        print(i)
+         
+        
+        

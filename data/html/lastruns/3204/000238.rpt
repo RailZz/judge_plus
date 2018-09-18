@@ -1,0 +1,25 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="238" judge-id="7" status="SE" scoring="ACM" run-tests="1" contest-id="3204" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>f6f07c46-4e05-485a-b8e7-146254700a13</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="298" real-time="355" max-memory-used="19296256" >
+  <program-stats-str>{ utime=271, stime=27, ptime=298, rtime=355, maxvsz=19296256, maxrss=19505152, nvcsw=1, nivcsw=61 }</program-stats-str>
+      <input size="12">1 2 2 3 3 3
+</input>
+      <output size="0"></output>
+      <stderr size="278">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+Traceback (most recent call last):
+  File &quot;./000238&quot;, line 5, in &lt;module&gt;
+    x=int(input())
+EOFError: EOF when reading a line
+</stderr>
+    </test>
+  </tests>
+</testing-report>

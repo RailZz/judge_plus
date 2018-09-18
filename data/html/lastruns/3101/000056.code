@@ -1,0 +1,23 @@
+//#include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+const double PI = 3.1415926; 
+
+int main() {
+	cout.precision(6);
+    cout << fixed;
+    double a;
+    cin >> a;
+    double l = -PI/2, r = PI/2;
+    while (r - l > pow(10, -6)) {
+        double m = (l + r) / 2;
+        if(sin(m) < a) l = m;
+        else r = m;
+    }
+
+    cout << r;
+
+    return 0;
+}

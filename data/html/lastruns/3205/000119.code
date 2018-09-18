@@ -1,0 +1,10 @@
+a = [int(i) for i in input().split()]
+c = []
+k, mx = 0 , 0
+for n in range(a[0]):
+    c = [int(i) for i in input().split()]
+    if sum(c) > mx:
+        mx = sum(c)
+        v = k
+    k += 1
+print(mx, v)

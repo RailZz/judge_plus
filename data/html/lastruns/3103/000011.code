@@ -1,0 +1,44 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+vector <vector <int>> gr;
+vector <int> used;
+int k;
+
+void dfs(int v){
+    used[v] = 1;
+    k++;
+    for (auto u: gr[v])
+    {
+        if(used[u] == 0){
+            dfs(u);
+        }
+    }
+}
+
+int main()
+{
+    int n, s;
+    k = 0;
+    cin >> n >> s;
+    int matrix[n][n];
+    gr.resize(n);
+    used.resize(n);
+    for(int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cin >> matrix[i][j];
+            if (matrix[i][j] == 1) gr[i].push_back(j);
+        }
+    }
+
+    dfs(s - 1);
+
+    cout << k;
+
+    return 0;
+}

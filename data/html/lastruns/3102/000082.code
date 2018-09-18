@@ -1,0 +1,28 @@
+#include <stdio.h>
+int ft(int t, int a, int b){
+       int n = (t - a)/a + (t - a)/ b + 1;
+       return n;
+}
+int maxi(int a, int b){
+    if (a > b){
+        return a;
+    }else{
+        return b;
+    }
+}
+int main(void){
+    int n, x, y, l, r, m;
+    scanf("%d %d %d", &n, &x, &y);
+    l = 0;
+    r = n * maxi(x, y);
+    while (r - l > 1){
+        m = (r + l) / 2;
+        if (ft(m, x, y) > n){
+           r = m;
+        }else{
+           l = m;
+        }
+    }
+    printf("%d", r);
+    return 0;
+}

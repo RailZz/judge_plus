@@ -1,0 +1,27 @@
+<input size="58">10 10
+-8 -6 -4 -4 -2 -1 0 2 3 3 
+8 3 -3 -2 2 -1 2 9 -8 0 
+</input>
+      <output size="47">YES 
+NO 
+YES 
+YES 
+YES 
+YES 
+YES 
+YES 
+NO 
+NO 
+</output>
+      <correct size="37">NO
+YES
+NO
+YES
+YES
+YES
+YES
+NO
+YES
+YES
+</correct>
+      

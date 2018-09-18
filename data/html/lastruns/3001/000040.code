@@ -1,0 +1,65 @@
+import sys
+sys.setrecursionlimit(1000000000)
+
+
+def main():
+    def qmax(ai, bi):
+        if ai == -1:
+            return bi
+        if bi == -1:
+            return ai
+        if a[ai] > a[bi]:
+            return ai
+        elif a[ai] == a[bi]:
+            return min(ai, bi)
+        else:
+            return bi
+
+    def Build(v, l, r):
+        if r - l == 1:
+            t[v] = l
+        else:
+            m = int((l + r) / 2)
+            Build(2 * v + 1, l, m)
+            Build(2 * v + 2, m, r)
+            t[v] = qmax(t[2 * v + 1], t[v * 2 + 2])
+
+    def Get(v, l, r, s, e):
+        if (s <= l) and (r <= e):
+            return t[v]
+        if (r <= s) or (e <= l):
+            return -1
+        m = int((l + r) / 2)
+        return qmax(Get(2 * v + 1, l, m, s, e), Get(2 * v + 2, m, r, s, e))
+
+    def Update(v, l, r, i, x):
+        if r - l == 1:
+            if l == i:
+                t[v] = i
+                a[i] = x
+        elif l <= i < r:
+            m = int((l + r) / 2)
+            if i < m:
+                Update(2 * v + 1, l, m, i, x)
+            else:
+                Update(2 * v + 2, m, r, i, x)
+            t[v] = qmax(t[2 * v + 1], t[v * 2 + 2])
+
+    n = int(input())
+    a = list(map(int, input().split()))
+    t = [0 for i in range(4 * n)]
+    Build(0, 0, n)
+    k = int(input())
+    for i in range(k):
+        task = input().split()
+        if task[0] == 'u':
+            p = int(task[1]) - 1
+            q = int(task[2])
+            Update(0, 0, n, p, q)
+        elif task[0] == 's':
+            p = int(task[1]) - 1
+            q = int(task[2])
+            print(Get(0, 0, n, p, q) + 1, end=' ')
+
+
+main()

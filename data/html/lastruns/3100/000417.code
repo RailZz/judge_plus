@@ -1,0 +1,13 @@
+def NOD(a, b):
+    OST = max(a, b) % min(a, b)
+    i = min(a, b)
+    if OST == 0:
+        return i
+    else:
+        return NOD(OST, i)
+n = int(input())
+a = list(map(int, input().split()))
+MNOD = a[0]
+for i in range(1, n):
+    MNOD = NOD(MNOD, a[i])
+print(MNOD)

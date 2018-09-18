@@ -1,0 +1,27 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="303" judge-id="152" status="SE" scoring="ACM" run-tests="1" contest-id="3202" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>715b1bae-8249-47b6-85a7-f297bd61839f</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="SE" time="291" real-time="318" max-memory-used="32251904" >
+  <program-stats-str>{ utime=279, stime=12, ptime=291, rtime=318, maxvsz=32251904, maxrss=19488768, nvcsw=1, nivcsw=46 }</program-stats-str>
+      <input size="6">1
+2
+3
+</input>
+      <output size="0"></output>
+      <stderr size="236">Can't open '/usr/share/abrt/conf.d/plugins/python3.conf': Operation not permitted
+Can't open '/etc/abrt/plugins/python3.conf': Operation not permitted
+  File &quot;./000303&quot;, line 15
+    Пример:
+          ^
+SyntaxError: invalid syntax
+</stderr>
+    </test>
+  </tests>
+</testing-report>

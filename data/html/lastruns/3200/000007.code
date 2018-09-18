@@ -1,0 +1,5 @@
+N = int(input())
+A = N + 1
+B = N - 1
+print("The next number for ", N, " is ", A,".", sep="")
+print("The previous number for ", N, " is ", B,".", sep="")

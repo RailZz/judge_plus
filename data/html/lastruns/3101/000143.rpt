@@ -1,0 +1,15 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="143" judge-id="122" status="SV" scoring="ACM" run-tests="0" contest-id="3101" compile-error="yes" >
+  <uuid>9a8edd6d-0b52-498d-b5ce-ce90eae8de32</uuid>
+  <compiler_output>000143.c:17:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+000143.c:17:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+000143.c:20:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+Done processing 000143.c
+Total errors found: 3
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

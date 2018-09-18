@@ -1,0 +1,237 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="97" judge-id="98" status="OK" scoring="ACM" run-tests="15" contest-id="3200" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>e735fd23-ba80-4e0c-8b36-eb68f186a0a9</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="75" real-time="82" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=69, stime=6, ptime=75, rtime=82, maxvsz=30339072, maxrss=27078656, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">2
+8
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="2" status="OK" time="73" real-time="78" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=62, stime=11, ptime=73, rtime=78, maxvsz=30339072, maxrss=27086848, nvcsw=1, nivcsw=14 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">8
+2
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="3" status="OK" time="75" real-time="82" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=62, stime=13, ptime=75, rtime=82, maxvsz=30339072, maxrss=27045888, nvcsw=1, nivcsw=14 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">3
+5
+</input>
+      <output size="2">7
+</output>
+      <correct size="3">-5
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="4" status="OK" time="72" real-time="78" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=69, stime=3, ptime=72, rtime=78, maxvsz=30339072, maxrss=27054080, nvcsw=1, nivcsw=10 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">4
+3
+</input>
+      <output size="2">4
+</output>
+      <correct size="3">-2
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="5" status="OK" time="79" real-time="86" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=72, stime=7, ptime=79, rtime=86, maxvsz=30339072, maxrss=27189248, nvcsw=1, nivcsw=16 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">200
+300
+</input>
+      <output size="6">20001
+</output>
+      <correct size="7">-19999
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="6" status="OK" time="74" real-time="78" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=63, stime=11, ptime=74, rtime=78, maxvsz=30339072, maxrss=27107328, nvcsw=1, nivcsw=11 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="7">20
+300
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="7" status="OK" time="72" real-time="78" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=59, stime=13, ptime=72, rtime=78, maxvsz=30339072, maxrss=27029504, nvcsw=1, nivcsw=14 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="5">20
+5
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="8" status="OK" time="73" real-time="79" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=66, stime=7, ptime=73, rtime=79, maxvsz=30339072, maxrss=27115520, nvcsw=1, nivcsw=9 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=0, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">1
+5
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="9" status="OK" time="73" real-time="80" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=58, stime=15, ptime=73, rtime=80, maxvsz=30339072, maxrss=27168768, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">1
+1
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="10" status="OK" time="74" real-time="78" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=70, stime=4, ptime=74, rtime=78, maxvsz=30339072, maxrss=27127808, nvcsw=1, nivcsw=11 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="4">1
+1
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="11" status="OK" time="74" real-time="79" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=71, stime=3, ptime=74, rtime=79, maxvsz=30339072, maxrss=27197440, nvcsw=1, nivcsw=11 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=2, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="8">2
+32767
+</input>
+      <output size="2">3
+</output>
+      <correct size="3">-1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="12" status="OK" time="74" real-time="81" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=67, stime=7, ptime=74, rtime=81, maxvsz=30339072, maxrss=27193344, nvcsw=1, nivcsw=22 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="8">52767
+3
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="13" status="OK" time="74" real-time="79" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=65, stime=9, ptime=74, rtime=79, maxvsz=30339072, maxrss=27029504, nvcsw=1, nivcsw=12 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="10">1000
+1000
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="14" status="OK" time="80" real-time="86" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=75, stime=5, ptime=80, rtime=86, maxvsz=30339072, maxrss=27140096, nvcsw=1, nivcsw=14 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="6">100
+1
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+    <test num="15" status="OK" time="75" real-time="80" max-memory-used="30339072"  checker-comment="ok" >
+  <program-stats-str>{ utime=60, stime=15, ptime=75, rtime=80, maxvsz=30339072, maxrss=27049984, nvcsw=1, nivcsw=13 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=0, ptime=0, rtime=1, maxvsz=303104, maxrss=2387968, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="6">1
+100
+</input>
+      <output size="2">1
+</output>
+      <correct size="2">1
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="5">ok  
+</checker>
+    </test>
+  </tests>
+</testing-report>

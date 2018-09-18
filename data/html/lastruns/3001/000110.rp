@@ -1,0 +1,982 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="110" judge-id="1" status="CE" scoring="ACM" run-tests="0" contest-id="3001" compile-error="yes" >
+  <uuid>3a1b6deb-d989-4459-ab8d-450668362868</uuid>
+  <compiler_output>Done processing 000110.cpp
+000110.cpp: In function 'void build(int, int, int)':
+000110.cpp:16:13: error: no match for 'operator++' (operand type is 'std::vector&lt;long long int&gt;')
+             ++(t[v]);
+             ^
+000110.cpp:23:25: error: no match for 'operator+' (operand types are 'std::vector&lt;long long int&gt;' and 'std::vector&lt;long long int&gt;')
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                         ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:334:5: note: candidate: template&lt;class _Iterator&gt; std::reverse_iterator&lt;_Iterator&gt; std::operator+(typename std::reverse_iterator&lt;_Iterator&gt;::difference_type, const std::reverse_iterator&lt;_Iterator&gt;&amp;)
+     operator+(typename reverse_iterator&lt;_Iterator&gt;::difference_type __n,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::reverse_iterator&lt;_Iterator&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1152:5: note: candidate: template&lt;class _Iterator&gt; std::move_iterator&lt;_Iterator&gt; std::operator+(typename std::move_iterator&lt;_Iterator&gt;::difference_type, const std::move_iterator&lt;_Iterator&gt;&amp;)
+     operator+(typename move_iterator&lt;_Iterator&gt;::difference_type __n,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1152:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::move_iterator&lt;_Iterator&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4785:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator+(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4785:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:53:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1151:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const _CharT*, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1151:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   mismatched types 'const _CharT*' and 'std::vector&lt;long long int&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:53:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1167:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(_CharT, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator+(_CharT __lhs, const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __rhs)
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1167:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4822:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, const _CharT*)
+     operator+(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4822:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4838:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, _CharT)
+     operator+(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4838:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4850:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator+(basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4850:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4856:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;)
+     operator+(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4856:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4862:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;)
+     operator+(basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4862:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4874:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const _CharT*, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4874:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   mismatched types 'const _CharT*' and 'std::vector&lt;long long int&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4880:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(_CharT, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;)
+     operator+(_CharT __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4880:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4886:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;, const _CharT*)
+     operator+(basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4886:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4892:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;, _CharT)
+     operator+(basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4892:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/vector:65:0,
+                 from 000110.cpp:3:
+/usr/include/c++/5.3.1/bits/stl_bvector.h:297:3: note: candidate: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&amp;)
+   operator+(ptrdiff_t __n, const _Bit_iterator&amp; __x)
+   ^
+/usr/include/c++/5.3.1/bits/stl_bvector.h:297:3: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'std::ptrdiff_t {aka int}'
+/usr/include/c++/5.3.1/bits/stl_bvector.h:387:3: note: candidate: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&amp;)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator&amp; __x)
+   ^
+/usr/include/c++/5.3.1/bits/stl_bvector.h:387:3: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'std::ptrdiff_t {aka int}'
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:930:5: note: candidate: template&lt;class _Iterator, class _Container&gt; __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt; __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;::difference_type, const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;&amp;)
+     operator+(typename __normal_iterator&lt;_Iterator, _Container&gt;::difference_type
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:930:5: note:   template argument deduction/substitution failed:
+000110.cpp:23:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+000110.cpp: In function 'int ask(int, int, int, int, int)':
+000110.cpp:31:19: error: cannot convert 'std::vector&lt;long long int&gt;' to 'int' in return
+         return t[v];
+                   ^
+000110.cpp: In function 'void change(int, int, int, int, int)':
+000110.cpp:41:18: error: no match for 'operator=' (operand types are 'std::vector&lt;long long int&gt;' and 'int')
+             t[v] = 228;
+                  ^
+In file included from /usr/include/c++/5.3.1/vector:69:0,
+                 from 000110.cpp:3:
+/usr/include/c++/5.3.1/bits/vector.tcc:167:5: note: candidate: std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = long long int; _Alloc = std::allocator&lt;long long int&gt;]
+     vector&lt;_Tp, _Alloc&gt;::
+     ^
+/usr/include/c++/5.3.1/bits/vector.tcc:167:5: note:   no known conversion for argument 1 from 'int' to 'const std::vector&lt;long long int&gt;&amp;'
+In file included from /usr/include/c++/5.3.1/vector:64:0,
+                 from 000110.cpp:3:
+/usr/include/c++/5.3.1/bits/stl_vector.h:448:7: note: candidate: std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = long long int; _Alloc = std::allocator&lt;long long int&gt;]
+       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^
+/usr/include/c++/5.3.1/bits/stl_vector.h:448:7: note:   no known conversion for argument 1 from 'int' to 'std::vector&lt;long long int&gt;&amp;&amp;'
+/usr/include/c++/5.3.1/bits/stl_vector.h:470:7: note: candidate: std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = long long int; _Alloc = std::allocator&lt;long long int&gt;]
+       operator=(initializer_list&lt;value_type&gt; __l)
+       ^
+/usr/include/c++/5.3.1/bits/stl_vector.h:470:7: note:   no known conversion for argument 1 from 'int' to 'std::initializer_list&lt;long long int&gt;'
+000110.cpp:43:18: error: no match for 'operator=' (operand types are 'std::vector&lt;long long int&gt;' and 'int')
+             t[v] = 0;
+                  ^
+In file included from /usr/include/c++/5.3.1/vector:69:0,
+                 from 000110.cpp:3:
+/usr/include/c++/5.3.1/bits/vector.tcc:167:5: note: candidate: std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = long long int; _Alloc = std::allocator&lt;long long int&gt;]
+     vector&lt;_Tp, _Alloc&gt;::
+     ^
+/usr/include/c++/5.3.1/bits/vector.tcc:167:5: note:   no known conversion for argument 1 from 'int' to 'const std::vector&lt;long long int&gt;&amp;'
+In file included from /usr/include/c++/5.3.1/vector:64:0,
+                 from 000110.cpp:3:
+/usr/include/c++/5.3.1/bits/stl_vector.h:448:7: note: candidate: std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = long long int; _Alloc = std::allocator&lt;long long int&gt;]
+       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^
+/usr/include/c++/5.3.1/bits/stl_vector.h:448:7: note:   no known conversion for argument 1 from 'int' to 'std::vector&lt;long long int&gt;&amp;&amp;'
+/usr/include/c++/5.3.1/bits/stl_vector.h:470:7: note: candidate: std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = long long int; _Alloc = std::allocator&lt;long long int&gt;]
+       operator=(initializer_list&lt;value_type&gt; __l)
+       ^
+/usr/include/c++/5.3.1/bits/stl_vector.h:470:7: note:   no known conversion for argument 1 from 'int' to 'std::initializer_list&lt;long long int&gt;'
+000110.cpp:53:25: error: no match for 'operator+' (operand types are 'std::vector&lt;long long int&gt;' and 'std::vector&lt;long long int&gt;')
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                         ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:334:5: note: candidate: template&lt;class _Iterator&gt; std::reverse_iterator&lt;_Iterator&gt; std::operator+(typename std::reverse_iterator&lt;_Iterator&gt;::difference_type, const std::reverse_iterator&lt;_Iterator&gt;&amp;)
+     operator+(typename reverse_iterator&lt;_Iterator&gt;::difference_type __n,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::reverse_iterator&lt;_Iterator&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1152:5: note: candidate: template&lt;class _Iterator&gt; std::move_iterator&lt;_Iterator&gt; std::operator+(typename std::move_iterator&lt;_Iterator&gt;::difference_type, const std::move_iterator&lt;_Iterator&gt;&amp;)
+     operator+(typename move_iterator&lt;_Iterator&gt;::difference_type __n,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1152:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::move_iterator&lt;_Iterator&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4785:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator+(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4785:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:53:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1151:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const _CharT*, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1151:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   mismatched types 'const _CharT*' and 'std::vector&lt;long long int&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:53:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1167:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(_CharT, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator+(_CharT __lhs, const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __rhs)
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.tcc:1167:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4822:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, const _CharT*)
+     operator+(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4822:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4838:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, _CharT)
+     operator+(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4838:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4850:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator+(basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4850:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4856:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;)
+     operator+(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4856:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4862:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;)
+     operator+(basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4862:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4874:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(const _CharT*, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4874:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   mismatched types 'const _CharT*' and 'std::vector&lt;long long int&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4880:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(_CharT, std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;)
+     operator+(_CharT __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4880:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4886:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;, const _CharT*)
+     operator+(basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4886:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4892:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt; std::operator+(std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp;, _CharT)
+     operator+(basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4892:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+In file included from /usr/include/c++/5.3.1/vector:65:0,
+                 from 000110.cpp:3:
+/usr/include/c++/5.3.1/bits/stl_bvector.h:297:3: note: candidate: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&amp;)
+   operator+(ptrdiff_t __n, const _Bit_iterator&amp; __x)
+   ^
+/usr/include/c++/5.3.1/bits/stl_bvector.h:297:3: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'std::ptrdiff_t {aka int}'
+/usr/include/c++/5.3.1/bits/stl_bvector.h:387:3: note: candidate: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&amp;)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator&amp; __x)
+   ^
+/usr/include/c++/5.3.1/bits/stl_bvector.h:387:3: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'std::ptrdiff_t {aka int}'
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:930:5: note: candidate: template&lt;class _Iterator, class _Container&gt; __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt; __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;::difference_type, const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;&amp;)
+     operator+(typename __normal_iterator&lt;_Iterator, _Container&gt;::difference_type
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:930:5: note:   template argument deduction/substitution failed:
+000110.cpp:53:38: note:   'std::vector&lt;long long int&gt;' is not derived from 'const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;'
+     t[v] = t[2 * v + 1] + t[2 * v + 2];
+                                      ^
+000110.cpp: In function 'int get_kth(int, int, int, int)':
+000110.cpp:58:16: error: 'll' was not declared in this scope
+         return ll;
+                ^
+000110.cpp:61:22: error: no match for 'operator&lt;' (operand types are 'std::vector&lt;long long int&gt;' and 'int')
+     if (t[2 * v + 1] &lt; k) {
+                      ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_pair.h:220:5: note: candidate: template&lt;class _T1, class _T2&gt; constexpr bool std::operator&lt;(const std::pair&lt;_T1, _T2&gt;&amp;, const std::pair&lt;_T1, _T2&gt;&amp;)
+     operator&lt;(const pair&lt;_T1, _T2&gt;&amp; __x, const pair&lt;_T1, _T2&gt;&amp; __y)
+     ^
+/usr/include/c++/5.3.1/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::pair&lt;_T1, _T2&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:298:5: note: candidate: template&lt;class _Iterator&gt; bool std::operator&lt;(const std::reverse_iterator&lt;_Iterator&gt;&amp;, const std::reverse_iterator&lt;_Iterator&gt;&amp;)
+     operator&lt;(const reverse_iterator&lt;_Iterator&gt;&amp; __x,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:298:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::reverse_iterator&lt;_Iterator&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:348:5: note: candidate: template&lt;class _IteratorL, class _IteratorR&gt; bool std::operator&lt;(const std::reverse_iterator&lt;_Iterator&gt;&amp;, const std::reverse_iterator&lt;_IteratorR&gt;&amp;)
+     operator&lt;(const reverse_iterator&lt;_IteratorL&gt;&amp; __x,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:348:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::reverse_iterator&lt;_Iterator&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1089:5: note: candidate: template&lt;class _IteratorL, class _IteratorR&gt; bool std::operator&lt;(const std::move_iterator&lt;_Iterator&gt;&amp;, const std::move_iterator&lt;_IteratorR&gt;&amp;)
+     operator&lt;(const move_iterator&lt;_IteratorL&gt;&amp; __x,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1089:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::move_iterator&lt;_Iterator&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1095:5: note: candidate: template&lt;class _Iterator&gt; bool std::operator&lt;(const std::move_iterator&lt;_Iterator&gt;&amp;, const std::move_iterator&lt;_Iterator&gt;&amp;)
+     operator&lt;(const move_iterator&lt;_Iterator&gt;&amp; __x,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1095:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::move_iterator&lt;_Iterator&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:4989:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; bool std::operator&lt;(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator&lt;(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:4989:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:5001:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; bool std::operator&lt;(const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;, const _CharT*)
+     operator&lt;(const basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5001:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:5013:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; bool std::operator&lt;(const _CharT*, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator&lt;(const _CharT* __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5013:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   mismatched types 'const _CharT*' and 'std::vector&lt;long long int&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/bits/ios_base.h:46:0,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/system_error:200:3: note: candidate: bool std::operator&lt;(const std::error_code&amp;, const std::error_code&amp;)
+   operator&lt;(const error_code&amp; __lhs, const error_code&amp; __rhs) noexcept
+   ^
+/usr/include/c++/5.3.1/system_error:200:3: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'const std::error_code&amp;'
+/usr/include/c++/5.3.1/system_error:274:3: note: candidate: bool std::operator&lt;(const std::error_condition&amp;, const std::error_condition&amp;)
+   operator&lt;(const error_condition&amp; __lhs,
+   ^
+/usr/include/c++/5.3.1/system_error:274:3: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'const std::error_condition&amp;'
+In file included from /usr/include/c++/5.3.1/vector:64:0,
+                 from 000110.cpp:3:
+/usr/include/c++/5.3.1/bits/stl_vector.h:1528:5: note: candidate: template&lt;class _Tp, class _Alloc&gt; bool std::operator&lt;(const std::vector&lt;_Tp, _Alloc&gt;&amp;, const std::vector&lt;_Tp, _Alloc&gt;&amp;)
+     operator&lt;(const vector&lt;_Tp, _Alloc&gt;&amp; __x, const vector&lt;_Tp, _Alloc&gt;&amp; __y)
+     ^
+/usr/include/c++/5.3.1/bits/stl_vector.h:1528:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   mismatched types 'const std::vector&lt;_Tp, _Alloc&gt;' and 'int'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:856:5: note: candidate: template&lt;class _Iterator, class _Container&gt; bool __gnu_cxx::operator&lt;(const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;&amp;, const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;&amp;)
+     operator&lt;(const __normal_iterator&lt;_Iterator, _Container&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:856:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:849:5: note: candidate: template&lt;class _IteratorL, class _IteratorR, class _Container&gt; bool __gnu_cxx::operator&lt;(const __gnu_cxx::__normal_iterator&lt;_IteratorL, _Container&gt;&amp;, const __gnu_cxx::__normal_iterator&lt;_IteratorR, _Container&gt;&amp;)
+     operator&lt;(const __normal_iterator&lt;_IteratorL, _Container&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:849:5: note:   template argument deduction/substitution failed:
+000110.cpp:61:24: note:   'std::vector&lt;long long int&gt;' is not derived from 'const __gnu_cxx::__normal_iterator&lt;_IteratorL, _Container&gt;'
+     if (t[2 * v + 1] &lt; k) {
+                        ^
+000110.cpp:62:43: error: no match for 'operator-' (operand types are 'int' and 'std::vector&lt;long long int&gt;')
+         return get_kth(2 * v + 2, m, r, k - t[2 * v + 1]);
+                                           ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:328:5: note: candidate: template&lt;class _Iterator&gt; typename std::reverse_iterator&lt;_Iterator&gt;::difference_type std::operator-(const std::reverse_iterator&lt;_Iterator&gt;&amp;, const std::reverse_iterator&lt;_Iterator&gt;&amp;)
+     operator-(const reverse_iterator&lt;_Iterator&gt;&amp; __x,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:328:5: note:   template argument deduction/substitution failed:
+000110.cpp:62:56: note:   mismatched types 'const std::reverse_iterator&lt;_Iterator&gt;' and 'int'
+         return get_kth(2 * v + 2, m, r, k - t[2 * v + 1]);
+                                                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:380:5: note: candidate: template&lt;class _IteratorL, class _IteratorR&gt; decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator&lt;_Iterator&gt;&amp;, const std::reverse_iterator&lt;_IteratorR&gt;&amp;)
+     operator-(const reverse_iterator&lt;_IteratorL&gt;&amp; __x,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:380:5: note:   template argument deduction/substitution failed:
+000110.cpp:62:56: note:   mismatched types 'const std::reverse_iterator&lt;_Iterator&gt;' and 'int'
+         return get_kth(2 * v + 2, m, r, k - t[2 * v + 1]);
+                                                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1138:5: note: candidate: template&lt;class _IteratorL, class _IteratorR&gt; decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator&lt;_Iterator&gt;&amp;, const std::move_iterator&lt;_IteratorR&gt;&amp;)
+     operator-(const move_iterator&lt;_IteratorL&gt;&amp; __x,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1138:5: note:   template argument deduction/substitution failed:
+000110.cpp:62:56: note:   mismatched types 'const std::move_iterator&lt;_Iterator&gt;' and 'int'
+         return get_kth(2 * v + 2, m, r, k - t[2 * v + 1]);
+                                                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1145:5: note: candidate: template&lt;class _Iterator&gt; decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator&lt;_Iterator&gt;&amp;, const std::move_iterator&lt;_Iterator&gt;&amp;)
+     operator-(const move_iterator&lt;_Iterator&gt;&amp; __x,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:1145:5: note:   template argument deduction/substitution failed:
+000110.cpp:62:56: note:   mismatched types 'const std::move_iterator&lt;_Iterator&gt;' and 'int'
+         return get_kth(2 * v + 2, m, r, k - t[2 * v + 1]);
+                                                        ^
+In file included from /usr/include/c++/5.3.1/vector:65:0,
+                 from 000110.cpp:3:
+/usr/include/c++/5.3.1/bits/stl_bvector.h:208:3: note: candidate: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&amp;, const std::_Bit_iterator_base&amp;)
+   operator-(const _Bit_iterator_base&amp; __x, const _Bit_iterator_base&amp; __y)
+   ^
+/usr/include/c++/5.3.1/bits/stl_bvector.h:208:3: note:   no known conversion for argument 1 from 'int' to 'const std::_Bit_iterator_base&amp;'
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:923:5: note: candidate: template&lt;class _Iterator, class _Container&gt; typename __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;&amp;, const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;&amp;)
+     operator-(const __normal_iterator&lt;_Iterator, _Container&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:923:5: note:   template argument deduction/substitution failed:
+000110.cpp:62:56: note:   mismatched types 'const __gnu_cxx::__normal_iterator&lt;_Iterator, _Container&gt;' and 'int'
+         return get_kth(2 * v + 2, m, r, k - t[2 * v + 1]);
+                                                        ^
+In file included from /usr/include/c++/5.3.1/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5.3.1/bits/char_traits.h:39,
+                 from /usr/include/c++/5.3.1/ios:40,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/stl_iterator.h:911:5: note: candidate: template&lt;class _IteratorL, class _IteratorR, class _Container&gt; decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator&lt;_IteratorL, _Container&gt;&amp;, const __gnu_cxx::__normal_iterator&lt;_IteratorR, _Container&gt;&amp;)
+     operator-(const __normal_iterator&lt;_IteratorL, _Container&gt;&amp; __lhs,
+     ^
+/usr/include/c++/5.3.1/bits/stl_iterator.h:911:5: note:   template argument deduction/substitution failed:
+000110.cpp:62:56: note:   mismatched types 'const __gnu_cxx::__normal_iterator&lt;_IteratorL, _Container&gt;' and 'int'
+         return get_kth(2 * v + 2, m, r, k - t[2 * v + 1]);
+                                                        ^
+000110.cpp: In function 'int main()':
+000110.cpp:84:37: error: 'l' was not declared in this scope
+             if (k + ask(0, 0, n, 0, l) &lt; ans(0, 0, n, 0, r)) {
+                                     ^
+000110.cpp:84:58: error: 'r' was not declared in this scope
+             if (k + ask(0, 0, n, 0, l) &lt; ans(0, 0, n, 0, r)) {
+                                                          ^
+000110.cpp:84:59: error: 'ans' cannot be used as a function
+             if (k + ask(0, 0, n, 0, l) &lt; ans(0, 0, n, 0, r)) {
+                                                           ^
+000110.cpp:86:21: error: 'len' was not declared in this scope
+                 ans[len] = get_kth(0, 0, n, anser) + 1;
+                     ^
+000110.cpp:89:21: error: 'len' was not declared in this scope
+                 ans[len] = -1;
+                     ^
+000110.cpp:94:29: error: 'ask_1' was not declared in this scope
+             change(0, 0, n, ask_1 - 1, ask_2);
+                             ^
+000110.cpp:94:40: error: 'ask_2' was not declared in this scope
+             change(0, 0, n, ask_1 - 1, ask_2);
+                                        ^
+000110.cpp:97:25: error: 'len' was not declared in this scope
+     for (int i = 0; i &lt; len; ++i) {
+                         ^
+000110.cpp:98:14: error: no match for 'operator&lt;&lt;' (operand types are 'std::ostream {aka std::basic_ostream&lt;char&gt;}' and 'std::vector&lt;long long int&gt;')
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+              ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:108:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; (*)(std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(__ostream_type&amp; (*__pf)(__ostream_type&amp;))
+       ^
+/usr/include/c++/5.3.1/ostream:108:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'std::basic_ostream&lt;char&gt;::__ostream_type&amp; (*)(std::basic_ostream&lt;char&gt;::__ostream_type&amp;) {aka std::basic_ostream&lt;char&gt;&amp; (*)(std::basic_ostream&lt;char&gt;&amp;)}'
+/usr/include/c++/5.3.1/ostream:117:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;::__ios_type&amp; (*)(std::basic_ostream&lt;_CharT, _Traits&gt;::__ios_type&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ios_type = std::basic_ios&lt;char&gt;]
+       operator&lt;&lt;(__ios_type&amp; (*__pf)(__ios_type&amp;))
+       ^
+/usr/include/c++/5.3.1/ostream:117:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'std::basic_ostream&lt;char&gt;::__ios_type&amp; (*)(std::basic_ostream&lt;char&gt;::__ios_type&amp;) {aka std::basic_ios&lt;char&gt;&amp; (*)(std::basic_ios&lt;char&gt;&amp;)}'
+/usr/include/c++/5.3.1/ostream:127:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(std::ios_base&amp; (*)(std::ios_base&amp;)) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(ios_base&amp; (*__pf) (ios_base&amp;))
+       ^
+/usr/include/c++/5.3.1/ostream:127:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'std::ios_base&amp; (*)(std::ios_base&amp;)'
+/usr/include/c++/5.3.1/ostream:166:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(long int) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(long __n)
+       ^
+/usr/include/c++/5.3.1/ostream:166:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'long int'
+/usr/include/c++/5.3.1/ostream:170:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(long unsigned int) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(unsigned long __n)
+       ^
+/usr/include/c++/5.3.1/ostream:170:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'long unsigned int'
+/usr/include/c++/5.3.1/ostream:174:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(bool) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(bool __n)
+       ^
+/usr/include/c++/5.3.1/ostream:174:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'bool'
+In file included from /usr/include/c++/5.3.1/ostream:638:0,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(short int) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;]
+     basic_ostream&lt;_CharT, _Traits&gt;::
+     ^
+/usr/include/c++/5.3.1/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'short int'
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:181:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(short unsigned int) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(unsigned short __n)
+       ^
+/usr/include/c++/5.3.1/ostream:181:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'short unsigned int'
+In file included from /usr/include/c++/5.3.1/ostream:638:0,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(int) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;]
+     basic_ostream&lt;_CharT, _Traits&gt;::
+     ^
+/usr/include/c++/5.3.1/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'int'
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:192:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(unsigned int) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(unsigned int __n)
+       ^
+/usr/include/c++/5.3.1/ostream:192:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'unsigned int'
+/usr/include/c++/5.3.1/ostream:201:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(long long int) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(long long __n)
+       ^
+/usr/include/c++/5.3.1/ostream:201:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'long long int'
+/usr/include/c++/5.3.1/ostream:205:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(long long unsigned int) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(unsigned long long __n)
+       ^
+/usr/include/c++/5.3.1/ostream:205:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'long long unsigned int'
+/usr/include/c++/5.3.1/ostream:220:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(double) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(double __f)
+       ^
+/usr/include/c++/5.3.1/ostream:220:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'double'
+/usr/include/c++/5.3.1/ostream:224:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(float) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(float __f)
+       ^
+/usr/include/c++/5.3.1/ostream:224:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'float'
+/usr/include/c++/5.3.1/ostream:232:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(long double) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(long double __f)
+       ^
+/usr/include/c++/5.3.1/ostream:232:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'long double'
+/usr/include/c++/5.3.1/ostream:245:7: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(const void*) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__ostream_type = std::basic_ostream&lt;char&gt;]
+       operator&lt;&lt;(const void* __p)
+       ^
+/usr/include/c++/5.3.1/ostream:245:7: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'const void*'
+In file included from /usr/include/c++/5.3.1/ostream:638:0,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::basic_ostream&lt;_CharT, _Traits&gt;::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; std::basic_ostream&lt;_CharT, _Traits&gt;::__streambuf_type = std::basic_streambuf&lt;char&gt;]
+     basic_ostream&lt;_CharT, _Traits&gt;::
+     ^
+/usr/include/c++/5.3.1/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from 'std::vector&lt;long long int&gt;' to 'std::basic_ostream&lt;char&gt;::__streambuf_type* {aka std::basic_streambuf&lt;char&gt;*}'
+In file included from /usr/include/c++/5.3.1/string:52:0,
+                 from /usr/include/c++/5.3.1/bits/locale_classes.h:40,
+                 from /usr/include/c++/5.3.1/bits/ios_base.h:41,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/basic_string.h:5174:5: note: candidate: template&lt;class _CharT, class _Traits, class _Alloc&gt; std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;&amp;, const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;&amp;)
+     operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __os,
+     ^
+/usr/include/c++/5.3.1/bits/basic_string.h:5174:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   'std::vector&lt;long long int&gt;' is not derived from 'const std::__cxx11::basic_string&lt;_CharT, _Traits, _Alloc&gt;'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/bits/ios_base.h:46:0,
+                 from /usr/include/c++/5.3.1/ios:42,
+                 from /usr/include/c++/5.3.1/ostream:38,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/system_error:209:5: note: candidate: template&lt;class _CharT, class _Traits&gt; std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;&amp;, const std::error_code&amp;)
+     operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __os, const error_code&amp; __e)
+     ^
+/usr/include/c++/5.3.1/system_error:209:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'const std::error_code&amp;'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:497:5: note: candidate: template&lt;class _CharT, class _Traits&gt; std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;&amp;, _CharT)
+     operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __out, _CharT __c)
+     ^
+/usr/include/c++/5.3.1/ostream:497:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   deduced conflicting types for parameter '_CharT' ('char' and 'std::vector&lt;long long int&gt;')
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:502:5: note: candidate: template&lt;class _CharT, class _Traits&gt; std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;&amp;, char)
+     operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __out, char __c)
+     ^
+/usr/include/c++/5.3.1/ostream:502:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'char'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:508:5: note: candidate: template&lt;class _Traits&gt; std::basic_ostream&lt;char, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;char, _Traits&gt;&amp;, char)
+     operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, char __c)
+     ^
+/usr/include/c++/5.3.1/ostream:508:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'char'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:514:5: note: candidate: template&lt;class _Traits&gt; std::basic_ostream&lt;char, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;char, _Traits&gt;&amp;, signed char)
+     operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, signed char __c)
+     ^
+/usr/include/c++/5.3.1/ostream:514:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'signed char'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:519:5: note: candidate: template&lt;class _Traits&gt; std::basic_ostream&lt;char, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;char, _Traits&gt;&amp;, unsigned char)
+     operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, unsigned char __c)
+     ^
+/usr/include/c++/5.3.1/ostream:519:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'unsigned char'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:539:5: note: candidate: template&lt;class _CharT, class _Traits&gt; std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;&amp;, const _CharT*)
+     operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __out, const _CharT* __s)
+     ^
+/usr/include/c++/5.3.1/ostream:539:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   mismatched types 'const _CharT*' and 'std::vector&lt;long long int&gt;'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/ostream:638:0,
+                 from /usr/include/c++/5.3.1/iostream:39,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/bits/ostream.tcc:321:5: note: candidate: template&lt;class _CharT, class _Traits&gt; std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;&amp;, const char*)
+     operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __out, const char* __s)
+     ^
+/usr/include/c++/5.3.1/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'const char*'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:556:5: note: candidate: template&lt;class _Traits&gt; std::basic_ostream&lt;char, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;char, _Traits&gt;&amp;, const char*)
+     operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, const char* __s)
+     ^
+/usr/include/c++/5.3.1/ostream:556:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'const char*'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:569:5: note: candidate: template&lt;class _Traits&gt; std::basic_ostream&lt;char, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;char, _Traits&gt;&amp;, const signed char*)
+     operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, const signed char* __s)
+     ^
+/usr/include/c++/5.3.1/ostream:569:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'const signed char*'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:574:5: note: candidate: template&lt;class _Traits&gt; std::basic_ostream&lt;char, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;char, _Traits&gt;&amp;, const unsigned char*)
+     operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, const unsigned char* __s)
+     ^
+/usr/include/c++/5.3.1/ostream:574:5: note:   template argument deduction/substitution failed:
+000110.cpp:98:22: note:   cannot convert 'ans[i]' (type 'std::vector&lt;long long int&gt;') to type 'const unsigned char*'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+In file included from /usr/include/c++/5.3.1/iostream:39:0,
+                 from 000110.cpp:1:
+/usr/include/c++/5.3.1/ostream:628:5: note: candidate: std::basic_ostream&lt;_CharT, _Traits&gt;&amp; std::operator&lt;&lt;(std::basic_ostream&lt;_CharT, _Traits&gt;&amp;&amp;, const _Tp&amp;) [with _CharT = char; _Traits = std::char_traits&lt;char&gt;; _Tp = std::vector&lt;long long int&gt;] &lt;near match&gt;
+     operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp;&amp; __os, const _Tp&amp; __x)
+     ^
+/usr/include/c++/5.3.1/ostream:628:5: note:   conversion of argument 1 would be ill-formed:
+000110.cpp:98:22: error: cannot bind 'std::ostream {aka std::basic_ostream&lt;char&gt;}' lvalue to 'std::basic_ostream&lt;char&gt;&amp;&amp;'
+         cout &lt;&lt; ans[i] &lt;&lt; endl;
+                      ^
+
+</compiler_output>
+</testing-report>

@@ -1,0 +1,60 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int n, max_mass;
+    cin >> n >> max_mass;
+    vector<int> mass(n), cost(n);
+    vector<vector<int>> dp(n, vector<int>(max_mass + 1, 0));
+    vector<vector<int>> parent(n, vector<int>(max_mass + 1, 0));
+    int minn = max_mass + 1;
+    for (int i = 0; i < n; i++) {
+        cin >> mass[i];
+        if (mass[i] < minn) {
+            minn = mass[i];
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        cin >> cost[i];
+    }
+    if (minn > max_mass) {
+        return 0;
+    }
+    dp[0][mass[0]] = cost[0];
+    for (int i = 1; i < n; i++) {
+        for (int j = 0; j <= max_mass; j++) {
+            dp[i][j] = dp[i - 1][j];
+            parent[i][j] = 0;
+            if ((j - mass[i] >= 0) && (dp[i - 1][j - mass[i]] + cost[i] > dp[i - 1][j])) {
+                dp[i][j] = dp[i - 1][j - mass[i]] + cost[i];
+                parent[i][j] = 1;
+            }
+        }
+    }
+    int ans = 0, ind;
+    for (int i = 0; i <= max_mass; i++) {
+        if (dp[n - 1][i] > ans) {
+            ans = dp[n - 1][i];
+            ind = i;
+        }
+    }
+    int i = n - 1, j = ind;
+    vector<int> answer;
+    while (i) {
+        if (parent[i][j]) {
+            answer.push_back(i + 1);
+            j -= mass[i];
+        }
+        i--;
+    }
+    if (j) {
+        cout << 1;
+    }
+    reverse(answer.begin(), answer.end());
+    for (int k = 0; k < answer.size(); k++) {
+        cout << endl << answer[k];
+    }
+}

@@ -1,0 +1,12 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="149" judge-id="16" status="CE" scoring="ACM" run-tests="0" contest-id="3102" compile-error="yes" >
+  <uuid>8e0a66b4-0102-4c2a-99b6-30545b20f516</uuid>
+  <compiler_output>000149.c: In function 'func':
+000149.c:3:43: error: 'n' undeclared (first use in this function)
+        int x = (t - t / k) * a + (t - t / n) * b;
+                                           ^
+000149.c:3:43: note: each undeclared identifier is reported only once for each function it appears in
+</compiler_output>
+</testing-report>

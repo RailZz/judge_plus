@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+main(){
+	int N,a,S=0;
+	cin>>N;
+	for(int i=0;i<N;i++){
+		cin>>a;
+		S=S+a;
+	}
+	cout<<S<<endl;
+}

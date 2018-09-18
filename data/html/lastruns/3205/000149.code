@@ -1,0 +1,7 @@
+a=[int(i) for i in input().split()]
+m = 0
+for i in range(0,len(a)):
+    if (a[i])>a[m]:
+        m=i
+print(a[m],m)
+    

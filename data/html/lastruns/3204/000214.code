@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdio>
+#include <vector>
+using namespace std;
+int main(){
+	vector<int> a;
+	int h;
+	while(scanf("%d ",&h)==1){
+		a.push_back(h);
+	}
+	for(int i = 0; i < a.size(); ++i){
+		cerr << a[i] << ' ';
+	}
+	int n;
+	n=a[a.size()-1]
+	for(int i = a.size()-1; i >=1; i--){
+		a[i]=a[i-1];
+	}
+	a[0]=n;
+}

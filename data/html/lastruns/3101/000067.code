@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+#define ll long long
+
+const double P = 3.1415926;
+
+int main()
+{
+    long double l, r, m, a;
+    cout.precision(6);
+    cout << fixed;
+
+    cin >> a;
+
+    l = -(P / 2);
+    r = P / 2;
+
+    while (r - l > pow(10, -6))
+    {
+        m = (l + r) / 2;
+        if (sin(m) < a) {
+            l = m;
+        } else {
+            r = m;
+        }
+    }
+
+    cout << l << endl;
+    return 0;
+}

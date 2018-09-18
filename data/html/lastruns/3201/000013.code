@@ -1,0 +1,8 @@
+a = int(input())
+b = int(input())
+c = int(input())
+n = 0
+n = n + (a // 2) + (a % 2)
+n = n + (b // 2) + (b % 2)
+n = n + (c // 2) + (c % 2)
+print(n)

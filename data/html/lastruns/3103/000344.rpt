@@ -1,0 +1,14 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="344" judge-id="3" status="RU" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>b7938ffc-ab1c-4137-95f6-903ad932142f</uuid>
+  <compiler_output>000344.cpp: In function 'int main()':
+000344.cpp:36:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i&lt;g.size(); ++i) {
+                    ^
+000344.cpp:52:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i&lt;path.size(); ++i)
+                   ^
+</compiler_output>
+</testing-report>

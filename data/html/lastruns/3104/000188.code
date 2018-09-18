@@ -1,0 +1,17 @@
+﻿var
+N,b:integer;
+p,pp,ppp,s:uint64;
+begin
+readln(N);
+p:=1;
+pp:=0;
+ppp:=0;
+for b:=N-1 downto 0 do
+begin
+s:=p;
+p:=p+pp+ppp;
+ppp:=pp;
+pp:=s;
+end;
+writeln(p);
+end.

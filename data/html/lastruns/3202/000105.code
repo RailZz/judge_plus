@@ -1,0 +1,8 @@
+n = int(input())
+if n==1 or n==21 or n==31 or n==41 or n==51 or n==61 or n==71 or n==81 or n==91:
+    print(n, 'korova')
+else:
+    if (n//10!=1) and (n%10==2 or n%10==3 or n%10==4):
+        print(n, 'korovy')
+    else:
+        print(n, 'korov')

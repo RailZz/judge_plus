@@ -1,0 +1,17 @@
+a=[int(i) for i in input().split()]
+mn=10**20
+mx=-10**20
+mx1=-1
+mn1=-1
+i=0
+s=0
+while i<len(a):
+    if a[i]>mx:
+        mx=a[i]
+        mx1=i
+    if a[i]<mn:
+        mn=a[i]
+        mn1=i
+a[mx1]=mn
+a[mn1]=mx
+print(a)

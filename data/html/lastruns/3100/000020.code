@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+
+using namespace std;
+
+#define ll long long
+ 
+int gcd(ll a, ll b)
+{
+    if (a == 0){
+        return b;
+    } else {
+        return gcd(b % a, a);
+    }
+}
+
+int main()
+{
+    ll n, k;
+    cin >> n;
+    cin >> k;
+    ll m;
+    m = n * k / gcd(k, n);
+    cout << m;
+    return 0;
+}

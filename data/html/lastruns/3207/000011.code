@@ -1,0 +1,7 @@
+c = input()
+def f(a):
+   if ord('1') <= ord(a) <= ord('9'):
+      return 'yes'
+   else:
+      return 'no'
+print(f(c))

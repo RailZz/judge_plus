@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    int znam, chis;
+    chis = a * d + b * c;
+    znam = b * d;
+    int buf1 = chis;
+    int buf2 = znam;
+    while (znam != 0 & chis != 0)
+    {
+        if (znam > chis) swap (znam, chis);
+        chis = chis % znam;
+    }
+    buf1 /= znam;
+    buf2 /= znam;
+    cout << buf1 << " " << buf2;
+    return 0;
+}

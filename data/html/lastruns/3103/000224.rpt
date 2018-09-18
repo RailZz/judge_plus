@@ -1,0 +1,37 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="224" judge-id="34" status="PE" scoring="ACM" run-tests="1" contest-id="3103" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>43b75a5c-84b5-43bf-88d4-a0cefd251d35</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="PE" time="3" real-time="5" max-memory-used="315392"  checker-comment="wrong output format Wrong beginning number, right is 1234, your is 5" >
+  <program-stats-str>{ utime=3, stime=0, ptime=3, rtime=5, maxvsz=315392, maxrss=3452928, nvcsw=1, nivcsw=2 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=17264640, maxrss=3092480, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="10">1234
+4321
+</input>
+      <output size="32">5
+1234
+1233
+1232
+2321
+3321
+4321
+</output>
+      <correct size="30">1234
+2234
+3234
+4323
+4322
+4321
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="69">wrong output format Wrong beginning number, right is 1234, your is 5
+</checker>
+    </test>
+  </tests>
+</testing-report>

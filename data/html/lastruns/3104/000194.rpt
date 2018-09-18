@@ -1,0 +1,29 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="194" judge-id="34" status="PE" scoring="ACM" run-tests="1" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="1" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>6b366835-7136-4d82-b41d-9e27cc3c7216</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output>000194.cpp: In function 'int main()':
+000194.cpp:38:17: warning: 'max' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     max = id[max];
+                 ^
+</compiler_output>
+  <tests>
+    <test num="1" status="PE" time="1" real-time="3" max-memory-used="307200"  checker-comment="wrong output format Given sequence is not increasing, 83 ?= 67" >
+  <program-stats-str>{ utime=1, stime=0, ptime=1, rtime=3, maxvsz=307200, maxrss=2899968, nvcsw=1, nivcsw=1 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=17264640, maxrss=3215360, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="13">5 41 2 1 100
+</input>
+      <output size="26">41 83 67 35 71 3
+41 67 71 </output>
+      <correct size="10">41 67 71 
+</correct>
+      <stderr size="0"></stderr>
+      <checker size="63">wrong output format Given sequence is not increasing, 83 &gt;= 67
+</checker>
+    </test>
+  </tests>
+</testing-report>

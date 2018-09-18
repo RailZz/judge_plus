@@ -1,0 +1,82 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    vector <int> s1(n);
+    for (int i = 0; i < n; i++)
+    {
+        cin >> s1[i];
+    }
+
+    int m;
+    cin >> m;
+    vector <int> s2(m);
+
+    for (int i = 0; i < m; i++)
+    {
+        cin >> s2[i];
+    }
+
+    vector <vector <int> > table (n + 1, vector <int> (m + 1, 0));
+
+//    for (int i = 0; i <= n; i++)
+//    {
+//        table[i][0] = 0;
+//    }
+//
+//    for (int i = 0; i <= m; i++)
+//    {
+//        table[0][i] = 0;
+//    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= m; j++)
+        {
+            if (s1[i - 1] == s2[j - 1])
+            {
+                table[i][j] = table[i - 1][j - 1] + 1;
+            }
+            else
+            {
+                table[i][j] = max(table[i - 1][j], table[i][j - 1]);
+            }
+        }
+    }
+
+    int x = n, y = m;
+    vector <int> path;
+
+    while (x!= 0 && y != 0)
+    {
+        if (s1[x - 1] == s2[y - 1])
+        {
+            path.push_back(s1[x - 1]);
+            x = max(x - 1, 0);
+            y = max(y - 1, 0);
+        }
+        else
+        {
+            if (table[x - 1] > table[y - 1])
+            {
+                x--;
+            }
+            else
+            {
+                y--;
+            }
+        }
+    }
+
+    for (int i = (int)path.size() - 1; i >= 0; i--)
+    {
+        cout << path[i] << ' ';
+    }
+    return 0;
+}

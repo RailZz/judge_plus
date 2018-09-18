@@ -1,0 +1,61 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector< vector<int> > vec;
+vector< vector<int> > ans;
+vector<int> used;
+int is_good = 1;
+
+void dfs(int v, int c)
+{
+    ans.back().push_back(v);
+	used[v] = c;
+	for (auto &i:vec[v])
+	{
+		if (used[i] == 0)
+		{
+			dfs(i, c);
+		}
+	}
+};
+
+int main()
+{
+	int n, m;
+	cin >> n >> m;
+	vec.resize(n);
+	used.resize(n);
+	int a , b;
+	int c = 1;
+	for (int i = 0; i < m; i++)
+	{
+		cin >> a >> b;
+		a -= 1;
+		b -= 1;
+		vec[a].push_back(b);
+		vec[b].push_back(a);
+	}
+	for (int i = 0; i < n; i++)
+	{
+		if (used[i] == 0)
+		{
+		    ans.push_back(vector<int>());
+			dfs(i, c);
+			c++;
+		}
+	}
+    cout << ans.size() << '\n';
+    for (int i = 0; i < ans.size(); i++)
+    {
+        int size_ans = ans[i].size();
+        cout << size_ans << endl;
+        for (int j = 0; j < size_ans; j++)
+        {
+            cout << ans[i][j] + 1 << " ";
+        }
+        cout << endl;
+    }
+	return 0;
+}

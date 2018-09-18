@@ -1,0 +1,37 @@
+#include <stdio.h>
+int func(int n, int size, int *arr){
+       int k = 0;
+       for (int i = 0; i < size; i += 1){
+          k += arr[i] / n;
+       }
+       return k;
+}
+int maxl (int *arr, int size){
+    int max = arr[0];
+    for (int i = 0; i < size; i += 1){
+        if (arr[i]> max){
+            max = arr[i];
+        }
+    }
+    return max;
+}
+int main(void){
+    int n, k, l, r, m;
+    scanf("%d %d", &n, &k);
+    int arr[n];
+    for (int i = 0; i < n; i += 1){
+        scanf("%d", &arr[i]);
+    }
+    l = 0;
+    r = max(arr, n);
+    while (r - l > 1){
+        m = (r + l) / 2;
+        if (func(m, n, arr) >= k){
+           l = m;
+        }else{
+           r = m;
+        }
+    }
+    printf("%d", l);
+    return 0;
+}

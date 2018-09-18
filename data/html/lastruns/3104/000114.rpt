@@ -1,0 +1,82 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="114" judge-id="42" status="RT" scoring="ACM" run-tests="4" contest-id="3104" real-time-available="yes" max-memory-used-available="yes" correct-available="yes" failed-test="4" time-limit-ms="2000" real-time-limit-ms="5000" marked-flag="no" >
+  <uuid>2e241784-411d-49dc-8c66-b30f6c0f346b</uuid>
+  <host>localhost.localdomain</host>
+  <cpu-model>Intel(R) Pentium(R) CPU 3550M @ 2.30GHz</cpu-model>
+  <cpu-mhz>2294.738</cpu-mhz>
+  <compiler_output></compiler_output>
+  <tests>
+    <test num="1" status="OK" time="74" real-time="82" max-memory-used="30339072"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=51, stime=23, ptime=74, rtime=82, maxvsz=30339072, maxrss=27115520, nvcsw=1, nivcsw=16 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=17268736, maxrss=3317760, nvcsw=1, nivcsw=2 }</checker-stats-str>
+      <input size="8">1 1
+179
+</input>
+      <output size="4">179
+</output>
+      <correct size="5">179
+
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="2" status="OK" time="76" real-time="84" max-memory-used="30339072"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=56, stime=20, ptime=76, rtime=84, maxvsz=30339072, maxrss=26988544, nvcsw=1, nivcsw=13 }</program-stats-str>
+  <checker-stats-str>{ utime=1, stime=0, ptime=1, rtime=2, maxvsz=17268736, maxrss=3112960, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="12">2 2
+1 2
+3 1
+</input>
+      <output size="6">5
+D R </output>
+      <correct size="7">5
+D R 
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="3" status="OK" time="78" real-time="103" max-memory-used="47890432"  checker-comment="ok Correct answer!" >
+  <program-stats-str>{ utime=50, stime=28, ptime=78, rtime=103, maxvsz=47890432, maxrss=27140096, nvcsw=2, nivcsw=17 }</program-stats-str>
+  <checker-stats-str>{ utime=0, stime=1, ptime=1, rtime=2, maxvsz=17268736, maxrss=2998272, nvcsw=1, nivcsw=1 }</checker-stats-str>
+      <input size="54">5 5
+9 9 9 9 9
+3 0 0 0 0
+9 9 9 9 9
+6 6 6 6 8
+9 9 9 9 9
+</input>
+      <output size="19">74
+D D R R R R D D </output>
+      <correct size="20">74
+D D R R R R D D 
+</correct>
+      <stderr size="61">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+</stderr>
+      <checker size="19">ok Correct answer!
+</checker>
+    </test>
+    <test num="4" status="RT" exit-code="1" time="74" real-time="81" max-memory-used="30339072" >
+  <program-stats-str>{ utime=39, stime=35, ptime=74, rtime=81, maxvsz=30339072, maxrss=27418624, nvcsw=1, nivcsw=17 }</program-stats-str>
+      <input size="54">5 5
+1 1 1 1 1
+0 0 0 0 1
+1 1 1 1 1
+1 0 0 0 0
+1 1 1 1 1
+</input>
+      <output size="0"></output>
+      <stderr size="206">Warning: cannot find your CPU L2 cache size in /proc/cpuinfo
+Traceback (most recent call last):
+  File &quot;./000114&quot;, line 26, in &lt;module&gt;
+    if d[y][x - 1] &gt; d[y - 1][x]:
+IndexError: list index out of range
+</stderr>
+    </test>
+  </tests>
+</testing-report>

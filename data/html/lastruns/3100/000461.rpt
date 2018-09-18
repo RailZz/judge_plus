@@ -1,0 +1,24 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="461" judge-id="1" status="SV" scoring="ACM" run-tests="0" contest-id="3100" compile-error="yes" >
+  <uuid>95cd313d-dec7-4f0b-beea-3f4156dcd21f</uuid>
+  <compiler_output>000461.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+000461.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+Done processing 000461.cpp
+Total errors found: 12
+
+
+Style checker detected errors
+</compiler_output>
+</testing-report>

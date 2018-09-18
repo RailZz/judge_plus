@@ -1,0 +1,7 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="133" judge-id="5" status="RU" scoring="ACM" run-tests="0" contest-id="3103" compile-error="yes" >
+  <uuid>a0852e19-06d1-4972-9755-4588f5c5d359</uuid>
+  <compiler_output></compiler_output>
+</testing-report>

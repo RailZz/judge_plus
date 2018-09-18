@@ -1,0 +1,13 @@
+Content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<testing-report run-id="378" judge-id="1" status="CE" scoring="ACM" run-tests="0" contest-id="3200" compile-error="yes" >
+  <uuid>ac6e53f1-8828-4ff3-b6f2-08caee98b853</uuid>
+  <compiler_output>000378.cpp:2:8: warning: character constant too long for its type
+ path = '/rew/ghuio'
+        ^
+000378.cpp:1:1: error: 'import' does not name a type
+ import os
+ ^
+</compiler_output>
+</testing-report>

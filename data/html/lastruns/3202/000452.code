@@ -1,0 +1,4 @@
+k = int(input())
+m = int(input())
+n = int(input())
+print(k // n * m * 2 + k % n * m * 2)

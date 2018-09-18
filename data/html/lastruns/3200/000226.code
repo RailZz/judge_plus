@@ -1,0 +1,3 @@
+t=int(input())
+A=t%10
+print(A)

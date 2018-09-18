@@ -1,0 +1,10 @@
+n = int(input())
+a = list(map(int, input().split()))
+d = [10**9] * (n + 1)
+if len(a) == 1:
+    d[0] = a[0]
+else:
+    d[0], d[1] = a[0], a[1]
+for i in range(2, n):
+    d[i] = min(d[i - 2], d[i - 1]) + a[i]
+print(d[n - 1])

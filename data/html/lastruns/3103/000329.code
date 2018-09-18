@@ -1,0 +1,62 @@
+#include <iostream>
+
+#include <vector>
+
+using namespace std;
+
+vector<vector<int>>edges;
+vector<vector<int>>neighbors;
+vector<int>used;
+int n,m;
+int val1,val2;
+int roll;
+int dfs(int v);
+
+main(){
+
+cin>>n>>m;
+
+edges.resize(m,vector<int>(2));
+neighbors.resize(n, vector<int>());
+used.resize(n);
+
+for(int i = 0; i < m - 1; i++){
+    cin>>val1>>val2;
+    edges[i][0] = val1 - 1;
+    edges[i][1] = val2 - 1;
+    }
+for(int i = 0; i < m - 1 ;i++){//переложение из ребер в соседей
+    for(int j = 0;j < m - 1;j++){
+        neighbors[i].push_back(j);
+        neighbors[j].push_back(i);
+        }
+    }
+for(int i; i<used.size() - 1; i++){//персчёт компонент связности
+
+    if(used[i] != 1){roll++;
+    dfs(i);
+        }
+}
+
+for(int i = 0;i<n;i++){
+    cout<<i<<" : ";
+    for(int j = 0;j<neighbors[i].size();j++){
+        cout<<neighbors[i][j]<<" ";
+        }
+    cout<<endl;
+    }
+cout<<endl;
+cout<<roll;
+main();
+return(0);
+}
+int dfs(int v){//v-dfs(v);pa-батя
+    v++;
+for(int i = 0; i < neighbors[v].size()-1; i++){
+    int u = neighbors[v][i];
+if(used[u] != 1){
+    dfs(u);
+    return(0);
+    }
+}
+}

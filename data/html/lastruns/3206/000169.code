@@ -1,0 +1,11 @@
+a = input()
+m, n = 0, 0
+for i in range(len(a)):
+    if a[i].isalpha() == True:
+        m = 1
+    if a[i].isdigit() == True:
+        n = 1
+if n == 1 and m == 1:
+    print('YES')
+else:
+    print('NO')

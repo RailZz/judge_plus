@@ -1,0 +1,6 @@
+n=int(inter())
+r=int(inter())
+while i<=n:
+r+=1
+r**2
+print(r)
